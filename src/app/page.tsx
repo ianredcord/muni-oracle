@@ -32,8 +32,12 @@ export default function Home() {
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-[#4a5548] mb-6 leading-tight whitespace-pre-line">
             {ZH.home.hero.title}
           </h1>
-          <p className="text-base sm:text-lg md:text-xl text-stone-600 mb-8 leading-loose whitespace-pre-line tracking-wide">
+          <p className="text-base sm:text-lg md:text-xl text-stone-600 mb-6 leading-loose whitespace-pre-line tracking-wide">
             {ZH.home.hero.subtitle}
+          </p>
+          {/* A 文字：理性定位錨點 */}
+          <p className="text-sm text-stone-500/70 mb-10 tracking-wide">
+            {ZH.home.hero.positioning}
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
