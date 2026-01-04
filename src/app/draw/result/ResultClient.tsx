@@ -20,6 +20,7 @@ function ResultClient(props: { cardSlug: string }) {
   const [activeTab, setActiveTab] = useState<"quick" | "deep" | "therapist">("quick");
   const [isGeneratingImage, setIsGeneratingImage] = useState(false);
   const [showCopyToast, setShowCopyToast] = useState(false);
+  const [showShareModal, setShowShareModal] = useState(false);
   
   // 找到對應的花精
   const flower = FLOWERS.find(f => f.slug === cardSlug) || FLOWERS[0];
@@ -38,7 +39,33 @@ function ResultClient(props: { cardSlug: string }) {
     return "";
   }, []);
 
-  // 分享到 Facebook
+  // 顯示分享提示彈窗
+  const handleShowShareModal = useCallback(() => {
+    setShowShareModal(true);
+  }, []);
+
+  // 複製文字後分享到 Facebook
+  const handleCopyAndShareFacebook = useCallback(async () => {
+    const pageUrl = getPageUrl();
+    const textToCopy = shareText.fb;
+    try {
+      await navigator.clipboard.writeText(textToCopy);
+    } catch (error) {
+      // Fallback for older browsers
+      const textArea = document.createElement("textarea");
+      textArea.value = textToCopy;
+      document.body.appendChild(textArea);
+      textArea.select();
+      document.execCommand("copy");
+      document.body.removeChild(textArea);
+    }
+    // 關閉彈窗並開啟 Facebook 分享
+    setShowShareModal(false);
+    const shareUrl = generateShareUrl("facebook", pageUrl, shareText);
+    openShareWindow(shareUrl);
+  }, [getPageUrl, shareText]);
+
+  // 分享到 Facebook（直接分享，不複製文字）
   const handleShareFacebook = useCallback(() => {
     const pageUrl = getPageUrl();
     const shareUrl = generateShareUrl("facebook", pageUrl, shareText);
@@ -157,7 +184,7 @@ function ResultClient(props: { cardSlug: string }) {
               <div className="mt-6 flex flex-wrap justify-center gap-3">
                 {/* Facebook 分享 */}
                 <button
-                  onClick={handleShareFacebook}
+                  onClick={handleShowShareModal}
                   className="flex items-center gap-2 bg-[#1877F2] hover:bg-[#166FE5] text-white rounded-full px-4 py-2 text-sm transition-colors"
                   title="分享到 Facebook"
                 >
@@ -213,6 +240,49 @@ function ResultClient(props: { cardSlug: string }) {
                   <span className="inline-block bg-stone-800 text-white text-sm px-4 py-2 rounded-full">
                     已複製分享文字！
                   </span>
+                </div>
+              )}
+
+              {/* Facebook 分享提示彈窗 */}
+              {showShareModal && (
+                <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4" onClick={() => setShowShareModal(false)}>
+                  <div className="bg-white rounded-2xl max-w-md w-full p-6 shadow-xl" onClick={(e) => e.stopPropagation()}>
+                    <div className="flex justify-between items-center mb-4">
+                      <h3 className="text-lg font-bold text-stone-800">分享到 Facebook</h3>
+                      <button
+                        onClick={() => setShowShareModal(false)}
+                        className="text-stone-400 hover:text-stone-600"
+                      >
+                        <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                      </button>
+                    </div>
+                    
+                    <p className="text-sm text-stone-600 mb-3">建議分享文字（點擊「複製並分享」後貼上）：</p>
+                    
+                    <div className="bg-stone-50 rounded-lg p-4 mb-4 text-sm text-stone-700 whitespace-pre-wrap max-h-48 overflow-y-auto">
+                      {shareText.fb}
+                    </div>
+                    
+                    <div className="flex gap-3">
+                      <button
+                        onClick={handleCopyAndShareFacebook}
+                        className="flex-1 bg-[#1877F2] hover:bg-[#166FE5] text-white rounded-full px-4 py-3 text-sm font-medium transition-colors"
+                      >
+                        複製並分享
+                      </button>
+                      <button
+                        onClick={() => {
+                          setShowShareModal(false);
+                          handleShareFacebook();
+                        }}
+                        className="flex-1 bg-stone-200 hover:bg-stone-300 text-stone-700 rounded-full px-4 py-3 text-sm font-medium transition-colors"
+                      >
+                        直接分享
+                      </button>
+                    </div>
+                  </div>
                 </div>
               )}
 
