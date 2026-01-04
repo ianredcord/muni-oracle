@@ -18,12 +18,13 @@ export async function generateMetadata({
   const shareText = getShareText(flower.slug, flower.name);
   
   // 網站基礎 URL（部署後需要更新為正式域名）
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://munione.co";
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://www.munione.co";
   
   const ogTitle = `牟尼花精指引｜${flower.name}`;
   const ogDescription = shareText.fb;
   const ogImage = `${baseUrl}${flower.image}`;
-  const pageUrl = `${baseUrl}/draw/result?card=${flower.slug}`;
+  // 使用原始的 cardSlug 而非 flower.slug，確保 URL 參數正確
+  const pageUrl = `${baseUrl}/draw/result?card=${cardSlug}`;
 
   return {
     title: ogTitle,
