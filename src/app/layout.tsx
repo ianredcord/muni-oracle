@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Noto_Serif_TC } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const notoSerifTC = Noto_Serif_TC({
@@ -29,6 +30,21 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="zh-TW">
+      <head>
+        {/* Google Analytics 4 */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-9N4ZPC9CCG"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-9N4ZPC9CCG');
+          `}
+        </Script>
+      </head>
       <body className={`${notoSerifTC.variable} antialiased`}>
         {children}
       </body>
