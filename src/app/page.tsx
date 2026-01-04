@@ -36,7 +36,7 @@ export default function Home() {
             {ZH.home.hero.subtitle}
           </p>
           {/* A 文字：理性定位錨點 */}
-          <p className="text-sm text-stone-500/70 mb-10 tracking-wide">
+          <p className="text-sm text-stone-500/70 mb-10 tracking-wide whitespace-pre-line">
             {ZH.home.hero.positioning}
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

@@ -15,7 +15,7 @@ export const ZH = {
       title: "在寂靜中\n承接你的答案",
       subtitle:
         "6 種精油 × 40 種花精頻率\n配合牌卡與身體覺察\n讓牟尼香成為你回到內在的嗅覺儀式",
-      positioning: "MUNI 是一套陪你覺察、安定、支持內在狀態的日常系統。",
+      positioning: "MUNI 是一套陪你覺察、安定、支持\n內在狀態的日常系統。",
       cta: "開始抽牌",
       secondaryLink: "認識 MUNI",
     },
