@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import { FLOWERS } from "@/data/flowers.generated";
 import { getShareText } from "@/data/shareTexts";
 
+// 強制動態渲染，確保每次請求都重新生成 metadata
+export const dynamic = "force-dynamic";
+
 // 動態生成 OG Meta
 export async function generateMetadata({
   searchParams,
@@ -17,8 +20,8 @@ export async function generateMetadata({
   // 取得分享文案
   const shareText = getShareText(flower.slug, flower.name);
   
-  // 網站基礎 URL（部署後需要更新為正式域名）
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://www.munione.co";
+  // 網站基礎 URL
+  const baseUrl = "https://www.munione.co";
   
   const ogTitle = `牟尼花精指引｜${flower.name}`;
   const ogDescription = shareText.fb;
