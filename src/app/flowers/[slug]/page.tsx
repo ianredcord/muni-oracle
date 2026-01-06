@@ -170,7 +170,7 @@ export default async function FlowerDetailPage({ params }: PageProps) {
           </div>
         </section>
 
-        {/* 治療師專區 */}
+        {/* 引導者專區 */}
         <section className="mb-12">
           <h2 className="font-serif text-2xl font-bold text-[#4a5548] mb-6">
             {ZH.draw.result.therapistZone}

@@ -21,7 +21,7 @@ export const ZH_DRAW = {
     share: "分享結果",
     copyLink: "複製連結",
     howTo: "覺察方式說明",
-    therapistZone: "治療師／引導者專區",
+    therapistZone: "引導者專區",
     backToDeck: "回到牌堆",
   },
 } as const;

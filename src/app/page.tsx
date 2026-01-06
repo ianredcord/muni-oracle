@@ -179,7 +179,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 6. 給治療師與引導者 */}
+      {/* 6. 給引導者 */}
       <section className="py-20 px-4 bg-[#4a5548] text-white">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="font-serif text-3xl md:text-4xl font-bold mb-6">

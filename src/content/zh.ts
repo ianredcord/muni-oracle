@@ -60,9 +60,9 @@ export const ZH = {
     },
 
     therapist: {
-      title: "給治療師與引導者",
-      body: "每張牌卡都包含「治療師專區」，提供專業引導建議。\n\n讓 MUNI 花精牌卡成為你與個案之間的覺察橋樑。",
-      accordionTitle: "治療師／引導者專區",
+      title: "給引導者",
+      body: "每張牌卡都包含「引導者專區」，提供專業引導建議。\n\n讓 MUNI 花精牌卡成為你與個案之間的覺察橋樑。",
+      accordionTitle: "引導者專區",
       accordionBody: "",
       cta: "",
     },
@@ -97,12 +97,12 @@ export const ZH = {
       share: "分享結果",
       copyLink: "複製連結",
       howTo: "覺察方式說明",
-      therapistZone: "治療師／引導者專區",
+      therapistZone: "引導者專區",
       backToDeck: "回到牌堆",
       viewDetail: "查看完整資訊",
       tabQuick: "牌卡指引",
       tabDeep: "深度解析",
-      tabTherapist: "治療師專區",
+      tabTherapist: "引導者專區",
     },
   },
 
