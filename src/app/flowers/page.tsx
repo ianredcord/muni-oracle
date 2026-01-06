@@ -1,6 +1,7 @@
 import { FLOWERS } from "@/data/flowers.generated";
 import Image from "next/image";
 import Link from "next/link";
+import { Header } from "@/components/Header";
 
 export default function FlowersPage() {
   return (
@@ -17,7 +18,10 @@ export default function FlowersPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-white/50 via-transparent to-[#F9F7F2]" />
       </div>
 
-      <main className="relative z-10 container mx-auto px-4 py-8 max-w-6xl">
+      {/* 固定 Header */}
+      <Header />
+
+      <main className="relative z-10 container mx-auto px-4 py-8 max-w-6xl pt-20">
         {/* 標題 */}
         <header className="text-center mb-12 mt-8">
           <h1 className="font-serif text-3xl md:text-4xl font-bold text-[#4a5548] mb-4">
