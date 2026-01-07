@@ -77,15 +77,17 @@ export default async function FlowerDetailPage({ params }: PageProps) {
             
             {/* MUNI 能量支持按鈕 */}
             <div className="mt-4 max-w-[280px] mx-auto">
-              <Link
-                href="/energy-support"
+              <a
+                href="https://www.stark.works/categories/muni能量療癒系列"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 w-full bg-gradient-to-r from-[#4a5548] to-[#6b7a5f] hover:from-[#3d4a3c] hover:to-[#5a6950] text-white rounded-full px-4 py-2.5 text-sm font-medium transition-all shadow-md hover:shadow-lg"
               >
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
                 MUNI 能量支持
-              </Link>
+              </a>
             </div>
           </div>
 
