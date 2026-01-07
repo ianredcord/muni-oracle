@@ -31,14 +31,12 @@ function Header() {
           >
             牟尼花精百科
           </Link>
-          <a
-            href="https://www.stark.works/categories/muni能量療癒系列"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            href="/energy-support"
             className="text-[#4a5548] font-medium transition-colors"
           >
             能量支持
-          </a>
+          </Link>
         </nav>
       </div>
     </header>

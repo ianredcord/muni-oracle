@@ -26,14 +26,12 @@ export function Header() {
           >
             {ZH.nav.flowerIndex}
           </Link>
-          <a 
-            href="https://www.stark.works/categories/muni能量療癒系列" 
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link 
+            href="/energy-support" 
             className="text-stone-600 hover:text-[#4a5548] text-sm font-medium transition-colors"
           >
             {ZH.nav.energySupport}
-          </a>
+          </Link>
         </nav>
       </div>
     </header>
