@@ -63,6 +63,19 @@ export default function Home() {
         </div>
       </section>
 
+      {/* MUNI 形象圖 */}
+      <section className="w-full">
+        <div className="relative w-full" style={{ aspectRatio: '16/9' }}>
+          <Image
+            src="/muni-hero-image.jpg"
+            alt="MUNI 牡尼香 - 天然植物能量支持"
+            fill
+            className="object-cover"
+            priority
+          />
+        </div>
+      </section>
+
       {/* 2. MUNI 是什麼 - 第一段 */}
       <section id="what" className="py-24 px-4 bg-white scroll-mt-16">
         <div className="max-w-[42rem] mx-auto text-center">
