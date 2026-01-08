@@ -142,10 +142,14 @@ export const STATE_SUGGESTIONS: StateSuggestion[] = [
 // 頁面文案
 export const ENERGY_SUPPORT_CONTENT = {
   hero: {
-    title: "能量，不是玄學\n是身體能不能承載生活的基礎",
+    title: "能量，不是玄學，\n而是身體是否還能承載生活的基礎。",
     description: `MUNI 所說的「能量」，不是刺激，也不是補過頭。
-它是讓身體有餘裕、神經能安定、情緒能被承載的狀態。
-我們選擇天然、可被身體理解的素材，不是取代你，而是支持你回到自己的節奏。`,
+
+它指的是：身體仍然可調節、神經能安定，
+情緒有空間被承載的狀態。
+
+我們選擇天然、可被身體理解的素材，
+不是取代你，而是支持你回到自己的節奏。`,
     cta: "開始了解我的能量支持"
   },
   systemSection: {
