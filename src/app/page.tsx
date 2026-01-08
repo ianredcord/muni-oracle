@@ -64,22 +64,36 @@ export default function Home() {
       </section>
 
       {/* 2. MUNI 是什麼 - 第一段 */}
-      <section id="what" className="py-20 px-4 bg-white scroll-mt-16">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="font-serif text-3xl md:text-4xl font-bold text-[#4a5548] mb-8">
+      <section id="what" className="py-24 px-4 bg-white scroll-mt-16">
+        <div className="max-w-[42rem] mx-auto text-center">
+          <h2 className="font-serif text-3xl md:text-4xl font-bold text-[#4a5548] mb-10">
             {ZH.home.whatIsMuni.title}
           </h2>
-          <p className="text-stone-600 text-lg leading-relaxed whitespace-pre-line">
+          {/* 主要內文：增加行距 10-15% */}
+          <p className="text-stone-600 text-lg leading-[2] whitespace-pre-line mb-10">
             {ZH.home.whatIsMuni.body}
+          </p>
+          {/* 核心句：視覺強化，字色略深、上下留白增加 */}
+          <p className="text-stone-700 text-lg leading-[2] whitespace-pre-line font-medium mt-8">
+            {ZH.home.whatIsMuni.bodyCore}
           </p>
         </div>
       </section>
 
       {/* 2b. MUNI 是什麼 - 第二段（不同色塊） */}
-      <section className="py-20 px-4 bg-[#E8E4DC]">
-        <div className="max-w-3xl mx-auto text-center">
-          <p className="text-stone-600 text-lg leading-relaxed whitespace-pre-line">
-            {ZH.home.whatIsMuni.bodySecond}
+      <section className="py-24 px-4 bg-[#E8E4DC]">
+        <div className="max-w-[42rem] mx-auto text-center">
+          {/* 第一句：引入 */}
+          <p className="text-stone-600 text-lg leading-[2] whitespace-pre-line mb-10">
+            {ZH.home.whatIsMuni.bodySecondIntro}
+          </p>
+          {/* 中間段落 */}
+          <p className="text-stone-600 text-lg leading-[2] whitespace-pre-line mb-12">
+            {ZH.home.whatIsMuni.bodySecondMiddle}
+          </p>
+          {/* 核心句：獨立段落，視覺強化 */}
+          <p className="text-stone-700 text-lg leading-[2] whitespace-pre-line font-medium">
+            {ZH.home.whatIsMuni.bodySecondCore}
           </p>
         </div>
       </section>
