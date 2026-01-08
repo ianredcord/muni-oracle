@@ -63,7 +63,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 2. MUNI 是什麼 */}
+      {/* 2. MUNI 是什麼 - 第一段 */}
       <section id="what" className="py-20 px-4 bg-white scroll-mt-16">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="font-serif text-3xl md:text-4xl font-bold text-[#4a5548] mb-8">
@@ -71,6 +71,15 @@ export default function Home() {
           </h2>
           <p className="text-stone-600 text-lg leading-relaxed whitespace-pre-line">
             {ZH.home.whatIsMuni.body}
+          </p>
+        </div>
+      </section>
+
+      {/* 2b. MUNI 是什麼 - 第二段（不同色塊） */}
+      <section className="py-20 px-4 bg-[#E8E4DC]">
+        <div className="max-w-3xl mx-auto text-center">
+          <p className="text-stone-600 text-lg leading-relaxed whitespace-pre-line">
+            {ZH.home.whatIsMuni.bodySecond}
           </p>
         </div>
       </section>
