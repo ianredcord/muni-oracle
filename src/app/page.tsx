@@ -204,8 +204,8 @@ export default function Home() {
               </div>
               <div className="md:w-1/2 h-64 md:h-80 relative">
                 <Image
-                  src="/images/home-bg.jpg"
-                  alt="牟尼香"
+                  src="/muni-incense.jpg"
+                  alt="MUNI 牡尼香 - 結合精油與花精的天然植物能量"
                   fill
                   className="object-cover"
                 />
