@@ -298,6 +298,21 @@ function ResultClient(props: { cardSlug: string }) {
                   MUNI 能量支持
                 </Link>
               </div>
+
+              {/* MUNI 療癒顧問按鈕 */}
+              <div className="mt-3">
+                <a
+                  href={`https://muni-ai-consultant.manus.space/chat?flower=${flower.slug}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-2 w-full bg-gradient-to-r from-[#9A7B4F] to-[#C4A265] hover:from-[#8A6B3F] hover:to-[#B49255] text-white rounded-full px-6 py-3 text-base font-medium transition-all shadow-md hover:shadow-lg"
+                >
+                  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                  </svg>
+                  與 MUNI 療癒顧問聊聊
+                </a>
+              </div>
             </div>
 
             {/* 內容區域 */}
@@ -437,6 +452,21 @@ function ResultClient(props: { cardSlug: string }) {
                 >
                   {ZH.draw.result.viewDetail}
                 </Link>
+              </div>
+
+              {/* MUNI 療癒顧問 CTA */}
+              <div className="mt-4">
+                <a
+                  href={`https://muni-ai-consultant.manus.space/chat?flower=${flower.slug}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-2 w-full bg-gradient-to-r from-[#9A7B4F] to-[#C4A265] hover:from-[#8A6B3F] hover:to-[#B49255] text-white rounded-full px-6 py-3 text-base font-medium transition-all shadow-md hover:shadow-lg"
+                >
+                  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                  </svg>
+                  與 MUNI 療癒顧問聊聊這張牌卡
+                </a>
               </div>
             </div>
           </motion.div>
