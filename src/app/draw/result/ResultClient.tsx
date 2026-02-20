@@ -302,7 +302,7 @@ function ResultClient(props: { cardSlug: string }) {
               {/* MUNI 療癒顧問按鈕 */}
               <div className="mt-3">
                 <a
-                  href={`https://muni-ai-consultant.manus.space/chat?flower=${flower.slug}`}
+                  href={`https://ai.munione.co/chat?flower=${flower.slug}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center gap-2 w-full bg-gradient-to-r from-[#9A7B4F] to-[#C4A265] hover:from-[#8A6B3F] hover:to-[#B49255] text-white rounded-full px-6 py-3 text-base font-medium transition-all shadow-md hover:shadow-lg"
@@ -457,7 +457,7 @@ function ResultClient(props: { cardSlug: string }) {
               {/* MUNI 療癒顧問 CTA */}
               <div className="mt-4">
                 <a
-                  href={`https://muni-ai-consultant.manus.space/chat?flower=${flower.slug}`}
+                  href={`https://ai.munione.co/chat?flower=${flower.slug}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center gap-2 w-full bg-gradient-to-r from-[#9A7B4F] to-[#C4A265] hover:from-[#8A6B3F] hover:to-[#B49255] text-white rounded-full px-6 py-3 text-base font-medium transition-all shadow-md hover:shadow-lg"

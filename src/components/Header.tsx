@@ -33,7 +33,7 @@ export function Header() {
             {ZH.nav.energySupport}
           </Link>
           <a
-            href="https://muni-ai-consultant.manus.space"
+            href="https://ai.munione.co"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-1.5 bg-gradient-to-r from-[#9A7B4F] to-[#C4A265] hover:from-[#8A6B3F] hover:to-[#B49255] text-white rounded-full px-4 py-1.5 text-sm font-medium transition-all shadow-sm hover:shadow-md"
