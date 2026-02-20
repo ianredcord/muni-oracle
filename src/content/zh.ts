@@ -8,6 +8,7 @@ export const ZH = {
     goHome: "回首頁",
     flowerIndex: "牟尼花精百科",
     energySupport: "能量支持",
+    healingConsultant: "MUNI 療癒顧問",
   },
 
   home: {

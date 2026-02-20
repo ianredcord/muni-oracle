@@ -251,6 +251,9 @@ export default function Home() {
             <Link href="/flowers" className="text-stone-500 hover:text-[#4a5548] text-sm transition-colors">
               {ZH.nav.flowerIndex}
             </Link>
+            <a href="https://muni-ai-consultant.manus.space" target="_blank" rel="noopener noreferrer" className="text-[#9A7B4F] hover:text-[#8A6B3F] text-sm font-medium transition-colors">
+              {ZH.nav.healingConsultant}
+            </a>
           </div>
           <p className="text-stone-400 text-xs">
             {ZH.home.footer.note}
