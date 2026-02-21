@@ -13,28 +13,28 @@ export function Header() {
         </Link>
 
         {/* 右側：導覽連結 */}
-        <nav className="flex items-center gap-4 md:gap-6">
+        <nav className="flex items-center gap-3 md:gap-6">
           <Link 
             href="/draw" 
-            className="text-stone-600 hover:text-[#4a5548] text-sm font-medium transition-colors"
+            className="text-stone-600 hover:text-[#4a5548] text-sm font-medium transition-colors hidden sm:inline"
           >
             {ZH.nav.startDraw}
           </Link>
           <Link 
             href="/flowers" 
-            className="text-stone-600 hover:text-[#4a5548] text-sm font-medium transition-colors hidden sm:inline"
+            className="text-stone-600 hover:text-[#4a5548] text-sm font-medium transition-colors hidden md:inline"
           >
             {ZH.nav.flowerIndex}
           </Link>
           <Link 
             href="/energy-support" 
-            className="text-stone-600 hover:text-[#4a5548] text-sm font-medium transition-colors hidden sm:inline"
+            className="text-stone-600 hover:text-[#4a5548] text-sm font-medium transition-colors hidden md:inline"
           >
             {ZH.nav.energySupport}
           </Link>
           <Link 
             href="/systems" 
-            className="text-stone-600 hover:text-[#4a5548] text-sm font-medium transition-colors hidden sm:inline"
+            className="text-stone-600 hover:text-[#4a5548] text-sm font-medium transition-colors"
           >
             療癒系統
           </Link>
