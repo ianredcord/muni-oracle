@@ -60,15 +60,15 @@ const SYSTEMS = [
   },
   {
     id: "ginseng",
-    title: "人蔘",
-    subtitle: "元氣的根本補給",
+    title: "MUNI × 韓國頂級人蔘",
+    subtitle: "千年本草智慧 × 共振頻率",
     description:
-      "精選頂級人蔘，從根本補充生命能量。在 MUNI 的體系中，人蔘是身體層面的能量基石，為其他療癒系統提供穩固的物質基礎。",
-    href: "#",
+      "嚴選韓國六年根紅參，結合沉香、鹿茸等珍貴原料。透過 MUNI Frequency Resonance™ 六層共振校準，讓人蔘皂苷的能量頻率與人體細胞達到最深層的諧振。三款嚴選製品，從溫補元氣到美容養顏。",
+    href: "/ginseng",
     icon: "🌿",
     color: "from-orange-50 to-red-50",
     borderColor: "border-orange-200",
-    status: "coming",
+    status: "available",
   },
   {
     id: "olive-oil",
