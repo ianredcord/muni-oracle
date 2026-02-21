@@ -25,7 +25,7 @@ const WINES = [
     pairing: "聖杯二號 — 定心",
     pairingMood: "需要回到清晰、堅定的時刻",
     image:
-      "https://www.kellerei-eisacktal.it/media/image_bottle/GRANIT_960.png",
+      "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/RPvhSmRURoIwGGHT.jpg",
     highlight: true,
   },
   {
@@ -43,7 +43,7 @@ const WINES = [
     pairing: "聖杯四號 — 放心",
     pairingMood: "放下執著，回到柔軟與接納的時刻",
     image:
-      "https://www.kellerei-eisacktal.it/media/image_bottle/cantina_valle_isarco_vino_adamantis.png",
+      "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/XIClwNZLYrOfPbsr.png",
     highlight: true,
   },
   {
@@ -61,7 +61,7 @@ const WINES = [
     pairing: "聖杯五號 — 靜心",
     pairingMood: "睡前的安定儀式，讓心回到寧靜",
     image:
-      "https://www.kellerei-eisacktal.it/media/image_bottle/sylvaner-randlos-zugeschnitten-png-ok.png",
+      "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/BWtTAqGcgQhogaPd.png",
     highlight: false,
   },
   {
@@ -79,7 +79,7 @@ const WINES = [
     pairing: "聖杯三號 — 開心",
     pairingMood: "慶祝的時刻，喚醒內在的喜悅與活力",
     image:
-      "https://www.kellerei-eisacktal.it/media/image_bottle/cantina_valle_isarco_vino_aristos_zero_pas_dose.png",
+      "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/VWmuefWQeOLAHbvl.png",
     highlight: false,
   },
   {
@@ -97,7 +97,7 @@ const WINES = [
     pairing: "聖杯一號 — 安心",
     pairingMood: "需要安全感與穩定的時刻",
     image:
-      "https://www.kellerei-eisacktal.it/media/image_bottle/sylvaner-randlos-zugeschnitten-png-ok.png",
+      "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/QqQqJuvsRoGlPCvy.png",
     highlight: false,
   },
   {
@@ -115,7 +115,7 @@ const WINES = [
     pairing: "聖杯六號 — 護心",
     pairingMood: "建立能量邊界，保護內在空間",
     image:
-      "https://www.kellerei-eisacktal.it/media/image_bottle/cantina_valle_isarco_aristos_blauburgunder.png",
+      "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/AARWPVqMSRxruIYq.png",
     highlight: false,
   },
   {
@@ -133,7 +133,7 @@ const WINES = [
     pairing: "聖杯二號 — 定心",
     pairingMood: "日常的清晰與專注時刻",
     image:
-      "https://www.kellerei-eisacktal.it/media/image_bottle/kerner.png",
+      "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/fIeLzuZcvmXkOcYh.png",
     highlight: false,
   },
   {
@@ -151,7 +151,7 @@ const WINES = [
     pairing: "聖杯四號 — 放心",
     pairingMood: "放鬆的週末時光",
     image:
-      "https://www.kellerei-eisacktal.it/media/image_bottle/cantina_valle_isarco_classici_blauburgunder.png",
+      "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/XvXuYSjFGXFUmasx.png",
     highlight: false,
   },
   {
@@ -169,7 +169,7 @@ const WINES = [
     pairing: "聖杯三號 — 開心",
     pairingMood: "聚會開場，喚醒愉悅的社交能量",
     image:
-      "https://www.kellerei-eisacktal.it/media/image_bottle/brut_01_randlos_1_prop_6_1.png",
+      "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/PuTObeQvaLbykmPZ.png",
     highlight: false,
   },
 ];
@@ -233,7 +233,7 @@ export default function WinePage() {
             <div className="relative w-60 h-80 md:w-72 md:h-96 flex-shrink-0">
               <div className="absolute inset-0 bg-gradient-to-br from-amber-600/20 to-purple-600/10 rounded-full blur-3xl" />
               <Image
-                src="https://www.kellerei-eisacktal.it/media/image_bottle/GRANIT_960.png"
+                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/RPvhSmRURoIwGGHT.jpg"
                 alt="Granit 960 — Kellerei Eisacktal 旗艦酒款"
                 fill
                 className="object-contain drop-shadow-2xl"
@@ -661,6 +661,86 @@ export default function WinePage() {
                 <p className="text-white/60 text-sm leading-relaxed">
                   {ritual.description}
                 </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 國際獎項認證 */}
+      <section className="py-20 px-4 bg-white">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-12">
+            <p className="text-sm tracking-[0.3em] text-[#9A7B4F] mb-4">
+              INTERNATIONAL AWARDS
+            </p>
+            <h2 className="font-serif text-2xl md:text-3xl font-bold text-[#4a5548] mb-4">
+              國際獎項認證
+            </h2>
+            <p className="text-stone-500 max-w-xl mx-auto">
+              Kellerei Eisacktal 的酒款屢獲國際權威評鑑肯定，
+              品質獲得全球最嚴格的葡萄酒評審認可。
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              {
+                wine: "Cuvée Adamantis 2021",
+                awards: [
+                  { org: "Bibenda", score: "5 Grappoli", icon: "🏆" },
+                  { org: "Decanter World Wine Awards", score: "95 分", icon: "🥇" },
+                  { org: "Falstaff", score: "95 分", icon: "🏅" },
+                  { org: "VITAE-AIS", score: "4 Viti", icon: "🍇" },
+                ],
+              },
+              {
+                wine: "Aristos Kerner 2024",
+                awards: [
+                  { org: "James Suckling", score: "94 分", icon: "🥇" },
+                  { org: "Doctor Wine", score: "96 分 (Faccino)", icon: "🏆" },
+                  { org: "Bibenda", score: "5 Grappoli", icon: "🏆" },
+                  { org: "Gambero Rosso", score: "Tre Bicchieri", icon: "🥂" },
+                ],
+              },
+              {
+                wine: "Sabiona Sylvaner",
+                awards: [
+                  { org: "Doctor Wine", score: "Best Sylvaner 2025", icon: "🏆" },
+                  { org: "Doctor Wine", score: "96 分 (Faccino)", icon: "🥇" },
+                ],
+              },
+              {
+                wine: "Aristos Sylvaner 2023",
+                awards: [
+                  { org: "VITAE-AIS", score: "4 Viti", icon: "🍇" },
+                ],
+              },
+              {
+                wine: "Aristos Pinot Noir 2021",
+                awards: [
+                  { org: "Decanter", score: "Silver Medal", icon: "🥈" },
+                ],
+              },
+            ].map((item, idx) => (
+              <div
+                key={idx}
+                className="bg-gradient-to-br from-stone-50 to-amber-50/30 rounded-2xl p-6 border border-stone-100 shadow-sm"
+              >
+                <h3 className="font-serif text-lg font-bold text-[#4a5548] mb-4">
+                  {item.wine}
+                </h3>
+                <div className="space-y-2.5">
+                  {item.awards.map((award, aidx) => (
+                    <div key={aidx} className="flex items-start gap-2">
+                      <span className="text-base flex-shrink-0">{award.icon}</span>
+                      <div>
+                        <p className="text-sm font-medium text-[#4a5548]">{award.org}</p>
+                        <p className="text-xs text-[#9A7B4F]">{award.score}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
               </div>
             ))}
           </div>
