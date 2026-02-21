@@ -289,6 +289,13 @@ const LAYERS = [
 ];
 
 export default function FrequencyPage() {
+  /* eslint-disable @typescript-eslint/no-explicit-any */
+  const L0 = LAYERS[0] as any;
+  const L1 = LAYERS[1] as any;
+  const L2 = LAYERS[2] as any;
+  const L3 = LAYERS[3] as any;
+  const L4 = LAYERS[4] as any;
+  const L5 = LAYERS[5] as any;
   return (
     <div className="min-h-screen bg-[#0a0f0d] text-stone-200">
       <DarkHeader />
@@ -406,9 +413,9 @@ export default function FrequencyPage() {
                 Layer 01
               </p>
               <h2 className="font-serif text-3xl md:text-4xl text-white">
-                {LAYERS[0].title}
+                {L0.title}
               </h2>
-              <p className="text-stone-400 mt-1">{LAYERS[0].subtitle}</p>
+              <p className="text-stone-400 mt-1">{L0.subtitle}</p>
             </div>
           </div>
 
@@ -418,10 +425,10 @@ export default function FrequencyPage() {
               一個被遺忘的問題
             </p>
             <p className="font-serif text-lg md:text-xl text-stone-300 leading-relaxed italic">
-              「{LAYERS[0].question}」
+              「{L0.question}」
             </p>
             <p className="text-stone-400 mt-6 leading-relaxed text-sm md:text-base">
-              {LAYERS[0].answer}
+              {L0.answer}
             </p>
           </div>
 
@@ -430,7 +437,7 @@ export default function FrequencyPage() {
             實驗歷程：從混沌中聽見秩序
           </h3>
           <div className="grid gap-4 mb-12">
-            {LAYERS[0].experiments.map((exp, i) => (
+            {L0.experiments.map((exp: any, i: number) => (
               <div
                 key={i}
                 className="flex items-start gap-4 p-5 rounded-xl bg-white/[0.02] border border-white/5 hover:border-amber-600/20 transition-colors"
@@ -457,7 +464,7 @@ export default function FrequencyPage() {
               當這個頻率出現時——水趨向最高對稱結構、天然植物素材的分子振盪達到最低熵狀態、人體自律神經自然趨向安全與連結狀態、筋膜系統從高張力防禦轉為低張力流動、不同地理環境下的實驗結果保持一致。
             </p>
             <blockquote className="border-l-2 border-amber-500/50 pl-4 text-stone-400 italic text-sm">
-              {LAYERS[0].quote}
+              {L0.quote}
             </blockquote>
           </div>
 
@@ -466,7 +473,7 @@ export default function FrequencyPage() {
             MUNI 基頻的五大核心特徵
           </h3>
           <div className="grid md:grid-cols-5 gap-3 mb-8">
-            {LAYERS[0].traits.map((trait, i) => (
+            {L0.traits.map((trait: any, i: number) => (
               <div
                 key={i}
                 className="p-4 rounded-xl bg-white/[0.03] border border-white/5 text-center"
@@ -500,19 +507,19 @@ export default function FrequencyPage() {
                 Layer 02
               </p>
               <h2 className="font-serif text-3xl md:text-4xl text-white">
-                {LAYERS[1].title}
+                {L1.title}
               </h2>
-              <p className="text-stone-400 mt-1">{LAYERS[1].subtitle}</p>
+              <p className="text-stone-400 mt-1">{L1.subtitle}</p>
             </div>
           </div>
 
           <p className="text-stone-300 leading-relaxed mb-10 max-w-3xl text-sm md:text-base">
-            {LAYERS[1].description}
+            {L1.description}
           </p>
 
           {/* 三大特性 */}
           <div className="grid md:grid-cols-3 gap-6 mb-12">
-            {LAYERS[1].properties.map((prop, i) => (
+            {L1.properties.map((prop: any, i: number) => (
               <div
                 key={i}
                 className="p-6 rounded-2xl bg-gradient-to-br from-emerald-900/15 to-emerald-800/5 border border-emerald-600/15"
@@ -547,7 +554,7 @@ export default function FrequencyPage() {
                 </tr>
               </thead>
               <tbody>
-                {LAYERS[1].scales.map((s, i) => (
+                {L1.scales.map((s: any, i: number) => (
                   <tr key={i} className="border-b border-white/5">
                     <td className="py-3 px-4 text-white font-medium">
                       {s.level}
@@ -573,7 +580,7 @@ export default function FrequencyPage() {
           </div>
 
           <blockquote className="border-l-2 border-emerald-500/50 pl-4 text-stone-400 italic mt-8 text-sm">
-            {LAYERS[1].quote}
+            {L1.quote}
           </blockquote>
         </div>
       </section>
@@ -591,14 +598,14 @@ export default function FrequencyPage() {
                 Layer 03
               </p>
               <h2 className="font-serif text-3xl md:text-4xl text-white">
-                {LAYERS[2].title}
+                {L2.title}
               </h2>
-              <p className="text-stone-400 mt-1">{LAYERS[2].subtitle}</p>
+              <p className="text-stone-400 mt-1">{L2.subtitle}</p>
             </div>
           </div>
 
           <p className="text-stone-300 leading-relaxed mb-10 max-w-3xl text-sm md:text-base">
-            {LAYERS[2].description}
+            {L2.description}
           </p>
 
           {/* 對比表格 */}
@@ -621,7 +628,7 @@ export default function FrequencyPage() {
                 </tr>
               </thead>
               <tbody>
-                {LAYERS[2].comparison.map((c, i) => (
+                {L2.comparison.map((c: any, i: number) => (
                   <tr key={i} className="border-b border-white/5">
                     <td className="py-3 px-4 text-white font-medium">
                       {c.dimension}
@@ -667,7 +674,7 @@ export default function FrequencyPage() {
           </div>
 
           <blockquote className="border-l-2 border-violet-500/50 pl-4 text-stone-400 italic text-sm">
-            {LAYERS[2].quote}
+            {L2.quote}
           </blockquote>
         </div>
       </section>
@@ -685,19 +692,19 @@ export default function FrequencyPage() {
                 Layer 04
               </p>
               <h2 className="font-serif text-3xl md:text-4xl text-white">
-                {LAYERS[3].title}
+                {L3.title}
               </h2>
-              <p className="text-stone-400 mt-1">{LAYERS[3].subtitle}</p>
+              <p className="text-stone-400 mt-1">{L3.subtitle}</p>
             </div>
           </div>
 
           <p className="text-stone-300 leading-relaxed mb-10 max-w-3xl text-sm md:text-base">
-            {LAYERS[3].description}
+            {L3.description}
           </p>
 
           {/* 三條通道 */}
           <div className="grid md:grid-cols-3 gap-6 mb-12">
-            {LAYERS[3].channels.map((ch, i) => (
+            {L3.channels.map((ch: any, i: number) => (
               <div
                 key={i}
                 className="p-6 rounded-2xl bg-gradient-to-br from-cyan-900/15 to-cyan-800/5 border border-cyan-600/15"
@@ -742,7 +749,7 @@ export default function FrequencyPage() {
               </div>
             </div>
             <blockquote className="text-stone-400 italic text-sm max-w-xl mx-auto">
-              {LAYERS[3].quote}
+              {L3.quote}
             </blockquote>
           </div>
         </div>
@@ -761,14 +768,14 @@ export default function FrequencyPage() {
                 Layer 05
               </p>
               <h2 className="font-serif text-3xl md:text-4xl text-white">
-                {LAYERS[4].title}
+                {L4.title}
               </h2>
-              <p className="text-stone-400 mt-1">{LAYERS[4].subtitle}</p>
+              <p className="text-stone-400 mt-1">{L4.subtitle}</p>
             </div>
           </div>
 
           <p className="text-stone-300 leading-relaxed mb-10 max-w-3xl text-sm md:text-base">
-            {LAYERS[4].description}
+            {L4.description}
           </p>
 
           {/* 產品共振矩陣 */}
@@ -791,7 +798,7 @@ export default function FrequencyPage() {
                 </tr>
               </thead>
               <tbody>
-                {LAYERS[4].matrix.map((m, i) => (
+                {L4.matrix.map((m: any, i: number) => (
                   <tr key={i} className="border-b border-white/5">
                     <td className="py-3 px-4 text-white font-medium">
                       {m.path}
@@ -845,7 +852,7 @@ export default function FrequencyPage() {
           </div>
 
           <blockquote className="border-l-2 border-rose-500/50 pl-4 text-stone-400 italic text-sm">
-            {LAYERS[4].quote}
+            {L4.quote}
           </blockquote>
         </div>
       </section>
@@ -863,19 +870,19 @@ export default function FrequencyPage() {
                 Layer 06
               </p>
               <h2 className="font-serif text-3xl md:text-4xl text-white">
-                {LAYERS[5].title}
+                {L5.title}
               </h2>
-              <p className="text-stone-400 mt-1">{LAYERS[5].subtitle}</p>
+              <p className="text-stone-400 mt-1">{L5.subtitle}</p>
             </div>
           </div>
 
           <p className="font-serif text-lg md:text-xl text-stone-300 leading-relaxed mb-10 italic">
-            「{LAYERS[5].description}」
+            「{L5.description}」
           </p>
 
           {/* 三個傳統視角 */}
           <div className="grid md:grid-cols-3 gap-6 mb-12">
-            {LAYERS[5].perspectives.map((p, i) => (
+            {L5.perspectives.map((p: any, i: number) => (
               <div
                 key={i}
                 className="p-6 rounded-2xl bg-gradient-to-br from-yellow-900/15 to-amber-800/5 border border-yellow-600/15"
@@ -896,7 +903,7 @@ export default function FrequencyPage() {
               同一個共振場的四種表達
             </h4>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              {LAYERS[5].levels.map((l, i) => (
+              {L5.levels.map((l: any, i: number) => (
                 <div key={i} className="text-center p-4">
                   <p className="text-yellow-400/80 text-xs tracking-wider uppercase mb-2">
                     {l.plane}
@@ -908,7 +915,7 @@ export default function FrequencyPage() {
           </div>
 
           <blockquote className="border-l-2 border-yellow-500/50 pl-4 text-stone-400 italic text-sm">
-            {LAYERS[5].quote}
+            {L5.quote}
           </blockquote>
         </div>
       </section>
