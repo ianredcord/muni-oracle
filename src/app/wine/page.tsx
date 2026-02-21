@@ -694,7 +694,23 @@ export default function WinePage() {
           </div>
 
           <div className="space-y-4">
-            {WINES.slice(0, 6).map((wine) => {
+            {(() => {
+              const cnNum: Record<string, number> = { "一": 1, "二": 2, "三": 3, "四": 4, "五": 5, "六": 6 };
+              const getPairingOrder = (p: string) => {
+                const match = p.match(/[一二三四五六]/);
+                return match ? cnNum[match[0]] ?? 99 : 99;
+              };
+              // 按聖杯號碼分組，每組可能有多款酒
+              const grouped = new Map<string, typeof WINES>();
+              WINES.forEach((w) => {
+                if (!w.pairing.startsWith("聖杯")) return;
+                const arr = grouped.get(w.pairing) || [];
+                arr.push(w);
+                grouped.set(w.pairing, arr);
+              });
+              const sorted = [...grouped.entries()].sort(
+                (a, b) => getPairingOrder(a[0]) - getPairingOrder(b[0])
+              );
               const colorMap: Record<string, { bg: string; border: string }> = {
                 "聖杯一號 — 安心": { bg: "from-violet-50 to-purple-50", border: "border-violet-200" },
                 "聖杯二號 — 定心": { bg: "from-sky-50 to-blue-50", border: "border-sky-200" },
@@ -703,30 +719,32 @@ export default function WinePage() {
                 "聖杯五號 — 靜心": { bg: "from-teal-50 to-emerald-50", border: "border-teal-200" },
                 "聖杯六號 — 護心": { bg: "from-emerald-50 to-green-50", border: "border-emerald-200" },
               };
-              const pairStyle = colorMap[wine.pairing] || { bg: "from-stone-50 to-white", border: "border-stone-200" };
-              return (
-                <div
-                  key={wine.id}
-                  className={`bg-gradient-to-br ${pairStyle.bg} rounded-2xl p-6 border ${pairStyle.border}`}
-                >
-                  <div className="flex flex-col sm:flex-row gap-4">
-                    <div className="flex-1">
-                      <div className="flex items-center gap-2 mb-2">
-                        <span className="text-lg">🍷</span>
-                        <span className="font-medium text-[#4a5548]">
-                          {wine.name} {wine.vintage !== "NV" ? wine.vintage : ""}
-                        </span>
-                      </div>
-                      <div className="flex items-center gap-2 mb-3">
-                        <span className="text-lg">🫧</span>
-                        <span className="font-medium text-[#4a5548]">{wine.pairing}</span>
-                      </div>
-                      <p className="text-sm text-stone-500 pl-8">{wine.pairingMood}</p>
+              return sorted.map(([pairing, wines]) => {
+                const pairStyle = colorMap[pairing] || { bg: "from-stone-50 to-white", border: "border-stone-200" };
+                return (
+                  <div
+                    key={pairing}
+                    className={`bg-gradient-to-br ${pairStyle.bg} rounded-2xl p-6 border ${pairStyle.border}`}
+                  >
+                    <div className="flex items-center gap-2 mb-3">
+                      <span className="text-lg">🫧</span>
+                      <span className="font-serif font-bold text-[#4a5548]">{pairing}</span>
+                    </div>
+                    <p className="text-sm text-stone-500 mb-4 pl-8">{wines[0].pairingMood}</p>
+                    <div className="space-y-2 pl-8">
+                      {wines.map((w) => (
+                        <div key={w.id} className="flex items-center gap-2">
+                          <span className="text-base">🍷</span>
+                          <span className="text-sm font-medium text-[#4a5548]">
+                            {w.name} {w.vintage !== "NV" ? w.vintage : ""}
+                          </span>
+                        </div>
+                      ))}
                     </div>
                   </div>
-                </div>
-              );
-            })}
+                );
+              });
+            })()}
           </div>
         </div>
       </section>
