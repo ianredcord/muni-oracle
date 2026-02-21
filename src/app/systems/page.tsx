@@ -95,15 +95,15 @@ const SYSTEMS = [
   },
   {
     id: "chocolate",
-    title: "巧克力",
-    subtitle: "心靈的甜蜜慰藉",
+    title: "MUNI × CECILIA 巧克力",
+    subtitle: "世界頂級手工精品巧克力 × 頻率療癒",
     description:
-      "精選高純度可可，富含色胺酸與苯乙胺，能自然提升血清素與多巴胺。在 MUNI 的情緒支持體系中，巧克力是最溫暖的療癒夥伴。",
-    href: "#",
+      "MUNI 攜手世界第一位女性 Maître Chocolatier Cecilia Rabassi，以托斯卡尼雪花石工藝與頻率共振，打造世界最好的手工精品巧克力。",
+    href: "/chocolate",
     icon: "🍫",
     color: "from-amber-50 to-stone-50",
     borderColor: "border-amber-200",
-    status: "coming",
+    status: "available",
   },
 ];
 
