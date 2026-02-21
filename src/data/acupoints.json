@@ -1,0 +1,3143 @@
+[
+  {
+    "id": "一一部位",
+    "bodyPart": "手指",
+    "acupoints": [
+      {
+        "name": "大間穴",
+        "code": "I.A.a.2. 食指掌面 – 間上區",
+        "anatomy": "固有掌側指神經、心臟及六腑分支神經、肝分支神經。",
+        "location": "大間穴：掌面向上，食指第一節正中央偏外側三分是穴。側間穴：掌心向上，當食指第一節正中央外側三分下二分半處，即大間穴下二分半。小間穴：掌面向上，取食指第一節外上方，大間穴直上二分半是穴。",
+        "meridian": "入心、肺二經。",
+        "properties": "大間穴：清心火，瀉肺熱，利咽喉。小間穴：宣肺止咳，消腫止痛。",
+        "indications": "大間穴：心內膜炎、心悸、心臟性喘息、疝氣、扁桃腺炎、腹脹氣、三叉神經痛、小兒氣喘、疳積、腸炎。側間穴：宣肺化痰，通經活絡，清熱鎮痛。小間穴：吐黃痰、支氣管喘息、胸悶、心悸、膝蓋痛、疝氣特效、小腸脹氣、角膜炎、扁桃腺炎、小兒氣喘、疳積、腸炎。",
+        "technique": "大間穴：五分針直刺，入針一～四分。直刺一分為心臟分支神經，直刺二～四分為肝及大小腸神經。或以三稜針放血。側間穴：五分針，直刺二～四分，或以三稜針扎出血，治氣喘、支氣管炎、小兒肺炎特效。小間穴：五分針，直刺二～四分。或以放血針扎出血，效果與大間穴同。",
+        "needleFeeling": "局部脹痛麻電感。",
+        "application": "對側取穴，左病取右、右病取左。",
+        "notes": "大間、小間、外間等都是肺氣管在掌診上的反應點，如穴上有反應點時，針之必效，此穴入心經穴位較淺。因此，淺刺即得，又此穴亦可治氣喘，但效果較定喘穴及雙喘穴為差，又董公說只可單手取穴，但臨床經驗，雙手取穴不忌。側間穴：在董公之書上未列，乃胡醫師著上所公開的，側間之主治大致與大間同，在董氏所傳之針法，常有取齊刺、旁刺之針法，這都是為加強針效之故，故在臨床上，董氏門人甚少取獨穴，因此在臨床上大間、小間、中間、下間可取其中三穴下針。小間穴：有疝氣之病人如在董氏獨特掌診上氣管及男性生殖器之診斷部份上，如有出現青筋之色時，這時取用上列部份上有關穴位時，對治療疝氣之效果非常顯著。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/07/I-A-a-2_da-jian_ce-jian_xiao-jian_left_zh.png",
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/07/I-A-a-2_da-jian_ce-jian_xiao-jian_right_zh.png"
+        ]
+      },
+      {
+        "name": "中間穴",
+        "code": "I.A.a.2. 食指掌面 – 間上區",
+        "anatomy": "固有掌側指神經、肺及心臟分支神經、六腑神經。",
+        "location": "掌心向上，當食指第一節正中央。",
+        "meridian": "入心、肺二經。",
+        "properties": "調心氣，寬胸利膈。",
+        "indications": "心悸、疝氣、胸部發悶、膝蓋痛、頭暈、眼睛痠痛、眼花背痛。",
+        "technique": "五分針直刺，針深二～三分。",
+        "needleFeeling": "局部有酸痛感及微脹感。",
+        "application": "",
+        "notes": "",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/07/I-A-a-2_zhon-gjian_left_zh.png",
+          "http://www.tungs-acupuncture.com/wp-content/uploads/2019/07/I-A-a-2_zhon-gjian_right.png"
+        ]
+      },
+      {
+        "name": "木一穴",
+        "code": "I.A.a.5. 食指掌面 – 木區",
+        "anatomy": "固有掌側指神經、肝神經。",
+        "location": "木二穴：掌心向上，當食指第一節正中央，即中間穴內側三分處是穴。木一穴：掌心向上，當木二穴下二分半處是穴。木三穴：掌心向上，當木二穴上二分半處是穴。",
+        "meridian": "木二穴：入肝經。木一穴、木三穴：入肝、胃、肺三經。",
+        "properties": "木二穴：疏肝理氣，活血祛風。木一穴、木三穴：瀉肝膽熱，開鬱通竅。",
+        "indications": "木二穴：脾氣暴躁、肝火旺盛、肩膀緊痛、右脅下痛、項緊痛、膽固醇過高、胃脹痛。木一穴：口苦耳鳴、肝火旺盛、脾氣暴躁、肩膀酸痛、右脅下痛、項緊痛。木三穴：口苦耳鳴、肝火旺盛、脾氣暴躁、肩膀酸痛、右脅下痛、項緊痛、膽固醇過高、脅肋痛、胃脹滯煩痛。",
+        "technique": "五分針，直刺二～四分。",
+        "needleFeeling": "局部酸脹疼痛感。",
+        "application": "雙手取穴效果更佳。木一穴、木二穴、木三穴在臨床應用上，可任取一～二穴使用，以放血針點刺出血，治胃腸脹氣、脅痛甚效。雙手取穴不忌。",
+        "notes": "木一穴：下針的深淺，通的經就有所別，木一穴、木二穴、木三穴為胡師所列，在董公書中有二個木穴圖示，而書中只有木穴一穴而已，此三穴，可用五分針，淺刺一分入肺經，深刺二分到四分入肝胃兩經，這亦是董氏奇穴所特有，常隨扎針的深淺而其所歸屬經就有所不同，這點該特別注意。木穴共有三穴，可三針同下成倒馬針法對右脅下痛，效佳。同時對口乾火大亦有效果。木一、木二、木三穴：治肝機能方面。上三黃穴[註]：治肝之實體方面。\n木二穴：在董公著作中，木穴主治範圍不廣，而胡師擴大其範圍，而賴著在其書中將木穴又稱為感冒穴，賴說木穴對流淚、發汗、止汗、感冒效果不錯，其謂木穴能止感冒流涕於片刻，而筆著認為如要治療感冒流涕單取木穴，不如再配三叉三穴、靈骨、大白，再加足感冒穴，則效果當更佳。木穴在人體臟器全息律投影上為肝區，所以稱木穴，因此取本穴對治右脅下痛，有特效。\n木三穴：賴著在木穴經驗中，木穴可治眼睛易流淚及乾澀，另木穴能止外感風邪不宣、皮膚瘙癢等，因本穴入肝經，目通於肝，因此如賴著所稱可治上列諸症，而筆者認為，如木穴再配合董氏奇穴上三黃穴（天黃、明黃、其黃）、耳朵上之皮膚一、二、三穴，效果當更好。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/07/I-A-a-5_mu_left_zh.png",
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/07/I-A-a-5_mu_right_zh.png"
+        ]
+      },
+      {
+        "name": "心常一穴",
+        "code": "I.A.b.4.中指掌面–心常區",
+        "anatomy": "心常二、三穴：固有掌側指神經、心臟及肺分支神經。心常一穴：固有掌側指神經、心臟神經、肺分支神經。",
+        "location": "心常二穴：掌心向上，當中指第一節正中央內側三分處是穴。心常一穴：掌心向上，當中指第一節中央內側三分下二分半處是穴。心常三穴：掌心向上，當心常二穴上二分半處是穴。",
+        "meridian": "入心、肺二經。",
+        "properties": "心常二、三穴：疏心氣，清包絡，寧心神。心常一穴：調心安神，疏理心氣，清心包絡。",
+        "indications": "風濕性心臟病、心悸、狹心症、心肌梗塞、肺癌、肺結核、胸痛。",
+        "technique": "五分針，直刺二～四分，或以三稜針刺出血。",
+        "needleFeeling": "局部酸脹疼痛感。",
+        "application": "雙手取穴。",
+        "notes": "心常穴在董公所著董氏針灸正經奇穴學中，其部位位於中指第一節中線外開二分，但其書後穴位圖示中並未相符，如根據圖示應為內側才對，胡師受教董公所傳，乃將其訂正為當面第一節正中央內側三分處，董公所著之說，未能校訂，書中所言常與穴位圖示有所出入，坊間諸多著作，皆抄自董公原著未曾訂正，以訛傳訛，實感遺憾。治療心疾：最常用為手心靈穴，大腿通關穴、通山穴，要治心病，可取本穴配以上諸穴，再加第三、四、五、六胸椎，椎間放血。\n心常穴在董公所著有二穴，胡師加上了一穴成三穴，心常穴治心悸及心跳過速有很好效果，另外對慢性心臟擴大有特效，另依作者經驗董氏奇穴中三三部位之心靈一、二、三穴在治療心疾上，依臨穴上經驗驗証，效果較心常穴效果佳。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/07/I-A-b-4_xin-chang_left_zh.png",
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/07/I-A-b-4_xin-chang_right_zh.png"
+        ]
+      },
+      {
+        "name": "心常二穴",
+        "code": "",
+        "anatomy": "固有掌側指神經、心臟及肺分支神經。",
+        "location": "掌心向上，當中指第一節正中央內側三分處是穴。",
+        "meridian": "入心、肺二經。",
+        "properties": "疏心氣，清包絡，寧心神。",
+        "indications": "風濕性心臟病、心悸、狹心症、心肌梗塞、肺結核、胸痛。",
+        "technique": "五分針，直刺二～四分。或以三稜針刺出血。",
+        "needleFeeling": "局部酸脹疼痛感。",
+        "application": "雙手取穴。",
+        "notes": "心常穴在董公所著有二穴，胡師加上了一穴成三穴，心常穴治心悸及心跳過速有很好效果，另外對慢性心臟擴大有特效，另依作者經驗董氏奇穴中三三部位之心靈一、二、三穴在治療心疾上，依臨穴上經驗驗証，效果較心常穴效果佳。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2020/08/1-1-心常二穴-l-.jpg",
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2020/08/1-1-心常二穴-r.jpg"
+        ]
+      },
+      {
+        "name": "心常三穴",
+        "code": "",
+        "anatomy": "固有掌側指神經、心臟及肺分支神經。",
+        "location": "掌心向上，當心常二穴上二分半處是穴。",
+        "meridian": "入心、肺二經。",
+        "properties": "疏心氣，清包絡，寧心神。",
+        "indications": "同心常一、心常二穴。",
+        "technique": "五分針，直刺二～四分。或以三稜針刺出血。",
+        "needleFeeling": "局部脹痛感。",
+        "application": "",
+        "notes": "",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2020/08/1-1-心常三穴-l-.jpg",
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2020/08/1-1-心常三穴-r.jpg"
+        ]
+      },
+      {
+        "name": "火星上穴",
+        "code": "I.A.b.2.中指掌面–火星區",
+        "anatomy": "固有掌側指神經、心臟及肺分支神經。",
+        "location": "火星上穴：掌心向上，當中指第一節正中央處是穴。火星下穴：掌心向上，當中指第二節正中央處是穴。",
+        "meridian": "入心、肺二經。",
+        "properties": "疏心調氣，寬胸利膈。",
+        "indications": "頭暈、心悸、狹心症、心臟性喘息、心臟瓣膜症、胸痛、肩胛骨痛、肺癌、多發性骨癌、兩腿痛、五十肩、嗝逆、胃潰瘍、十二指腸潰瘍。",
+        "technique": "五分針，直刺二～三分。",
+        "needleFeeling": "局部酸脹疼痛感。",
+        "application": "可雙手取穴。",
+        "notes": "掌面中指在掌診中屬心的部位，因此火星上穴、火星下穴及心常穴皆是治療心疾要穴，在臨床取穴上，大多再配上靈骨、大白，較多的穴位，不但可治心疾，另對胸、肺之疾病，亦有其治療的功能。\n火星穴董公著作未公開，由胡師公布。在臨床上可取火星上穴、火星下穴間，剛好於第一節與第二節間橫紋中間取一穴成直倒馬針，針效更佳。中指主心，因此中指上很多穴位，皆可治心疾。心肺同在一區域，因此可治心疾之穴位，亦可治肺病，治肺疾都要加配靈骨穴、大白穴。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/I-A-b-2_huo-xing_left_zh.png",
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/I-A-b-2_huo-xing_right_zh.png"
+        ]
+      },
+      {
+        "name": "火星下穴",
+        "code": "",
+        "anatomy": "固有掌側指神經、肺及心臟分支神經。",
+        "location": "掌心向上，當中指第二節正中央處是穴。",
+        "meridian": "入心、肺二經。",
+        "properties": "疏心調氣，寬胸利膈 。",
+        "indications": "同火星上穴。",
+        "technique": "五分針，直刺二～三分。",
+        "needleFeeling": "",
+        "application": "",
+        "notes": "火星穴董公著作未公開，由胡師公布。在臨床上可取火星上穴、火星下穴間，剛好於第一節與第二節間橫紋中間取一穴成直倒馬針，針效更佳。中指主心，因此中指上很多穴位，皆可治心疾。心肺同在一區域，因此可治心疾之穴位，亦可治肺病，治肺疾都要加配靈骨穴、大白穴。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2020/08/1-1-火星下穴-l.jpg",
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2020/08/1-1-火星下穴-r.jpg"
+        ]
+      },
+      {
+        "name": "脾腫一穴",
+        "code": "I.A.b.7.中指掌面–脾腫區",
+        "anatomy": "固有掌側指神經、正中神經、脾神經、心分支神經。",
+        "location": "脾腫一穴：掌心向上，當中指第二節正中央下二分半處是穴。脾腫二穴：掌心向上，當中指第二節中央上二分半處是穴。",
+        "meridian": "脾腫一穴：入脾胃經。脾腫二穴：入脾、心、肺三經。",
+        "properties": "脾腫一穴：調理脾胃，通經活絡。脾腫二穴：健脾除濕，寬胸清肺。",
+        "indications": "脾腫一穴：脾硬化、脾腫大、肝臟發炎、胃腸脹氣、胸痛、背痛、腳趾酸麻腫痛。脾腫二穴：肝臟發炎、脾腫大、胃脹、腳趾酸痛、肺炎、心臟病、背痛、胸痛。",
+        "technique": "五分針，直刺二～四分。",
+        "needleFeeling": "局部酸脹疼痛感。",
+        "application": "可雙手取穴。",
+        "notes": "董公原著因無公開火星，因此取穴記載與胡師不同，其實兩者穴位是一樣的，脾腫穴與手掌掌面脾臟診斷是一樣可用於掌診，脾臟有問題的人，大都會在手掌面或手指上顯現出異常的膚色。脾腫一穴、脾腫二穴，再取火星下穴可形成倒馬。董氏針灸講究手足對應針法，手指對腳趾，兩者相互下針，可治療相對應部位的疼痛。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/I-A-b-6_pi-zhong_left_zh.png",
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/I-A-b-6_pi-zhong_right_zh.png"
+        ]
+      },
+      {
+        "name": "脾腫二穴",
+        "code": "",
+        "anatomy": "固有掌側指神經、脾神經、心及肺分支神經。",
+        "location": "掌心向上，當中指第二節中央上二分半處是穴。",
+        "meridian": "入脾、心、肺三經。",
+        "properties": "健脾除濕，寬胸清肺。",
+        "indications": "肝臟發炎、脾腫大、胃脹、腳趾酸痛、肺炎、心臟病、背痛、胸痛。",
+        "technique": "五分針，直刺二～四分。",
+        "needleFeeling": "局部酸脹疼痛感。",
+        "application": "可雙手取穴。",
+        "notes": "董氏針灸講究手足對應針法，手指對腳趾，兩者相互下針，可治療相對應部位的疼痛。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2020/08/1-1-脾腫二穴-l.jpg",
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2020/08/1-1-脾腫二穴-r.jpg"
+        ]
+      },
+      {
+        "name": "還巢穴",
+        "code": "I.A.c.5.無名指掌面–巢區",
+        "anatomy": "固有掌側指神經、肝腎副神經。",
+        "location": "掌心向上，當無名指第二節正中央外側五分是穴。",
+        "meridian": "入肝、腎二經。",
+        "properties": "調經理帶，宣通下焦。",
+        "indications": "卵巢炎、卵巢囊腫、子宮癌、子宮痛、月經不調、赤白帶、輸卵管不通、子宮不正、安胎、陰道炎、尿道炎。",
+        "technique": "五分針直刺二～三分。",
+        "needleFeeling": "局部酸脹疼痛感。",
+        "application": "配婦科穴治婦科百病。",
+        "notes": "還巢可配鳳巢穴（無名指第一節手掌外側）、婦科五穴，效果佳。取婦科要穴再加通腎、通胃有安胎效果。懷孕時不可扎倒馬針法，不可扎靈骨、三陰交及手指、腳趾、腳掌等針感較強的穴位，避免引發早產、流產等問題。子宮瘤、子宮癌：可本穴配足三重穴，加婦科、上三黃[註]、不定穴針法，臀部坐骨區放血。從手掌面下針較痛，亦可從手背面下針。赤白帶下：可本穴配足木婦穴及李白、雲白穴。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/I-A-c-5_huan-chao_left_zh.png",
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/I-A-c-5_huan-chao_right_zh.png"
+        ]
+      },
+      {
+        "name": "復原一穴",
+        "code": "I.A.c.6.無名指掌面–復原區",
+        "anatomy": "固有掌側指神經、肝神經、腎神經。",
+        "location": "復原二穴：掌心向上，當復原一穴上二分半處是穴。復原一穴：掌心向上，當無名指第一節正中央內側三分下二分半處是穴。復原三穴：掌心向上，當無名指第一節中央偏內側三分上二分半處是穴。即復原二穴上二分半處。",
+        "meridian": "入肝、腎二經。",
+        "properties": "疏筋益骨，消腫止痛。",
+        "indications": "筋腫痛、骨骼腫大、骨膜炎、脊椎骨疝板症（骨刺）、坐骨神經痛、腰痛。",
+        "technique": "五分針，直刺二～三分。或以三稜針刺出黃水特效。",
+        "needleFeeling": "局部酸脹疼痛感。",
+        "application": "復原穴搭配五虎穴、上三黃穴（天黃、明黃、其黃）治全身骨腫。",
+        "notes": "董公原著復原穴圖示在內側，而書中未明示為第一節內側，而寫無名指之中線外開二分處，語未清楚，胡師將其校訂為第一節內側三分。復原穴在主治方面，董公書中只列了消骨頭腫大，而胡師根據其所知擴大了其主治範圍，公開了一些董氏不傳之秘。一一部位及二二部位上有很多治療脊椎、腰椎及坐骨痛的要穴，當中可取二到三組搭配使用，都能見到效果。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/I-A-c-6_fu-yuan_left_zh.png",
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/I-A-c-6_fu-yuan_right_zh.png"
+        ]
+      },
+      {
+        "name": "復原二穴",
+        "code": "",
+        "anatomy": "同復原一穴。",
+        "location": "掌心向上，當復原一穴上二分半處是穴。",
+        "meridian": "入肝、腎二經。",
+        "properties": "疏筋益骨，消腫止痛。",
+        "indications": "同復原一穴。",
+        "technique": "五分針，直刺二～三分。或以三稜針刺出黃水特效。",
+        "needleFeeling": "局部酸脹疼痛感。",
+        "application": "同復原一穴。",
+        "notes": "復原穴在主治方面，董公書中只列了消骨頭腫大，而胡師根據其所知擴大了其主治範圍，公開了一些董氏不傳之秘。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2020/08/1-1-復原二穴-l.jpg",
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2020/08/1-1-復原二穴-r.jpg"
+        ]
+      },
+      {
+        "name": "復原三穴",
+        "code": "",
+        "anatomy": "同復原一穴。",
+        "location": "掌心向上，當無名指第一節中央偏內側三分上二分半處是穴。即復原二穴上二分半處。",
+        "meridian": "入肝、腎二經。",
+        "properties": "疏筋益骨，消腫止痛。",
+        "indications": "同復原一穴。",
+        "technique": "同復原一穴。",
+        "needleFeeling": "局部酸脹疼痛感。",
+        "application": "同復原一穴。",
+        "notes": "一一部位及二二部位上有很多治療脊椎、腰椎及坐骨痛的要穴，當中可取二到三組搭配使用，都能見到效果。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2020/08/1-1-復原三穴-l.jpg",
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2020/08/1-1-復原三穴-r.jpg"
+        ]
+      },
+      {
+        "name": "偏肩穴",
+        "code": "I.A.c.8.無名指掌面–偏肩區",
+        "anatomy": "固有掌側指神經、肝之神經、脾之神經。",
+        "location": "掌心向上，當無名指第二節中央偏內側五分處是穴。",
+        "meridian": "入肝經。",
+        "properties": "疏經活絡，止痛消瘀。",
+        "indications": "慢性肝炎、肩背痛、五十肩、手背外側痛、頸項痛。",
+        "technique": "五分針，直刺二～四分。",
+        "needleFeeling": "",
+        "application": "右病取左，左病取右。",
+        "notes": "偏肩穴和失枕穴為董公未公開之穴位，此兩穴對治療落枕，效果奇佳，如無針時，可用牙籤取代，刺激後，要患者動動頸部，可速解痛苦。",
+        "configNotes": [
+          "本穴配靈骨、大白、中白穴，效果更佳​"
+        ],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/I-A-c-8_pian-jian_left_zh.png",
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/I-A-c-8_pian-jian_right_zh.png"
+        ]
+      },
+      {
+        "name": "木炎一穴",
+        "code": "I.A.c.7.無名指掌面–木炎區",
+        "anatomy": "",
+        "location": "木炎二穴：掌心向上，當無名指第二節正中央偏內側三分處是穴。木炎一穴：掌心向上，當無名指第二節中央偏內側三分下二分半處是穴。木炎三穴：掌心向上，當木炎二穴上二分半處是穴。",
+        "meridian": "入肝經。",
+        "properties": "瀉肝膽熱，疏肝理氣。",
+        "indications": "氣喘、各種肝炎、肝硬化、腹水、腳抽筋、兩脅痛。",
+        "technique": "五分針，直刺二～三分。",
+        "needleFeeling": "局部酸脹疼痛感。",
+        "application": "木炎一穴、二穴、三穴與八八部位之上三黃穴，功效相同，但一般習慣以腿部上三黃穴[註]為主，而少取用木炎穴。其實它在治療肝臟疾病上也有很好的療效。",
+        "notes": "在董氏所著書中，木炎穴位於掌面無名指第二節中央線外開二分，而書後圖示都標於內側，而胡師將木炎穴訂正，改為掌面無名指第二節正中央偏內側三分處，以符董公所傳。手指上治氣喘的穴位不少，有大間、小間、中間、雙喘二穴、定喘三穴，及本穴，筆者認為不拘以上穴位，只要以上穴位有出現烏黑異色點時，就下針，效果一定有。在手針穴位上，入肝經治療肝疾的穴位有木穴一、二、三，指三黃穴及木炎一、二、三穴，此三組穴皆可治肝有關疾病，當中指三黃穴主治範圍較木炎穴、木穴為廣，可兼治婦科病，此三穴在臨床上，因手針較痛，因而大都取體針上三黃穴[註]較多，又在治療肝病上常另行加配耳穴肝點。依經驗，木炎穴配合耳針肝區加肝靈穴、上三黃穴治療Ｂ型肝炎，在132例的病例中，有78例治癒，18例效果不顯著。另以木炎穴配上三黃穴、水金穴、水通穴、肝炎點，配上常放血治療傳染性肝炎，有291例在連續治療二個月內，CCF及HAA為陰性；上述穴用以治療肝硬化11例，有9例治癒。其餘需配合藥物治療。口腔炎、舌下炎：用龍眼乾種子、甘草、冰片三者研粉後，塗患部。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/I-A-c-7_mu-yan_left_zh.png",
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/I-A-c-7_mu-yan_right_zh.png"
+        ]
+      },
+      {
+        "name": "木炎二穴",
+        "code": "",
+        "anatomy": "固有掌側指神經、肝分支神經。",
+        "location": "掌心向上，當無名指第二節正中央偏內側三分處是穴。",
+        "meridian": "入肝經。",
+        "properties": "瀉肝膽熱，疏肝理氣。",
+        "indications": "各種肝炎、肝硬化、腹水、兩脅痛、腳抽筋、氣喘。",
+        "technique": "五分針，直刺二～三分。",
+        "needleFeeling": "局部酸脹疼痛感。",
+        "application": "",
+        "notes": "在手針穴位上，入肝經治療肝疾的穴位有木穴一、二、三，指三黃穴及木炎一、二、三穴，此三組穴皆可治肝有關疾病，當中指三黃穴主治範圍較木炎穴、木穴為廣，可兼治婦科病，此三穴在臨床上，因手針較痛，因而大都取體針上三黃穴[註]較多，又在治療肝病上常另行加配耳穴肝點。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2020/08/1-1-木炎二穴-l.jpg",
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2020/08/1-1-木炎二穴-r.jpg"
+        ]
+      },
+      {
+        "name": "木炎三穴",
+        "code": "",
+        "anatomy": "同木炎一穴。",
+        "location": "掌心向上，當木炎二穴上二分半處是穴。",
+        "meridian": "入肝經。",
+        "properties": "瀉肝膽熱，疏肝理氣。",
+        "indications": "同木炎一穴。",
+        "technique": "五分針，直刺二～四分。",
+        "needleFeeling": "局部酸脹疼痛感。",
+        "application": "木炎一穴、二穴、三穴與八八部位之上三黃穴，功效相同，但一般習慣以腿部上三黃穴[註]為主，而少取用木炎穴。其實它在治療肝臟疾病上也有很好的療效。",
+        "notes": "",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2020/08/1-1-木炎三穴-l.jpg",
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2020/08/1-1-木炎三穴-r.jpg"
+        ]
+      },
+      {
+        "name": "失枕穴",
+        "code": "I.A.d.7.小指掌面–失枕區",
+        "anatomy": "掌指側固有神經皮下淺枝、腎神經、腦神經。",
+        "location": "手掌心向上，當小指第二節正中央偏內側二分上二分處是穴。",
+        "meridian": "入膀胱經。",
+        "properties": "宣通氣血，開鬱通竅。",
+        "indications": "落枕、頸項痛特效、用腦過度致頭昏腦脹。",
+        "technique": "五分針，直刺二分，或由上往下斜刺二～三分。",
+        "needleFeeling": "局部脹痛感。",
+        "application": "左病取右、右病取左。",
+        "notes": "治療頸區疾病：配合董氏獨傳動氣療法，效果立即顯現。失枕穴可加無名指上偏肩穴，如無方便用針，亦可用指甲重掐。失枕穴可配合偏肩穴、腎關穴，治落枕常能速效。也可加肩凝穴、三重穴、七虎穴，並配合局部放血。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/I-A-d-7_shi-zhen_left_zh.png",
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/I-A-d-7_shi-zhen_right_zh.png"
+        ]
+      },
+      {
+        "name": "踝靈穴",
+        "code": "I.P.e.6.大拇指–踝靈區",
+        "anatomy": "掌側指固有神經、肺神經。",
+        "location": "手掌心向上，當掌指關節橈側處，五虎穴下一分外一分處是穴",
+        "meridian": "入肺經。",
+        "properties": "通經活絡，消腫止痛。",
+        "indications": "內外踝扭傷。",
+        "technique": "五分針，直刺二～三分。",
+        "needleFeeling": "局部酸脹疼痛感。",
+        "application": "",
+        "notes": "踝靈穴為董公及胡師在他們書中皆未曾公布過，僅口傳心授過。此踝靈穴與掌診部份所錄之大拇指圖踝點位置相符。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/I-P-e-6_huai-ling_left_zh.png",
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/I-P-e-6_huai-ling_right_zh.png"
+        ]
+      },
+      {
+        "name": "婦科五穴",
+        "code": "I.P.e.5.大拇指–婦科區",
+        "anatomy": "固有掌側指神經皮下淺枝、子宮神經、六腑神經。",
+        "location": "手背，當大姆指第一節外側，距中央二分半處，從掌指橫紋起，每上二分一穴，至第二節橫紋止，合計五穴。",
+        "meridian": "入任、督二經。",
+        "properties": "調經理帶，宣通下焦。",
+        "indications": "子宮瘤、子宮癌、子宮炎、卵巢炎、不妊症、經痛、月經不調、月經過多或過少、陰痛腫痛、赤白帶下、陰吹、產後風症（月內風症）。",
+        "technique": "五分針，直刺二～三分。或以三稜針淺刺出血。",
+        "needleFeeling": "局部酸脹疼痛感。",
+        "application": "婦科五穴為董氏七十二絕針之一，亦為婦人百病之特效穴。臨床上可任取二～三穴下針，有立竿見影之效。月經來腰酸背痛或小腹痛，婦科五穴可取三穴留針。",
+        "notes": "婦科五穴為主治婦科百病的主穴，為婦科治病必取之要穴，可再配合其他如鳳巢、木婦等婦科相關穴位，本穴配門金穴、上三黃[註]、下三皇[註]治經痛特效。婦科穴，在董公書中有二穴，胡師增三穴，計五穴，筆者認為，在此區域取三穴倒馬即可。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/I-P-e-5_fu-ke_left_zh.png",
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/I-P-e-5_fu-ke_right_zh.png"
+        ]
+      },
+      {
+        "name": "木火四穴",
+        "code": "I.P.z.3.手指掌骨關節–木火區",
+        "anatomy": "固有掌側指神經皮下淺枝、心臟及肝分支神經。",
+        "location": "如上述木火一、木火二、木火三、木火四，穴位說明。",
+        "meridian": "入肝經。",
+        "properties": "疏經活絡，活血祛瘀。",
+        "indications": "半身不遂、腿痛、中風後遺症、草鞋風。",
+        "technique": "由上往下斜剌十五度，入針一～二分。或以放血針淺刺出血奇效。",
+        "needleFeeling": "微酸疼痛感。",
+        "application": "",
+        "notes": "",
+        "configNotes": [
+          "本穴為董氏七十二絕針之一，亦為治療半身不遂特效穴，如配合八關穴效果加倍。"
+        ],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/I-P-z-3_mu-huo_left_zh.png",
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/I-P-z-3_mu-huo_right_zh.png"
+        ]
+      },
+      {
+        "name": "止涎五穴",
+        "code": "I.P.e.3.大拇指–止涎區",
+        "anatomy": "橈骨神經淺枝、眼神經、胃神經。",
+        "location": "手背當大姆指中央線偏內側五分，從掌指橫紋起，每上二分一穴，計有五穴。",
+        "meridian": "入肝、胃二經。",
+        "properties": "扶脾統血，通經活絡。",
+        "indications": "小孩流口水、中風患者流涎、胃寒胃痛、虛泄、角膜炎、結膜炎、視神經炎、視神經萎縮、白內障、迎風流淚、牙痛、腸疝。",
+        "technique": "由內往外斜刺二～三分。或以放血針點刺出血。",
+        "needleFeeling": "局部酸脹疼痛感。",
+        "application": "",
+        "notes": "董公所著之書中只列止涎共二穴，而其穴位取法為大姆指背第一之內側，中央線內開二分，而根據圖示，其穴位近黑白肉交接處，胡師乃將止涎穴位校訂為中央內側五分，並劃分為五穴。董公曾言，每一手指亦同獨立成一系統，手背大拇指為一人體全息，根據頭部、胸腔、上腹、下腹，即可知道止涎所處之位置，又拇指與第一掌骨，亦成一人體全息，整個拇指代表為頭部，而止涎穴所處之位即唾腺分泌之位區。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/I-P-e-3_zhi-xian_left_zh.png",
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/I-P-e-3_zhi-xian_right_zh.png"
+        ]
+      },
+      {
+        "name": "制污穴",
+        "code": "I.P.e.4.大拇指–制污區",
+        "anatomy": "正中神經皮下淺枝、腎神經、脾神經。",
+        "location": "如上述，制污一穴、制污二穴、制污三穴，穴位說明。",
+        "meridian": "入脾、腎二經。",
+        "properties": "消腫祛瘀。",
+        "indications": "久年惡瘡、惡性腫瘤、癰疽或惡性腫瘤開刀後，刀口流污水不止，不收口不結痂者。",
+        "technique": "由下往上斜刺一～二分。或以放血針點出黑血立即見效。",
+        "needleFeeling": "局部疼痛感。",
+        "application": "",
+        "notes": "董公所著書中圖示有制污穴共三穴，但書中並無說明清楚，在其部位和取穴，只說了在大指背第一節中央線上，幾句話而已，遺漏不少，胡師乃將其制污共三穴，標示清楚。",
+        "configNotes": [
+          "本穴配外三關穴、上瘤穴治外科腫瘤效佳。"
+        ],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/I-P-e-4_zhi-wu_left_zh.png",
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/I-P-e-4_zhi-wu_right_zh.png"
+        ]
+      },
+      {
+        "name": "指駟馬穴",
+        "code": "I.P.a.5.食指背面–指駟馬區",
+        "anatomy": "正中神經下淺枝、肺分支神經。",
+        "location": "如上述駟馬一穴、駟馬二穴、駟馬三穴的穴位說明。",
+        "meridian": "入肺經。",
+        "properties": "疏風解表，調和氣血。",
+        "indications": "皮膚病、臉上黑斑、雀斑、鼻炎、耳鳴、中耳炎、胸痛、肋膜炎。",
+        "technique": "直刺一～二分。",
+        "needleFeeling": "局部酸脹疼痛感。",
+        "application": "",
+        "notes": "指駟馬穴與指五金、指千金在同一條直線上，指五金在食指背第一節，指駟馬在第二節，董公原著外開二分，胡著三分，此為兩者出入。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/I-P-a-5_zhi-si-ma_left_zh.png",
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/I-P-a-5_zhi-si-ma_right_zh.png"
+        ]
+      },
+      {
+        "name": "膽穴",
+        "code": "I.P.b.2.中指背面–膽區",
+        "anatomy": "正中神經皮下枝、膽神經 、心副神經。",
+        "location": "如上述膽一穴、膽二穴說明。",
+        "meridian": "入心、膽經。",
+        "properties": "鎮定，理氣，止痛。",
+        "indications": "小兒夜哭、腹脹、腿酸脹、小腿神經痛、頭昏、頭痛、黃膽病、驚悸。",
+        "technique": "膽一穴由內向外斜刺二～三分。膽二穴由外向內斜刺二～三分。",
+        "needleFeeling": "局部酸脹疼痛感。",
+        "application": "",
+        "notes": "膽穴主治在董公原著中只列心驚及小兒夜哭，而胡師增列了不少主治內容，將董氏奇穴的要義不藏私的公布了不少資料。二角明穴治腰椎，而膽穴可配腕順一穴、三河​穴、分水穴治腰痛。慢性膽囊炎發作，引起胃脘部或脅肋痛時，可取膽穴效佳。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/I-P-b-2_dan_left_zh.png",
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/I-P-b-2_dan_right_zh.png"
+        ]
+      },
+      {
+        "name": "二角明穴",
+        "code": "I.P.b.1.中指背面–二角明區",
+        "anatomy": "正中神經皮下枝、腎神經。",
+        "location": "手背，當中指第一節縱軸中央線，距第二節橫紋三分處一穴、六分處一穴，計有兩穴。",
+        "meridian": "入腎經。",
+        "properties": "疏氣化瘀，消脹止痛。",
+        "indications": "眼壓太高之脹痛、眉稜骨酸痛、腰痛、閃腰岔氣、鼻骨酸痛。",
+        "technique": "由上往下斜刺一～二分。或以三稜針點出血。",
+        "needleFeeling": "局部疼痛感。",
+        "application": "",
+        "notes": "由木火二、肺心穴、二角明穴，一直下來，代表人的脊椎骨，亦代表人的督脈，就中指來論二角明所在的部位，就是人腰椎的相應部位，所以二角明可治腰痛、閃腰岔氣等。",
+        "configNotes": [
+          "二角明對腰椎骨原因造成的腰痛，較有效，可加配腕順穴、分水穴、三河穴，及病位放血。"
+        ],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/I-P-b-1_er-jiao-ming_left_zh.png",
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/I-P-b-1_er-jiao-ming_right_zh.png"
+        ]
+      },
+      {
+        "name": "心膝穴",
+        "code": "I.P.b.4.中指背面–心膝區",
+        "anatomy": "正中神經皮下淺枝、心臟分支神經。",
+        "location": "如上述心膝一穴、心膝二穴，穴位說明。",
+        "meridian": "入心經。",
+        "properties": "消腫止痛。",
+        "indications": "肩胛痛、頸項痛、小腿脹痛及酸痛、膝蓋痛。",
+        "technique": "心膝一穴由內向外斜刺二～三分。心膝二穴由外向內斜刺二～三分。",
+        "needleFeeling": "局部酸脹疼痛感。",
+        "application": "兩手一併取穴不忌。",
+        "notes": "心膝穴董公所著有別，在其部位上只寫中指背，第二節中央兩側未註明尺寸，胡師乃標示出來，其穴位位於內外側各五分處是穴。有時不方便下針時，亦可用指甲掐，效果亦佳。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/I-P-b-4_xin-xi_left_zh.png",
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/I-P-b-4_xin-xi_right_zh.png"
+        ]
+      },
+      {
+        "name": "肺心穴",
+        "code": "I.P.b.3.中指背面–肺心區",
+        "anatomy": "正中神經皮下淺枝、心及肺分支神經。",
+        "location": "如上述肺心一、肺心二、肺心三，穴位說明。",
+        "meridian": "入心肺二經。",
+        "properties": "宣通氣血，通絡止痛。",
+        "indications": "頸項骨刺、脊椎骨骨刺、項緊痛、肋膜神經痛、胸痛、背痛、大拇指神經痛、坐骨神經痛、後腦頭痛、小腿痛。",
+        "technique": "由上往下斜刺一～二分。",
+        "needleFeeling": "局部疼痛感。",
+        "application": "",
+        "notes": "肺心穴、二角明穴，都在一條直線上，中指背可視為人體背部，木火二、肺心穴、二角明的連線可視為人體的脊椎，和人體的督脈，所以肺心穴對項緊痛、頸項骨刺，脊椎骨刺有療效。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/I-P-b-3_fei-xin_left_zh.png",
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/I-P-b-3_fei-xin_right_zh.png"
+        ]
+      },
+      {
+        "name": "指腎穴",
+        "code": "I.P.c.3.無名指背面–指腎區",
+        "anatomy": "尺神經、肝副神經、腎副神經、心之神經。",
+        "location": "如上述指腎一、指腎二、指腎三，穴位說明。",
+        "meridian": "入心腎二經。",
+        "properties": "調心氣，滋腎陰。",
+        "indications": "心臟性氣喘、胸痛、腎虧、心臟衰弱、背痛、口乾。",
+        "technique": "直刺一～二分。",
+        "needleFeeling": "局部酸脹疼痛感。",
+        "application": "",
+        "notes": "指腎穴歸心、腎兩經，因此對心腎之疾有效，但治心疾伴有腎機能失調者如腎虧，效果較佳。腎主唾液，屬腎的穴位都可治口乾。口乾，腎關、水金、水通。董公所著為外開二分處，而胡師書校訂為外開三分。下針時，如能貼骨而下，在療效上較佳。",
+        "configNotes": [
+          "胸背痛，宜三針同時使用；本穴配手心靈穴，治心臟麻痺特效；配地宗穴，治心臟擴大、心臟積水神效。"
+        ],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/I-P-c-3_zhi-shen_left_zh.png",
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/I-P-c-3_zhi-shen_right_zh.png"
+        ]
+      },
+      {
+        "name": "珠圓穴",
+        "code": "I.P.e.2.大拇指– 珠圓區",
+        "anatomy": "掌指側固有神經皮下枝、肺及腎之神經、眼神經。",
+        "location": "珠圓一穴在拇指背指間關節，橫紋內側五分。珠圓二穴在拇指背指間關節，橫紋外側五分。",
+        "meridian": "入肺、腎二經。",
+        "properties": "疏風瀉火，滋陰明目。",
+        "indications": "白內障、青光眼、角膜炎、結膜炎、弱視。",
+        "technique": "直刺二～五分。",
+        "needleFeeling": "局部酸脹疼痛感。",
+        "application": "",
+        "notes": "本珠圓穴位於大拇指全息律上為胸腔位置，故本穴內側一點下針可治胸點，換句話說，此珠圓穴與胸點接近。珠圓穴可通治所有眼睛病疾。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/I-P-e-2_zhu-yuan_left_zh.png",
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/I-P-e-2_zhu-yuan_right_zh.png"
+        ]
+      },
+      {
+        "name": "指三重穴",
+        "code": "I.P.c.4.無名指背面–指三重區",
+        "anatomy": "尺神經、肝副神經、腎副神經。",
+        "location": "如上述指三重一、指三重二、指三重三，穴位說明。",
+        "meridian": "入肝、腎二經。",
+        "properties": "活血化瘀，疏風消腫。",
+        "indications": "乳癰、乳瘤、乳頭腫大、肌肉萎縮、驅風、臉部神經麻痺。",
+        "technique": "斜刺一～二分。",
+        "needleFeeling": "局部酸脹疼痛感。",
+        "application": "配肩峰穴，治乳癌、乳瘤特效。",
+        "notes": "董公書中取穴部位為無名指中節中央線外二分，未指明指背，恐為遺漏，今胡師修訂為外側三分，以符董公所傳。",
+        "configNotes": [],
+        "imageUrls": [
+          "http://52.198.151.83/wp-content/uploads/2019/09/I-P-c-4_zhi-san-chong_left_zh.png",
+          "http://52.198.151.83/wp-content/uploads/2019/09/I-P-c-4_zhi-san-chong_right_zh.png"
+        ]
+      },
+      {
+        "name": "少白穴",
+        "code": "I.P.z.2.手指掌骨關節–七華區",
+        "anatomy": "掌指固有神經皮下枝、腎支神經。",
+        "location": "手背小指近端指間關節，橫紋中央偏內側三分處是穴。",
+        "meridian": "入腎經。",
+        "properties": "疏經活絡，理氣鎮痛。",
+        "indications": "腰痛、腰椎骨刺、坐骨神經痛。",
+        "technique": "斜刺二～三分。",
+        "needleFeeling": "局部酸脹疼痛感。",
+        "application": "",
+        "notes": "少白穴，董公書中未列，由胡師在其書中公開。少白穴入腎經，由腎所引起之腰脊椎痛、腰痛、坐骨神經痛才有效。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/I-P-z-2_shao-bai_left_zh.png",
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/I-P-z-2_shao-bai_right_zh.png"
+        ]
+      },
+      {
+        "name": "開脾穴",
+        "code": "I.A.b.7.中指掌面–開脾區",
+        "anatomy": "掌指側固有神經、脾之神經。",
+        "location": "手掌向上，當中指第三節正中央點處是穴。",
+        "meridian": "入脾胃二經。",
+        "properties": "調理脾胃，宣導中焦。",
+        "indications": "胃口不開、食慾不振、嘔吐、胸悶、頭昏。",
+        "technique": "直刺一分～二分。",
+        "needleFeeling": "疼痛感。",
+        "application": "",
+        "notes": "開脾穴，在董公所著書中未列，此穴由胡師根據董公所傳而在其書中提出。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/I-A-b-7_kai-pi_left_zh.png",
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/I-A-b-7_kai-pi_right_zh.png"
+        ]
+      },
+      {
+        "name": "分水穴",
+        "code": "I.A.d.3.小指掌面–分水區",
+        "anatomy": "尺骨神經皮下淺枝、腎之神經。",
+        "location": "分水二穴掌心向上，當小指第一節正中央點（太陽一穴）偏外側三分處是穴。分水一穴在分水二穴下二分處是穴。分水三穴在分水二穴上二分處是穴。",
+        "meridian": "入腎經。",
+        "properties": "調理下焦，除濕排濁，利水消腫。",
+        "indications": "腎炎水腫、耳鳴、耳聾、腰脊椎疝板症（骨刺）、腰痛、坐骨神經痛。",
+        "technique": "直刺一分～二分。",
+        "needleFeeling": "疼痛微酸脹感。",
+        "application": "",
+        "notes": "分水穴位於小指，小指屬腎，小指上及小指掌骨上諸多穴位都入腎經，因此在中醫上，與腎有關之骨、耳等皆是這一帶穴位所主治的範圍。分水穴為胡師依董公所傳而第一次在書中公開提出。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/I-A-d-3_fen-shui_left_zh.png",
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/I-A-d-3_fen-shui_right_zh.png"
+        ]
+      },
+      {
+        "name": "水清穴",
+        "code": "I.A.d.4.小指掌面–水清區",
+        "anatomy": "尺骨神經皮下淺枝、腎之神經。",
+        "location": "水清二穴當掌面小指第二節正中央外側三分處是穴。水清一穴在水清二穴下二分處是穴。水清三穴在水清二穴上二分處是穴。",
+        "meridian": "入腎、膀胱經。",
+        "properties": "疏泄厥氣，利導下焦。",
+        "indications": "睪丸炎、腎炎水腫、尿道炎、膀胱炎、偏頭痛、腰痛、腿痛。",
+        "technique": "直刺一分～二分。",
+        "needleFeeling": "局部酸脹疼痛感。",
+        "application": "",
+        "notes": "水清穴，董公所著書中未提出，由胡師依董公平時所傳，在其著作中提出。水清穴與分水穴在小指同一條直線上，水清穴與分水穴一樣入腎經外，又入膀胱經，因此可主治膀胱、尿道的疾病。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/I-A-d-4_shui-qing_left_zh.png",
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/I-A-d-4_shui-qing_right_zh.png"
+        ]
+      },
+      {
+        "name": "水海穴",
+        "code": "I.A.d.6.小指掌面–水海區(手)",
+        "anatomy": "尺骨神經皮下淺枝、腎之神經。",
+        "location": "水海二穴當小指第二節正中央點內側三分處是穴。水海一穴在水海二穴下二分處是穴。水海三穴在水海二穴上二分處是穴。",
+        "meridian": "入腎經。",
+        "properties": "通絡止痛。",
+        "indications": "項緊痛、背痛、腰痛、坐骨神經痛。",
+        "technique": "直刺一分～二分。",
+        "needleFeeling": "局部酸脹疼痛感。",
+        "application": "",
+        "notes": "水海穴，董公在其著作未列，由胡師依董公平時所傳提出。水海穴入腎經，但非治腎本臟病症，而是主治背部有關之骨疾，這和中醫上腎主骨有關。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/I-A-d-6_shui-hai_left_zh.png",
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/I-A-d-6_shui-hai_right_zh.png"
+        ]
+      },
+      {
+        "name": "水源穴",
+        "code": "I.A.d.5.小指掌面–水源區",
+        "anatomy": "尺骨神經皮下淺枝、腎之神經。",
+        "location": "水源二穴在小指第一節正中央內側三分處是穴。水源一穴在水源二穴下二分處是穴。水源三穴在水源二穴上二分處是穴。",
+        "meridian": "入腎經。",
+        "properties": "通絡止痛。",
+        "indications": "手麻、腹痛、頸椎骨骨刺。",
+        "technique": "直刺一分～二分。",
+        "needleFeeling": "局部酸脹感。",
+        "application": "",
+        "notes": "水源穴在董公原著中未提出，再由胡師在其著作中，依董公平日所傳公開此穴。水海、水源在同小指面一條線上，同屬入腎經，主治骨疾。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/I-A-d-5_shui-yuan_left_zh.png",
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/I-A-d-5_shui-yuan_right_zh.png"
+        ]
+      },
+      {
+        "name": "水腰穴",
+        "code": "I.P.d.2.小指背面–水腰區",
+        "anatomy": "尺骨神經掌枝、腎之神經。",
+        "location": "水腰二穴當小指第二節正中央處即是。水腰一穴在水腰二穴內側三分即是。水腰三穴在水腰二穴外側三分即是。",
+        "meridian": "入腎經。",
+        "properties": "通絡止痛。",
+        "indications": "腰痛（特效）、坐骨神經痛、角膜炎、結膜炎、眼壓過高脹痛、頭昏、偏頭痛。",
+        "technique": "直刺一分～二分。",
+        "needleFeeling": "局部酸痛感。",
+        "application": "",
+        "notes": "水腰穴由胡師本董公平日所傳而第一次公開。水腰穴同正水穴一樣屬小指入腎經，正水穴在第一節，水腰穴在第二節，主治範圍大部份雷同。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/I-P-d-2_shui-yao_left_zh.png",
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/I-P-d-2_shui-yao_right_zh.png"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "二二部位",
+    "bodyPart": "手掌",
+    "acupoints": [
+      {
+        "name": "靈骨穴",
+        "code": "II.L.a.1. 一二掌骨外側 – 靈白區",
+        "anatomy": "靈骨穴：淺層分佈手背靜脈、橈神經淺枝。深層分佈正中神經的固有掌側指神經、肺支神經、心及腎神經。大白穴：此處有橈動脈、橈神經、肺支神經。",
+        "location": "靈骨穴：握拳取穴，在拇指與食指叉骨間，第一掌骨與第二掌骨接合處。可透重仙穴。大白穴：手握拳，第一掌骨與第二掌骨之間，距靈骨穴遠端一寸是穴。",
+        "meridian": "靈骨穴：入心、肺、大腸經。大白穴：入肺經。",
+        "properties": "靈骨穴：通經活絡，宣肺調氣，通降腸胃，行氣活血化瘀。大白穴：發汗解表，清肺寬胸，清理上焦，肅肺疏表，行氣化瘀。",
+        "indications": "靈骨穴：肺氣不足所引起的疾病、肺氣腫、肺癌、坐骨神經痛、腰痛、背痛、腳痛、顏面神經麻痺、半身不遂、頭痛、月經不調、經痛、難產、冠心症、心律不整、狹心症、胃及十二指腸潰瘍、大小腸炎、面疤、眼疾、耳鳴、耳聾。大白穴：頭痛、偏頭痛、肺癌、肺炎、肺積水、坐骨神經痛、腰痛、背痛。又治小兒氣喘、發高燒、急性肺炎。",
+        "technique": "靈骨穴：直刺一～二寸，可透刺重仙穴。亦可向外斜刺二～三寸。大白穴：直刺五分～一寸半。或配合以放血針背部放血，治小兒氣喘、發高燒、肺炎特效。",
+        "needleFeeling": "靈骨穴：局部酸脹麻木感。孕婦禁針，因此穴有強烈收縮子宮作用，恐流產。大白穴：酸脹麻電感。",
+        "application": "大白穴亦為補氣要穴，配靈骨穴治療甚廣，凡屬氣滯血瘀之證均有效。若人氣滯與氣虛，則將導致血瘀血滯。靈骨、大白二穴都應採深刺，效果才會顯著。血瘀上焦則致肺疾胸痺；血瘀中焦則為癥瘕；血瘀下焦則為少腹疼痛、婦女疾病；血瘀經絡則關節痺痛、風濕諸病、半身不遂；瘀血內蓄則性情變化而為神經諸疾。所以取用靈骨穴、大白穴通氣補氣，而能散滯消瘀。",
+        "notes": "靈骨穴為董氏針灸七十二絕針之一，為行氣活血之大穴，亦即補氣要穴，此穴通百穴，可因下針角度、方向之不同而所治之病亦不同，故可通治百病。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/II-L-a-1_ling-gu_da-bai_left_zh.png",
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/II-L-a-1_ling-gu_da-bai_right_zh.png"
+        ]
+      },
+      {
+        "name": "大白穴",
+        "code": "",
+        "anatomy": "此處有橈動脈、橈神經、肺支神經。",
+        "location": "手握拳，第一掌骨與第二掌骨之間，距靈骨穴遠端一寸是穴。",
+        "meridian": "入肺經。",
+        "properties": "發汗解表，清肺寬胸，清理上焦，肅肺疏表，行氣化瘀。",
+        "indications": "頭痛、偏頭痛、肺癌、肺炎、肺積水、坐骨神經痛、腰痛、背痛。又治小兒氣喘、發高燒、急性肺炎。",
+        "technique": "直刺五分～一寸半。或配合以放血針背部放血，治小兒氣喘、發高燒、肺炎特效。",
+        "needleFeeling": "酸脹麻電感。",
+        "application": "本穴亦為補氣要穴，配靈骨穴治療甚廣，凡屬氣滯血瘀之證均有效。若人氣滯與氣虛，則將導致血瘀血滯。靈骨、大白二穴都應採深刺，效果才會顯著。血瘀上焦則致肺疾胸痺；血瘀中焦則為癥瘕；血瘀下焦則為少腹疼痛、婦女疾病；血瘀經絡則關節痺痛、風濕諸病、半身不遂；瘀血內蓄則性情變化而為神經諸疾。所以取用靈骨穴、大白穴通氣補氣，而能散滯消瘀。",
+        "notes": "",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2020/08/2-2-大白穴-l.jpg",
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2020/08/2-2-大白穴-r.jpg"
+        ]
+      },
+      {
+        "name": "重子穴",
+        "code": "II.A.a.1. 二掌骨掌面 – (重)子仙區",
+        "anatomy": "重子穴：有橈神經、橈動脈、肺分支神經。重仙穴：橈神經淺枝、正中神經、肺分支神經、心分支神經。",
+        "location": "重子穴：掌心向上，當第一掌骨與第二掌骨之間，虎口近端一寸處是穴。可與大白穴相通。重仙穴：手掌心向上，當第一掌骨與第二掌骨之間骨縫下是穴，與對側手背靈骨穴相通。",
+        "meridian": "入肺經。",
+        "properties": "疏風解表，清泄肺氣。",
+        "indications": "肺炎、肺癌、肺氣腫、感冒、咳嗽、氣喘、心悸、退燒、喉炎、背痛、胸痛、膝蓋痛。",
+        "technique": "直刺一～二寸。治小兒疾患以三稜針刺出血特效。",
+        "needleFeeling": "酸脹疼痛感。",
+        "application": "",
+        "notes": "重子與重仙兩穴近傳統十四經肺經，亦入肺經，因此同魚際一樣可治與肺有關的疾病。重仙穴甚少單獨取穴，大都重子、重仙兩穴並用。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/II-A-a-1_chong-zi_chong-xian_left_zh.png",
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/II-A-a-1_chong-zi_chong-xian_right_zh.png"
+        ]
+      },
+      {
+        "name": "重仙穴",
+        "code": "",
+        "anatomy": "橈神經淺枝、正中神經、肺分支神經、心分支神經。",
+        "location": "手掌心向上，當第一掌骨與第二掌骨之間骨縫下是穴，與對側手背靈骨穴相通。",
+        "meridian": "入肺經。",
+        "properties": "清泄肺氣，疏風解表。",
+        "indications": "同重子穴。",
+        "technique": "直刺一～二寸。治小兒疾患以三稜針刺出血特效。",
+        "needleFeeling": "酸脹痛感。",
+        "application": "",
+        "notes": "重仙穴甚少單獨取穴，大都重子、重仙兩穴並用。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2020/08/2-2-重仙穴-l-.jpg",
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2020/08/2-2-重仙穴-r.jpg"
+        ]
+      },
+      {
+        "name": "土水穴",
+        "code": "II.A.e.1. 一掌骨掌面 – 土水區",
+        "anatomy": "針經過皮膚、皮下組織、通過拇指外轉肌而達到拇指對立肌外側，正中神經分枝、脾分支神經、腎分支神經。",
+        "location": "土水二穴在拇指第一掌骨橈側下陷處後一寸。土水一穴在土水二穴下五分處。土水三穴在土水二穴上五分處。",
+        "meridian": "入肺、腎經。",
+        "properties": "調理脾胃，調理中焦，清宣肺氣，通經活絡。",
+        "indications": "急慢性胃炎、久年胃病、咳嗽、氣喘、扁桃腺炎、全身骨腫痛、兩腿內側肌肉痛、骨膜炎、坐骨神經痛。",
+        "technique": "沿骨下直刺五分～一寸。",
+        "needleFeeling": "酸脹感。",
+        "application": "雙手取穴效果更佳。",
+        "notes": "",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/II-A-e-1_tu-shui_left_zh.png",
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/II-A-e-1_tu-shui_right_zh.png"
+        ]
+      },
+      {
+        "name": "中白穴",
+        "code": "II.P.c.1. 掌骨背面 – 中下白區",
+        "anatomy": "手背靜脈網、尺骨神經動脈，與手背分枝、腎分支神經。",
+        "location": "中白穴：握起拳頭，當第四、五掌骨之間，掌指關節近端五分處是穴。下白穴：握拳取穴，當第四、五掌骨之間，距掌指關節一寸五分。即中白穴近端一寸。手少陽經液門穴下五分。本穴非十四經之液門穴，正確位置在液門穴下五分。",
+        "meridian": "上白穴：入腎、膀胱經。下白穴：入肝、腎二經。",
+        "properties": "疏經活絡，利水消腫，利導下焦。",
+        "indications": "中白穴：膀胱炎、急慢性腎盂（腎）炎、坐骨神經痛、骨刺、腰酸腰痛、背痛、頭暈、眼散光、腎虛耳鳴、腦鳴、重聽、四肢浮腫、偏頭痛、脊椎炎、退化性關節炎、小腿痛、閃腰、岔氣。下白穴：同中白穴主治各症，兼治肝脹痛、牙齒酸。",
+        "technique": "中白穴：直刺五分。下白穴：直刺三～八分。",
+        "needleFeeling": "酸脹麻電感。",
+        "application": "",
+        "notes": "中白穴又名鬼門穴，董氏七十二絕針之一，為董氏奇穴的重要穴位之一，其主治範圍很廣，其入腎經，對骨骼方面疾病，常取用此穴。下白穴很少單獨使用，大多配中白一併下針，另再配合其他治療五臟六腑的穴位，以加強其療效，如治療骨刺、坐骨神經痛配合腕順穴；急慢性腎炎配合下三皇（天皇、地皇、人皇）。",
+        "configNotes": [
+          "中白穴配下白穴為治閃腰岔氣、骨刺、坐骨神經痛及耳疾之特效穴。"
+        ],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/II-P-c-1_zhong-bai_xia-bai_left_zh.png",
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/II-P-c-1_zhong-bai_xia-bai_right_zh.png"
+        ]
+      },
+      {
+        "name": "下白穴",
+        "code": "",
+        "anatomy": "手背靜脈網、尺骨神經動脈與手背分枝，肝腎交叉神經。",
+        "location": "握拳取穴，當第五掌骨與第四掌骨之間，距掌指關節一寸五分。即中白穴近端一寸。手少陽經液門穴下五分。本穴非十四經之液門穴，正確位置在液門穴下五分。",
+        "meridian": "入肝、腎二經。",
+        "properties": "利水消腫，疏經活絡，利導下焦。",
+        "indications": "同中白穴主治各症，兼治肝脹痛、牙齒酸。",
+        "technique": "直刺三～八分。",
+        "needleFeeling": "酸脹麻電感。",
+        "application": "",
+        "notes": "下白穴很少單獨使用，大多配中白一併下針，另再配合其他治療五臟六腑的穴位，以加強其療效，如治療骨刺、坐骨神經痛配合腕順穴；急慢性腎炎配合下三皇（天皇、地皇、人皇）。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2020/08/2-2-下白穴-l.jpg",
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2020/08/2-2-下白穴-r.jpg"
+        ]
+      },
+      {
+        "name": "內白穴",
+        "code": "II.P.b.1. 掌骨背面 – 內外白區",
+        "anatomy": "背側指靜脈、尺橈骨神經背側指枝，背側中手動脈，脾之神經。",
+        "location": "內白穴：握拳取穴，當第三掌骨與第四掌骨之間，距掌指關節近端五分處是穴。外白穴：握拳取穴，當第三掌骨與第四掌骨之間，距掌指關節近端一寸五分處是穴。即內白穴近端一寸處。",
+        "meridian": "內白穴：入肺、脾二經。外白穴：入肺、胃經。",
+        "properties": "內白穴：疏風解表，清熱解毒，消腫止痛外白穴：疏風解表，通經活絡。",
+        "indications": "內白穴：慢性胰臟炎、脾腫大、痞塊、牙齒腫痛、齒齦炎、腰痛、坐骨神經痛、過敏性皮膚病、蕁麻疹、白癜風、紫癜症。外白穴：同內白穴主治各症，並治三叉神經痛、口齒神經痛、肋間神經痛。",
+        "technique": "直刺三～八分。",
+        "needleFeeling": "",
+        "application": "外白穴：治療皮膚病，配駟馬穴，顯效。治療神經痛，配外白穴，奇效。",
+        "notes": "內白穴、外白穴在董公所著書中沒有明列，而由胡師在其著作《實用董氏針灸奇穴全集》，將董公所傳而未在其書中言明，公諸於書內。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/II-P-b-1_nei-bai_wai-bai_left_zh.png",
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/II-P-b-1_nei-bai_wai-bai_right_zh.png"
+        ]
+      },
+      {
+        "name": "外白穴",
+        "code": "",
+        "anatomy": "背側指靜脈、尺橈骨神經背側淺枝，背側中手動脈，脾之神經。",
+        "location": "握拳取穴，當第三掌骨與第四掌骨之間，距掌指關節近端一寸五分處是穴。即內白穴近端一寸處。",
+        "meridian": "入肺、胃經。",
+        "properties": "疏風解表，通經活絡。",
+        "indications": "同內白穴主治各症，並治三叉神經痛、口齒神經痛、肋間神經痛。",
+        "technique": "直刺三～八分。",
+        "needleFeeling": "酸脹感。",
+        "application": "治療皮膚病，配駟馬穴，顯效。治療神經痛，配外白穴，奇效。",
+        "notes": "外白穴在董公所著書中沒有明列，而由胡師在其著作《實用董氏針灸奇穴全集》，將董公所傳而未在其書中言明，公諸於其書中。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2020/08/2-2-外白穴-l-.jpg",
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2020/08/2-2-外白穴-r-.jpg"
+        ]
+      },
+      {
+        "name": "上白穴",
+        "code": "II.P.a.1. 掌骨背面 – 上分白區",
+        "anatomy": "心肺交叉神經、腎之神經。",
+        "location": "上白穴：握拳取穴，第二掌骨與第三掌骨之間，距掌指關節近端五分處。分白穴：上白穴近端一寸。",
+        "meridian": "入心、肺、腎三經。",
+        "properties": "疏風瀉火，滋陰明目，通經止痛。",
+        "indications": "上白穴：結膜炎、角膜炎、眼酸脹、近視眼、散光、心絞痛、弱視、迎風流淚、背痛、腰痛、坐骨神經痛。分白穴：配上白穴治療眼科諸疾，奇效。",
+        "technique": "直刺三～八分。",
+        "needleFeeling": "酸脹感。",
+        "application": "雙手取穴效佳。",
+        "notes": "上白、分白在臨床上大多兩穴一齊併用，形成倒馬針法。分白穴為董公所著書中所無，由胡師在其所著書中公開。分白穴主治與上白穴同，上白穴所列之配穴，兩者皆通。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/II-P-a-1_shang-fen-bai_left.png",
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/II-P-a-1_shang-fen-bai_right.png"
+        ]
+      },
+      {
+        "name": "分白穴",
+        "code": "",
+        "anatomy": "心肺交叉神經、腎之神經。",
+        "location": "如上述分白穴，穴位說明。",
+        "meridian": "入心、肺、腎三經。",
+        "properties": "疏風瀉火，滋陰明目。",
+        "indications": "同上白穴主治各症狀。",
+        "technique": "直刺三～八分。",
+        "needleFeeling": "",
+        "application": "本穴配上白穴治療眼科諸疾，奇效。",
+        "notes": "上白、分白在臨床上大多兩穴一齊併用，形成倒馬針法。分白穴為董公所著書中所無，由胡師在其所著書中公開。分白穴主治與上白穴同，上白穴所列之配穴，兩者皆通。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2020/08/2-2-分白穴-l-.jpg",
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2020/08/2-2-分白穴-r.jpg"
+        ]
+      },
+      {
+        "name": "重魁穴",
+        "code": "II.L.a.2. 一二掌骨外側 – 重魁區",
+        "anatomy": "橈神經淺枝、正中神經淺枝、心肺神經分支。",
+        "location": "握拳取穴。同上述重魁穴的穴位說明。",
+        "meridian": "入肺經。",
+        "properties": "清熱退燒，宣肺止咳。",
+        "indications": "咳嗽、氣喘、三叉神經痛、眼紅腫痛、高血壓、拔牙麻醉用、感冒退燒、頭痛、偏頭痛。",
+        "technique": "貼骨下直刺二～五分。或以三稜針刺出血。",
+        "needleFeeling": "酸脹感。本穴亦為手術麻醉要穴。",
+        "application": "本穴為感冒發高燒之要穴，對眼疾、麥粒腫也有效果，對高血壓症，每針一次可下降二～五毫米汞柱。拔牙麻醉透大白穴使用。",
+        "notes": "",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/II-L-a-2_chong-kui_left_zh.png",
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/II-L-a-2_chong-kui_right_zh.png"
+        ]
+      },
+      {
+        "name": "手解穴",
+        "code": "II.A.c.3. 四掌骨掌面 – 手解區",
+        "anatomy": "五臟敏感神經、正中神經。",
+        "location": "掌心向上，同上述手解穴的穴位說明。",
+        "meridian": "入心經。",
+        "properties": "調和氣血，通經活絡，鎮靜安神。",
+        "indications": "解暈針，或下針以後引起之麻木、針口痛，氣血錯亂之刺痛、坐骨神經痛、腰痛、三叉神經痛、全身痛、開刀後傷口疼痛，又解食物中毒、藥物中毒、急性胃腸炎疼痛難忍，拔牙時麻醉止痛、子宮手術之麻醉止痛。二穴兼能治膽疾、膽石症、膽囊炎、神經麻痺。",
+        "technique": "直刺二～八分。針下立解，或以三稜針出血即解。",
+        "needleFeeling": "酸脹麻痛電感。",
+        "application": "",
+        "notes": "手解穴為董氏三十二解穴之一，董氏奇穴的重要穴位，效果神速，是最佳之止痛穴。手解一、二穴之中，只要任取一穴使用即可。手解穴同上高穴、下高穴一樣有增高的作用。可再加正筋、正宗、鎮靜、正會、三聖、耳穴之內分泌、睾丸點。手解穴治對側腳抽筋，效果顯著。若一手掐手解穴，另一手力敲打火腑海穴，可治對側小腿酸痛、抽筋、針後不適等。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://52.198.151.83/wp-content/uploads/2019/09/II-A-c-3_shou-jie_left_zh.png",
+          "https://52.198.151.83/wp-content/uploads/2019/09/II-A-c-3_shou-jie_right_zh.png"
+        ]
+      },
+      {
+        "name": "上高穴、下高穴",
+        "code": "II.A.c.4. 四掌骨掌面 – 高區",
+        "anatomy": "正中神經淺枝、尺神經分枝、腎腦神經。",
+        "location": "手掌第四、五掌骨之間處。手解二穴近端五分為上高穴，手解二穴近端一寸半為下高穴。",
+        "meridian": "入腎、胃經。",
+        "properties": "疏經調氣，補腎和胃。",
+        "indications": "肋膜炎、腹膜炎、盲腸炎、卵巢炎、急慢性小腸炎、增高。",
+        "technique": "直刺二～八分。",
+        "needleFeeling": "",
+        "application": "上高穴、下高穴為董氏七十二絕針之一，上高穴配下高穴為治療腹膜炎之特效穴。同時具備促進腦下垂體、生長激素、腦神經皮質分泌之作用，故又可以增高，下針二十次約可增高五～十公分，有六成機率，超過二十歲以後，效果較小。十六歲～二十歲效果最好。",
+        "notes": "本穴與手解穴在同一直線上，手解穴也有增高作用。本穴為董公所作之書未列出，由胡師依董公平日所傳，將其公開於其所著之書。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://52.198.151.83/wp-content/uploads/2019/09/II-A-c-4_shang-xia-gao_left_zh.png",
+          "https://52.198.151.83/wp-content/uploads/2019/09/II-A-c-4_shang-xia-gao_right_zh.png"
+        ]
+      },
+      {
+        "name": "三河穴",
+        "code": "II.A.c.1. 四掌骨掌面 – 三河區",
+        "anatomy": "正中神經淺枝、六腑神經。",
+        "location": "如上述三河穴的說明",
+        "meridian": "入肝、腎兩經。",
+        "properties": "通經活絡，行氣止痛。",
+        "indications": "子宮痛、下腹痛、坐骨神經痛、兩腿痛、脊椎骨長骨刺、膽疾。",
+        "technique": "直刺二～四分。或以放血針點刺出血。",
+        "needleFeeling": "酸痛感。",
+        "application": "三河穴為治療腰痛、坐骨神經痛之特效穴。",
+        "notes": "董氏奇穴穴位大都是成三穴一組最多，下針時，也常連下二針到三針，此種針法，稱之為倒馬針法，其理乃是下二針或三針效果較下一針更佳，三河穴位於掌診中診斷肝與腎之間，從此而知，三河穴與筋、骨兩者關係密切，因此其主治範圍和筋骨有關，三河穴常與腕順穴配伍，治坐骨神經痛、脊椎骨骨刺等。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/II-A-c-1_san-he_left_zh.png",
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/II-A-c-1_san-he_right_zh.png"
+        ]
+      },
+      {
+        "name": "骨關穴",
+        "code": "II.A.z.1. 腕骨掌面 – 手關區",
+        "anatomy": "骨關穴：正中神經、腎之神經、肺支神經。木關穴：正中神經、腎之神經、肝膽神經。",
+        "location": "骨關穴：手掌朝上，當腕橫紋正中央遠端五分偏橈側五分，舟狀骨下是穴。即食指與中指叉口直上腕橫紋處下五分。木關穴：手掌朝上，當腕橫紋正中央遠端五分偏尺側五分處是穴。亦即中指與無名指叉口處直上至腕橫紋下五分偏尺側五分處。",
+        "meridian": "入肝、腎兩經。",
+        "properties": "瀉肝解毒，疏經鎮痛。",
+        "indications": "骨關穴：半身不遂、坐骨神經痛、脊椎骨增生壓迫神經痛、十二指腸炎、解尿酸毒、食物中毒、藥物中毒。木關穴：腰痛胸悶、兩脅痛、黃疸病、坐骨神經痛、腿痛、腹膜炎、全身關節痛、解尿酸毒、食物中毒、藥物中毒。",
+        "technique": "直刺三～五分。",
+        "needleFeeling": "酸脹痛感。",
+        "application": "木關穴配靈骨穴、下白穴、骨關穴，治療腰痛、坐骨神經痛、骨刺。尤其是對尿酸過高引起之骨骼、筋肉疼痛，有特效。",
+        "notes": "骨關、木關二穴常一齊配伍，此兩穴是董氏針灸中的大穴、要穴，而在董公之著作裡未編入，胡師乃將董公所傳，將其公開收入胡師醫著《實用董氏針灸奇穴全集》，董公有傳所謂七十二絕針（即特效針）、三十二解針，而骨關、木關兩穴皆是，可見其重要。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/II-A-z-1_gu-mu-guan_left_zh.png",
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/II-A-z-1_gu-mu-guan_right_zh.png"
+        ]
+      },
+      {
+        "name": "木關穴",
+        "code": "",
+        "anatomy": "正中神經、腎之神經、肝膽神經。",
+        "location": "手掌朝上，當腕橫紋正中央遠端五分偏尺側五分處是穴。亦即中指與無名指叉口處直上至腕橫紋下五分偏尺側五分處。",
+        "meridian": "入肝、腎兩經。",
+        "properties": "瀉肝解毒，疏經鎮痛。",
+        "indications": "腰痛胸悶、兩脅痛、黃疸病、坐骨神經痛、腿痛、腹膜炎、全身關節痛、解尿酸毒、食物中毒、藥物中毒。",
+        "technique": "直刺二～五分。",
+        "needleFeeling": "酸脹感。",
+        "application": "本穴配靈骨穴、下白穴、骨關穴，治療腰痛、坐骨神經痛、骨刺。尤其是對尿酸過高引起之骨骼、筋肉疼痛，有特效。",
+        "notes": "",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2020/08/2-2-木關穴-l.jpg",
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2020/08/2-2-木關穴-r.jpg"
+        ]
+      },
+      {
+        "name": "腕順一穴",
+        "code": "II.M.d.1. 五掌骨掌内側 – 腕順區",
+        "anatomy": "此處為小指外轉筋，有腕骨背側動脈與支脈、尺神經、腎分支神經。",
+        "location": "腕順一穴：手背側面，當第五掌骨尺側，距手腕橫一寸五分處是穴。腕順二穴：腕順一穴遠端一寸處是穴。",
+        "meridian": "入腎經。",
+        "properties": "滋腎利尿，通腎鎮痛。",
+        "indications": "腎虧之頭痛眼花、坐骨神經痛、腎盂炎、腎臟炎、膀胱炎、腰痛四肢骨腫、背痛、骨刺、兩腿痛、耳鳴、頸項骨刺。兼治鼻出血、落枕奇效。",
+        "technique": "直刺五分～一寸。",
+        "needleFeeling": "局部酸脹感。",
+        "application": "腕順一穴、二穴為治骨疾、腎臟疾病之特效。可雙手取穴，效果更佳。一穴近端五分為腕順上穴，治尾椎痛有效。二穴遠端五分近後谿穴可為腕順下穴，治頸椎痛有效。坐骨神經痛：三河、腕順、火硬，配合導引行氣。耳鳴：腕順、駟馬、三重、腎關。腎虧之眼花：三叉一、腕順一。",
+        "notes": "",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/II-M-d-1_wan-shun_left_zh.png",
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/II-M-d-1_wan-shun_right_zh.png"
+        ]
+      },
+      {
+        "name": "腕順二穴",
+        "code": "",
+        "anatomy": "小指外轉筋、腕骨背側動脈與支脈、尺神經、腎分支神經。",
+        "location": "腕順一穴遠端一寸處是穴。",
+        "meridian": "入腎經。",
+        "properties": "滋腎利尿，通腎鎮痛。",
+        "indications": "同腕順一穴，兼治鼻出血、落枕奇效。",
+        "technique": "直刺五分～一寸。",
+        "needleFeeling": "局部酸脹感。",
+        "application": "腕順一穴、二穴為治骨疾、腎臟疾病之特效。可雙手取穴，效果更佳。一穴近端五分為腕順上穴，治尾椎痛有效。二穴遠端五分近後谿穴可為腕順下穴，治頸椎痛有效。",
+        "notes": "",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2020/08/2-2-腕順二穴-l-.jpg",
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2020/08/2-2-腕順二穴-r.jpg"
+        ]
+      },
+      {
+        "name": "三叉一穴",
+        "code": "II.P.z.1. 掌骨背面 – 三叉區",
+        "anatomy": "三叉一穴：橈神經淺枝、肺分支神經、腎之副神經。三叉二穴：尺神經手背枝、脾之神經、肝分支神經。三叉三穴：尺神經手背枝、腎之神經。",
+        "location": "三叉一穴：當食指與中指叉口之中央點處是穴。三叉二穴：當中指與無名指叉口之中央點處是穴。三叉三穴：當小指與無名指叉口之中央點處是穴。",
+        "meridian": "三叉一穴：入腎經。三叉二穴：入脾、肝兩經。三叉三穴：入腎經。",
+        "properties": "三叉一穴：滋腎鎮痛，益腎明目。三叉二穴：健脾化濕，行氣活絡化瘀。三叉三穴：滋腎鎮痛，益腎利尿。",
+        "indications": "三叉一穴：角膜炎、眼睛酸痛、腰痛、坐骨神經痛、眉稜骨酸、脹痛、視神經萎縮、半身不遂、痿症。三叉二穴：胰臟炎、脾腫大、半身不遂、坐骨神經痛、手腳麻痺、肝炎。三叉三穴：頭暈頭昏、坐骨神經痛、長骨刺、腰酸、腰痛、腎盂炎、腎臟病水腫、重感冒。",
+        "technique": "直刺二寸。握拳後從叉口進針。三叉一穴：從叉口進針至兩掌骨之間。三叉二穴：從叉口進針至掌骨骨縫上緣。三叉三穴：從叉口進針直抵手掌骨叉口上緣。",
+        "needleFeeling": "局部酸脹麻電感。",
+        "application": "感冒發燒：重者，三叉、靈骨、大白、神耳上中下，配合十八星穴放血，可加重子、重仙；輕者，靈骨、大白、重子、重仙。弱視、視神經萎縮：三叉一、腎關、珠圓。",
+        "notes": "三叉一穴、三叉二穴、三叉三穴在董公所著之書，並無列入，而由胡師公開董公所傳編入其所著之《實用董氏針灸奇穴全集》，三叉穴可提高免疫力，為董氏所傳中具有奇效的要穴，三叉穴共有三穴，每穴歸經不一，對其所入之經，具有調整補瀉之功，為董公常用之要穴。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/II-P-z-1_san-cha_left_zh.png",
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/II-P-z-1_san-cha_right_zh.png"
+        ]
+      },
+      {
+        "name": "三叉二穴",
+        "code": "",
+        "anatomy": "尺神經手背枝、脾之神經、肝分支神經。",
+        "location": "當中指與無名指叉口之中央點處是穴。",
+        "meridian": "入脾、肝兩經。",
+        "properties": "健脾化濕，行氣活絡化瘀。",
+        "indications": "胰臟炎、脾腫大、半身不遂、坐骨神經痛、手腳麻痺、肝炎。",
+        "technique": "直刺二寸。從叉口進針至掌骨骨縫上緣。握拳後從叉口進針。",
+        "needleFeeling": "酸脹麻電感。",
+        "application": "",
+        "notes": "",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2020/08/2-2-三叉二穴-l.jpg",
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2020/08/2-2-三叉二穴-r.jpg"
+        ]
+      },
+      {
+        "name": "三叉三穴",
+        "code": "",
+        "anatomy": "尺神經手背枝、腎之神經。",
+        "location": "當小指與無名指叉口之中央點處是穴。",
+        "meridian": "入腎經。",
+        "properties": "滋腎鎮痛，益腎利尿。",
+        "indications": "頭暈頭昏、坐骨神經痛、長骨刺、腰酸、腰痛、腎盂炎、腎臟病水腫、重感冒。",
+        "technique": "直刺二寸。從叉口進針直抵手掌骨叉口上緣。握拳後從叉口進針。",
+        "needleFeeling": "酸脹麻電感。",
+        "application": "",
+        "notes": "",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2020/08/2-2-三叉三穴-l.jpg",
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2020/08/2-2-三叉三穴-r.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "三三部位",
+    "bodyPart": "前臂",
+    "acupoints": [
+      {
+        "name": "其門穴、其角穴、其正穴",
+        "code": "III.L.1.下手臂外側 – 三其區",
+        "anatomy": "橈神經、正中神經、肺支神經、六腑神經。",
+        "location": "其門在手背虎口朝上，當橈骨上緣手腕橫紋正中央上二寸偏橈側一寸處是穴。其它見穴位。",
+        "meridian": "入大腸、膀胱經。",
+        "properties": "行氣導滯，清瀉下焦",
+        "indications": "子宮炎、卵巢炎、婦科月經不調、赤帶下、大便脫肛、便祕、下痢、子宮瘤、子宮頸癌、尿道炎、膀胱炎、痔瘡痛、下腹痛。",
+        "technique": "直刺無效。針向外斜刺與皮下平行約十五度刺一寸半。",
+        "needleFeeling": "酸脹微麻感。",
+        "application": "",
+        "notes": "",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/III-L-1_qi-men_qi-jiao_qi-zheng_zh.png"
+        ]
+      },
+      {
+        "name": "心靈一穴、心靈二穴、心靈三穴",
+        "code": "III.A.1.下手臂前側 – 心靈區",
+        "anatomy": "橈側手腕曲肌腱和掌長肌腱中，淺層分佈前腕內、外側皮神經、深層有正中及心臟支神經。",
+        "location": "掌面朝上，手腕橫紋正中央上一寸五分為心靈一穴，與內關穴相差五分。一穴上一寸為二穴，二穴上一寸為三穴。於橈側手腕曲肌腱和掌長肌腱之間取之。",
+        "meridian": "入心經、心包經。",
+        "properties": "通暢心絡，寬胸散滯。",
+        "indications": "心律不整、心臟內膜炎、狹心症、心臟擴大、心肌梗塞、胸悶、胸痛、胃脘痛、腿痛、前額頭痛、頭暈、手腳麻痺、咽喉痛。",
+        "technique": "直刺五分～一寸半。亦可透刺手背。斜度十五度由下往上刺，治心臟病。斜刺三十度由下往上刺一寸五分。治胸部頭部疾病。斜刺四十五度由上往下刺治手腳疾病。",
+        "needleFeeling": "酸脹微麻感。",
+        "application": "",
+        "notes": "此三穴為董氏七十二絕針之一，亦為董氏奇穴中的要穴之一，董公著作中遺漏了，胡師在其書中補上，心靈穴下針的深度及其方向，對主治效果不一樣，應特別注意。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/III-A-1_xin-ling_zh.png"
+        ]
+      },
+      {
+        "name": "火串穴、火陵穴、火山穴",
+        "code": "III.P.1.下手臂後側 – 手火區",
+        "anatomy": "淺層分布橈側皮靜脈的分枝，和後前腕皮神經的分枝，深層有骨間動、靜脈與後骨間神經，肺分支神經、心副神經。",
+        "location": "火串位手背朝上平伸，從手腕橫紋中央上二寸五分處取之。亦即外關穴上五分處。其它見穴位。",
+        "meridian": "入三焦經。",
+        "properties": "宣導氣血，通絡止痛。",
+        "indications": "胸痛、背痛、重聽、胸悶、手下臂痛、小腿前側痛。",
+        "technique": "直刺五分～一寸五分。",
+        "needleFeeling": "酸脹感。有時會上下擴散至指、肩端。",
+        "application": "",
+        "notes": "火串、火陵、火山位于三焦經上，三焦經與心包經成表裡，因此三針同下，可治胸痛、胸悶、背痛。火山穴深度透刺側腰靈穴，因此火山與其它兩穴有相同主治外，又可治腎盂炎、腰酸、坐骨神經痛。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/III-P-1_huo-chuan_huo-ling_huo-shan_zh.png"
+        ]
+      },
+      {
+        "name": "火腑海穴",
+        "code": "III.P.1.下手臂外側 – 手火區",
+        "anatomy": "淺層分佈橈側皮靜脈分枝、和後前腕皮神經、深層分佈橈側橈神經分枝、肺分支神經、心副神經。",
+        "location": "手撫胸取穴，在橈骨與尺骨之間，肘橫紋下二寸五分處取之。即手三里下五分外五分處。",
+        "meridian": "入肺經、腎經。",
+        "properties": "祛風肅肺，補益腎水。",
+        "indications": "咳嗽、氣喘、感冒、鼻炎、坐骨神經痛、腿酸、腰痛、貧血、頭暈、眼花、疲勞過度。",
+        "technique": "直刺五分～一寸。",
+        "needleFeeling": "",
+        "application": "",
+        "notes": "本穴屬強壯穴，治貧血、頭昏、眼花、疲勞過度，可下針十分鐘後取針，改用灸療三到五壯，隔日一灸，灸上二個月，可延年益壽，功同足三里穴。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/III-P-1_huo-fu-hai_zh.png"
+        ]
+      },
+      {
+        "name": "手五金穴、手千金穴",
+        "code": "III.P.3.下手臂後側 – 手五千金區",
+        "anatomy": "肝分支神經，肺分支神經。",
+        "location": "手五金手撫胸取穴，當腕橫紋上六寸五分。即火山穴外五分上五分處是穴。手千金，腕橫紋上八寸，肘橫紋下四寸，即手五金上一寸五分。",
+        "meridian": "入肝、肺二經。",
+        "properties": "疏筋活絡，清血解毒。",
+        "indications": "坐骨神經痛、手腳麻木、小腿發脹、腳痛、解膽固醇過多、解針口痛、項痛、頭痛、腹痛、藥物中毒、食物中毒、瘡瘍毒。",
+        "technique": "直刺五分～一寸五分。",
+        "needleFeeling": "酸脹微麻電感。",
+        "application": "",
+        "notes": "手五金、手千金為董氏七十二絕針之一，亦為董氏三十二解針之要穴，對麻、脹、毒等有解除之效。手五金、手千金兩穴倒馬並用，效果更佳，取穴時，甚少單獨使用。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/III-P-3_shou-wu-jin_shou-qian-jin_zh.png"
+        ]
+      },
+      {
+        "name": "腸門穴",
+        "code": "III.M.1.下手臂內側 – 三門區",
+        "anatomy": "腸門穴：尺動脈之背枝、尺神經、肝支神經、腎副神經。肝門穴：總指伸筋，歧出前膊骨間動脈之分枝，肝支神經。心門穴：在二頭膊筋間、下尺骨副動脈、橈骨神經枝、心臟支神經。",
+        "location": "手撫胸取穴腸門穴：在尺骨尺側緣與筋腱之間，距腕豆骨橫紋三寸處是穴。肝門穴：當尺骨尺側中部，腕橫紋上六寸處取之。心門穴：在近端尺骨尺側陷處，肘尖下一寸五分處是穴。",
+        "meridian": "腸門穴：入膽及大腸經。肝門穴：入肝膽經。心門穴：入心經。",
+        "properties": "腸門穴：疏洩腸腑。肝門穴：疏肝理氣。心門穴：通暢心絡。",
+        "indications": "腸門穴：急慢性腸炎、頭昏眼花、膽囊炎、嘔吐、下痢。肝門穴：急性肝炎（特效）、急慢性胃腸炎、胸悶、胸痛、兩脅痛、腿內側痛。心門穴：心臟病、心悸亢進、胸悶、嘔吐、乾霍亂。",
+        "technique": "腸門穴：直刺三分～一寸。肝門穴：直刺五分～一寸，針下之後立解肝痛，將針向右旋轉胸悶即解，將針向左轉腸痛亦除。心門穴：直刺五～八分。",
+        "needleFeeling": "腸門穴：酸脹感直達手指。心門穴：酸脹微麻。",
+        "application": "腸門穴大多與肝門相配形成倒馬，以加強其療效。",
+        "notes": "在治療肝疾上，大多取上三黃為主，取肝門較少，而肝門亦很少單獨取用，都取心門、腸門形成倒馬，可通三焦，調理全身。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/III-M-1_chang-men_gan-men_xin-men_zh.png"
+        ]
+      },
+      {
+        "name": "人士穴",
+        "code": "III.A.9. 下手臂前側 – 三士區",
+        "anatomy": "人士穴：外膊皮下神經、橈骨神經皮下枝、肺之神經、心之分支神經。地士穴：正中神經之分枝、肺支神經、心分支神經。天士穴：有橈骨神經、後臂神經及正中神經、肺支神經、腎之副神經。",
+        "location": "人士穴：手平伸，掌心向上，當腕橫紋上三寸，前臂橈骨橈側上緣處是穴。地士穴：掌心向上，腕橫紋上六寸，前臂橈骨橈側上緣處是穴。即人士穴上三寸處是穴。天士穴：在前臂橈骨之掌面橈側上緣，地士穴上三寸處是穴。從肘窩橫紋下三寸處取之。",
+        "meridian": "人士穴：入心、肺、腎三經。地士穴：入肺、腎。天士穴：入肺經。",
+        "properties": "疏心理氣，清宣肺氣",
+        "indications": "人士穴：氣喘、手掌痛、手指痛、肩臂痛、背痛、胸痛、心悸、蛋白尿。地士穴：氣喘、感冒、頭痛、腎虧、腰痛、心臟病、疝氣、便秘。天士穴：氣喘、鼻炎、臂痛、感冒、胸痛、胸悶、支氣管炎。",
+        "technique": "人士穴：斜刺～沿橈骨掌面橈側上緣、從外向內，以十五度角斜刺五分～一寸五分。地士穴：從外向內以十五度斜刺入五分～一寸五分。天士穴：斜刺一寸五分。",
+        "needleFeeling": "人士、天士穴：局部酸脹感。地士穴：局部有酸脹感，有時擴散至前腕。",
+        "application": "針深五分治氣喘、手掌及手指痛、肩臂痛、背痛（患右用左穴，患左用右穴）。針深一寸治心臟病、心悸（董公在其書上記載）。",
+        "notes": "人士穴董公書中為橫紋上四寸，胡師書中為橫紋上三寸，在臨床經驗驗證，董公書未校訂，今從胡書。此穴深度分上、中、下三層，上層淺刺通肺經，中層入心經，深層入腎經。人士穴針五～八分治氣喘。一寸～一寸二左右治心悸、心臟病。入一寸五分治腎虧、蛋白尿。董氏針灸隨針的深度的不同而其所入之經亦有所不同，其所治之病亦不同，這點為董氏針灸的一大特點。天士、地士、人士三穴為治療氣喘之特效穴。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/III-A-9_ren-shi_di-shi_tian-shi_zh.png"
+        ]
+      },
+      {
+        "name": "喉靈穴",
+        "code": "III.A.6.下手臂前側 – 喉靈區",
+        "anatomy": "內側前腕皮神經、肺支神經。",
+        "location": "當少海穴直下一寸五分，再外側五分處是穴。",
+        "meridian": "入肺經。",
+        "properties": "清肺宣竅，化瘀散結。",
+        "indications": "鼻炎、鼻塞、喉炎、扁桃腺炎、甲狀腺腫大、喉痛、鼻癌。",
+        "technique": "直刺二分～三分。用三稜針點刺出惡血特效。",
+        "needleFeeling": "局部酸脹感。",
+        "application": "",
+        "notes": "此穴董公原著未公開，本穴由胡師依董公平日所教，特為公開補上。治療鼻炎、鼻塞：董氏針灸上大多用建力、中力、分金、合金，也可配合鎮靜、水金、水通、神耳、駟馬，再加艾灸金陰穴、金陽穴、背後心肺區的異色點、胃毛七穴等。但本穴上有烏黑異色點浮現時，針對此穴就一定要下針，這樣效果才會明顯。治療喉癌、鼻癌：除本穴外一定要配合外三關，並在四花上穴、側三里穴、側下三里穴一帶點刺放血。治療甲狀腺腫大：可本穴配合三重穴、駟馬穴、心靈一穴。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/III-A-6_hou-ling_zh.png"
+        ]
+      },
+      {
+        "name": "喉中穴",
+        "code": "III.P.2.下手臂後側 – 喉中區",
+        "anatomy": "尺骨神經、肺分支神經、腎分支神經。",
+        "location": "手背，肘橫紋下二寸五分，當火腑海穴橈側一寸處是穴。於兩筋間取之。",
+        "meridian": "入肺經。",
+        "properties": "清肺宣竅，化瘀散結。",
+        "indications": "喉癌、喉炎、扁桃腺炎。",
+        "technique": "直刺五分～一寸。",
+        "needleFeeling": "酸脹麻電感。",
+        "application": "本穴配合分金穴、合金穴、內金穴為治療咳嗽、喉炎、支氣管炎、喉癌之特效穴。",
+        "notes": "本穴為董師治療喉癌之配穴，效果神速。針下立見卓效。喉中、喉靈穴皆為治療喉癌的要穴，可加配外三關與不定穴埋針，並留意『有點扎點』。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/III-P-2_hou-zhong_zh.png"
+        ]
+      },
+      {
+        "name": "肝靈穴",
+        "code": "III.A.4.下手臂前側 – 肝靈區",
+        "anatomy": "淺層分布前腕內外側皮神經、深層分布前骨、間動脈靜脈和正中神經。肝之神經、腎之神經。",
+        "location": "如上述肝靈穴的穴位說明。",
+        "meridian": "入肝經。",
+        "properties": "疏肝理氣。",
+        "indications": "脊椎骨膜炎、肝炎、肝硬化、肝痛、兩脅痛、血癌症（白血球過多或過少）、脾腫大、坐骨神經痛、半身不遂、腰酸、筋骨痛。",
+        "technique": "直刺五分～一寸五分。或由下往上斜刺二寸。",
+        "needleFeeling": "局部酸脹感。",
+        "application": "",
+        "notes": "肝靈一、二、三穴功同上三黃穴[註]，董氏七十二絕針之一，為治療肝病之特效穴。治療肝病在臨床上，大多取上三黃穴為主較多，除非本穴上有反應點、異色點時定取之。可在耳朵反應點埋針。肝靈穴共三穴，其主穴在二穴，治療肝疾時都採倒馬針法，另肝靈穴董公原著未列，由胡師公佈。筋骨痛：肝靈加三通、上三黃、下三皇[註]。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/III-A-4_gan-ling_zh.png"
+        ]
+      },
+      {
+        "name": "曲陵穴、建力穴、中力穴",
+        "code": "III.A.10.下手臂前側 – 力區",
+        "anatomy": "外側前腕神經、深層有橈骨神經、心之神經、肺之分枝神經。",
+        "location": "曲陵穴位掌心向上，當肘窩橫紋中央直下一寸五分處是穴。建力在曲陵外側五分，中力在建力外側五分。",
+        "meridian": "入心、肺兩經。",
+        "properties": "宣導肺氣，通暢心絡。",
+        "indications": "抽筋、氣喘、肘關節炎、心悸、甲狀腺腫、心臟擴大、心臟麻痺、胸痛、背痛、重感冒、鼻塞、咳嗽、氣喘、支氣管炎。",
+        "technique": "直刺五分～一寸。用放血針點刺出血。",
+        "needleFeeling": "",
+        "application": "本穴淺刺治感冒，深刺治肺炎，另用放血針針刺本穴刺出惡血，可治陽霍亂、乾霍亂，心臟麻痺、咽喉炎、解平喘。咳嗽：曲陵、建力、中力、火腑海。感冒：天士、曲陵、建力、中力、水金、水通。",
+        "notes": "曲陵、建力、中力三穴為治療感冒、流行性感冒、鼻蓄膿症之特效穴。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/III-A-10_qu-ling_jian-li_zhong-li_zh.png"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "四四部位",
+    "bodyPart": "上臂",
+    "acupoints": [
+      {
+        "name": "分金穴、合金穴、內金穴",
+        "code": "IV.A.2. 上臂前側 – 手金區",
+        "anatomy": "有肱二頭肌、上臂皮下神經、正中神經之分佈區、有肱動脈、頭靜脈、心之分支神經、肺之分支神經。",
+        "location": "分金穴手撫胸取穴，當上臂肱骨之下部中央，去肘窩橫紋一寸五分處是穴。其它見穴位取穴。",
+        "meridian": "入肺經。",
+        "properties": "清肅肺氣。",
+        "indications": "感冒、喉炎、過敏性鼻炎、鼻蓄膿症、咳嗽之特效穴。",
+        "technique": "直刺五分～一寸五分。可採倒馬針法。",
+        "needleFeeling": "酸脹感。",
+        "application": "",
+        "notes": "董公書中無合金、內金，由胡師公開，手三金與手前三士，功能相似，三金或三士可擇一組使用即可。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/IV-A-2_he-jin_fen-jin_nei-jin_zh.png"
+        ]
+      },
+      {
+        "name": "肩中穴、建中穴",
+        "code": "IV.E.1. 肩膀 – 肩區一",
+        "anatomy": "此處為三角肌中央下緣，有上膊動脈、頭靜脈、心之分支神經。",
+        "location": "肩中穴，手臂自然下垂，自肩骨正中央橫紋直下二寸五分處是穴。其下二寸取建中穴。",
+        "meridian": "入心經。",
+        "properties": "活血祛瘀，通經活絡。",
+        "indications": "膝蓋關節炎、膝蓋扭傷、皮膚病（頸項皮膚病及臂部皮膚病）、小兒麻痺、半身不遂、心悸亢進、肩痛、五十肩、流鼻血、血管硬化、瘰癧、清血。",
+        "technique": "直刺一寸～二寸。肩中可配建中一齊下針。",
+        "needleFeeling": "",
+        "application": "",
+        "notes": "",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/IV-E-1_jian-zhong_zh.png"
+        ]
+      },
+      {
+        "name": "背面穴",
+        "code": "IV.E.1. 肩膀 – 肩區一",
+        "anatomy": "有三角筋迴旋上膊動脈、頭靜脈枝、鎖骨神經枝、丹田神經。",
+        "location": "舉臂時，肩骨連接縫之空陷處中央上二分取之。",
+        "meridian": "入三焦經。",
+        "properties": "疏肝利膽，調和氣血。",
+        "indications": "腹部發悶，發音無力。",
+        "technique": "針深三分至五分。",
+        "needleFeeling": "",
+        "application": "用放血針放血可治全身疲勞、兩腿發酸、嘔吐、肝霍亂、陽霍亂、陰陽霍亂。",
+        "notes": "背面穴與十四經肩髃穴位置相近，取穴似乎雷同，其實兩者相差二分左右，十四經之肩髃穴位於上臂平舉，肩峰鎖骨關節外有二個凹陷處前方小凹陷為肩髃穴，其上二分為背面穴。背面穴與肩髃穴位置有異，其屬經及主治都大不一樣，當詳辨之。董公在世上常告之弟子其一一到十十部位之所有穴位，沒有穴位與傳統十四經一樣的，這點門人弟子當謹記于心，董公之書有些穴位未明示清楚，常易混淆，如果能深入董氏奇穴之精髓真諦，即可知董氏奇穴之淵源道理之所在。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/IV-E-1_bei-mian_zh.png"
+        ]
+      },
+      {
+        "name": "人宗穴",
+        "code": "IV.A.3. 上臂前側 – 宗區",
+        "anatomy": "人宗穴：二頭膊筋之旁，橈骨副動脈、頭靜脈及內膊皮神經、肺之副神經、心之分支神經、肝之副神經。地宗穴：在頭靜脈後，有迴旋上膊動脈、腋窩神經、心之支神經。",
+        "location": "人宗穴：手撫胸取穴，肘窩橫紋外側端直上三寸五分貼骨取之，即十四經之曲池穴上三寸五分、手五里穴上五分處是穴。地宗穴：當人宗穴上三寸處，以手撫胸取之。",
+        "meridian": "人宗穴：入肺、胃、脾經。地宗穴：入心經。",
+        "properties": "人宗穴：通經活絡，調理脾胃，宣肺利喉。地宗穴：回陽救逆，開竅醒腦。",
+        "indications": "人宗穴：手臂痛、腳腫痛、肘腫痛難動、黃疸病、四肢浮腫、脾腫大、胃、十二指腸炎、氣喘、喉炎、感冒。地宗穴：能使陽症起死回生。腦溢血之急救穴，針下立解。心臟麻痺、心絞痛之急救針。治半身不遂、心臟病、心臟性喘息、肝昏迷、手腳麻痺、動脈硬化、胸痛背痛、呼吸困難、腦血管阻塞等症。",
+        "technique": "人宗穴：直刺五分～一寸五分。針深五分治感冒氣喘、針深八分治臂痛、針深一寸二分治肝、膽、脾病。地宗穴：直刺一寸～二寸。針深一寸治輕病，針深二寸治重病，兩臂同時取穴。",
+        "needleFeeling": "人宗穴：酸脹感。地宗穴：酸脹麻電感。轉針時有酸麻感擴散胸背，上至頭頂。",
+        "application": "地宗穴為急救要穴，效果不下於傳統十二正經穴位人中穴、百會穴、足三里。",
+        "notes": "人宗穴：董氏奇穴穴位中，沒有和十四經經穴雷同的穴位，董公書中其穴位及取穴為橫紋上三寸，如為上三寸即為十四經上之五里穴，而人宗與五里穴主治差異極大，董公當為匆匆出書未及校訂，今依胡師之意，修為三寸五分，才符合董公本意。董氏奇穴，諸多穴位下針的深淺，其歸經及主治常有不同，這真當特加注意，其要點如人宗穴針刺法上所言\n地宗穴：董公書中為橫紋上六寸，今依與人宗同樣理由修訂為六寸五分。地宗穴為董氏奇穴中之要穴，為董氏七十二絕針及三十二解針要穴之一。三宗倒馬直線針刺，可治大腿內側痛及小腿肚脹痛。",
+        "configNotes": [
+          "急救時可配手解穴，手解穴較方便取穴，臨床上使用較多。心臟麻痺、心絞痛之急救針，再加地宗、手心靈穴。"
+        ],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/IV-A-3_ren-zong_di-zong_zh.png"
+        ]
+      },
+      {
+        "name": "天宗穴",
+        "code": "IV.A.3. 上臂前側 – 宗區",
+        "anatomy": "在頭靜脈後，有迴旋上膊動脈、腋窩神經、六腑神經、小腿神經。",
+        "location": "當後臂肱骨外側與肱二頭肌後部間之陷處，地宗穴上三寸處是穴。",
+        "meridian": "入肝經。",
+        "properties": "清熱利濕，通利下焦。",
+        "indications": "婦科陰道癢、陰道痛、赤白帶下（具有神效）、小腿痛、腳扭傷、小兒麻痺、狐臭、糖尿病。",
+        "technique": "直刺一寸～一寸半。",
+        "needleFeeling": "酸脹麻電感。",
+        "application": "",
+        "notes": "天宗穴近肩中、建中穴，因此可治小腿痛、腳扭傷、小兒麻痺等症，有效。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/IV-A-3_tian-zong_zh.png"
+        ]
+      },
+      {
+        "name": "肩峰穴",
+        "code": "IV.E.1. 肩膀 – 肩區一",
+        "anatomy": "有三角筋、上膊動脈、頭靜脈枝、鎖骨神經枝、肺支神經、心副神經。",
+        "location": "舉臂時，肩骨與臂骨接縫之空陷處中央下五分處取之。",
+        "meridian": "入心、肺兩經。",
+        "properties": "活血祛瘀，通經活絡。",
+        "indications": "高血壓、多汗症、乳癌、乳瘤、乳腺炎、乳頭炎、上肢麻痺症、半身麻痺、半身不遂、腦血栓症。",
+        "technique": "直刺五分～八分。或由上往下斜刺八分。",
+        "needleFeeling": "酸脹感電感。",
+        "application": "",
+        "notes": "本穴為治療乳癌、乳腺炎、乳癰之特效穴，加配足部之雙龍穴神效。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/IV-E-1_jian-feng_zh.png"
+        ]
+      },
+      {
+        "name": "雲白穴",
+        "code": "IV.S.2. 肩膀 – 肩白區",
+        "anatomy": "雲白穴：有三角筋、迴旋上膊動脈、頭靜脈枝、鎖骨神經枝、六腑神經、肺之副神經。李白穴：腎之副神經、肺之支神經。",
+        "location": "雲白穴：垂手取穴或手撫胸取穴，當肩關節前方去肩尖約二寸許處是穴。即肩中穴前二寸處是穴。李白穴：手撫胸取穴，當建中穴前側二寸處是穴。",
+        "meridian": "雲白穴：入肝、腎經。李白穴：入肝經。",
+        "properties": "雲白穴：調經理帶，宣通下焦。李白穴：舒筋活絡。",
+        "indications": "雲白穴：婦科陰道炎、子宮炎、卵巢炎、陰道癢、陰道痛、赤白帶下、小兒麻痺、腳扭傷（特效）。李白穴：狐臭、多汗症、腳扭傷、腳痛、小腿痛、小兒麻痺。",
+        "technique": "雲白穴：直刺一寸～二寸。李白穴：直刺五分～一寸五分。",
+        "needleFeeling": "酸脹麻電感。",
+        "application": "",
+        "notes": "雲白、李白、肩中、建中並用，可治外踝及踝關節炎。肩中、雲白相配，可治小腿肚痛，與三宗穴[註]同功。中風昏迷不醒人事：雲白、李白再加地宗穴。陰道炎：李白配雲白、海豹穴。小便秘結：李白加雲白及下三皇穴（天皇、地皇、人皇）。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/IV-S-2_yun-bai_li-bai_zh.png"
+        ]
+      },
+      {
+        "name": "神肩穴",
+        "code": "IV.S.4. 肩膀 – 肩區二",
+        "anatomy": "有鎖骨上神經、腋窩神經、肺分支神經、心之分支神經。",
+        "location": "當肩峰穴與雲白穴連線之中央點處是穴。",
+        "meridian": "入心、肝兩經。",
+        "properties": "舒筋活絡，通關利竅。",
+        "indications": "小兒麻痺、腦出血、腦血栓之後遺症（半身不遂）、手臂麻痺、大腿內側疼痛、麻痺。",
+        "technique": "直刺三分～五分。由上往下斜刺五分～一寸。",
+        "needleFeeling": "局部酸脹感。",
+        "application": "",
+        "notes": "神肩穴為董氏針灸七十二絕針之要穴，而董公在其書中未公開，胡師乃根據董公平日所傳，乃特公開之。肩關節下諸穴位可任取三針，直三針、橫三針、斜三針倒馬，皆可治小兒痳痺及腳無力之症。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/IV-S-4_shen-jian_zh.png"
+        ]
+      },
+      {
+        "name": "正脊一穴、正脊二穴、正脊三穴",
+        "code": "IV.L.1. 上臂外側 – 正脊區",
+        "anatomy": "肝副神經、心之副神經、脊椎神經。",
+        "location": "手臂自然下垂取之。一穴在手臂肱骨外側面正中線上，當肘橫紋上二寸處是穴。一穴上二寸為二穴，二穴上二寸為三穴。",
+        "meridian": "入肝、腎兩經。",
+        "properties": "通經活絡，舒筋利骨。",
+        "indications": "脊椎骨膜炎（骨刺）、退化性脊椎骨增生症、僵直性脊椎不彎曲症，坐骨神經痛、頸椎骨刺、駝背、慢性腎盂炎。",
+        "technique": "直刺五分～一寸。由下往上斜刺一寸～一寸半。",
+        "needleFeeling": "酸脹有明顯麻電感。",
+        "application": "",
+        "notes": "正脊穴，正者導之以正，脊即脊椎，正脊穴可調整人的脊椎，故取名。在董氏針灸上能直接影響脊椎的有肺心穴、二角明穴、腕順穴、正筋穴、正宗穴等穴。本穴配骨關穴、木關穴，能治腰椎骨疾。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/IV-L-1_zheng-ji_zh.png"
+        ]
+      },
+      {
+        "name": "三神穴",
+        "code": "IV.P.1. 上臂後側 – 三神區",
+        "anatomy": "腎之副神經、肝之副神經、肺分支神經。",
+        "location": "手撫胸取穴。如上述，三神一、三神二、三神三，穴位說明。",
+        "meridian": "入腎、肺兩經。",
+        "properties": "清理下焦，滋腎培元。",
+        "indications": "蛋白尿、腎盂炎、陽痿、早洩、腰酸、腰痛、腎結石痛、口乾、喉炎、支氣管炎、老人咳嗽、喉癌、肺癌。",
+        "technique": "斜刺五分，治口乾，立解。斜刺一寸，治喉炎、支氣管炎、腎虧等疾病。",
+        "needleFeeling": "酸脹麻電感。",
+        "application": "老人咳嗽大多為虛，而三神穴歸入腎經，有調補之功，在臨床上亦可加配董氏奇穴中相關之補穴。",
+        "notes": "淺刺入肺經，深刺入腎經，本穴與後椎，首英、育英穴性主治雷同，可相互取代。三神穴為董氏針灸七十二絕針之一，亦為腎之補穴。可採倒馬直線針法，效果更佳。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/IV-P-1_san-shen_zh.png"
+        ]
+      },
+      {
+        "name": "上曲穴",
+        "code": "IV.S.3. 肩膀 – 曲區",
+        "anatomy": "上曲穴：腎之神經、肝之副神經。下曲穴：肺支神經、肝之支神經",
+        "location": "上曲穴：上臂後側，即肩中穴向後二寸處。下曲穴：手臂後側，上曲穴下二寸取之，即建中穴向後二寸處。",
+        "meridian": "入肝經。",
+        "properties": "舒筋活絡。",
+        "indications": "上曲穴：小兒麻痺、坐骨神經痛、小腿長痛、大腿鼠蹊部拉傷、臂痛、血壓高。下曲穴：坐骨神經痛（肺與肝兩種機能不健全引起）。半身不遂、小兒麻痺、骨頭脫節症（神經失靈引起）、血壓高。",
+        "technique": "上曲穴：直刺一寸～一寸五分。或由上往下斜刺一寸半～二寸。下曲穴：直刺一寸～二寸。由下往上斜刺一寸五分～二寸。",
+        "needleFeeling": "酸脹感。",
+        "application": "",
+        "notes": "",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/IV-S-3_shang-qu_xia-qu_zh.png"
+        ]
+      },
+      {
+        "name": "分枝上穴",
+        "code": "XI.1. 後背部位 – 分枝區",
+        "anatomy": "分泌神經、肝之神經。",
+        "location": "肩背部，肩胛骨與肱骨叉口直下一寸處。",
+        "meridian": "入肝、肺、腎經。",
+        "properties": "清肝解毒。",
+        "indications": "藥物中毒、蛇、蝎、蜈蚣等蟲毒、狐臭、口臭、糖尿病、瘋狗咬傷、小便痛、血淋、淋病、梅毒、食物中毒、服毒自殺（輕者可治、重者難醫）、全身發癢、胸痛。",
+        "technique": "直刺一寸～一寸五分。",
+        "needleFeeling": "酸脹感。",
+        "application": "",
+        "notes": "分枝上穴、分枝中穴、分枝下穴為董氏三十二解穴之一。為重要解毒要穴。分枝上穴、分枝中穴、分枝下穴，本歸於董氏奇穴中的背面穴位，因背面大多採用放血針施治，而本書不將胸、腹、背組穴編入，因為此穴近手臂，因此將其歸入四四部位。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/XI-1_fen-zhi-shang_zh.png"
+        ]
+      },
+      {
+        "name": "分枝下穴",
+        "code": "XI.1. 後背部位 – 分枝區",
+        "anatomy": "分泌神經、肺分支神經、乳神經。",
+        "location": "分枝上穴直下一寸五分處。",
+        "meridian": "入肝、肺、腎經。",
+        "properties": "清肝解毒。",
+        "indications": "同分枝上穴。兼治乳腺炎。",
+        "technique": "直刺一寸～一寸五分。",
+        "needleFeeling": "酸脹感。",
+        "application": "本穴組點刺放血，效果亦佳。",
+        "notes": "分枝下穴，本劃入董氏針灸奇穴中之背部穴位，因董氏下針，都在手足上，胸、腹、背一般都不扎針，都用三稜針取用，而此穴近在上臂與背交接處，又為重要穴位。因本書專說十十穴位，其它非十十穴位不談，因此將此穴劃入四四部位。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/XI-1_fen-zhi-xia_zh.png"
+        ]
+      },
+      {
+        "name": "分枝中穴",
+        "code": "XI.1. 後背部位 – 分枝區",
+        "anatomy": "分泌神經、肺分枝神經、乳神經。",
+        "location": "分枝下穴向內橫開六分處。",
+        "meridian": "入肝、肺、腎經。",
+        "properties": "清肝解毒。",
+        "indications": "同分枝上穴。兼治乳腺炎。",
+        "technique": "直刺一寸～一寸五分。",
+        "needleFeeling": "酸脹感。",
+        "application": "分枝上穴、分枝中穴、分枝下穴三穴同取，三針全下可形成董氏特有倒馬針法之三角針，可達到相乘的效果。",
+        "notes": "分枝中穴在董公書中未予明列，由胡師在其書中特公開。分枝上穴、分枝中穴、分枝下穴三穴皆為董氏三十二解針之一，其解毒功能甚強，且對花柳病的治療亦有效。本穴本屬於背部位區，董氏背部穴位九成都以放血為主，只有分枝穴以下針為主，放血亦可，又分枝穴又位於手臂與背交接處，本書不探討背部穴位放血，因此將分枝穴併入手臂討論。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/XI-1_fen-zhi-zhong_zh.png"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "五五部位",
+    "bodyPart": "足趾",
+    "acupoints": [
+      {
+        "name": "火包穴、婦靈一穴、婦靈二穴",
+        "code": "火包穴：V.Pl.1. 足趾足底 – 火包區婦靈穴：V.Pl.2. 足趾足底 – 婦靈區",
+        "anatomy": "",
+        "location": "平臥，火包穴當足底第二趾，遠端趾間關節橫紋正中央處是穴。其下蹠趾關節橫紋兩側有婦靈一、二穴。",
+        "meridian": "入肝經。",
+        "properties": "疏肝理氣。",
+        "indications": "心痛、肝病、難產、胎衣不下、墮胎（特效）、赤白帶。另外婦靈穴並治子宮卵巢之瘤炎、月經不調之婦科病。",
+        "technique": "直刺三分～五分。用放血針刺出黑血，立即見效。",
+        "needleFeeling": "疼痛感。",
+        "application": "",
+        "notes": "在董氏奇穴中，一些專治婦科病的穴位，如婦科五穴、鳳巢穴、姐妹穴等婦科要穴，大多歸屬肝經。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/V-Pl-1_huo-bao_zh.png",
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/V-Pl-2_fu-ling_zh.png"
+        ]
+      },
+      {
+        "name": "木婦穴",
+        "code": "V.Dl.1. 食趾足背 – 木婦區",
+        "anatomy": "心之副神經、六腑神經。",
+        "location": "當第二趾第二節正中央，向外開三分處是穴。",
+        "meridian": "入肝經。",
+        "properties": "調經理帶，調和衝任。",
+        "indications": "婦科赤白帶下、月經不調、經痛、子宮炎、輸卵管不通。",
+        "technique": "直刺二分～四分，貼骨下針，以細毫針五分針下針較為不痛。",
+        "needleFeeling": "",
+        "application": "",
+        "notes": "手指與腳趾上的穴位下針時都很痛，一般人較不能忍受，不過手足上的穴位，感應力都很強，療效都不錯，因此坊間有人專下手針，取得相當好的療效，手足指上扎針固然痛，可要求患者在進針時，用力作深呼吸的動作，吸足氣，用力吸，氣滿了，進針亦較不痛，這點提出可供參考。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/V-Dl-1_mu-fu_zh.png"
+        ]
+      },
+      {
+        "name": "海豹穴",
+        "code": "V.M.1. 大趾內側 – 海豹區",
+        "anatomy": "有長大趾伸筋、淺腓骨神經、心之分支神經。",
+        "location": "當足大趾之內側，趾間關節之中央點，腳趾甲內側後方處是穴。",
+        "meridian": "入心、肝兩經。",
+        "properties": "散瘀通絡。",
+        "indications": "角膜炎、疝氣、陰道炎、手指痛。",
+        "technique": "直刺一分～三分。",
+        "needleFeeling": "",
+        "application": "",
+        "notes": "",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/V-M-1_hai-bao_zh.png"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "六六部位",
+    "bodyPart": "足掌",
+    "acupoints": [
+      {
+        "name": "上瘤穴",
+        "code": "VI.Pl.6. 跖骨足底 – 上瘤區",
+        "anatomy": "後腦（小腦）總神經。",
+        "location": "平臥，當足底後跟硬皮之前緣正中央處是穴。",
+        "meridian": "入心經。",
+        "properties": "清熱開竅，健腦寧神。",
+        "indications": "腦瘤、腦積水、小腦痛、腦神經痛、腦神經衰弱、腦癌。",
+        "technique": "直刺三分到五分。",
+        "needleFeeling": "酸脹疼痛感。",
+        "application": "胡師以此穴配外三關穴、三重穴、正腦一穴、二穴、三穴，治癒患者劉樹意（譯音、美籍、先生為美國人），患腦癌症，在美國夏威夷一家醫院連續治療三年餘無效，經胡師施針二十九次竟告痊癒。治療腦震盪不醒：本穴配正筋、正宗、鎮靜、正會、三重等穴，留針二小時，並在內踝下附近放血，有效。",
+        "notes": "",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/VI-Pl-6_shang-liu_zh.png"
+        ]
+      },
+      {
+        "name": "三聖穴",
+        "code": "VI.Pl.5. 跖骨足底 – 三聖區",
+        "anatomy": "腳底神經分枝、心之神經、腎之副神經、腦神經。",
+        "location": "如上述三聖一、三聖二、三聖三各穴的穴位說明。",
+        "meridian": "入肝、腎兩經。",
+        "properties": "平肝益腎。",
+        "indications": "高血壓（特效）、舒張壓過高症（特效）、腦溢血、腦血栓症。",
+        "technique": "直刺五分～一寸。",
+        "needleFeeling": "局部酸脹疼痛感。",
+        "application": "",
+        "notes": "本穴為董氏奇穴之要穴，為董氏七十二絕針之一，對血壓的調整，有很大的療效。董公書中未將三聖穴公開，胡師依平日董公所傳，將其補上，另治療血壓如能配合相關部位放血，效果更好。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/VI-Pl-5_san-sheng_zh.png"
+        ]
+      },
+      {
+        "name": "火硬穴",
+        "code": "VI.Dl.1. 跖骨足背 – 脚火區",
+        "anatomy": "火硬穴：心臟神經、肝之副神經。火主穴：心臟支神經、心臟動脈、有感腓骨神經分枝。",
+        "location": "火硬穴：當第一、二蹠骨之前緣，在蹠趾關節中間骨縫中上五分是穴。火主穴：當第一蹠骨與第二蹠骨叉口下緣處是穴。",
+        "meridian": "入心、肝兩經。",
+        "properties": "火硬穴：通利水道，強心定悸。火主穴：通利下焦，舒肝理氣。",
+        "indications": "火硬穴：心悸、頭暈、胎衣不下、骨骼脹大、下顎痛（張口不靈）、強心（昏迷狀態時使用）、子宮炎、子宮瘤。能墮胎。火主穴：骨骼脹大、心臟病而引起之頭痛、肝病、神經衰弱、心臟麻痺、手腳痛、子宮炎、子宮瘤。能墮胎、難產可下。",
+        "technique": "火硬穴：直刺三分～五分。或斜刺三分～五分。火主穴：直刺三分至一寸。治手腳痛時，左用右穴，右用左穴。",
+        "needleFeeling": "火硬穴：酸脹疼痛感。火主穴：局部有酸脹感。",
+        "application": "",
+        "notes": "",
+        "configNotes": [],
+        "imageUrls": [
+          "https://52.198.151.83/wp-content/uploads/2019/09/VI-Dl-1_huo-ying_huo-zhu_zh.png"
+        ]
+      },
+      {
+        "name": "門金穴",
+        "code": "VI.Dl.2. 跖骨足背 – 脚金區",
+        "anatomy": "有短總趾伸筋、足背靜脈、足背第二足動脈、趾背神經、十二指腸神經、胃之支神經、子宮神經。",
+        "location": "當第二、三蹠骨叉口處前緣。",
+        "meridian": "入胃、大小腸經。",
+        "properties": "調理脾胃，化瘀止痛。",
+        "indications": "月經前後抽痛、陣痛、腸炎、胃炎、腹部發脹、腹痛、盲腸炎。",
+        "technique": "用細毫針，直刺五分。",
+        "needleFeeling": "",
+        "application": "",
+        "notes": "取門金穴及門金下穴（內庭穴上五分處）倒馬，配合駟馬穴、三重穴，對鼻炎、耳鳴、偏頭痛，有效。又門金、門金下穴倒馬配四肢穴，可治中指酸麻。門金配水曲、火主成橫三針倒馬，對頭痛、子宮疾病，有效。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/VI-Dl-2_men-jin_zh.png"
+        ]
+      },
+      {
+        "name": "木斗穴",
+        "code": "VI.Dl.3. 跖骨足背 – 脚木區",
+        "anatomy": "脾神經、肝神經。",
+        "location": "木斗穴：當第三、四蹠骨之上緣，在蹠趾關節上緣骨縫中是穴。木留穴：當第三蹠骨與第四蹠骨結合部前緣陷中處取之。",
+        "meridian": "入肝、脾兩經。",
+        "properties": "木斗穴：健脾化濕，疏肝和胃。木留穴：調和脾胃，疏肝利膽。",
+        "indications": "木斗穴：脾腫大（痞塊）、消化不良、肝病、疲勞、膽病、小兒麻痺。木留穴：白血球症、脾腫大、消化不良、肝病、疲勞、膽病、小兒麻痺、半身麻痺。",
+        "technique": "直刺三分～五分。",
+        "needleFeeling": "木斗穴：酸脹疼痛感。木留穴：酸脹感。",
+        "application": "",
+        "notes": "木斗少單獨使用，多與木留相配。木斗、木留兩穴都入肝、脾兩經，因此對肝、脾兩臟都能起作用，在臨床上肝疾大多取上三黃（天黃、明黃、其黃）、肝門穴為多，而脾臟就有取本穴。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/VI-Dl-3_mu-dou_mu-liu_zh.png"
+        ]
+      },
+      {
+        "name": "六完穴",
+        "code": "VI.Dl.4. 跖骨足背 – 脚水區",
+        "anatomy": "肺之分支神經、腎之支神經。",
+        "location": "六完穴：當第四、五蹠趾關節之上緣骨縫中取之。水曲穴：當第四、五蹠骨結合部前緣處取之。下三分為足少陽膽經地五會。",
+        "meridian": "六完穴：入肝、膽二經。水曲穴：入肝、腎兩經。",
+        "properties": "六完穴：疏肝理氣，舒筋活絡。水曲穴：通經活絡，行氣止痛。",
+        "indications": "六完穴：止血（包括跌傷、刀傷出血或是打針流血流不止）、偏頭痛。水曲穴：腰痛、四肢浮腫、腹脹、頸項神經痛、坐骨神經痛。",
+        "technique": "直刺三分～五分。",
+        "needleFeeling": "酸脹疼痛感。",
+        "application": "",
+        "notes": "",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/VI-Dl-4_liu-wan_shui-qu_zh.png"
+        ]
+      },
+      {
+        "name": "火連穴",
+        "code": "VI.M.1. 足內側 – 脚內火區",
+        "anatomy": "火連穴：固有底側趾神經、背側趾動脈、心之分支神經、腎之副支神經。火菊穴：固有底側趾神經、背側趾動脈、心之分支神經、腎之副神經。火散穴：心之分支神經、腎之副神經、六腑副神經。",
+        "location": "火連穴：在足內側緣，第一蹠趾關節後二寸處是穴，平臥取之。火菊穴：當第一蹠骨內側，火連穴後一寸。距蹠趾關節上三寸處是穴。火散穴：當第一蹠骨內側，火菊穴後一寸處是穴。距蹠趾關節上四寸處取之。",
+        "meridian": "入心、腎兩經。",
+        "properties": "清瀉心火，開竅醒腦。",
+        "indications": "火連穴：高血壓引起之頭暈、眼昏、心悸、心臟衰弱、腦瘤、腦膜炎。火菊穴：手麻痺、心悸、頭暈、腳痛、高血壓、頭腦昏脹、眼昏花、眼壓過高致眼皮發酸、頸項扭轉不靈、腦瘤、腦膜炎。火散穴：頭痛、腦脹、角膜炎、腎虧腰酸、頭暈、眼花、背痛、腦瘤、腦膜炎。",
+        "technique": "橫刺五分～一寸。橫針與蹠骨成直角，沿蹠骨底緣進針。",
+        "needleFeeling": "局部酸脹感。",
+        "application": "火連、火菊、火散三穴，治療腦瘤、腦膜炎之特效穴，並治腦神經衰弱症。腦瘤、腦膜炎：正筋、正宗、三重、靈骨、大白、正會、前會。",
+        "notes": "火連穴董公書寫蹠趾關節後一寸五分，因此被人誤為是與太白穴同，其屬它們各有其屬經，穴性、主治亦不一樣，因此本穴改為蹠趾關節後二寸，以符董公平日所傳。火連、火菊、火散為一倒馬直線，在臨床上可取三穴同時下針。火連、火菊、火散，五行心主火，此心亦通腦，因此三針對腦作用很強，因此單腳取穴即可，三穴可一齊取用成倒馬，如果穴上有紫青色筋亦可用放血針放血，可破血行氣，有開竅醒腦之功。太白、公孫穴屬於十四經足太陰脾經，它們的穴性為調理脾胃，而董氏奇穴火連、火菊、火散穴歸心、腎兩經，其主治要點，在於治療腦的疾病，其穴性為開竅醒腦，兩者歸經、穴性、主治，皆有各自的範圍，其穴之不同，其理甚明，而將董氏奇穴與十四經穴相混淆，實為一大誤解。火連、火菊、火散三穴可一齊取用，成直三針倒馬，效果更強，以上三穴皆貼骨下針，因其作用強，不可雙腳同取，同時孕婦禁針，以免流產。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/VI-M-1_huo-lian_huo-ju_huo-san_zh.png"
+        ]
+      },
+      {
+        "name": "水相穴、水仙穴",
+        "code": "VI.M.2. 足內側 – 脚內水一區",
+        "anatomy": "腎之支神經、腦神經。",
+        "location": "在內踝直後，跟筋（阿基里斯腱）前緣貼骨下陷處下五分。水相穴直下二寸為水仙穴。",
+        "meridian": "入腎經。",
+        "properties": "利水消腫，通調沖任。",
+        "indications": "腎臟炎、四肢浮腫、腎虧而引起之腰痛、脊椎骨痛、婦科產後風、白內障。",
+        "technique": "直刺三分～五分。",
+        "needleFeeling": "酸脹麻電感。",
+        "application": "",
+        "notes": "水相、水仙、水晶一帶，如有見烏黑之色，可先就其穴上用放血針放血，對通經活絡有幫助。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/VI-M-2_shui-xiang_shui-xian_zh.png"
+        ]
+      },
+      {
+        "name": "花骨一穴",
+        "code": "VI.Pl.1. 跖骨足底 – 花骨一區",
+        "anatomy": "內側腳底神經、脾、肺、腎神經，肝之神經。",
+        "location": "當足底第一蹠骨與第二蹠骨之間距趾間叉口五分一穴、後五分一穴、再後五分一穴、再後五分一穴，計四穴。",
+        "meridian": "入肝經。",
+        "properties": "舒肝解鬱，清肝明目。",
+        "indications": "砂眼、角膜炎、眼皮炎、眼迎風流淚、怕光、眉稜骨酸脹痛、鼻骨痛、頭痛、牙痛、耳鳴、耳聾。",
+        "technique": "直刺五分～一寸五分。",
+        "needleFeeling": "脹痛感。",
+        "application": "花骨一穴，由四個單穴組成臨床時僅須隨取二個穴道，就有很好的療效。",
+        "notes": "由此穴在於腳底，進針需快，同時要患者用力吸足氣用36號針，以減輕患者疼痛。角膜炎：可針此穴，不必配合其它穴位，留針一小時，紅腫可退。迎風流淚：本穴配手珠圓穴治療，再加上三黃[註]、下三皇[註]。耳鳴：本穴配腕順一、二穴、駟馬、三重、下三皇。眼疾：火硬透花骨。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/VI-Pl-1_hua-gu-yi_zh.png"
+        ]
+      },
+      {
+        "name": "花骨三穴",
+        "code": "VI.Pl.3. 跖骨足底 – 花骨三區",
+        "anatomy": "脾之神經。",
+        "location": "當足底第三與第四蹠骨之間，距趾間叉口二寸處是穴。",
+        "meridian": "入肝、腎兩經。",
+        "properties": "通經活絡，行氣止痛。",
+        "indications": "腰痛、坐骨神經痛、脊椎骨痛。",
+        "technique": "直刺五分～一寸。",
+        "needleFeeling": "酸脹疼痛感。",
+        "application": "花骨三穴配花骨一穴及水金、水通，治腰痛。中白、上白、肩中、花骨三穴，治坐骨神經痛。正脊穴、花骨三穴、水相穴，治脊椎骨痛。若脊椎骨之椎間板突出，宜病位刺血，再扎花骨三穴，配合上三黃[註]、下三皇[註]或正脊一、二、三穴等，再視其病症加減。最好再配合整脊療法。",
+        "notes": "花骨三穴通木斗、木留穴，治療中指、無名指不能曲伸、無力，有療效。花骨三穴與對側手三火穴、三星穴一帶對應。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/VI-Pl-3_hua-gu-san_zh.png"
+        ]
+      },
+      {
+        "name": "花骨四穴",
+        "code": "VI.Pl.4. 跖骨足底 – 花骨四區",
+        "anatomy": "肺之神經、腎之神經。",
+        "location": "在足底第四與第五蹠骨之間，距趾間叉口一寸半處是穴，與六完穴相通。",
+        "meridian": "入肺、腎兩經。",
+        "properties": "通經活絡，通利下焦。",
+        "indications": "脊椎骨痛、坐骨神經痛、小腹痛、胃痛、止血。便秘、月經不調、足背腫、目赤、夜尿、頻尿。",
+        "technique": "直刺五分～一寸。",
+        "needleFeeling": "酸脹疼痛感。",
+        "application": "",
+        "notes": "",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/VI-Pl-4_hua-gu-si_zh.png"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "七七部位",
+    "bodyPart": "小腿",
+    "acupoints": [
+      {
+        "name": "正筋穴、正宗穴",
+        "code": "VII.P.1. 小腿後側 – 正區",
+        "anatomy": "脊椎骨總神經、腦之總神經。脛骨神經。",
+        "location": "正筋穴當足跟筋之正中央上，距足底三寸五分是穴。正筋穴上二寸為正宗穴。",
+        "meridian": "入腎、膀胱二經。",
+        "properties": "清熱醒腦，通氣止痛。",
+        "indications": "腰脊椎痛、閃腰、脊椎骨閃痛、頸項骨骨刺、扭轉不靈及頸項筋痛、腦骨脹大、腦積水、岔氣、後腦頭痛。",
+        "technique": "直刺五分～一寸。（針若透過足後腳跟筋效力尤佳）；體壯者可採坐姿進針。體弱者應側臥後進針。",
+        "needleFeeling": "酸脹麻電感。",
+        "application": "",
+        "notes": "",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/VII-P-1_zheng-jin_zheng-zong_zh.png"
+        ]
+      },
+      {
+        "name": "正士穴",
+        "code": "VII.P.1. 小腿後側 – 正區",
+        "anatomy": "肺之分支神經、脊椎骨總神經、脛骨神經。",
+        "location": "當足後跟筋之正中央上，正宗穴上二寸處是穴。",
+        "meridian": "入腎、膀胱二經。",
+        "properties": "疏導經絡，行氣活血。",
+        "indications": "肩背痛、腰痛、坐骨神經痛、閃腰岔氣、頭痛。",
+        "technique": "直刺五分至一寸。",
+        "needleFeeling": "酸脹感。",
+        "application": "",
+        "notes": "正筋、正宗、正士三穴可齊下為直倒馬三針，療效更強，對脊椎骨、腦部（加三重穴）的治療，都有助益。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/VII-P-1_zheng-shi_zh.png"
+        ]
+      },
+      {
+        "name": "三重穴",
+        "code": "VII.L.4. 小腿外側 – 三重區",
+        "anatomy": "外側腓腹皮神經、心之分支神經、肺之分支神經、脾神經。",
+        "location": "三重一穴：當外踝尖，直上三寸，向前橫開一寸處是穴。三重二穴：當一重穴直上二寸處是穴。三重三穴：當二重穴直上二寸處是穴。",
+        "meridian": "三重一穴：入心、肺、脾三經。三重二穴：入心、肺、脾三經。三重三穴：心、肝、脾、肺四經。",
+        "properties": "破氣行血，除積消瘀。",
+        "indications": "甲狀腺腫大（心臟病引起）、眼球突出、扁桃腺炎、口歪眼斜（顏面神經麻痺）、偏頭痛、痞塊、肝病、腦瘤、腦癌、腦膜炎、喉炎、脾腫大、脾臟炎。",
+        "technique": "直刺一寸～二寸。或放血針點刺出血",
+        "needleFeeling": "酸脹麻電感",
+        "application": "",
+        "notes": "三重一穴、三重二穴、三重三穴同時下針，形成直倒馬針法，具有行氣破血、通竅安神之功，尤其在針法上搭配，會使療效增速。三重穴與外三關皆是治療腫瘤的要穴，在臨床上，兩組中可選一組配相關穴位取用。治療癌症主穴：上三黃[註]、下三皇[註]、靈骨、大白、不定穴，再配合其他相關穴位。以全息律來說，三重一、二、三穴組反應點，恰巧在頭部及肩前處。賴師叔在其書中言董公用三重穴治乳瘤、食道癌、舌下腺癌之初期，有效。三重穴具有破氣行血的功效，因此任何腫瘤，都可以三重穴來配穴。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/VII-L-4_san-chong_zh.png"
+        ]
+      },
+      {
+        "name": "四花上穴",
+        "code": "VII.A.4. 小腿前側 – 四花區",
+        "anatomy": "四花上穴：六腑神經、肺支神經、心支神經。四花中穴：六腑神經、心之分支神經、肺之分支神經、六腑之副神經。四花下穴：六腑神經、六腑副神經、肺之副神經、腎之副神經。",
+        "location": "四花上穴：當外膝眼之下方三寸，脛骨外緣貼骨下陷中處是穴。四花中穴：當四花上穴直下四寸五分，四花裡穴外開一寸二分處。即十四經之條口穴（膝眼下八寸）上五分。四花下穴：當四花副穴直下二寸五分處是穴。",
+        "meridian": "四花上穴：入心、肺、胃三經。四花中穴：入心、肺、胃三經。四花下穴：入肺、腎、胃三經。",
+        "properties": "四花上穴：疏心清肺，調理脾胃。四花中穴：疏心清肺，調理脾胃。四花下穴：理脾和胃。",
+        "indications": "四花上穴：哮喘、牙痛、心悸、口內生瘤、頭暈、心臟病、轉筋霍亂、十二指腸潰瘍。四花中穴：哮喘、眼球病（酸痛、角膜炎、結膜炎、白內障）、心臟內膜炎、狹心症、心肌梗塞、心臟血管硬化、心兩側痛、心臟麻痺、胸悶、急性胃腸炎、消骨頭之腫脹。肺癌、肺氣腫、肺炎。四花下穴：腸炎、腹脹、胃痛、下肢浮腫、睡中咬牙。",
+        "technique": "四花上穴：直刺二寸～三寸。針深二寸，治哮喘，針深三寸，治心臟病。四花中穴：直刺二寸～三寸，治哮喘、眼疾。用放血針點剌出血，治心臟血管硬化、急性胃腸炎、胸悶、肋膜炎等，有奇效。四花下穴：直刺五分～一寸。 用放血針點刺出血。",
+        "needleFeeling": "四花上穴：酸脹感。四花中穴：局部酸脹麻電感。四花下穴：局部酸脹感。",
+        "application": "四花上穴、四花中穴、四花裡穴、四花下穴一帶，不一定要下針，這區域如有見烏黑的青筋，即可用放血針放血，對心臟疾病、急性胃腸病、胸悶，有奇效。",
+        "notes": "四花穴具有調氣補氣的功能，其調的乃是脾胃之氣。駟馬穴為氣病之要穴，其所調乃心肺之氣。靈骨、大白有行氣活血、化瘀之功，其所調乃心肺之氣，能促進營衛之流行。四花上穴、四花中穴、四花下穴，由上而下排列，剛巧如人一臟器全息投影，膝蓋為頭部，上穴主上焦、主心肺；中穴主中焦、主脾胃；下穴主下焦、主腸及下腹，三穴齊下成董氏倒馬針法，通三焦、通五臟，調理全身的機能，為董氏針法之特色。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/VII-A-4_si-hua-shang-zhong-xia_zh.png"
+        ]
+      },
+      {
+        "name": "四花副穴",
+        "code": "VII.A.4. 小腿前側 – 四花區",
+        "anatomy": "同四花中穴。六腑神經、心之分支神經、肺之分支神經、六腑之副神經",
+        "location": "當四花中穴直下二寸五分處是穴。在十四經之下巨虛穴下一寸處。",
+        "meridian": "入心、肺、胃三經。",
+        "properties": "疏心理肺，調理脾胃。",
+        "indications": "同四花中穴。",
+        "technique": "直刺一寸～二寸。",
+        "needleFeeling": "酸脹感。",
+        "application": "四花上、四花中、四花副三穴，在臨床上可在該處見青筋刺血，以見黑血為準，可治心臟病及胃腸病。",
+        "notes": "腿部風濕痛：在四花上、四花中、四花副三穴點刺放血，並配合病位放血，再扎上三黃穴[註]、中九里穴、通心、通關、靈骨。四花穴用三稜針放血，再取靈骨、大白、駟馬，治肺氣腫。肺癌：先在後背心肺區用放血針放血，並於手掌、手下臂內側取天應穴，再取靈骨、大白穴有效，需同時配合食療。上牙痛：可取四花穴、手三齒穴、靈骨穴。四花副穴、四花下穴、腑腸穴可三針齊下形成倒馬，對下腹部疼痛、腸炎有效。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/VII-A-4_si-hua-fu_zh.png"
+        ]
+      },
+      {
+        "name": "四花外穴",
+        "code": "VII.A.4. 小腿前側 – 四花區",
+        "anatomy": "外側腓腹皮神經、肺之支神經、六腑神經。",
+        "location": "當四花中穴向外橫開一寸五分處是穴。",
+        "meridian": "肺、胃二經。",
+        "properties": "活血祛風，消炎鎮痛。",
+        "indications": "急性腸炎、牙痛、偏頭痛、臉部神經麻痺（口歪眼斜）、肋膜炎。",
+        "technique": "直刺一寸～一寸五分。",
+        "needleFeeling": "",
+        "application": "用放血針點刺出黑血，治急性胃腸炎、肋膜炎、胸部發脹、哮喘、坐骨神經痛、肩臂痛、耳痛、慢性鼻炎、頭痛、高血壓（見師公景昌先生著董氏針灸正經奇穴學）。",
+        "notes": "四花中穴、四花外穴、足千金穴，三針齊下成為橫三針，專治中焦疾病，對盲腸痛、急性胃腸炎，有效。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/VII-A-4_si-hua-wai_zh.png"
+        ]
+      },
+      {
+        "name": "腑腸穴",
+        "code": "VII.A.4. 小腿前側 – 四花區",
+        "anatomy": "外側腓腹皮神經、六腑神經、肺之副神經、腎之神經、心臟之副神經。",
+        "location": "當四花下穴直下一寸五分處是穴。",
+        "meridian": "入胃、大腸二經。",
+        "properties": "調理腸胃，清熱利濕。",
+        "indications": "同四花下穴。",
+        "technique": "直刺五分～一寸（用細毫針）。或用放血針點刺出血。",
+        "needleFeeling": "局部酸脹感。",
+        "application": "",
+        "notes": "本穴通常為四花下穴之配穴，效力迅速，但不單獨用針。（見董公所著之書）。心臟擴大，只靠吃藥，效果不顯，可先在四花穴一帶，背後心肺區一帶放血，再行針刺效果不錯。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/VII-A-4_fu-chang_zh.png"
+        ]
+      },
+      {
+        "name": "天皇穴",
+        "code": "VII.M.1. 小腿內側 – 下三皇區",
+        "anatomy": "伏在神經、腎之神經、六腑神經、心之分支神經。",
+        "location": "當膝脛骨內側下緣直下一寸處是穴。即十四經之陰陵泉穴直下一寸處是穴。",
+        "meridian": "入心、腎二經。",
+        "properties": "清熱化濕，疏導下焦。",
+        "indications": "胃酸過多、反胃、腎臟炎、糖尿病、蛋白尿、膀胱炎。",
+        "technique": "直刺五分～一寸五分。",
+        "needleFeeling": "酸脹麻電感。",
+        "application": "本穴配天皇副穴，治反胃、胃酸過多。",
+        "notes": "",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/VII-M-1_tian-huang_zh.png"
+        ]
+      },
+      {
+        "name": "天皇副穴",
+        "code": "VII.M.1. 小腿內側 – 下三皇區",
+        "anatomy": "伏在神經、六腑神經。",
+        "location": "當天皇穴直下一寸五分處，脛骨之內側是穴。",
+        "meridian": "入脾、腎二經。",
+        "properties": "調氣通經，益腎健脾。",
+        "indications": "胃酸過多、反胃、眼球歪斜、散光、貧血、癲癇病、精神病、眉稜骨酸痛、鼻骨痛、頭暈、腎虧、坐骨神經痛、腰痛。（對腎虧所引起各病有效）。",
+        "technique": "直刺五分～一寸。當補腎用時，針深二寸。",
+        "needleFeeling": "酸脹麻電感。",
+        "application": "",
+        "notes": "天皇副穴又名腎關穴，主治一切腎虧所引起之病，為補腎氣的補穴。為董氏奇穴中少數補腎要穴。腎關穴直刺通心，向外側斜刺通腎，其下針深度，亦可分三層，淺層治坐骨，中層治腰及腎，深層治頭部，隨深度不同，其所主治之部位亦有所不同。董公有一個有名病案，即用對側腎關，治針灸誤刺而後眼球歪斜病例。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/VII-M-1_tian-huang-fu_zh.png"
+        ]
+      },
+      {
+        "name": "地皇穴",
+        "code": "VII.M.1. 小腿內側 – 下三皇區",
+        "anatomy": "伏在神經、內側腓腹皮神經、腎之神經。",
+        "location": "當內踝骨上緣直上七寸五分處是穴。即人皇穴直上四寸。在十四經之漏谷穴上五分處。",
+        "meridian": "入肝、腎二經。",
+        "properties": "疏肝解鬱，補腎益氣。",
+        "indications": "腎臟炎、四肢浮腫、糖尿病、淋病、陽痿、早洩、遺精、夢遺、蛋白尿、小便出血、子宮瘤、月經不調、腎虧之腰痛。",
+        "technique": "直刺一寸～二寸。",
+        "needleFeeling": "",
+        "application": "天皇、地皇、人皇三穴合稱下三皇。有時將天皇副穴、地皇、人皇三穴亦稱下三皇，配通腎、通背，為治療腎虧、腎臟炎、糖尿病之特效穴。",
+        "notes": "下三皇或通腎、通背、通胃兩組穴位，取一組倒馬，再配上三黃[註]、水金、水通，灸療胃毛七穴、腑巢二十三穴、腰背腎水區、四花上長期治療，可治糖尿病，效果不錯。下三皇為董氏針灸中有名的強壯補腎要穴，長期配上三黃下針，可調補元氣，增強體質。取下三皇配上三黃、三重穴及通關、通山、通天等穴，偶爾背部扎董氏天應穴，有時亦在正會放血，扎正筋、正宗、正士，上列諸穴配合治療癲癇病，筆者有幾個病例治癒，相當成功，療期三個月。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/VII-M-1_di-huang_zh.png"
+        ]
+      },
+      {
+        "name": "人皇穴",
+        "code": "VII.M.1. 小腿內側 – 下三皇區",
+        "anatomy": "伏在神經、腎之分支神經、肺分支神經。",
+        "location": "當內踝骨上緣直上三寸五分處是穴，即十四經之三陰交穴直上五分脛骨內側處。",
+        "meridian": "入肺、腎二經。",
+        "properties": "和血舒筋，補腎益精。",
+        "indications": "淋病、陽痿、早萎、遺精、滑精、腰脊椎骨痛、脖子痛、頭暈、手麻、糖尿病、小便出血（尿血）、腎盂炎、膀胱炎、腎虧之腰痛、背痛。",
+        "technique": "直刺六分～一寸五分。往上斜刺治背痛、手痛、項痛，特效（用二寸針貼骨進針）。",
+        "needleFeeling": "酸脹麻電感。",
+        "application": "本穴具有強精、強壯之作用，對膽囊、脾臟手術時可當麻醉穴（僅供參考）。",
+        "notes": "",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/VII-M-1_ren-huang_zh.png"
+        ]
+      },
+      {
+        "name": "側三里穴、側下三里",
+        "code": "VII.L.1. 小腿外側 – 三里區",
+        "anatomy": "外側腓腹皮神經、牙神經、肺之分支神經。",
+        "location": "側三里穴在腓骨前緣，即四花上穴向外橫開二寸五分處。側三里下二寸為側下三里穴。",
+        "meridian": "入心、肺二經。",
+        "properties": "活血祛瘀，消炎止痛。",
+        "indications": "牙痛、顏面神經痛、三叉神經痛、偏頭痛、肋間神經痛、盲腸炎疼痛。",
+        "technique": "直刺一寸～一寸五分。",
+        "needleFeeling": "酸脹麻電感。",
+        "application": "",
+        "notes": "本穴對治療偏頭痛、甲狀腺腫大、舌下腫等病與三重穴同，它可與三重穴輪流與駟馬穴相配，效果不錯。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/VII-L-1_ce-san-li_zh.png"
+        ]
+      },
+      {
+        "name": "足千金穴、足五金穴",
+        "code": "VII.L.2. 小腿外側 –  足五千金區",
+        "anatomy": "外側腓腹皮神經、肺之支神經、腎之分支神經、喉側神經。",
+        "location": "足千金腓骨前緣，即側下三里穴向外橫開五分再直下二寸處，其下二寸為足五金。",
+        "meridian": "入肺、腎二經。",
+        "properties": "瀉肺熱，利咽喉。",
+        "indications": "魚骨刺住喉管、喉炎（火蛾病）、喉嚨生瘡、扁桃腺炎、甲狀腺腫、盲腸痛、急性腸炎、肩背痛。",
+        "technique": "直刺五分～一寸或以放血針點刺出血。",
+        "needleFeeling": "",
+        "application": "",
+        "notes": "若以經脈訴說，足千金、足五金通陽維脈上，如陽維脈起于足跟外側，向上經過外踝……從腋後上肩至前額，本穴除可治陽維病候外，亦可主治頸項處之疾病，尤其是呼吸道方面之病變。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/VII-L-2_zu-qian-jin_zu-wu-jin_zh.png"
+        ]
+      },
+      {
+        "name": "外三關穴",
+        "code": "VII.L.3. 小腿外側 – 外三關區",
+        "anatomy": "外側腓腹皮神經、肺之神經、肝之分神經。",
+        "location": "外踝尖與膝蓋外側高骨連線之中點為外三關二穴。外三關二穴與外踝尖之中點為外三關一穴。外三關二穴與膝蓋外側連線之中點為外三關三穴。",
+        "meridian": "入肺、肝二經。",
+        "properties": "消瘀散結，宣通氣血。",
+        "indications": "喉炎、喉癌、肺癌、扁桃腺炎、腮腺炎、紅鼻子、青春痘、粉刺、瘰癧、肩臂痛、瘤癌、腹部腫瘤、乳癌。",
+        "technique": "直刺一寸～一寸五分。或以放血針點刺出黑血效果佳。",
+        "needleFeeling": "酸脹感。",
+        "application": "",
+        "notes": "外三關功能如同三重穴，對各種良性或惡性腫瘤、紅腫青春痘，都是一定要取用的要穴，兩組穴亦可輪流使用。本穴位小腿外側與手臂對應，因此對手臂麻痛、肩背痛、手臂無力，有效。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/VII-L-3_wai-san-guan_zh.png"
+        ]
+      },
+      {
+        "name": "光明穴",
+        "code": "VII.M.3. 小腿內側 – 光明區",
+        "anatomy": "伏在神經、眼神經。",
+        "location": "內踝尖直後一寸，直上一寸內踝骨上緣處。即十四經之復溜穴下一寸，太蹊穴上一寸處。",
+        "meridian": "入肝、腎二經。",
+        "properties": "疏肝明目。",
+        "indications": "白內障、眼酸痛、散光、弱視、中風、半身不遂。",
+        "technique": "直刺五分。 或以放血針點刺出血。",
+        "needleFeeling": "酸麻感。",
+        "application": "",
+        "notes": "",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/VII-M-3_guang-ming_zh.png"
+        ]
+      },
+      {
+        "name": "雙龍一穴、雙龍二穴",
+        "code": "VII.A.3. 小腿前側 – 雙龍區",
+        "anatomy": "外側腓腹皮神經、肺支神經、肝支神經。",
+        "location": "雙龍一穴當外膝眼下一寸五分，脛骨外側骨陷中，二穴在一穴下六分處取之。",
+        "meridian": "入肺、肝二經。",
+        "properties": "消腫止痛，疏通經絡。",
+        "indications": "乳腺炎、乳頭炎、乳瘤、乳癌。",
+        "technique": "直刺五分～八分。",
+        "needleFeeling": "酸脹麻電感。",
+        "application": "本穴、肩峰、駟馬穴，都是對乳房起相對作用的穴位，在臨床上互相配用，以增強效果，如有瘤或癌，不要忘了配合專治腫瘤要穴的三重穴或外三關穴。",
+        "notes": "雙龍一、二穴在董公所著之「董氏針灸正經奇穴學」一書中未列，此乃是董氏七十二絕針要穴之一，由胡師在其書中公開。一般乳疾，可先在後背心肺區（即乳房相對應之背部）點刺放血，另足膝上見青筋，點刺出惡血，對乳疾改善很大。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/VII-A-3_shuang-long_zh.png"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "八八部位",
+    "bodyPart": "大腿",
+    "acupoints": [
+      {
+        "name": "通關穴",
+        "code": "VIII.A.1. 大腿前側 – 通火區",
+        "anatomy": "通關穴：大腿神經、心之總神經。通山穴：大腿神經、心之總神經。通天穴：大腿骨神經、心之總神經。",
+        "location": "通關穴：當大腿正中線之大腿骨上，距膝蓋橫紋上五寸處。通山穴：大腿正中線之大腿骨上，通關穴直上二寸處。通天穴：大腿正中線之大腿骨上，通關穴直上四寸處。",
+        "meridian": "入心、胃二經。",
+        "properties": "通關穴：清心安神，寬胸和胃。通山穴：活血理氣，寧心安神。通天穴：疏通心絡，溫經散寒。",
+        "indications": "膝蓋痛、四肢痛、頭暈、眼花、腦貧血、胃病、風濕性心臟病、心兩側痛、心悸、心臟病、心口痛。",
+        "technique": "直刺五分～一寸五分。",
+        "needleFeeling": "酸脹微痛感。",
+        "application": "治療心血管諸疾：可先在全身反應區放血，可提高療效。通心、通靈、通關、通山、通天取倒馬或兩穴使用時，可配合心靈穴、火星穴、靈骨穴等應用。",
+        "notes": "董氏針灸正經奇穴學中，大腿上方正中央，即通心、通關、通山一線，所屬為心經，一般都採取三穴倒馬使用，很少單獨取穴。因而董氏針灸中每一區段其穴位都是以三到五穴成一組的情況出現，這是董氏針灸的一大特色。專治心臟本身臟器的疾病，在臨床上要有耐心，長期治療。通心、通靈、通關、通山、通天五穴，為治療心臟疾病之最重要的穴道，另可用在平時保健及循環功能之加強。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/VIII-A-1_tong-guan_tong-shan_tong-tian_zh.png"
+        ]
+      },
+      {
+        "name": "通山穴",
+        "code": "",
+        "anatomy": "大腿神經、心之總神經。",
+        "location": "大腿正中線之大腿骨上，通關穴直上二寸處。",
+        "meridian": "入心、胃二經。",
+        "properties": "活血理氣，寧心安神。",
+        "indications": "同通關穴。",
+        "technique": "直刺五分～一寸五分。",
+        "needleFeeling": "酸脹微痛感。",
+        "application": "",
+        "notes": "董氏針灸正經奇穴學中，大腿上方正中央，即通心、通關、通山一線，所屬為心經，一般都採取三穴倒馬使用，很少單獨取穴。因而董氏針灸中每一區段其穴位都是以三到五穴成一組的情況出現，這是董氏針灸的一大特色。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2020/08/8-8-通山穴.jpg"
+        ]
+      },
+      {
+        "name": "通心穴、通靈穴",
+        "code": "VIII.A.1. 大腿前側 – 通火區",
+        "anatomy": "大腿骨神經、心之總神經。",
+        "location": "通心穴在腿正中線之大腿骨上，膝蓋橫紋上一寸。通心穴直上二寸為通靈穴。",
+        "meridian": "入心、胃二經。",
+        "properties": "寧心安神，疏通心絡。",
+        "indications": "前額頭痛（心臟擴大所引起者）、頭暈、心臟積水、心神不安、胸痛、手腳發抖、血管硬化、半身不遂。",
+        "technique": "直刺五分～八分。由下往上斜刺五分～一寸。",
+        "needleFeeling": "",
+        "application": "",
+        "notes": "通心穴及通靈穴，由胡師依董公平日所傳而首次公開，對於循環系統、心臟、腦血管病變的治療，有卓效。大腿正面正中線，屬董氏針灸正經奇穴中為心經，而根據傳統十四正經中，應歸入胃經，因此筆者將它歸入心、胃二經，又此線上五穴由上而下，依人體臟器全息排列，為一反的全息律排列。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/VIII-A-1_tong-xin_tong-ling_zh.png"
+        ]
+      },
+      {
+        "name": "通天穴",
+        "code": "",
+        "anatomy": "大腿骨神經、心之總神經。",
+        "location": "大腿正中線之大腿骨上，通關穴直上四寸處。",
+        "meridian": "入心、胃二經。",
+        "properties": "疏通心絡，溫經散寒。",
+        "indications": "同通關穴。",
+        "technique": "直刺五分～一寸五分。",
+        "needleFeeling": "酸脹微痛感。",
+        "application": "治療心血管諸疾：可先在全身反應區放血，可提高療效。通心、通靈、通關、通山、通天取倒馬或兩穴使用時，可配合心靈穴、火星穴、靈骨穴等應用。",
+        "notes": "通心、通靈、通關、通山、通天五穴，為治療心臟疾病之最重要的穴道，另可用在平時保健及循環功能之加強。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2020/08/8-8-通天穴.jpg"
+        ]
+      },
+      {
+        "name": "姐妹一穴、姐妹二穴",
+        "code": "VIII.A.4. 大腿前側 – 姐妹區",
+        "anatomy": "大腿神經、六腑神經、腎分支神經。",
+        "location": "當通山穴向內側橫開一寸，再直上一寸處為姐妹一穴，其上二寸五分取姐妹二穴。當姐妹二穴直上二寸五分處是姐妹三穴。",
+        "meridian": "入肝、腎、脾、胃經。",
+        "properties": "姐妹一、二穴：調經理氣，舒肝解鬱。姐妹三穴：舒肝健脾，和中化滯。",
+        "indications": "子宮瘤、子宮炎、子宮癢、輸卵管不通、卵巢炎、月經不調、無月經症（閉經）、腸痛、胃出血。",
+        "technique": "姐妹一、二穴：直刺一寸五分～三寸。姐妹三穴：直刺一寸五分～二寸五分。",
+        "needleFeeling": "姐妹一、二穴：酸麻脹感。姐妹三穴：酸脹感。",
+        "application": "下針姐妹穴，因在大腿近內側上，不方便下針，現大多以手上婦科穴取代。",
+        "notes": "依人體全息臟腑投影來看，膝蓋為頭，腹股溝為腹股溝，而姐妹穴即位於下腹部位區，因此本穴可治下腹部相關之疾病，如腸痛、婦科病等，此為董氏針灸上的一大奧義，讀者當可深思體悟。姐妹穴與感冒穴近腹股溝，又近脾、肝兩經，因此它們對生殖系統上疾病，能起積極的治療作用，一來接近病灶，二來循經所治，因而療效不錯。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/VIII-A-4_jie-mei_zh.png"
+        ]
+      },
+      {
+        "name": "姐妹三穴",
+        "code": "",
+        "anatomy": "同姐妹一穴。",
+        "location": "當姐妹二穴直上二寸五分處是穴。",
+        "meridian": "入肝、腎、脾、胃經。",
+        "properties": "舒肝健脾，和中化滯。",
+        "indications": "同姐妹一穴。",
+        "technique": "直刺一寸五分～二寸五分",
+        "needleFeeling": "酸脹感。",
+        "application": "",
+        "notes": "姐妹穴與感冒穴近腹股溝，又近脾、肝兩經，因此它們對生殖系統上疾病，能起積極的治療作用，一來接近病灶，二來循經所治，因而療效不錯。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2020/08/8-8-姐妹三穴.jpg"
+        ]
+      },
+      {
+        "name": "感冒一穴、感冒二穴",
+        "code": "VIII.A.5. 大腿前側 – 感冒區",
+        "anatomy": "大腿神經、六腑神經、肺分支神經。",
+        "location": "感冒一穴為姐妹二穴向內橫開一寸。感冒二穴為姐妹三穴向內橫開一寸是穴。",
+        "meridian": "入肺、脾二經。",
+        "properties": "內容清熱除濕，宣肺祛風。",
+        "indications": "重感冒、發高燒、流行性感冒、發冷畏寒、感冒頭痛。",
+        "technique": "針深一寸～二寸。或斜刺。",
+        "needleFeeling": "",
+        "application": "",
+        "notes": "感冒穴除入肺經，專治感冒相關疾病外，因近腹股溝，又穴位近脾、肝二經，如配合下三皇[註]，對男科疾病亦有相當助益。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/VIII-A-5_gan-mao_zh.png"
+        ]
+      },
+      {
+        "name": "通腎穴",
+        "code": "VIII.A.6. 大腿前側 – 通水區",
+        "anatomy": "大腿神經、腎之神經。",
+        "location": "通腎穴：當膝髕骨內側上緣之陷處。通胃穴：通腎穴直上二寸處是穴。通背穴：通腎穴直上四寸。即通胃穴上二寸處。",
+        "meridian": "入脾、腎二經。",
+        "properties": "通腎穴：宣通下焦，調經止帶。通胃穴：健脾和胃，滋陰潛陽。通背穴：固腎培元，溫經散寒。",
+        "indications": "通腎穴：腎盂腎炎、慢性腎臟炎、糖尿病、淋病、陽痿、早洩、膀胱炎、子宮炎、赤白帶下、腎虧引起之頭暈、腰痛、風濕性腎臟病、高血壓、胃腸炎、尿蛋白、喉乾水腫。通胃穴：同通腎穴。又治背痛、胃痛、前手臂痛。通背穴：同通腎穴。又治頭痛、頭暈、背痛、疲勞。",
+        "technique": "通腎穴：直刺五分～一寸。通胃穴：直刺五分～一寸五分。治口乾，直刺二分。通背穴：直刺一寸～二寸。直刺三分，治口乾立解。",
+        "needleFeeling": "酸麻脹感。",
+        "application": "董公在其書中說通腎、通胃、通背可任取一穴，為治療婦女流產之補針，連續治療半月即無流產之慮。只能取一穴，不可多取。通腎、通胃、通背三穴，一般都任取二或三穴下針，形成董氏特有之「倒馬針法」，可補腎、健脾、通調水道、利水消腫，能治腎臟炎、腸炎、腹瀉、嘔吐、四肢水腫、小便濁臭（尿酸高引起）等症，效果良好。通腎、通胃、通背三穴同時下針，形成董氏獨有之「倒馬針法」，可治療腎臟炎、膀胱炎等疾病。董公書中說禁三針同下，在臨床上筆著經驗三針倒馬並無不可，效果不錯。",
+        "notes": "通腎、通胃、通背、神耳、水金、水通穴，為董氏針灸中少數特效之補針，治病時，氣虛型患者，可擇穴配合。腳背面紅腫（俗稱草鞋風）：可先在病位放血外，再配通腎、通胃、通關、雲白、李白穴下針。亦可利用手足對應下針。通腎、通胃配下三皇[註]，治腎虧引起陽痿、早洩有效。亦可配合針上灸。通腎、通胃、通背三穴的主治內容，胡師較董公原著中增列了不少，如膀胱炎、子宮炎、胃腸炎、高血壓等病。胃陰與腎陰，一為後天、一為先天，胃陰以腎陰為本，並不斷地充養腎陰，如果胃陰大虛或久虛後，會導致腎陰涸竭，可使用通胃、通腎、土靈穴三針，形成指揮針法，加配下三皇[註]，先天、後天一齊調整，療效更佳。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/VIII-A-6_tong-shen_tong-wei_tong-bei_zh.png"
+        ]
+      },
+      {
+        "name": "通胃穴",
+        "code": "",
+        "anatomy": "大腿神經、腎之神經。",
+        "location": "通腎穴直上二寸處是穴。",
+        "meridian": "入脾、腎二經。",
+        "properties": "健脾和胃，滋陰潛陽。",
+        "indications": "同通腎穴。又治背痛、胃痛、前手臂痛。",
+        "technique": "直刺五分～一寸五分。治口乾，直刺二分。",
+        "needleFeeling": "酸脹感。",
+        "application": "通腎、通胃、通背三穴，一般都任取二或三穴下針，形成董氏特有之「倒馬針法」，可補腎、健脾、通調水道、利水消腫，能治腎臟炎、腸炎、腹瀉、嘔吐、四肢水腫、小便濁臭（尿酸高引起）等症，效果良好。",
+        "notes": "通腎、通胃、通背三穴的主治內容，胡師較董公原著中增列了不少，如膀胱炎、子宮炎、胃腸炎、高血壓等病。胃陰與腎陰，一為後天、一為先天，胃陰以腎陰為本，並不斷地充養腎陰，如果胃陰大虛或久虛後，會導致腎陰涸竭，可使用通胃、通腎、土靈穴三針，形成指揮針法，加配下三皇[註]，先天、後天一齊調整，療效更佳。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2020/08/8-8-通胃穴.jpg"
+        ]
+      },
+      {
+        "name": "通背穴",
+        "code": "",
+        "anatomy": "大腿神經、腎之神經。",
+        "location": "通腎穴直上四寸。即通胃穴上二寸處。",
+        "meridian": "入脾、腎二經。",
+        "properties": "固腎培元，溫經散寒。",
+        "indications": "同通腎穴。又治頭痛、頭暈、背痛、疲勞。",
+        "technique": "直刺一寸～二寸。直刺三分，治口乾立解。",
+        "needleFeeling": "酸脹感。",
+        "application": "通腎、通胃、通背三穴同時下針，形成董氏獨有之「倒馬針法」，可治療腎臟炎、膀胱炎等疾病。董公書中說禁三針同下，在臨床上筆著經驗三針倒馬並無不可，效果不錯。",
+        "notes": "",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2020/08/8-8-通背穴.jpg"
+        ]
+      },
+      {
+        "name": "天黃穴",
+        "code": "",
+        "anatomy": "同明黃穴。",
+        "location": "明黃穴直上三寸處。",
+        "meridian": "入心、肝、腎三經。",
+        "properties": "疏肝清心，益腎補虛。",
+        "indications": "同明黃穴，另可治黃膽病。",
+        "technique": "直剌一寸五分～三寸。",
+        "needleFeeling": "酸脹麻電感。",
+        "application": "",
+        "notes": "天黃、明黃、其黃三針為上三黃，三針倒馬齊下，專治一切肝疾，為董氏針灸中著名的常用穴位。天黃、明黃、其黃穴為上三黃，其位置正好在十二正經肝經循行位置上，故對肝臟的治療作用是加成的，成為治療肝疾的主要穴位。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2020/08/8-8-天黃穴.jpg"
+        ]
+      },
+      {
+        "name": "明黃穴",
+        "code": "VIII.M.3. 大腿內側 – 上三黃區",
+        "anatomy": "大腿神經前皮枝、肝之總神經、心之總神經、表層心之神經、中層肝之神經、深層腎之神經。",
+        "location": "天黃穴：明黃穴直上三寸處。明黃穴：大腿內側之正中央處。其黃穴：明黃穴直下三寸處。",
+        "meridian": "天黃穴：入心、肝、腎三經。明黃穴：入心、肝、腎三經。其黃穴：入心、肝、膽三經。",
+        "properties": "天黃穴：疏肝清心，益腎補虛。明黃穴：寧心安神，疏肝利膽。其黃穴：疏肝利膽，祛風通絡。",
+        "indications": "天黃穴：同明黃穴，另可治黃膽病。明黃穴：肝癌、肝痛、肝硬化、肝機能不足引起之疲勞、骨骼脹大、脊椎骨膜炎、中風半身不遂、血癌症、腰酸、眼昏花、眼痛、兩脅痛、膽汁分泌不足引起之消化不良、脹氣、心臟擴大、胸悶、癲癇。其黃穴：同明黃穴，亦治黃膽病、膽囊炎等病。",
+        "technique": "天黃穴：直剌一寸五分～三寸。明黃穴：直刺一寸～三寸。其黃穴：直刺一寸五分～三寸。",
+        "needleFeeling": "酸脹麻電感。",
+        "application": "",
+        "notes": "天黃、明黃、其黃穴為上三黃，為董氏針灸中有名的常用穴位，董氏針灸正經奇穴中是不論補瀉的，董公以為穴位具有雙向性，可自行調節。所以一切肝疾，不論虛實，皆可取用上三黃穴。肝主疏泄，又肝經繞陰器，抵少腹，上貫膈，布脇肋，與督脈會於巔頂，所以亦可應用于精神官能症、婦科、泌尿生殖系統疾病、頭頂痛。上三黃屬肝經，董氏之肝經皆可用於治療婦科，因此上三黃可配婦科穴，調理婦女月經。上三黃，三針倒馬齊下，專治一切肝疾，為董氏針灸中著名的常用穴位。上三黃其位置正好在十二正經肝經循行位置上，故對肝臟的治療作用是加成的，成為治療肝疾的主要穴位。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/VIII-M-3_tian-huang_ming-huang_qi-huang_zh.png"
+        ]
+      },
+      {
+        "name": "其黃穴",
+        "code": "",
+        "anatomy": "心之分支神經。",
+        "location": "明黃穴直下三寸處。",
+        "meridian": "入心、肝、膽三經。",
+        "properties": "疏肝利膽，祛風通絡。",
+        "indications": "同明黃穴，亦治黃膽病、膽囊炎等病。",
+        "technique": "直刺一寸五分～三寸。",
+        "needleFeeling": "酸脹麻電感。",
+        "application": "",
+        "notes": "",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2020/08/8-8-其黃穴.jpg"
+        ]
+      },
+      {
+        "name": "土昌穴",
+        "code": "VIII.M.1. 大腿內側 – 土昌區",
+        "anatomy": "大腿神經、脾之總神經、肝神經、膽之神經。",
+        "location": "土昌一穴在通腎穴向內橫開二寸處。土昌二穴在土昌一穴直上二寸處。土昌三穴在土昌二穴直上二寸處。土昌四穴在土昌三穴直上二寸處。土昌五穴在土昌四穴直上二寸處。",
+        "meridian": "入脾、肝二經。",
+        "properties": "和胃調中，舒肝利膽，健脾利濕。",
+        "indications": "脾臟炎、脾腫大、頭昏、頭暈、頭痛、四肢痛、胃酸過多、白血球過少症、肝炎、膽囊炎、肝硬化。",
+        "technique": "直刺一寸五分～二寸。",
+        "needleFeeling": "酸脹微麻感。",
+        "application": "土昌穴常用來治療脾臟疾病。臨床上可任取二穴至三穴使用，形成倒馬針法。",
+        "notes": "土昌穴在董公原著中未公佈，而由胡師增列補上。",
+        "configNotes": [
+          "土昌穴配有治腫瘤效果之三重穴、脾腫穴，可治脾臟腫大。"
+        ],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/VIII-M-1_tu-chang_zh.png"
+        ]
+      },
+      {
+        "name": "駟馬下穴、駟馬上穴、駟馬中穴",
+        "code": "VIII.L.2. 大腿外側 – 通馬區",
+        "anatomy": "外側大腿皮神經、肺之總神經、肝之分支神經。",
+        "location": "駟馬下穴在膝髕骨外上緣直上七寸五分，即通山穴上五分向外橫開一寸處。",
+        "meridian": "入肺、肝二經。",
+        "properties": "通調水道，疏風解表。",
+        "indications": "肋骨痛、胸背痛、肋膜炎、坐骨神經痛、肺機能不足所引起的腰痛、肺病、肺弱、肺結核、肺癌、鼻炎、耳鳴、耳炎、耳聾、顏面神經麻痺、眼角膜炎、哮喘、乳腺炎、甲狀腺腫大、半身不遂、牛皮癬、各種皮膚病、青春痘、下肢扭傷、胸部挫傷。",
+        "technique": "直刺一寸～三寸。",
+        "needleFeeling": "酸脹感。",
+        "application": "",
+        "notes": "",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/VIII-L-2_si-ma_zh.png"
+        ]
+      },
+      {
+        "name": "土靈穴",
+        "code": "VIII.M.1. 大腿內側 – 土昌區",
+        "anatomy": "大腿神經、脾神經、肝之神經",
+        "location": "通胃穴向內橫開一寸處",
+        "meridian": "入脾、肝二經",
+        "properties": "和脾疏肝，通調三焦",
+        "indications": "惡性貧血（再生不良性貧血症）、血癌症（白血球過多或過少症）",
+        "technique": "直刺一寸～一寸五分。｜",
+        "needleFeeling": "酸麻脹痛感",
+        "application": "",
+        "notes": "土靈穴，在董公原著《董氏針灸正經奇穴學》中未予公開，由胡師不藏私地特予公佈。是董氏奇穴七十二絕針之一。脾土為後天之本，脾胃健旺則身體自然健康，脾又統血，有止血調經之功，土靈穴為脾經上之重要穴道，故可治療各種出血性疾病。在惡性貧血中，常用土靈穴來調整。治療血癌：因土靈穴、土昌穴入脾、肝兩經，常用於治療血癌，較上三黃[註]更佳，這些穴位，亦可輪流使用。",
+        "configNotes": [
+          "土靈穴加配土昌穴，治脾腫大。亦可取土昌一穴、土昌二穴，再取本穴，成三角形倒馬，亦稱之為指揮針法，可以本穴來指揮土昌一穴、二穴，增強功能"
+        ],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/VIII-M-1_tu-ling_zh.png"
+        ]
+      },
+      {
+        "name": "下泉穴、中泉穴、上泉穴",
+        "code": "VIII.L.4. 大腿外側 – 泉區",
+        "anatomy": "外側大腿皮神經、肺部與面部之機動神經。",
+        "location": "下泉在膝關節外側面正中央直上二寸五分處，其上二寸為中泉，中泉上二寸為上泉。",
+        "meridian": "入肺、肝二經。",
+        "properties": "活血通絡，行氣化瘀，通關利節。",
+        "indications": "顏面神經麻痺、口歪眼斜、半身麻痺、腦血栓、中風後遺症。",
+        "technique": "直刺一寸～二寸。",
+        "needleFeeling": "酸脹感。",
+        "application": "",
+        "notes": "足三泉取穴時，大多取上下左右平衡針法，治左病，取右側；治右病，取左側。三泉穴配三重穴、三叉三穴、腕順穴，再配耳上穴位，可治重聽，效果因人而異。三泉穴配靈骨、四花穴、門金穴，亦可治療婦科經痛。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/VIII-L-4_xia-zhong-shang-quan-_zh.png"
+        ]
+      },
+      {
+        "name": "金前下穴、金前上穴",
+        "code": "VIII.L.1. 大腿外側 – 金前區",
+        "anatomy": "外側大腿皮神經、肺之機動神經、肝之神經。",
+        "location": "金前下穴在膝蓋骨外側上角直上一寸處。金前上穴在金前下穴直上一寸五分。",
+        "meridian": "入肝、肺二經。",
+        "properties": "寬胸理氣，養肝活血。",
+        "indications": "肺弱、羊狗瘋、頭痛、肝弱、皮膚過敏。",
+        "technique": "直刺三分～五分。",
+        "needleFeeling": "酸脹感。",
+        "application": "",
+        "notes": "",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/VIII-L-1_jin-qian-xia-shang-_zh.png"
+        ]
+      },
+      {
+        "name": "下九里穴、上九里穴、中九里穴",
+        "code": "VIII.L.3. 大腿外側 – 九里區",
+        "anatomy": "外側大腿皮神經、肺之神經。",
+        "location": "如上述，下九里、上九里、中九里各穴位的穴位說明。",
+        "meridian": "入心、肺經。",
+        "properties": "益氣行血，通關利節，疏經化瘀。",
+        "indications": "背痛、腰痛、脊椎骨膜炎（骨刺）、半身不遂、半身麻痺、項頸痛、手臂酸麻、腿痛、頭痛、頭暈、眼酸、神經痛、肺炎、肺病、腹脹、腹痛。",
+        "technique": "直刺二寸～三寸。",
+        "needleFeeling": "",
+        "application": "",
+        "notes": "上、中、下九里穴由於胡師取法與董公、賴著等不同，讀者當自行比較上、中、下九里穴，三穴可橫三針倒馬，為重要之止痛穴，又本穴為董公治療高棉龍諾總統半身不遂要穴之一。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/VIII-L-3_shang-xia-jiu-li_zh.png",
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/VIII-L-3_zhong-jiu-li-_zh.png"
+        ]
+      },
+      {
+        "name": "解穴",
+        "code": "VIII.A.2. 大腿前側 – 足解區",
+        "anatomy": "心之敏感神經、大腿神經前皮枝。",
+        "location": "當膝蓋骨外側上緣直上一寸，向內橫開三分，又稱足解穴。",
+        "meridian": "入心經。",
+        "properties": "寧心安神，活血化滯。",
+        "indications": "針灸後氣血錯亂、血不歸經、下針處起包、疼痛、或西醫注射後引起之疼痛、跌打損傷、腳扭傷、精神刺激而引起之疼痛、疲勞過度之疼痛、藥物過敏、食物中毒。",
+        "technique": "直刺三分～五分。",
+        "needleFeeling": "",
+        "application": "",
+        "notes": "",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/VIII-A-2_jie-xue_zh.png"
+        ]
+      },
+      {
+        "name": "內通關穴、內通山穴、內通天穴",
+        "code": "VIII.A.1. 大腿前側 – 通火區",
+        "anatomy": "大腿神經、心之總神經。",
+        "location": "內通關穴在通關穴向內橫開五分處，其它內通山、內通天見穴位。",
+        "meridian": "入心經。",
+        "properties": "通經活絡，益氣調血。",
+        "indications": "半身不遂、四肢無力、四肢神經麻痺、手臂不能舉、心臟衰弱、中風不語、腰痛。",
+        "technique": "直刺五分～一寸。",
+        "needleFeeling": "酸脹感。",
+        "application": "",
+        "notes": "內通關穴、內通山穴、內通天穴之功能與通關、通天、通山相近，主治循環系統疾病，但多用於因心臟所引起之四肢無力、手臂不舉、上臂痛、腰酸背痛等疾病。可搭配上三黃[註]、下三皇[註]、心靈、靈骨、大白等董氏大穴。董氏掌診非常重要，同樣的腰酸背痛，可能有二、三十穴，該找什麼穴，就要用掌診診治，心者取內通關穴、肺取駟馬穴、脾腎取通腎、通胃等穴，肝者取上三黃，這是董氏針灸配合掌診的診治要訣。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/VIII-A-1_nei-tong-guan_nei-tong-shan_nei-tong-tian_zh.png"
+        ]
+      },
+      {
+        "name": "失音穴",
+        "code": "VIII.M.7. 大腿內側 – 失音區",
+        "anatomy": "內側大腿神經、腎神經、喉之主神經。",
+        "location": "膝蓋內側之中央為失音一穴。其下二寸處一穴，計二穴。",
+        "meridian": "入肺經。",
+        "properties": "清熱利咽，行氣散瘀。",
+        "indications": "嗓子啞、失音、喉炎。",
+        "technique": "直刺三分～五分。 斜刺五分～八分。",
+        "needleFeeling": "酸痛感。",
+        "application": "",
+        "notes": "",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/VIII-M-7_shi-yin_zh.png"
+        ]
+      },
+      {
+        "name": "火府穴、火梁穴、火昌穴",
+        "code": "VIII.P.2. 大腿後側 – 火後區",
+        "anatomy": "後大腿神經、脊椎神經、心之分支神經、腦神經、腎分支神經、坐骨神經。",
+        "location": "火府穴，後大腿臀下橫紋正中直下三寸處，即十四經之承扶穴直下三寸處，俯臥取之。其它火梁、火昌見穴位。",
+        "meridian": "入心、腎、膀胱經。",
+        "properties": "行氣活血，通經化瘀。",
+        "indications": "脊椎骨骨刺、坐骨神經痛、頸椎骨骨刺、腰痛、背痛、後腦部挫傷、腦神經痛、項緊痛、偏頭痛、胸悶、腎臟炎、痔瘡、半身不遂、冠心病。",
+        "technique": "直刺一寸～二寸五分。或以放血針點刺出血。",
+        "needleFeeling": "酸脹麻電感。有時有觸電感上通頭頂，下至足跟。",
+        "application": "火府、火梁、火昌三穴及其附近大多採用放血，另配合病位放血。亦可加配以一一、二二、七七部位之穴區針刺治療。",
+        "notes": "火府、火梁、火昌三穴，皆是董氏奇穴七十二絕針之一，由胡師本董公所教而特公開，以補董公原作未列之撼。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/VIII-P-2_huo-fu_huo-liang_huo-chang_zh.png"
+        ]
+      },
+      {
+        "name": "金府穴、金梁穴、金昌穴",
+        "code": "VIII.P.10. 大腿後側 – 金後區",
+        "anatomy": "後大腿神經、肺之神經、心分支神經。",
+        "location": "金府穴當火府穴向外橫開二寸處是穴，金梁穴、金昌穴見穴位。",
+        "meridian": "入心、肺兩經。",
+        "properties": "行氣活血，通經化瘀。",
+        "indications": "肩臂痛、腰痛、坐骨神經痛（特效）、兩脅痛、偏頭痛、半身不遂、痿症、背痛、痔瘡、急慢性肺炎、胸痛、冠心病。",
+        "technique": "直刺一寸五分～三寸。或以放血針點刺出黑血，立即見效。",
+        "needleFeeling": "酸脹感。",
+        "application": "火府、木府、金府、火梁、木粱、金粱、火昌、木昌、金昌等九穴，為治療坐骨神經痛、腰痛之特效穴，在臨床上大多以放血為主，針刺較少，如配合局部刺絡法，在治療療程上可減少一半的時間。",
+        "notes": "應用上所說九穴，在臨床使用時，不必寸拘泥穴位，可就異色、異狀或壓痛點用放血針放血或用針直刺即可。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/VIII-P-10_jin-fu_jin-liang_jin-chang_zh.png"
+        ]
+      },
+      {
+        "name": "木府穴、木梁穴、木昌穴",
+        "code": "VIII.P.6. 大腿後側 – 木後區",
+        "anatomy": "後大腿神經、肝之副神經、脾之神經、閉鎖神經。",
+        "location": "木府位火府穴向內橫開二寸處。其它木梁、木昌同穴位取即可。",
+        "meridian": "入脾、肝二經。",
+        "properties": "清熱利濕，疏經活血，通利水道。",
+        "indications": "坐骨神經痛、腰痛、背痛、骨刺、腿痛、風濕關節炎、肝炎、疝氣、痔瘡、經痛、攝護腺腫大、便秘、腹瀉、膀胱炎、尿道炎、頭痛、冠心病。",
+        "technique": "直針一寸五分～三寸。或以放血針點刺出血，立即見效。",
+        "needleFeeling": "酸脹麻感。",
+        "application": "",
+        "notes": "木府、木梁、木昌、火府、火梁、火昌，在董氏穴位中大多以放血針點刺放血為主，這些穴位結合安脊六穴，再加金府、金梁、金昌，統稱為大腿股後區（見董氏針灸放血療法），可就本區異色及壓痛點，以22號針頭或血糖針散刺放血即可，不必太拘泥穴位的準確，其主治皆同，另以上諸穴位董公未在書中公開，而由胡師公佈。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/VIII-P-6_mu-fu_mu-liang_mu-chang_zh.png"
+        ]
+      },
+      {
+        "name": "安脊穴",
+        "code": "VIII.P.1. 大腿後側 – 安脊區",
+        "anatomy": "下臀安神經、脊椎神經、腎之神經。",
+        "location": "安脊一穴在臀下橫紋正中央（即十四經之承扶穴向內橫開五分處）。安脊二穴在安脊一穴內側一寸處。安脊三穴在安脊二穴內側一寸處。安脊四穴在安脊一穴外一側一寸處。安脊五穴在安脊四穴外一側一寸處。安脊六穴在安脊五穴外一側一寸處。",
+        "meridian": "入肝、腎二經。",
+        "properties": "強筋健骨，疏經活絡。",
+        "indications": "坐骨神經痛、脊椎骨骨刺、股關節骨刺、背痛、腰痛、瘰癧。",
+        "technique": "直刺二寸～二寸五分，針尖緊貼骨之邊緣。或用放血針點刺二寸深，刺出黑血。",
+        "needleFeeling": "",
+        "application": "安脊穴在臨床上多任取三穴下針，成董氏倒馬針法，增強療效。此為橫三針倒馬針法，同時，此穴董公書中未明言，由胡師在其書中公開。",
+        "notes": "",
+        "configNotes": [
+          "安脊穴加配二角明透穴、腕順一穴、三河穴、分水、火硬或六完、火硬，治療坐骨神經痛，效果佳。"
+        ],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/VIII-P-1_an-ji_zh.png"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "九九部位",
+    "bodyPart": "耳朵",
+    "acupoints": [
+      {
+        "name": "神耳上穴、神耳中穴、神耳下穴",
+        "code": "IX.P.3. 耳朵後側 – 神耳區",
+        "anatomy": "耳大神經、枕小神經、肺之神經、肝之神經。",
+        "location": "上穴位耳廓背面，降壓溝上緣，距內側1/3處。其它中、下穴取穴見穴位。",
+        "meridian": "入肺、肝、腎三經。",
+        "properties": "回陽固脫，開竅醒神。",
+        "indications": "各種急性病症之急救、心臟麻痺、心臟病發之急救、頭痛、頭昏、眩暈、嘔吐、肝機能衰竭、四肢無力、虛脫症、休克、腦貧血、腦溢血等症之急救、膽固醇過高、頭暈、胸悶、胸背痛、高血壓、腰痛、暈車、暈船。",
+        "technique": "由上往下斜刺一～三分。",
+        "needleFeeling": "酸脹感。",
+        "application": "",
+        "notes": "神耳上、中、下穴排列就如同人體臟器全息投影。上穴通上焦，故主治腦、頭、心、肺等相關疾病。中穴通中焦，故主治肝、脾、胃、腸等相關疾病。下穴通下焦，故主治腎、膀胱、男科、女科等相關疾病，並兼治上、中二焦之疾病。神耳穴對急性病症，有回陽固脫之功，對臨危病人有復脈之能，對身體虛弱之人可快速恢復體力，增進生命力的奇效，此穴董公未公開，由胡師補上，神耳穴為董氏針灸絕針及解針之要穴。神耳上、中、下穴可齊下為直三針倒馬針法，效果更強。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/IX-P-3_shen-er_zh.png"
+        ]
+      },
+      {
+        "name": "天耳穴、外耳穴",
+        "code": "天耳穴：IX.P.5. 耳朵後側 – 天耳區外耳穴：IX.P.6. 耳朵後側 – 外耳區",
+        "anatomy": "肝、腎神經。",
+        "location": "天耳當耳廓背面，神耳上穴外二分處。金耳上三分偏外側二分，或如穴位所述為外耳穴。",
+        "meridian": "入肝、腎二經。",
+        "properties": "疏風解表，鎮靜安神。",
+        "indications": "天耳主治食物中毒、藥物中毒、皮膚過敏、頭暈、嘔吐、暈車、暈船，有抗過敏作用。外耳主治心律不整、心悸、中風昏迷急救、頭痛、舒張壓過高、頭暈、頭昏眼花。",
+        "technique": "直刺一分～二分。或由上往下斜刺五分。",
+        "needleFeeling": "",
+        "application": "",
+        "notes": "天耳穴及外耳穴在董公書中未公開，為董氏七十二絕針及三十二解穴之一，由胡師依董公所傳而予以增列補上。外耳穴、天耳穴、神耳穴，穴性相似，都可視為補穴，但天耳穴作用皮膚及解毒較強。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/IX-P-5_tian-er_zh.png",
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/IX-P-6_wai-er_zh.png"
+        ]
+      },
+      {
+        "name": "木耳穴、金耳穴",
+        "code": "IX.A.1. 耳朵內側 – 五行耳區",
+        "anatomy": "木耳為肝神經。金耳為肺神經。",
+        "location": "木耳穴位耳後上半部橫血管之下約三分處。金耳穴位耳殼背外緣上端，近木耳穴直上五分。",
+        "meridian": "木耳入肝經。金耳入肺經。",
+        "properties": "木耳舒肝解郁，清熱利濕。金耳通經活絡，調理肺氣。",
+        "indications": "木耳主治肝區疼痛、肝硬化、肝腫大、肝機能衰弱引起之疲勞、久年淋病。金耳主治肺氣不足引起之便秘、久年感冒、過敏性鼻炎。",
+        "technique": "直刺一分～二分。",
+        "needleFeeling": "局部酸脹感。",
+        "application": "",
+        "notes": "董氏耳穴中金耳、木耳、水耳、火耳、土耳皆以相應臟腑及五行命名，除與各臟器相關外，兼治痛症，各穴取法不要拘泥其準確穴位，只要在其附近有異色如烏黑、黃色、赤色反應點時，當可在此反應點扎針或放血，效果當佳。",
+        "configNotes": [
+          "木耳穴加配上三黃（天黃、明黃、其黃）、木炎穴，後背肝木區放血，治肝硬化，有效。"
+        ],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/IX-A-1_mu-er_jin-er_zh.png"
+        ]
+      },
+      {
+        "name": "火耳穴、土耳穴、水耳穴",
+        "code": "IX.A.1. 耳朵內側 – 五行耳區",
+        "anatomy": "火耳心之神經。土耳脾之神經。水耳腎之神經。",
+        "location": "火耳在對耳輪之外緣中部取之。土耳在耳甲腔肝區之下。水耳在對耳輪之外緣下端。",
+        "meridian": "火耳入心經、土耳入脾經、水耳入腎經。",
+        "properties": "火耳穴理氣寬胸，疏通心絡。土耳穴健脾利濕。水耳穴強腎益精，通利水道。",
+        "indications": "火耳穴主治心臟衰弱、膝蓋疼痛、四肢痠痛。土耳穴主治神經衰弱、急慢性腸胃炎、發高燒、糖尿病。水耳穴主治腎虧、腰酸、小腹脹。",
+        "technique": "直刺一分～二分。",
+        "needleFeeling": "局部脹痛感。",
+        "application": "",
+        "notes": "火耳穴、土耳穴、水耳穴，可三針直刺成直三針董氏倒馬針法，火耳理上焦、土耳調中焦、水耳通下焦，三穴倒馬即可調理全身，董氏耳穴亦如身體其它穴位一樣，常出現三穴一組，這是董氏針灸倒馬針法的一大特色。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/IX-A-1_huo-er_tu-er_shui-er_zh.png"
+        ]
+      },
+      {
+        "name": "耳三穴",
+        "code": "IX.P.2. 耳朵後側 – 耳三區",
+        "anatomy": "肺、腎神經。",
+        "location": "耳輪外緣上端為耳上穴，中央為耳中穴，最下端為耳下穴。",
+        "meridian": "入肺經。",
+        "properties": "疏風解表。",
+        "indications": "霍亂、偏頭痛、感冒、消炎退熱。",
+        "technique": "直刺一分～二分。或用放血針點刺出血，每次取二穴可矣。",
+        "needleFeeling": "局部疼痛感。",
+        "application": "",
+        "notes": "耳上放血，有抗過敏、清腦、明目、降壓之作用。耳中放血，有消炎、退熱、鎮靜、止痛作用。耳下放血，有加強消炎、退熱、清腦、抗過敏、降壓之作用。耳三穴，在臨床上多應用於外感所引起的疾病，如頭痛、喉嚨發炎、感冒發燒。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/IX-P-2_er-san-zone-xia_zh.png"
+        ]
+      },
+      {
+        "name": "皮膚穴",
+        "code": "IX.A.2. 耳朵內側 – 肝炎區",
+        "anatomy": "肝之神經、肺之神經。",
+        "location": "在耳舟外上方處，共有四穴。",
+        "meridian": "入肝、肺二經。",
+        "properties": "疏風解表，清肝解毒。",
+        "indications": "蕁麻疹、各種皮膚病、消除疲勞。",
+        "technique": "直刺一分。或以三稜點針點刺出血，效佳。",
+        "needleFeeling": "局部脹痛感。",
+        "application": "",
+        "notes": "皮膚穴亦稱解勞穴，在董公書中遺漏了，而由胡師在其著作中補上。皮膚穴共有四穴，可取三穴倒馬，可增強效果。皮膚穴與耳針上蕁麻疹穴接近，但董氏奇穴是以組穴的方式出現，同時董氏大多取三針倒馬針法。治療皮膚病：在耳穴上可取肺點、內分泌點、皮質下、神門點，再加靈骨、火腑海、駟馬等穴。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/IX-A-3_pi-fu_zh.png"
+        ]
+      },
+      {
+        "name": "降壓穴",
+        "code": "IX.A.13. 耳朵內側 – 降壓區",
+        "anatomy": "心及腎之神經。",
+        "location": "屏間切跡內緣，共計三穴。",
+        "meridian": "入心、腎二經。",
+        "properties": "清泄心火。",
+        "indications": "高血壓。",
+        "technique": "直刺一～三分。",
+        "needleFeeling": "局部脹痛感。",
+        "application": "",
+        "notes": "降壓穴在董公書上未明列，乃胡師本董公所教特予公開補上。腦部、心、肝、腎、糖尿、血管等病變，都會影響血壓，要徹底根治，當配合掌診，找出原因，針對病因，效果才會好。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/IX-A-13_jiang-ya_zh.png"
+        ]
+      },
+      {
+        "name": "木硬穴",
+        "code": "IX.A.2. 耳朵內側 – 肝炎區",
+        "anatomy": "肝之神經。",
+        "location": "耳甲腔肝區後方。",
+        "meridian": "入肝經。",
+        "properties": "疏肝利膽，通經止痛。",
+        "indications": "肝硬化、肝炎、肝癌。",
+        "technique": "直刺一分。或放血針點刺出血，效佳。",
+        "needleFeeling": "",
+        "application": "",
+        "notes": "治療肝硬化，以耳穴、體穴、放血區域互相配合使用。木硬穴未在董公原著中披露，而由胡師依董公平日所傳而特公佈之。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/IX-A-2_mu-ying_zh.png"
+        ]
+      },
+      {
+        "name": "腫瘤穴",
+        "code": "IX.A.4. 耳朵內側 – 腫瘤區",
+        "anatomy": "肺之神經。",
+        "location": "耳垂外緣，共有六穴。",
+        "meridian": "入肺經。",
+        "properties": "行氣破血，袪風化滯。",
+        "indications": "惡性腫瘤、癌腫、癰疽、淋巴腺腫瘤、瘰癧。",
+        "technique": "直刺二分。",
+        "needleFeeling": "局部酸脹感。",
+        "application": "",
+        "notes": "腫瘤穴在董公書中未列，而由胡師依董公所傳特予公開補列。董氏針灸治療腫瘤相關穴位，除本穴外，如外三關、三重穴都是有名的穴位；一般腫瘤穴位大多加配通氣、調氣的要穴，如：靈骨、大白及駟馬穴；再配合與腫瘤相關臟器的穴位，如：子宮腫瘤就加手婦科穴，肝腫瘤就加配足上三黃（天黃、明黃、其黃）。有腫瘤的人，除了用董氏針灸治療外，一定要配合飲食的諸多禁忌，如：禁食鴨、鵝肉、海產、酒、茄子、花生、豬頭皮、竹筍等物。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/IX-A-4_zhong-liu_zh.png"
+        ]
+      },
+      {
+        "name": "結核穴、肺金穴",
+        "code": "結核穴：IX.A.7. 耳朵內側 – 結核區肺金穴：IX.A.9. 耳朵內側 – 肺金區",
+        "anatomy": "肺之神經。",
+        "location": "結核穴在耳甲腔內側，外耳道口外側，共計三穴。肺金穴在肺區之中央，共計二穴。",
+        "meridian": "入肺經。",
+        "properties": "祛風解表，滋肺養陰。",
+        "indications": "肺結核、肺炎。",
+        "technique": "直刺一分。",
+        "needleFeeling": "局部脹痛感。",
+        "application": "",
+        "notes": "",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/IX-A-7_jie-he_zh.png",
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/IX-A-9_fei-jin_zh.png"
+        ]
+      },
+      {
+        "name": "甲狀腺腫穴",
+        "code": "IX.P.1. 耳朵後側 – 甲狀腺腫區",
+        "anatomy": "肺之神經。",
+        "location": "耳背內下緣，共有三穴。",
+        "meridian": "入肺經。",
+        "properties": "行氣散瘀，清咽利喉。",
+        "indications": "甲狀腺腫大、心悸。",
+        "technique": "直刺一分。",
+        "needleFeeling": "局部酸脹感。",
+        "application": "本穴組可採用倒馬針法或放血，可達相乘效果。",
+        "notes": "甲狀腺腫穴、狹心點、結核穴，在董公書中並未明列，由胡師本董公所傳特予公佈。甲狀腺腫大：耳穴不單獨取用，大多配合以下穴位治療靈骨、心靈、三重、駟馬，配合病位放血。心靈、四花、三重，配合喉蛾九穴放血。心靈一穴、四花上穴、駟馬、三重、十八星穴，配合病位放血。駟馬、三重、通關、通山，配合病位放血。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://52.198.151.83/wp-content/uploads/2019/09/IX-P-1_jia-zhuang-xian-zhong_zh.png"
+        ]
+      },
+      {
+        "name": "項緊穴",
+        "code": "IX.A.12. 耳朵內側 – 項緊區",
+        "anatomy": "心、肺分支神經。",
+        "location": "在耳垂外上方約三分之一處。",
+        "meridian": "入心、肺二經。",
+        "properties": "疏筋利節，活血化瘀。",
+        "indications": "頸項痠痛、項緊痛。",
+        "technique": "直刺二分。",
+        "needleFeeling": "局部脹痛感。",
+        "application": "",
+        "notes": "項緊穴為董公未對外公開之穴，胡師在其著作中特予公佈。項緊穴在臨床上非主穴，治療頸項強痛，大多在手足上，如手上失枕穴、腕順下穴，足上之腎關、正筋、正宗、人皇等穴，但當項緊穴上有黑點時，即可用放血針放血，效果更佳。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/IX-A-12_xiang-jin_zh.png"
+        ]
+      },
+      {
+        "name": "興奮穴",
+        "code": "IX.A.10. 耳朵內側 – 興奮區",
+        "anatomy": "腦神經。",
+        "location": "如上述，興奮穴的穴位說明。",
+        "meridian": "入心、腎二經。",
+        "properties": "清泄心火，滋補強肝。",
+        "indications": "精神萎糜不振、嗜眠、神經衰弱。",
+        "technique": "直刺一～二分。",
+        "needleFeeling": "局部酸脹痛感。",
+        "application": "本穴有提神醒腦之作用，配神耳上穴，效果加倍。",
+        "notes": "興奮穴、皮膚穴、神耳穴，皆有提神醒腦的功能，當工作疲勞後，可於此三穴任取一穴下針，皆有解勞的效果。興奮穴，乃董公原著中所未列，後由胡師依董公平日所教而特公佈之。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/IX-A-10_xing-fen_zh.png"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "十十部位",
+    "bodyPart": "頭面",
+    "acupoints": [
+      {
+        "name": "正會穴",
+        "code": "X.Ve.1. 頭頂部位 – 頭會區",
+        "anatomy": "正會穴：前頭神經、腦之總神經。前會穴：前頭神經、腦之副神經。後會穴：大後頭神經、腦之總神經、脊椎神經。",
+        "location": "正會穴：頭頂之正中央點，向後五分處。即十四經百會穴，向後五分處。前會穴：正會穴前一寸五分處。後會穴：正會穴後一寸五分處。",
+        "meridian": "正會穴：入心、肺二經及督脈。前會穴：入心、肺二經及督脈。後會穴：入肝、肺二經及督脈。",
+        "properties": "正會穴：清心開竅，通經活絡。前會穴：醒腦開竅，通經活血。後會穴：疏通經絡，活血化瘀。",
+        "indications": "正會穴：四肢顫抖、各種風證、身體虛弱、小兒驚風、眼斜嘴歪、半身不遂、中風不語、腿無力症、痿症、自律神經失調。前會穴：頭昏、眼花、腦脹、神經衰弱、中風昏迷不醒、半身不遂。後會穴：腦充血、頭痛、頭暈、脊椎骨痛、骨結核、中風不語、半身不遂、神經麻痺。",
+        "technique": "正會穴：針深一分～三分。前會穴：直刺一分～三分。或以放血針點刺立即見效。後會穴：直刺一分～三分。或以放血針點刺出血。",
+        "needleFeeling": "正會穴：酸脹感。前會穴：脹感。後會穴：酸脹感。",
+        "application": "正會穴以放血針點刺出血，可降血壓。若加配六完放血，可治流鼻血。前會穴對不省人事之病患，有使其立即復甦之效。州圓、州崙、州昆等三穴為治療四肢痿弱症之要穴，配合正會、前會、後會等穴可治療中風、半身不遂。",
+        "notes": "正會絕不同於百會穴，穴位差一點，主治亦有少許差異，效果更不一樣。正會、前會、後會三會形成倒馬，在治療中風半身不遂時，可斜刺透穴，另配旁一寸半之州圓、州昆穴斜刺透穴，加電針加強，效果不錯。正會、前會、後會三會配鎮靜、心靈，為治療腦神經衰弱的失眠，亦可在頸椎至尾骶骨放血，並針通腎、通胃、通背。頭部三會下針或放血，再配鎮靜及上三黃[註]、三重、正筋、正宗，對帕金森氏病，有效。治腦神經衰弱：針水金、水通、下三皇[註]、通腎、通胃、通背等穴。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/X-Ve-1_zheng-hui_qian-hui_hou-hui_zh.png"
+        ]
+      },
+      {
+        "name": "州圓穴",
+        "code": "X.Ve.2. 頭頂部位 – 頭圓區",
+        "anatomy": "州圓穴：前頭神經、肺之神經。州昆穴：大後頭神經、肺之神經。州崙穴：前頭神經、肺之神經。",
+        "location": "州圓穴：正會穴旁開一寸五分處。州昆穴：州圓穴直後一寸五分處。州崙穴：州圓穴直前一寸五分處。",
+        "meridian": "入肺、膀胱二經。",
+        "properties": "州圓穴：祛風通竅，疏經活絡。州昆穴：通竅醒腦，疏經活絡。州崙穴：通絡益腦。",
+        "indications": "州圓穴：氣喘、坐骨神經痛、背痛、四肢酸痛、四肢無力、半身不遂。州昆穴：同州圓穴主治，又治腦神經痛。州崙穴：同州圓穴主治，另治腦瘤、頭痛、頭暈。",
+        "technique": "直刺一分～三分。或以放血針點刺出血。",
+        "needleFeeling": "州圓穴：酸脹感。州昆穴：脹感。州崙穴：酸脹感。",
+        "application": "臨床上採左病右取穴、右病左取穴的原則。取用州昆、州崙取穴，亦以「左取右」、「右取左」的原則，來治療四肢無力，或中風後遺症。州圓、州昆、州崙三穴，可採行董氏針灸直三針之倒馬針法，可產生相乘之效果，使療效倍增。",
+        "notes": "",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/X-Ve-2_zhou-yuan_zhou-kun_zhou-lun_zh.png"
+        ]
+      },
+      {
+        "name": "州昆穴",
+        "code": "",
+        "anatomy": "大後頭神經、肺之神經。",
+        "location": "州圓穴直後一寸五分處。",
+        "meridian": "入肺、膀胱二經。",
+        "properties": "通竅醒腦，疏經活絡。",
+        "indications": "同州圓穴主治，又治腦神經痛。",
+        "technique": "直刺一分～三分。或以放血針點刺出血。",
+        "needleFeeling": "脹感。",
+        "application": "",
+        "notes": "",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2020/08/10-10-州昆穴.jpg"
+        ]
+      },
+      {
+        "name": "州崙穴",
+        "code": "",
+        "anatomy": "前頭神經、肺之神經。",
+        "location": "州圓穴直前一寸五分處。",
+        "meridian": "入肺經、膀胱經。",
+        "properties": "通絡益腦。",
+        "indications": "同州圓穴主治，另治腦瘤、頭痛、頭暈。",
+        "technique": "直刺一分～三分。或以放血針點刺出血。",
+        "needleFeeling": "痠脹感。",
+        "application": "取用州昆、州崙取穴，亦以「左取右」、「右取左」的原則，來治療四肢無力，或中風後遺症。州圓、州昆、州崙三穴，可採行董氏針灸直三針之倒馬針法，可產生相乘之效果，使療效倍增。",
+        "notes": "",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2020/08/10-10-州崙穴.jpg"
+        ]
+      },
+      {
+        "name": "前會穴",
+        "code": "",
+        "anatomy": "前頭神經、腦之副神經。",
+        "location": "正會穴前一寸五分處。",
+        "meridian": "入心、肺二經及督脈。",
+        "properties": "醒腦開竅，通經活血。",
+        "indications": "頭昏、眼花、腦脹、神經衰弱、中風昏迷不醒、半身不遂。",
+        "technique": "直刺一分～三分。或以放血針點刺立即見效。",
+        "needleFeeling": "脹感。",
+        "application": "本穴對不省人事之病患，有使其立即復甦之效。",
+        "notes": "正會、前會、後會三會配鎮靜、心靈，為治療腦神經衰弱的失眠，亦可在頸椎至尾骶骨放血，並針通腎、通胃、通背。頭部三會下針或放血，再配鎮靜及上三黃[註]、三重、正筋、正宗，對帕金森氏病，有效。治腦神經衰弱：針水金、水通、下三皇[註]、通腎、通胃、通背等穴。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2020/08/10-10-前會穴.jpg"
+        ]
+      },
+      {
+        "name": "後會穴",
+        "code": "",
+        "anatomy": "大後頭神經、腦之總神經、脊椎神經。",
+        "location": "正會穴後一寸五分處。",
+        "meridian": "入肝、肺二經及督脈。",
+        "properties": "疏通經絡，活血化瘀。",
+        "indications": "腦充血、頭痛、頭暈、脊椎骨痛、骨結核、中風不語、半身不遂、神經麻痺。",
+        "technique": "直刺一分～三分。或以放血針點刺出血。",
+        "needleFeeling": "酸脹感。",
+        "application": "州圓、州崙、州昆等三穴為治療四肢痿弱症之要穴，配合正會、前會、後會等穴可治療中風、半身不遂。",
+        "notes": "",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2020/08/10-10-後會穴.jpg"
+        ]
+      },
+      {
+        "name": "總樞穴",
+        "code": "X.P.2. 頭部後側 –  總樞區",
+        "anatomy": "大後頭神經、丹田神經。",
+        "location": "後頭部腦戶穴下八分處。",
+        "meridian": "入心、肺二經及督脈。",
+        "properties": "理氣寬胸，通關開竅。",
+        "indications": "嘔吐、項痛、胸悶、心臟無力、霍亂、發言無聲。",
+        "technique": "直刺三分～五分。或以放血針點刺效果最佳。",
+        "needleFeeling": "局部有酸脹感。",
+        "application": "本穴以放血針點刺出血，治肝霍亂。",
+        "notes": "頸後及背部一般都較危險，因此董氏奇穴這些部位大多用22號注射針頭或血糖針放血為主，以免危險。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/X-P-2_zong-shu_zh.png"
+        ]
+      },
+      {
+        "name": "鎮靜穴",
+        "code": "X.A.1. 頭部前側 – 眉毛區",
+        "anatomy": "滑車上神經、顏面神經分枝、腦神經、心之神經。",
+        "location": "兩眉頭之間直上五分處。",
+        "meridian": "入心經及任脈。",
+        "properties": "清心鎮痙。",
+        "indications": "神經錯亂、四肢發抖、兩腿酸軟、四肢神經麻痺、失眠、小兒夢驚、鼻腔炎引起之頭痛、頭暈、重脹感。心臟病引起之前額頭痛、嘔吐。",
+        "technique": "直刺一分～二分。或由上往下斜刺二分～五分。",
+        "needleFeeling": "酸脹感。會延伸到鼻尖、上至頭頂。",
+        "application": "",
+        "notes": "",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/X-A-1_zhen-jing_zh.png"
+        ]
+      },
+      {
+        "name": "上里穴",
+        "code": "X.A.1. 頭部前側 – 眉毛區",
+        "anatomy": "上里穴：眼神經、顏面神經、耳介側頭神經。四腑一穴：眼神經、顏面神經、耳介側頭神經、肺之神經。四腑二穴：眼神經、顏面神經、耳介側頭神經。",
+        "location": "上里穴：眉頭內側直上五分處。四腑一穴：眉毛外側直上五分處。四腑二穴：眉毛正中央點直上五分處。",
+        "meridian": "上里穴：入心經、膽經。四腑一穴：入肺經。四腑二穴：入肺、膽二經。",
+        "properties": "上里穴：通經散風，舒筋活絡。四腑一穴：舒筋活絡。四腑二穴：通經散風，鎮痙止痛。",
+        "indications": "眼壓過高脹痛、酸痛、昏痛、頭痛、顏面神經麻痺、口歪眼斜、嘔吐、反胃、腹脹、神經錯亂。",
+        "technique": "直針一分～二分。或以放血針點刺出血效果卓著。",
+        "needleFeeling": "局部酸脹感。",
+        "application": "上里穴、四腑一穴、四腑二穴同時取用，以放血針點出黑血，效果更佳。",
+        "notes": "董氏奇穴在面上之穴位，可取適當之穴位，常常用36號五分針下針，可美容，亦可防止皺紋，額頭上穴位可防治額頭紋。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/X-A-1_shang-li_si-fu_zh.png"
+        ]
+      },
+      {
+        "name": "四腑一穴",
+        "code": "",
+        "anatomy": "眼神經、顏面神經、耳介側頭神經、肺之神經。",
+        "location": "眉毛外側直上五分處。",
+        "meridian": "入肺經。",
+        "properties": "舒筋活絡。",
+        "indications": "同上里穴。",
+        "technique": "直刺一分～二分。或以放血針點刺出血效果卓著。",
+        "needleFeeling": "局部酸脹感。",
+        "application": "",
+        "notes": "",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2020/08/10-10-四腑一穴.jpg"
+        ]
+      },
+      {
+        "name": "四腑二穴",
+        "code": "",
+        "anatomy": "眼神經、顏面神經、耳介側頭神經。",
+        "location": "眉毛正中央點直上五分處。",
+        "meridian": "入肺、膽二經。",
+        "properties": "通經散風，鎮痙止痛。",
+        "indications": "同上里穴。",
+        "technique": "直刺一分～二分。或以放血針點刺出血效果卓著。",
+        "needleFeeling": "內容局部酸脹感。",
+        "application": "上里穴、四腑一穴、四腑二穴同時取用，以放血針點出黑血，效果更佳。",
+        "notes": "董氏奇穴在面上之穴位，可取適當之穴位，常常用36號五分針下針，可美容，亦可防止皺紋，額頭上穴位可防治額頭紋。",
+        "configNotes": [
+          "四腑二穴在眉毛正中央，即魚腰穴上五分處，效用之博，非魚腰穴可比。"
+        ],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2020/08/10-10-四腑二穴.jpg"
+        ]
+      },
+      {
+        "name": "正本穴",
+        "code": "X.A.2. 頭部前側 – 鼻區",
+        "anatomy": "肺之交叉神經。",
+        "location": "仰臥、正坐均可，頭稍仰起，於鼻之尖端以手摸之左右各有小軟骨，中有陷凹處。",
+        "meridian": "入心、肺二經。",
+        "properties": "理氣宣肺，通竅益腦。",
+        "indications": "敏感性鼻炎、治妖邪（鬼迷）、腦力衰退、肺虛弱。",
+        "technique": "針深一分至二分。",
+        "needleFeeling": "",
+        "application": "勿刺傷軟骨。",
+        "notes": "取用正本穴，刺激量強，可用36號五分針，下針時要患者儘量吸足氣，一來氣充滿較不痛，二來效果亦佳。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/X-A-2_zheng-ben_zh.png"
+        ]
+      },
+      {
+        "name": "馬金水穴",
+        "code": "X.A.4. 頭部前側 – 頭馬區",
+        "anatomy": "馬金水穴：咬肌神經、腎之神經、肺之副支神經。馬快水穴：咬肌神經、腎神經、膀胱神經。",
+        "location": "馬金水穴：外眥角下至顴骨下緣，向外橫開四分處，即十四經之顴髎穴，向外橫開四分處取之。馬快水穴：馬金水穴直下四分處。",
+        "meridian": "入肺、腎、膀胱經。",
+        "properties": "馬金水穴：通調水道，疏風通絡。馬快水穴：通利下焦，疏通經絡。",
+        "indications": "馬金水穴：腎結石、閃腰、腎臟炎、腰痛、背痛、鼻炎、岔氣（呼吸時感覺疼痛者即是）。馬快水穴：膀胱結石、膀胱炎、小便頻數、腰脊椎骨痛、骨刺、鼻竇炎。",
+        "technique": "直刺二分～三分。",
+        "needleFeeling": "馬金水穴：酸脹感。馬快水穴：局部酸脹感。",
+        "application": "馬金水、馬快水雙穴同取，兩針齊下，形成董氏特有的「跪馬針法」，功效倍增。",
+        "notes": "馬金水、馬快水其穴義馬即快也，金為肺主氣、水為腎主水，亦可治岔氣、腎炎、水腫，根據其穴名，即可知曉。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/X-A-4_ma-jin-shui_ma-kuai-shui_zh.png"
+        ]
+      },
+      {
+        "name": "馬快水穴",
+        "code": "",
+        "anatomy": "咬肌神經、腎神經、膀胱神經。",
+        "location": "馬金水穴直下四分處。",
+        "meridian": "入肺、腎、膀胱三經。",
+        "properties": "通利下焦，疏通經絡。",
+        "indications": "膀胱結石、膀胱炎、小便頻數、腰脊椎骨痛、骨刺、鼻竇炎。",
+        "technique": "直刺二分～三分。",
+        "needleFeeling": "局部酸脹感。",
+        "application": "馬金水、馬快水雙穴同取，兩針齊下，形成董氏特有的「跪馬針法」，功效倍增。",
+        "notes": "馬金水、馬快水，其穴義馬即快也，金為肺主氣、水為腎主水，亦可治岔氣、腎炎、水腫，根據其穴名，即可知曉。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2020/08/10-10-馬快水穴.jpg"
+        ]
+      },
+      {
+        "name": "腑快穴",
+        "code": "X.A.5. 頭部前側 – 頭快區",
+        "anatomy": "腎之神經、六腑神經。",
+        "location": "鼻下緣向外橫開五分，再直上五分處。",
+        "meridian": "入肺、胃二經。",
+        "properties": "泄火散風，清利下焦。",
+        "indications": "腹脹、腹痛、疝氣、胃痛、鼻塞。",
+        "technique": "直刺一分～三分。",
+        "needleFeeling": "酸脹感。",
+        "application": "",
+        "notes": "董氏奇穴定穴名，有從「馬」字，從「快」字，此兩者皆表示其療效有快速顯效之意。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/X-A-5_fu-kuai_zh.png"
+        ]
+      },
+      {
+        "name": "水通穴",
+        "code": "X.A.3. 頭部前側 – 水金通區",
+        "anatomy": "腎神經。",
+        "location": "水通穴：嘴角下五分處。水金穴：水通穴向裡斜開五分處。",
+        "meridian": "水通穴：入脾、腎、胃三經。水金穴：入脾、腎二經。",
+        "properties": "水通穴：調和脾胃，培腎固本。水金穴：健脾益腎，溫經通絡。",
+        "indications": "風濕性腎臟病、腎機能不足引起之疲勞、頭暈、眼花、腎虛、腰痛、閃腰、岔氣、背痛、口乾、胃潰瘍、十二指腸潰瘍、腹脹氣。",
+        "technique": "水通穴：斜刺五分。或直刺三分。或以放血針點刺出血。水金穴：直刺二分～五分。斜刺：從水金穴斜向水通穴方向刺入，針尖直透七快穴。",
+        "needleFeeling": "酸脹感。",
+        "application": "水金、水通兩穴為補腎特效穴，當兩穴附近色澤異常時，可對異色之青筋、點下針或點刺放血，效果最佳。水金、水通穴在臨床時，多同時取用為董氏針灸特有的跪馬針法，或再加取七快穴形成倒馬針法，收效更宏，此為董氏橫三針倒馬針法。腎虛型腰酸痛：當下水金、水通此兩穴，為董氏針灸中有補氣作用的穴位之一。不論肺氣上逆而咳，或腎不納氣而喘，水金、水通穴能降一切氣逆。",
+        "notes": "水通穴穴位於董公原著中為嘴角下四分，今從胡師訂正為嘴角下五分，較符董公原意。倒馬針法即取三根針之意，倒馬即馬倒，馬缺一足即倒，即三足之意；而跪馬針法即取二根針之意，跪著二足也，跪馬或倒馬針法，是以使用針數量的不同來定義。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/X-A-3_shui-tong_shui-jin_zh.png"
+        ]
+      },
+      {
+        "name": "水金穴",
+        "code": "",
+        "anatomy": "腎神經。",
+        "location": "水通穴向裡斜開五分處。",
+        "meridian": "入脾、腎二經。",
+        "properties": "健脾益腎，溫經通絡。",
+        "indications": "同水通穴。",
+        "technique": "直刺二分～五分。",
+        "needleFeeling": "酸脹感。",
+        "application": "水金、水通兩穴為補腎特效穴，當兩穴附近色澤異常時，可對異色之青筋、點下針或點刺放血，效果最佳。水金、水通穴在臨床時，多同時取用為董氏針灸特有的跪馬針法，或再加取七快穴形成倒馬針法，收效更宏，此為董氏橫三針倒馬針法。腎虛型腰酸痛：當下水金、水通此兩穴，為董氏針灸中有補氣作用的穴位之一。不論肺氣上逆而咳，或腎不納氣而喘，水金、水通穴能降一切氣逆。",
+        "notes": "倒馬針法即取三根針之意，倒馬即馬倒，馬缺一足即倒，即三足之意；而跪馬針法即取二根針之意，跪著二足也，跪馬或倒馬針法，是以使用針數量的不同來定義。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2020/08/10-10-水金穴.jpg"
+        ]
+      },
+      {
+        "name": "鼻翼穴",
+        "code": "X.A.2. 頭部前側 – 鼻區",
+        "anatomy": "肺、腎、脾神經。",
+        "location": "鼻翼中央上端之溝陷中。",
+        "meridian": "入肺、腎二經。",
+        "properties": "通經解郁，疏筋利節。",
+        "indications": "腎虧之各種神經痛、半身不遂、四肢痠痛、舌痛、舌硬、舌緊、喉痛、頭脹、偏頭痛、頭昏眼花、顏面麻痺。",
+        "technique": "直刺一分～二分。",
+        "needleFeeling": "酸脹感。",
+        "application": "玉火穴主血症、鼻翼穴主氣症，雙穴同取形成跪馬針法，氣血雙療，效果倍增。",
+        "notes": "鼻翼穴通經活絡之功能很強，多用於氣虛、氣鬱所引起之各種疼痛。本穴可配神耳穴、正本穴、皮膚穴，尚能提神醒腦、消除疲勞。本穴左右兩側配鎮靜穴，可配合鼻翼兩側放血，針對鼻塞有效。若須調整體質，下針不宜超過三十分鐘。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/X-A-2_bi-yi_zh.png"
+        ]
+      },
+      {
+        "name": "州靈穴",
+        "code": "X.P.1. 頭部後側 –  頭州區",
+        "anatomy": "大後頭神經、腦神經、腎之神經。",
+        "location": "州水一穴外開一寸五分處。",
+        "meridian": "入肝、腎二經。",
+        "properties": "通經活絡，散瘀止痛。",
+        "indications": "偏頭痛、坐骨神經痛、腰痛、腿痛、鎮靜、半身不遂。",
+        "technique": "直刺三分～五分。用放血針點刺出血，治頭痛、足跟痛。",
+        "needleFeeling": "酸脹感。",
+        "application": "",
+        "notes": "後會穴為頭，後腦高骨處州水穴為臀部，恰巧為人體背面一全息投影，因此州水穴，可治腰部脊椎骨痛。州靈穴在其旁，因此可治坐骨神經痛及腰痛。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/X-P-1_zhou-ling_zh.png"
+        ]
+      },
+      {
+        "name": "州天穴",
+        "code": "X.P.1. 頭部後側 –  頭州區",
+        "anatomy": "大後頭神經、腎之神經。",
+        "location": "州靈穴外開一寸五分處。",
+        "meridian": "入肝、腎二經。",
+        "properties": "舒經活血，化瘀止痛。",
+        "indications": "三叉神經痛、坐骨神經痛、偏頭痛。",
+        "technique": "直刺三分～五分。或用放血針點刺出血，效佳。",
+        "needleFeeling": "酸脹感。",
+        "application": "州靈、州天、州水三穴，共取成橫三針倒馬，對坐骨神經痛，效果更佳。若能再配合手上一一或二二部位上穴道，效果更佳。董氏頭上諸穴位，大多可治中風後半身不遂，在臨床上可取由前而後，取三針橫刺如前會、正會、後會三穴一線，再取旁一寸半州崙、州圓、州昆三穴一線等方法，可加上電針配合，經幾段療程，對半身不遂，有不錯的效果。頭上諸穴，都可如此取法。",
+        "notes": "州靈、州天、州銀三穴在董公書中未予公開，而由胡師本董公平日所傳，不藏私特為公佈。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/X-P-1_zhou-tian_zh.png"
+        ]
+      },
+      {
+        "name": "州銀穴",
+        "code": "X.P.1. 頭部後側 –  頭州區",
+        "anatomy": "大後頭神經、腎之神經。",
+        "location": "州天穴前一寸五分處。",
+        "meridian": "入肝、腎二經。",
+        "properties": "通筋利節，活血化瘀。",
+        "indications": "同州天穴。",
+        "technique": "直刺三分～五分。或用放血針點刺放血，立即見效。",
+        "needleFeeling": "酸脹感。",
+        "application": "",
+        "notes": "州銀和州靈、州天穴一樣，由胡師根據董公所傳公佈之。董氏針灸號稱有七百四十餘穴，而師公董氏之書，師叔伯的賴著、楊著，亦只有一百七十穴，胡文智 醫師特將平常董公所傳，擇其重要的近百穴公佈，大大彌補董氏針灸正經奇穴遺失之憾，這無私之心，我們應當肯定稱讚才是。",
+        "configNotes": [],
+        "imageUrls": [
+          "https://www.tungs-acupuncture.com/wp-content/uploads/2019/09/X-P-1_zhou-yin_zh.png"
+        ]
+      }
+    ]
+  }
+]
