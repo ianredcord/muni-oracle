@@ -11,68 +11,25 @@ export const metadata: Metadata = {
 
 const PRODUCTS = [
   {
-    name: "DiVino",
-    description: "85% 特濃黑巧克力 × 卡本內弗朗紅酒",
-    detail: "深邃的可可與紅酒的優雅交融，如同一場靈魂的深度對話",
-    image: "https://ceciliarabassi.com/wp-content/uploads/2022/11/Di-vino_front.jpg",
+    name: "Myway",
+    description: "80% 特濃黑巧克力",
+    detail: "堅定走自己的路，如同 Cecilia 三十年的巧克力之旅。高濃度可可帶來深沉的風味層次，適合喜歡純粹、有個性的你。",
+    image: "https://ceciliarabassi.com/wp-content/uploads/2022/02/Myway_front.jpg",
     category: "tablets",
   },
   {
     name: "Weekend",
     description: "70% 特濃黑巧克力",
-    detail: "週末的放鬆時刻，讓純粹的可可帶你回到內在的寧靜",
+    detail: "週末的放鬆時刻，讓純粹的可可帶你回到內在的寧靜。恰到好處的甜苦平衡，是日常犒賞自己的最佳選擇。",
     image: "https://ceciliarabassi.com/wp-content/uploads/2022/02/Weekend_front.jpg",
     category: "tablets",
   },
   {
     name: "Bluemoon",
     description: "牛奶巧克力",
-    detail: "如月光般柔和溫暖，適合需要被溫柔擁抱的時刻",
+    detail: "如月光般柔和溫暖，適合需要被溫柔擁抱的時刻。絲滑的牛奶與可可交融，帶來安定與幸福的味覺體驗。",
     image: "https://ceciliarabassi.com/wp-content/uploads/2022/02/Bluemoon_front.jpg",
     category: "tablets",
-  },
-  {
-    name: "Note",
-    description: "高可可含量牛奶巧克力",
-    detail: "在牛奶的溫潤與可可的深度之間，找到完美的和諧音符",
-    image: "https://ceciliarabassi.com/wp-content/uploads/2022/02/Note_front.jpg",
-    category: "tablets",
-  },
-  {
-    name: "Tomeetyou",
-    description: "榛果牛奶巧克力",
-    detail: "榛果的溫暖與巧克力的甜蜜相遇，一場美好的邂逅",
-    image: "https://ceciliarabassi.com/wp-content/uploads/2022/02/Tomeetyou_front.jpg",
-    category: "tablets",
-  },
-  {
-    name: "Myway",
-    description: "80% 特濃黑巧克力",
-    detail: "堅定走自己的路，如同 Cecilia 三十年的巧克力之旅",
-    image: "https://ceciliarabassi.com/wp-content/uploads/2022/02/Myway_front.jpg",
-    category: "tablets",
-  },
-  {
-    name: "Icon",
-    description: "85% 單一產地特濃黑巧克力",
-    detail: "來自秘魯的頂級可可，每一口都是產地風土的完整表達",
-    image: "https://ceciliarabassi.com/wp-content/uploads/2022/02/Jeon_front.jpg",
-    category: "tablets",
-  },
-];
-
-const CREAMS = [
-  {
-    name: "Black Fragrance",
-    description: "榛果黑巧克力抹醬",
-    detail: "濃郁的黑巧克力與托斯卡尼榛果的完美結合",
-    image: "https://ceciliarabassi.com/wp-content/uploads/2022/02/Black_front.jpg",
-  },
-  {
-    name: "Brown Fragrance",
-    description: "榛果牛奶巧克力抹醬",
-    detail: "溫潤的牛奶巧克力與榛果，日常的小確幸",
-    image: "https://ceciliarabassi.com/wp-content/uploads/2022/02/Brown_front.jpg",
   },
 ];
 
@@ -357,110 +314,7 @@ export default function ChocolatePage() {
         </div>
       </section>
 
-      {/* 抹醬系列 */}
-      <section className="py-20 px-4">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-12">
-            <p className="text-sm tracking-[0.3em] text-[#9A7B4F] mb-4">
-              SPREADABLE CREAMS
-            </p>
-            <h2 className="font-serif text-2xl md:text-3xl font-bold text-[#4a5548] mb-4">
-              榛果巧克力抹醬
-            </h2>
-            <p className="text-stone-500">
-              使用 Cecilia 在比薩山丘私人榛果園的頂級榛果
-            </p>
-          </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            {CREAMS.map((cream, idx) => (
-              <div
-                key={idx}
-                className="group flex items-center gap-5 bg-white rounded-2xl p-5 border border-stone-100 shadow-sm hover:shadow-lg transition-all duration-300"
-              >
-                <div className="relative w-24 h-24 flex-shrink-0 rounded-xl overflow-hidden bg-stone-100">
-                  <Image
-                    src={cream.image}
-                    alt={cream.name}
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
-                    unoptimized
-                  />
-                </div>
-                <div>
-                  <h3 className="font-serif text-lg font-bold text-[#4a5548] mb-1">
-                    {cream.name}
-                  </h3>
-                  <p className="text-sm text-[#9A7B4F] mb-1">{cream.description}</p>
-                  <p className="text-xs text-stone-500">{cream.detail}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* 禮盒系列 */}
-      <section className="py-20 px-4 bg-gradient-to-b from-white to-[#F9F7F2]">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-12">
-            <p className="text-sm tracking-[0.3em] text-[#9A7B4F] mb-4">
-              GIFT COLLECTIONS
-            </p>
-            <h2 className="font-serif text-2xl md:text-3xl font-bold text-[#4a5548] mb-4">
-              精選禮盒
-            </h2>
-            <p className="text-stone-500">
-              將 Cecilia 的巧克力藝術，化為最溫暖的心意
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {[
-              {
-                name: "Experience Box",
-                subtitle: "極致體驗禮盒",
-                description: "巧克力片、抹醬、果醬的完整收藏",
-                image: "https://ceciliarabassi.com/wp-content/uploads/2023/04/BoxGrande_aperta.jpg",
-              },
-              {
-                name: "Collection Box",
-                subtitle: "經典收藏禮盒",
-                description: "全系列巧克力 + Black Fragrance + Orange Fragrance",
-                image: "https://ceciliarabassi.com/wp-content/uploads/2024/10/IMMAGINE-2-Rabassi-Piccola-Collezione.webp",
-              },
-              {
-                name: "Box of 6 Tablets",
-                subtitle: "六片精選禮盒",
-                description: "Cecilia 全系列巧克力片的味覺之旅",
-                image: "https://ceciliarabassi.com/wp-content/uploads/2023/11/Box6nera.jpg",
-              },
-            ].map((box, idx) => (
-              <div
-                key={idx}
-                className="group bg-white rounded-2xl overflow-hidden border border-stone-100 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
-              >
-                <div className="relative aspect-[4/3] bg-stone-100 overflow-hidden">
-                  <Image
-                    src={box.image}
-                    alt={box.name}
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
-                    unoptimized
-                  />
-                </div>
-                <div className="p-5">
-                  <h3 className="font-serif text-lg font-bold text-[#4a5548] mb-1">
-                    {box.name}
-                  </h3>
-                  <p className="text-sm text-[#9A7B4F] mb-2">{box.subtitle}</p>
-                  <p className="text-xs text-stone-500">{box.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* MUNI 巧克力儀式 */}
       <section className="py-20 px-4 bg-gradient-to-b from-[#2a1f1a] to-[#1a1210] text-white">
@@ -540,9 +394,9 @@ export default function ChocolatePage() {
           <div className="space-y-4">
             {[
               {
-                chocolate: "DiVino（85% 黑巧克力 × 紅酒）",
-                oil: "聖杯一號 — 安心",
-                mood: "需要深度放鬆、釋放壓力的夜晚",
+                chocolate: "Myway（80% 特濃黑巧克力）",
+                oil: "聖杯二號 — 定心",
+                mood: "需要堅定信念、走自己的路的時刻",
                 color: "from-violet-50 to-purple-50",
                 border: "border-violet-200",
               },
@@ -559,13 +413,6 @@ export default function ChocolatePage() {
                 mood: "睡前的安定儀式，讓心回到寧靜",
                 color: "from-teal-50 to-emerald-50",
                 border: "border-teal-200",
-              },
-              {
-                chocolate: "Icon（85% 單一產地黑巧克力）",
-                oil: "聖杯二號 — 定心",
-                mood: "需要清晰思考、做重要決定的時刻",
-                color: "from-sky-50 to-blue-50",
-                border: "border-sky-200",
               },
             ].map((pair, idx) => (
               <div
