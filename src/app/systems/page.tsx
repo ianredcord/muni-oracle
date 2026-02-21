@@ -84,15 +84,15 @@ const SYSTEMS = [
   },
   {
     id: "green-tea",
-    title: "日本綠茶",
-    subtitle: "靜心的飲茶儀式",
+    title: "MUNI × 日本有機綠茶",
+    subtitle: "百年有機茶園 × 頻率共振",
     description:
-      "來自日本的頂級綠茶，富含茶胺酸（L-Theanine），能促進 α 腦波，帶來清醒而放鬆的意識狀態。是 MUNI 睡前安定儀式的重要元素。",
-    href: "#",
+      "攜手日本百年有機茶園，嚴選宇治抹茶、鹿兒島玉露、煎茶與焙茶四款頂級有機綠茶。自 1858 年種茶至今超過 165 年，一年一採，立春後第 88 天春收，手工採摘、6 小時內蒸青完成。橫跨日本、美國、歐盟的完整有機認證。",
+    href: "/green-tea",
     icon: "🍵",
     color: "from-teal-50 to-emerald-50",
     borderColor: "border-teal-200",
-    status: "coming",
+    status: "available",
   },
   {
     id: "chocolate",
