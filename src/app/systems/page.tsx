@@ -48,15 +48,15 @@ const SYSTEMS = [
   },
   {
     id: "somaniks",
-    title: "Somaniks 日本針灸貼",
-    subtitle: "穴位的日常守護",
+    title: "MUNI × SOMANIKS 針灸貼",
+    subtitle: "神經科學 × 不刺入微錐 × 無痛修復",
     description:
-      "來自日本的專業針灸貼片，以微電流原理持續刺激穴位。搭配董氏穴位與 MUNI 精油使用，讓穴位保健融入日常生活。",
-    href: "#",
+      "來自日本的不刺入微錐技術，以軸索反射原理啟動人體自我修復。SOMACEPT 硬針對應急性痛，SOMARESON 軟針對應慢性痛。搭配 MUNI 精油，嗅覺與觸覺雙重神經通路同步共振。日本醫療器材、CE、FDA 三重認證。",
+    href: "/somaniks",
     icon: "🩹",
     color: "from-sky-50 to-blue-50",
     borderColor: "border-sky-200",
-    status: "coming",
+    status: "available",
   },
   {
     id: "ginseng",
