@@ -466,22 +466,20 @@ export default function ChocolatePage() {
               </svg>
               問問 MUNI 療癒顧問
             </a>
-            <a
-              href="https://ceciliarabassi.com/en/shop/"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/systems"
               className="inline-flex items-center justify-center gap-2 bg-[#2a1f1a] hover:bg-[#1a1210] text-white rounded-full px-8 py-3.5 text-lg font-medium transition-all shadow-md hover:shadow-lg"
             >
-              前往 Cecilia Rabassi 官方商店
+              探索更多 MUNI 療癒系統
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth={2}
-                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                  d="M13 7l5 5m0 0l-5 5m5-5H6"
                 />
               </svg>
-            </a>
+            </Link>
           </div>
         </div>
       </section>
