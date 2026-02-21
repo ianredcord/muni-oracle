@@ -33,6 +33,12 @@ export function Header() {
             {ZH.nav.energySupport}
           </Link>
           <Link 
+            href="/frequency" 
+            className="text-stone-600 hover:text-[#4a5548] text-sm font-medium transition-colors hidden md:inline"
+          >
+            獨家技術
+          </Link>
+          <Link 
             href="/systems" 
             className="text-stone-600 hover:text-[#4a5548] text-sm font-medium transition-colors"
           >
