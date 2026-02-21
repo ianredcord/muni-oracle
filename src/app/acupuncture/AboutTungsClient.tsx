@@ -122,11 +122,17 @@ export default function AboutTungsClient() {
 
                 {/* 龍諾總統治療照片 */}
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 mb-10">
-                  {[1, 2, 3, 4, 5].map((n) => (
-                    <div key={n} className="relative aspect-square rounded-lg overflow-hidden bg-stone-100 border border-stone-100">
+                  {[
+                    { src: "https://www.tungs-acupuncture.com/wp-content/uploads/2020/08/董公治癒龍諾總統疾病1-300x206.jpg", alt: "董公治癒龍諾總統 1" },
+                    { src: "https://www.tungs-acupuncture.com/wp-content/uploads/2020/08/董公因治癒龍諾總統疾病2.jpg", alt: "董公治癒龍諾總統 2" },
+                    { src: "https://www.tungs-acupuncture.com/wp-content/uploads/2020/08/董公治癒龍諾總統疾病3-300x167.jpg", alt: "董公治癒龍諾總統 3" },
+                    { src: "https://www.tungs-acupuncture.com/wp-content/uploads/2020/08/董公治癒龍諾總統疾病4-300x274.jpg", alt: "董公治癒龍諾總統 4" },
+                    { src: "https://www.tungs-acupuncture.com/wp-content/uploads/2020/08/董公治癒龍諾總統疾病5-300x230.jpg", alt: "董公治癒龍諾總統 5" },
+                  ].map((img, idx) => (
+                    <div key={idx} className="relative aspect-square rounded-lg overflow-hidden bg-stone-100 border border-stone-100">
                       <Image
-                        src={`https://www.tungs-acupuncture.com/wp-content/uploads/2020/08/董公${n <= 1 ? '治癒' : n === 2 ? '因治癒' : '治癒'}龍諾總統疾病${n}-300x${n === 1 ? '206' : n === 2 ? '300' : n === 3 ? '167' : n === 4 ? '274' : '230'}.jpg`}
-                        alt={`董公治癒龍諾總統 ${n}`}
+                        src={img.src}
+                        alt={img.alt}
                         fill
                         className="object-cover"
                         sizes="20vw"
