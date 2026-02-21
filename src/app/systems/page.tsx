@@ -5,7 +5,7 @@ import { Header } from "@/components/Header";
 export const metadata: Metadata = {
   title: "MUNI 療癒生態系統 | 完整知識架構",
   description:
-    "探索 MUNI 的完整療癒生態——花精、精油、董氏心氣神針、日本針灸貼、人蔘、橄欖油、日本綠茶、巧克力，八大系統守護你的身心靈平衡。",
+    "探索 MUNI 的完整療癒生態——花精、精油、董氏心氣神針、日本針灸貼、人蔘、橄欖油、日本綠茶、巧克力、葡萄酒，九大系統守護你的身心靈平衡。",
 };
 
 const SYSTEMS = [
@@ -105,6 +105,18 @@ const SYSTEMS = [
     borderColor: "border-amber-200",
     status: "available",
   },
+  {
+    id: "wine",
+    title: "MUNI × Kellerei Eisacktal 葡萄酒",
+    subtitle: "阿爾卑斯山地葡萄酒 × 療癒儀式",
+    description:
+      "攜手南蒂羅爾 Kellerei Eisacktal 酒莊，以花崗岩與白雲石孕育的山地葡萄酒，透過品飲儀式連結大地的礦物能量。9 款精選酒款，從旗艦限量到經典日常。",
+    href: "/wine",
+    icon: "🍷",
+    color: "from-purple-50 to-indigo-50",
+    borderColor: "border-purple-200",
+    status: "available",
+  },
 ];
 
 const LAYERS = [
@@ -117,7 +129,7 @@ const LAYERS = [
   {
     name: "情緒層",
     description: "透過花精頻率與芳香療法，平衡情緒與心理狀態",
-    systems: ["花精", "精油", "巧克力"],
+    systems: ["花精", "精油", "巧克力", "葡萄酒"],
     color: "bg-rose-100 text-rose-800",
   },
   {
@@ -145,7 +157,7 @@ export default function SystemsPage() {
           <p className="text-stone-500 text-lg leading-relaxed max-w-2xl mx-auto">
             MUNI 不只是花精品牌，而是一套完整的「身心靈整體生活儀式系統」。
             <br />
-            八大系統從身體、情緒到日常儀式，層層守護你的內在平衡。
+            九大系統從身體、情緒到日常儀式，層層守護你的內在平衡。
           </p>
         </div>
       </section>
@@ -192,7 +204,7 @@ export default function SystemsPage() {
       <section className="pb-20 px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="font-serif text-2xl font-bold text-[#4a5548] text-center mb-10">
-            八大療癒系統
+            九大療癒系統
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {SYSTEMS.map((system) => (
@@ -259,7 +271,7 @@ export default function SystemsPage() {
           <p className="text-stone-600 text-lg leading-relaxed mb-8">
             每個人的身心狀態都不同，讓 MUNI 療癒顧問根據你此刻的感受，
             <br className="hidden sm:inline" />
-            從八大系統中為你挑選最適合的療癒組合。
+            從九大系統中為你挑選最適合的療癒組合。
           </p>
           <a
             href="https://ai.munione.co"
