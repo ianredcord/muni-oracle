@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { Header } from "@/components/Header";
+import FrequencyBadge from "@/components/FrequencyBadge";
 
 export const metadata: Metadata = {
   title: "MUNI × Kellerei Eisacktal | 山地葡萄酒 × 療癒儀式",
@@ -944,6 +945,9 @@ export default function WinePage() {
           </div>
         </div>
       </section>
+
+      {/* Frequency Resonance™ 技術支持 */}
+      <FrequencyBadge variant="light" full />
 
       {/* Footer */}
       <footer className="py-12 px-4 bg-[#4a5548] text-white/70">

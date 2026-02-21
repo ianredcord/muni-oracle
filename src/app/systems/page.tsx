@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import { Header } from "@/components/Header";
+import FrequencyBadge from "@/components/FrequencyBadge";
 
 export const metadata: Metadata = {
   title: "MUNI 療癒生態系統 | 完整知識架構",
@@ -296,6 +297,9 @@ export default function SystemsPage() {
           </a>
         </div>
       </section>
+
+      {/* Frequency Resonance™ 技術支持 */}
+      <FrequencyBadge variant="light" full />
 
       {/* Footer */}
       <footer className="py-12 px-4 bg-[#4a5548] text-white/70">

@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import FrequencyBadge from "@/components/FrequencyBadge";
 import {
   ENERGY_LAYERS,
   ENERGY_MODULES,
@@ -322,6 +323,7 @@ export default function EnergySupportPage() {
       <ModulesSection />
       <StatesSection />
       <FooterCTA />
+      <FrequencyBadge variant="light" full />
       <Footer />
     </main>
   );

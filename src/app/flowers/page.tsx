@@ -2,6 +2,7 @@ import { FLOWERS } from "@/data/flowers.generated";
 import Image from "next/image";
 import Link from "next/link";
 import { Header } from "@/components/Header";
+import FrequencyBadge from "@/components/FrequencyBadge";
 
 export default function FlowersPage() {
   return (
@@ -72,6 +73,9 @@ export default function FlowersPage() {
           </Link>
         </div>
       </main>
+
+      {/* Frequency Resonance™ 技術支持 */}
+      <FrequencyBadge variant="light" full />
     </div>
   );
 }

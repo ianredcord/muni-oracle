@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import { Header } from "@/components/Header";
+import FrequencyBadge from "@/components/FrequencyBadge";
 
 export const metadata: Metadata = {
   title: "MUNI 聖杯精油 | 嗅覺的療癒入口",
@@ -272,6 +273,9 @@ export default function EssentialOilPage() {
           </a>
         </div>
       </section>
+
+      {/* Frequency Resonance™ 技術支持 */}
+      <FrequencyBadge variant="light" full />
 
       {/* Footer */}
       <footer className="py-12 px-4 bg-[#4a5548] text-white/70">
