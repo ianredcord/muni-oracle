@@ -340,6 +340,9 @@ export default function FrequencyPage() {
             <br className="hidden md:block" />
             並以六層架構將它轉化為可體驗的療癒技術。
           </p>
+          <p className="text-amber-400/60 max-w-xl mx-auto mt-6 text-sm italic font-serif leading-relaxed">
+            頻率是方法，祝福是心意。兩者合一，才是 MUNI 的完整表達。
+          </p>
 
           {/* 向下滾動提示 */}
           <div className="mt-16 animate-bounce">
@@ -992,19 +995,62 @@ export default function FrequencyPage() {
             </table>
           </div>
 
+          {/* 祝福區塊 */}
+          <div className="relative my-20 py-16 px-6 md:px-12 rounded-2xl bg-gradient-to-br from-amber-950/20 via-[#0d1a14] to-amber-950/10 border border-amber-600/15 overflow-hidden">
+            {/* 背景裝飾 */}
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] rounded-full bg-amber-500/5 blur-3xl" />
+            <div className="relative z-10 max-w-3xl mx-auto text-center">
+              <p className="text-amber-400/70 tracking-[0.3em] text-xs uppercase mb-4">
+                Frequency × Blessing
+              </p>
+              <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">
+                頻率與祝福的合一
+              </h3>
+              <p className="text-stone-400 leading-relaxed mb-6 text-sm md:text-base">
+                MUNI Frequency Resonance™ 不只是一套頻率技術——
+                <br className="hidden md:block" />
+                它是帶著「讓萬物回到和諧」的意願，將頻率注入物質的完整過程。
+              </p>
+              <p className="text-stone-400 leading-relaxed mb-8 text-sm md:text-base">
+                每一件 MUNI 產品在接受頻率共振的同時，也接受了一份祝福——
+                <br className="hidden md:block" />
+                這份祝福不是儀式性的語言，而是實實在在地將「和諧」的意圖
+                <br className="hidden md:block" />
+                透過頻率的載體，傳遞到每一個分子、每一個細胞。
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                <div className="bg-white/[0.03] rounded-xl p-5 border border-white/5">
+                  <p className="text-amber-400 font-serif text-lg mb-2">頻率</p>
+                  <p className="text-stone-500 text-sm">是方法、是工具、是科學可驗證的物理現象。它讓物質的分子排列趨向穩定，讓神經系統回到平衡。</p>
+                </div>
+                <div className="bg-white/[0.03] rounded-xl p-5 border border-white/5">
+                  <p className="text-amber-400 font-serif text-lg mb-2">祝福</p>
+                  <p className="text-stone-500 text-sm">是心意、是意願、是「讓萬物回到和諧」的真誠期許。它賦予頻率以方向，讓技術不只是機械的操作。</p>
+                </div>
+                <div className="bg-white/[0.03] rounded-xl p-5 border border-amber-600/20">
+                  <p className="text-amber-400 font-serif text-lg mb-2">合一</p>
+                  <p className="text-stone-500 text-sm">當頻率與祝福合一，產品不再只是物質——它成為一個帶著意圖的共振載體，安靜地等待與你相遇。</p>
+                </div>
+              </div>
+              <p className="font-serif text-lg md:text-xl text-amber-300/80 italic leading-relaxed">
+                「頻率是方法，祝福是心意。兩者合一，才是 MUNI 的完整表達。」
+              </p>
+            </div>
+          </div>
+
           {/* 結語 */}
           <div className="text-center max-w-2xl mx-auto">
             <p className="font-serif text-xl md:text-2xl text-white leading-relaxed mb-4">
               萬物本有其頻率。
               <br />
-              MUNI 的工作，是讓它們重新和諧。
+              MUNI 的工作，是帶著祝福，讓它們重新和諧。
             </p>
             <p className="text-stone-500 text-sm mb-2">
               古人用「氣」描述它，用「道」指向它，用「寂靜」體驗它。
             </p>
             <p className="text-stone-500 text-sm">
               MUNI
-              用頻率儀測量它，用泛音數學展開它，用多頻疊加協同應用它。
+              用頻率測量它，用泛音展開它，用祝福完整它。
             </p>
             <p className="font-serif text-amber-400/80 mt-6 italic">
               不同的語言，同一個真實。

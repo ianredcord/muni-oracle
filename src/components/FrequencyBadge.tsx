@@ -59,7 +59,7 @@ export default function FrequencyBadge({
             isDark ? "text-stone-500" : "text-stone-400"
           }`}
         >
-          技術支持
+          頻率 × 祝福
         </span>
         <svg
           className={`w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5 ${
@@ -127,8 +127,8 @@ export default function FrequencyBadge({
             isDark ? "text-stone-400" : "text-stone-500"
           }`}
         >
-          所有 MUNI 產品皆透過獨家頻率共振技術進行調頻——從基頻發現到泛音展開、多頻疊加協同，
-          透過迷走神經、筋膜網絡與嗅覺三條通道，讓身體作為一個整體被調諧。
+          所有 MUNI 產品皆透過獨家頻率共振技術進行調頻——帶著「讓萬物回到和諧」的祝福意願，
+          將頻率注入每一個分子。頻率是方法，祝福是心意，兩者合一，才是 MUNI 的完整表達。
         </p>
 
         {/* CTA 按鈕 */}
