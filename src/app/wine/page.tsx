@@ -289,6 +289,22 @@ export default function WinePage() {
             </p>
           </div>
 
+          {/* YouTube 影片嵌入 */}
+          <div className="mb-16">
+            <div className="relative w-full aspect-video rounded-2xl overflow-hidden shadow-xl">
+              <iframe
+                src="https://www.youtube.com/embed/UkJMEmK2huo?rel=0&modestbranding=1"
+                title="Kellerei Eisacktal - Cantina Valle Isarco"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="absolute inset-0 w-full h-full"
+              />
+            </div>
+            <p className="text-center text-stone-400 text-sm mt-4">
+              Valle Isarco — 義大利最北端的葡萄酒產區，阿爾卑斯山與地中海風景交匯之地
+            </p>
+          </div>
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start mb-16">
             <div className="bg-white rounded-2xl p-8 shadow-sm border border-stone-100">
               <blockquote className="border-l-4 border-amber-400 pl-6 py-2 mb-6">
@@ -300,44 +316,51 @@ export default function WinePage() {
 
               <div className="space-y-4 text-stone-600 leading-relaxed">
                 <p>
-                  <strong className="text-[#4a5548]">1961 年</strong>成立於義大利南蒂羅爾（Alto Adige），
-                  Kellerei Eisacktal 是 Valle Isarco 山谷中 135 位葡萄農的釀酒合作社。
+                  <strong className="text-[#4a5548]">1961 年</strong>，24 位葡萄農在義大利南蒂羅爾（Alto Adige）
+                  的 Valle Isarco 山谷中，共同創立了這間釀酒合作社。
+                  如今已有 <strong className="text-[#4a5548]">135 個在地農戶家族</strong>加入，
                   他們的哲學很簡單：<strong className="text-[#4a5548]">「品質，絕不妥協。」</strong>
                 </p>
                 <p>
-                  Valle Isarco 擁有種植白葡萄的理想氣候——炎熱的夏日與涼爽的夜晚，
-                  讓葡萄在高糖分的同時保留了鮮明的酸度與芳香。輕盈的礫石土壤富含礦物質，
-                  賦予葡萄酒<strong className="text-[#4a5548]">無可比擬的品種特性與優雅</strong>。
-                </p>
-                <p>
+                  每年約生產 <strong className="text-[#4a5548]">950,000 瓶</strong>葡萄酒，
+                  其中 <strong className="text-[#4a5548]">98% 為白酒</strong>——
+                  這是 Valle Isarco 獨特風土的最佳證明。
                   從西元前 500 年的第一批葡萄酒證據，到今天的國際獎項，
-                  Valle Isarco 的釀酒故事已延續了兩千五百年。
+                  這片土地的釀酒故事已延續了兩千五百年。
                 </p>
               </div>
             </div>
 
             <div className="space-y-4">
-              {/* 風土特色卡片 */}
-              <div className="bg-gradient-to-br from-emerald-50 to-teal-50 rounded-2xl p-6 border border-emerald-100">
-                <h3 className="font-serif text-lg font-bold text-[#4a5548] mb-3">
-                  風土特色
+              {/* 關鍵數據 */}
+              <div className="bg-gradient-to-br from-[#1a1a2e] to-[#16213e] rounded-2xl p-6 text-white">
+                <h3 className="font-serif text-lg font-bold text-amber-200 mb-4">
+                  酒莊一覽
                 </h3>
-                <div className="grid grid-cols-2 gap-4 text-sm">
+                <div className="grid grid-cols-3 gap-4 text-center">
                   <div>
-                    <p className="text-stone-400 mb-1">海拔範圍</p>
-                    <p className="font-medium text-[#4a5548]">250 – 970 m</p>
+                    <p className="text-2xl md:text-3xl font-bold text-amber-300">135</p>
+                    <p className="text-white/50 text-xs mt-1">在地農戶家族</p>
                   </div>
                   <div>
-                    <p className="text-stone-400 mb-1">氣候</p>
-                    <p className="font-medium text-[#4a5548]">阿爾卑斯山地氣候</p>
+                    <p className="text-2xl md:text-3xl font-bold text-amber-300">150</p>
+                    <p className="text-white/50 text-xs mt-1">公頃葡萄園</p>
                   </div>
                   <div>
-                    <p className="text-stone-400 mb-1">土壤</p>
-                    <p className="font-medium text-[#4a5548]">花崗岩、白雲石、片岩</p>
+                    <p className="text-2xl md:text-3xl font-bold text-amber-300">14</p>
+                    <p className="text-white/50 text-xs mt-1">葡萄品種</p>
                   </div>
                   <div>
-                    <p className="text-stone-400 mb-1">成員</p>
-                    <p className="font-medium text-[#4a5548]">135 位葡萄農</p>
+                    <p className="text-2xl md:text-3xl font-bold text-amber-300">1,000<span className="text-base">m</span></p>
+                    <p className="text-white/50 text-xs mt-1">最高海拔</p>
+                  </div>
+                  <div>
+                    <p className="text-2xl md:text-3xl font-bold text-amber-300">8</p>
+                    <p className="text-white/50 text-xs mt-1">種不同土壤</p>
+                  </div>
+                  <div>
+                    <p className="text-2xl md:text-3xl font-bold text-amber-300">60<span className="text-base">%</span></p>
+                    <p className="text-white/50 text-xs mt-1">陡坡葡萄園</p>
                   </div>
                 </div>
               </div>
@@ -350,7 +373,7 @@ export default function WinePage() {
                 <div className="space-y-3">
                   {[
                     { year: "500 BC", event: "Valle Isarco 最早的葡萄酒證據" },
-                    { year: "1961", event: "Cantina Valle Isarco 成立" },
+                    { year: "1961", event: "24 位葡萄農創立 Cantina Valle Isarco" },
                     { year: "2006", event: "生產設施翻新擴建" },
                     { year: "2021", event: "60 週年，推出全新品牌形象" },
                   ].map((item) => (
@@ -364,6 +387,117 @@ export default function WinePage() {
                 </div>
               </div>
             </div>
+          </div>
+
+          {/* 正面能量因素 */}
+          <div className="mb-16">
+            <div className="text-center mb-10">
+              <p className="text-sm tracking-[0.3em] text-[#9A7B4F] mb-3">
+                POSITIVE ENERGY FACTORS
+              </p>
+              <h3 className="font-serif text-xl md:text-2xl font-bold text-[#4a5548]">
+                每一瓶酒背後的正面能量
+              </h3>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="bg-gradient-to-br from-amber-50 to-yellow-50 rounded-2xl p-6 border border-amber-100">
+                <div className="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center mb-4">
+                  <svg className="w-6 h-6 text-amber-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M7 11.5V14m0-2.5v-6a1.5 1.5 0 113 0m-3 6a1.5 1.5 0 00-3 0v2a7.5 7.5 0 0015 0v-5a1.5 1.5 0 00-3 0m-6-3V11m0-5.5v-1a1.5 1.5 0 013 0v1m0 0V11m0-5.5a1.5 1.5 0 013 0v3m0 0V11" />
+                  </svg>
+                </div>
+                <h4 className="font-serif text-lg font-bold text-[#4a5548] mb-2">手工採摘</h4>
+                <p className="text-stone-500 text-sm leading-relaxed">
+                  135 個農戶家族，365 天悉心照料葡萄園。在陡峭的山坡上，
+                  許多地方<strong className="text-[#4a5548]">只能以手工採摘</strong>——
+                  每一顆葡萄都經過人手的溫度與選擇，這份用心是機器無法取代的能量傳遞。
+                </p>
+              </div>
+
+              <div className="bg-gradient-to-br from-emerald-50 to-teal-50 rounded-2xl p-6 border border-emerald-100">
+                <div className="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center mb-4">
+                  <svg className="w-6 h-6 text-emerald-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
+                  </svg>
+                </div>
+                <h4 className="font-serif text-lg font-bold text-[#4a5548] mb-2">天然氣候恩賜</h4>
+                <p className="text-stone-500 text-sm leading-relaxed">
+                  阿爾卑斯山脈的屏障帶來<strong className="text-[#4a5548]">充沛的日照與涼爽的夜風</strong>，
+                  白天累積糖分，夜晚保留酸度。靠近白雲石山脈（Dolomites）的地理位置，
+                  造就了劇烈的日夜溫差——這是頂級白酒芳香與礦物感的天然密碼。
+                </p>
+              </div>
+
+              <div className="bg-gradient-to-br from-stone-50 to-orange-50 rounded-2xl p-6 border border-stone-200">
+                <div className="w-12 h-12 bg-stone-100 rounded-xl flex items-center justify-center mb-4">
+                  <svg className="w-6 h-6 text-stone-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M20.893 13.393l-1.135-1.135a2.252 2.252 0 01-.421-.585l-1.08-2.16a.414.414 0 00-.663-.107.827.827 0 01-.812.21l-1.273-.363a.89.89 0 00-.738 1.595l.587.39c.59.395.674 1.23.172 1.732l-.2.2c-.212.212-.33.498-.33.796v.41c0 .409-.11.809-.32 1.158l-1.315 2.191a2.11 2.11 0 01-1.81 1.025 1.055 1.055 0 01-1.055-1.055v-1.172c0-.92-.56-1.747-1.414-2.089l-.655-.261a2.25 2.25 0 01-1.383-2.46l.007-.042a2.25 2.25 0 01.29-.787l.09-.15a2.25 2.25 0 012.37-1.048l1.178.236a1.125 1.125 0 001.302-.795l.208-.73a1.125 1.125 0 00-.578-1.315l-.665-.332-.091.091a2.25 2.25 0 01-1.591.659h-.18a.94.94 0 00-.662.274.931.931 0 01-1.458-1.137l1.411-2.353a2.25 2.25 0 00.286-.76m11.928 9.869A9 9 0 008.965 3.525m11.928 9.868A9 9 0 118.965 3.525" />
+                  </svg>
+                </div>
+                <h4 className="font-serif text-lg font-bold text-[#4a5548] mb-2">8 種古老土壤</h4>
+                <p className="text-stone-500 text-sm leading-relaxed">
+                  石英片岩、閃長岩、火山斑岩……<strong className="text-[#4a5548]">8 種截然不同的土壤</strong>
+                  在 150 公頃的葡萄園中交替分布。葡萄藤的根系深入貧瘠的岩層，
+                  吸收珍貴的礦物養分——這是大地最原始的能量來源。
+                </p>
+              </div>
+
+              <div className="bg-gradient-to-br from-green-50 to-lime-50 rounded-2xl p-6 border border-green-100">
+                <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mb-4">
+                  <svg className="w-6 h-6 text-green-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12.75 3.03v.568c0 .334.148.65.405.864l1.068.89c.442.369.535 1.01.216 1.49l-.51.766a2.25 2.25 0 01-1.161.886l-.143.048a1.107 1.107 0 00-.57 1.664c.369.555.169 1.307-.427 1.605L9 13.125l.423 1.059a.956.956 0 01-1.652.928l-.679-.906a1.125 1.125 0 00-1.906.172L4.5 15.75l-.612.153M12.75 3.031a9 9 0 00-8.862 12.872M12.75 3.031a9 9 0 016.69 14.036m0 0l-.177-.529A2.25 2.25 0 0017.128 15H16.5l-.324-.324a1.453 1.453 0 00-2.328.377l-.036.073a1.586 1.586 0 01-.982.816l-.99.282c-.55.157-.894.702-.8 1.267l.073.438c.08.474.49.821.97.821.846 0 1.598.542 1.865 1.345l.215.643m5.276-3.67a9.012 9.012 0 01-5.276 3.67m0 0a9 9 0 01-10.275-4.835M15.75 9c0 .896-.393 1.7-1.016 2.25" />
+                  </svg>
+                </div>
+                <h4 className="font-serif text-lg font-bold text-[#4a5548] mb-2">永續農法</h4>
+                <p className="text-stone-500 text-sm leading-relaxed">
+                  採用<strong className="text-[#4a5548]">整合式葡萄栽培</strong>，
+                  保護生物多樣性、最小化化學農藥使用。自有太陽能光伏系統發電，
+                  輕量瓶設計每年減少 67.5 噸 CO₂ 排放——
+                  對大地的尊重，就是最好的能量回饋。
+                </p>
+              </div>
+
+              <div className="bg-gradient-to-br from-sky-50 to-blue-50 rounded-2xl p-6 border border-sky-100">
+                <div className="w-12 h-12 bg-sky-100 rounded-xl flex items-center justify-center mb-4">
+                  <svg className="w-6 h-6 text-sky-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3H21m-3.75 3H21" />
+                  </svg>
+                </div>
+                <h4 className="font-serif text-lg font-bold text-[#4a5548] mb-2">薩比奧納修道院</h4>
+                <p className="text-stone-500 text-sm leading-relaxed">
+                  被譽為「蒂羅爾的衛城」的<strong className="text-[#4a5548]">薩比奧納修道院</strong>，
+                  矗立在巨大的閃長岩上方。修道院周圍通風溫暖的陡峭葡萄園，
+                  是酒莊最珍貴的頂級產區——Sabiona 系列的靈魂之地。
+                </p>
+              </div>
+
+              <div className="bg-gradient-to-br from-violet-50 to-purple-50 rounded-2xl p-6 border border-violet-100">
+                <div className="w-12 h-12 bg-violet-100 rounded-xl flex items-center justify-center mb-4">
+                  <svg className="w-6 h-6 text-violet-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <h4 className="font-serif text-lg font-bold text-[#4a5548] mb-2">耐心與時間</h4>
+                <p className="text-stone-500 text-sm leading-relaxed">
+                  釀酒師以<strong className="text-[#4a5548]">極大的耐心與精煉的直覺</strong>
+                  照料每一款酒，等待它們達到完美的成熟度。
+                  緩慢的陳釀過程賦予葡萄酒深度與複雜性——
+                  傳統與現代技術在酒窖中的交融，是品質的關鍵。
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* 社區精神引言 */}
+          <div className="bg-gradient-to-r from-[#1a1a2e] to-[#16213e] rounded-2xl p-8 md:p-10 text-center text-white">
+            <p className="text-amber-300 text-sm tracking-[0.2em] mb-4">VISION & MISSION</p>
+            <blockquote className="text-lg md:text-xl leading-relaxed text-white/80 max-w-3xl mx-auto italic">
+              &ldquo;社群精神是我們的指導原則。我們的目標是透過精心的葡萄處理，
+              釀造高品質的葡萄酒，以此表達我們<strong className="text-amber-200 not-italic">對自然的尊重</strong>，
+              以及對後代的忠誠。&rdquo;
+            </blockquote>
+            <p className="text-white/40 text-sm mt-4">— Kellerei Eisacktal · Cantina Valle Isarco</p>
           </div>
         </div>
       </section>
