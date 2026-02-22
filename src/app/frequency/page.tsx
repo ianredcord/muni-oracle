@@ -4,7 +4,7 @@ import Link from "next/link";
 /* 深色版 Header，專用於 frequency 頁面 */
 function DarkHeader() {
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-[#0a0f0d]/80 backdrop-blur-md border-b border-white/5">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-[#1a2420]/80 backdrop-blur-md border-b border-white/5">
       <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
         <Link href="/" className="font-serif text-xl font-bold text-white/90 hover:text-white transition-colors">
           MUNI
@@ -297,14 +297,14 @@ export default function FrequencyPage() {
   const L4 = LAYERS[4] as any;
   const L5 = LAYERS[5] as any;
   return (
-    <div className="min-h-screen bg-[#0a0f0d] text-stone-200">
+    <div className="min-h-screen bg-[#1a2420] text-stone-200">
       <DarkHeader />
 
       {/* ─── Hero Section ─── */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
         {/* 背景動態波紋 */}
         <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-gradient-to-b from-[#0a0f0d] via-[#0d1a14] to-[#0a0f0d]" />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#1a2420] via-[#15201c] to-[#1a2420]" />
           {/* 同心圓波紋動畫 */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
             <div className="w-[600px] h-[600px] md:w-[800px] md:h-[800px] rounded-full border border-amber-500/10 animate-[ping_4s_ease-out_infinite]" />
@@ -996,7 +996,7 @@ export default function FrequencyPage() {
           </div>
 
           {/* 祝福區塊 */}
-          <div className="relative my-20 py-16 px-6 md:px-12 rounded-2xl bg-gradient-to-br from-amber-950/20 via-[#0d1a14] to-amber-950/10 border border-amber-600/15 overflow-hidden">
+          <div className="relative my-20 py-16 px-6 md:px-12 rounded-2xl bg-gradient-to-br from-amber-950/20 via-[#15201c] to-amber-950/10 border border-amber-600/15 overflow-hidden">
             {/* 背景裝飾 */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] rounded-full bg-amber-500/5 blur-3xl" />
             <div className="relative z-10 max-w-3xl mx-auto text-center">
@@ -1060,7 +1060,7 @@ export default function FrequencyPage() {
       </section>
 
       {/* ─── CTA Section ─── */}
-      <section className="py-20 px-4 bg-gradient-to-b from-amber-950/10 to-[#0a0f0d]">
+      <section className="py-20 px-4 bg-gradient-to-b from-amber-950/10 to-[#0f1a16]">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="font-serif text-2xl md:text-3xl text-white mb-4">
             體驗 MUNI 頻率共振
@@ -1103,7 +1103,7 @@ export default function FrequencyPage() {
       </section>
 
       {/* ─── Footer ─── */}
-      <footer className="py-12 px-4 bg-[#060a08] text-white/50 border-t border-white/5">
+      <footer className="py-12 px-4 bg-[#0f1a16] text-white/50 border-t border-white/5">
         <div className="max-w-4xl mx-auto text-center">
           <p className="font-serif text-lg text-white/70 mb-2">MUNI 牟尼</p>
           <p className="text-sm">在寂靜中，承接你的答案。</p>

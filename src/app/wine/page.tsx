@@ -194,7 +194,7 @@ export default function WinePage() {
       <Header />
 
       {/* Hero — 深色背景，呼應葡萄酒的深邃與山地的壯闊 */}
-      <section className="relative pt-20 pb-24 px-4 bg-gradient-to-b from-[#1a1a2e] via-[#16213e] to-[#0f3460] text-white overflow-hidden">
+      <section className="relative pt-20 pb-24 px-4 bg-gradient-to-b from-[#1a2420] via-[#15201c] to-[#0f1a16] text-white overflow-hidden">
         {/* 背景裝飾 */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-20 left-10 w-72 h-72 bg-purple-600 rounded-full blur-[120px]" />
@@ -246,7 +246,7 @@ export default function WinePage() {
       </section>
 
       {/* MUNI × Kellerei 合作宣言 */}
-      <section className="py-20 px-4 bg-gradient-to-b from-[#0f3460] to-[#F9F7F2]">
+      <section className="py-20 px-4 bg-gradient-to-b from-[#0f1a16] to-[#F9F7F2]">
         <div className="max-w-3xl mx-auto text-center">
           <div className="bg-white/95 backdrop-blur-sm rounded-3xl p-8 md:p-12 shadow-xl border border-stone-100">
             <p className="text-sm tracking-[0.3em] text-[#9A7B4F] mb-6">
@@ -334,7 +334,7 @@ export default function WinePage() {
 
             <div className="space-y-4">
               {/* 關鍵數據 */}
-              <div className="bg-gradient-to-br from-[#1a1a2e] to-[#16213e] rounded-2xl p-6 text-white">
+              <div className="bg-gradient-to-br from-[#1a2420] to-[#15201c] rounded-2xl p-6 text-white">
                 <h3 className="font-serif text-lg font-bold text-amber-200 mb-4">
                   酒莊一覽
                 </h3>
@@ -491,7 +491,7 @@ export default function WinePage() {
           </div>
 
           {/* 社區精神引言 */}
-          <div className="bg-gradient-to-r from-[#1a1a2e] to-[#16213e] rounded-2xl p-8 md:p-10 text-center text-white">
+          <div className="bg-gradient-to-r from-[#1a2420] to-[#15201c] rounded-2xl p-8 md:p-10 text-center text-white">
             <p className="text-amber-300 text-sm tracking-[0.2em] mb-4">VISION & MISSION</p>
             <blockquote className="text-lg md:text-xl leading-relaxed text-white/80 max-w-3xl mx-auto italic">
               &ldquo;社群精神是我們的指導原則。我們的目標是透過精心的葡萄處理，
@@ -546,7 +546,7 @@ export default function WinePage() {
             </div>
           </div>
 
-          <div className="mt-8 bg-gradient-to-r from-[#1a1a2e] to-[#16213e] rounded-2xl p-8 text-center text-white">
+          <div className="mt-8 bg-gradient-to-r from-[#1a2420] to-[#15201c] rounded-2xl p-8 text-center text-white">
             <p className="text-amber-300 text-sm tracking-[0.2em] mb-3">MUNI WINE PHILOSOPHY</p>
             <p className="text-lg leading-relaxed text-white/80 max-w-2xl mx-auto">
               葡萄酒是大地的血液，承載著土壤、陽光與時間的記憶。
@@ -579,7 +579,7 @@ export default function WinePage() {
               return (
                 <div
                   key={wine.id}
-                  className="bg-gradient-to-br from-[#1a1a2e] to-[#16213e] rounded-3xl p-8 text-white shadow-xl"
+                  className="bg-gradient-to-br from-[#1a2420] to-[#15201c] rounded-3xl p-8 text-white shadow-xl"
                 >
                   <div className="flex flex-col sm:flex-row gap-6">
                     <div className="relative w-32 h-48 sm:w-40 sm:h-56 flex-shrink-0 mx-auto sm:mx-0">
@@ -751,7 +751,7 @@ export default function WinePage() {
       </section>
 
       {/* MUNI 品飲療癒儀式 */}
-      <section className="py-20 px-4 bg-gradient-to-b from-[#1a1a2e] to-[#0f3460] text-white">
+      <section className="py-20 px-4 bg-gradient-to-b from-[#1a2420] to-[#0f1a16] text-white">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <p className="text-sm tracking-[0.4em] text-amber-400/80 mb-4">
@@ -930,7 +930,7 @@ export default function WinePage() {
             </a>
             <Link
               href="/systems"
-              className="inline-flex items-center justify-center gap-2 bg-[#1a1a2e] hover:bg-[#0f3460] text-white rounded-full px-8 py-3.5 text-lg font-medium transition-all shadow-md hover:shadow-lg"
+              className="inline-flex items-center justify-center gap-2 bg-[#1a2420] hover:bg-[#0f1a16] text-white rounded-full px-8 py-3.5 text-lg font-medium transition-all shadow-md hover:shadow-lg"
             >
               探索更多 MUNI 療癒系統
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -950,7 +950,7 @@ export default function WinePage() {
       <FrequencyBadge variant="light" full />
 
       {/* Footer */}
-      <footer className="py-12 px-4 bg-[#4a5548] text-white/70">
+      <footer className="py-12 px-4 bg-[#0f1a16] text-white/70">
         <div className="max-w-4xl mx-auto text-center">
           <p className="font-serif text-lg text-white/90 mb-2">MUNI 牟尼</p>
           <p className="text-sm">在寂靜中，承接你的答案。</p>

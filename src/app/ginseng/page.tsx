@@ -99,11 +99,11 @@ const ENERGY_FACTORS = [
 
 export default function GinsengPage() {
   return (
-    <main className="min-h-screen bg-[#1a0f08] text-white">
+    <main className="min-h-screen bg-[#1a2420] text-white">
       {/* Custom Dark Header */}
-      <header className="fixed top-0 left-0 right-0 z-50 bg-[#1a0f08]/90 backdrop-blur-md border-b border-amber-900/20">
-        <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
-          <Link href="/" className="text-xl font-serif tracking-widest text-amber-100">
+      <header className="fixed top-0 left-0 right-0 z-50 bg-[#1a2420]/90 backdrop-blur-md border-b border-white/5">
+        <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+          <Link href="/" className="font-serif text-xl font-bold text-white/90 hover:text-white transition-colors">
             MUNI
           </Link>
           <nav className="flex items-center gap-4">
@@ -115,9 +115,10 @@ export default function GinsengPage() {
             </Link>
             <Link
               href="https://ai.munione.co"
-              className="text-sm px-4 py-2 rounded-full bg-amber-800/60 text-amber-100 hover:bg-amber-700/60 transition-colors flex items-center gap-1"
+              className="inline-flex items-center gap-1.5 bg-gradient-to-r from-[#9A7B4F] to-[#C4A265] hover:from-[#8A6B3F] hover:to-[#B49255] text-white rounded-full px-4 py-1.5 text-sm font-medium transition-all shadow-sm hover:shadow-md"
             >
-              <span>♡</span> MUNI 療癒顧問
+              <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
+              MUNI 療癒顧問
             </Link>
           </nav>
         </div>
@@ -441,7 +442,7 @@ export default function GinsengPage() {
 
       {/* CTA Section */}
       <section className="py-24 relative">
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-amber-950/15 to-[#1a0f08]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-amber-950/15 to-[#1a2420]" />
         <div className="relative max-w-3xl mx-auto px-4 text-center">
           <h2 className="text-2xl md:text-3xl font-serif text-amber-50 mb-6">
             想知道哪款人蔘製品最適合你此刻的狀態？
@@ -472,27 +473,27 @@ export default function GinsengPage() {
       <FrequencyBadge variant="dark" full />
 
       {/* Footer */}
-      <footer className="py-12 border-t border-amber-900/20">
+      <footer className="py-12 border-t border-white/5">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <p className="text-xl font-serif text-amber-100 mb-2">MUNI 牟尼</p>
-          <p className="text-amber-200/30 text-sm">在寂靜中，承接你的答案。</p>
-          <div className="mt-6 flex flex-wrap justify-center gap-6 text-xs text-amber-200/20">
-            <Link href="/" className="hover:text-amber-200/50 transition-colors">
+          <p className="font-serif text-lg text-white/70 mb-2">MUNI 牟尼</p>
+          <p className="text-white/50 text-sm">在寂靜中，承接你的答案。</p>
+          <div className="mt-6 flex flex-wrap justify-center gap-6 text-sm text-white/50">
+            <Link href="/" className="hover:text-white/80 transition-colors">
               首頁
             </Link>
-            <Link href="/flowers" className="hover:text-amber-200/50 transition-colors">
+            <Link href="/flowers" className="hover:text-white/80 transition-colors">
               花精百科
             </Link>
-            <Link href="/essential-oil" className="hover:text-amber-200/50 transition-colors">
+            <Link href="/essential-oil" className="hover:text-white/80 transition-colors">
               聖杯精油
             </Link>
-            <Link href="/wine" className="hover:text-amber-200/50 transition-colors">
+            <Link href="/wine" className="hover:text-white/80 transition-colors">
               葡萄酒療癒
             </Link>
-            <Link href="/frequency" className="hover:text-amber-200/50 transition-colors">
+            <Link href="/frequency" className="hover:text-white/80 transition-colors">
               獨家技術
             </Link>
-            <Link href="/systems" className="hover:text-amber-200/50 transition-colors">
+            <Link href="/systems" className="hover:text-white/80 transition-colors">
               療癒系統
             </Link>
           </div>
