@@ -278,7 +278,7 @@ export default function GinsengPage() {
                   >
                     <div className="flex flex-wrap gap-2 mb-4">
                       <span className={`text-xs px-3 py-1 rounded-full ${product.badge}`}>
-                        {product.resonance}
+                        {product.energy}
                       </span>
                       {product.subtitle && (
                         <span className="text-xs px-3 py-1 rounded-full bg-stone-100 text-stone-500">

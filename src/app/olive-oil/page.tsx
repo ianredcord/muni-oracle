@@ -384,7 +384,7 @@ export default function OliveOilPage() {
                       <span
                         className={`text-xs px-3 py-1 rounded-full ${product.badge}`}
                       >
-                        {product.resonance}
+                        {product.tagline}
                       </span>
                     </div>
 

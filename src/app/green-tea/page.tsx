@@ -454,7 +454,7 @@ export default function GreenTeaPage() {
                       <span
                         className={`text-xs px-3 py-1 rounded-full ${product.badge}`}
                       >
-                        {product.resonance}
+                        {product.character}
                       </span>
                       <span className="text-xs px-3 py-1 rounded-full bg-white/5 text-green-200/50">
                         {product.origin}
