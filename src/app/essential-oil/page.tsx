@@ -402,7 +402,7 @@ export default function EssentialOilPage() {
             {CHAKRAS.map((chakra, idx) => (
               <div
                 key={idx}
-                className={`inline-flex items-center gap-3 px-5 py-2.5 rounded-full border ${chakra.color} text-sm font-medium`}
+                className={`flex items-center justify-center gap-3 px-5 py-2.5 rounded-full border ${chakra.color} text-sm font-medium`}
                 style={{ width: `${220 + idx * 20}px`, maxWidth: "100%" }}
               >
                 <span className="font-serif">{chakra.name}</span>
