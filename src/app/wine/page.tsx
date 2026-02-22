@@ -194,17 +194,17 @@ export default function WinePage() {
       <Header />
 
       {/* Hero — 深色背景，呼應葡萄酒的深邃與山地的壯闊 */}
-      <section className="relative pt-20 pb-24 px-4 bg-gradient-to-b from-[#1a2420] via-[#15201c] to-[#0f1a16] text-white overflow-hidden">
+      <section className="relative pt-20 pb-24 px-4 bg-gradient-to-b from-[#F9F7F2] to-[#F5F2EB] overflow-hidden">
         {/* 背景裝飾 */}
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-20 left-10 w-72 h-72 bg-purple-600 rounded-full blur-[120px]" />
-          <div className="absolute bottom-10 right-10 w-96 h-96 bg-amber-600 rounded-full blur-[150px]" />
+          <div className="absolute top-20 left-10 w-72 h-72 bg-[#9A7B4F]/10 rounded-full blur-[120px]" />
+          <div className="absolute bottom-10 right-10 w-96 h-96 bg-[#9A7B4F]/5 rounded-full blur-[150px]" />
         </div>
 
         <div className="relative max-w-5xl mx-auto">
           <Link
             href="/systems"
-            className="inline-flex items-center gap-1.5 text-sm text-white/50 hover:text-white/80 transition-colors mb-8"
+            className="inline-flex items-center gap-1.5 text-sm text-stone-400 hover:text-[#4a5548] transition-colors mb-8"
           >
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -214,17 +214,17 @@ export default function WinePage() {
 
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="flex-1 text-center lg:text-left">
-              <p className="text-sm tracking-[0.4em] text-amber-400/80 mb-4">
+              <p className="text-sm tracking-[0.4em] text-[#9A7B4F] mb-4">
                 MUNI × KELLEREI EISACKTAL
               </p>
               <h1 className="font-serif text-3xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-                <span className="text-amber-200">阿爾卑斯山地</span>
+                <span className="text-[#4a5548]">阿爾卑斯山地</span>
                 <br />
-                葡萄酒
+                <span className="text-[#4a5548]">葡萄酒</span>
                 <br />
-                <span className="text-amber-400">× 療癒儀式</span>
+                <span className="text-[#9A7B4F]">× 療癒儀式</span>
               </h1>
-              <p className="text-white/60 text-lg leading-relaxed max-w-lg">
+              <p className="text-stone-500 text-lg leading-relaxed max-w-lg">
                 當南蒂羅爾的花崗岩與白雲石孕育的山地葡萄酒，
                 遇上 MUNI 的頻率療癒哲學——
                 每一口酒，都是大地深處的能量共振。
@@ -232,7 +232,7 @@ export default function WinePage() {
             </div>
 
             <div className="relative w-60 h-80 md:w-72 md:h-96 flex-shrink-0">
-              <div className="absolute inset-0 bg-gradient-to-br from-amber-600/20 to-purple-600/10 rounded-full blur-3xl" />
+              <div className="absolute inset-0 bg-gradient-to-br from-[#9A7B4F]/10 to-[#9A7B4F]/5 rounded-full blur-3xl" />
               <Image
                 src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/RPvhSmRURoIwGGHT.jpg"
                 alt="Granit 960 — Kellerei Eisacktal 旗艦酒款"
@@ -246,7 +246,7 @@ export default function WinePage() {
       </section>
 
       {/* MUNI × Kellerei 合作宣言 */}
-      <section className="py-20 px-4 bg-gradient-to-b from-[#0f1a16] to-[#F9F7F2]">
+      <section className="py-20 px-4 bg-[#F5F2EB]">
         <div className="max-w-3xl mx-auto text-center">
           <div className="bg-white/95 backdrop-blur-sm rounded-3xl p-8 md:p-12 shadow-xl border border-stone-100">
             <p className="text-sm tracking-[0.3em] text-[#9A7B4F] mb-6">
@@ -334,34 +334,34 @@ export default function WinePage() {
 
             <div className="space-y-4">
               {/* 關鍵數據 */}
-              <div className="bg-gradient-to-br from-[#1a2420] to-[#15201c] rounded-2xl p-6 text-white">
-                <h3 className="font-serif text-lg font-bold text-amber-200 mb-4">
+              <div className="bg-[#F5F2EB] rounded-2xl p-6 border border-stone-200">
+                <h3 className="font-serif text-lg font-bold text-[#4a5548] mb-4">
                   酒莊一覽
                 </h3>
                 <div className="grid grid-cols-3 gap-4 text-center">
                   <div>
-                    <p className="text-2xl md:text-3xl font-bold text-amber-300">135</p>
-                    <p className="text-white/50 text-xs mt-1">在地農戶家族</p>
+                    <p className="text-2xl md:text-3xl font-bold text-[#9A7B4F]">135</p>
+                    <p className="text-stone-500 text-xs mt-1">在地農戶家族</p>
                   </div>
                   <div>
-                    <p className="text-2xl md:text-3xl font-bold text-amber-300">150</p>
-                    <p className="text-white/50 text-xs mt-1">公頃葡萄園</p>
+                    <p className="text-2xl md:text-3xl font-bold text-[#9A7B4F]">150</p>
+                    <p className="text-stone-500 text-xs mt-1">公頗葡萄園</p>
                   </div>
                   <div>
-                    <p className="text-2xl md:text-3xl font-bold text-amber-300">14</p>
-                    <p className="text-white/50 text-xs mt-1">葡萄品種</p>
+                    <p className="text-2xl md:text-3xl font-bold text-[#9A7B4F]">14</p>
+                    <p className="text-stone-500 text-xs mt-1">葡萄品種</p>
                   </div>
                   <div>
-                    <p className="text-2xl md:text-3xl font-bold text-amber-300">1,000<span className="text-base">m</span></p>
-                    <p className="text-white/50 text-xs mt-1">最高海拔</p>
+                    <p className="text-2xl md:text-3xl font-bold text-[#9A7B4F]">1,000<span className="text-base">m</span></p>
+                    <p className="text-stone-500 text-xs mt-1">最高海拔</p>
                   </div>
                   <div>
-                    <p className="text-2xl md:text-3xl font-bold text-amber-300">8</p>
-                    <p className="text-white/50 text-xs mt-1">種不同土壤</p>
+                    <p className="text-2xl md:text-3xl font-bold text-[#9A7B4F]">8</p>
+                    <p className="text-stone-500 text-xs mt-1">種不同土壤</p>
                   </div>
                   <div>
-                    <p className="text-2xl md:text-3xl font-bold text-amber-300">60<span className="text-base">%</span></p>
-                    <p className="text-white/50 text-xs mt-1">陡坡葡萄園</p>
+                    <p className="text-2xl md:text-3xl font-bold text-[#9A7B4F]">60<span className="text-base">%</span></p>
+                    <p className="text-stone-500 text-xs mt-1">陡坡葡萄園</p>
                   </div>
                 </div>
               </div>
@@ -491,14 +491,14 @@ export default function WinePage() {
           </div>
 
           {/* 社區精神引言 */}
-          <div className="bg-gradient-to-r from-[#1a2420] to-[#15201c] rounded-2xl p-8 md:p-10 text-center text-white">
-            <p className="text-amber-300 text-sm tracking-[0.2em] mb-4">VISION & MISSION</p>
-            <blockquote className="text-lg md:text-xl leading-relaxed text-white/80 max-w-3xl mx-auto italic">
+          <div className="bg-[#F5F2EB] rounded-2xl p-8 md:p-10 text-center border border-stone-200">
+            <p className="text-[#9A7B4F] text-sm tracking-[0.2em] mb-4">VISION & MISSION</p>
+            <blockquote className="text-lg md:text-xl leading-relaxed text-stone-600 max-w-3xl mx-auto italic">
               &ldquo;社群精神是我們的指導原則。我們的目標是透過精心的葡萄處理，
-              釀造高品質的葡萄酒，以此表達我們<strong className="text-amber-200 not-italic">對自然的尊重</strong>，
+              釀造高品質的葡萄酒，以此表達我們<strong className="text-[#4a5548] not-italic">對自然的尊重</strong>，
               以及對後代的忠誠。&rdquo;
             </blockquote>
-            <p className="text-white/40 text-sm mt-4">— Kellerei Eisacktal · Cantina Valle Isarco</p>
+            <p className="text-stone-400 text-sm mt-4">— Kellerei Eisacktal · Cantina Valle Isarco</p>
           </div>
         </div>
       </section>
@@ -546,12 +546,12 @@ export default function WinePage() {
             </div>
           </div>
 
-          <div className="mt-8 bg-gradient-to-r from-[#1a2420] to-[#15201c] rounded-2xl p-8 text-center text-white">
-            <p className="text-amber-300 text-sm tracking-[0.2em] mb-3">MUNI WINE PHILOSOPHY</p>
-            <p className="text-lg leading-relaxed text-white/80 max-w-2xl mx-auto">
+          <div className="mt-8 bg-[#F5F2EB] rounded-2xl p-8 text-center border border-stone-200">
+            <p className="text-[#9A7B4F] text-sm tracking-[0.2em] mb-3">MUNI WINE PHILOSOPHY</p>
+            <p className="text-lg leading-relaxed text-stone-600 max-w-2xl mx-auto">
               葡萄酒是大地的血液，承載著土壤、陽光與時間的記憶。
               品飲一杯山地葡萄酒，就是與阿爾卑斯山的
-              <strong className="text-amber-200">千年礦物能量</strong>對話。
+              <strong className="text-[#4a5548]">千年礦物能量</strong>對話。
             </p>
           </div>
         </div>
@@ -579,7 +579,7 @@ export default function WinePage() {
               return (
                 <div
                   key={wine.id}
-                  className="bg-gradient-to-br from-[#1a2420] to-[#15201c] rounded-3xl p-8 text-white shadow-xl"
+                  className="bg-white rounded-3xl p-8 shadow-lg border border-stone-200"
                 >
                   <div className="flex flex-col sm:flex-row gap-6">
                     <div className="relative w-32 h-48 sm:w-40 sm:h-56 flex-shrink-0 mx-auto sm:mx-0">
@@ -593,19 +593,19 @@ export default function WinePage() {
                     </div>
                     <div className="flex-1">
                       <div className="flex items-center gap-2 mb-2">
-                        <span className="px-2 py-0.5 bg-amber-400/20 text-amber-300 rounded text-xs border border-amber-400/30">
+                        <span className="px-2 py-0.5 bg-[#9A7B4F]/10 text-[#9A7B4F] rounded text-xs border border-[#9A7B4F]/20">
                           {wine.seriesZh}
                         </span>
                         <span className={`px-2 py-0.5 rounded text-xs border ${label.color}`}>
                           {label.text}
                         </span>
                       </div>
-                      <h3 className="font-serif text-2xl font-bold text-amber-100 mb-1">
+                      <h3 className="font-serif text-2xl font-bold text-[#4a5548] mb-1">
                         {wine.name}
                       </h3>
-                      <p className="text-white/50 text-sm mb-1">{wine.nameZh} · {wine.vintage}</p>
-                      <p className="text-white/40 text-xs mb-4">{wine.grape} · {wine.altitude}</p>
-                      <p className="text-white/70 text-sm leading-relaxed">
+                      <p className="text-stone-400 text-sm mb-1">{wine.nameZh} · {wine.vintage}</p>
+                      <p className="text-stone-400 text-xs mb-4">{wine.grape} · {wine.altitude}</p>
+                      <p className="text-stone-500 text-sm leading-relaxed">
                         {wine.description}
                       </p>
                     </div>
@@ -751,16 +751,16 @@ export default function WinePage() {
       </section>
 
       {/* MUNI 品飲療癒儀式 */}
-      <section className="py-20 px-4 bg-gradient-to-b from-[#1a2420] to-[#0f1a16] text-white">
+      <section className="py-20 px-4 bg-[#F5F2EB]">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <p className="text-sm tracking-[0.4em] text-amber-400/80 mb-4">
+            <p className="text-sm tracking-[0.4em] text-[#9A7B4F] mb-4">
               MUNI WINE RITUAL
             </p>
-            <h2 className="font-serif text-2xl md:text-3xl font-bold text-amber-100 mb-4">
+            <h2 className="font-serif text-2xl md:text-3xl font-bold text-[#4a5548] mb-4">
               MUNI 品飲療癒儀式
             </h2>
-            <p className="text-white/50 max-w-xl mx-auto">
+            <p className="text-stone-500 max-w-xl mx-auto">
               四個步驟，讓一杯葡萄酒成為一次與大地的深度連結
             </p>
           </div>
@@ -798,20 +798,20 @@ export default function WinePage() {
             ].map((ritual, idx) => (
               <div
                 key={idx}
-                className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10"
+                className="bg-white rounded-2xl p-6 border border-stone-200 shadow-sm"
               >
                 <div className="flex items-center gap-3 mb-4">
                   <span className="text-2xl">{ritual.icon}</span>
                   <div>
-                    <span className="text-xs text-amber-400 tracking-wider">
+                    <span className="text-xs text-[#9A7B4F] tracking-wider">
                       STEP {ritual.step}
                     </span>
-                    <h3 className="font-serif text-lg font-bold text-amber-100">
+                    <h3 className="font-serif text-lg font-bold text-[#4a5548]">
                       {ritual.title}
                     </h3>
                   </div>
                 </div>
-                <p className="text-white/60 text-sm leading-relaxed">
+                <p className="text-stone-500 text-sm leading-relaxed">
                   {ritual.description}
                 </p>
               </div>
@@ -930,7 +930,7 @@ export default function WinePage() {
             </a>
             <Link
               href="/systems"
-              className="inline-flex items-center justify-center gap-2 bg-[#1a2420] hover:bg-[#0f1a16] text-white rounded-full px-8 py-3.5 text-lg font-medium transition-all shadow-md hover:shadow-lg"
+              className="inline-flex items-center justify-center gap-2 border border-stone-300 text-stone-500 hover:text-[#4a5548] hover:border-stone-400 rounded-full px-8 py-3.5 text-lg font-medium transition-all"
             >
               探索更多 MUNI 療癒系統
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -950,34 +950,34 @@ export default function WinePage() {
       <FrequencyBadge variant="light" full />
 
       {/* Footer */}
-      <footer className="py-12 px-4 bg-[#0f1a16] text-white/70">
+      <footer className="py-12 px-4 bg-[#F5F2EB] text-stone-500 border-t border-stone-200">
         <div className="max-w-4xl mx-auto text-center">
-          <p className="font-serif text-lg text-white/90 mb-2">MUNI 牟尼</p>
+          <p className="font-serif text-lg text-[#4a5548] mb-2">MUNI 牟尼</p>
           <p className="text-sm">在寂靜中，承接你的答案。</p>
           <div className="mt-6 flex flex-wrap justify-center gap-6 text-sm">
-            <Link href="/" className="hover:text-white transition-colors">
+            <Link href="/" className="hover:text-[#4a5548] transition-colors">
               首頁
             </Link>
-            <Link href="/flowers" className="hover:text-white transition-colors">
+            <Link href="/flowers" className="hover:text-[#4a5548] transition-colors">
               花精百科
             </Link>
-            <Link href="/systems" className="hover:text-white transition-colors">
+            <Link href="/systems" className="hover:text-[#4a5548] transition-colors">
               療癒系統
             </Link>
-            <Link href="/essential-oil" className="hover:text-white transition-colors">
+            <Link href="/essential-oil" className="hover:text-[#4a5548] transition-colors">
               聖杯精油
             </Link>
-            <Link href="/acupuncture" className="hover:text-white transition-colors">
+            <Link href="/acupuncture" className="hover:text-[#4a5548] transition-colors">
               董氏心氣神針
             </Link>
-            <Link href="/chocolate" className="hover:text-white transition-colors">
+            <Link href="/chocolate" className="hover:text-[#4a5548] transition-colors">
               巧克力
             </Link>
             <a
               href="https://ai.munione.co"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-white transition-colors"
+              className="hover:text-[#4a5548] transition-colors"
             >
               療癒顧問
             </a>

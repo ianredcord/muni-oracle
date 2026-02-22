@@ -1,19 +1,19 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
-/* 深色版 Header，專用於 frequency 頁面 */
-function DarkHeader() {
+/* 淺色版 Header，與全站統一 */
+function LightHeader() {
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-[#1a2420]/80 backdrop-blur-md border-b border-white/5">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-stone-100">
       <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-        <Link href="/" className="font-serif text-xl font-bold text-white/90 hover:text-white transition-colors">
+        <Link href="/" className="font-serif text-xl font-bold text-[#4a5548] hover:text-[#3a4538] transition-colors">
           MUNI
         </Link>
         <nav className="flex items-center gap-3 md:gap-6">
-          <Link href="/systems" className="text-white/60 hover:text-white text-sm font-medium transition-colors">
+          <Link href="/systems" className="text-stone-600 hover:text-[#4a5548] text-sm font-medium transition-colors">
             療癒系統
           </Link>
-          <Link href="/wine" className="text-white/60 hover:text-white text-sm font-medium transition-colors hidden sm:inline">
+          <Link href="/wine" className="text-stone-500 hover:text-[#4a5548] text-sm font-medium transition-colors hidden sm:inline">
             葡萄酒
           </Link>
           <a
@@ -48,7 +48,7 @@ const LAYERS = [
     icon: "◉",
     color: "from-amber-500/20 to-amber-700/10",
     borderColor: "border-amber-600/30",
-    accentColor: "text-amber-400",
+    accentColor: "text-[#9A7B4F]",
     question:
       "如果宇宙萬物——從水分子到人體細胞，從一片葉子到一塊岩石——都在振動，那麼是否存在一個所有振動都願意回歸的頻率？",
     answer:
@@ -92,7 +92,7 @@ const LAYERS = [
     icon: "◎",
     color: "from-emerald-500/20 to-emerald-700/10",
     borderColor: "border-emerald-600/30",
-    accentColor: "text-emerald-400",
+    accentColor: "text-[#4a5548]",
     description:
       "一根弦振動時，不只產生基頻，還同時產生 2 倍、3 倍、4 倍的泛音。這不是人為設計，而是物理定律本身的結構。MUNI 基頻的泛音序列自然向上展開，涵蓋從極低頻到可聽頻段的廣闊範圍。",
     properties: [
@@ -141,7 +141,7 @@ const LAYERS = [
     icon: "◈",
     color: "from-violet-500/20 to-violet-700/10",
     borderColor: "border-violet-600/30",
-    accentColor: "text-violet-400",
+    accentColor: "text-[#6b5b7b]",
     description:
       "自然界從不用單一頻率運作。一片森林裡同時存在風聲、鳥鳴、溪水、樹葉摩擦——這些頻率彼此不衝突，反而共同構成一個讓人類神經系統瞬間安定下來的「場」。",
     comparison: [
@@ -186,7 +186,7 @@ const LAYERS = [
     icon: "◇",
     color: "from-cyan-500/20 to-cyan-700/10",
     borderColor: "border-cyan-600/30",
-    accentColor: "text-cyan-400",
+    accentColor: "text-[#4a7c7c]",
     description:
       "頻率不是「照射」在身體表面就能起作用的。它需要一條進入的路徑。人體提供了三條天然的頻率高速公路，在 MUNI 多頻疊加協同的作用下同時被啟動。",
     channels: [
@@ -222,7 +222,7 @@ const LAYERS = [
     icon: "◆",
     color: "from-rose-500/20 to-rose-700/10",
     borderColor: "border-rose-600/30",
-    accentColor: "text-rose-400",
+    accentColor: "text-[#9A7B4F]",
     description:
       "MUNI 多頻疊加協同最具突破性的一點在於：它不依賴特定硬體載體。這套頻率協同邏輯可以透過多種介質實現——聲波、電磁場、液態介質、氣態分子、甚至生物場。",
     matrix: [
@@ -257,7 +257,7 @@ const LAYERS = [
     icon: "✦",
     color: "from-amber-500/20 to-yellow-700/10",
     borderColor: "border-yellow-600/30",
-    accentColor: "text-yellow-400",
+    accentColor: "text-[#9A7B4F]",
     description:
       "如果頻率可以改變水的結構，可以調節自律神經，可以重組筋膜張力——那麼，意識本身是否也是一種可以被調諧的頻率？",
     perspectives: [
@@ -297,40 +297,40 @@ export default function FrequencyPage() {
   const L4 = LAYERS[4] as any;
   const L5 = LAYERS[5] as any;
   return (
-    <div className="min-h-screen bg-[#1a2420] text-stone-200">
-      <DarkHeader />
+    <div className="min-h-screen bg-[#F9F7F2] text-stone-700">
+      <LightHeader />
 
       {/* ─── Hero Section ─── */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
         {/* 背景動態波紋 */}
         <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-gradient-to-b from-[#1a2420] via-[#15201c] to-[#1a2420]" />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#F9F7F2] via-[#F5F2EB] to-[#F9F7F2]" />
           {/* 同心圓波紋動畫 */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-            <div className="w-[600px] h-[600px] md:w-[800px] md:h-[800px] rounded-full border border-amber-500/10 animate-[ping_4s_ease-out_infinite]" />
+            <div className="w-[600px] h-[600px] md:w-[800px] md:h-[800px] rounded-full border border-[#9A7B4F]/10 animate-[ping_4s_ease-out_infinite]" />
           </div>
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-            <div className="w-[400px] h-[400px] md:w-[600px] md:h-[600px] rounded-full border border-amber-500/15 animate-[ping_4s_ease-out_1s_infinite]" />
+            <div className="w-[400px] h-[400px] md:w-[600px] md:h-[600px] rounded-full border border-[#9A7B4F]/15 animate-[ping_4s_ease-out_1s_infinite]" />
           </div>
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-            <div className="w-[200px] h-[200px] md:w-[400px] md:h-[400px] rounded-full border border-amber-500/20 animate-[ping_4s_ease-out_2s_infinite]" />
+            <div className="w-[200px] h-[200px] md:w-[400px] md:h-[400px] rounded-full border border-[#9A7B4F]/20 animate-[ping_4s_ease-out_2s_infinite]" />
           </div>
           {/* 中心光點 */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-amber-400/60 shadow-[0_0_60px_20px_rgba(217,169,78,0.15)]" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-[#9A7B4F]/60 shadow-[0_0_60px_20px_rgba(154,123,79,0.12)]" />
         </div>
 
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-          <p className="text-amber-400/80 tracking-[0.4em] text-xs md:text-sm uppercase mb-6">
+          <p className="text-[#9A7B4F] tracking-[0.4em] text-xs md:text-sm uppercase mb-6">
             Exclusive Technology
           </p>
-          <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-4 leading-tight">
+          <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-bold text-[#4a5548] mb-4 leading-tight">
             MUNI Frequency
             <br />
-            <span className="bg-gradient-to-r from-amber-300 via-yellow-200 to-amber-400 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-[#9A7B4F] via-[#C4A265] to-[#9A7B4F] bg-clip-text text-transparent">
               Resonance™
             </span>
           </h1>
-          <p className="font-serif text-xl md:text-2xl text-stone-400 mt-6 mb-8">
+          <p className="font-serif text-xl md:text-2xl text-stone-500 mt-6 mb-8">
             萬物調頻，回到本然
           </p>
           <p className="text-stone-500 max-w-2xl mx-auto leading-relaxed text-sm md:text-base">
@@ -340,14 +340,14 @@ export default function FrequencyPage() {
             <br className="hidden md:block" />
             並以六層架構將它轉化為可體驗的療癒技術。
           </p>
-          <p className="text-amber-400/60 max-w-xl mx-auto mt-6 text-sm italic font-serif leading-relaxed">
+          <p className="text-[#9A7B4F]/80 max-w-xl mx-auto mt-6 text-sm italic font-serif leading-relaxed">
             頻率是方法，祝福是心意。兩者合一，才是 MUNI 的完整表達。
           </p>
 
           {/* 向下滾動提示 */}
           <div className="mt-16 animate-bounce">
             <svg
-              className="w-6 h-6 mx-auto text-amber-500/50"
+              className="w-6 h-6 mx-auto text-[#9A7B4F]/50"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -364,12 +364,12 @@ export default function FrequencyPage() {
       </section>
 
       {/* ─── 六層架構導覽 ─── */}
-      <section className="py-20 px-4 border-t border-white/5">
+      <section className="py-20 px-4 border-t border-stone-200">
         <div className="max-w-5xl mx-auto">
-          <p className="text-center text-amber-400/70 tracking-[0.3em] text-xs uppercase mb-4">
+          <p className="text-center text-[#9A7B4F] tracking-[0.3em] text-xs uppercase mb-4">
             Six-Layer Architecture
           </p>
-          <h2 className="font-serif text-3xl md:text-4xl text-center text-white mb-4">
+          <h2 className="font-serif text-3xl md:text-4xl text-center text-[#4a5548] mb-4">
             六層共振架構
           </h2>
           <p className="text-center text-stone-500 max-w-2xl mx-auto mb-16 text-sm md:text-base">
@@ -383,20 +383,20 @@ export default function FrequencyPage() {
               <a
                 key={layer.id}
                 href={`#layer-${layer.id}`}
-                className={`group relative p-6 rounded-2xl bg-gradient-to-br ${layer.color} border ${layer.borderColor} hover:border-amber-500/40 transition-all duration-300 hover:-translate-y-1`}
+                className={`group relative p-6 rounded-2xl bg-white border border-stone-200 hover:border-[#9A7B4F]/40 transition-all duration-300 hover:-translate-y-1 shadow-sm hover:shadow-md`}
               >
                 <div className="flex items-center gap-3 mb-3">
-                  <span className={`text-2xl ${layer.accentColor}`}>
+                  <span className="text-2xl text-[#9A7B4F]">
                     {layer.icon}
                   </span>
-                  <span className="text-xs text-stone-500 font-mono">
+                  <span className="text-xs text-stone-400 font-mono">
                     0{layer.id}
                   </span>
                 </div>
-                <h3 className="font-serif text-lg text-white mb-1">
+                <h3 className="font-serif text-lg text-[#4a5548] mb-1">
                   {layer.title}
                 </h3>
-                <p className="text-xs text-stone-400">{layer.subtitle}</p>
+                <p className="text-xs text-stone-500">{layer.subtitle}</p>
               </a>
             ))}
           </div>
@@ -406,16 +406,16 @@ export default function FrequencyPage() {
       {/* ─── 第一層：MUNI 基頻 ─── */}
       <section
         id="layer-1"
-        className="py-24 px-4 border-t border-white/5 scroll-mt-20"
+        className="py-24 px-4 border-t border-stone-200 scroll-mt-20"
       >
         <div className="max-w-5xl mx-auto">
           <div className="flex items-center gap-4 mb-8">
-            <span className="text-4xl text-amber-400">◉</span>
+            <span className="text-4xl text-[#9A7B4F]">◉</span>
             <div>
-              <p className="text-xs text-amber-400/70 tracking-[0.2em] uppercase font-mono">
+              <p className="text-xs text-[#9A7B4F] tracking-[0.2em] uppercase font-mono">
                 Layer 01
               </p>
-              <h2 className="font-serif text-3xl md:text-4xl text-white">
+              <h2 className="font-serif text-3xl md:text-4xl text-[#4a5548]">
                 {L0.title}
               </h2>
               <p className="text-stone-400 mt-1">{L0.subtitle}</p>
@@ -423,65 +423,65 @@ export default function FrequencyPage() {
           </div>
 
           {/* 核心提問 */}
-          <div className="bg-white/[0.03] rounded-2xl p-8 md:p-10 border border-white/5 mb-12">
-            <p className="text-amber-300/60 text-xs tracking-widest uppercase mb-4">
+          <div className="bg-white rounded-2xl p-8 md:p-10 border border-stone-200 shadow-sm mb-12">
+            <p className="text-[#9A7B4F] text-xs tracking-widest uppercase mb-4">
               一個被遺忘的問題
             </p>
-            <p className="font-serif text-lg md:text-xl text-stone-300 leading-relaxed italic">
+            <p className="font-serif text-lg md:text-xl text-stone-600 leading-relaxed italic">
               「{L0.question}」
             </p>
-            <p className="text-stone-400 mt-6 leading-relaxed text-sm md:text-base">
+            <p className="text-stone-500 mt-6 leading-relaxed text-sm md:text-base">
               {L0.answer}
             </p>
           </div>
 
           {/* 實驗歷程 */}
-          <h3 className="font-serif text-xl text-white mb-6">
+          <h3 className="font-serif text-xl text-[#4a5548] mb-6">
             實驗歷程：從混沌中聽見秩序
           </h3>
           <div className="grid gap-4 mb-12">
             {L0.experiments.map((exp: any, i: number) => (
               <div
                 key={i}
-                className="flex items-start gap-4 p-5 rounded-xl bg-white/[0.02] border border-white/5 hover:border-amber-600/20 transition-colors"
+                className="flex items-start gap-4 p-5 rounded-xl bg-white border border-stone-200 hover:border-[#9A7B4F]/30 transition-colors shadow-sm"
               >
-                <div className="w-8 h-8 rounded-full bg-amber-500/10 flex items-center justify-center shrink-0 mt-0.5">
-                  <span className="text-amber-400 text-xs font-mono font-bold">
+                <div className="w-8 h-8 rounded-full bg-[#9A7B4F]/10 flex items-center justify-center shrink-0 mt-0.5">
+                  <span className="text-[#9A7B4F] text-xs font-mono font-bold">
                     {i + 1}
                   </span>
                 </div>
                 <div>
-                  <p className="text-white font-medium text-sm">{exp.name}</p>
-                  <p className="text-stone-400 text-sm mt-1">{exp.result}</p>
+                  <p className="text-[#4a5548] font-medium text-sm">{exp.name}</p>
+                  <p className="text-stone-500 text-sm mt-1">{exp.result}</p>
                 </div>
               </div>
             ))}
           </div>
 
           {/* 發現結果 */}
-          <div className="bg-gradient-to-br from-amber-900/20 to-amber-800/5 rounded-2xl p-8 border border-amber-600/20 mb-12">
-            <h3 className="font-serif text-xl text-amber-300 mb-4">
+          <div className="bg-[#F5F2EB] rounded-2xl p-8 border border-[#9A7B4F]/20 mb-12">
+            <h3 className="font-serif text-xl text-[#9A7B4F] mb-4">
               發現：MUNI 基頻
             </h3>
-            <p className="text-stone-300 leading-relaxed mb-6 text-sm md:text-base">
+            <p className="text-stone-600 leading-relaxed mb-6 text-sm md:text-base">
               當這個頻率出現時——水趨向最高對稱結構、天然植物素材的分子振盪達到最低熵狀態、人體自律神經自然趨向安全與連結狀態、筋膜系統從高張力防禦轉為低張力流動、不同地理環境下的實驗結果保持一致。
             </p>
-            <blockquote className="border-l-2 border-amber-500/50 pl-4 text-stone-400 italic text-sm">
+            <blockquote className="border-l-2 border-[#9A7B4F]/50 pl-4 text-stone-500 italic text-sm">
               {L0.quote}
             </blockquote>
           </div>
 
           {/* 五大核心特徵 */}
-          <h3 className="font-serif text-xl text-white mb-6">
+          <h3 className="font-serif text-xl text-[#4a5548] mb-6">
             MUNI 基頻的五大核心特徵
           </h3>
           <div className="grid md:grid-cols-5 gap-3 mb-8">
             {L0.traits.map((trait: any, i: number) => (
               <div
                 key={i}
-                className="p-4 rounded-xl bg-white/[0.03] border border-white/5 text-center"
+                className="p-4 rounded-xl bg-white border border-stone-200 text-center shadow-sm"
               >
-                <p className="text-amber-400 font-serif font-bold text-sm mb-2">
+                <p className="text-[#9A7B4F] font-serif font-bold text-sm mb-2">
                   {trait.name}
                 </p>
                 <p className="text-stone-500 text-xs leading-relaxed">
@@ -491,8 +491,7 @@ export default function FrequencyPage() {
             ))}
           </div>
           <p className="text-stone-500 text-sm text-center">
-            五項特徵缺一不可。MUNI
-            基頻是目前驗證到的、唯一同時滿足全部五項特徵的頻率。
+            五項特徵缺一不可。MUNI 基頻是目前驗證到的、唯一同時滿足全部五項特徵的頻率。
           </p>
         </div>
       </section>
@@ -500,23 +499,23 @@ export default function FrequencyPage() {
       {/* ─── 第二層：泛音展開 ─── */}
       <section
         id="layer-2"
-        className="py-24 px-4 border-t border-white/5 scroll-mt-20"
+        className="py-24 px-4 border-t border-stone-200 scroll-mt-20"
       >
         <div className="max-w-5xl mx-auto">
           <div className="flex items-center gap-4 mb-8">
-            <span className="text-4xl text-emerald-400">◎</span>
+            <span className="text-4xl text-[#4a5548]">◎</span>
             <div>
-              <p className="text-xs text-emerald-400/70 tracking-[0.2em] uppercase font-mono">
+              <p className="text-xs text-[#4a5548]/70 tracking-[0.2em] uppercase font-mono">
                 Layer 02
               </p>
-              <h2 className="font-serif text-3xl md:text-4xl text-white">
+              <h2 className="font-serif text-3xl md:text-4xl text-[#4a5548]">
                 {L1.title}
               </h2>
               <p className="text-stone-400 mt-1">{L1.subtitle}</p>
             </div>
           </div>
 
-          <p className="text-stone-300 leading-relaxed mb-10 max-w-3xl text-sm md:text-base">
+          <p className="text-stone-600 leading-relaxed mb-10 max-w-3xl text-sm md:text-base">
             {L1.description}
           </p>
 
@@ -525,9 +524,9 @@ export default function FrequencyPage() {
             {L1.properties.map((prop: any, i: number) => (
               <div
                 key={i}
-                className="p-6 rounded-2xl bg-gradient-to-br from-emerald-900/15 to-emerald-800/5 border border-emerald-600/15"
+                className="p-6 rounded-2xl bg-white border border-stone-200 shadow-sm"
               >
-                <p className="text-emerald-400 font-serif font-bold mb-3">
+                <p className="text-[#4a5548] font-serif font-bold mb-3">
                   {prop.name}
                 </p>
                 <p className="text-stone-400 text-sm leading-relaxed">
@@ -538,28 +537,28 @@ export default function FrequencyPage() {
           </div>
 
           {/* 多尺度共振光譜 */}
-          <h3 className="font-serif text-xl text-white mb-6">
+          <h3 className="font-serif text-xl text-[#4a5548] mb-6">
             從宏觀到微觀的共振光譜
           </h3>
           <div className="overflow-x-auto mb-10">
             <table className="w-full text-sm">
               <thead>
-                <tr className="border-b border-white/10">
-                  <th className="text-left py-3 px-4 text-emerald-400/80 font-medium">
+                <tr className="border-b border-stone-200">
+                  <th className="text-left py-3 px-4 text-[#4a5548]/80 font-medium">
                     尺度層級
                   </th>
-                  <th className="text-left py-3 px-4 text-emerald-400/80 font-medium">
+                  <th className="text-left py-3 px-4 text-[#4a5548]/80 font-medium">
                     對應系統
                   </th>
-                  <th className="text-left py-3 px-4 text-emerald-400/80 font-medium">
+                  <th className="text-left py-3 px-4 text-[#4a5548]/80 font-medium">
                     泛音作用區間
                   </th>
                 </tr>
               </thead>
               <tbody>
                 {L1.scales.map((s: any, i: number) => (
-                  <tr key={i} className="border-b border-white/5">
-                    <td className="py-3 px-4 text-white font-medium">
+                  <tr key={i} className="border-b border-stone-200">
+                    <td className="py-3 px-4 text-[#4a5548] font-medium">
                       {s.level}
                     </td>
                     <td className="py-3 px-4 text-stone-400">{s.system}</td>
@@ -571,8 +570,8 @@ export default function FrequencyPage() {
           </div>
 
           {/* 聲流學 */}
-          <div className="bg-white/[0.03] rounded-2xl p-8 border border-white/5">
-            <h4 className="font-serif text-lg text-white mb-4">
+          <div className="bg-white rounded-2xl p-8 border border-stone-200">
+            <h4 className="font-serif text-lg text-[#4a5548] mb-4">
               聲流學（Cymatics）的視覺印證
             </h4>
             <p className="text-stone-400 leading-relaxed text-sm md:text-base">
@@ -582,7 +581,7 @@ export default function FrequencyPage() {
             </p>
           </div>
 
-          <blockquote className="border-l-2 border-emerald-500/50 pl-4 text-stone-400 italic mt-8 text-sm">
+          <blockquote className="border-l-2 border-[#4a5548]/30 pl-4 text-stone-400 italic mt-8 text-sm">
             {L1.quote}
           </blockquote>
         </div>
@@ -591,53 +590,53 @@ export default function FrequencyPage() {
       {/* ─── 第三層：多頻疊加協同 ─── */}
       <section
         id="layer-3"
-        className="py-24 px-4 border-t border-white/5 scroll-mt-20"
+        className="py-24 px-4 border-t border-stone-200 scroll-mt-20"
       >
         <div className="max-w-5xl mx-auto">
           <div className="flex items-center gap-4 mb-8">
-            <span className="text-4xl text-violet-400">◈</span>
+            <span className="text-4xl text-[#6b5b7b]">◈</span>
             <div>
-              <p className="text-xs text-violet-400/70 tracking-[0.2em] uppercase font-mono">
+              <p className="text-xs text-[#6b5b7b]/70 tracking-[0.2em] uppercase font-mono">
                 Layer 03
               </p>
-              <h2 className="font-serif text-3xl md:text-4xl text-white">
+              <h2 className="font-serif text-3xl md:text-4xl text-[#4a5548]">
                 {L2.title}
               </h2>
               <p className="text-stone-400 mt-1">{L2.subtitle}</p>
             </div>
           </div>
 
-          <p className="text-stone-300 leading-relaxed mb-10 max-w-3xl text-sm md:text-base">
+          <p className="text-stone-600 leading-relaxed mb-10 max-w-3xl text-sm md:text-base">
             {L2.description}
           </p>
 
           {/* 對比表格 */}
-          <h3 className="font-serif text-xl text-white mb-6">
+          <h3 className="font-serif text-xl text-[#4a5548] mb-6">
             協同的行為表現
           </h3>
           <div className="overflow-x-auto mb-12">
             <table className="w-full text-sm">
               <thead>
-                <tr className="border-b border-white/10">
-                  <th className="text-left py-3 px-4 text-violet-400/80 font-medium">
+                <tr className="border-b border-stone-200">
+                  <th className="text-left py-3 px-4 text-[#6b5b7b]/80 font-medium">
                     觀察維度
                   </th>
                   <th className="text-left py-3 px-4 text-stone-500 font-medium">
                     單頻/雙頻環境
                   </th>
-                  <th className="text-left py-3 px-4 text-violet-400/80 font-medium">
+                  <th className="text-left py-3 px-4 text-[#6b5b7b]/80 font-medium">
                     MUNI 多頻協同
                   </th>
                 </tr>
               </thead>
               <tbody>
                 {L2.comparison.map((c: any, i: number) => (
-                  <tr key={i} className="border-b border-white/5">
-                    <td className="py-3 px-4 text-white font-medium">
+                  <tr key={i} className="border-b border-stone-200">
+                    <td className="py-3 px-4 text-[#4a5548] font-medium">
                       {c.dimension}
                     </td>
                     <td className="py-3 px-4 text-stone-500">{c.single}</td>
-                    <td className="py-3 px-4 text-stone-300">{c.muni}</td>
+                    <td className="py-3 px-4 text-stone-600">{c.muni}</td>
                   </tr>
                 ))}
               </tbody>
@@ -653,30 +652,30 @@ export default function FrequencyPage() {
               「疊加」是物理行為，任何人都可以同時輸出多個頻率。「協同」是關係設計——每一個頻率不僅自身有效，還必須在與其他頻率共存時強化彼此而非干涉彼此。
             </p>
             <div className="grid grid-cols-2 gap-3 text-sm">
-              <div className="p-3 rounded-lg bg-white/[0.03]">
-                <p className="text-stone-300">
+              <div className="p-3 rounded-lg bg-white">
+                <p className="text-stone-600">
                   頻率之間不產生破壞性干涉
                 </p>
               </div>
-              <div className="p-3 rounded-lg bg-white/[0.03]">
-                <p className="text-stone-300">
+              <div className="p-3 rounded-lg bg-white">
+                <p className="text-stone-600">
                   每個頻率有明確的功能角色
                 </p>
               </div>
-              <div className="p-3 rounded-lg bg-white/[0.03]">
-                <p className="text-stone-300">
+              <div className="p-3 rounded-lg bg-white">
+                <p className="text-stone-600">
                   整體穩定性高於單一頻率
                 </p>
               </div>
-              <div className="p-3 rounded-lg bg-white/[0.03]">
-                <p className="text-stone-300">
+              <div className="p-3 rounded-lg bg-white">
+                <p className="text-stone-600">
                   受擾動時能自我修正回協同態
                 </p>
               </div>
             </div>
           </div>
 
-          <blockquote className="border-l-2 border-violet-500/50 pl-4 text-stone-400 italic text-sm">
+          <blockquote className="border-l-2 border-[#6b5b7b]/30 pl-4 text-stone-400 italic text-sm">
             {L2.quote}
           </blockquote>
         </div>
@@ -685,23 +684,23 @@ export default function FrequencyPage() {
       {/* ─── 第四層：神經系統通道 ─── */}
       <section
         id="layer-4"
-        className="py-24 px-4 border-t border-white/5 scroll-mt-20"
+        className="py-24 px-4 border-t border-stone-200 scroll-mt-20"
       >
         <div className="max-w-5xl mx-auto">
           <div className="flex items-center gap-4 mb-8">
-            <span className="text-4xl text-cyan-400">◇</span>
+            <span className="text-4xl text-[#4a7c7c]">◇</span>
             <div>
-              <p className="text-xs text-cyan-400/70 tracking-[0.2em] uppercase font-mono">
+              <p className="text-xs text-[#4a7c7c]/70 tracking-[0.2em] uppercase font-mono">
                 Layer 04
               </p>
-              <h2 className="font-serif text-3xl md:text-4xl text-white">
+              <h2 className="font-serif text-3xl md:text-4xl text-[#4a5548]">
                 {L3.title}
               </h2>
               <p className="text-stone-400 mt-1">{L3.subtitle}</p>
             </div>
           </div>
 
-          <p className="text-stone-300 leading-relaxed mb-10 max-w-3xl text-sm md:text-base">
+          <p className="text-stone-600 leading-relaxed mb-10 max-w-3xl text-sm md:text-base">
             {L3.description}
           </p>
 
@@ -710,13 +709,13 @@ export default function FrequencyPage() {
             {L3.channels.map((ch: any, i: number) => (
               <div
                 key={i}
-                className="p-6 rounded-2xl bg-gradient-to-br from-cyan-900/15 to-cyan-800/5 border border-cyan-600/15"
+                className="p-6 rounded-2xl bg-white border border-stone-200 shadow-sm"
               >
                 <div className="text-3xl mb-3">{ch.icon}</div>
-                <h4 className="font-serif text-lg text-white mb-1">
+                <h4 className="font-serif text-lg text-[#4a5548] mb-1">
                   {ch.name}
                 </h4>
-                <p className="text-cyan-400/70 text-xs mb-4">{ch.subtitle}</p>
+                <p className="text-[#4a7c7c]/70 text-xs mb-4">{ch.subtitle}</p>
                 <p className="text-stone-400 text-sm leading-relaxed">
                   {ch.detail}
                 </p>
@@ -725,27 +724,27 @@ export default function FrequencyPage() {
           </div>
 
           {/* 三條通道交匯 */}
-          <div className="bg-white/[0.03] rounded-2xl p-8 border border-white/5 text-center">
-            <h4 className="font-serif text-lg text-white mb-4">
+          <div className="bg-white rounded-2xl p-8 border border-stone-200 text-center">
+            <h4 className="font-serif text-lg text-[#4a5548] mb-4">
               三條通道的交匯
             </h4>
             <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 mb-6">
               <div className="text-center">
-                <p className="text-cyan-400 text-sm font-medium">嗅覺通道</p>
+                <p className="text-[#4a7c7c] text-sm font-medium">嗅覺通道</p>
                 <p className="text-stone-500 text-xs mt-1">
                   頻率直送情緒中樞
                 </p>
               </div>
               <span className="text-stone-600 hidden md:block">×</span>
               <div className="text-center">
-                <p className="text-cyan-400 text-sm font-medium">迷走神經</p>
+                <p className="text-[#4a7c7c] text-sm font-medium">迷走神經</p>
                 <p className="text-stone-500 text-xs mt-1">
                   內臟層面調節平衡
                 </p>
               </div>
               <span className="text-stone-600 hidden md:block">×</span>
               <div className="text-center">
-                <p className="text-cyan-400 text-sm font-medium">筋膜網絡</p>
+                <p className="text-[#4a7c7c] text-sm font-medium">筋膜網絡</p>
                 <p className="text-stone-500 text-xs mt-1">
                   結構層面重分配張力
                 </p>
@@ -761,52 +760,52 @@ export default function FrequencyPage() {
       {/* ─── 第五層：物質共振載體 ─── */}
       <section
         id="layer-5"
-        className="py-24 px-4 border-t border-white/5 scroll-mt-20"
+        className="py-24 px-4 border-t border-stone-200 scroll-mt-20"
       >
         <div className="max-w-5xl mx-auto">
           <div className="flex items-center gap-4 mb-8">
-            <span className="text-4xl text-rose-400">◆</span>
+            <span className="text-4xl text-[#9A7B4F]">◆</span>
             <div>
-              <p className="text-xs text-rose-400/70 tracking-[0.2em] uppercase font-mono">
+              <p className="text-xs text-[#9A7B4F]/70 tracking-[0.2em] uppercase font-mono">
                 Layer 05
               </p>
-              <h2 className="font-serif text-3xl md:text-4xl text-white">
+              <h2 className="font-serif text-3xl md:text-4xl text-[#4a5548]">
                 {L4.title}
               </h2>
               <p className="text-stone-400 mt-1">{L4.subtitle}</p>
             </div>
           </div>
 
-          <p className="text-stone-300 leading-relaxed mb-10 max-w-3xl text-sm md:text-base">
+          <p className="text-stone-600 leading-relaxed mb-10 max-w-3xl text-sm md:text-base">
             {L4.description}
           </p>
 
           {/* 產品共振矩陣 */}
-          <h3 className="font-serif text-xl text-white mb-6">
+          <h3 className="font-serif text-xl text-[#4a5548] mb-6">
             多維度共振矩陣
           </h3>
           <div className="overflow-x-auto mb-12">
             <table className="w-full text-sm">
               <thead>
-                <tr className="border-b border-white/10">
-                  <th className="text-left py-3 px-4 text-rose-400/80 font-medium">
+                <tr className="border-b border-stone-200">
+                  <th className="text-left py-3 px-4 text-[#9A7B4F]/80 font-medium">
                     作用路徑
                   </th>
-                  <th className="text-left py-3 px-4 text-rose-400/80 font-medium">
+                  <th className="text-left py-3 px-4 text-[#9A7B4F]/80 font-medium">
                     產品載體
                   </th>
-                  <th className="text-left py-3 px-4 text-rose-400/80 font-medium">
+                  <th className="text-left py-3 px-4 text-[#9A7B4F]/80 font-medium">
                     共振維度
                   </th>
                 </tr>
               </thead>
               <tbody>
                 {L4.matrix.map((m: any, i: number) => (
-                  <tr key={i} className="border-b border-white/5">
-                    <td className="py-3 px-4 text-white font-medium">
+                  <tr key={i} className="border-b border-stone-200">
+                    <td className="py-3 px-4 text-[#4a5548] font-medium">
                       {m.path}
                     </td>
-                    <td className="py-3 px-4 text-stone-300">{m.products}</td>
+                    <td className="py-3 px-4 text-stone-600">{m.products}</td>
                     <td className="py-3 px-4 text-stone-400">{m.dimension}</td>
                   </tr>
                 ))}
@@ -816,7 +815,7 @@ export default function FrequencyPage() {
 
           {/* 產品系統簡介 */}
           <div className="grid md:grid-cols-2 gap-6 mb-8">
-            <div className="p-6 rounded-2xl bg-white/[0.03] border border-white/5">
+            <div className="p-6 rounded-2xl bg-white border border-stone-200">
               <h4 className="font-serif text-base text-rose-300 mb-3">
                 嗅覺與外用系統
               </h4>
@@ -825,7 +824,7 @@ export default function FrequencyPage() {
                 以古法蒸餾完整捕獲花朵的振動模式，大馬士革玫瑰精露同時攜帶芳香分子與水的頻率記憶。
               </p>
             </div>
-            <div className="p-6 rounded-2xl bg-white/[0.03] border border-white/5">
+            <div className="p-6 rounded-2xl bg-white border border-stone-200">
               <h4 className="font-serif text-base text-rose-300 mb-3">
                 飲食與內在滋養系統
               </h4>
@@ -834,7 +833,7 @@ export default function FrequencyPage() {
                 MUNI 基頻具備天然的和諧共振關係。
               </p>
             </div>
-            <div className="p-6 rounded-2xl bg-white/[0.03] border border-white/5">
+            <div className="p-6 rounded-2xl bg-white border border-stone-200">
               <h4 className="font-serif text-base text-rose-300 mb-3">
                 經絡與物理介入系統
               </h4>
@@ -843,7 +842,7 @@ export default function FrequencyPage() {
                 日本針灸貼片在物理層面啟動經絡的振動傳導，與頻率系統形成「由外而內」的雙向共振。
               </p>
             </div>
-            <div className="p-6 rounded-2xl bg-white/[0.03] border border-white/5">
+            <div className="p-6 rounded-2xl bg-white border border-stone-200">
               <h4 className="font-serif text-base text-rose-300 mb-3">
                 意識覺察系統
               </h4>
@@ -854,7 +853,7 @@ export default function FrequencyPage() {
             </div>
           </div>
 
-          <blockquote className="border-l-2 border-rose-500/50 pl-4 text-stone-400 italic text-sm">
+          <blockquote className="border-l-2 border-[#9A7B4F]/30 pl-4 text-stone-400 italic text-sm">
             {L4.quote}
           </blockquote>
         </div>
@@ -863,23 +862,23 @@ export default function FrequencyPage() {
       {/* ─── 第六層：意識維度 ─── */}
       <section
         id="layer-6"
-        className="py-24 px-4 border-t border-white/5 scroll-mt-20"
+        className="py-24 px-4 border-t border-stone-200 scroll-mt-20"
       >
         <div className="max-w-5xl mx-auto">
           <div className="flex items-center gap-4 mb-8">
-            <span className="text-4xl text-yellow-400">✦</span>
+            <span className="text-4xl text-[#9A7B4F]">✦</span>
             <div>
-              <p className="text-xs text-yellow-400/70 tracking-[0.2em] uppercase font-mono">
+              <p className="text-xs text-[#9A7B4F]/70 tracking-[0.2em] uppercase font-mono">
                 Layer 06
               </p>
-              <h2 className="font-serif text-3xl md:text-4xl text-white">
+              <h2 className="font-serif text-3xl md:text-4xl text-[#4a5548]">
                 {L5.title}
               </h2>
               <p className="text-stone-400 mt-1">{L5.subtitle}</p>
             </div>
           </div>
 
-          <p className="font-serif text-lg md:text-xl text-stone-300 leading-relaxed mb-10 italic">
+          <p className="font-serif text-lg md:text-xl text-stone-600 leading-relaxed mb-10 italic">
             「{L5.description}」
           </p>
 
@@ -888,9 +887,9 @@ export default function FrequencyPage() {
             {L5.perspectives.map((p: any, i: number) => (
               <div
                 key={i}
-                className="p-6 rounded-2xl bg-gradient-to-br from-yellow-900/15 to-amber-800/5 border border-yellow-600/15"
+                className="p-6 rounded-2xl bg-[#F5F2EB] border border-stone-200 shadow-sm"
               >
-                <p className="text-yellow-400 font-serif font-bold mb-3">
+                <p className="text-[#9A7B4F] font-serif font-bold mb-3">
                   {p.tradition}
                 </p>
                 <p className="text-stone-400 text-sm leading-relaxed">
@@ -901,49 +900,49 @@ export default function FrequencyPage() {
           </div>
 
           {/* 四個層面的統一 */}
-          <div className="bg-white/[0.03] rounded-2xl p-8 border border-white/5 mb-8">
-            <h4 className="font-serif text-lg text-white mb-6 text-center">
+          <div className="bg-white rounded-2xl p-8 border border-stone-200 mb-8">
+            <h4 className="font-serif text-lg text-[#4a5548] mb-6 text-center">
               同一個共振場的四種表達
             </h4>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {L5.levels.map((l: any, i: number) => (
                 <div key={i} className="text-center p-4">
-                  <p className="text-yellow-400/80 text-xs tracking-wider uppercase mb-2">
+                  <p className="text-[#9A7B4F]/80 text-xs tracking-wider uppercase mb-2">
                     {l.plane}
                   </p>
-                  <p className="text-white font-serif">{l.expression}</p>
+                  <p className="text-[#4a5548] font-serif">{l.expression}</p>
                 </div>
               ))}
             </div>
           </div>
 
-          <blockquote className="border-l-2 border-yellow-500/50 pl-4 text-stone-400 italic text-sm">
+          <blockquote className="border-l-2 border-[#9A7B4F]/30 pl-4 text-stone-400 italic text-sm">
             {L5.quote}
           </blockquote>
         </div>
       </section>
 
       {/* ─── 六層總覽 ─── */}
-      <section className="py-24 px-4 border-t border-white/5 bg-gradient-to-b from-transparent to-amber-950/10">
+      <section className="py-24 px-4 border-t border-stone-200 bg-gradient-to-b from-[#F9F7F2] to-[#F5F2EB]">
         <div className="max-w-5xl mx-auto">
-          <p className="text-center text-amber-400/70 tracking-[0.3em] text-xs uppercase mb-4">
+          <p className="text-center text-[#9A7B4F] tracking-[0.3em] text-xs uppercase mb-4">
             Overview
           </p>
-          <h2 className="font-serif text-3xl md:text-4xl text-center text-white mb-12">
+          <h2 className="font-serif text-3xl md:text-4xl text-center text-[#4a5548] mb-12">
             六層總覽
           </h2>
 
           <div className="overflow-x-auto mb-12">
             <table className="w-full text-sm">
               <thead>
-                <tr className="border-b border-amber-500/20">
-                  <th className="text-left py-3 px-4 text-amber-400/80 font-medium w-16">
+                <tr className="border-b border-[#9A7B4F]/20">
+                  <th className="text-left py-3 px-4 text-[#9A7B4F] font-medium w-16">
                     層級
                   </th>
-                  <th className="text-left py-3 px-4 text-amber-400/80 font-medium">
+                  <th className="text-left py-3 px-4 text-[#9A7B4F] font-medium">
                     名稱
                   </th>
-                  <th className="text-left py-3 px-4 text-amber-400/80 font-medium">
+                  <th className="text-left py-3 px-4 text-[#9A7B4F] font-medium">
                     核心命題
                   </th>
                 </tr>
@@ -981,11 +980,11 @@ export default function FrequencyPage() {
                     core: "物質與意識是同一共振場的不同表達",
                   },
                 ].map((row) => (
-                  <tr key={row.id} className="border-b border-white/5">
-                    <td className="py-3 px-4 text-amber-400 font-mono font-bold">
+                  <tr key={row.id} className="border-b border-stone-200">
+                    <td className="py-3 px-4 text-[#9A7B4F] font-mono font-bold">
                       0{row.id}
                     </td>
-                    <td className="py-3 px-4 text-white font-serif font-medium">
+                    <td className="py-3 px-4 text-[#4a5548] font-serif font-medium">
                       {row.name}
                     </td>
                     <td className="py-3 px-4 text-stone-400">{row.core}</td>
@@ -996,14 +995,14 @@ export default function FrequencyPage() {
           </div>
 
           {/* 祝福區塊 */}
-          <div className="relative my-20 py-16 px-6 md:px-12 rounded-2xl bg-gradient-to-br from-amber-950/20 via-[#15201c] to-amber-950/10 border border-amber-600/15 overflow-hidden">
+          <div className="relative my-20 py-16 px-6 md:px-12 rounded-2xl bg-[#F5F2EB] border border-[#9A7B4F]/15 overflow-hidden">
             {/* 背景裝飾 */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] rounded-full bg-amber-500/5 blur-3xl" />
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] rounded-full bg-[#9A7B4F]/5 blur-3xl" />
             <div className="relative z-10 max-w-3xl mx-auto text-center">
-              <p className="text-amber-400/70 tracking-[0.3em] text-xs uppercase mb-4">
+              <p className="text-[#9A7B4F] tracking-[0.3em] text-xs uppercase mb-4">
                 Frequency × Blessing
               </p>
-              <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">
+              <h3 className="font-serif text-2xl md:text-3xl text-[#4a5548] mb-6">
                 頻率與祝福的合一
               </h3>
               <p className="text-stone-400 leading-relaxed mb-6 text-sm md:text-base">
@@ -1019,20 +1018,20 @@ export default function FrequencyPage() {
                 透過頻率的載體，傳遞到每一個分子、每一個細胞。
               </p>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-                <div className="bg-white/[0.03] rounded-xl p-5 border border-white/5">
-                  <p className="text-amber-400 font-serif text-lg mb-2">頻率</p>
+                <div className="bg-white rounded-xl p-5 border border-stone-200">
+                  <p className="text-[#9A7B4F] font-serif text-lg mb-2">頻率</p>
                   <p className="text-stone-500 text-sm">是方法、是工具、是科學可驗證的物理現象。它讓物質的分子排列趨向穩定，讓神經系統回到平衡。</p>
                 </div>
-                <div className="bg-white/[0.03] rounded-xl p-5 border border-white/5">
-                  <p className="text-amber-400 font-serif text-lg mb-2">祝福</p>
+                <div className="bg-white rounded-xl p-5 border border-stone-200">
+                  <p className="text-[#9A7B4F] font-serif text-lg mb-2">祝福</p>
                   <p className="text-stone-500 text-sm">是心意、是意願、是「讓萬物回到和諧」的真誠期許。它賦予頻率以方向，讓技術不只是機械的操作。</p>
                 </div>
-                <div className="bg-white/[0.03] rounded-xl p-5 border border-amber-600/20">
-                  <p className="text-amber-400 font-serif text-lg mb-2">合一</p>
+                <div className="bg-white rounded-xl p-5 border border-[#9A7B4F]/20">
+                  <p className="text-[#9A7B4F] font-serif text-lg mb-2">合一</p>
                   <p className="text-stone-500 text-sm">當頻率與祝福合一，產品不再只是物質——它成為一個帶著意圖的共振載體，安靜地等待與你相遇。</p>
                 </div>
               </div>
-              <p className="font-serif text-lg md:text-xl text-amber-300/80 italic leading-relaxed">
+              <p className="font-serif text-lg md:text-xl text-[#9A7B4F] italic leading-relaxed">
                 「頻率是方法，祝福是心意。兩者合一，才是 MUNI 的完整表達。」
               </p>
             </div>
@@ -1040,7 +1039,7 @@ export default function FrequencyPage() {
 
           {/* 結語 */}
           <div className="text-center max-w-2xl mx-auto">
-            <p className="font-serif text-xl md:text-2xl text-white leading-relaxed mb-4">
+            <p className="font-serif text-xl md:text-2xl text-[#4a5548] leading-relaxed mb-4">
               萬物本有其頻率。
               <br />
               MUNI 的工作，是帶著祝福，讓它們重新和諧。
@@ -1052,7 +1051,7 @@ export default function FrequencyPage() {
               MUNI
               用頻率測量它，用泛音展開它，用祝福完整它。
             </p>
-            <p className="font-serif text-amber-400/80 mt-6 italic">
+            <p className="font-serif text-[#9A7B4F] mt-6 italic">
               不同的語言，同一個真實。
             </p>
           </div>
@@ -1060,9 +1059,9 @@ export default function FrequencyPage() {
       </section>
 
       {/* ─── CTA Section ─── */}
-      <section className="py-20 px-4 bg-gradient-to-b from-amber-950/10 to-[#0f1a16]">
+      <section className="py-20 px-4 bg-[#F5F2EB]">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="font-serif text-2xl md:text-3xl text-white mb-4">
+          <h2 className="font-serif text-2xl md:text-3xl text-[#4a5548] mb-4">
             體驗 MUNI 頻率共振
           </h2>
           <p className="text-stone-400 mb-8 text-sm md:text-base">
@@ -1094,7 +1093,7 @@ export default function FrequencyPage() {
             </a>
             <Link
               href="/systems"
-              className="inline-flex items-center gap-2 text-stone-400 hover:text-white border border-stone-700 hover:border-stone-500 rounded-full px-8 py-3 font-medium transition-all"
+              className="inline-flex items-center gap-2 text-stone-500 hover:text-[#4a5548] border border-stone-300 hover:border-stone-400 rounded-full px-8 py-3 font-medium transition-all"
             >
               探索療癒系統 →
             </Link>
@@ -1103,29 +1102,29 @@ export default function FrequencyPage() {
       </section>
 
       {/* ─── Footer ─── */}
-      <footer className="py-12 px-4 bg-[#0f1a16] text-white/50 border-t border-white/5">
+      <footer className="py-12 px-4 bg-[#F5F2EB] text-stone-500 border-t border-stone-200">
         <div className="max-w-4xl mx-auto text-center">
-          <p className="font-serif text-lg text-white/70 mb-2">MUNI 牟尼</p>
+          <p className="font-serif text-lg text-[#4a5548] mb-2">MUNI 牟尼</p>
           <p className="text-sm">在寂靜中，承接你的答案。</p>
           <div className="mt-6 flex flex-wrap justify-center gap-6 text-sm">
-            <Link href="/" className="hover:text-white/80 transition-colors">
+            <Link href="/" className="hover:text-[#4a5548] transition-colors">
               首頁
             </Link>
             <Link
               href="/systems"
-              className="hover:text-white/80 transition-colors"
+              className="hover:text-[#4a5548] transition-colors"
             >
               療癒系統
             </Link>
             <Link
               href="/wine"
-              className="hover:text-white/80 transition-colors"
+              className="hover:text-[#4a5548] transition-colors"
             >
               葡萄酒療癒
             </Link>
             <Link
               href="/essential-oil"
-              className="hover:text-white/80 transition-colors"
+              className="hover:text-[#4a5548] transition-colors"
             >
               聖杯精油
             </Link>
@@ -1133,7 +1132,7 @@ export default function FrequencyPage() {
               href="https://ai.munione.co"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-white/80 transition-colors"
+              className="hover:text-[#4a5548] transition-colors"
             >
               療癒顧問
             </a>
