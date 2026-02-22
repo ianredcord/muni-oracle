@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect, useRef } from "react";
+import { useSearchParams } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import acupointsData from "@/data/acupoints.json";
@@ -30,9 +31,43 @@ interface Section {
 const sections = acupointsData as Section[];
 
 export default function AcupunctureClient() {
+  const searchParams = useSearchParams();
   const [expandedSection, setExpandedSection] = useState<string | null>(null);
   const [selectedAcupoint, setSelectedAcupoint] = useState<Acupoint | null>(null);
   const [searchQuery, setSearchQuery] = useState("");
+  const hasProcessedUrlSearch = useRef(false);
+
+  // 讀取 URL ?search= 參數，自動填入搜尋框並打開對應穴位
+  useEffect(() => {
+    const urlSearch = searchParams.get("search");
+    if (urlSearch && !hasProcessedUrlSearch.current) {
+      hasProcessedUrlSearch.current = true;
+      const q = urlSearch.trim();
+      setSearchQuery(q);
+
+      // 找到精確匹配的穴位，自動打開 modal
+      const qLower = q.toLowerCase();
+      for (const section of sections) {
+        const matched = section.acupoints.find(
+          (ap) => ap.name === q || ap.name.toLowerCase() === qLower
+        );
+        if (matched) {
+          setExpandedSection(section.id);
+          // 延遲打開 modal，讓搜尋結果先渲染
+          setTimeout(() => {
+            setSelectedAcupoint(matched);
+          }, 300);
+          break;
+        }
+      }
+
+      // 滾動到穴位詳解區域
+      setTimeout(() => {
+        const el = document.getElementById("acupoints");
+        if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+      }, 100);
+    }
+  }, [searchParams]);
 
   const filteredSections = useMemo(() => {
     if (!searchQuery.trim()) return sections;

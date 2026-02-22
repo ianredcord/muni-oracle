@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { Suspense } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Header } from "@/components/Header";
@@ -85,7 +86,9 @@ export default function AcupuncturePage() {
             點擊穴位卡片查看詳細資訊與 MUNI 搭配建議。
           </p>
         </div>
-        <AcupunctureClient />
+        <Suspense fallback={<div className="text-center py-8 text-stone-400">載入穴位資料中...</div>}>
+          <AcupunctureClient />
+        </Suspense>
       </section>
 
       {/* CTA */}
