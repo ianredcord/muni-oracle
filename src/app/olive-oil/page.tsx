@@ -1,4 +1,3 @@
-'''
 import type { Metadata } from "next";
 import Link from "next/link";
 
@@ -84,8 +83,7 @@ const PRODUCTS = [
     highlight: false,
   },
 ];
-'''
-'''
+
 const AWARDS = [
   { name: "Flos Olei 2025", score: "99/100", desc: "全球橄欖油評鑑最高分之一" },
   {
@@ -147,8 +145,7 @@ const ESTATE_FEATURES = [
     desc: "每一瓶橄欖油都經過 MUNI Frequency Resonance™ 技術調頻，讓橄欖油中的活性分子以最和諧的頻率與你的身體共振。",
   },
 ];
-'''
-'''
+
 export default function OliveOilPage() {
   return (
     <main className="min-h-screen bg-[#F9F7F2] text-stone-700">
@@ -680,4 +677,4 @@ export default function OliveOilPage() {
     </main>
   );
 }
-'''"))
+
