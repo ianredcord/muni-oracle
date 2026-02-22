@@ -24,10 +24,10 @@ const SYSTEMS = [
   },
   {
     id: "essential-oil",
-    title: "MUNI 聖杯精油",
+    title: "MUNI 牟尼香",
     subtitle: "嗅覺的療癒入口",
     description:
-      "六款以巴哈花精頻率調製的複方精油，透過嗅覺直達邊緣系統，啟動身體的自我修復機制。每一款精油都是一把開啟內在覺察的鑰匙。",
+      "以印度千年 Attar 蒸餾工藝與 MUNI Frequency Resonance™ 技術融合，將沈香、玫瑰、檀香、岩蘭草、綿花籽、小萳香六大天然植物精華濃縮於一瓶。透過嗅覺直達邊緣系統，啟動身體的自我修復機制。",
     href: "/essential-oil",
     icon: "🫧",
     color: "from-amber-50 to-yellow-50",

@@ -21,7 +21,6 @@ const PRODUCTS = [
       "以珍貴沉香為核心，結合鹿茸與山參的滋養精華。沉香自古被視為「眾香之首」，在東方養生傳統中具有安神定志、溫中散寒的珍貴價值。每一顆黃帝丹都經過 MUNI Frequency Resonance™ 六層共振校準，讓珍稀原料的能量以最和諧的頻率釋放。",
     ingredients: ["沉香", "鹿茸", "山參", "當歸", "熟地黃"],
     energy: "溫補元氣・安神定志",
-    resonance: "聖杯六號 — 護心",
     color: "bg-[#F5F2EB]",
     border: "border-[#9A7B4F]/20",
     accent: "text-[#9A7B4F]",
@@ -39,7 +38,6 @@ const PRODUCTS = [
       "將韓國六年根紅參的滋養力量，與石榴的抗氧化精華和魚膠原蛋白完美融合。不加一滴水的濃縮製程，保留了每一份營養的完整性。果凍棒的便攜形態，讓日常養護變得輕鬆愉悅。經 MUNI Frequency Resonance™ 調頻後，紅參皂苷的生物活性頻率與人體細胞產生更深層的共振。",
     ingredients: ["六年根紅參", "石榴濃縮液", "魚膠原蛋白", "維生素 C"],
     energy: "美容養顏・活力煥發",
-    resonance: "聖杯三號 — 開心",
     color: "bg-white",
     border: "border-rose-200",
     accent: "text-rose-600",
@@ -56,7 +54,6 @@ const PRODUCTS = [
       "精選韓國優質紅參，搭配牛膝的強筋健骨功效。每一片切片都保留了紅參完整的營養成分與獨特風味。牛膝在傳統本草中被譽為「引藥下行」的要藥，與紅參搭配能將滋養能量引導至下肢與腎經。MUNI Frequency Resonance™ 技術確保每一片紅參切片的能量場達到最佳共振狀態。",
     ingredients: ["韓國紅參", "牛膝", "蜂蜜"],
     energy: "強筋健骨・溫養下元",
-    resonance: "聖杯二號 — 定心",
     color: "bg-[#F5F2EB]",
     border: "border-orange-200",
     accent: "text-orange-600",
@@ -368,76 +365,7 @@ export default function GinsengPage() {
         </div>
       </section>
 
-      {/* Resonance Matrix */}
-      <section className="py-20">
-        <div className="max-w-4xl mx-auto px-4">
-          <div className="text-center mb-12">
-            <p className="text-[#9A7B4F] text-xs tracking-[0.2em] uppercase mb-4">
-              Resonance Matrix
-            </p>
-            <h2 className="text-3xl md:text-4xl font-serif text-[#4a5548] mb-4">
-              產品 × 聖杯精油 共振搭配
-            </h2>
-            <p className="text-stone-500 max-w-xl mx-auto">
-              每一款人蔘製品都有對應的 MUNI 聖杯精油，
-              讓內服與外用的頻率同時共振。
-            </p>
-          </div>
 
-          <div className="overflow-x-auto">
-            <table className="w-full border-collapse">
-              <thead>
-                <tr className="border-b border-stone-200">
-                  <th className="text-left py-4 px-4 text-stone-400 text-xs tracking-wider uppercase">
-                    產品
-                  </th>
-                  <th className="text-left py-4 px-4 text-stone-400 text-xs tracking-wider uppercase">
-                    聖杯精油
-                  </th>
-                  <th className="text-left py-4 px-4 text-stone-400 text-xs tracking-wider uppercase">
-                    共振維度
-                  </th>
-                  <th className="text-left py-4 px-4 text-stone-400 text-xs tracking-wider uppercase">
-                    建議時機
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr className="border-b border-stone-100">
-                  <td className="py-4 px-4 text-[#4a5548] text-sm font-medium">沉香黃帝丹</td>
-                  <td className="py-4 px-4 text-[#9A7B4F] text-sm">聖杯六號 — 護心</td>
-                  <td className="py-4 px-4 text-stone-500 text-sm">
-                    溫補元氣・安神定志
-                  </td>
-                  <td className="py-4 px-4 text-stone-400 text-sm">
-                    需要深層滋養與保護的時刻
-                  </td>
-                </tr>
-                <tr className="border-b border-stone-100">
-                  <td className="py-4 px-4 text-[#4a5548] text-sm font-medium">紅參石榴果凍棒</td>
-                  <td className="py-4 px-4 text-rose-600 text-sm">聖杯三號 — 開心</td>
-                  <td className="py-4 px-4 text-stone-500 text-sm">
-                    美容養顏・活力煥發
-                  </td>
-                  <td className="py-4 px-4 text-stone-400 text-sm">
-                    想要由內而外綻放光彩
-                  </td>
-                </tr>
-                <tr className="border-b border-stone-100">
-                  <td className="py-4 px-4 text-[#4a5548] text-sm font-medium">牛膝紅參切片</td>
-                  <td className="py-4 px-4 text-orange-600 text-sm">聖杯二號 — 定心</td>
-                  <td className="py-4 px-4 text-stone-500 text-sm">
-                    強筋健骨・溫養下元
-                  </td>
-                  <td className="py-4 px-4 text-stone-400 text-sm">
-                    需要穩定扎根的力量
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </section>
 
       {/* CTA Section */}
       <section className="py-24 relative">
@@ -449,7 +377,7 @@ export default function GinsengPage() {
           <p className="text-stone-500 mb-10 leading-relaxed">
             告訴 MUNI 療癒顧問你現在的身體感受與需求，
             <br className="hidden md:block" />
-            AI 會為你推薦最適合的人蔘產品 × 精油搭配方案。
+            AI 會為你推薦最適合的人蔘產品方案。
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
@@ -484,7 +412,7 @@ export default function GinsengPage() {
               花精百科
             </Link>
             <Link href="/essential-oil" className="hover:text-[#4a5548] transition-colors">
-              聖杯精油
+              牟尼香
             </Link>
             <Link href="/wine" className="hover:text-[#4a5548] transition-colors">
               葡萄酒療癒

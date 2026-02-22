@@ -10,7 +10,7 @@ import AboutTungsClient from "./AboutTungsClient";
 export const metadata: Metadata = {
   title: "董氏心氣神針 | MUNI 療癒生態系統",
   description:
-    "董氏奇穴心氣神針法完整介紹，涵蓋董景昌先生簡介、傳承脈絡、全息心法原理，以及一一到十十部位共 176 個穴位圖解。搭配 MUNI 聖杯精油與日本針灸貼，在家即可進行穴位保健。",
+    "董氏奇穴心氣神針法完整介紹，涵蓋董景昌先生簡介、傳承脈絡、全息心法原理，以及一一到十十部位共 176 個穴位圖解。搭配 MUNI 牟尼香與日本針灸貼，在家即可進行穴位保健。",
 };
 
 export default function AcupuncturePage() {
@@ -48,7 +48,7 @@ export default function AcupuncturePage() {
             以全息心法為核心，開創跨次元的療癒體系。
           </p>
           <p className="text-stone-400 text-sm max-w-xl mx-auto">
-            搭配 MUNI 聖杯精油塗抹穴位，再貼上 Somaniks 日本針灸貼，
+            搭配 MUNI 牟尼香塗抹穴位，再貼上 Somaniks 日本針灸貼，
             讓穴位保健融入你的日常生活。
           </p>
 

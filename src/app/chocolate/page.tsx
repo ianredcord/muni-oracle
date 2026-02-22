@@ -231,7 +231,7 @@ export default function ChocolatePage() {
           <div className="mt-8 bg-gradient-to-r from-[#2a1f1a] to-[#3a2a20] rounded-2xl p-8 text-center text-white">
             <p className="text-amber-300 text-sm tracking-[0.2em] mb-3">MUNI FREQUENCY RITUAL</p>
             <p className="text-lg leading-relaxed text-white/80 max-w-2xl mx-auto">
-              在安靜的時刻，滴一滴 MUNI 聖杯精油在手腕，
+              在安靜的時刻，滴一滴 MUNI 牟尼香在手腕，
               深呼吸三次，然後慢慢品嚐一片 Cecilia 的巧克力——
               讓嗅覺與味覺的頻率同時作用，
               這就是 MUNI 的<strong className="text-amber-200">「巧克力冥想儀式」</strong>。
@@ -339,7 +339,7 @@ export default function ChocolatePage() {
                 title: "準備",
                 icon: "🫧",
                 description:
-                  "選擇一款 MUNI 聖杯精油，滴在手腕內側。閉上眼睛，深呼吸三次，讓精油的頻率先安定你的神經系統。",
+                  "滴一滴 MUNI 牟尼香在手腕內側。閉上眼睛，深呼吸三次，讓牟尼香的植物頻率先安定你的神經系統。",
               },
               {
                 step: "02",
@@ -388,7 +388,7 @@ export default function ChocolatePage() {
               PAIRING SUGGESTIONS
             </p>
             <h2 className="font-serif text-2xl md:text-3xl font-bold text-[#4a5548] mb-4">
-              巧克力 × 精油搭配建議
+              巧克力 × 牟尼香搭配建議
             </h2>
           </div>
 
@@ -396,21 +396,21 @@ export default function ChocolatePage() {
             {[
               {
                 chocolate: "Myway（80% 特濃黑巧克力）",
-                oil: "聖杯二號 — 定心",
+                oil: "牟尼香",
                 mood: "需要堅定信念、走自己的路的時刻",
                 color: "from-violet-50 to-purple-50",
                 border: "border-violet-200",
               },
               {
                 chocolate: "Weekend（70% 黑巧克力）",
-                oil: "聖杯三號 — 開心",
+                oil: "牟尼香",
                 mood: "週末的自我犒賞時刻，喚醒內在喜悅",
                 color: "from-amber-50 to-yellow-50",
                 border: "border-amber-200",
               },
               {
                 chocolate: "Bluemoon（牛奶巧克力）",
-                oil: "聖杯五號 — 靜心",
+                oil: "牟尼香",
                 mood: "睡前的安定儀式，讓心回到寧靜",
                 color: "from-teal-50 to-emerald-50",
                 border: "border-teal-200",
@@ -448,7 +448,7 @@ export default function ChocolatePage() {
           <p className="text-stone-600 text-lg leading-relaxed mb-8">
             告訴 MUNI 療癒顧問你現在的心情，
             <br className="hidden sm:inline" />
-            AI 會為你推薦最適合的巧克力 × 精油搭配方案。
+            AI 會為你推薦最適合的巧克力品嘗方案。
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
@@ -504,7 +504,7 @@ export default function ChocolatePage() {
               療癒系統
             </Link>
             <Link href="/essential-oil" className="hover:text-white transition-colors">
-              聖杯精油
+              牟尼香
             </Link>
             <Link href="/acupuncture" className="hover:text-white transition-colors">
               董氏心氣神針

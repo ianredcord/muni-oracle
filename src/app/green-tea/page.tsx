@@ -46,7 +46,6 @@ const PRODUCTS = [
     character: "鮮甜回甘、海苔香氣、奶油般的綿密口感",
     nutrients: "茶胺酸 L-Theanine、兒茶素 EGCG、葉綠素、維生素 C",
     ritual: "晨間靜心儀式 — 以茶筅刷出細密泡沫，專注當下的覺察練習",
-    resonance: "聖杯四號 — 淨心",
     image: IMG.matchaPowder,
     color: "from-green-900/25 to-emerald-900/20",
     border: "border-green-700/30",
@@ -65,7 +64,6 @@ const PRODUCTS = [
     character: "濃郁甘甜、海苔覆香、絲滑口感、餘韻悠長",
     nutrients: "高濃度茶胺酸、兒茶素、咖啡因（溫和釋放）、礦物質",
     ritual: "午後靜養 — 以 50°C 低溫沖泡，感受甘露般的溫潤",
-    resonance: "聖杯五號 — 養心",
     image: IMG.gyokuroLeaves,
     color: "from-teal-900/20 to-green-900/20",
     border: "border-teal-700/30",
@@ -84,7 +82,6 @@ const PRODUCTS = [
     character: "清爽甘醇、草本清香、微澀回甘、明亮翠綠湯色",
     nutrients: "兒茶素、維生素 C、β-胡蘿蔔素、膳食纖維",
     ritual: "日常飲茶 — 以 70°C 沖泡，感受陽光與大地的清新能量",
-    resonance: "聖杯一號 — 安心",
     image: IMG.senchaLeaves,
     color: "from-lime-900/20 to-green-900/15",
     border: "border-lime-700/25",
@@ -103,7 +100,6 @@ const PRODUCTS = [
     character: "焦香溫暖、堅果甘甜、柔和順口、極低咖啡因",
     nutrients: "焙煎多酚、吡嗪（放鬆成分）、礦物質",
     ritual: "睡前安定 — 溫熱飲用，搭配精油嗅覺冥想，進入深層放鬆",
-    resonance: "聖杯二號 — 定心",
     image: IMG.hojichaLeaves,
     color: "from-amber-900/20 to-yellow-900/15",
     border: "border-amber-700/25",
@@ -656,10 +652,10 @@ export default function GreenTeaPage() {
               Resonance Matrix
             </p>
             <h2 className="text-3xl md:text-4xl font-serif text-green-50 mb-4">
-              綠茶 × 聖杯精油 共振搭配
+              綠茶 × 牟尼香 共振搭配
             </h2>
             <p className="text-green-200/50 max-w-xl mx-auto">
-              每一款綠茶都有對應的 MUNI 聖杯精油，
+              每一款綠茶都可搭配 MUNI 牟尼香，
               讓飲茶與嗅覺的頻率同時共振，開啟完整的療癒儀式。
             </p>
           </div>
@@ -672,7 +668,7 @@ export default function GreenTeaPage() {
                     綠茶
                   </th>
                   <th className="text-left py-4 px-4 text-green-200/40 text-xs tracking-wider uppercase">
-                    聖杯精油
+                    牟尼香
                   </th>
                   <th className="text-left py-4 px-4 text-green-200/40 text-xs tracking-wider uppercase">
                     共振維度
@@ -688,7 +684,7 @@ export default function GreenTeaPage() {
                     有機宇治抹茶
                   </td>
                   <td className="py-4 px-4 text-green-400 text-sm">
-                    聖杯四號 — 淨心
+                    牟尼香
                   </td>
                   <td className="py-4 px-4 text-green-200/50 text-sm">
                     清淨覺察・專注當下
@@ -702,7 +698,7 @@ export default function GreenTeaPage() {
                     有機玉露
                   </td>
                   <td className="py-4 px-4 text-teal-400 text-sm">
-                    聖杯五號 — 養心
+                    牟尼香
                   </td>
                   <td className="py-4 px-4 text-green-200/50 text-sm">
                     深層滋養・溫潤修復
@@ -716,7 +712,7 @@ export default function GreenTeaPage() {
                     有機煎茶
                   </td>
                   <td className="py-4 px-4 text-lime-400 text-sm">
-                    聖杯一號 — 安心
+                    牟尼香
                   </td>
                   <td className="py-4 px-4 text-green-200/50 text-sm">
                     安定平和・日常滋養
@@ -730,7 +726,7 @@ export default function GreenTeaPage() {
                     有機焙茶
                   </td>
                   <td className="py-4 px-4 text-amber-400 text-sm">
-                    聖杯二號 — 定心
+                    牟尼香
                   </td>
                   <td className="py-4 px-4 text-green-200/50 text-sm">
                     穩定扎根・安定入眠
@@ -757,7 +753,7 @@ export default function GreenTeaPage() {
           <p className="text-green-200/50 mb-10 leading-relaxed">
             告訴 MUNI 療癒顧問你現在的身心狀態與需求，
             <br className="hidden md:block" />
-            AI 會為你推薦最適合的綠茶 × 精油搭配方案。
+            AI 會為你推薦最適合的綠茶方案。
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
@@ -803,7 +799,7 @@ export default function GreenTeaPage() {
               href="/essential-oil"
               className="hover:text-green-200/50 transition-colors"
             >
-              聖杯精油
+              牟尼香
             </Link>
             <Link
               href="/ginseng"

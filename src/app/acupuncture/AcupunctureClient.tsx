@@ -302,7 +302,7 @@ export default function AcupunctureClient() {
                 <p className="text-stone-600 text-sm leading-relaxed">
                   在{selectedAcupoint.name}
                   貼上 Somaniks 日本針灸貼，搭配 MUNI
-                  聖杯精油在穴位周圍輕柔按摩，可增強穴位刺激效果，促進氣血循環。
+                  牟尼香在穴位周圍輕柔按摩，可增強穴位刺激效果，促進氣血循環。
                 </p>
                 <a
                   href="https://ai.munione.co"

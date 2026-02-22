@@ -1126,7 +1126,7 @@ export default function FrequencyPage() {
               href="/essential-oil"
               className="hover:text-[#4a5548] transition-colors"
             >
-              聖杯精油
+              牟尼香
             </Link>
             <a
               href="https://ai.munione.co"

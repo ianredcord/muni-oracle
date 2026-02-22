@@ -23,8 +23,6 @@ const WINES = [
     altitude: "590 – 970 m",
     description:
       "在一座由 Valle Isarco 20 噸花崗岩雕刻而成的 960 公升石桶中發酵與陳釀。花崗岩的孔隙率與礦物特性為這款 Kerner 注入了無與倫比的礦物深度與複雜性。明亮的稻草黃色帶著細膩的綠色反光，柑橘、蜜桃與黃蘋果的層次香氣，伴隨著礦物與草本的細膩韻味。",
-    pairing: "聖杯二號 — 定心",
-    pairingMood: "需要回到清晰、堅定的時刻",
     image:
       "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/RPvhSmRURoIwGGHT.jpg",
     highlight: true,
@@ -41,8 +39,6 @@ const WINES = [
     altitude: "600 – 850 m",
     description:
       "Cantina Valle Isarco 的頂級酒款，僅限量 2,000 瓶。四種 Valle Isarco 最具代表性的葡萄品種精心混釀——Sylvaner 帶來優雅與果香，Grüner Veltliner 貢獻辛香氣息，Pinot Grigio 賦予結構與力量，Kerner 增添芳香層次。在法國橡木桶中發酵並陳釀 18 個月。",
-    pairing: "聖杯四號 — 放心",
-    pairingMood: "放下執著，回到柔軟與接納的時刻",
     image:
       "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/XIClwNZLYrOfPbsr.png",
     highlight: true,
@@ -59,8 +55,6 @@ const WINES = [
     altitude: "550 – 700 m",
     description:
       "葡萄來自環繞薩比奧納修道院——被譽為「蒂羅爾的衛城」——的陽光山坡葡萄園。嚴格的產量控制、限量 3,000 瓶，在相思木桶中細膩陳釀，賦予這款酒無可比擬的品種特性與優雅氣質。",
-    pairing: "聖杯五號 — 靜心",
-    pairingMood: "睡前的安定儀式，讓心回到寧靜",
     image:
       "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/BWtTAqGcgQhogaPd.png",
     highlight: false,
@@ -77,8 +71,6 @@ const WINES = [
     altitude: "550 – 700 m",
     description:
       "以傳統瓶中二次發酵法（Metodo Classico）釀造，在酒泥上陳釀至少 36 個月，完全不添加糖分（Pas Dosé）。葡萄同樣來自薩比奧納修道院的葡萄園，嚴格的產量控制與溫柔的釀造工藝，賦予這款氣泡酒獨特的個性。",
-    pairing: "聖杯三號 — 開心",
-    pairingMood: "慶祝的時刻，喚醒內在的喜悅與活力",
     image:
       "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/VWmuefWQeOLAHbvl.png",
     highlight: false,
@@ -95,8 +87,6 @@ const WINES = [
     altitude: "550 – 700 m",
     description:
       "至臻系列的核心——嚴格的葡萄園管理與產量限制，確保每一顆葡萄都達到最佳品質。在不鏽鋼桶與大型橡木桶中發酵並陳釀 10 個月，展現出鮮明的品種特性、出色的結構與卓越的陳年潛力。",
-    pairing: "聖杯一號 — 安心",
-    pairingMood: "需要安全感與穩定的時刻",
     image:
       "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/QqQqJuvsRoGlPCvy.png",
     highlight: false,
@@ -113,8 +103,6 @@ const WINES = [
     altitude: "500 – 600 m",
     description:
       "葡萄來自 Valle Isarco 南部的 Campodazzo 小鎮，從修剪到成熟度的嚴格控制，只選用品質最優異的葡萄。在大桶中發酵後，於法國橡木桶中陳釀 18 個月，再瓶中熟成 6 個月。濃郁的果香、優雅而富有表現力的酒體。",
-    pairing: "聖杯六號 — 護心",
-    pairingMood: "建立能量邊界，保護內在空間",
     image:
       "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/AARWPVqMSRxruIYq.png",
     highlight: false,
@@ -131,8 +119,6 @@ const WINES = [
     altitude: "650 – 970 m",
     description:
       "Kerner 是 Schiava 與 Riesling 的雜交品種，以德國詩人兼醫師 Justinus Kerner 命名。偏好高海拔陽光山坡的輕質礫石與沙質土壤，晚熟的葡萄帶來飽滿的酒體與豐富的風味。在不鏽鋼桶中低溫發酵，保留清新的果香與礦物感。",
-    pairing: "聖杯二號 — 定心",
-    pairingMood: "日常的清晰與專注時刻",
     image:
       "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/fIeLzuZcvmXkOcYh.png",
     highlight: false,
@@ -149,8 +135,6 @@ const WINES = [
     altitude: "420 – 750 m",
     description:
       "源自法國勃根地的貴族品種，約百年前引入南蒂羅爾。Campodazzo 周圍溫暖的山坡提供了理想的生長條件，傳統浸皮發酵後在大型橡木桶中陳釀，展現出優雅的表現力與典型的品種特性。",
-    pairing: "聖杯四號 — 放心",
-    pairingMood: "放鬆的週末時光",
     image:
       "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/XvXuYSjFGXFUmasx.png",
     highlight: false,
@@ -167,8 +151,6 @@ const WINES = [
     altitude: "560 – 590 m",
     description:
       "以 Valle Isarco 兩種代表性白葡萄品種——Müller Thurgau 與 Sylvaner 為基酒，採用 Charmat 法進行二次發酵，完美保留了原始的果香與清新感。是開胃酒的理想選擇，也能巧妙搭配輕食前菜。",
-    pairing: "聖杯三號 — 開心",
-    pairingMood: "聚會開場，喚醒愉悅的社交能量",
     image:
       "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/PuTObeQvaLbykmPZ.png",
     highlight: false,
@@ -678,77 +660,7 @@ export default function WinePage() {
         </div>
       </section>
 
-      {/* 葡萄酒 × 精油搭配建議 */}
-      <section className="py-20 px-4">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-12">
-            <p className="text-sm tracking-[0.3em] text-[#9A7B4F] mb-4">
-              WINE × OIL PAIRING
-            </p>
-            <h2 className="font-serif text-2xl md:text-3xl font-bold text-[#4a5548] mb-4">
-              葡萄酒 × 精油搭配建議
-            </h2>
-            <p className="text-stone-500 max-w-xl mx-auto">
-              每一款酒都有對應的 MUNI 聖杯精油，
-              讓味覺與嗅覺的頻率同時共振。
-            </p>
-          </div>
 
-          <div className="space-y-4">
-            {(() => {
-              const cnNum: Record<string, number> = { "一": 1, "二": 2, "三": 3, "四": 4, "五": 5, "六": 6 };
-              const getPairingOrder = (p: string) => {
-                const match = p.match(/[一二三四五六]/);
-                return match ? cnNum[match[0]] ?? 99 : 99;
-              };
-              // 按聖杯號碼分組，每組可能有多款酒
-              const grouped = new Map<string, typeof WINES>();
-              WINES.forEach((w) => {
-                if (!w.pairing.startsWith("聖杯")) return;
-                const arr = grouped.get(w.pairing) || [];
-                arr.push(w);
-                grouped.set(w.pairing, arr);
-              });
-              const sorted = [...grouped.entries()].sort(
-                (a, b) => getPairingOrder(a[0]) - getPairingOrder(b[0])
-              );
-              const colorMap: Record<string, { bg: string; border: string }> = {
-                "聖杯一號 — 安心": { bg: "from-violet-50 to-purple-50", border: "border-violet-200" },
-                "聖杯二號 — 定心": { bg: "from-sky-50 to-blue-50", border: "border-sky-200" },
-                "聖杯三號 — 開心": { bg: "from-amber-50 to-yellow-50", border: "border-amber-200" },
-                "聖杯四號 — 放心": { bg: "from-rose-50 to-pink-50", border: "border-rose-200" },
-                "聖杯五號 — 靜心": { bg: "from-teal-50 to-emerald-50", border: "border-teal-200" },
-                "聖杯六號 — 護心": { bg: "from-emerald-50 to-green-50", border: "border-emerald-200" },
-              };
-              return sorted.map(([pairing, wines]) => {
-                const pairStyle = colorMap[pairing] || { bg: "from-stone-50 to-white", border: "border-stone-200" };
-                return (
-                  <div
-                    key={pairing}
-                    className={`bg-gradient-to-br ${pairStyle.bg} rounded-2xl p-6 border ${pairStyle.border}`}
-                  >
-                    <div className="flex items-center gap-2 mb-3">
-                      <span className="text-lg">🫧</span>
-                      <span className="font-serif font-bold text-[#4a5548]">{pairing}</span>
-                    </div>
-                    <p className="text-sm text-stone-500 mb-4 pl-8">{wines[0].pairingMood}</p>
-                    <div className="space-y-2 pl-8">
-                      {wines.map((w) => (
-                        <div key={w.id} className="flex items-center gap-2">
-                          <span className="text-base">🍷</span>
-                          <span className="text-sm font-medium text-[#4a5548]">
-                            {w.name} {w.vintage !== "NV" ? w.vintage : ""}
-                          </span>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                );
-              });
-            })()}
-          </div>
-        </div>
-      </section>
 
       {/* MUNI 品飲療癒儀式 */}
       <section className="py-20 px-4 bg-[#F5F2EB]">
@@ -772,7 +684,7 @@ export default function WinePage() {
                 title: "安定",
                 icon: "🫧",
                 description:
-                  "選擇對應的 MUNI 聖杯精油，滴在手腕內側。閉上眼睛，深呼吸三次，讓精油的植物頻率先安定你的神經系統，為品飲做好準備。",
+                  "找一個安靜的角落，閉上眼睛，深呼吸三次。讓身體從忙碌的節奏中慢下來，為品飲做好準備。",
               },
               {
                 step: "02",
@@ -909,7 +821,7 @@ export default function WinePage() {
           <p className="text-stone-600 text-lg leading-relaxed mb-8">
             告訴 MUNI 療癒顧問你現在的心情與場景，
             <br className="hidden sm:inline" />
-            AI 會為你推薦最適合的葡萄酒 × 精油搭配方案。
+            AI 會為你推薦最適合的葡萄酒品飲方案。
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
@@ -965,7 +877,7 @@ export default function WinePage() {
               療癒系統
             </Link>
             <Link href="/essential-oil" className="hover:text-[#4a5548] transition-colors">
-              聖杯精油
+              牟尼香
             </Link>
             <Link href="/acupuncture" className="hover:text-[#4a5548] transition-colors">
               董氏心氣神針

@@ -20,7 +20,6 @@ const PRODUCTS = [
     aroma: "朝鮮薊、新鮮番茄、杏仁、芳香草本",
     taste: "結構飽滿，苦味與辛辣鮮明優雅，帶有黑胡椒與綠色杏仁的餘韻",
     pairing: "牛排塔塔、松露燉飯、硬質熟成起司、烤蔬菜",
-    resonance: "聖杯六號 — 護心",
     image:
       "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/lETvbLHthrnfMBOS.jpg",
     color: "from-emerald-900/25 to-green-900/20",
@@ -39,7 +38,6 @@ const PRODUCTS = [
     aroma: "朝鮮薊、菊苣、萵苣，薄荷與迷迭香的香脂氣息",
     taste: "優雅複雜，帶有朝鮮薊、青草和番茄葉的綠色調，苦味與辛辣鮮明持久",
     pairing: "章魚前菜、牛肝菌肉薄片、焗烤番茄、烤紅肉",
-    resonance: "聖杯二號 — 定心",
     image:
       "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/PxYNKHKkJjXQpdZb.jpg",
     color: "from-amber-900/20 to-yellow-900/20",
@@ -58,7 +56,6 @@ const PRODUCTS = [
     aroma: "番茄、芳香草本、薄荷、羅勒、迷迭香",
     taste: "圓潤飽滿，萵苣、黑胡椒與杏仁的暗示，甜美收尾",
     pairing: "豆子前菜、朝鮮薊燉飯、烤兔肉、山羊起司",
-    resonance: "聖杯三號 — 開心",
     image:
       "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/qtxchiSClEHHDneY.jpg",
     color: "from-lime-900/20 to-emerald-900/15",
@@ -77,7 +74,6 @@ const PRODUCTS = [
     aroma: "青草、番茄葉、地中海草本",
     taste: "均衡和諧，帶有溫暖的胡椒感與清新的草本餘韻",
     pairing: "義大利麵、烤魚、新鮮沙拉、麵包佐食",
-    resonance: "聖杯一號 — 安心",
     image:
       "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/PxYNKHKkJjXQpdZb.jpg",
     color: "from-teal-900/20 to-green-900/15",
@@ -583,10 +579,10 @@ export default function OliveOilPage() {
               Resonance Matrix
             </p>
             <h2 className="text-3xl md:text-4xl font-serif text-emerald-50 mb-4">
-              橄欖油 × 聖杯精油 共振搭配
+              橙欖油 × 牟尼香 共振搭配
             </h2>
             <p className="text-emerald-200/50 max-w-xl mx-auto">
-              每一款橄欖油都有對應的 MUNI 聖杯精油，
+              每一款橙欖油都可搭配 MUNI 牟尼香，
               讓飲食與嗅覺的頻率同時共振，開啟完整的療癒儀式。
             </p>
           </div>
@@ -599,7 +595,7 @@ export default function OliveOilPage() {
                     橄欖油
                   </th>
                   <th className="text-left py-4 px-4 text-emerald-200/40 text-xs tracking-wider uppercase">
-                    聖杯精油
+                    牟尼香
                   </th>
                   <th className="text-left py-4 px-4 text-emerald-200/40 text-xs tracking-wider uppercase">
                     共振維度
@@ -615,7 +611,7 @@ export default function OliveOilPage() {
                     Grand Cru
                   </td>
                   <td className="py-4 px-4 text-emerald-400 text-sm">
-                    聖杯六號 — 護心
+                    牟尼香
                   </td>
                   <td className="py-4 px-4 text-emerald-200/50 text-sm">
                     深層滋養・守護能量
@@ -627,7 +623,7 @@ export default function OliveOilPage() {
                 <tr className="border-b border-emerald-800/10">
                   <td className="py-4 px-4 text-emerald-100 text-sm">1979</td>
                   <td className="py-4 px-4 text-amber-400 text-sm">
-                    聖杯二號 — 定心
+                    牟尼香
                   </td>
                   <td className="py-4 px-4 text-emerald-200/50 text-sm">
                     穩定扎根・回到中心
@@ -641,7 +637,7 @@ export default function OliveOilPage() {
                     Riflessi
                   </td>
                   <td className="py-4 px-4 text-lime-400 text-sm">
-                    聖杯三號 — 開心
+                    牟尼香
                   </td>
                   <td className="py-4 px-4 text-emerald-200/50 text-sm">
                     輕盈喜悅・綻放光彩
@@ -655,7 +651,7 @@ export default function OliveOilPage() {
                     Toscano PGI
                   </td>
                   <td className="py-4 px-4 text-teal-400 text-sm">
-                    聖杯一號 — 安心
+                    牟尼香
                   </td>
                   <td className="py-4 px-4 text-emerald-200/50 text-sm">
                     安定平和・日常滋養
@@ -682,7 +678,7 @@ export default function OliveOilPage() {
           <p className="text-emerald-200/50 mb-10 leading-relaxed">
             告訴 MUNI 療癒顧問你現在的身體感受與飲食需求，
             <br className="hidden md:block" />
-            AI 會為你推薦最適合的橄欖油 × 精油搭配方案。
+            AI 會為你推薦最適合的橙欖油方案。
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
@@ -728,7 +724,7 @@ export default function OliveOilPage() {
               href="/essential-oil"
               className="hover:text-emerald-200/50 transition-colors"
             >
-              聖杯精油
+              牟尼香
             </Link>
             <Link
               href="/ginseng"

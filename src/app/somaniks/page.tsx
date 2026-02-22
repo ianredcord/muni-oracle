@@ -859,7 +859,7 @@ export default function SomaniksPage() {
               href="/essential-oil"
               className="hover:text-sky-200/50 transition-colors"
             >
-              聖杯精油
+              牟尼香
             </Link>
             <Link
               href="/ginseng"
