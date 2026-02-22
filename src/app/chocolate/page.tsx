@@ -47,18 +47,18 @@ export default function ChocolatePage() {
     <div className="min-h-screen bg-[#F9F7F2] text-stone-800">
       <Header />
 
-      {/* Hero — 深色背景，呼應巧克力的深邃 */}
-      <section className="relative pt-20 pb-24 px-4 bg-gradient-to-b from-[#1a1210] via-[#2a1f1a] to-[#3a2a20] text-white overflow-hidden">
+      {/* Hero */}
+      <section className="relative pt-20 pb-24 px-4 bg-gradient-to-b from-[#F9F7F2] to-[#F5F0EB] overflow-hidden">
         {/* 背景裝飾 */}
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-20 left-10 w-72 h-72 bg-amber-600 rounded-full blur-[120px]" />
-          <div className="absolute bottom-10 right-10 w-96 h-96 bg-amber-800 rounded-full blur-[150px]" />
+          <div className="absolute top-20 left-10 w-72 h-72 bg-amber-300 rounded-full blur-[120px]" />
+          <div className="absolute bottom-10 right-10 w-96 h-96 bg-amber-200 rounded-full blur-[150px]" />
         </div>
 
         <div className="relative max-w-5xl mx-auto">
           <Link
             href="/systems"
-            className="inline-flex items-center gap-1.5 text-sm text-white/50 hover:text-white/80 transition-colors mb-8"
+            className="inline-flex items-center gap-1.5 text-sm text-stone-400 hover:text-stone-600 transition-colors mb-8"
           >
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -68,17 +68,17 @@ export default function ChocolatePage() {
 
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="flex-1 text-center lg:text-left">
-              <p className="text-sm tracking-[0.4em] text-amber-400/80 mb-4">
+              <p className="text-sm tracking-[0.4em] text-[#9A7B4F] mb-4">
                 MUNI × CECILIA RABASSI
               </p>
               <h1 className="font-serif text-3xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-                <span className="text-amber-200">世界最好的</span>
+                <span className="text-[#4a5548]">世界最好的</span>
                 <br />
-                手工精品巧克力
+                <span className="text-stone-800">手工精品巧克力</span>
                 <br />
-                <span className="text-amber-400">× 頻率療癒</span>
+                <span className="text-[#9A7B4F]">× 頻率療癒</span>
               </h1>
-              <p className="text-white/60 text-lg leading-relaxed max-w-lg">
+              <p className="text-stone-500 text-lg leading-relaxed max-w-lg">
                 當世界第一位女性巧克力大師的三十年工藝，
                 遇上 MUNI 的頻率療癒哲學——
                 每一口巧克力，都是一次與內在的深度對話。
@@ -86,7 +86,7 @@ export default function ChocolatePage() {
             </div>
 
             <div className="relative w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 flex-shrink-0">
-              <div className="absolute inset-0 bg-gradient-to-br from-amber-600/20 to-transparent rounded-full blur-2xl" />
+              <div className="absolute inset-0 bg-gradient-to-br from-amber-200/30 to-transparent rounded-full blur-2xl" />
               <Image
                 src="https://ceciliarabassi.com/wp-content/uploads/2021/10/ceciliatessieri-5591.jpg"
                 alt="Cecilia Rabassi — 世界第一位女性 Maître Chocolatier"
@@ -228,13 +228,13 @@ export default function ChocolatePage() {
             </div>
           </div>
 
-          <div className="mt-8 bg-gradient-to-r from-[#2a1f1a] to-[#3a2a20] rounded-2xl p-8 text-center text-white">
-            <p className="text-amber-300 text-sm tracking-[0.2em] mb-3">MUNI FREQUENCY RITUAL</p>
-            <p className="text-lg leading-relaxed text-white/80 max-w-2xl mx-auto">
+          <div className="mt-8 bg-white rounded-2xl p-8 text-center border border-stone-200 shadow-sm">
+            <p className="text-[#9A7B4F] text-sm tracking-[0.2em] mb-3">MUNI FREQUENCY RITUAL</p>
+            <p className="text-lg leading-relaxed text-stone-600 max-w-2xl mx-auto">
               在安靜的時刻，滴一滴 MUNI 牟尼香在手腕，
-              深呼吸三次，然後慢慢品嚐一片 Cecilia 的巧克力——
+              深呼吸三次，然後慢慢品嘗一片 Cecilia 的巧克力——
               讓嗅覺與味覺的頻率同時作用，
-              這就是 MUNI 的<strong className="text-amber-200">「巧克力冥想儀式」</strong>。
+              這就是 MUNI 的<strong className="text-[#4a5548] font-semibold">「巧克力冐想儀式」</strong>。
             </p>
           </div>
         </div>
@@ -318,16 +318,16 @@ export default function ChocolatePage() {
 
 
       {/* MUNI 巧克力儀式 */}
-      <section className="py-20 px-4 bg-gradient-to-b from-[#2a1f1a] to-[#1a1210] text-white">
+      <section className="py-20 px-4 bg-[#F5F0EB]">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <p className="text-sm tracking-[0.4em] text-amber-400/80 mb-4">
+            <p className="text-sm tracking-[0.4em] text-[#9A7B4F] mb-4">
               MUNI CHOCOLATE RITUAL
             </p>
-            <h2 className="font-serif text-2xl md:text-3xl font-bold text-amber-100 mb-4">
+            <h2 className="font-serif text-2xl md:text-3xl font-bold text-[#4a5548] mb-4">
               MUNI 巧克力療癒儀式
             </h2>
-            <p className="text-white/50 max-w-xl mx-auto">
+            <p className="text-stone-500 max-w-xl mx-auto">
               三個步驟，讓一片巧克力成為一次深度的自我療癒
             </p>
           </div>
@@ -343,7 +343,7 @@ export default function ChocolatePage() {
               },
               {
                 step: "02",
-                title: "品嚐",
+                title: "品嘗",
                 icon: "🍫",
                 description:
                   "慢慢打開一片 Cecilia 的巧克力，先聞它的香氣。放入口中，不要咀嚼，讓它在舌尖慢慢融化，感受可可的頻率在口腔中展開。",
@@ -358,20 +358,20 @@ export default function ChocolatePage() {
             ].map((ritual, idx) => (
               <div
                 key={idx}
-                className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10"
+                className="bg-white rounded-2xl p-6 border border-stone-200 shadow-sm"
               >
                 <div className="flex items-center gap-3 mb-4">
                   <span className="text-2xl">{ritual.icon}</span>
                   <div>
-                    <span className="text-xs text-amber-400 tracking-wider">
+                    <span className="text-xs text-[#9A7B4F] tracking-wider">
                       STEP {ritual.step}
                     </span>
-                    <h3 className="font-serif text-lg font-bold text-amber-100">
+                    <h3 className="font-serif text-lg font-bold text-[#4a5548]">
                       {ritual.title}
                     </h3>
                   </div>
                 </div>
-                <p className="text-white/60 text-sm leading-relaxed">
+                <p className="text-stone-500 text-sm leading-relaxed">
                   {ritual.description}
                 </p>
               </div>
@@ -489,31 +489,31 @@ export default function ChocolatePage() {
       <FrequencyBadge variant="light" full />
 
       {/* Footer */}
-      <footer className="py-12 px-4 bg-[#4a5548] text-white/70">
+      <footer className="py-12 px-4 bg-[#F5F2EB] border-t border-stone-200">
         <div className="max-w-4xl mx-auto text-center">
-          <p className="font-serif text-lg text-white/90 mb-2">MUNI 牟尼</p>
-          <p className="text-sm">在寂靜中，承接你的答案。</p>
-          <div className="mt-6 flex flex-wrap justify-center gap-6 text-sm">
-            <Link href="/" className="hover:text-white transition-colors">
+          <p className="font-serif text-lg text-[#4a5548] mb-2">MUNI 牟尼</p>
+          <p className="text-sm text-stone-500">在寂靜中，承接你的答案。</p>
+          <div className="mt-6 flex flex-wrap justify-center gap-6 text-sm text-stone-500">
+            <Link href="/" className="hover:text-[#4a5548] transition-colors">
               首頁
             </Link>
-            <Link href="/flowers" className="hover:text-white transition-colors">
+            <Link href="/flowers" className="hover:text-[#4a5548] transition-colors">
               花精百科
             </Link>
-            <Link href="/systems" className="hover:text-white transition-colors">
+            <Link href="/systems" className="hover:text-[#4a5548] transition-colors">
               療癒系統
             </Link>
-            <Link href="/essential-oil" className="hover:text-white transition-colors">
+            <Link href="/essential-oil" className="hover:text-[#4a5548] transition-colors">
               牟尼香
             </Link>
-            <Link href="/acupuncture" className="hover:text-white transition-colors">
+            <Link href="/acupuncture" className="hover:text-[#4a5548] transition-colors">
               董氏心氣神針
             </Link>
             <a
               href="https://ai.munione.co"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-white transition-colors"
+              className="hover:text-[#4a5548] transition-colors"
             >
               療癒顧問
             </a>

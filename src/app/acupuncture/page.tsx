@@ -120,15 +120,15 @@ export default function AcupuncturePage() {
       <FrequencyBadge variant="light" full />
 
       {/* Footer */}
-      <footer className="py-12 px-4 bg-[#4a5548] text-white/70">
+      <footer className="py-12 px-4 bg-[#F5F2EB] border-t border-stone-200">
         <div className="max-w-4xl mx-auto text-center">
-          <p className="font-serif text-lg text-white/90 mb-2">MUNI 牟尼</p>
-          <p className="text-sm">在寂靜中，承接你的答案。</p>
-          <div className="mt-6 flex justify-center gap-6 text-sm">
-            <Link href="/" className="hover:text-white transition-colors">首頁</Link>
-            <Link href="/flowers" className="hover:text-white transition-colors">花精百科</Link>
-            <Link href="/systems" className="hover:text-white transition-colors">療癒系統</Link>
-            <a href="https://ai.munione.co" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">療癒顧問</a>
+          <p className="font-serif text-lg text-[#4a5548] mb-2">MUNI 牟尼</p>
+          <p className="text-sm text-stone-500">在寂靜中，承接你的答案。</p>
+          <div className="mt-6 flex justify-center gap-6 text-sm text-stone-500">
+            <Link href="/" className="hover:text-[#4a5548] transition-colors">首頁</Link>
+            <Link href="/flowers" className="hover:text-[#4a5548] transition-colors">花精百科</Link>
+            <Link href="/systems" className="hover:text-[#4a5548] transition-colors">療癒系統</Link>
+            <a href="https://ai.munione.co" target="_blank" rel="noopener noreferrer" className="hover:text-[#4a5548] transition-colors">療癒顧問</a>
           </div>
         </div>
       </footer>

@@ -1,3 +1,4 @@
+'''
 import type { Metadata } from "next";
 import Link from "next/link";
 
@@ -22,10 +23,10 @@ const PRODUCTS = [
     pairing: "牛排塔塔、松露燉飯、硬質熟成起司、烤蔬菜",
     image:
       "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/lETvbLHthrnfMBOS.jpg",
-    color: "from-emerald-900/25 to-green-900/20",
-    border: "border-emerald-700/30",
-    accent: "text-emerald-400",
-    badge: "bg-emerald-900/50 text-emerald-300",
+    color: "from-green-50 to-emerald-50",
+    border: "border-stone-200",
+    accent: "text-green-700",
+    badge: "bg-green-100 text-green-700",
     highlight: true,
   },
   {
@@ -40,10 +41,10 @@ const PRODUCTS = [
     pairing: "章魚前菜、牛肝菌肉薄片、焗烤番茄、烤紅肉",
     image:
       "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/PxYNKHKkJjXQpdZb.jpg",
-    color: "from-amber-900/20 to-yellow-900/20",
-    border: "border-amber-700/30",
-    accent: "text-amber-400",
-    badge: "bg-amber-900/50 text-amber-300",
+    color: "from-amber-50 to-yellow-50",
+    border: "border-stone-200",
+    accent: "text-amber-700",
+    badge: "bg-amber-100 text-amber-700",
     highlight: false,
   },
   {
@@ -58,10 +59,10 @@ const PRODUCTS = [
     pairing: "豆子前菜、朝鮮薊燉飯、烤兔肉、山羊起司",
     image:
       "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/qtxchiSClEHHDneY.jpg",
-    color: "from-lime-900/20 to-emerald-900/15",
-    border: "border-lime-700/25",
-    accent: "text-lime-400",
-    badge: "bg-lime-900/50 text-lime-300",
+    color: "from-lime-50 to-emerald-50",
+    border: "border-stone-200",
+    accent: "text-lime-700",
+    badge: "bg-lime-100 text-lime-700",
     highlight: false,
   },
   {
@@ -76,14 +77,15 @@ const PRODUCTS = [
     pairing: "義大利麵、烤魚、新鮮沙拉、麵包佐食",
     image:
       "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/PxYNKHKkJjXQpdZb.jpg",
-    color: "from-teal-900/20 to-green-900/15",
-    border: "border-teal-700/25",
-    accent: "text-teal-400",
-    badge: "bg-teal-900/50 text-teal-300",
+    color: "from-teal-50 to-green-50",
+    border: "border-stone-200",
+    accent: "text-teal-700",
+    badge: "bg-teal-100 text-teal-700",
     highlight: false,
   },
 ];
-
+'''
+'''
 const AWARDS = [
   { name: "Flos Olei 2025", score: "99/100", desc: "全球橄欖油評鑑最高分之一" },
   {
@@ -145,31 +147,35 @@ const ESTATE_FEATURES = [
     desc: "每一瓶橄欖油都經過 MUNI Frequency Resonance™ 技術調頻，讓橄欖油中的活性分子以最和諧的頻率與你的身體共振。",
   },
 ];
-
+'''
+'''
 export default function OliveOilPage() {
   return (
-    <main className="min-h-screen bg-[#0f1a0e] text-white">
-      {/* Custom Dark Header */}
-      <header className="fixed top-0 left-0 right-0 z-50 bg-[#0f1a0e]/90 backdrop-blur-md border-b border-emerald-900/20">
+    <main className="min-h-screen bg-[#F9F7F2] text-stone-700">
+      {/* Light Theme Header */}
+      <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-stone-100">
         <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
           <Link
             href="/"
-            className="text-xl font-serif tracking-widest text-emerald-100"
+            className="font-serif text-xl font-bold text-[#4a5548]"
           >
             MUNI
           </Link>
           <nav className="flex items-center gap-4">
             <Link
               href="/systems"
-              className="text-sm text-emerald-200/70 hover:text-emerald-100 transition-colors"
+              className="text-sm text-stone-500 hover:text-[#4a5548] transition-colors"
             >
               療癒系統
             </Link>
             <Link
               href="https://ai.munione.co"
-              className="text-sm px-4 py-2 rounded-full bg-emerald-800/60 text-emerald-100 hover:bg-emerald-700/60 transition-colors flex items-center gap-1"
+              className="inline-flex items-center gap-1.5 bg-gradient-to-r from-[#9A7B4F] to-[#C4A265] hover:from-[#8A6B3F] hover:to-[#B49255] text-white rounded-full px-4 py-1.5 text-sm font-medium transition-all shadow-sm hover:shadow-md"
             >
-              <span>♡</span> MUNI 療癒顧問
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                <path fillRule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clipRule="evenodd" />
+              </svg>
+              MUNI 療癒顧問
             </Link>
           </nav>
         </div>
@@ -181,19 +187,19 @@ export default function OliveOilPage() {
       <section className="relative pt-32 pb-24 overflow-hidden">
         {/* Background glow */}
         <div className="absolute inset-0">
-          <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-emerald-900/15 rounded-full blur-[150px]" />
-          <div className="absolute top-1/3 right-1/4 w-[300px] h-[300px] bg-lime-900/10 rounded-full blur-[100px]" />
-          <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-emerald-700/30 to-transparent" />
+          <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-green-100/30 rounded-full blur-[150px]" />
+          <div className="absolute top-1/3 right-1/4 w-[300px] h-[300px] bg-lime-100/20 rounded-full blur-[100px]" />
+          <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-stone-200 to-transparent" />
         </div>
 
         <div className="relative max-w-4xl mx-auto px-4 text-center">
-          <p className="text-emerald-500/80 text-sm tracking-[0.3em] uppercase mb-6">
+          <p className="text-[#4a5548]/80 text-sm tracking-[0.3em] uppercase mb-6">
             MUNI × Fonte di Foiano
           </p>
-          <h1 className="text-4xl md:text-6xl font-serif font-light text-emerald-50 mb-6 leading-tight">
+          <h1 className="text-4xl md:text-6xl font-serif font-light text-[#4a5548] mb-6 leading-tight">
             義大利早摘初榨橄欖油
           </h1>
-          <p className="text-lg md:text-xl text-emerald-200/60 font-light max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl text-stone-500 font-light max-w-2xl mx-auto leading-relaxed">
             來自托斯卡尼 Bolgheri 的百年莊園，
             <br className="hidden md:block" />
             以早摘初榨鎖住大地最鮮活的生命能量。
@@ -203,9 +209,9 @@ export default function OliveOilPage() {
 
           {/* Decorative line */}
           <div className="mt-12 flex items-center justify-center gap-3">
-            <div className="w-12 h-px bg-emerald-700/40" />
-            <div className="w-2 h-2 rounded-full bg-emerald-600/60" />
-            <div className="w-12 h-px bg-emerald-700/40" />
+            <div className="w-12 h-px bg-stone-300" />
+            <div className="w-2 h-2 rounded-full bg-stone-400" />
+            <div className="w-12 h-px bg-stone-300" />
           </div>
         </div>
       </section>
@@ -214,47 +220,47 @@ export default function OliveOilPage() {
           ESTATE STORY SECTION
       ═══════════════════════════════════════════════════════════ */}
       <section className="py-20 relative">
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-emerald-950/10 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-green-50/20 to-transparent" />
         <div className="relative max-w-5xl mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <p className="text-emerald-500/70 text-xs tracking-[0.2em] uppercase mb-4">
+              <p className="text-[#4a5548]/70 text-xs tracking-[0.2em] uppercase mb-4">
                 The Estate
               </p>
-              <h2 className="text-2xl md:text-3xl font-serif text-emerald-50 mb-6 leading-relaxed">
+              <h2 className="text-2xl md:text-3xl font-serif text-[#4a5548] mb-6 leading-relaxed">
                 Fonte di Foiano
                 <br />
-                <span className="text-emerald-300/70 text-xl">
+                <span className="text-stone-500 text-xl">
                   自 1979 年，守護每一棵橄欖樹
                 </span>
               </h2>
-              <p className="text-emerald-200/50 leading-relaxed mb-6">
+              <p className="text-stone-500 leading-relaxed mb-6">
                 Fonte di Foiano
                 坐落於托斯卡尼最負盛名的橄欖油產區——Bolgheri，距離第勒尼安海僅
                 10
                 分鐘車程。地中海的溫暖海風與托斯卡尼丘陵的礦物土壤，孕育出世界上最優質的橄欖。
               </p>
-              <p className="text-emerald-200/50 leading-relaxed mb-6">
+              <p className="text-stone-500 leading-relaxed mb-6">
                 莊園佔地 30
                 公頃，種植超過一萬棵橄欖樹，涵蓋
                 Leccino、Frantoio、Moraiolo、Maurino 與 Leccio del Corno
                 等經典品種。家族三代人以對土地的深厚情感，堅持從採摘到裝瓶全程在莊園內完成，確保每一滴橄欖油都保留了最完整的風土表達。
               </p>
-              <p className="text-emerald-200/50 leading-relaxed">
+              <p className="text-stone-500 leading-relaxed">
                 如今，Fonte di Foiano 的橄欖油出口至全球超過 30
                 個國家，並連續多年獲得 Flos Olei 99/100
                 的頂級評分——這是全球橄欖油評鑑中的最高殊榮之一。
               </p>
             </div>
             <div className="relative">
-              <div className="rounded-2xl overflow-hidden border border-emerald-800/20">
+              <div className="rounded-2xl overflow-hidden border border-stone-200">
                 <img
                   src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/HYCNrqTGpYkndwZX.jpg"
                   alt="Fonte di Foiano 莊園橄欖園"
                   className="w-full h-80 object-cover"
                 />
               </div>
-              <div className="mt-4 rounded-2xl overflow-hidden border border-emerald-800/20">
+              <div className="mt-4 rounded-2xl overflow-hidden border border-stone-200">
                 <img
                   src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/avGHGdLXmsXBeOEf.jpg"
                   alt="Bolgheri 橄欖樹與夕陽"
@@ -272,54 +278,50 @@ export default function OliveOilPage() {
       <section className="py-20">
         <div className="max-w-5xl mx-auto px-4">
           <div className="text-center mb-16">
-            <p className="text-emerald-500/70 text-xs tracking-[0.2em] uppercase mb-4">
+            <p className="text-[#4a5548]/70 text-xs tracking-[0.2em] uppercase mb-4">
               Early Harvest
             </p>
-            <h2 className="text-3xl md:text-4xl font-serif text-emerald-50 mb-4">
-              為什麼選擇「早摘」？
+            <h2 className="text-3xl md:text-4xl font-serif text-[#4a5548] mb-4">
+              為何選擇「早摘」？
             </h2>
-            <p className="text-emerald-200/50 max-w-2xl mx-auto leading-relaxed">
-              一般橄欖油在橄欖完全成熟後才採收，而「早摘」（Early
-              Harvest）是在橄欖尚未完全成熟、多酚含量達到最高峰值時提前採摘。這意味著更少的油量產出，但換來的是遠超一般橄欖油的營養密度與風味深度。
+            <p className="text-stone-500 max-w-2xl mx-auto leading-relaxed">
+              「早摘」（Early Harvest）是指在橄欖果實由綠轉紫、尚未完全成熟時進行採收。
+              <br className="hidden md:block" />
+              這個短暫的黃金窗口期，果實的橄欖多酚、角鯊烯、維生素 E
+              等活性物質含量達到頂峰，但出油率卻最低。
+              <br className="hidden md:block" />
+              儘管犧牲了產量，Fonte di Foiano
+              堅持早摘，只為萃取最濃郁的生命能量與最鮮明的風味層次。
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="p-8 rounded-2xl border border-emerald-800/15 bg-emerald-950/10 text-center">
-              <div className="text-4xl font-serif text-emerald-400 mb-3">
-                3×
-              </div>
-              <h3 className="text-emerald-100 font-medium mb-2">
-                多酚含量
+          <div className="grid md:grid-cols-3 gap-8 text-center">
+            <div className="border border-stone-200 rounded-2xl p-8 bg-white shadow-sm">
+              <div className="text-4xl mb-4">🌿</div>
+              <h3 className="text-lg font-medium text-[#4a5548] mb-2">
+                高達 10 倍的多酚含量
               </h3>
-              <p className="text-emerald-200/40 text-sm leading-relaxed">
-                早摘橄欖油的多酚含量是一般橄欖油的 2-3
-                倍，多酚是強效抗氧化物質，有助於保護細胞免受自由基傷害。
+              <p className="text-stone-500 text-sm leading-relaxed">
+                早摘橄欖油的多酚含量是晚摘油的 5-10
+                倍，帶來更強的抗氧化能力與更鮮明的辛辣感。
               </p>
             </div>
-            <div className="p-8 rounded-2xl border border-emerald-800/15 bg-emerald-950/10 text-center">
-              <div className="text-4xl font-serif text-emerald-400 mb-3">
-                4h
-              </div>
-              <h3 className="text-emerald-100 font-medium mb-2">
-                採摘到壓榨
+            <div className="border border-stone-200 rounded-2xl p-8 bg-white shadow-sm">
+              <div className="text-4xl mb-4">💧</div>
+              <h3 className="text-lg font-medium text-[#4a5548] mb-2">
+                極低的酸度 (0.1-0.2%)
               </h3>
-              <p className="text-emerald-200/40 text-sm leading-relaxed">
-                從橄欖採摘到冷萃取壓榨不超過 4
-                小時，最大限度保留橄欖果實中的活性營養成分與新鮮風味。
+              <p className="text-stone-500 text-sm leading-relaxed">
+                遠低於歐盟特級初榨標準（0.8%），極低的酸度代表果實從採摘到壓榨過程中的完美狀態。
               </p>
             </div>
-            <div className="p-8 rounded-2xl border border-emerald-800/15 bg-emerald-950/10 text-center">
-              <div className="text-4xl font-serif text-emerald-400 mb-3">
-                27°C
-              </div>
-              <h3 className="text-emerald-100 font-medium mb-2">
-                冷萃取溫度
+            <div className="border border-stone-200 rounded-2xl p-8 bg-white shadow-sm">
+              <div className="text-4xl mb-4">🎨</div>
+              <h3 className="text-lg font-medium text-[#4a5548] mb-2">
+                無與倫比的風味層次
               </h3>
-              <p className="text-emerald-200/40 text-sm leading-relaxed">
-                全程控制在 27°C
-                以下的冷萃取工藝，搭配惰性氣體保護裝瓶，確保橄欖油中的維生素
-                E 與活性多酚不被氧化破壞。
+              <p className="text-stone-500 text-sm leading-relaxed">
+                朝鮮薊、青番茄、杏仁、芳香草本……早摘油獨有的青草氣息與複雜風味，是風土最真實的表達。
               </p>
             </div>
           </div>
@@ -330,109 +332,56 @@ export default function OliveOilPage() {
           PRODUCTS SECTION
       ═══════════════════════════════════════════════════════════ */}
       <section className="py-20 relative">
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-emerald-950/10 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-green-50/20 to-transparent" />
         <div className="relative max-w-6xl mx-auto px-4">
           <div className="text-center mb-16">
-            <p className="text-emerald-500/70 text-xs tracking-[0.2em] uppercase mb-4">
-              Products
+            <p className="text-[#4a5548]/70 text-xs tracking-[0.2em] uppercase mb-4">
+              The Collection
             </p>
-            <h2 className="text-3xl md:text-4xl font-serif text-emerald-50 mb-4">
-              嚴選橄欖油系列
+            <h2 className="text-3xl md:text-4xl font-serif text-[#4a5548] mb-4">
+              Fonte di Foiano 全系列
             </h2>
-            <p className="text-emerald-200/50 max-w-xl mx-auto">
-              每一款都經過 MUNI Frequency Resonance™ 調頻，
-              讓橄欖油中的活性分子以最和諧的頻率與你的身體對話。
+            <p className="text-stone-500 max-w-xl mx-auto">
+              從單一品種到經典混釀，每一款油都是 Bolgheri
+              風土的獨特詮釋，為你的療癒儀式帶來不同的頻率。
             </p>
           </div>
 
-          <div className="space-y-16">
-            {PRODUCTS.map((product, idx) => (
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {PRODUCTS.map((product) => (
               <div
                 key={product.id}
-                className={`relative rounded-2xl border ${product.border} bg-gradient-to-br ${product.color} overflow-hidden`}
+                className={`bg-white border border-stone-200 rounded-2xl shadow-sm hover:shadow-md transition-all flex flex-col ${product.highlight ? "lg:col-span-2" : ""}`}
               >
-                {product.highlight && (
-                  <div className="absolute top-4 right-4 z-10">
-                    <span className="text-xs px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
-                      旗艦之作
-                    </span>
-                  </div>
-                )}
-                <div className="grid md:grid-cols-2 gap-8 p-8 md:p-12">
-                  {/* Image */}
-                  <div
-                    className={`flex items-center justify-center ${
-                      idx % 2 === 1 ? "md:order-2" : ""
-                    }`}
-                  >
-                    <div className="relative w-48 h-64 md:w-56 md:h-80">
-                      <img
-                        src={product.image}
-                        alt={product.name}
-                        className="w-full h-full object-contain drop-shadow-2xl"
-                      />
-                    </div>
-                  </div>
-
-                  {/* Content */}
-                  <div
-                    className={`flex flex-col justify-center ${
-                      idx % 2 === 1 ? "md:order-1" : ""
-                    }`}
-                  >
-                    <div className="flex flex-wrap gap-2 mb-4">
-                      <span
-                        className={`text-xs px-3 py-1 rounded-full ${product.badge}`}
-                      >
-                        {product.tagline}
-                      </span>
-                    </div>
-
-                    <h3 className="text-2xl md:text-3xl font-serif text-emerald-50 mb-1">
-                      {product.name}
-                    </h3>
-                    <p className="text-xs text-emerald-200/30 tracking-wider mb-4">
-                      {product.nameZh}
-                    </p>
-
-                    <p className={`text-sm ${product.accent} mb-4 italic`}>
-                      「{product.tagline}」
-                    </p>
-
-                    <p className="text-emerald-200/50 text-sm leading-relaxed mb-6">
-                      {product.description}
-                    </p>
-
-                    {/* Aroma & Taste */}
-                    <div className="grid grid-cols-2 gap-4 mb-4">
-                      <div>
-                        <p className="text-xs text-emerald-200/30 mb-1">
-                          香氣
-                        </p>
-                        <p className="text-xs text-emerald-200/50">
-                          {product.aroma}
-                        </p>
-                      </div>
-                      <div>
-                        <p className="text-xs text-emerald-200/30 mb-1">
-                          口感
-                        </p>
-                        <p className="text-xs text-emerald-200/50">
-                          {product.taste}
-                        </p>
-                      </div>
-                    </div>
-
-                    {/* Pairing */}
+                <div className="p-6 flex-grow">
+                  <div className="flex justify-between items-start mb-4">
                     <div>
-                      <p className="text-xs text-emerald-200/30 mb-1">
-                        推薦搭配
+                      <p className={`text-xs font-semibold tracking-widest uppercase ${product.accent}`}>
+                        {product.name}
                       </p>
-                      <p className={`text-sm ${product.accent}`}>
-                        {product.pairing}
-                      </p>
+                      <h3 className="text-xl font-serif text-[#4a5548] mt-1">
+                        {product.nameZh}
+                      </h3>
+                    </div>
+                    <div className={`text-xs px-2 py-0.5 rounded-full ${product.badge}`}>
+                      {product.tagline}
                     </div>
                   </div>
+                  <p className="text-stone-500 text-sm leading-relaxed mb-4 h-24 overflow-hidden">
+                    {product.description}
+                  </p>
+                  <div className="text-xs text-stone-400 space-y-2">
+                    <p><span className="font-medium text-stone-500">香氣：</span>{product.aroma}</p>
+                    <p><span className="font-medium text-stone-500">口感：</span>{product.taste}</p>
+                    <p><span className="font-medium text-stone-500">搭配：</span>{product.pairing}</p>
+                  </div>
+                </div>
+                <div className={`bg-gradient-to-tr ${product.color} rounded-b-2xl p-4 mt-auto`}>
+                  <img
+                    src={product.image}
+                    alt={product.name}
+                    className="w-full h-48 object-contain"
+                  />
                 </div>
               </div>
             ))}
@@ -444,36 +393,21 @@ export default function OliveOilPage() {
           AWARDS SECTION
       ═══════════════════════════════════════════════════════════ */}
       <section className="py-20">
-        <div className="max-w-5xl mx-auto px-4">
-          <div className="text-center mb-16">
-            <p className="text-emerald-500/70 text-xs tracking-[0.2em] uppercase mb-4">
-              Awards
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="text-center mb-12">
+            <p className="text-[#4a5548]/70 text-xs tracking-[0.2em] uppercase mb-4">
+              Accolades
             </p>
-            <h2 className="text-3xl md:text-4xl font-serif text-emerald-50 mb-4">
-              世界級榮譽
+            <h2 className="text-3xl md:text-4xl font-serif text-[#4a5548] mb-4">
+              全球頂級評鑑的肯定
             </h2>
-            <p className="text-emerald-200/50 max-w-xl mx-auto">
-              超過十年持續獲獎，全球最權威的橄欖油評鑑機構一致肯定。
-            </p>
           </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {AWARDS.map((award, idx) => (
-              <div
-                key={idx}
-                className="p-6 rounded-xl border border-emerald-800/15 bg-emerald-950/10 hover:bg-emerald-950/20 transition-colors group"
-              >
-                <div className="flex items-baseline gap-3 mb-3">
-                  <span className="text-2xl font-serif text-emerald-400 group-hover:text-emerald-300 transition-colors">
-                    {award.score}
-                  </span>
-                </div>
-                <h3 className="text-emerald-100 font-medium mb-2">
-                  {award.name}
-                </h3>
-                <p className="text-emerald-200/40 text-sm leading-relaxed">
-                  {award.desc}
-                </p>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-center">
+            {AWARDS.map((award) => (
+              <div key={award.name} className="bg-white border border-stone-200 rounded-xl p-4 shadow-sm">
+                <p className="text-lg font-bold text-[#9A7B4F]">{award.score}</p>
+                <p className="text-sm font-semibold text-[#4a5548] mt-1">{award.name}</p>
+                <p className="text-xs text-stone-400 mt-2">{award.desc}</p>
               </div>
             ))}
           </div>
@@ -481,34 +415,21 @@ export default function OliveOilPage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════
-          ESTATE FEATURES / ENERGY FACTORS
+          ESTATE FEATURES
       ═══════════════════════════════════════════════════════════ */}
-      <section className="py-20 relative">
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-emerald-950/10 to-transparent" />
-        <div className="relative max-w-6xl mx-auto px-4">
-          <div className="text-center mb-16">
-            <p className="text-emerald-500/70 text-xs tracking-[0.2em] uppercase mb-4">
-              Energy Factors
-            </p>
-            <h2 className="text-3xl md:text-4xl font-serif text-emerald-50 mb-4">
-              六大正面能量因素
-            </h2>
-            <p className="text-emerald-200/50 max-w-xl mx-auto">
-              從橄欖園到你的餐桌，每一個環節都是能量品質的保證。
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <section className="py-20 bg-[#F5F2EB] border-y border-stone-200">
+        <div className="max-w-5xl mx-auto px-4">
+          <div className="grid md:grid-cols-3 gap-8">
             {ESTATE_FEATURES.map((feature, idx) => (
               <div
                 key={idx}
-                className="p-6 rounded-xl border border-emerald-800/15 bg-emerald-950/10 hover:bg-emerald-950/20 transition-colors group"
+                className="p-6 rounded-xl transition-colors group"
               >
                 <div className="text-3xl mb-4">{feature.icon}</div>
-                <h3 className="text-emerald-100 font-medium mb-2 group-hover:text-emerald-50 transition-colors">
+                <h3 className="text-[#4a5548] font-medium mb-2 transition-colors">
                   {feature.title}
                 </h3>
-                <p className="text-emerald-200/40 text-sm leading-relaxed">
+                <p className="text-stone-500 text-sm leading-relaxed">
                   {feature.desc}
                 </p>
               </div>
@@ -523,41 +444,41 @@ export default function OliveOilPage() {
       <section className="py-20">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-12">
-            <p className="text-emerald-500/70 text-xs tracking-[0.2em] uppercase mb-4">
+            <p className="text-[#4a5548]/70 text-xs tracking-[0.2em] uppercase mb-4">
               Harvest
             </p>
-            <h2 className="text-3xl md:text-4xl font-serif text-emerald-50 mb-4">
+            <h2 className="text-3xl md:text-4xl font-serif text-[#4a5548] mb-4">
               採收的季節
             </h2>
-            <p className="text-emerald-200/50 max-w-xl mx-auto">
+            <p className="text-stone-500 max-w-xl mx-auto">
               每年十月，Bolgheri 的橄欖園迎來最重要的時刻——
               手工採摘，在清晨露水未乾時開始，只為捕捉橄欖最鮮活的生命力。
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-4">
-            <div className="rounded-2xl overflow-hidden border border-emerald-800/20 md:row-span-2">
+            <div className="rounded-2xl overflow-hidden border border-stone-200 md:row-span-2">
               <img
                 src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/CoEbffWSmbdlxZKC.jpeg"
                 alt="橄欖採收"
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="rounded-2xl overflow-hidden border border-emerald-800/20">
+            <div className="rounded-2xl overflow-hidden border border-stone-200">
               <img
                 src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/LmQTTPntJAuWGGPk.jpg"
                 alt="Bolgheri 橄欖園風景"
                 className="w-full h-48 object-cover"
               />
             </div>
-            <div className="rounded-2xl overflow-hidden border border-emerald-800/20">
+            <div className="rounded-2xl overflow-hidden border border-stone-200">
               <img
                 src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/dVIjuYTGZTUkeDOu.jpg"
                 alt="Fonte di Foiano 全系列橄欖油"
                 className="w-full h-48 object-cover"
               />
             </div>
-            <div className="rounded-2xl overflow-hidden border border-emerald-800/20 md:col-span-2">
+            <div className="rounded-2xl overflow-hidden border border-stone-200 md:col-span-2">
               <img
                 src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/OmkZmcVIDtFWQkkI.jpeg"
                 alt="橄欖採摘過程"
@@ -572,91 +493,91 @@ export default function OliveOilPage() {
           RESONANCE MATRIX
       ═══════════════════════════════════════════════════════════ */}
       <section className="py-20 relative">
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-emerald-950/10 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-green-50/20 to-transparent" />
         <div className="relative max-w-4xl mx-auto px-4">
           <div className="text-center mb-12">
-            <p className="text-emerald-500/70 text-xs tracking-[0.2em] uppercase mb-4">
+            <p className="text-[#4a5548]/70 text-xs tracking-[0.2em] uppercase mb-4">
               Resonance Matrix
             </p>
-            <h2 className="text-3xl md:text-4xl font-serif text-emerald-50 mb-4">
+            <h2 className="text-3xl md:text-4xl font-serif text-[#4a5548] mb-4">
               橙欖油 × 牟尼香 共振搭配
             </h2>
-            <p className="text-emerald-200/50 max-w-xl mx-auto">
+            <p className="text-stone-500 max-w-xl mx-auto">
               每一款橙欖油都可搭配 MUNI 牟尼香，
               讓飲食與嗅覺的頻率同時共振，開啟完整的療癒儀式。
             </p>
           </div>
 
-          <div className="overflow-x-auto">
+          <div className="overflow-x-auto bg-white/50 border border-stone-200 rounded-2xl p-2">
             <table className="w-full border-collapse">
               <thead>
-                <tr className="border-b border-emerald-800/20">
-                  <th className="text-left py-4 px-4 text-emerald-200/40 text-xs tracking-wider uppercase">
+                <tr className="border-b border-stone-200">
+                  <th className="text-left py-3 px-4 text-stone-400 text-xs tracking-wider uppercase font-normal">
                     橄欖油
                   </th>
-                  <th className="text-left py-4 px-4 text-emerald-200/40 text-xs tracking-wider uppercase">
+                  <th className="text-left py-3 px-4 text-stone-400 text-xs tracking-wider uppercase font-normal">
                     牟尼香
                   </th>
-                  <th className="text-left py-4 px-4 text-emerald-200/40 text-xs tracking-wider uppercase">
+                  <th className="text-left py-3 px-4 text-stone-400 text-xs tracking-wider uppercase font-normal">
                     共振維度
                   </th>
-                  <th className="text-left py-4 px-4 text-emerald-200/40 text-xs tracking-wider uppercase">
+                  <th className="text-left py-3 px-4 text-stone-400 text-xs tracking-wider uppercase font-normal">
                     建議時機
                   </th>
                 </tr>
               </thead>
               <tbody>
-                <tr className="border-b border-emerald-800/10">
-                  <td className="py-4 px-4 text-emerald-100 text-sm">
+                <tr className="border-b border-stone-100">
+                  <td className="py-4 px-4 text-stone-700 text-sm font-medium">
                     Grand Cru
                   </td>
-                  <td className="py-4 px-4 text-emerald-400 text-sm">
+                  <td className="py-4 px-4 text-green-700 text-sm">
                     牟尼香
                   </td>
-                  <td className="py-4 px-4 text-emerald-200/50 text-sm">
+                  <td className="py-4 px-4 text-stone-500 text-sm">
                     深層滋養・守護能量
                   </td>
-                  <td className="py-4 px-4 text-emerald-200/40 text-sm">
+                  <td className="py-4 px-4 text-stone-400 text-sm">
                     需要深層滋養與保護的重要時刻
                   </td>
                 </tr>
-                <tr className="border-b border-emerald-800/10">
-                  <td className="py-4 px-4 text-emerald-100 text-sm">1979</td>
-                  <td className="py-4 px-4 text-amber-400 text-sm">
+                <tr className="border-b border-stone-100">
+                  <td className="py-4 px-4 text-stone-700 text-sm font-medium">1979</td>
+                  <td className="py-4 px-4 text-amber-700 text-sm">
                     牟尼香
                   </td>
-                  <td className="py-4 px-4 text-emerald-200/50 text-sm">
+                  <td className="py-4 px-4 text-stone-500 text-sm">
                     穩定扎根・回到中心
                   </td>
-                  <td className="py-4 px-4 text-emerald-200/40 text-sm">
+                  <td className="py-4 px-4 text-stone-400 text-sm">
                     需要穩定、扎根的力量
                   </td>
                 </tr>
-                <tr className="border-b border-emerald-800/10">
-                  <td className="py-4 px-4 text-emerald-100 text-sm">
+                <tr className="border-b border-stone-100">
+                  <td className="py-4 px-4 text-stone-700 text-sm font-medium">
                     Riflessi
                   </td>
-                  <td className="py-4 px-4 text-lime-400 text-sm">
+                  <td className="py-4 px-4 text-lime-700 text-sm">
                     牟尼香
                   </td>
-                  <td className="py-4 px-4 text-emerald-200/50 text-sm">
+                  <td className="py-4 px-4 text-stone-500 text-sm">
                     輕盈喜悅・綻放光彩
                   </td>
-                  <td className="py-4 px-4 text-emerald-200/40 text-sm">
+                  <td className="py-4 px-4 text-stone-400 text-sm">
                     想要由內而外感受喜悅
                   </td>
                 </tr>
-                <tr className="border-b border-emerald-800/10">
-                  <td className="py-4 px-4 text-emerald-100 text-sm">
+                <tr>
+                  <td className="py-4 px-4 text-stone-700 text-sm font-medium">
                     Toscano PGI
                   </td>
-                  <td className="py-4 px-4 text-teal-400 text-sm">
+                  <td className="py-4 px-4 text-teal-700 text-sm">
                     牟尼香
                   </td>
-                  <td className="py-4 px-4 text-emerald-200/50 text-sm">
+                  <td className="py-4 px-4 text-stone-500 text-sm">
                     安定平和・日常滋養
                   </td>
-                  <td className="py-4 px-4 text-emerald-200/40 text-sm">
+                  <td className="py-4 px-4 text-stone-400 text-sm">
                     日常飲食中的安定儀式
                   </td>
                 </tr>
@@ -670,12 +591,12 @@ export default function OliveOilPage() {
           CTA SECTION
       ═══════════════════════════════════════════════════════════ */}
       <section className="py-24 relative">
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-emerald-950/15 to-[#0f1a0e]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-green-50/30 to-[#F9F7F2]" />
         <div className="relative max-w-3xl mx-auto px-4 text-center">
-          <h2 className="text-2xl md:text-3xl font-serif text-emerald-50 mb-6">
+          <h2 className="text-2xl md:text-3xl font-serif text-[#4a5548] mb-6">
             想知道哪款橄欖油最適合你此刻的狀態？
           </h2>
-          <p className="text-emerald-200/50 mb-10 leading-relaxed">
+          <p className="text-stone-500 mb-10 leading-relaxed">
             告訴 MUNI 療癒顧問你現在的身體感受與飲食需求，
             <br className="hidden md:block" />
             AI 會為你推薦最適合的橙欖油方案。
@@ -683,13 +604,16 @@ export default function OliveOilPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="https://ai.munione.co"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-gradient-to-r from-emerald-700 to-emerald-600 text-white font-medium hover:from-emerald-600 hover:to-emerald-500 transition-all shadow-lg shadow-emerald-900/30"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-gradient-to-r from-[#9A7B4F] to-[#C4A265] text-white font-medium hover:from-[#8A6B3F] hover:to-[#B49255] transition-all shadow-lg shadow-yellow-800/10"
             >
-              <span>♡</span> 問問 MUNI 療癒顧問
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fillRule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clipRule="evenodd" />
+              </svg>
+              問問 MUNI 療癒顧問
             </Link>
             <Link
               href="/systems"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full border border-emerald-700/30 text-emerald-200/70 hover:text-emerald-100 hover:border-emerald-600/50 transition-all"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full border border-[#4a5548] text-[#4a5548] hover:bg-[#4a5548] hover:text-white transition-all"
             >
               探索更多 MUNI 療癒系統 →
             </Link>
@@ -698,55 +622,55 @@ export default function OliveOilPage() {
       </section>
 
       {/* Frequency Badge */}
-      <FrequencyBadge variant="dark" full />
+      <FrequencyBadge variant="light" full />
 
       {/* Footer */}
-      <footer className="py-12 border-t border-emerald-900/20">
+      <footer className="py-12 bg-[#F5F2EB] border-t border-stone-200">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <p className="text-xl font-serif text-emerald-100 mb-2">MUNI 牟尼</p>
-          <p className="text-emerald-200/30 text-sm">
+          <p className="text-xl font-serif text-[#4a5548] mb-2">MUNI 牟尼</p>
+          <p className="text-stone-400 text-sm">
             在寂靜中，承接你的答案。
           </p>
-          <div className="mt-6 flex flex-wrap justify-center gap-6 text-xs text-emerald-200/20">
+          <div className="mt-6 flex flex-wrap justify-center gap-6 text-xs text-stone-500">
             <Link
               href="/"
-              className="hover:text-emerald-200/50 transition-colors"
+              className="hover:text-[#4a5548] transition-colors"
             >
               首頁
             </Link>
             <Link
               href="/flowers"
-              className="hover:text-emerald-200/50 transition-colors"
+              className="hover:text-[#4a5548] transition-colors"
             >
               花精百科
             </Link>
             <Link
               href="/essential-oil"
-              className="hover:text-emerald-200/50 transition-colors"
+              className="hover:text-[#4a5548] transition-colors"
             >
               牟尼香
             </Link>
             <Link
               href="/ginseng"
-              className="hover:text-emerald-200/50 transition-colors"
+              className="hover:text-[#4a5548] transition-colors"
             >
               人蔘療癒
             </Link>
             <Link
               href="/wine"
-              className="hover:text-emerald-200/50 transition-colors"
+              className="hover:text-[#4a5548] transition-colors"
             >
               葡萄酒療癒
             </Link>
             <Link
               href="/frequency"
-              className="hover:text-emerald-200/50 transition-colors"
+              className="hover:text-[#4a5548] transition-colors"
             >
               獨家技術
             </Link>
             <Link
               href="/systems"
-              className="hover:text-emerald-200/50 transition-colors"
+              className="hover:text-[#4a5548] transition-colors"
             >
               療癒系統
             </Link>
@@ -756,3 +680,4 @@ export default function OliveOilPage() {
     </main>
   );
 }
+'''"))

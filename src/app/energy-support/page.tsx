@@ -291,20 +291,20 @@ function FooterCTA() {
 // Footer
 function Footer() {
   return (
-    <footer className="bg-[#4a5548] text-white py-12">
+    <footer className="bg-[#F5F2EB] border-t border-stone-200 py-12">
       <div className="max-w-6xl mx-auto px-4 text-center">
-        <p className="font-serif text-xl mb-4">MUNI</p>
-        <p className="text-stone-300 text-sm">
+        <p className="font-serif text-xl text-[#4a5548] mb-4">MUNI</p>
+        <p className="text-stone-500 text-sm">
           以自然素材，支持身心靈的能量穩定與修復
         </p>
         <div className="mt-6 flex justify-center gap-6">
-          <Link href="/" className="text-stone-300 hover:text-white transition-colors">
+          <Link href="/" className="text-stone-500 hover:text-[#4a5548] transition-colors">
             首頁
           </Link>
-          <Link href="/draw" className="text-stone-300 hover:text-white transition-colors">
+          <Link href="/draw" className="text-stone-500 hover:text-[#4a5548] transition-colors">
             抽牌
           </Link>
-          <Link href="/flowers" className="text-stone-300 hover:text-white transition-colors">
+          <Link href="/flowers" className="text-stone-500 hover:text-[#4a5548] transition-colors">
             牟尼花精百科
           </Link>
         </div>
