@@ -7,6 +7,16 @@ const nextConfig: NextConfig = {
   env: {
     NEXT_PUBLIC_BASE_URL: "https://www.munione.co",
   },
+  // 允許外部圖片域名
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "files.manuscdn.com",
+        pathname: "/**",
+      },
+    ],
+  },
 };
 
 export default nextConfig;

@@ -21,6 +21,12 @@ export function Header() {
             {ZH.nav.startDraw}
           </Link>
           <Link 
+            href="/tarot" 
+            className="text-stone-600 hover:text-[#4a5548] text-sm font-medium transition-colors hidden sm:inline"
+          >
+            牟尼塔羅牌
+          </Link>
+          <Link 
             href="/flowers" 
             className="text-stone-600 hover:text-[#4a5548] text-sm font-medium transition-colors hidden md:inline"
           >
