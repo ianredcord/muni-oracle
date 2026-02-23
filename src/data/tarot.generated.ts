@@ -636,7 +636,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "swords",
     suitZh: "寶劍",
     flower: "Gentian 龍膽",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/hUhmUcFcFZmmZZNq.jpg",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/hwqUtIUbFrciJhHX.jpg",
   },
   {
     id: 62,
