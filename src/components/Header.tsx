@@ -33,6 +33,12 @@ export function Header() {
             {ZH.nav.flowerIndex}
           </Link>
           <Link 
+            href="/tarot-encyclopedia" 
+            className="text-stone-600 hover:text-[#4a5548] text-sm font-medium transition-colors hidden md:inline"
+          >
+            牟尼塔羅牌百科
+          </Link>
+          <Link 
             href="/energy-support" 
             className="text-stone-600 hover:text-[#4a5548] text-sm font-medium transition-colors hidden md:inline"
           >
