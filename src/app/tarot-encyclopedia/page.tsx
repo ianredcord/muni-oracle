@@ -1,20 +1,98 @@
-import { TAROT_CARDS, SUIT_NAMES, type TarotSuit } from "@/data/tarot.generated";
+import { TAROT_CARDS, type TarotCard } from "@/data/tarot.generated";
 import Image from "next/image";
 import Link from "next/link";
 import { Header } from "@/components/Header";
 import FrequencyBadge from "@/components/FrequencyBadge";
 
-export default function TarotEncyclopediaPage() {
-  // 按花色分組
-  const suits: TarotSuit[] = ["major", "wands", "cups", "swords", "pentacles"];
+// 宮廷牌關鍵字
+const COURT_KEYWORDS = ["King", "Queen", "Knight", "Page"];
 
-  const suitIcons: Record<TarotSuit, string> = {
-    major: "✦",
-    wands: "🔥",
-    cups: "💧",
-    swords: "🌬",
-    pentacles: "🌿",
-  };
+function isCourt(card: TarotCard): boolean {
+  return card.suit !== "major" && COURT_KEYWORDS.some(k => card.nameEn.startsWith(k + " "));
+}
+
+function isNumber(card: TarotCard): boolean {
+  return card.suit !== "major" && !isCourt(card);
+}
+
+// 三大分類
+type Category = {
+  key: string;
+  title: string;
+  subtitle: string;
+  icon: string;
+  cards: TarotCard[];
+};
+
+function buildCategories(): Category[] {
+  const major = TAROT_CARDS.filter(c => c.suit === "major");
+  const court = TAROT_CARDS.filter(c => isCourt(c));
+  const number = TAROT_CARDS.filter(c => isNumber(c));
+
+  return [
+    {
+      key: "major",
+      title: "大秘儀",
+      subtitle: "Major Arcana — 靈魂旅程的 22 個原型",
+      icon: "✦",
+      cards: major,
+    },
+    {
+      key: "court",
+      title: "宮廷牌",
+      subtitle: "Court Cards — 國王、皇后、騎士、侍者",
+      icon: "👑",
+      cards: court,
+    },
+    {
+      key: "number",
+      title: "數字牌",
+      subtitle: "Number Cards — 日常生活的 40 種面向",
+      icon: "✧",
+      cards: number,
+    },
+  ];
+}
+
+function CardGrid({ cards }: { cards: TarotCard[] }) {
+  return (
+    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 md:gap-5">
+      {cards.map((card) => (
+        <Link
+          key={card.id}
+          href={`/tarot-encyclopedia/${card.slug}`}
+          className="group"
+        >
+          <div className="bg-white/80 backdrop-blur-sm rounded-xl overflow-hidden shadow-sm border border-stone-100 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+            {/* 圖片 */}
+            <div className="relative aspect-[1/1.79] overflow-hidden">
+              <Image
+                src={card.image}
+                alt={card.nameZh}
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-500"
+                sizes="(max-width: 640px) 45vw, (max-width: 768px) 30vw, (max-width: 1024px) 22vw, 16vw"
+              />
+            </div>
+            
+            {/* 名稱 */}
+            <div className="p-3 text-center">
+              <h3 className="text-sm font-medium text-[#4a5548] truncate">
+                {card.nameZh}
+              </h3>
+              <p className="text-xs text-stone-400 mt-0.5 truncate">
+                {card.nameEn}
+              </p>
+            </div>
+          </div>
+        </Link>
+      ))}
+    </div>
+  );
+}
+
+export default function TarotEncyclopediaPage() {
+  const categories = buildCategories();
 
   return (
     <div className="min-h-screen bg-[#F9F7F2] text-stone-800">
@@ -47,58 +125,41 @@ export default function TarotEncyclopediaPage() {
           </p>
         </header>
 
-        {/* 按花色分組展示 */}
-        {suits.map((suit) => {
-          const cardsInSuit = TAROT_CARDS.filter(c => c.suit === suit);
-          return (
-            <section key={suit} className="mb-14">
-              {/* 花色標題 */}
-              <div className="flex items-center gap-3 mb-6">
-                <span className="text-2xl">{suitIcons[suit]}</span>
-                <div>
-                  <h2 className="font-serif text-xl md:text-2xl font-bold text-[#4a5548]">
-                    {SUIT_NAMES[suit]}
-                  </h2>
-                  <p className="text-stone-400 text-sm">{cardsInSuit.length} 張</p>
-                </div>
-              </div>
+        {/* 三大分類快速導航 */}
+        <div className="flex flex-wrap justify-center gap-3 mb-12">
+          {categories.map((cat) => (
+            <a
+              key={cat.key}
+              href={`#${cat.key}`}
+              className="flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/80 border border-stone-200 hover:border-[#9A7B4F]/40 hover:bg-[#9A7B4F]/5 transition-all text-sm text-[#4a5548] font-medium shadow-sm"
+            >
+              <span>{cat.icon}</span>
+              <span>{cat.title}</span>
+              <span className="text-stone-400 text-xs">{cat.cards.length} 張</span>
+            </a>
+          ))}
+        </div>
 
-              {/* 牌卡網格 */}
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 md:gap-5">
-                {cardsInSuit.map((card) => (
-                  <Link
-                    key={card.id}
-                    href={`/tarot-encyclopedia/${card.slug}`}
-                    className="group"
-                  >
-                    <div className="bg-white/80 backdrop-blur-sm rounded-xl overflow-hidden shadow-sm border border-stone-100 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
-                      {/* 圖片 */}
-                      <div className="relative aspect-[1/1.79] overflow-hidden">
-                        <Image
-                          src={card.image}
-                          alt={card.nameZh}
-                          fill
-                          className="object-cover group-hover:scale-105 transition-transform duration-500"
-                          sizes="(max-width: 640px) 45vw, (max-width: 768px) 30vw, (max-width: 1024px) 22vw, 16vw"
-                        />
-                      </div>
-                      
-                      {/* 名稱 */}
-                      <div className="p-3 text-center">
-                        <h3 className="text-sm font-medium text-[#4a5548] truncate">
-                          {card.nameZh}
-                        </h3>
-                        <p className="text-xs text-stone-400 mt-0.5 truncate">
-                          {card.nameEn}
-                        </p>
-                      </div>
-                    </div>
-                  </Link>
-                ))}
+        {/* 按三大分類展示 */}
+        {categories.map((cat) => (
+          <section key={cat.key} id={cat.key} className="mb-16 scroll-mt-24">
+            {/* 分類標題 */}
+            <div className="flex items-center gap-3 mb-2">
+              <span className="text-2xl">{cat.icon}</span>
+              <div>
+                <h2 className="font-serif text-xl md:text-2xl font-bold text-[#4a5548]">
+                  {cat.title}
+                </h2>
+                <p className="text-stone-400 text-sm">{cat.cards.length} 張</p>
               </div>
-            </section>
-          );
-        })}
+            </div>
+            <p className="text-stone-500 text-sm mb-6 ml-10">
+              {cat.subtitle}
+            </p>
+
+            <CardGrid cards={cat.cards} />
+          </section>
+        ))}
 
         {/* 底部操作 */}
         <div className="mt-12 text-center">
