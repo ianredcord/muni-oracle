@@ -91,7 +91,7 @@ function ResultClient(props: { cardSlug: string }) {
         shareText: shareText.ig || shareText.fb,
       });
     } catch (error) {
-      console.error("產生圖片失敗:", error);
+      void error;
       alert("產生圖片失敗，請稍後再試");
     } finally {
       setIsGeneratingImage(false);
@@ -107,7 +107,7 @@ function ResultClient(props: { cardSlug: string }) {
       setShowCopyToast(true);
       setTimeout(() => setShowCopyToast(false), 2000);
     } catch (error) {
-      console.error("複製失敗:", error);
+      void error;
       // Fallback for older browsers
       const textArea = document.createElement("textarea");
       textArea.value = textToCopy;
@@ -132,6 +132,7 @@ function ResultClient(props: { cardSlug: string }) {
             alt="Background"
             fill
             className="object-cover opacity-20"
+            sizes="100vw"
             priority
           />
           <div className="absolute inset-0 bg-gradient-to-b from-white/40 via-transparent to-[#F9F7F2]" />

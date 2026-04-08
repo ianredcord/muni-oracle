@@ -44,6 +44,7 @@ export default function TarotClient() {
           alt="Background"
           fill
           className="object-cover opacity-15"
+          sizes="100vw"
           priority
         />
         <div className="absolute inset-0 bg-gradient-to-b from-white/60 via-[#F9F7F2]/80 to-[#F9F7F2]" />
