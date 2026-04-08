@@ -36,7 +36,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "major",
     suitZh: "大秘儀",
     flower: "Walnut 胡桃",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/khDaMmvQwDryUzlO.jpg",
+    image: "/images/products/khDaMmvQwDryUzlO.jpg",
   },
   {
     id: 2,
@@ -46,7 +46,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "major",
     suitZh: "大秘儀",
     flower: "Cerato 水蕗草",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/JtsxUDrqlasKmpjd.jpg",
+    image: "/images/products/JtsxUDrqlasKmpjd.jpg",
   },
   {
     id: 3,
@@ -56,7 +56,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "major",
     suitZh: "大秘儀",
     flower: "Water Violet 水堇",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/IjboVtNfQhYxNwhv.jpg",
+    image: "/images/products/IjboVtNfQhYxNwhv.jpg",
   },
   {
     id: 4,
@@ -66,7 +66,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "major",
     suitZh: "大秘儀",
     flower: "Chicory 菊苣",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/nIQyJkhvXgsdoceO.jpg",
+    image: "/images/products/nIQyJkhvXgsdoceO.jpg",
   },
   {
     id: 5,
@@ -76,7 +76,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "major",
     suitZh: "大秘儀",
     flower: "Vine 葡萄藤",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/uBUUpxbzFMfTOVgk.jpg",
+    image: "/images/products/uBUUpxbzFMfTOVgk.jpg",
   },
   {
     id: 6,
@@ -86,7 +86,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "major",
     suitZh: "大秘儀",
     flower: "Rock Water 岩泉水",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/AJnerMJMMAHtFEle.jpg",
+    image: "/images/products/AJnerMJMMAHtFEle.jpg",
   },
   {
     id: 7,
@@ -96,7 +96,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "major",
     suitZh: "大秘儀",
     flower: "Scleranthus 線球草",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/ZmUfRtWaJbRtuVQL.jpg",
+    image: "/images/products/ZmUfRtWaJbRtuVQL.jpg",
   },
   {
     id: 8,
@@ -106,7 +106,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "major",
     suitZh: "大秘儀",
     flower: "Scleranthus 線球草",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/orsvdETejMgpJZkZ.jpg",
+    image: "/images/products/orsvdETejMgpJZkZ.jpg",
   },
   {
     id: 9,
@@ -116,7 +116,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "major",
     suitZh: "大秘儀",
     flower: "Rock Rose 岩玫瑰",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/zJBeCCyAwZZiohIz.jpg",
+    image: "/images/products/zJBeCCyAwZZiohIz.jpg",
   },
   {
     id: 10,
@@ -126,7 +126,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "major",
     suitZh: "大秘儀",
     flower: "Clematis 鐵線蓮",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/HWkXBfxAMFTsufSD.jpg",
+    image: "/images/products/HWkXBfxAMFTsufSD.jpg",
   },
   {
     id: 11,
@@ -136,7 +136,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "major",
     suitZh: "大秘儀",
     flower: "Hornbeam 鵝耳櫪",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/KFoJPgWLdFvOIxOu.jpg",
+    image: "/images/products/KFoJPgWLdFvOIxOu.jpg",
   },
   {
     id: 12,
@@ -146,7 +146,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "major",
     suitZh: "大秘儀",
     flower: "Crab Apple 野生酸蘋果",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/RmhEMtqyoYMuZpUe.jpg",
+    image: "/images/products/RmhEMtqyoYMuZpUe.jpg",
   },
   {
     id: 13,
@@ -156,7 +156,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "major",
     suitZh: "大秘儀",
     flower: "Wild Rose 野玫瑰",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/UDUpArogEMsDypUt.jpg",
+    image: "/images/products/UDUpArogEMsDypUt.jpg",
   },
   {
     id: 14,
@@ -166,7 +166,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "major",
     suitZh: "大秘儀",
     flower: "Honeysuckle 忍冬",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/UpdckGAbRUVMtCoW.jpg",
+    image: "/images/products/UpdckGAbRUVMtCoW.jpg",
   },
   {
     id: 15,
@@ -176,7 +176,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "major",
     suitZh: "大秘儀",
     flower: "Agrimony 龍芽草",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/NENQsxQhaemUEqsW.jpg",
+    image: "/images/products/NENQsxQhaemUEqsW.jpg",
   },
   {
     id: 16,
@@ -186,7 +186,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "major",
     suitZh: "大秘儀",
     flower: "Chestnut Bud 栗芽",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/anXwmLnKEMTgvUTI.jpg",
+    image: "/images/products/anXwmLnKEMTgvUTI.jpg",
   },
   {
     id: 17,
@@ -196,7 +196,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "major",
     suitZh: "大秘儀",
     flower: "Star of Bethlehem 聖星百合",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/uPHIYbjSeBLBAXEX.jpg",
+    image: "/images/products/uPHIYbjSeBLBAXEX.jpg",
   },
   {
     id: 18,
@@ -206,7 +206,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "major",
     suitZh: "大秘儀",
     flower: "Gorse 荊豆",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/KRvXXKfouVjwDZYi.jpg",
+    image: "/images/products/KRvXXKfouVjwDZYi.jpg",
   },
   {
     id: 19,
@@ -216,7 +216,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "major",
     suitZh: "大秘儀",
     flower: "Aspen 白楊",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/gKgClhCpDVvRxmeg.jpg",
+    image: "/images/products/gKgClhCpDVvRxmeg.jpg",
   },
   {
     id: 20,
@@ -226,7 +226,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "major",
     suitZh: "大秘儀",
     flower: "Mustard 芥末花",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/jIdmhUkSkgMpAoqa.jpg",
+    image: "/images/products/jIdmhUkSkgMpAoqa.jpg",
   },
   {
     id: 21,
@@ -236,7 +236,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "major",
     suitZh: "大秘儀",
     flower: "Sweet Chestnut 甜栗花",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/gVfuKOkKuQaJwQcn.jpg",
+    image: "/images/products/gVfuKOkKuQaJwQcn.jpg",
   },
   {
     id: 22,
@@ -246,7 +246,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "major",
     suitZh: "大秘儀",
     flower: "Larch 落葉松",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/ZnWqlpBHIaToIIyR.jpg",
+    image: "/images/products/ZnWqlpBHIaToIIyR.jpg",
   },
   {
     id: 23,
@@ -256,7 +256,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "wands",
     suitZh: "權杖",
     flower: "Clematis 鐵線蓮",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/sbdEMOvJngnIbfPA.jpg",
+    image: "/images/products/sbdEMOvJngnIbfPA.jpg",
   },
   {
     id: 24,
@@ -266,7 +266,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "wands",
     suitZh: "權杖",
     flower: "Scleranthus 線球草",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/cxIIayLpTMhFxNwY.jpg",
+    image: "/images/products/cxIIayLpTMhFxNwY.jpg",
   },
   {
     id: 25,
@@ -276,7 +276,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "wands",
     suitZh: "權杖",
     flower: "Hornbeam 鵝耳櫪",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/SzmnSGzZhRWBXsUX.jpg",
+    image: "/images/products/SzmnSGzZhRWBXsUX.jpg",
   },
   {
     id: 26,
@@ -286,7 +286,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "wands",
     suitZh: "權杖",
     flower: "Agrimony 龍芽草",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/BgZNrVrdhNxtcqKu.jpg",
+    image: "/images/products/BgZNrVrdhNxtcqKu.jpg",
   },
   {
     id: 27,
@@ -296,7 +296,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "wands",
     suitZh: "權杖",
     flower: "Holly 冬青",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/dKvvIonBcqjinqyC.jpg",
+    image: "/images/products/dKvvIonBcqjinqyC.jpg",
   },
   {
     id: 28,
@@ -306,7 +306,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "wands",
     suitZh: "權杖",
     flower: "Heather 石楠",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/LXPXhrYkODVUPWOd.jpg",
+    image: "/images/products/LXPXhrYkODVUPWOd.jpg",
   },
   {
     id: 29,
@@ -316,7 +316,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "wands",
     suitZh: "權杖",
     flower: "Centaury 矢車菊",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/ZYthHupQLxkBOJIF.jpg",
+    image: "/images/products/ZYthHupQLxkBOJIF.jpg",
   },
   {
     id: 30,
@@ -326,7 +326,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "wands",
     suitZh: "權杖",
     flower: "Impatiens 鳳仙花",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/CTOhELyHLhIFxZPc.jpg",
+    image: "/images/products/CTOhELyHLhIFxZPc.jpg",
   },
   {
     id: 31,
@@ -336,7 +336,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "wands",
     suitZh: "權杖",
     flower: "Oak 橡樹",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/WUFbTvtZWEnFUNSU.jpg",
+    image: "/images/products/WUFbTvtZWEnFUNSU.jpg",
   },
   {
     id: 32,
@@ -346,7 +346,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "wands",
     suitZh: "權杖",
     flower: "Elm 榆樹",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/AoZsJcsbMQnUioRD.jpg",
+    image: "/images/products/AoZsJcsbMQnUioRD.jpg",
   },
   {
     id: 33,
@@ -356,7 +356,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "wands",
     suitZh: "權杖",
     flower: "Vervain 馬鞭草",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/WAAFodSjEiUniMrn.jpg",
+    image: "/images/products/WAAFodSjEiUniMrn.jpg",
   },
   {
     id: 34,
@@ -366,7 +366,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "wands",
     suitZh: "權杖",
     flower: "Impatiens 鳳仙花",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/FCacACEgtSQHjQQS.jpg",
+    image: "/images/products/FCacACEgtSQHjQQS.jpg",
   },
   {
     id: 35,
@@ -376,7 +376,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "wands",
     suitZh: "權杖",
     flower: "Holly 冬青",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/aKZWjTttxPyEgSPf.jpg",
+    image: "/images/products/aKZWjTttxPyEgSPf.jpg",
   },
   {
     id: 36,
@@ -386,7 +386,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "wands",
     suitZh: "權杖",
     flower: "Beech 山毛櫸",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/yexkYwEKKXJSBEuL.jpg",
+    image: "/images/products/yexkYwEKKXJSBEuL.jpg",
   },
   {
     id: 37,
@@ -396,7 +396,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "cups",
     suitZh: "聖杯",
     flower: "Star of Bethlehem 聖星百合",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/KCmATnavlGFRrNhJ.jpg",
+    image: "/images/products/KCmATnavlGFRrNhJ.jpg",
   },
   {
     id: 38,
@@ -406,7 +406,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "cups",
     suitZh: "聖杯",
     flower: "Chicory 菊苣",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/yvsDkNxvtAIJIteD.jpg",
+    image: "/images/products/yvsDkNxvtAIJIteD.jpg",
   },
   {
     id: 39,
@@ -416,7 +416,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "cups",
     suitZh: "聖杯",
     flower: "Vervain 馬鞭草",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/fZXlQUpQsSGhBArb.jpg",
+    image: "/images/products/fZXlQUpQsSGhBArb.jpg",
   },
   {
     id: 40,
@@ -426,7 +426,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "cups",
     suitZh: "聖杯",
     flower: "Wild Rose 野玫瑰",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/orVJfFEzxItZBGKE.jpg",
+    image: "/images/products/orVJfFEzxItZBGKE.jpg",
   },
   {
     id: 41,
@@ -436,7 +436,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "cups",
     suitZh: "聖杯",
     flower: "Honeysuckle 忍冬",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/SxEtqqwLicqDbKKX.jpg",
+    image: "/images/products/SxEtqqwLicqDbKKX.jpg",
   },
   {
     id: 42,
@@ -446,7 +446,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "cups",
     suitZh: "聖杯",
     flower: "Chestnut Bud 栗芽",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/mqVfIvppbpwmPecI.jpg",
+    image: "/images/products/mqVfIvppbpwmPecI.jpg",
   },
   {
     id: 43,
@@ -456,7 +456,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "cups",
     suitZh: "聖杯",
     flower: "Cerato 水蕗草",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/QOPNkAKRSqcspGUK.jpg",
+    image: "/images/products/QOPNkAKRSqcspGUK.jpg",
   },
   {
     id: 44,
@@ -466,7 +466,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "cups",
     suitZh: "聖杯",
     flower: "Walnut 胡桃",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/KDElUTjrORifQNVr.jpg",
+    image: "/images/products/KDElUTjrORifQNVr.jpg",
   },
   {
     id: 45,
@@ -476,7 +476,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "cups",
     suitZh: "聖杯",
     flower: "Pine 松樹",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/PrNJlblySyimeUch.jpg",
+    image: "/images/products/PrNJlblySyimeUch.jpg",
   },
   {
     id: 46,
@@ -486,7 +486,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "cups",
     suitZh: "聖杯",
     flower: "Rescue Remedy 急救花精",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/FwnjFKGpOziTVNgE.jpg",
+    image: "/images/products/FwnjFKGpOziTVNgE.jpg",
   },
   {
     id: 47,
@@ -496,7 +496,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "cups",
     suitZh: "聖杯",
     flower: "Chestnut Bud 栗芽",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/xjgoRQiQhFnJcjam.jpg",
+    image: "/images/products/xjgoRQiQhFnJcjam.jpg",
   },
   {
     id: 48,
@@ -506,7 +506,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "cups",
     suitZh: "聖杯",
     flower: "Honeysuckle 忍冬",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/TIAwLEGWjCWovpCX.jpg",
+    image: "/images/products/TIAwLEGWjCWovpCX.jpg",
   },
   {
     id: 49,
@@ -516,7 +516,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "cups",
     suitZh: "聖杯",
     flower: "Chicory 菊苣",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/fjrdjGgcKLImetUA.jpg",
+    image: "/images/products/fjrdjGgcKLImetUA.jpg",
   },
   {
     id: 50,
@@ -526,7 +526,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "cups",
     suitZh: "聖杯",
     flower: "Heather 石楠",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/eVoTNRbuHWSTMTQF.jpg",
+    image: "/images/products/eVoTNRbuHWSTMTQF.jpg",
   },
   {
     id: 51,
@@ -536,7 +536,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "swords",
     suitZh: "寶劍",
     flower: "Crab Apple 野生酸蘋果",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/RXXcdGqFBIqEDOGx.jpg",
+    image: "/images/products/RXXcdGqFBIqEDOGx.jpg",
   },
   {
     id: 52,
@@ -546,7 +546,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "swords",
     suitZh: "寶劍",
     flower: "Aspen 白楊",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/ChzzuYVuPHXrSYEE.jpg",
+    image: "/images/products/ChzzuYVuPHXrSYEE.jpg",
   },
   {
     id: 53,
@@ -556,7 +556,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "swords",
     suitZh: "寶劍",
     flower: "Willow 柳樹",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/nhHEnAKBjZbMvCQZ.jpg",
+    image: "/images/products/nhHEnAKBjZbMvCQZ.jpg",
   },
   {
     id: 54,
@@ -566,7 +566,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "swords",
     suitZh: "寶劍",
     flower: "Olive 橄欖",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/mllhswRzcGyKUlXw.jpg",
+    image: "/images/products/mllhswRzcGyKUlXw.jpg",
   },
   {
     id: 55,
@@ -576,7 +576,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "swords",
     suitZh: "寶劍",
     flower: "Vine 葡萄藤",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/QycHlHvZMMBUKbwi.jpg",
+    image: "/images/products/QycHlHvZMMBUKbwi.jpg",
   },
   {
     id: 56,
@@ -586,7 +586,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "swords",
     suitZh: "寶劍",
     flower: "Water Violet 水堇",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/uQaYdRShuNhGQNNJ.jpg",
+    image: "/images/products/uQaYdRShuNhGQNNJ.jpg",
   },
   {
     id: 57,
@@ -596,7 +596,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "swords",
     suitZh: "寶劍",
     flower: "Cherry Plum 櫻桃李",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/UfyExIVkmZdtUZWK.jpg",
+    image: "/images/products/UfyExIVkmZdtUZWK.jpg",
   },
   {
     id: 58,
@@ -606,7 +606,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "swords",
     suitZh: "寶劍",
     flower: "Larch 落葉松",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/tJomFoFmEAxXsDDz.jpg",
+    image: "/images/products/tJomFoFmEAxXsDDz.jpg",
   },
   {
     id: 59,
@@ -616,7 +616,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "swords",
     suitZh: "寶劍",
     flower: "White Chestnut 白栗花",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/YMXhxyjiGksgPHnR.jpg",
+    image: "/images/products/YMXhxyjiGksgPHnR.jpg",
   },
   {
     id: 60,
@@ -626,7 +626,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "swords",
     suitZh: "寶劍",
     flower: "Rescue Remedy 急救花精",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/gkYdDDKVQDCjhbNd.jpg",
+    image: "/images/products/gkYdDDKVQDCjhbNd.jpg",
   },
   {
     id: 61,
@@ -636,7 +636,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "swords",
     suitZh: "寶劍",
     flower: "Gentian 龍膽",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/hwqUtIUbFrciJhHX.jpg",
+    image: "/images/products/hwqUtIUbFrciJhHX.jpg",
   },
   {
     id: 62,
@@ -646,7 +646,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "swords",
     suitZh: "寶劍",
     flower: "Gentian 龍膽",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/ZXKgApIBFBewQeEP.jpg",
+    image: "/images/products/ZXKgApIBFBewQeEP.jpg",
   },
   {
     id: 63,
@@ -656,7 +656,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "swords",
     suitZh: "寶劍",
     flower: "Willow 柳樹",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/HhoFNtyelgXnegtK.jpg",
+    image: "/images/products/HhoFNtyelgXnegtK.jpg",
   },
   {
     id: 64,
@@ -666,7 +666,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "swords",
     suitZh: "寶劍",
     flower: "Crab Apple 海棠",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/dRRTpUcAZToWdwxq.jpg",
+    image: "/images/products/dRRTpUcAZToWdwxq.jpg",
   },
   {
     id: 65,
@@ -676,7 +676,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "pentacles",
     suitZh: "錢幣",
     flower: "Sweet Chestnut 甜栗花",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/XggVVXPrLAJXLhbQ.jpg",
+    image: "/images/products/XggVVXPrLAJXLhbQ.jpg",
   },
   {
     id: 66,
@@ -686,7 +686,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "pentacles",
     suitZh: "錢幣",
     flower: "Rock Water 岩泉水",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/jYxtcsOhRYihSFXA.jpg",
+    image: "/images/products/jYxtcsOhRYihSFXA.jpg",
   },
   {
     id: 67,
@@ -696,7 +696,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "pentacles",
     suitZh: "錢幣",
     flower: "Beech 山毛櫸",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/RFrtbJQgfDPIyvzR.jpg",
+    image: "/images/products/RFrtbJQgfDPIyvzR.jpg",
   },
   {
     id: 68,
@@ -706,7 +706,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "pentacles",
     suitZh: "錢幣",
     flower: "Mimulus 溝酸漿",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/sRWrJrBfYmGKaLjg.jpg",
+    image: "/images/products/sRWrJrBfYmGKaLjg.jpg",
   },
   {
     id: 69,
@@ -716,7 +716,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "pentacles",
     suitZh: "錢幣",
     flower: "Gentian 龍膽",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/LTxOdiFwxioaCECn.jpg",
+    image: "/images/products/LTxOdiFwxioaCECn.jpg",
   },
   {
     id: 70,
@@ -726,7 +726,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "pentacles",
     suitZh: "錢幣",
     flower: "Gorse 荊豆",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/PqaIvvFwXFdQzuUw.jpg",
+    image: "/images/products/PqaIvvFwXFdQzuUw.jpg",
   },
   {
     id: 71,
@@ -736,7 +736,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "pentacles",
     suitZh: "錢幣",
     flower: "Red Chestnut 紅栗花",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/vmnCmlgMzwZaAEXi.jpg",
+    image: "/images/products/vmnCmlgMzwZaAEXi.jpg",
   },
   {
     id: 72,
@@ -746,7 +746,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "pentacles",
     suitZh: "錢幣",
     flower: "Wild Oat 野燕麥",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/ZuQRpgSKUJvqySiM.jpg",
+    image: "/images/products/ZuQRpgSKUJvqySiM.jpg",
   },
   {
     id: 73,
@@ -756,7 +756,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "pentacles",
     suitZh: "錢幣",
     flower: "Mustard 芥末花",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/CImSMzgRxZmlgtsT.jpg",
+    image: "/images/products/CImSMzgRxZmlgtsT.jpg",
   },
   {
     id: 74,
@@ -766,7 +766,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "pentacles",
     suitZh: "錢幣",
     flower: "Rock Rose 岩玫瑰",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/jWsbLWLlLyxFZzFj.jpg",
+    image: "/images/products/jWsbLWLlLyxFZzFj.jpg",
   },
   {
     id: 75,
@@ -776,7 +776,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "pentacles",
     suitZh: "錢幣",
     flower: "Mimulus 溝酸漿",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/facBvRIFmhFgJPAz.jpg",
+    image: "/images/products/facBvRIFmhFgJPAz.jpg",
   },
   {
     id: 76,
@@ -786,7 +786,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "pentacles",
     suitZh: "錢幣",
     flower: "Oak 橡樹",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/odcssPcmDRTugQsB.jpg",
+    image: "/images/products/odcssPcmDRTugQsB.jpg",
   },
   {
     id: 77,
@@ -796,7 +796,7 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "pentacles",
     suitZh: "錢幣",
     flower: "Olive 橄欖",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/CNiNzboXRGTEVSjY.jpg",
+    image: "/images/products/CNiNzboXRGTEVSjY.jpg",
   },
   {
     id: 78,
@@ -806,6 +806,6 @@ export const TAROT_CARDS: TarotCard[] = [
     suit: "pentacles",
     suitZh: "錢幣",
     flower: "Elm 榆樹",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/GpQIkKAPAtvLIJML.jpg",
+    image: "/images/products/GpQIkKAPAtvLIJML.jpg",
   },
 ];

@@ -204,7 +204,7 @@ export default function TarotPage() {
         <footer className="py-8 px-4 bg-[#F5F2EB] border-t border-stone-200">
           <div className="max-w-4xl mx-auto text-center">
             <p className="text-stone-400 text-sm">
-              © 2025 MUNI — 牟尼塔羅牌 Ethereal Codex
+              © 2026 MUNI — 牟尼塔羅牌 Ethereal Codex
             </p>
           </div>
         </footer>

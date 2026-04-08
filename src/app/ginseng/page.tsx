@@ -15,7 +15,7 @@ const PRODUCTS = [
     name: "高級沉香黃帝丹",
     nameEn: "Premium Agarwood Emperor Pill",
     image:
-      "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/gysUvcCCEnjFDBeo.png",
+      "/images/products/gysUvcCCEnjFDBeo.png",
     tagline: "沉香 × 鹿茸 × 山參的極致相遇",
     description:
       "以珍貴沉香為核心，結合鹿茸與山參的滋養精華。沉香自古被視為「眾香之首」，在東方養生傳統中具有安神定志、溫中散寒的珍貴價值。每一顆黃帝丹都經過 MUNI Frequency Resonance™ 六層共振校準，讓珍稀原料的能量以最和諧的頻率釋放。",
@@ -32,7 +32,7 @@ const PRODUCTS = [
     nameEn: "Red Ginseng Pomegranate Collagen Jelly",
     subtitle: "14 包入",
     image:
-      "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/AQvTbZBKXGbsevVA.jpg",
+      "/images/products/AQvTbZBKXGbsevVA.jpg",
     tagline: "不加一滴水，濃郁的石榴味",
     description:
       "將韓國六年根紅參的滋養力量，與石榴的抗氧化精華和魚膠原蛋白完美融合。不加一滴水的濃縮製程，保留了每一份營養的完整性。果凍棒的便攜形態，讓日常養護變得輕鬆愉悅。經 MUNI Frequency Resonance™ 調頻後，紅參皂苷的生物活性頻率與人體細胞產生更深層的共振。",
@@ -48,7 +48,7 @@ const PRODUCTS = [
     name: "牛膝紅參切片",
     nameEn: "Achyranthes Red Ginseng Slices",
     image:
-      "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/hFZoeLbMClsLXvBn.png",
+      "/images/products/hFZoeLbMClsLXvBn.png",
     tagline: "在保留營養成分的同時，保持獨特的味道和營養",
     description:
       "精選韓國優質紅參，搭配牛膝的強筋健骨功效。每一片切片都保留了紅參完整的營養成分與獨特風味。牛膝在傳統本草中被譽為「引藥下行」的要藥，與紅參搭配能將滋養能量引導至下肢與腎經。MUNI Frequency Resonance™ 技術確保每一片紅參切片的能量場達到最佳共振狀態。",

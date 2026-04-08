@@ -221,7 +221,7 @@ export default async function TarotDetailPage({ params }: PageProps) {
       <footer className="relative z-10 py-8 px-4 bg-stone-100 mt-12">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-stone-400 text-xs">
-            © 2025 MUNI. All rights reserved.
+            © 2026 MUNI. All rights reserved.
           </p>
         </div>
       </footer>

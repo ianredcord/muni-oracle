@@ -12,25 +12,25 @@ export const metadata: Metadata = {
 /* ─── CDN Images ─── */
 const IMG = {
   matchaPowder:
-    "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/aZKeeTcEASMsfPFg.png",
+    "/images/products/aZKeeTcEASMsfPFg.png",
   hojichaLeaves:
-    "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/PxrLKhbgvEcjkPUq.jpg",
+    "/images/products/PxrLKhbgvEcjkPUq.jpg",
   gyokuroLeaves:
-    "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/evwjdpMDljwZVvRW.jpg",
+    "/images/products/evwjdpMDljwZVvRW.jpg",
   senchaLeaves:
-    "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/SpJIfgcMQPUIuObV.jpg",
+    "/images/products/SpJIfgcMQPUIuObV.jpg",
   teaField:
-    "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/lfgSsEdyZlibdfhl.jpg",
+    "/images/products/lfgSsEdyZlibdfhl.jpg",
   teaPlantation:
-    "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/rwAQekTKZfZZromC.jpg",
+    "/images/products/rwAQekTKZfZZromC.jpg",
   handPicking:
-    "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/REjvsiGnJifwMkrI.jpg",
+    "/images/products/REjvsiGnJifwMkrI.jpg",
   steaming:
-    "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/yfjUPlISIzazboWF.jpg",
+    "/images/products/yfjUPlISIzazboWF.jpg",
   matchaCeremony:
-    "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/GzhKdeqjCgfpuuMT.jpg",
+    "/images/products/GzhKdeqjCgfpuuMT.jpg",
   ujiFarm:
-    "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/hYmOHYDnQnCNiyuY.jpg",
+    "/images/products/hYmOHYDnQnCNiyuY.jpg",
 };
 
 /* ─── Products ─── */

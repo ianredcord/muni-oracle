@@ -21,7 +21,7 @@ const PRODUCTS = [
     taste: "結構飽滿，苦味與辛辣鮮明優雅，帶有黑胡椒與綠色杏仁的餘韻",
     pairing: "牛排塔塔、松露燉飯、硬質熟成起司、烤蔬菜",
     image:
-      "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/lETvbLHthrnfMBOS.jpg",
+      "/images/products/lETvbLHthrnfMBOS.jpg",
     color: "from-green-50 to-emerald-50",
     border: "border-stone-200",
     accent: "text-green-700",
@@ -39,7 +39,7 @@ const PRODUCTS = [
     taste: "優雅複雜，帶有朝鮮薊、青草和番茄葉的綠色調，苦味與辛辣鮮明持久",
     pairing: "章魚前菜、牛肝菌肉薄片、焗烤番茄、烤紅肉",
     image:
-      "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/PxYNKHKkJjXQpdZb.jpg",
+      "/images/products/PxYNKHKkJjXQpdZb.jpg",
     color: "from-amber-50 to-yellow-50",
     border: "border-stone-200",
     accent: "text-amber-700",
@@ -57,7 +57,7 @@ const PRODUCTS = [
     taste: "圓潤飽滿，萵苣、黑胡椒與杏仁的暗示，甜美收尾",
     pairing: "豆子前菜、朝鮮薊燉飯、烤兔肉、山羊起司",
     image:
-      "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/qtxchiSClEHHDneY.jpg",
+      "/images/products/qtxchiSClEHHDneY.jpg",
     color: "from-lime-50 to-emerald-50",
     border: "border-stone-200",
     accent: "text-lime-700",
@@ -75,7 +75,7 @@ const PRODUCTS = [
     taste: "均衡和諧，帶有溫暖的胡椒感與清新的草本餘韻",
     pairing: "義大利麵、烤魚、新鮮沙拉、麵包佐食",
     image:
-      "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/PxYNKHKkJjXQpdZb.jpg",
+      "/images/products/PxYNKHKkJjXQpdZb.jpg",
     color: "from-teal-50 to-green-50",
     border: "border-stone-200",
     accent: "text-teal-700",
@@ -252,14 +252,14 @@ export default function OliveOilPage() {
             <div className="relative">
               <div className="rounded-2xl overflow-hidden border border-stone-200">
                 <img
-                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/HYCNrqTGpYkndwZX.jpg"
+                  src="/images/products/HYCNrqTGpYkndwZX.jpg"
                   alt="Fonte di Foiano 莊園橄欖園"
                   className="w-full h-80 object-cover"
                 />
               </div>
               <div className="mt-4 rounded-2xl overflow-hidden border border-stone-200">
                 <img
-                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/avGHGdLXmsXBeOEf.jpg"
+                  src="/images/products/avGHGdLXmsXBeOEf.jpg"
                   alt="Bolgheri 橄欖樹與夕陽"
                   className="w-full h-48 object-cover"
                 />
@@ -456,28 +456,28 @@ export default function OliveOilPage() {
           <div className="grid md:grid-cols-3 gap-4">
             <div className="rounded-2xl overflow-hidden border border-stone-200 md:row-span-2">
               <img
-                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/CoEbffWSmbdlxZKC.jpeg"
+                src="/images/products/CoEbffWSmbdlxZKC.jpeg"
                 alt="橄欖採收"
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="rounded-2xl overflow-hidden border border-stone-200">
               <img
-                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/LmQTTPntJAuWGGPk.jpg"
+                src="/images/products/LmQTTPntJAuWGGPk.jpg"
                 alt="Bolgheri 橄欖園風景"
                 className="w-full h-48 object-cover"
               />
             </div>
             <div className="rounded-2xl overflow-hidden border border-stone-200">
               <img
-                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/dVIjuYTGZTUkeDOu.jpg"
+                src="/images/products/dVIjuYTGZTUkeDOu.jpg"
                 alt="Fonte di Foiano 全系列橄欖油"
                 className="w-full h-48 object-cover"
               />
             </div>
             <div className="rounded-2xl overflow-hidden border border-stone-200 md:col-span-2">
               <img
-                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/OmkZmcVIDtFWQkkI.jpeg"
+                src="/images/products/OmkZmcVIDtFWQkkI.jpeg"
                 alt="橄欖採摘過程"
                 className="w-full h-64 object-cover"
               />

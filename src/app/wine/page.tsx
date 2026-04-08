@@ -24,7 +24,7 @@ const WINES = [
     description:
       "在一座由 Valle Isarco 20 噸花崗岩雕刻而成的 960 公升石桶中發酵與陳釀。花崗岩的孔隙率與礦物特性為這款 Kerner 注入了無與倫比的礦物深度與複雜性。明亮的稻草黃色帶著細膩的綠色反光，柑橘、蜜桃與黃蘋果的層次香氣，伴隨著礦物與草本的細膩韻味。",
     image:
-      "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/RPvhSmRURoIwGGHT.jpg",
+      "/images/products/RPvhSmRURoIwGGHT.jpg",
     highlight: true,
   },
   {
@@ -40,7 +40,7 @@ const WINES = [
     description:
       "Cantina Valle Isarco 的頂級酒款，僅限量 2,000 瓶。四種 Valle Isarco 最具代表性的葡萄品種精心混釀——Sylvaner 帶來優雅與果香，Grüner Veltliner 貢獻辛香氣息，Pinot Grigio 賦予結構與力量，Kerner 增添芳香層次。在法國橡木桶中發酵並陳釀 18 個月。",
     image:
-      "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/XIClwNZLYrOfPbsr.png",
+      "/images/products/XIClwNZLYrOfPbsr.png",
     highlight: true,
   },
   {
@@ -56,7 +56,7 @@ const WINES = [
     description:
       "葡萄來自環繞薩比奧納修道院——被譽為「蒂羅爾的衛城」——的陽光山坡葡萄園。嚴格的產量控制、限量 3,000 瓶，在相思木桶中細膩陳釀，賦予這款酒無可比擬的品種特性與優雅氣質。",
     image:
-      "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/BWtTAqGcgQhogaPd.png",
+      "/images/products/BWtTAqGcgQhogaPd.png",
     highlight: false,
   },
   {
@@ -72,7 +72,7 @@ const WINES = [
     description:
       "以傳統瓶中二次發酵法（Metodo Classico）釀造，在酒泥上陳釀至少 36 個月，完全不添加糖分（Pas Dosé）。葡萄同樣來自薩比奧納修道院的葡萄園，嚴格的產量控制與溫柔的釀造工藝，賦予這款氣泡酒獨特的個性。",
     image:
-      "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/VWmuefWQeOLAHbvl.png",
+      "/images/products/VWmuefWQeOLAHbvl.png",
     highlight: false,
   },
   {
@@ -88,7 +88,7 @@ const WINES = [
     description:
       "至臻系列的核心——嚴格的葡萄園管理與產量限制，確保每一顆葡萄都達到最佳品質。在不鏽鋼桶與大型橡木桶中發酵並陳釀 10 個月，展現出鮮明的品種特性、出色的結構與卓越的陳年潛力。",
     image:
-      "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/QqQqJuvsRoGlPCvy.png",
+      "/images/products/QqQqJuvsRoGlPCvy.png",
     highlight: false,
   },
   {
@@ -104,7 +104,7 @@ const WINES = [
     description:
       "葡萄來自 Valle Isarco 南部的 Campodazzo 小鎮，從修剪到成熟度的嚴格控制，只選用品質最優異的葡萄。在大桶中發酵後，於法國橡木桶中陳釀 18 個月，再瓶中熟成 6 個月。濃郁的果香、優雅而富有表現力的酒體。",
     image:
-      "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/AARWPVqMSRxruIYq.png",
+      "/images/products/AARWPVqMSRxruIYq.png",
     highlight: false,
   },
   {
@@ -120,7 +120,7 @@ const WINES = [
     description:
       "Kerner 是 Schiava 與 Riesling 的雜交品種，以德國詩人兼醫師 Justinus Kerner 命名。偏好高海拔陽光山坡的輕質礫石與沙質土壤，晚熟的葡萄帶來飽滿的酒體與豐富的風味。在不鏽鋼桶中低溫發酵，保留清新的果香與礦物感。",
     image:
-      "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/fIeLzuZcvmXkOcYh.png",
+      "/images/products/fIeLzuZcvmXkOcYh.png",
     highlight: false,
   },
   {
@@ -136,7 +136,7 @@ const WINES = [
     description:
       "源自法國勃根地的貴族品種，約百年前引入南蒂羅爾。Campodazzo 周圍溫暖的山坡提供了理想的生長條件，傳統浸皮發酵後在大型橡木桶中陳釀，展現出優雅的表現力與典型的品種特性。",
     image:
-      "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/XvXuYSjFGXFUmasx.png",
+      "/images/products/XvXuYSjFGXFUmasx.png",
     highlight: false,
   },
   {
@@ -152,7 +152,7 @@ const WINES = [
     description:
       "以 Valle Isarco 兩種代表性白葡萄品種——Müller Thurgau 與 Sylvaner 為基酒，採用 Charmat 法進行二次發酵，完美保留了原始的果香與清新感。是開胃酒的理想選擇，也能巧妙搭配輕食前菜。",
     image:
-      "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/PuTObeQvaLbykmPZ.png",
+      "/images/products/PuTObeQvaLbykmPZ.png",
     highlight: false,
   },
 ];
@@ -216,7 +216,7 @@ export default function WinePage() {
             <div className="relative w-60 h-80 md:w-72 md:h-96 flex-shrink-0">
               <div className="absolute inset-0 bg-gradient-to-br from-[#9A7B4F]/10 to-[#9A7B4F]/5 rounded-full blur-3xl" />
               <Image
-                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/RPvhSmRURoIwGGHT.jpg"
+                src="/images/products/RPvhSmRURoIwGGHT.jpg"
                 alt="Granit 960 — Kellerei Eisacktal 旗艦酒款"
                 fill
                 className="object-contain drop-shadow-2xl"

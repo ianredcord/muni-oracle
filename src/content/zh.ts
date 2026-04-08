@@ -73,7 +73,7 @@ export const ZH = {
     },
 
     footer: {
-      note: "© 2025 MUNI. All rights reserved.",
+      note: "© 2026 MUNI. All rights reserved.",
       brand: "MUNI 牟尼",
       tagline: "在寂靜中，承接你的答案",
     },

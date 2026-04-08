@@ -31,9 +31,9 @@ const PRODUCTS = [
     principle:
       "硬質微錐對皮膚產生較強的物理刺激，優先激活 Aδ 纖維（傳導銳痛的快速神經），觸發軸索反射中的抗炎路徑，促進局部血液循環並抑制疼痛信號傳遞。",
     image:
-      "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/KqfHeFfjiZSDHAkB.jpg",
+      "/images/products/KqfHeFfjiZSDHAkB.jpg",
     structure:
-      "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/JLTNrEgNWnIdhvHN.png",
+      "/images/products/JLTNrEgNWnIdhvHN.png",
     accent: "text-emerald-700",
     accentBg: "bg-emerald-50/30",
     border: "border-emerald-200",
@@ -61,9 +61,9 @@ const PRODUCTS = [
     principle:
       "彈性橡膠微錐提供柔和而持續的皮膚刺激，激活 C 纖維（傳導鈍痛的慢速神經），促進脊髓中內源性類嗎啡物質（Opioid）釋放，達到深層鎮痛與肌肉放鬆效果。",
     image:
-      "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/xwCndtckqJSUPiEd.jpg",
+      "/images/products/xwCndtckqJSUPiEd.jpg",
     structure:
-      "https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/LVUScKCRjmkvXWfl.png",
+      "/images/products/LVUScKCRjmkvXWfl.png",
     accent: "text-amber-700",
     accentBg: "bg-amber-50/30",
     border: "border-amber-200",
@@ -271,7 +271,7 @@ export default function SomaniksPage() {
             <div className="relative">
               <div className="rounded-2xl overflow-hidden border border-stone-200 shadow-sm">
                 <img
-                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663143729992/dvsAGCGFoZGMTdyy.jpeg"
+                  src="/images/products/dvsAGCGFoZGMTdyy.jpeg"
                   alt="SOMANIKS 產品展示"
                   className="w-full h-80 object-cover"
                 />
