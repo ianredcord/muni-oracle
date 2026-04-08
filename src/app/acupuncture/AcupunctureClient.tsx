@@ -221,6 +221,7 @@ export default function AcupunctureClient() {
               </h3>
               <button
                 onClick={() => setSelectedAcupoint(null)}
+                aria-label="關閉穴位詳情"
                 className="w-8 h-8 flex items-center justify-center rounded-full hover:bg-stone-100 transition-colors"
               >
                 <svg
