@@ -3,6 +3,7 @@ import { FLOWERS } from "@/data/flowers.generated";
 import Image from "next/image";
 import Link from "next/link";
 import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
 import FrequencyBadge from "@/components/FrequencyBadge";
 
 export const metadata: Metadata = {
@@ -83,6 +84,7 @@ export default function FlowersPage() {
 
       {/* Frequency Resonance™ 技術支持 */}
       <FrequencyBadge variant="light" full />
+      <Footer />
     </div>
   );
 }

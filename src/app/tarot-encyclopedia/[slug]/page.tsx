@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { TAROT_CARDS, SUIT_NAMES, type TarotCard } from "@/data/tarot.generated";
 import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -229,14 +230,7 @@ export default async function TarotDetailPage({ params }: PageProps) {
         </div>
       </main>
 
-      {/* Footer */}
-      <footer className="relative z-10 py-8 px-4 bg-stone-100 mt-12">
-        <div className="max-w-4xl mx-auto text-center">
-          <p className="text-stone-400 text-xs">
-            © 2026 MUNI. All rights reserved.
-          </p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

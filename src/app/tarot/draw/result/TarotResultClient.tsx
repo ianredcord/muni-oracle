@@ -5,6 +5,7 @@ import { Suspense, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { TAROT_CARDS, SUIT_NAMES, type TarotCard } from "@/data/tarot.generated";
 import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -225,6 +226,7 @@ function TarotResultContent() {
           </motion.div>
         </div>
       </main>
+      <Footer />
     </div>
   );
 }

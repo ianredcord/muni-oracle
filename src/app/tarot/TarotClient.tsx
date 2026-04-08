@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
 import Image from "next/image";
 import Link from "next/link";
 import { TAROT_CARDS, SUIT_NAMES, type TarotSuit } from "@/data/tarot.generated";
@@ -200,14 +201,7 @@ export default function TarotClient() {
           </div>
         </section>
 
-        {/* Footer */}
-        <footer className="py-8 px-4 bg-[#F5F2EB] border-t border-stone-200">
-          <div className="max-w-4xl mx-auto text-center">
-            <p className="text-stone-400 text-sm">
-              © 2026 MUNI — 牟尼塔羅牌 Ethereal Codex
-            </p>
-          </div>
-        </footer>
+        <Footer />
       </main>
     </div>
   );

@@ -20,6 +20,20 @@ export const metadata: Metadata = {
     siteName: "MUNI 牟尼花精",
     locale: "zh_TW",
     type: "website",
+    images: [
+      {
+        url: "https://munione.co/images/home-bg.jpg",
+        width: 1200,
+        height: 630,
+        alt: "MUNI 牟尼花精 — 自然療癒・花精牌卡・身心靈指引",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "MUNI 牟尼花精 | 巴哈花精牌卡指引",
+    description: "在大自然的智慧中，找到內在的平衡與安定。讓花精成為你的心靈指引。",
+    images: ["https://munione.co/images/home-bg.jpg"],
   },
 };
 

@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
 import FrequencyBadge from "@/components/FrequencyBadge";
 
 export const metadata: Metadata = {
@@ -861,41 +862,7 @@ export default function WinePage() {
       {/* Frequency Resonance™ 技術支持 */}
       <FrequencyBadge variant="light" full />
 
-      {/* Footer */}
-      <footer className="py-12 px-4 bg-[#F5F2EB] text-stone-500 border-t border-stone-200">
-        <div className="max-w-4xl mx-auto text-center">
-          <p className="font-serif text-lg text-[#4a5548] mb-2">MUNI 牟尼</p>
-          <p className="text-sm">在寂靜中，承接你的答案。</p>
-          <div className="mt-6 flex flex-wrap justify-center gap-6 text-sm">
-            <Link href="/" className="hover:text-[#4a5548] transition-colors">
-              首頁
-            </Link>
-            <Link href="/flowers" className="hover:text-[#4a5548] transition-colors">
-              花精百科
-            </Link>
-            <Link href="/systems" className="hover:text-[#4a5548] transition-colors">
-              療癒系統
-            </Link>
-            <Link href="/essential-oil" className="hover:text-[#4a5548] transition-colors">
-              牟尼香
-            </Link>
-            <Link href="/acupuncture" className="hover:text-[#4a5548] transition-colors">
-              董氏心氣神針
-            </Link>
-            <Link href="/chocolate" className="hover:text-[#4a5548] transition-colors">
-              巧克力
-            </Link>
-            <a
-              href="https://ai.munione.co"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-[#4a5548] transition-colors"
-            >
-              療癒顧問
-            </a>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

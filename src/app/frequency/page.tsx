@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "MUNI Frequency Resonance™ | 萬物調頻，回到本然",
@@ -1070,44 +1071,7 @@ export default function FrequencyPage() {
         </div>
       </section>
 
-      {/* ─── Footer ─── */}
-      <footer className="py-12 px-4 bg-[#F5F2EB] text-stone-500 border-t border-stone-200">
-        <div className="max-w-4xl mx-auto text-center">
-          <p className="font-serif text-lg text-[#4a5548] mb-2">MUNI 牟尼</p>
-          <p className="text-sm">在寂靜中，承接你的答案。</p>
-          <div className="mt-6 flex flex-wrap justify-center gap-6 text-sm">
-            <Link href="/" className="hover:text-[#4a5548] transition-colors">
-              首頁
-            </Link>
-            <Link
-              href="/systems"
-              className="hover:text-[#4a5548] transition-colors"
-            >
-              療癒系統
-            </Link>
-            <Link
-              href="/wine"
-              className="hover:text-[#4a5548] transition-colors"
-            >
-              葡萄酒療癒
-            </Link>
-            <Link
-              href="/essential-oil"
-              className="hover:text-[#4a5548] transition-colors"
-            >
-              牟尼香
-            </Link>
-            <a
-              href="https://ai.munione.co"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-[#4a5548] transition-colors"
-            >
-              療癒顧問
-            </a>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

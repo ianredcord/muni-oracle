@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import FrequencyBadge from "@/components/FrequencyBadge";
+import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "MUNI × 人蔘療癒 | 韓國頂級紅參 × 共振頻率",
@@ -399,33 +400,7 @@ export default function GinsengPage() {
       {/* Frequency Badge */}
       <FrequencyBadge variant="light" full />
 
-      {/* Footer */}
-      <footer className="py-12 border-t border-stone-200 bg-[#F5F2EB]">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <p className="font-serif text-lg text-[#4a5548] mb-2">MUNI 牟尼</p>
-          <p className="text-stone-500 text-sm">在寂靜中，承接你的答案。</p>
-          <div className="mt-6 flex flex-wrap justify-center gap-6 text-sm text-stone-500">
-            <Link href="/" className="hover:text-[#4a5548] transition-colors">
-              首頁
-            </Link>
-            <Link href="/flowers" className="hover:text-[#4a5548] transition-colors">
-              花精百科
-            </Link>
-            <Link href="/essential-oil" className="hover:text-[#4a5548] transition-colors">
-              牟尼香
-            </Link>
-            <Link href="/wine" className="hover:text-[#4a5548] transition-colors">
-              葡萄酒療癒
-            </Link>
-            <Link href="/frequency" className="hover:text-[#4a5548] transition-colors">
-              獨家技術
-            </Link>
-            <Link href="/systems" className="hover:text-[#4a5548] transition-colors">
-              療癒系統
-            </Link>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </main>
   );
 }

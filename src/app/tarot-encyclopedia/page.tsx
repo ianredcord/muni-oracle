@@ -3,6 +3,7 @@ import { TAROT_CARDS, type TarotCard } from "@/data/tarot.generated";
 import Image from "next/image";
 import Link from "next/link";
 import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
 import FrequencyBadge from "@/components/FrequencyBadge";
 
 export const metadata: Metadata = {
@@ -180,6 +181,7 @@ export default function TarotEncyclopediaPage() {
 
       {/* Frequency Resonance™ 技術支持 */}
       <FrequencyBadge variant="light" full />
+      <Footer />
     </div>
   );
 }
