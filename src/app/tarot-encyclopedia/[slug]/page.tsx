@@ -16,8 +16,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const card = TAROT_CARDS.find(c => c.slug === slug);
   if (!card) return { title: "塔羅牌不存在 | MUNI" };
   return {
-    title: `${card.name} | 牟尼塔羅牌百科`,
-    description: card.quickReading ? card.quickReading.slice(0, 120).replace(/\n/g, " ") : `探索 ${card.name} 的原型智慧與療癒指引。`,
+    title: `${card.nameZh} | 牟尼塔羅牌百科`,
+    description: card.quickReading ? card.quickReading.slice(0, 120).replace(/\n/g, " ") : `探索 ${card.nameZh} 的原型智慧與療癒指引。`,
   };
 }
 

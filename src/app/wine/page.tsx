@@ -220,7 +220,7 @@ export default function WinePage() {
                 alt="Granit 960 — Kellerei Eisacktal 旗艦酒款"
                 fill
                 className="object-contain drop-shadow-2xl"
-                unoptimized
+                sizes="(max-width: 768px) 240px, 288px"
               />
             </div>
           </div>
@@ -570,7 +570,7 @@ export default function WinePage() {
                         alt={wine.name}
                         fill
                         className="object-contain drop-shadow-lg"
-                        unoptimized
+                        sizes="(max-width: 640px) 128px, 160px"
                       />
                     </div>
                     <div className="flex-1">
@@ -629,7 +629,7 @@ export default function WinePage() {
                         alt={wine.name}
                         fill
                         className="object-contain group-hover:scale-105 transition-transform duration-500 drop-shadow-md"
-                        unoptimized
+                        sizes="96px"
                       />
                     </div>
                     <div className="absolute top-3 left-3 flex gap-1.5">

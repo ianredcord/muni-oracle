@@ -1,8 +1,15 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { FLOWERS } from "@/data/flowers.generated";
 import { ZH } from "@/content/zh";
 import { Header } from "@/components/Header";
+
+export const metadata: Metadata = {
+  title: "MUNI 牟尼花精｜自然療癒・花精牌卡・身心靈指引",
+  description:
+    "MUNI 以巴赫花精為核心，結合塔羅原型、精油、頻率共振等自然療癒系統，提供花精牌卡抽牌、花精百科與身心靈整合方案。",
+};
 
 export default function Home() {
   // 取前 9 張牌卡作為預覽
