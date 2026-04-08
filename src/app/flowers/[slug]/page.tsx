@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { FLOWERS, type FlowerCard } from "@/data/flowers.generated";
 import { parseDeepBody, SECTION_COLORS, cleanUnderlines } from "@/lib/parseDeepBody";
 import { ZH } from "@/content/zh";
@@ -5,6 +6,18 @@ import { Header } from "@/components/Header";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+
+// 動態 Metadata
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const flower = FLOWERS.find(f => f.slug === slug);
+  if (!flower) return { title: "花精不存在 | MUNI" };
+  const desc = flower.deep.body.slice(0, 120).replace(/\n/g, " ");
+  return {
+    title: `${flower.name} | 牟尼花精百科`,
+    description: desc,
+  };
+}
 
 // 生成靜態路徑
 export function generateStaticParams() {

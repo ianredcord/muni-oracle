@@ -11,6 +11,7 @@ import { ZH } from "@/content/zh";
 import { Header } from "@/components/Header";
 import Image from "next/image";
 import Link from "next/link";
+import { Footer } from "@/components/Footer";
 
 
 function ResultClient(props: { cardSlug: string }) {
@@ -472,6 +473,7 @@ function ResultClient(props: { cardSlug: string }) {
             </div>
           </motion.div>
         </main>
+        <Footer />
     </div>
   );
 }

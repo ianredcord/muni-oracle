@@ -9,28 +9,28 @@ const lineageData = [
     generation: "創始人",
     name: "董景昌 先生",
     years: "1916 – 1975",
-    image: "https://www.tungs-acupuncture.com/wp-content/uploads/2020/08/2-3-0董公.jpg",
+    image: "/images/acupuncture/dong-gong-portrait.jpg",
     summary: "祖籍山東平度縣，看診四十餘年，治療人次達四十餘萬。1971 年治癒高棉龍諾總統中風半身不遂，舉世聞名，被譽為「當代針聖」。1973 年出版《董氏針灸正經奇穴學》，一生共收 75 位弟子。",
   },
   {
     generation: "一代傳人",
     name: "胡文智 先生",
     years: "1943 –",
-    image: "https://www.tungs-acupuncture.com/wp-content/uploads/2020/08/2-3-1胡文智.jpg",
+    image: "/images/acupuncture/hu-wenzhi.jpg",
     summary: "1964 年起拜師董公景昌先生，前後近 12 年學習與跟診，蒙董公將隨身《臨症手札》交付保存，盡得董公針術真傳。1987 年出版《最新實用董氏針灸奇穴全集》，公佈董氏 72 絕針與 32 解穴。",
   },
   {
     generation: "二代傳人",
     name: "李國政 先生",
     years: "",
-    image: "https://www.tungs-acupuncture.com/wp-content/uploads/2020/08/2-3-2-李國政.jpg",
+    image: "/images/acupuncture/li-guozheng.jpg",
     summary: "董氏門人中承先啟後的奇人。首位提出運用全息律揭秘董氏穴位系統心法之人，提出「董針秘要，手足一如。全息倒馬，針到病除」。三十年間著作董針書籍 38 本，收入門弟子 398 位，是推廣董針的極大功臣。",
   },
   {
     generation: "三代傳人",
     name: "程守羿（希智）博士",
     years: "",
-    image: "https://www.tungs-acupuncture.com/wp-content/uploads/2020/08/2-3-3-程稀智.jpg",
+    image: "/images/acupuncture/cheng-xizhi.jpg",
     summary: "李國政先生在台灣所收最後一位入門弟子。廣州中醫藥大學針灸推拿學博士、台灣大學電機工程學碩士。結合氣功、中醫醫理、量子力學，著有《針灸通用全息密碼》、《六根身心統合療法與董針》等書。創立董氏奇穴心氣神養生協會。",
   },
 ];
@@ -92,12 +92,11 @@ export default function AboutTungsClient() {
                   <div className="md:w-1/3 flex-shrink-0">
                     <div className="relative aspect-[3/4] rounded-xl overflow-hidden bg-stone-100 shadow-md">
                       <Image
-                        src="https://www.tungs-acupuncture.com/wp-content/uploads/2020/08/2-1-董公.jpg"
+                        src="/images/acupuncture/dong-gong.jpg"
                         alt="董景昌先生"
                         fill
                         className="object-cover"
                         sizes="(max-width: 768px) 100vw, 33vw"
-                        unoptimized
                       />
                     </div>
                     <p className="text-center text-sm text-stone-500 mt-3 font-serif">
@@ -123,11 +122,11 @@ export default function AboutTungsClient() {
                 {/* 龍諾總統治療照片 */}
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 mb-10">
                   {[
-                    { src: "https://www.tungs-acupuncture.com/wp-content/uploads/2020/08/董公治癒龍諾總統疾病1-300x206.jpg", alt: "董公治癒龍諾總統 1" },
-                    { src: "https://www.tungs-acupuncture.com/wp-content/uploads/2020/08/董公因治癒龍諾總統疾病2.jpg", alt: "董公治癒龍諾總統 2" },
-                    { src: "https://www.tungs-acupuncture.com/wp-content/uploads/2020/08/董公治癒龍諾總統疾病3-300x167.jpg", alt: "董公治癒龍諾總統 3" },
-                    { src: "https://www.tungs-acupuncture.com/wp-content/uploads/2020/08/董公治癒龍諾總統疾病4-300x274.jpg", alt: "董公治癒龍諾總統 4" },
-                    { src: "https://www.tungs-acupuncture.com/wp-content/uploads/2020/08/董公治癒龍諾總統疾病5-300x230.jpg", alt: "董公治癒龍諾總統 5" },
+                    { src: "/images/acupuncture/dong-president-1.jpg", alt: "董公治癒龍諾總統 1" },
+                    { src: "/images/acupuncture/dong-president-2.jpg", alt: "董公治癒龍諾總統 2" },
+                    { src: "/images/acupuncture/dong-president-3.jpg", alt: "董公治癒龍諾總統 3" },
+                    { src: "/images/acupuncture/dong-president-4.jpg", alt: "董公治癒龍諾總統 4" },
+                    { src: "/images/acupuncture/dong-president-5.jpg", alt: "董公治癒龍諾總統 5" },
                   ].map((img, idx) => (
                     <div key={idx} className="relative aspect-square rounded-lg overflow-hidden bg-stone-100 border border-stone-100">
                       <Image
@@ -136,7 +135,6 @@ export default function AboutTungsClient() {
                         fill
                         className="object-cover"
                         sizes="20vw"
-                        unoptimized
                       />
                     </div>
                   ))}
@@ -146,12 +144,11 @@ export default function AboutTungsClient() {
                 <div className="flex flex-col sm:flex-row items-center gap-6 p-6 bg-stone-50 rounded-xl">
                   <div className="w-32 h-40 relative rounded-lg overflow-hidden bg-white shadow-md flex-shrink-0">
                     <Image
-                      src="https://www.tungs-acupuncture.com/wp-content/uploads/2020/08/2-1-董氏針灸正經奇穴學.jpg"
+                      src="/images/acupuncture/dong-book.jpg"
                       alt="董氏針灸正經奇穴學"
                       fill
                       className="object-contain"
                       sizes="128px"
-                      unoptimized
                     />
                   </div>
                   <div className="text-center sm:text-left">
@@ -204,7 +201,6 @@ export default function AboutTungsClient() {
                                   fill
                                   className="object-cover"
                                   sizes="80px"
-                                  unoptimized
                                 />
                               </div>
                               <div className="flex-1 min-w-0">
@@ -262,9 +258,9 @@ export default function AboutTungsClient() {
                 {/* 全息圖示 */}
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10">
                   {[
-                    { src: "https://www.tungs-acupuncture.com/wp-content/uploads/2020/08/2-2-腳底按摩圖.jpg", label: "腳底按摩圖", desc: "腳底反射區對應全身臟腑" },
-                    { src: "https://www.tungs-acupuncture.com/wp-content/uploads/2020/08/2-2-耳穴圖.jpg", label: "耳穴圖", desc: "耳朵穴位對應全身系統" },
-                    { src: "https://www.tungs-acupuncture.com/wp-content/uploads/2020/08/2-2-第二掌骨全息示意圖.jpg", label: "第二掌骨全息示意圖", desc: "掌骨全息對應人體各部" },
+                    { src: "/images/acupuncture/foot-reflexology.jpg", label: "腳底按摩圖", desc: "腳底反射區對應全身臟腑" },
+                    { src: "/images/acupuncture/ear-points.jpg", label: "耳穴圖", desc: "耳朵穴位對應全身系統" },
+                    { src: "/images/acupuncture/palm-hologram.jpg", label: "第二掌骨全息示意圖", desc: "掌骨全息對應人體各部" },
                   ].map((item, idx) => (
                     <div key={idx} className="bg-stone-50 rounded-xl p-4 border border-stone-100 text-center">
                       <div className="relative aspect-square rounded-lg overflow-hidden bg-white mb-3">
@@ -274,7 +270,6 @@ export default function AboutTungsClient() {
                           fill
                           className="object-contain"
                           sizes="(max-width: 768px) 100vw, 33vw"
-                          unoptimized
                         />
                       </div>
                       <h4 className="font-serif font-bold text-[#4a5548] text-sm mb-1">{item.label}</h4>
@@ -346,12 +341,11 @@ export default function AboutTungsClient() {
                   <div className="md:w-1/3 flex-shrink-0 space-y-4">
                     <div className="relative aspect-[3/4] rounded-xl overflow-hidden bg-stone-100 shadow-md">
                       <Image
-                        src="https://www.tungs-acupuncture.com/wp-content/uploads/2020/08/2-5-程希智向李國政入門拜師儀式合影.jpg"
+                        src="/images/acupuncture/cheng-apprentice.jpg"
                         alt="程希智向李國政入門拜師儀式合影"
                         fill
                         className="object-cover"
                         sizes="(max-width: 768px) 100vw, 33vw"
-                        unoptimized
                       />
                     </div>
                     <p className="text-center text-xs text-stone-400">程希智向李國政入門拜師儀式合影</p>
@@ -397,12 +391,11 @@ export default function AboutTungsClient() {
                   <div className="bg-stone-50 rounded-xl p-3 border border-stone-100">
                     <div className="relative aspect-[4/3] rounded-lg overflow-hidden bg-white">
                       <Image
-                        src="https://www.tungs-acupuncture.com/wp-content/uploads/2020/08/2-5-李國政與程希智合影於深圳.jpg"
+                        src="/images/acupuncture/li-cheng-shenzhen.jpg"
                         alt="李國政與程希智合影於深圳"
                         fill
                         className="object-cover"
                         sizes="(max-width: 768px) 100vw, 50vw"
-                        unoptimized
                       />
                     </div>
                     <p className="text-center text-xs text-stone-500 mt-2">李國政與程希智合影於深圳</p>
@@ -410,12 +403,11 @@ export default function AboutTungsClient() {
                   <div className="bg-stone-50 rounded-xl p-3 border border-stone-100">
                     <div className="relative aspect-[4/3] rounded-lg overflow-hidden bg-white">
                       <Image
-                        src="https://www.tungs-acupuncture.com/wp-content/uploads/2020/08/2-5-李國政授-得我真傳-墨寶予程希智.jpg"
+                        src="/images/acupuncture/li-calligraphy.jpg"
                         alt="李國政授「得我真傳」墨寶予程希智"
                         fill
                         className="object-cover"
                         sizes="(max-width: 768px) 100vw, 50vw"
-                        unoptimized
                       />
                     </div>
                     <p className="text-center text-xs text-stone-500 mt-2">李國政授「得我真傳」墨寶予程希智</p>

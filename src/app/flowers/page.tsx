@@ -1,8 +1,14 @@
+import type { Metadata } from "next";
 import { FLOWERS } from "@/data/flowers.generated";
 import Image from "next/image";
 import Link from "next/link";
 import { Header } from "@/components/Header";
 import FrequencyBadge from "@/components/FrequencyBadge";
+
+export const metadata: Metadata = {
+  title: "牟尼花精百科｜40 種巴哈花精完整介紹 | MUNI",
+  description: "探索 40 種巴哈花精的情緒特徵、身體覺察與使用建議，找到屬於你的心靈指引。",
+};
 
 export default function FlowersPage() {
   return (

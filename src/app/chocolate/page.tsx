@@ -15,21 +15,21 @@ const PRODUCTS = [
     name: "Myway",
     description: "80% 特濃黑巧克力",
     detail: "堅定走自己的路，如同 Cecilia 三十年的巧克力之旅。高濃度可可帶來深沉的風味層次，適合喜歡純粹、有個性的你。",
-    image: "https://ceciliarabassi.com/wp-content/uploads/2022/02/Myway_front.jpg",
+    image: "/images/chocolate/myway-front.jpg",
     category: "tablets",
   },
   {
     name: "Weekend",
     description: "70% 特濃黑巧克力",
     detail: "週末的放鬆時刻，讓純粹的可可帶你回到內在的寧靜。恰到好處的甜苦平衡，是日常犒賞自己的最佳選擇。",
-    image: "https://ceciliarabassi.com/wp-content/uploads/2022/02/Weekend_front.jpg",
+    image: "/images/chocolate/weekend-front.jpg",
     category: "tablets",
   },
   {
     name: "Bluemoon",
     description: "牛奶巧克力",
     detail: "如月光般柔和溫暖，適合需要被溫柔擁抱的時刻。絲滑的牛奶與可可交融，帶來安定與幸福的味覺體驗。",
-    image: "https://ceciliarabassi.com/wp-content/uploads/2022/02/Bluemoon_front.jpg",
+    image: "/images/chocolate/bluemoon-front.jpg",
     category: "tablets",
   },
 ];
@@ -88,11 +88,10 @@ export default function ChocolatePage() {
             <div className="relative w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 flex-shrink-0">
               <div className="absolute inset-0 bg-gradient-to-br from-amber-200/30 to-transparent rounded-full blur-2xl" />
               <Image
-                src="https://ceciliarabassi.com/wp-content/uploads/2021/10/ceciliatessieri-5591.jpg"
+                src="/images/chocolate/cecilia-portrait.jpg"
                 alt="Cecilia Rabassi — 世界第一位女性 Maître Chocolatier"
                 fill
                 className="object-cover rounded-2xl shadow-2xl"
-                unoptimized
               />
             </div>
           </div>
@@ -147,11 +146,10 @@ export default function ChocolatePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-16">
             <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-lg">
               <Image
-                src="https://ceciliarabassi.com/wp-content/uploads/2021/10/ceciliatessieri-6163.jpg"
+                src="/images/chocolate/cecilia-tuscany.jpg"
                 alt="Cecilia Rabassi 在托斯卡尼"
                 fill
                 className="object-cover"
-                unoptimized
               />
             </div>
             <div className="space-y-6">
@@ -299,7 +297,6 @@ export default function ChocolatePage() {
                     alt={product.name}
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
-                    unoptimized
                   />
                 </div>
                 <div className="p-4">

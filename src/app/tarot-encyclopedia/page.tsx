@@ -1,8 +1,14 @@
+import type { Metadata } from "next";
 import { TAROT_CARDS, type TarotCard } from "@/data/tarot.generated";
 import Image from "next/image";
 import Link from "next/link";
 import { Header } from "@/components/Header";
 import FrequencyBadge from "@/components/FrequencyBadge";
+
+export const metadata: Metadata = {
+  title: "牟尼塔羅牌百科｜78 張塔羅牌完整解讀 | MUNI",
+  description: "探索 78 張牟尼塔羅牌的原型智慧，包含大秘儀、宮廷牌與數字牌的完整療癒解讀。",
+};
 
 // 宮廷牌關鍵字
 const COURT_KEYWORDS = ["King", "Queen", "Knight", "Page"];

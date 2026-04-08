@@ -1,19 +1,31 @@
+import type { Metadata } from "next";
 import { TAROT_CARDS, SUIT_NAMES, type TarotCard } from "@/data/tarot.generated";
 import { Header } from "@/components/Header";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
+// 頁面 Props
+interface PageProps {
+  params: Promise<{ slug: string }>;
+}
+
+// 動態 Metadata
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const card = TAROT_CARDS.find(c => c.slug === slug);
+  if (!card) return { title: "塔羅牌不存在 | MUNI" };
+  return {
+    title: `${card.name} | 牟尼塔羅牌百科`,
+    description: card.quickReading ? card.quickReading.slice(0, 120).replace(/\n/g, " ") : `探索 ${card.name} 的原型智慧與療癒指引。`,
+  };
+}
+
 // 生成靜態路徑
 export function generateStaticParams() {
   return TAROT_CARDS.map((card) => ({
     slug: card.slug,
   }));
-}
-
-// 頁面 Props
-interface PageProps {
-  params: Promise<{ slug: string }>;
 }
 
 export default async function TarotDetailPage({ params }: PageProps) {
