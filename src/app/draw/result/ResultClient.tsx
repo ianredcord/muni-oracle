@@ -170,6 +170,7 @@ function ResultClient(props: { cardSlug: string }) {
                   fill
                   className="object-cover"
                   priority
+                  sizes="(max-width: 768px) 280px, 280px"
                 />
               </div>
               

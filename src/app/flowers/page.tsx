@@ -49,6 +49,7 @@ export default function FlowersPage() {
                     alt={flower.name}
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    sizes="(max-width: 640px) 45vw, (max-width: 768px) 30vw, (max-width: 1024px) 23vw, 18vw"
                   />
                 </div>
                 

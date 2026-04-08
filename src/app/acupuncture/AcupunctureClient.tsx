@@ -211,7 +211,7 @@ export default function AcupunctureClient() {
           onClick={() => setSelectedAcupoint(null)}
         >
           <div
-            className="bg-white rounded-2xl max-w-2xl w-full max-h-[85vh] overflow-y-auto shadow-2xl"
+            className="bg-white rounded-2xl w-full max-w-[calc(100vw-2rem)] sm:max-w-2xl max-h-[85vh] overflow-y-auto shadow-2xl"
             onClick={(e) => e.stopPropagation()}
           >
             {/* 彈窗標題 */}

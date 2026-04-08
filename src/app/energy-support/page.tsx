@@ -4,45 +4,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import FrequencyBadge from "@/components/FrequencyBadge";
+import { Header } from "@/components/Header";
 import {
   ENERGY_LAYERS,
   ENERGY_MODULES,
   STATE_SUGGESTIONS,
   ENERGY_SUPPORT_CONTENT,
 } from "@/data/energySupport";
-
-// Header 組件
-function Header() {
-  return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-stone-200">
-      <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-        <Link href="/" className="font-serif text-2xl font-bold text-[#4a5548]">
-          MUNI
-        </Link>
-        <nav className="flex items-center gap-6">
-          <Link
-            href="/draw"
-            className="text-stone-600 hover:text-[#4a5548] transition-colors"
-          >
-            抽牌
-          </Link>
-          <Link
-            href="/flowers"
-            className="text-stone-600 hover:text-[#4a5548] transition-colors"
-          >
-            牟尼花精百科
-          </Link>
-          <Link
-            href="/energy-support"
-            className="text-[#4a5548] font-medium transition-colors"
-          >
-            能量支持
-          </Link>
-        </nav>
-      </div>
-    </header>
-  );
-}
 
 // 區塊 1：Hero
 function HeroSection() {

@@ -72,6 +72,7 @@ export default async function FlowerDetailPage({ params }: PageProps) {
                 fill
                 className="object-cover"
                 priority
+                sizes="(max-width: 768px) 280px, 280px"
               />
             </div>
             

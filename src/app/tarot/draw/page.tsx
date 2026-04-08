@@ -255,7 +255,7 @@ export default function TarotDrawPage() {
                 exit={{ opacity: 0 }}
                 className="w-full"
               >
-                <div className="grid grid-cols-6 sm:grid-cols-8 md:grid-cols-10 lg:grid-cols-[repeat(13,minmax(0,1fr))] gap-1.5 sm:gap-2 max-w-5xl mx-auto mb-8">
+                <div className="grid grid-cols-5 sm:grid-cols-8 md:grid-cols-10 lg:grid-cols-[repeat(13,minmax(0,1fr))] gap-1.5 sm:gap-2 max-w-5xl mx-auto mb-8">
                   {shuffledCards.map((card, index) => (
                     <motion.div
                       key={card.id}

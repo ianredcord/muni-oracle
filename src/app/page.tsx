@@ -23,6 +23,7 @@ export default function Home() {
             fill
             className="object-cover"
             priority
+            sizes="100vw"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-white/30 via-transparent to-[#F9F7F2]" />
         </div>
@@ -72,6 +73,7 @@ export default function Home() {
             fill
             className="object-cover"
             priority
+            sizes="100vw"
           />
         </div>
       </section>
@@ -166,6 +168,7 @@ export default function Home() {
                     alt={flower.name}
                     fill
                     className="object-cover"
+                    sizes="(max-width: 640px) 30vw, 120px"
                   />
                 </div>
               </Link>
@@ -208,6 +211,7 @@ export default function Home() {
                   alt="MUNI 牡尼香 - 結合精油與花精的天然植物能量"
                   fill
                   className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
             </div>
