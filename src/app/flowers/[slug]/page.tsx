@@ -7,7 +7,7 @@ import { Footer } from "@/components/Footer";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import FlowerBodySupport from "@/components/FlowerBodySupport";
+import Step3BodySupport from "@/components/Step3BodySupport";
 
 // 動態 Metadata
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
@@ -136,15 +136,11 @@ export default async function FlowerDetailPage({ params }: PageProps) {
                 </p>
               </div>
 
-              {/* Step 3 */}
-              <div className="bg-white/80 backdrop-blur-sm rounded-xl p-5 shadow-sm border border-stone-100">
-                <h3 className="text-xs text-stone-400 uppercase tracking-wider mb-2 font-medium">
-                  {flower.quick.step3Title}
-                </h3>
-                <p className="text-[#6b7c6b] leading-relaxed whitespace-pre-line">
-                  {cleanUnderlines(flower.quick.step3Body)}
-                </p>
-              </div>
+              {/* Step 3｜回到身體 */}
+              <Step3BodySupport
+                flowerSlug={flower.slug}
+                step3Body={cleanUnderlines(flower.quick.step3Body)}
+              />
             </div>
           </div>
         </div>
@@ -199,9 +195,6 @@ export default async function FlowerDetailPage({ params }: PageProps) {
             </div>
           </div>
         </section>
-
-        {/* 身體支持區塊 */}
-        <FlowerBodySupport flowerSlug={slug} />
 
         {/* 操作按鈕 */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
