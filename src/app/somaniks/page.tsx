@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Suspense } from "react";
 
 import FrequencyBadge from "@/components/FrequencyBadge";
 import { Footer } from "@/components/Footer";
@@ -746,7 +747,9 @@ export default function SomaniksPage() {
       </section>
 
       {/* ─── 身體支持點 ─── */}
-      <BodySupportSection />
+      <Suspense fallback={null}>
+        <BodySupportSection />
+      </Suspense>
 
       {/* ═══════════════════════════════════════════════════════════
           CTA SECTION

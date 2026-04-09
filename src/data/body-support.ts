@@ -165,3 +165,64 @@ export const bodySupportPoints: BodySupportPoint[] = [
 export const bodySupportPointMap = Object.fromEntries(
   bodySupportPoints.map((point) => [point.slug, point])
 ) as Record<string, BodySupportPoint>;
+
+/* ── 花精 → 穴位反向 mapping ── */
+
+export type FlowerPointLink = {
+  primary: string[];
+  secondary?: string[];
+};
+
+export const flowerToPointsMap: Record<string, FlowerPointLink> = {
+  /* 恐懼群 */
+  "rock-rose":       { primary: ["ki6"] },
+  mimulus:           { primary: ["ki6"], secondary: ["bl62"] },
+  "cherry-plum":     { primary: ["ki6"] },
+  aspen:             { primary: ["bl62"], secondary: ["ki6"] },
+  "red-chestnut":    { primary: ["ki6"] },
+
+  /* 不確定群 */
+  cerato:            { primary: ["sp4"] },
+  scleranthus:       { primary: ["sp4"] },
+  gentian:           { primary: ["sp4"] },
+  gorse:             { primary: ["sp4"] },
+  hornbeam:          { primary: ["sp4"] },
+  "wild-oat":        { primary: ["sp4"] },
+
+  /* 對當下缺乏興趣群 */
+  clematis:          { primary: ["si3"] },
+  honeysuckle:       { primary: ["ki6"], secondary: ["bl62"] },
+  "wild-rose":       { primary: ["si3"] },
+  olive:             { primary: ["si3"] },
+  "white-chestnut":  { primary: ["pc6"] },
+  mustard:           { primary: ["gb41"] },
+  "chestnut-bud":    { primary: ["sp4"] },
+
+  /* 寂寞群 */
+  heather:           { primary: ["pc6"] },
+  impatiens:         { primary: ["pc6"], secondary: ["sj5"] },
+  "water-violet":    { primary: ["pc6"] },
+
+  /* 過度敏感群 */
+  agrimony:          { primary: ["lu7"], secondary: ["pc6"] },
+  centaury:          { primary: ["lu7"] },
+  holly:             { primary: ["lu7"] },
+  walnut:            { primary: ["lu7"] },
+
+  /* 沮喪絕望群 */
+  larch:             { primary: ["gb41"] },
+  pine:              { primary: ["gb41"] },
+  elm:               { primary: ["gb41"], secondary: ["sp4"] },
+  "sweet-chestnut":  { primary: ["si3"] },
+  "star-of-bethlehem": { primary: ["gb41"] },
+  willow:            { primary: ["gb41"] },
+  "crab-apple":      { primary: ["gb41"] },
+
+  /* 過度關心他人群 */
+  chicory:           { primary: ["gb41"], secondary: ["lu7"] },
+  vervain:           { primary: ["sj5"] },
+  vine:              { primary: ["sj5"] },
+  beech:             { primary: ["sj5"] },
+  "rock-water":      { primary: ["lu7"] },
+  oak:               { primary: ["lu7"], secondary: ["sj5"] },
+};

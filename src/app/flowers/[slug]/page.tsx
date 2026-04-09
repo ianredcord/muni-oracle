@@ -7,6 +7,7 @@ import { Footer } from "@/components/Footer";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import FlowerBodySupport from "@/components/FlowerBodySupport";
 
 // 動態 Metadata
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
@@ -198,6 +199,9 @@ export default async function FlowerDetailPage({ params }: PageProps) {
             </div>
           </div>
         </section>
+
+        {/* 身體支持區塊 */}
+        <FlowerBodySupport flowerSlug={slug} />
 
         {/* 操作按鈕 */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
