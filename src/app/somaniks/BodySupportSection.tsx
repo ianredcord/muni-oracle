@@ -370,7 +370,7 @@ export default function BodySupportSection() {
                       我現在試試看這個位置
                     </button>
                     <Link
-                      href="/"
+                      href="/muni-scent"
                       onClick={() => setSelected(null)}
                       className="flex-1 px-5 py-3 rounded-xl border border-stone-200 text-[#4a5548] text-sm font-medium text-center hover:bg-stone-50 transition-colors"
                     >

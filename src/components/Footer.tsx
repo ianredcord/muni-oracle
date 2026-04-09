@@ -28,6 +28,9 @@ export function Footer() {
           </a>
         </div>
         <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 mb-6">
+          <Link href="/muni-scent" className="text-stone-400 hover:text-[#4a5548] text-xs transition-colors">
+            牟尼香
+          </Link>
           <Link href="/somaniks" className="text-stone-400 hover:text-[#4a5548] text-xs transition-colors">
             牟尼微針
           </Link>

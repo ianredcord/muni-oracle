@@ -42,6 +42,12 @@ export function Header() {
             牟尼塔羅百科
           </Link>
           <Link
+            href="/muni-scent"
+            className="text-stone-600 hover:text-[#4a5548] text-sm font-medium transition-colors"
+          >
+            牟尼香
+          </Link>
+          <Link
             href="/somaniks"
             className="text-stone-600 hover:text-[#4a5548] text-sm font-medium transition-colors"
           >
@@ -128,6 +134,9 @@ export function Header() {
             </Link>
             <Link href="/tarot-encyclopedia" onClick={() => setMobileMenuOpen(false)} className="text-stone-600 hover:text-[#4a5548] text-base font-medium py-2 transition-colors">
               牟尼塔羅百科
+            </Link>
+            <Link href="/muni-scent" onClick={() => setMobileMenuOpen(false)} className="text-stone-600 hover:text-[#4a5548] text-base font-medium py-2 transition-colors">
+              牟尼香
             </Link>
             <Link href="/somaniks" onClick={() => setMobileMenuOpen(false)} className="text-stone-600 hover:text-[#4a5548] text-base font-medium py-2 transition-colors">
               牟尼微針
