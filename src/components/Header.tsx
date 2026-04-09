@@ -27,19 +27,25 @@ export function Header() {
             href="/tarot"
             className="text-stone-600 hover:text-[#4a5548] text-sm font-medium transition-colors"
           >
-            牟尼塔羅牌
+            牟尼塔羅
           </Link>
           <Link
             href="/flowers"
             className="text-stone-600 hover:text-[#4a5548] text-sm font-medium transition-colors"
           >
-            {ZH.nav.flowerIndex}
+            牟尼花精
           </Link>
           <Link
             href="/tarot-encyclopedia"
             className="text-stone-600 hover:text-[#4a5548] text-sm font-medium transition-colors"
           >
-            牟尼塔羅牌百科
+            牟尼塔羅百科
+          </Link>
+          <Link
+            href="/somaniks"
+            className="text-stone-600 hover:text-[#4a5548] text-sm font-medium transition-colors"
+          >
+            牟尼微針
           </Link>
           <Link
             href="/energy-support"
@@ -115,13 +121,16 @@ export function Header() {
               {ZH.nav.startDraw}
             </Link>
             <Link href="/tarot" onClick={() => setMobileMenuOpen(false)} className="text-stone-600 hover:text-[#4a5548] text-base font-medium py-2 transition-colors">
-              牟尼塔羅牌
+              牟尼塔羅
             </Link>
             <Link href="/flowers" onClick={() => setMobileMenuOpen(false)} className="text-stone-600 hover:text-[#4a5548] text-base font-medium py-2 transition-colors">
-              {ZH.nav.flowerIndex}
+              牟尼花精
             </Link>
             <Link href="/tarot-encyclopedia" onClick={() => setMobileMenuOpen(false)} className="text-stone-600 hover:text-[#4a5548] text-base font-medium py-2 transition-colors">
-              牟尼塔羅牌百科
+              牟尼塔羅百科
+            </Link>
+            <Link href="/somaniks" onClick={() => setMobileMenuOpen(false)} className="text-stone-600 hover:text-[#4a5548] text-base font-medium py-2 transition-colors">
+              牟尼微針
             </Link>
             <Link href="/energy-support" onClick={() => setMobileMenuOpen(false)} className="text-stone-600 hover:text-[#4a5548] text-base font-medium py-2 transition-colors">
               {ZH.nav.energySupport}

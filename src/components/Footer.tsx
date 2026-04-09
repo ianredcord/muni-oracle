@@ -18,16 +18,19 @@ export function Footer() {
             {ZH.nav.startDraw}
           </Link>
           <Link href="/flowers" className="text-stone-500 hover:text-[#4a5548] text-sm transition-colors">
-            {ZH.nav.flowerIndex}
+            牟尼花精
           </Link>
           <Link href="/tarot" className="text-stone-500 hover:text-[#4a5548] text-sm transition-colors">
-            牟尼塔羅牌
+            牟尼塔羅
           </Link>
           <a href="https://ai.munione.co" target="_blank" rel="noopener noreferrer" className="text-[#9A7B4F] hover:text-[#8A6B3F] text-sm font-medium transition-colors">
             {ZH.nav.healingConsultant}
           </a>
         </div>
         <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 mb-6">
+          <Link href="/somaniks" className="text-stone-400 hover:text-[#4a5548] text-xs transition-colors">
+            牟尼微針
+          </Link>
           <Link href="/energy-support" className="text-stone-400 hover:text-[#4a5548] text-xs transition-colors">
             {ZH.nav.energySupport}
           </Link>
