@@ -123,16 +123,11 @@ export default function BodySupportSection() {
           <p className="text-sm tracking-[0.3em] text-[#9A7B4F] mb-4">
             BODY SUPPORT POINTS
           </p>
-          <h2 className="font-serif text-2xl md:text-4xl font-bold text-[#4a5548] mb-4">
-            身體支持點
+          <h2 className="font-serif text-2xl md:text-3xl font-bold text-[#4a5548] mb-4">
+            8 個身體支持點
           </h2>
-          <p className="text-stone-500 text-base md:text-lg max-w-2xl mx-auto leading-relaxed mb-3">
-            當你不知道該怎麼調整自己時，可以先從身體開始
-          </p>
           <p className="text-stone-400 text-sm max-w-xl mx-auto leading-relaxed">
-            先抽花精牌卡、聞牟尼香，再貼上 Somaniks，
-            <br className="hidden sm:block" />
-            讓身體慢慢回到可被承接的狀態。
+            每個位置對應不同的身體狀態，選一個最接近你的，點進去看貼法。
           </p>
         </div>
 
@@ -233,37 +228,7 @@ export default function BodySupportSection() {
           })}
         </div>
 
-        {/* ═══ 使用建議 ═══ */}
-        <div className="mt-14 bg-white/80 backdrop-blur-sm rounded-2xl p-8 border border-stone-200 text-center">
-          <p className="text-[#9A7B4F] text-sm tracking-wider mb-3">
-            SUGGESTED RITUAL
-          </p>
-          <p className="font-serif text-lg text-[#4a5548] font-bold mb-5">
-            建議使用順序
-          </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6 text-stone-600 text-sm">
-            <span className="flex items-center gap-2">
-              <span className="w-7 h-7 rounded-full bg-[#4a5548] text-white text-xs flex items-center justify-center font-medium">
-                1
-              </span>
-              抽花精牌卡
-            </span>
-            <span className="hidden sm:block text-stone-300">→</span>
-            <span className="flex items-center gap-2">
-              <span className="w-7 h-7 rounded-full bg-[#4a5548] text-white text-xs flex items-center justify-center font-medium">
-                2
-              </span>
-              聞牟尼香
-            </span>
-            <span className="hidden sm:block text-stone-300">→</span>
-            <span className="flex items-center gap-2">
-              <span className="w-7 h-7 rounded-full bg-[#4a5548] text-white text-xs flex items-center justify-center font-medium">
-                3
-              </span>
-              貼上 Somaniks
-            </span>
-          </div>
-        </div>
+        {/* 使用建議已移至頁面層級的三步驟區塊 */}
       </div>
 
       {/* ═══ Modal ═══ */}
