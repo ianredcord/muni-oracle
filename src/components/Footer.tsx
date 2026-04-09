@@ -43,6 +43,9 @@ export function Footer() {
           <Link href="/systems" className="text-stone-400 hover:text-[#4a5548] text-xs transition-colors">
             療癒系統
           </Link>
+          <Link href="/internal/flow-system" className="text-stone-400 hover:text-[#9A7B4F] text-xs font-medium transition-colors">
+            MAX
+          </Link>
         </div>
         <p className="text-stone-400 text-xs">
           {ZH.home.footer.note}
