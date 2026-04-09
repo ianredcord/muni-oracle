@@ -13,16 +13,30 @@ export function Footer() {
             {ZH.home.footer.tagline}
           </p>
         </div>
-        <div className="flex justify-center gap-6 mb-6">
+        <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 mb-4">
           <Link href="/draw" className="text-stone-500 hover:text-[#4a5548] text-sm transition-colors">
             {ZH.nav.startDraw}
           </Link>
           <Link href="/flowers" className="text-stone-500 hover:text-[#4a5548] text-sm transition-colors">
             {ZH.nav.flowerIndex}
           </Link>
+          <Link href="/tarot" className="text-stone-500 hover:text-[#4a5548] text-sm transition-colors">
+            牟尼塔羅牌
+          </Link>
           <a href="https://ai.munione.co" target="_blank" rel="noopener noreferrer" className="text-[#9A7B4F] hover:text-[#8A6B3F] text-sm font-medium transition-colors">
             {ZH.nav.healingConsultant}
           </a>
+        </div>
+        <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 mb-6">
+          <Link href="/energy-support" className="text-stone-400 hover:text-[#4a5548] text-xs transition-colors">
+            {ZH.nav.energySupport}
+          </Link>
+          <Link href="/frequency" className="text-stone-400 hover:text-[#4a5548] text-xs transition-colors">
+            獨家技術
+          </Link>
+          <Link href="/systems" className="text-stone-400 hover:text-[#4a5548] text-xs transition-colors">
+            療癒系統
+          </Link>
         </div>
         <p className="text-stone-400 text-xs">
           {ZH.home.footer.note}
