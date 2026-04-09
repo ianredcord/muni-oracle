@@ -58,6 +58,11 @@ export interface ClinicalScenario {
   somaniks: SomaniksType | "mixed";
   somaniksDetail?: string;
   herbalFormula: string;
+  detailedDescription: string;
+  farrellSteps: string[];
+  acupointDetails: { code: string; role: string }[];
+  somaniksProtocol: string;
+  herbalDetails: { name: string; function: string }[];
 }
 
 export interface FlowPosition {

@@ -122,7 +122,11 @@ export default function FlowSystemHome() {
           <SectionTitle title="臨床情境入口" />
           <div className="mt-10 grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
             {clinicalScenarios.map((s) => (
-              <ClinicalCard key={s.slug} scenario={s} />
+              <ClinicalCard
+                key={s.slug}
+                scenario={s}
+                href={`/internal/flow-system/clinical/${s.slug}`}
+              />
             ))}
           </div>
         </div>

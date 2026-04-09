@@ -10,4 +10,4 @@ export type {
 
 export { acupoints, acupointMap } from "./acupoints";
 export { emotionGroups, emotionGroupMap } from "./emotions";
-export { clinicalScenarios } from "./clinical";
+export { clinicalScenarios, clinicalScenarioMap } from "./clinical";
