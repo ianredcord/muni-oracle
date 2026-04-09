@@ -3,6 +3,7 @@ import Link from "next/link";
 
 import FrequencyBadge from "@/components/FrequencyBadge";
 import { Footer } from "@/components/Footer";
+import BodySupportSection from "./BodySupportSection";
 
 export const metadata: Metadata = {
   title: "MUNI × SOMANIKS | 日本不刺入微錐針灸貼 × 神經科學修復",
@@ -743,6 +744,9 @@ export default function SomaniksPage() {
           </div>
         </div>
       </section>
+
+      {/* ─── 身體支持點 ─── */}
+      <BodySupportSection />
 
       {/* ═══════════════════════════════════════════════════════════
           CTA SECTION
