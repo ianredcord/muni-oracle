@@ -48,10 +48,7 @@ export function Header() {
       <header className="fixed top-0 left-0 right-0 z-50 border-b border-stone-200/70 bg-[#f9f7f2]/82 backdrop-blur-xl">
         <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4">
           <div className="flex min-w-0 items-center gap-6">
-            <Link href="/" className="group flex min-w-0 flex-col leading-none">
-              <span className="text-[0.58rem] uppercase tracking-[0.34em] text-stone-400 transition-colors group-hover:text-stone-500">
-                munione.co
-              </span>
+            <Link href="/" className="group flex min-w-0 flex-col justify-center leading-none">
               <span className="font-serif text-xl font-bold tracking-[0.08em] text-[#4a5548] transition-colors group-hover:text-[#3a4538]">
                 {ZH.nav.brand}
               </span>
