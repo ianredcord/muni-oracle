@@ -45,7 +45,7 @@ export const TAROT_CARDS: TarotCard[] = [
     nameZh: "魔術師",
     suit: "major",
     suitZh: "大秘儀",
-    flower: "Cerato 水蕗草",
+    flower: "Cerato 紫金蓮",
     image: "/images/products/JtsxUDrqlasKmpjd.jpg",
   },
   {
@@ -85,7 +85,7 @@ export const TAROT_CARDS: TarotCard[] = [
     nameZh: "教皇",
     suit: "major",
     suitZh: "大秘儀",
-    flower: "Rock Water 岩泉水",
+    flower: "Rock Water 岩水",
     image: "/images/products/AJnerMJMMAHtFEle.jpg",
   },
   {
@@ -135,7 +135,7 @@ export const TAROT_CARDS: TarotCard[] = [
     nameZh: "命運之輪",
     suit: "major",
     suitZh: "大秘儀",
-    flower: "Hornbeam 鵝耳櫪",
+    flower: "Hornbeam 角樹",
     image: "/images/products/KFoJPgWLdFvOIxOu.jpg",
   },
   {
@@ -185,7 +185,7 @@ export const TAROT_CARDS: TarotCard[] = [
     nameZh: "惡魔",
     suit: "major",
     suitZh: "大秘儀",
-    flower: "Chestnut Bud 栗芽",
+    flower: "Chestnut Bud 栗樹芽苞",
     image: "/images/products/anXwmLnKEMTgvUTI.jpg",
   },
   {
@@ -275,7 +275,7 @@ export const TAROT_CARDS: TarotCard[] = [
     nameZh: "權杖三",
     suit: "wands",
     suitZh: "權杖",
-    flower: "Hornbeam 鵝耳櫪",
+    flower: "Hornbeam 角樹",
     image: "/images/products/SzmnSGzZhRWBXsUX.jpg",
   },
   {
@@ -445,7 +445,7 @@ export const TAROT_CARDS: TarotCard[] = [
     nameZh: "聖杯六",
     suit: "cups",
     suitZh: "聖杯",
-    flower: "Chestnut Bud 栗芽",
+    flower: "Chestnut Bud 栗樹芽苞",
     image: "/images/products/mqVfIvppbpwmPecI.jpg",
   },
   {
@@ -455,7 +455,7 @@ export const TAROT_CARDS: TarotCard[] = [
     nameZh: "聖杯七",
     suit: "cups",
     suitZh: "聖杯",
-    flower: "Cerato 水蕗草",
+    flower: "Cerato 紫金蓮",
     image: "/images/products/QOPNkAKRSqcspGUK.jpg",
   },
   {
@@ -495,7 +495,7 @@ export const TAROT_CARDS: TarotCard[] = [
     nameZh: "聖杯侍者",
     suit: "cups",
     suitZh: "聖杯",
-    flower: "Chestnut Bud 栗芽",
+    flower: "Chestnut Bud 栗樹芽苞",
     image: "/images/products/xjgoRQiQhFnJcjam.jpg",
   },
   {
@@ -555,7 +555,7 @@ export const TAROT_CARDS: TarotCard[] = [
     nameZh: "寶劍三",
     suit: "swords",
     suitZh: "寶劍",
-    flower: "Willow 柳樹",
+    flower: "Willow 楊柳",
     image: "/images/products/nhHEnAKBjZbMvCQZ.jpg",
   },
   {
@@ -635,7 +635,7 @@ export const TAROT_CARDS: TarotCard[] = [
     nameZh: "寶劍侍者",
     suit: "swords",
     suitZh: "寶劍",
-    flower: "Gentian 龍膽",
+    flower: "Gentian 龍膽草",
     image: "/images/products/hwqUtIUbFrciJhHX.jpg",
   },
   {
@@ -645,7 +645,7 @@ export const TAROT_CARDS: TarotCard[] = [
     nameZh: "寶劍騎士",
     suit: "swords",
     suitZh: "寶劍",
-    flower: "Gentian 龍膽",
+    flower: "Gentian 龍膽草",
     image: "/images/products/ZXKgApIBFBewQeEP.jpg",
   },
   {
@@ -655,7 +655,7 @@ export const TAROT_CARDS: TarotCard[] = [
     nameZh: "寶劍皇后",
     suit: "swords",
     suitZh: "寶劍",
-    flower: "Willow 柳樹",
+    flower: "Willow 楊柳",
     image: "/images/products/HhoFNtyelgXnegtK.jpg",
   },
   {
@@ -665,7 +665,7 @@ export const TAROT_CARDS: TarotCard[] = [
     nameZh: "寶劍國王",
     suit: "swords",
     suitZh: "寶劍",
-    flower: "Crab Apple 海棠",
+    flower: "Crab Apple 野生酸蘋果",
     image: "/images/products/dRRTpUcAZToWdwxq.jpg",
   },
   {
@@ -685,7 +685,7 @@ export const TAROT_CARDS: TarotCard[] = [
     nameZh: "錢幣二",
     suit: "pentacles",
     suitZh: "錢幣",
-    flower: "Rock Water 岩泉水",
+    flower: "Rock Water 岩水",
     image: "/images/products/jYxtcsOhRYihSFXA.jpg",
   },
   {
@@ -715,7 +715,7 @@ export const TAROT_CARDS: TarotCard[] = [
     nameZh: "錢幣五",
     suit: "pentacles",
     suitZh: "錢幣",
-    flower: "Gentian 龍膽",
+    flower: "Gentian 龍膽草",
     image: "/images/products/LTxOdiFwxioaCECn.jpg",
   },
   {
