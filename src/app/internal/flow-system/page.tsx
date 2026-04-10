@@ -17,6 +17,7 @@ import {
   BlueOrangeBadge,
 } from "@/components/flow-system";
 import FlowDiagramWrapper from "./FlowDiagramWrapper";
+import SevenLayerRing from "@/components/flow-system/SevenLayerRing";
 
 export const metadata: Metadata = {
   title: "FP-Somaniks 筋膜能量整合系統",
@@ -72,12 +73,29 @@ export default function FlowSystemHome() {
       </nav>
 
       {/* ═══ Hero ═══ */}
-      <section className="relative overflow-hidden pt-20 pb-16 md:pt-32 md:pb-24">
-        <div className="absolute inset-0 pointer-events-none">
+      <section className="relative pt-16 pb-12 md:pt-24 md:pb-20 overflow-x-clip">
+        {/* Animated gradient background */}
+        <div className="absolute inset-0 pointer-events-none overflow-hidden">
+          <div
+            className="absolute inset-0 opacity-[0.035]"
+            style={{
+              background: "linear-gradient(135deg, #9A7B4F 0%, #006494 30%, #da7101 60%, #9A7B4F 100%)",
+              backgroundSize: "400% 400%",
+              animation: "hero-gradient 25s ease infinite",
+            }}
+          />
           <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-[#9A7B4F]/[0.04] rounded-full blur-[150px]" />
-          <div className="absolute top-1/2 left-1/4 w-[500px] h-[500px] bg-[#006494]/[0.03] rounded-full blur-[120px]" />
-          <div className="absolute bottom-0 right-1/4 w-[400px] h-[400px] bg-[#da7101]/[0.03] rounded-full blur-[100px]" />
+          <div className="absolute top-1/2 left-0 w-[500px] h-[500px] bg-[#006494]/[0.03] rounded-full blur-[120px]" />
+          <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-[#da7101]/[0.03] rounded-full blur-[100px]" />
         </div>
+        <style dangerouslySetInnerHTML={{ __html: `
+          @keyframes hero-gradient {
+            0%   { background-position: 0% 50%; }
+            50%  { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+          }
+        ` }} />
+
         <div className="relative mx-auto max-w-4xl px-4 text-center">
           <p className="text-xs tracking-[0.3em] uppercase text-[#9A7B4F] mb-6">
             FP-Somaniks Integration System v1.0
@@ -85,13 +103,18 @@ export default function FlowSystemHome() {
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl tracking-tight leading-[1.15] font-bold">
             筋膜能量整合系統
           </h1>
-          <p className="mt-4 font-serif text-lg md:text-xl text-[#4a5548]/60">
-            花精 × 一氣周流 × 奇經八脈 × Somaniks
+          <p className="mt-4 font-serif text-lg md:text-xl text-[#4a5548]/50">
+            牟尼香 × 40隻花精 × 一氣周流 × 奇經八脈 × Somaniks
           </p>
           <p className="mt-4 text-sm md:text-base text-[#4a5548]/40 max-w-2xl mx-auto leading-loose">
-            以黃元御一氣周流為作業系統，整合正經、經別、經筋、絡脈、奇經八脈五層子系統，
+            以黃元御一氣周流為作業系統，整合五層子系統，
             透過 Somaniks 微針貼＋Bach 花精進行介入的完整臨床架構。
           </p>
+
+          {/* Seven Layer Ring */}
+          <div className="mt-10">
+            <SevenLayerRing />
+          </div>
 
           {/* Quick stats */}
           <div className="mt-10 flex items-center justify-center gap-6 md:gap-10 flex-wrap">
@@ -110,6 +133,7 @@ export default function FlowSystemHome() {
             ))}
           </div>
 
+          {/* CTA */}
           <div className="mt-10 flex items-center justify-center gap-3 flex-wrap">
             <Link
               href="#layers"
