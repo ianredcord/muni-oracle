@@ -21,7 +21,7 @@ interface EmotionCardProps {
 
 export default function EmotionCard({ emotion, href }: EmotionCardProps) {
   const content = (
-    <div className="relative rounded-2xl border border-stone-200/60 bg-white shadow-sm p-5 md:p-6 transition-all duration-300 hover:shadow-md hover:scale-[1.02]">
+    <div className="relative rounded-2xl border border-stone-200/60 bg-white/80 backdrop-blur-sm shadow-sm p-5 md:p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
       {/* Element badge - top right */}
       <div className="absolute top-4 right-4">
         <FiveElementBadge element={emotion.element} />

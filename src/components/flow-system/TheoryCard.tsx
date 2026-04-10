@@ -17,7 +17,7 @@ export default function TheoryCard({
 }: TheoryCardProps) {
   return (
     <div
-      className={`rounded-2xl border border-stone-200/60 bg-white shadow-sm p-6 md:p-8 ${className}`}
+      className={`rounded-2xl border border-stone-200/60 bg-white/80 backdrop-blur-sm shadow-sm p-6 md:p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg ${className}`}
     >
       {icon && (
         <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-[#F9F7F2] text-[#4a5548]">

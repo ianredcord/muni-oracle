@@ -19,7 +19,7 @@ interface ClinicalCardProps {
 
 export default function ClinicalCard({ scenario, href }: ClinicalCardProps) {
   const content = (
-    <div className="rounded-2xl border border-stone-200/60 bg-white shadow-sm p-5 md:p-6 transition-all duration-300 hover:shadow-md hover:scale-[1.02]">
+    <div className="rounded-2xl border border-stone-200/60 bg-white/80 backdrop-blur-sm shadow-sm p-5 md:p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
       {/* Title row */}
       <div className="flex items-start gap-2">
         <span className="text-lg">{scenario.color}</span>

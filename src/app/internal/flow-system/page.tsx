@@ -34,10 +34,10 @@ export default function FlowSystemHome() {
     <div className="min-h-screen bg-[#F9F7F2] text-[#4a5548]">
       {/* ═══ Sticky nav ═══ */}
       <nav className="sticky top-0 z-50 bg-[#F9F7F2]/80 backdrop-blur-md border-b border-stone-200/50">
-        <div className="mx-auto max-w-6xl px-4 flex items-center h-12 gap-1 overflow-x-auto scrollbar-hide">
-          <span className="shrink-0 font-serif font-bold text-sm tracking-wide mr-3 text-[#4a5548]/80">
+        <div className="mx-auto max-w-5xl px-4 flex items-center h-12 gap-1 overflow-x-auto scrollbar-hide">
+          <Link href="/internal/flow-system" className="shrink-0 font-serif font-bold text-sm tracking-wide mr-3 text-[#9A7B4F]">
             MAX
-          </span>
+          </Link>
           {NAV.map((n) => (
             <Link
               key={n.label}
@@ -54,24 +54,26 @@ export default function FlowSystemHome() {
       </nav>
 
       {/* ═══ Hero ═══ */}
-      <section className="relative overflow-hidden pt-16 pb-12 md:pt-24 md:pb-16">
+      <section className="relative overflow-hidden pt-20 pb-16 md:pt-32 md:pb-24">
+        {/* Decorative blurs — matching main site */}
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-[#da7101]/[0.03] rounded-full blur-[100px]" />
-          <div className="absolute top-1/2 left-1/4 w-[400px] h-[400px] bg-[#006494]/[0.02] rounded-full blur-[80px]" />
+          <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-[#9A7B4F]/[0.04] rounded-full blur-[150px]" />
+          <div className="absolute top-1/2 left-1/4 w-[500px] h-[500px] bg-[#006494]/[0.03] rounded-full blur-[120px]" />
+          <div className="absolute bottom-0 right-1/4 w-[400px] h-[400px] bg-[#da7101]/[0.03] rounded-full blur-[100px]" />
         </div>
         <div className="relative mx-auto max-w-4xl px-4 text-center">
-          <p className="text-xs tracking-[0.3em] uppercase text-[#9A7B4F] mb-4">
+          <p className="text-xs tracking-[0.3em] uppercase text-[#9A7B4F] mb-6">
             MUNI Internal Knowledge System
           </p>
-          <h1 className="font-serif text-3xl md:text-5xl lg:text-6xl tracking-tight leading-[1.15]">
+          <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl tracking-tight leading-[1.15] font-bold">
             花精 × 一氣周流 × 奇經八脈
           </h1>
-          <p className="mt-4 text-base md:text-lg text-[#4a5548]/50 max-w-2xl mx-auto leading-relaxed">
+          <p className="mt-6 text-base md:text-lg text-[#4a5548]/50 max-w-2xl mx-auto leading-loose">
             整合 Bach 花精、黃元御一氣周流、Farrell 經絡五層、奇經八穴口訣與 Somaniks 色彩語言的完整知識系統。
           </p>
 
           {/* Quick stats */}
-          <div className="mt-8 flex items-center justify-center gap-6 md:gap-10">
+          <div className="mt-10 flex items-center justify-center gap-8 md:gap-12">
             {[
               { num: "38", label: "支花精" },
               { num: "8", label: "個穴位" },
@@ -79,19 +81,36 @@ export default function FlowSystemHome() {
               { num: "5", label: "層經絡" },
             ].map((s) => (
               <div key={s.label} className="text-center">
-                <p className="font-serif text-2xl md:text-3xl text-[#4a5548]">{s.num}</p>
-                <p className="text-[10px] md:text-xs text-[#4a5548]/40 mt-0.5">{s.label}</p>
+                <p className="font-serif text-3xl md:text-4xl text-[#4a5548] font-bold">{s.num}</p>
+                <p className="text-[10px] md:text-xs text-[#4a5548]/40 mt-1">{s.label}</p>
               </div>
             ))}
+          </div>
+
+          {/* CTA buttons — pill style matching main site */}
+          <div className="mt-10 flex items-center justify-center gap-3 flex-wrap">
+            <Link
+              href="#diagram"
+              className="px-6 py-2.5 rounded-full bg-[#4a5548] text-white text-sm font-medium hover:bg-[#3a4538] transition-colors shadow-sm"
+            >
+              開始探索
+            </Link>
+            <Link
+              href="/internal/flow-system/search"
+              className="px-6 py-2.5 rounded-full border border-[#4a5548]/20 text-sm font-medium hover:bg-white/60 transition-colors"
+            >
+              搜尋系統
+            </Link>
           </div>
         </div>
       </section>
 
       {/* ═══ Three Theories ═══ */}
-      <section id="theories" className="py-12 md:py-16">
-        <div className="mx-auto max-w-6xl px-4">
-          <h2 className="font-serif text-2xl md:text-3xl text-center mb-8">三大理論框架</h2>
-          <div className="grid gap-5 md:grid-cols-3">
+      <section id="theories" className="py-16 md:py-20">
+        <div className="mx-auto max-w-5xl px-4">
+          <p className="text-xs tracking-[0.2em] uppercase text-[#9A7B4F] text-center mb-3">Theoretical Framework</p>
+          <h2 className="font-serif text-2xl md:text-3xl text-center mb-10">三大理論框架</h2>
+          <div className="grid gap-6 md:grid-cols-3">
             <TheoryCard
               title="一氣周流"
               subtitle="黃元御"
@@ -112,21 +131,25 @@ export default function FlowSystemHome() {
       </section>
 
       {/* ═══ Flow Diagram + Acupoints side by side ═══ */}
-      <section id="diagram" className="py-12 md:py-16 bg-white/40">
-        <div className="mx-auto max-w-6xl px-4">
+      <section id="diagram" className="relative py-16 md:py-20 bg-white/40">
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#9A7B4F]/[0.02] rounded-full blur-[120px]" />
+        </div>
+        <div className="relative mx-auto max-w-5xl px-4">
+          <p className="text-xs tracking-[0.2em] uppercase text-[#9A7B4F] text-center mb-3">Flow Diagram</p>
           <h2 className="font-serif text-2xl md:text-3xl text-center mb-3">一氣周流 × 八穴位置圖</h2>
-          <p className="text-center text-sm text-[#4a5548]/40 mb-8">點擊穴位查看詳細資訊</p>
+          <p className="text-center text-sm text-[#4a5548]/40 mb-10">點擊穴位查看詳細資訊</p>
 
           <div className="grid md:grid-cols-2 gap-8 items-start">
             {/* Diagram */}
-            <div className="bg-white rounded-2xl border border-stone-200/50 p-4 md:p-6 shadow-sm">
+            <div className="bg-white/80 backdrop-blur-sm rounded-2xl border border-stone-200/50 p-4 md:p-6 shadow-sm">
               <FlowDiagramWrapper />
             </div>
 
             {/* Ancient verse + quick info */}
             <div className="space-y-5">
               {/* 口訣 */}
-              <div className="bg-white rounded-2xl border border-stone-200/50 p-5 md:p-6 shadow-sm">
+              <div className="bg-white/80 backdrop-blur-sm rounded-2xl border border-stone-200/50 p-5 md:p-6 shadow-sm">
                 <h3 className="font-serif text-base mb-3 text-[#4a5548]/70">八穴口訣</h3>
                 <p className="text-sm leading-[2] text-[#4a5548]/60 font-serif">
                   公孫衝脈胃心胸，內關陰維下總同；<br />
@@ -137,7 +160,7 @@ export default function FlowSystemHome() {
               </div>
 
               {/* Somaniks key */}
-              <div className="bg-white rounded-2xl border border-stone-200/50 p-5 shadow-sm">
+              <div className="bg-white/80 backdrop-blur-sm rounded-2xl border border-stone-200/50 p-5 shadow-sm">
                 <h3 className="font-serif text-base mb-3 text-[#4a5548]/70">治療策略邏輯</h3>
                 <div className="space-y-3">
                   <div className="flex items-start gap-3">
@@ -157,23 +180,23 @@ export default function FlowSystemHome() {
                 </div>
               </div>
 
-              {/* Quick links */}
+              {/* Quick links — pill style */}
               <div className="flex flex-wrap gap-2">
                 <Link
                   href="/internal/flow-system/farrell"
-                  className="px-4 py-2 rounded-xl bg-white border border-stone-200/50 text-xs font-medium hover:bg-stone-50 hover:border-stone-300 transition-colors shadow-sm"
+                  className="px-4 py-2 rounded-full bg-white/80 backdrop-blur-sm border border-stone-200/50 text-xs font-medium hover:bg-white hover:border-stone-300 hover:-translate-y-0.5 transition-all shadow-sm"
                 >
                   Farrell 五層系統 →
                 </Link>
                 <Link
                   href="/internal/flow-system/hexagrams"
-                  className="px-4 py-2 rounded-xl bg-white border border-stone-200/50 text-xs font-medium hover:bg-stone-50 hover:border-stone-300 transition-colors shadow-sm"
+                  className="px-4 py-2 rounded-full bg-white/80 backdrop-blur-sm border border-stone-200/50 text-xs font-medium hover:bg-white hover:border-stone-300 hover:-translate-y-0.5 transition-all shadow-sm"
                 >
                   卦象 × 藥方 →
                 </Link>
                 <Link
                   href="/internal/flow-system/search"
-                  className="px-4 py-2 rounded-xl bg-white border border-stone-200/50 text-xs font-medium hover:bg-stone-50 hover:border-stone-300 transition-colors shadow-sm"
+                  className="px-4 py-2 rounded-full bg-white/80 backdrop-blur-sm border border-stone-200/50 text-xs font-medium hover:bg-white hover:border-stone-300 hover:-translate-y-0.5 transition-all shadow-sm"
                 >
                   搜尋系統 →
                 </Link>
@@ -184,18 +207,24 @@ export default function FlowSystemHome() {
       </section>
 
       {/* ═══ Eight Acupoints ═══ */}
-      <section id="acupoints" className="py-12 md:py-16">
-        <div className="mx-auto max-w-6xl px-4">
-          <div className="flex items-center justify-between mb-8">
-            <h2 className="font-serif text-2xl md:text-3xl">奇經八穴</h2>
+      <section id="acupoints" className="relative py-16 md:py-20">
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute top-0 right-1/4 w-[400px] h-[400px] bg-[#da7101]/[0.02] rounded-full blur-[100px]" />
+        </div>
+        <div className="relative mx-auto max-w-5xl px-4">
+          <div className="flex items-end justify-between mb-10">
+            <div>
+              <p className="text-xs tracking-[0.2em] uppercase text-[#9A7B4F] mb-2">Eight Confluent Points</p>
+              <h2 className="font-serif text-2xl md:text-3xl">奇經八穴</h2>
+            </div>
             <Link
               href="/internal/flow-system/acupoints"
-              className="text-xs text-[#9A7B4F] font-medium hover:underline"
+              className="px-4 py-1.5 rounded-full border border-[#9A7B4F]/30 text-xs text-[#9A7B4F] font-medium hover:bg-[#9A7B4F]/10 transition-colors"
             >
               查看總覽 →
             </Link>
           </div>
-          <div className="grid gap-4 grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-5 grid-cols-2 lg:grid-cols-4">
             {acupoints.map((a) => (
               <AcupointCard
                 key={a.slug}
@@ -208,18 +237,24 @@ export default function FlowSystemHome() {
       </section>
 
       {/* ═══ Seven Emotion Groups ═══ */}
-      <section id="emotions" className="py-12 md:py-16 bg-white/40">
-        <div className="mx-auto max-w-6xl px-4">
-          <div className="flex items-center justify-between mb-8">
-            <h2 className="font-serif text-2xl md:text-3xl">七大情緒族群</h2>
+      <section id="emotions" className="relative py-16 md:py-20 bg-white/40">
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute bottom-0 left-1/3 w-[500px] h-[500px] bg-[#006494]/[0.02] rounded-full blur-[120px]" />
+        </div>
+        <div className="relative mx-auto max-w-5xl px-4">
+          <div className="flex items-end justify-between mb-10">
+            <div>
+              <p className="text-xs tracking-[0.2em] uppercase text-[#9A7B4F] mb-2">Emotion Groups</p>
+              <h2 className="font-serif text-2xl md:text-3xl">七大情緒族群</h2>
+            </div>
             <Link
               href="/internal/flow-system/emotions"
-              className="text-xs text-[#9A7B4F] font-medium hover:underline"
+              className="px-4 py-1.5 rounded-full border border-[#9A7B4F]/30 text-xs text-[#9A7B4F] font-medium hover:bg-[#9A7B4F]/10 transition-colors"
             >
               查看總覽 →
             </Link>
           </div>
-          <div className="grid gap-4 grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-5 grid-cols-2 lg:grid-cols-4">
             {emotionGroups.map((g) => (
               <EmotionCard
                 key={g.slug}
@@ -232,18 +267,24 @@ export default function FlowSystemHome() {
       </section>
 
       {/* ═══ Clinical Scenarios ═══ */}
-      <section id="clinical" className="py-12 md:py-16">
-        <div className="mx-auto max-w-6xl px-4">
-          <div className="flex items-center justify-between mb-8">
-            <h2 className="font-serif text-2xl md:text-3xl">臨床情境</h2>
+      <section id="clinical" className="relative py-16 md:py-20">
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute top-1/2 right-1/3 w-[400px] h-[400px] bg-[#9A7B4F]/[0.02] rounded-full blur-[100px]" />
+        </div>
+        <div className="relative mx-auto max-w-5xl px-4">
+          <div className="flex items-end justify-between mb-10">
+            <div>
+              <p className="text-xs tracking-[0.2em] uppercase text-[#9A7B4F] mb-2">Clinical Scenarios</p>
+              <h2 className="font-serif text-2xl md:text-3xl">臨床情境</h2>
+            </div>
             <Link
               href="/internal/flow-system/clinical"
-              className="text-xs text-[#9A7B4F] font-medium hover:underline"
+              className="px-4 py-1.5 rounded-full border border-[#9A7B4F]/30 text-xs text-[#9A7B4F] font-medium hover:bg-[#9A7B4F]/10 transition-colors"
             >
               查看總覽 →
             </Link>
           </div>
-          <div className="grid gap-4 grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-5 grid-cols-2 lg:grid-cols-4">
             {clinicalScenarios.map((s) => (
               <ClinicalCard
                 key={s.slug}
@@ -255,27 +296,62 @@ export default function FlowSystemHome() {
         </div>
       </section>
 
-      {/* ═══ Footer ═══ */}
-      <footer className="py-8 border-t border-stone-200/50">
-        <div className="mx-auto max-w-6xl px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-[10px] text-[#4a5548]/30">
-            MUNI 整合系統 · 內部測試版 · 請勿公開分享
+      {/* ═══ CTA Section — dark bg matching main site ═══ */}
+      <section className="py-16 md:py-20 bg-[#4a5548] text-white">
+        <div className="mx-auto max-w-4xl px-4 text-center">
+          <h2 className="font-serif text-2xl md:text-3xl mb-4">深入探索整合系統</h2>
+          <p className="text-white/60 text-sm md:text-base leading-relaxed max-w-xl mx-auto">
+            Farrell 經絡五層、卦象藥方對照、全系統關鍵字搜尋，完整的知識工具等你使用。
           </p>
-          <div className="flex gap-3">
-            {[
-              { label: "Farrell 五層", href: "/internal/flow-system/farrell" },
-              { label: "卦象藥方", href: "/internal/flow-system/hexagrams" },
-              { label: "搜尋", href: "/internal/flow-system/search" },
-            ].map((l) => (
-              <Link
-                key={l.label}
-                href={l.href}
-                className="text-[10px] text-[#4a5548]/30 hover:text-[#4a5548]/60 transition-colors"
-              >
-                {l.label}
-              </Link>
-            ))}
+          <div className="mt-8 flex items-center justify-center gap-3 flex-wrap">
+            <Link
+              href="/internal/flow-system/farrell"
+              className="px-6 py-2.5 rounded-full bg-white text-[#4a5548] text-sm font-medium hover:bg-white/90 transition-colors"
+            >
+              Farrell 五層
+            </Link>
+            <Link
+              href="/internal/flow-system/hexagrams"
+              className="px-6 py-2.5 rounded-full border border-white/30 text-sm font-medium hover:bg-white/10 transition-colors"
+            >
+              卦象藥方
+            </Link>
+            <Link
+              href="/internal/flow-system/search"
+              className="px-6 py-2.5 rounded-full border border-white/30 text-sm font-medium hover:bg-white/10 transition-colors"
+            >
+              搜尋系統
+            </Link>
           </div>
+        </div>
+      </section>
+
+      {/* ═══ Footer — matching main site style ═══ */}
+      <footer className="py-12 px-4 bg-stone-100">
+        <div className="max-w-4xl mx-auto text-center">
+          <h3 className="font-serif text-xl font-bold text-[#4a5548] mb-2">
+            MUNI 整合知識系統
+          </h3>
+          <p className="text-stone-500 text-sm mb-6">
+            花精 × 一氣周流 × 奇經八脈 × Farrell 五層 × Somaniks
+          </p>
+          <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 mb-6">
+            <Link href="/internal/flow-system/farrell" className="text-stone-500 hover:text-[#4a5548] text-sm transition-colors">
+              Farrell 五層
+            </Link>
+            <Link href="/internal/flow-system/hexagrams" className="text-stone-500 hover:text-[#4a5548] text-sm transition-colors">
+              卦象藥方
+            </Link>
+            <Link href="/internal/flow-system/search" className="text-stone-500 hover:text-[#4a5548] text-sm transition-colors">
+              搜尋系統
+            </Link>
+            <Link href="/" className="text-[#9A7B4F] hover:text-[#8A6B3F] text-sm font-medium transition-colors">
+              回到主站
+            </Link>
+          </div>
+          <p className="text-stone-400 text-xs">
+            內部測試版 · 僅供 MUNI 團隊使用 · 請勿公開分享
+          </p>
         </div>
       </footer>
     </div>
