@@ -71,3 +71,48 @@ export interface FlowPosition {
   organ: string;
   acupoints: string[]; // acupoint slugs
 }
+
+/* ── Seven-Layer Architecture (from FP-Somaniks v1.0) ── */
+
+export interface SystemLayer {
+  slug: string;
+  order: number; // 0=OS, 1-5=layers, 6=intervention
+  tag: string; // e.g. "OS 層", "第一層"
+  name: string; // e.g. "一氣周流"
+  nameEn: string; // e.g. "One-Breath Circulation"
+  subtitle: string; // short description
+  fasciaCorrelate: string; // 筋膜科學對應
+  medium: string; // 傳導介質
+  clinicalEntry: string; // 臨床入口
+  corePrinciple: string; // 核心原理
+  keyConceptTitle: string; // main concept heading
+  keyConcepts: string[]; // bullet points
+  icon: string; // emoji
+  color: string; // tailwind color token
+}
+
+export interface SubsystemComparison {
+  dimension: string;
+  classical: string;
+  fasciaScience: string;
+  medium: string;
+  clinicalEntry: string;
+  corePrinciple: string;
+}
+
+export interface CourseLevel {
+  level: number;
+  title: string;
+  layers: string; // which layers it covers
+  coreTools: string;
+  theoryBasis: string;
+  assessment: string;
+  coreThesis: string;
+  teachingFocus: string;
+}
+
+export interface ClinicalStep {
+  step: number;
+  action: string;
+  detail: string;
+}
