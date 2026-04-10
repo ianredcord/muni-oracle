@@ -1,7 +1,7 @@
 // 分享文案資料
 // 每張卡片的 FB、LINE、IG 分享文案
 
-import { FLOWERS, type FlowerCard } from "./flowers.generated";
+import { FLOWERS } from "./flowers.generated";
 
 export type ShareText = {
   fb: string;

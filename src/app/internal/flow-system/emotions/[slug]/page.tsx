@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { emotionGroups, emotionGroupMap } from "@/data/flow-system/emotions";
+import { emotionGroupMap } from "@/data/flow-system/emotions";
 import { acupointMap } from "@/data/flow-system/acupoints";
 import {
   SectionTitle,

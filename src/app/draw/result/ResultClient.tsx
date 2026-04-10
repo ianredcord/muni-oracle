@@ -1,9 +1,9 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { Suspense, useState, useCallback } from "react";
+import { useState, useCallback } from "react";
 import { motion } from "framer-motion";
-import { FLOWERS, type FlowerCard } from "@/data/flowers.generated";
+import { FLOWERS } from "@/data/flowers.generated";
 import { parseDeepBody, SECTION_COLORS, cleanUnderlines } from "@/lib/parseDeepBody";
 import { getShareText, generateShareUrl, openShareWindow } from "@/data/shareTexts";
 import { generateShareImage } from "@/lib/generateShareImage";
@@ -52,7 +52,7 @@ function ResultClient(props: { cardSlug: string }) {
     const textToCopy = shareText.fb;
     try {
       await navigator.clipboard.writeText(textToCopy);
-    } catch (error) {
+    } catch {
       // Fallback for older browsers
       const textArea = document.createElement("textarea");
       textArea.value = textToCopy;
@@ -91,7 +91,7 @@ function ResultClient(props: { cardSlug: string }) {
         cardImageUrl: flower.image,
         shareText: shareText.ig || shareText.fb,
       });
-    } catch (error) {
+    } catch {
       void error;
       alert("產生圖片失敗，請稍後再試");
     } finally {
@@ -107,7 +107,7 @@ function ResultClient(props: { cardSlug: string }) {
       await navigator.clipboard.writeText(textToCopy);
       setShowCopyToast(true);
       setTimeout(() => setShowCopyToast(false), 2000);
-    } catch (error) {
+    } catch {
       void error;
       // Fallback for older browsers
       const textArea = document.createElement("textarea");

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { Suspense } from "react";
 
@@ -166,10 +167,12 @@ export default function SomaniksPage() {
             </div>
             <div className="relative">
               <div className="rounded-2xl overflow-hidden border border-stone-200 shadow-sm">
-                <img
+                <Image
                   src="/images/products/dvsAGCGFoZGMTdyy.jpeg"
                   alt="SOMANIKS 微錐貼片"
                   className="w-full h-72 object-cover"
+                  width={800}
+                  height={288}
                 />
               </div>
               <div className="absolute -bottom-4 -right-4 bg-white border border-stone-200 rounded-xl p-4 shadow-sm">

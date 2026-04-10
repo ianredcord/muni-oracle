@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
 import FrequencyBadge from "@/components/FrequencyBadge";
 import { Header } from "@/components/Header";
 import {
@@ -105,7 +104,6 @@ function SystemSection() {
 // 區塊 3：四大能量支持模組
 function ModulesSection() {
   const { modulesSection } = ENERGY_SUPPORT_CONTENT;
-  const [expandedModule, setExpandedModule] = useState<string | null>(null);
 
   const moduleColors = [
     "bg-amber-50 border-amber-200",

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 
 import FrequencyBadge from "@/components/FrequencyBadge";
@@ -263,10 +264,12 @@ export default function GinsengPage() {
                     }`}
                   >
                     <div className="relative w-64 h-64 md:w-80 md:h-80">
-                      <img
+                      <Image
                         src={product.image}
                         alt={product.name}
                         className="w-full h-full object-contain drop-shadow-2xl"
+                        width={320}
+                        height={320}
                       />
                     </div>
                   </div>

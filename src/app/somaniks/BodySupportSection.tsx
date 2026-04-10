@@ -61,15 +61,21 @@ const quickOptions = [
 ] as const;
 
 export default function BodySupportSection() {
-  const [selected, setSelected] = useState<BodySupportPoint | null>(null);
   const searchParams = useSearchParams();
 
-  /* ?point=xxx → 自動打開對應 modal */
+  /* ?point=xxx → 初始化對應 modal 為已開啟 */
+  const [selected, setSelected] = useState<BodySupportPoint | null>(() => {
+    const pointSlug = searchParams.get("point");
+    if (pointSlug && bodySupportPointMap[pointSlug]) {
+      return bodySupportPointMap[pointSlug];
+    }
+    return null;
+  });
+
+  /* 捲動到 Body Support 區塊（僅 DOM 副作用） */
   useEffect(() => {
     const pointSlug = searchParams.get("point");
     if (pointSlug && bodySupportPointMap[pointSlug]) {
-      setSelected(bodySupportPointMap[pointSlug]);
-      /* 捲動到 Body Support 區塊 */
       setTimeout(() => {
         document
           .getElementById("body-support")

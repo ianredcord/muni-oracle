@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 
 import { Header } from "@/components/Header";
@@ -109,11 +110,15 @@ export default function ProductsPage() {
               快速抗炎鎮痛
             </span>
 
-            <img
-              src="/images/products/KqfHeFfjiZSDHAkB.jpg"
-              alt="SOMACEPT 硬針貼片"
-              className="w-full rounded-xl mb-6 object-cover aspect-[4/3]"
-            />
+            <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden mb-6">
+              <Image
+                src="/images/products/KqfHeFfjiZSDHAkB.jpg"
+                alt="SOMACEPT 硬針貼片"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
+            </div>
 
             <h2 className="text-2xl font-serif text-emerald-700 mb-1">
               SOMACEPT
@@ -179,11 +184,15 @@ export default function ProductsPage() {
               深層舒緩放鬆
             </span>
 
-            <img
-              src="/images/products/xwCndtckqJSUPiEd.jpg"
-              alt="SOMARESON 軟針貼片"
-              className="w-full rounded-xl mb-6 object-cover aspect-[4/3]"
-            />
+            <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden mb-6">
+              <Image
+                src="/images/products/xwCndtckqJSUPiEd.jpg"
+                alt="SOMARESON 軟針貼片"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
+            </div>
 
             <h2 className="text-2xl font-serif text-amber-700 mb-1">
               SOMARESON

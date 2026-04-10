@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { TAROT_CARDS, SUIT_NAMES, type TarotCard } from "@/data/tarot.generated";
+import { TAROT_CARDS } from "@/data/tarot.generated";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import Image from "next/image";

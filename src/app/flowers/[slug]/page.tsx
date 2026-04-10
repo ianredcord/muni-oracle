@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { FLOWERS, type FlowerCard } from "@/data/flowers.generated";
+import { FLOWERS } from "@/data/flowers.generated";
 import { parseDeepBody, SECTION_COLORS, cleanUnderlines } from "@/lib/parseDeepBody";
 import { ZH } from "@/content/zh";
 import { Header } from "@/components/Header";

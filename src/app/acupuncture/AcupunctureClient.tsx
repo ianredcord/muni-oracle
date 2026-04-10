@@ -30,35 +30,41 @@ interface Section {
 
 const sections = acupointsData as Section[];
 
+function findMatchFromUrl(urlSearch: string | null): { query: string; sectionId: string | null; acupoint: Acupoint | null } {
+  if (!urlSearch) return { query: "", sectionId: null, acupoint: null };
+  const q = urlSearch.trim();
+  const qLower = q.toLowerCase();
+  for (const section of sections) {
+    const matched = section.acupoints.find(
+      (ap) => ap.name === q || ap.name.toLowerCase() === qLower
+    );
+    if (matched) {
+      return { query: q, sectionId: section.id, acupoint: matched };
+    }
+  }
+  return { query: q, sectionId: null, acupoint: null };
+}
+
 export default function AcupunctureClient() {
   const searchParams = useSearchParams();
-  const [expandedSection, setExpandedSection] = useState<string | null>(null);
+  const urlSearch = searchParams.get("search");
+  const initialMatch = useMemo(() => findMatchFromUrl(urlSearch), [urlSearch]);
+
+  const [expandedSection, setExpandedSection] = useState<string | null>(initialMatch.sectionId);
   const [selectedAcupoint, setSelectedAcupoint] = useState<Acupoint | null>(null);
-  const [searchQuery, setSearchQuery] = useState("");
+  const [searchQuery, setSearchQuery] = useState(initialMatch.query);
   const hasProcessedUrlSearch = useRef(false);
 
-  // 讀取 URL ?search= 參數，自動填入搜尋框並打開對應穴位
+  // 處理 URL 搜尋參數的副作用（滾動與延遲打開 modal）
   useEffect(() => {
-    const urlSearch = searchParams.get("search");
     if (urlSearch && !hasProcessedUrlSearch.current) {
       hasProcessedUrlSearch.current = true;
-      const q = urlSearch.trim();
-      setSearchQuery(q);
 
-      // 找到精確匹配的穴位，自動打開 modal
-      const qLower = q.toLowerCase();
-      for (const section of sections) {
-        const matched = section.acupoints.find(
-          (ap) => ap.name === q || ap.name.toLowerCase() === qLower
-        );
-        if (matched) {
-          setExpandedSection(section.id);
-          // 延遲打開 modal，讓搜尋結果先渲染
-          setTimeout(() => {
-            setSelectedAcupoint(matched);
-          }, 300);
-          break;
-        }
+      if (initialMatch.acupoint) {
+        // 延遲打開 modal，讓搜尋結果先渲染
+        setTimeout(() => {
+          setSelectedAcupoint(initialMatch.acupoint);
+        }, 300);
       }
 
       // 滾動到穴位詳解區域
@@ -67,7 +73,7 @@ export default function AcupunctureClient() {
         if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
       }, 100);
     }
-  }, [searchParams]);
+  }, [urlSearch, initialMatch]);
 
   const filteredSections = useMemo(() => {
     if (!searchQuery.trim()) return sections;

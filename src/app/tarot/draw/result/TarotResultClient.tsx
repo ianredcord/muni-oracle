@@ -1,9 +1,9 @@
 "use client";
 
-import { useSearchParams, useRouter } from "next/navigation";
+import { useSearchParams } from "next/navigation";
 import { Suspense, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { TAROT_CARDS, SUIT_NAMES, type TarotCard } from "@/data/tarot.generated";
+import { TAROT_CARDS, SUIT_NAMES } from "@/data/tarot.generated";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import Image from "next/image";
@@ -11,7 +11,6 @@ import Link from "next/link";
 
 function TarotResultContent() {
   const searchParams = useSearchParams();
-  const router = useRouter();
   const cardSlug = searchParams.get("card");
   const [activeTab, setActiveTab] = useState<"quick" | "deep" | "healing">("quick");
 

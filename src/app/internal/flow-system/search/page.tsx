@@ -5,7 +5,6 @@ import Link from "next/link";
 import { acupoints } from "@/data/flow-system/acupoints";
 import { emotionGroups } from "@/data/flow-system/emotions";
 import type {
-  SomaniksType,
   FiveElement,
   Acupoint,
   EmotionGroup,

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { FLOWERS, type FlowerCard } from "@/data/flowers.generated";
@@ -12,24 +12,21 @@ import { Footer } from "@/components/Footer";
 
 type DrawPhase = "initial" | "shuffling" | "selecting" | "revealing";
 
+function shuffleArray<T>(arr: T[]): T[] {
+  const shuffled = [...arr];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled;
+}
+
 export default function DrawClient() {
   const router = useRouter();
   const [phase, setPhase] = useState<DrawPhase>("initial");
-  const [shuffledCards, setShuffledCards] = useState<FlowerCard[]>([]);
+  const [shuffledCards] = useState<FlowerCard[]>(() => shuffleArray(FLOWERS));
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
 
-  // 初始化時洗牌
-  useEffect(() => {
-    shuffleCards();
-  }, []);
-
-  // 洗牌函數
-  const shuffleCards = () => {
-    const shuffled = [...FLOWERS].sort(() => Math.random() - 0.5);
-    setShuffledCards(shuffled);
-    setSelectedIndex(null);
-    setPhase("initial");
-  };
 
   // 開始洗牌動畫
   const handleStartShuffle = () => {
@@ -65,10 +62,21 @@ export default function DrawClient() {
 
   // 牌卡堆疊數量
   const stackCount = 10;
-  
+
   // 牌卡比例 (300x537 = 約 1:1.79)
   const cardWidth = 140; // 手機版寬度
   const cardHeight = Math.round(cardWidth * 1.79); // 保持正確比例
+
+  // 預先計算洗牌動畫的隨機值，使用 useState lazy init 避免 React 19 purity 規則
+  const [shuffleAnimationOffsets] = useState(() =>
+    Array.from({ length: 16 }, () => ({
+      x1: (Math.random() - 0.5) * 220,
+      x2: (Math.random() - 0.5) * 100,
+      y1: (Math.random() - 0.5) * 140,
+      y2: (Math.random() - 0.5) * 70,
+      r1: (Math.random() - 0.5) * 60,
+      r2: (Math.random() - 0.5) * 30,
+    })));
 
   return (
     <div className="min-h-screen bg-[#F9F7F2] text-stone-800 overflow-x-hidden">
@@ -220,10 +228,10 @@ export default function DrawClient() {
                           opacity: 0,
                           scale: 0.8
                         }}
-                        animate={{ 
-                          x: [0, (Math.random() - 0.5) * 220, (Math.random() - 0.5) * 100],
-                          y: [0, (Math.random() - 0.5) * 140, (Math.random() - 0.5) * 70],
-                          rotate: [-8, (Math.random() - 0.5) * 60, (Math.random() - 0.5) * 30],
+                        animate={{
+                          x: [0, shuffleAnimationOffsets[i].x1, shuffleAnimationOffsets[i].x2],
+                          y: [0, shuffleAnimationOffsets[i].y1, shuffleAnimationOffsets[i].y2],
+                          rotate: [-8, shuffleAnimationOffsets[i].r1, shuffleAnimationOffsets[i].r2],
                           opacity: [0, 1, 1],
                           scale: [0.8, 1, 1]
                         }}

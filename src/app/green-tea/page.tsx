@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 
 import FrequencyBadge from "@/components/FrequencyBadge";
@@ -269,17 +270,21 @@ export default function GreenTeaPage() {
             </div>
             <div className="relative">
               <div className="rounded-2xl overflow-hidden border border-stone-200">
-                <img
+                <Image
                   src={IMG.ujiFarm}
                   alt="宇治有機茶園"
                   className="w-full h-80 object-cover"
+                  width={800}
+                  height={320}
                 />
               </div>
               <div className="absolute -bottom-8 -right-8 w-48 h-48">
-                <img
+                <Image
                   src={IMG.teaField}
                   alt="茶田"
                   className="w-full h-full object-cover rounded-2xl border border-stone-200 shadow-lg"
+                  width={192}
+                  height={192}
                 />
               </div>
             </div>
@@ -355,10 +360,12 @@ export default function GreenTeaPage() {
                 className={`bg-white border border-stone-200 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 ${product.highlight ? "shadow-lg" : ""}`}
               >
                 <div className={`p-6 rounded-t-2xl bg-gradient-to-br ${product.color}`}>
-                  <img
+                  <Image
                     src={product.image}
                     alt={product.name}
                     className="w-full h-48 object-contain"
+                    width={400}
+                    height={192}
                   />
                 </div>
                 <div className="p-6">
@@ -499,31 +506,39 @@ export default function GreenTeaPage() {
 
           <div className="grid md:grid-cols-3 gap-4">
             <div className="rounded-2xl overflow-hidden border border-stone-200 md:row-span-2">
-              <img
+              <Image
                 src={IMG.handPicking}
                 alt="手工採摘茶葉"
                 className="w-full h-full object-cover"
+                width={400}
+                height={600}
               />
             </div>
             <div className="rounded-2xl overflow-hidden border border-stone-200">
-              <img
+              <Image
                 src={IMG.teaPlantation}
                 alt="日本茶園風景"
                 className="w-full h-48 object-cover"
+                width={400}
+                height={192}
               />
             </div>
             <div className="rounded-2xl overflow-hidden border border-stone-200">
-              <img
+              <Image
                 src={IMG.steaming}
                 alt="蒸青製程"
                 className="w-full h-48 object-cover"
+                width={400}
+                height={192}
               />
             </div>
             <div className="rounded-2xl overflow-hidden border border-stone-200 md:col-span-2">
-              <img
+              <Image
                 src={IMG.matchaCeremony}
                 alt="抹茶茶道"
                 className="w-full h-64 object-cover object-top"
+                width={800}
+                height={256}
               />
             </div>
           </div>

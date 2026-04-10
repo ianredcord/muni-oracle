@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 
 import FrequencyBadge from "@/components/FrequencyBadge";
@@ -252,17 +253,21 @@ export default function OliveOilPage() {
             </div>
             <div className="relative">
               <div className="rounded-2xl overflow-hidden border border-stone-200">
-                <img
+                <Image
                   src="/images/products/HYCNrqTGpYkndwZX.jpg"
                   alt="Fonte di Foiano 莊園橄欖園"
                   className="w-full h-80 object-cover"
+                  width={800}
+                  height={320}
                 />
               </div>
               <div className="mt-4 rounded-2xl overflow-hidden border border-stone-200">
-                <img
+                <Image
                   src="/images/products/avGHGdLXmsXBeOEf.jpg"
                   alt="Bolgheri 橄欖樹與夕陽"
                   className="w-full h-48 object-cover"
+                  width={800}
+                  height={192}
                 />
               </div>
             </div>
@@ -375,10 +380,12 @@ export default function OliveOilPage() {
                   </div>
                 </div>
                 <div className={`bg-gradient-to-tr ${product.color} rounded-b-2xl p-4 mt-auto`}>
-                  <img
+                  <Image
                     src={product.image}
                     alt={product.name}
                     className="w-full h-48 object-contain"
+                    width={400}
+                    height={192}
                   />
                 </div>
               </div>
@@ -456,31 +463,39 @@ export default function OliveOilPage() {
 
           <div className="grid md:grid-cols-3 gap-4">
             <div className="rounded-2xl overflow-hidden border border-stone-200 md:row-span-2">
-              <img
+              <Image
                 src="/images/products/CoEbffWSmbdlxZKC.jpeg"
                 alt="橄欖採收"
                 className="w-full h-full object-cover"
+                width={400}
+                height={600}
               />
             </div>
             <div className="rounded-2xl overflow-hidden border border-stone-200">
-              <img
+              <Image
                 src="/images/products/LmQTTPntJAuWGGPk.jpg"
                 alt="Bolgheri 橄欖園風景"
                 className="w-full h-48 object-cover"
+                width={400}
+                height={192}
               />
             </div>
             <div className="rounded-2xl overflow-hidden border border-stone-200">
-              <img
+              <Image
                 src="/images/products/dVIjuYTGZTUkeDOu.jpg"
                 alt="Fonte di Foiano 全系列橄欖油"
                 className="w-full h-48 object-cover"
+                width={400}
+                height={192}
               />
             </div>
             <div className="rounded-2xl overflow-hidden border border-stone-200 md:col-span-2">
-              <img
+              <Image
                 src="/images/products/OmkZmcVIDtFWQkkI.jpeg"
                 alt="橄欖採摘過程"
                 className="w-full h-64 object-cover"
+                width={800}
+                height={256}
               />
             </div>
           </div>
