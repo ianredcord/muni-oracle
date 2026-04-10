@@ -148,14 +148,29 @@ function TarotResultContent() {
                     <h3 className="font-serif text-xl font-bold text-[#4a5548] mb-4">
                       快速解讀
                     </h3>
-                    {card.quickReading ? (
-                      <p className="text-stone-600 leading-relaxed">{card.quickReading}</p>
+                    {card.uprightMessage ? (
+                      <div className="space-y-3">
+                        {card.keywords && (
+                          <div className="flex flex-wrap gap-2 mb-3">
+                            {card.keywords.split("、").map((k) => (
+                              <span key={k} className="text-xs bg-[#4a5548]/8 text-[#4a5548] px-3 py-1 rounded-full">{k}</span>
+                            ))}
+                          </div>
+                        )}
+                        <div>
+                          <p className="text-xs text-emerald-600 font-medium mb-1">☀ 正位核心訊息</p>
+                          <p className="text-stone-600 leading-relaxed">{card.uprightMessage}</p>
+                        </div>
+                        {card.reversedReminder && (
+                          <div className="bg-amber-50/80 rounded-lg p-3 border border-amber-200/40">
+                            <p className="text-xs text-amber-700 font-medium mb-1">☽ 逆位提醒</p>
+                            <p className="text-stone-600 leading-relaxed text-sm">{card.reversedReminder}</p>
+                          </div>
+                        )}
+                      </div>
                     ) : (
                       <div className="text-center py-8">
                         <p className="text-stone-400 text-base mb-2">解讀內容準備中</p>
-                        <p className="text-stone-300 text-sm">
-                          詳細的牌卡解讀將在後續更新中加入
-                        </p>
                       </div>
                     )}
                   </div>
@@ -166,14 +181,28 @@ function TarotResultContent() {
                     <h3 className="font-serif text-xl font-bold text-[#4a5548] mb-4">
                       深度分析
                     </h3>
-                    {card.deepAnalysis ? (
-                      <p className="text-stone-600 leading-relaxed">{card.deepAnalysis}</p>
+                    {card.symbolReading ? (
+                      <div className="space-y-4">
+                        <div>
+                          <p className="text-xs font-semibold text-purple-600 mb-1">🔮 塔羅象徵</p>
+                          <p className="text-stone-600 leading-relaxed">{card.symbolReading}</p>
+                        </div>
+                        {card.jungianAnalysis && (
+                          <div>
+                            <p className="text-xs font-semibold text-[#006494] mb-1">🧠 榮格原型</p>
+                            <p className="text-stone-600 leading-relaxed">{card.jungianAnalysis}</p>
+                          </div>
+                        )}
+                        {card.flowerSpectrum && (
+                          <div>
+                            <p className="text-xs font-semibold text-[#9A7B4F] mb-1">🌸 花精光譜</p>
+                            <p className="text-stone-600 leading-relaxed">{card.flowerSpectrum}</p>
+                          </div>
+                        )}
+                      </div>
                     ) : (
                       <div className="text-center py-8">
                         <p className="text-stone-400 text-base mb-2">深度分析準備中</p>
-                        <p className="text-stone-300 text-sm">
-                          包含牌卡象徵意義、正逆位解讀等深度內容
-                        </p>
                       </div>
                     )}
                   </div>
@@ -184,14 +213,28 @@ function TarotResultContent() {
                     <h3 className="font-serif text-xl font-bold text-[#4a5548] mb-4">
                       花精療癒建議
                     </h3>
-                    {card.healingSuggestion ? (
-                      <p className="text-stone-600 leading-relaxed">{card.healingSuggestion}</p>
+                    {card.step1Status ? (
+                      <div className="space-y-4">
+                        <div>
+                          <p className="text-xs font-medium text-[#4a5548] mb-1">Step 1｜辨識 — 你現在可能…</p>
+                          <p className="text-stone-600 leading-relaxed">{card.step1Status}</p>
+                        </div>
+                        {card.step2Allow && (
+                          <div className="bg-[#9A7B4F]/5 rounded-lg p-4 border border-[#9A7B4F]/20 text-center">
+                            <p className="text-xs font-medium text-[#9A7B4F] mb-2">Step 2｜允許</p>
+                            <p className="font-serif text-lg text-[#9A7B4F]">「{card.step2Allow}」</p>
+                          </div>
+                        )}
+                        {card.step3Body && (
+                          <div>
+                            <p className="text-xs font-medium text-[#4a5548] mb-1">Step 3｜身體覺察 — 留意…</p>
+                            <p className="text-stone-600 leading-relaxed">{card.step3Body}</p>
+                          </div>
+                        )}
+                      </div>
                     ) : (
                       <div className="text-center py-8">
                         <p className="text-stone-400 text-base mb-2">療癒建議準備中</p>
-                        <p className="text-stone-300 text-sm">
-                          將包含對應花精的使用方式與療癒引導
-                        </p>
                       </div>
                     )}
                   </div>
