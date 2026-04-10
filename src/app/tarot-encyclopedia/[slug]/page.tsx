@@ -27,6 +27,29 @@ export function generateStaticParams() {
   return TAROT_CARDS.map((card) => ({ slug: card.slug }));
 }
 
+/* ── 共用裝飾分隔線 ── */
+function Divider() {
+  return (
+    <div className="flex items-center justify-center gap-3 my-10">
+      <div className="h-px w-16 bg-gradient-to-r from-transparent to-[#9A7B4F]/30" />
+      <svg className="w-4 h-4 text-[#9A7B4F]/40" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+      </svg>
+      <div className="h-px w-16 bg-gradient-to-l from-transparent to-[#9A7B4F]/30" />
+    </div>
+  );
+}
+
+/* ── 區塊標題 ── */
+function SectionTitle({ children }: { children: React.ReactNode }) {
+  return (
+    <div className="flex items-center gap-3 mb-5">
+      <div className="w-1 h-6 rounded-full bg-gradient-to-b from-[#9A7B4F] to-[#9A7B4F]/30" />
+      <h2 className="font-serif text-xl font-bold text-[#4a5548]">{children}</h2>
+    </div>
+  );
+}
+
 export default async function TarotDetailPage({ params }: PageProps) {
   const { slug } = await params;
   const card = TAROT_CARDS.find((c) => c.slug === slug);
@@ -58,10 +81,10 @@ export default async function TarotDetailPage({ params }: PageProps) {
         </div>
 
         {/* ═══ Top: Image + Info ═══ */}
-        <div className="flex flex-col md:flex-row gap-8 items-start mb-10">
+        <div className="flex flex-col md:flex-row gap-8 items-start mb-4">
           {/* Image column */}
           <div className="w-full md:w-[280px] flex-shrink-0">
-            <div className="relative aspect-[1/1.79] rounded-2xl overflow-hidden shadow-2xl mx-auto max-w-[280px]">
+            <div className="relative aspect-[1/1.79] rounded-2xl overflow-hidden shadow-2xl mx-auto max-w-[280px] border-4 border-white/80">
               <Image src={card.image} alt={card.nameZh} fill className="object-cover" priority />
             </div>
             <div className="mt-4 max-w-[280px] mx-auto">
@@ -151,10 +174,12 @@ export default async function TarotDetailPage({ params }: PageProps) {
           </div>
         </div>
 
+        <Divider />
+
         {/* ═══ C｜深度分析 ═══ */}
         {(card.symbolReading || card.jungianAnalysis || card.flowerSpectrum) && (
-          <section className="mb-8">
-            <h2 className="font-serif text-xl font-bold text-[#4a5548] mb-4">深度分析</h2>
+          <section className="mb-4">
+            <SectionTitle>深度分析</SectionTitle>
             <div className="grid md:grid-cols-3 gap-4">
               {card.symbolReading && (
                 <div className="bg-white/80 backdrop-blur-sm rounded-xl p-5 shadow-sm border-l-4 border-purple-400">
@@ -178,10 +203,12 @@ export default async function TarotDetailPage({ params }: PageProps) {
           </section>
         )}
 
+        <Divider />
+
         {/* ═══ D｜療癒建議 Step 1→2→3 ═══ */}
         {(card.step1Status || card.step2Allow || card.step3Body) && (
-          <section className="mb-8">
-            <h2 className="font-serif text-xl font-bold text-[#4a5548] mb-4">療癒建議</h2>
+          <section className="mb-4">
+            <SectionTitle>療癒建議</SectionTitle>
             <div className="space-y-4">
               {/* Step 1 */}
               {card.step1Status && (
@@ -220,6 +247,8 @@ export default async function TarotDetailPage({ params }: PageProps) {
             </div>
           </section>
         )}
+
+        <Divider />
 
         {/* ═══ E｜MUNI 能量支持（展開） ═══ */}
         <div className="mb-4">

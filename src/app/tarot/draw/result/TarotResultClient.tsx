@@ -10,6 +10,35 @@ import { EnergySupport, SystemMapping } from "@/components/TarotContentSections"
 import Image from "next/image";
 import Link from "next/link";
 
+/* ── 共用裝飾分隔線 ── */
+function Divider() {
+  return (
+    <div className="flex items-center justify-center gap-3 my-10">
+      <div className="h-px w-16 bg-gradient-to-r from-transparent to-[#9A7B4F]/30" />
+      <svg className="w-4 h-4 text-[#9A7B4F]/40" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+      </svg>
+      <div className="h-px w-16 bg-gradient-to-l from-transparent to-[#9A7B4F]/30" />
+    </div>
+  );
+}
+
+/* ── 區塊標題 ── */
+function SectionTitle({ children }: { children: React.ReactNode }) {
+  return (
+    <div className="flex items-center gap-3 mb-5">
+      <div className="w-1 h-6 rounded-full bg-gradient-to-b from-[#9A7B4F] to-[#9A7B4F]/30" />
+      <h2 className="font-serif text-xl font-bold text-[#4a5548]">{children}</h2>
+    </div>
+  );
+}
+
+/* ── 滾動出現動畫 ── */
+const fadeInUp = {
+  hidden: { opacity: 0, y: 24 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0, 0, 0.2, 1] as const } },
+};
+
 function TarotResultContent() {
   const searchParams = useSearchParams();
   const cardSlug = searchParams.get("card");
@@ -51,12 +80,13 @@ function TarotResultContent() {
       </div>
 
       <main className="relative z-10 container mx-auto px-4 py-8 max-w-5xl pt-24">
-        {/* ═══ Top: Image + Info ═══ */}
+
+        {/* ═══ Top: Image + Info（入場動畫只保留這一區） ═══ */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="flex flex-col md:flex-row gap-8 items-start mb-10"
+          className="flex flex-col md:flex-row gap-8 items-start mb-4"
         >
           {/* Image column */}
           <div className="w-full md:w-[280px] flex-shrink-0">
@@ -65,7 +95,7 @@ function TarotResultContent() {
               animate={{ opacity: 1, rotateY: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              <div className="relative aspect-[1/1.79] rounded-2xl overflow-hidden shadow-2xl mx-auto max-w-[280px]">
+              <div className="relative aspect-[1/1.79] rounded-2xl overflow-hidden shadow-2xl mx-auto max-w-[280px] border-4 border-white/80">
                 <Image
                   src={card.image}
                   alt={card.nameZh}
@@ -75,6 +105,24 @@ function TarotResultContent() {
                 />
               </div>
             </motion.div>
+            {/* CTA + 百科連結 */}
+            <div className="mt-4 max-w-[280px] mx-auto space-y-2">
+              <a
+                href="https://www.stark.works/categories/muni能量療癒系列"
+                target="_blank" rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2 w-full bg-gradient-to-r from-[#4a5548] to-[#6b7a5f] hover:from-[#3d4a3c] hover:to-[#5a6950] text-white rounded-full px-4 py-2.5 text-sm font-medium transition-all shadow-md hover:shadow-lg"
+              >
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+                MUNI 能量支持
+              </a>
+              <Link
+                href={`/tarot-encyclopedia/${card.slug}`}
+                className="flex items-center justify-center gap-1.5 w-full text-[#9A7B4F] hover:text-[#8A6B3F] text-sm font-medium py-2 transition-colors"
+              >
+                查看完整百科
+                <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
+              </Link>
+            </div>
           </div>
 
           {/* Info column */}
@@ -158,15 +206,18 @@ function TarotResultContent() {
           </motion.div>
         </motion.div>
 
-        {/* ═══ C｜深度分析 ═══ */}
+        <Divider />
+
+        {/* ═══ C｜深度分析（whileInView） ═══ */}
         {(card.symbolReading || card.jungianAnalysis || card.flowerSpectrum) && (
           <motion.section
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.7 }}
-            className="mb-8"
+            variants={fadeInUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-60px" }}
+            className="mb-4"
           >
-            <h2 className="font-serif text-xl font-bold text-[#4a5548] mb-4">深度分析</h2>
+            <SectionTitle>深度分析</SectionTitle>
             <div className="grid md:grid-cols-3 gap-4">
               {card.symbolReading && (
                 <div className="bg-white/80 backdrop-blur-sm rounded-xl p-5 shadow-sm border-l-4 border-purple-400">
@@ -190,15 +241,18 @@ function TarotResultContent() {
           </motion.section>
         )}
 
+        <Divider />
+
         {/* ═══ D｜療癒建議 Step 1→2→3 ═══ */}
         {(card.step1Status || card.step2Allow || card.step3Body) && (
           <motion.section
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.8 }}
-            className="mb-8"
+            variants={fadeInUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-60px" }}
+            className="mb-4"
           >
-            <h2 className="font-serif text-xl font-bold text-[#4a5548] mb-4">療癒建議</h2>
+            <SectionTitle>療癒建議</SectionTitle>
             <div className="space-y-4">
               {card.step1Status && (
                 <div className="bg-white/80 backdrop-blur-sm rounded-xl p-5 shadow-sm border border-stone-100">
@@ -235,11 +289,14 @@ function TarotResultContent() {
           </motion.section>
         )}
 
+        <Divider />
+
         {/* ═══ E｜MUNI 能量支持（展開） ═══ */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.9 }}
+          variants={fadeInUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-60px" }}
           className="mb-4"
         >
           <EnergySupport
@@ -252,9 +309,10 @@ function TarotResultContent() {
 
         {/* ═══ F｜系統對應（收合） ═══ */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 1.0 }}
+          variants={fadeInUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-60px" }}
           className="mb-10"
         >
           <SystemMapping
@@ -270,10 +328,11 @@ function TarotResultContent() {
 
         {/* 底部操作 */}
         <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.1 }}
-          className="flex flex-col sm:flex-row gap-4 justify-center"
+          variants={fadeInUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="flex flex-col sm:flex-row gap-4 justify-center pt-4 border-t border-stone-200"
         >
           <Link
             href="/tarot/draw"
@@ -285,10 +344,10 @@ function TarotResultContent() {
             再抽一次
           </Link>
           <Link
-            href="/tarot-encyclopedia"
+            href={`/tarot-encyclopedia/${card.slug}`}
             className="inline-flex items-center justify-center gap-2 bg-white/60 hover:bg-white/80 text-stone-600 hover:text-stone-800 border border-stone-200 rounded-full px-8 py-3 text-base transition-all duration-300 font-medium"
           >
-            瀏覽牟尼塔羅牌百科
+            查看 {card.nameZh} 完整百科
           </Link>
         </motion.div>
       </main>
