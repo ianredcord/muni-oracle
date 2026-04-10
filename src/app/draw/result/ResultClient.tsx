@@ -92,7 +92,7 @@ function ResultClient(props: { cardSlug: string }) {
         shareText: shareText.ig || shareText.fb,
       });
     } catch {
-      void error;
+      // silently ignore
       alert("產生圖片失敗，請稍後再試");
     } finally {
       setIsGeneratingImage(false);
@@ -108,7 +108,7 @@ function ResultClient(props: { cardSlug: string }) {
       setShowCopyToast(true);
       setTimeout(() => setShowCopyToast(false), 2000);
     } catch {
-      void error;
+      // silently ignore
       // Fallback for older browsers
       const textArea = document.createElement("textarea");
       textArea.value = textToCopy;
