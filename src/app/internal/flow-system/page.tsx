@@ -37,6 +37,18 @@ const NAV = [
   { label: "搜尋", href: "/internal/flow-system/search" },
 ];
 
+/* ── 進階子系統頁面 ── */
+const ADVANCED_NAV = [
+  { label: "形氣精神四層", href: "/internal/flow-system/fps-system", desc: "完整理論架構總結", icon: "📖" },
+  { label: "九區段穴位", href: "/internal/flow-system/nine-zones", desc: "128 穴位全圖", icon: "🗺️" },
+  { label: "十二經筋×CF", href: "/internal/flow-system/sinew-channels", desc: "經筋×Stecco FM 交叉比對", icon: "🧬" },
+  { label: "黃元御整合", href: "/internal/flow-system/huang-yuanyu", desc: "一氣周流×九區段×全著作", icon: "📜" },
+  { label: "最高效處方", href: "/internal/flow-system/protocols", desc: "交叉比對×CP 值排序", icon: "💊" },
+  { label: "核心三穴", href: "/internal/flow-system/core-discovery", desc: "SP4+PC6+LR3 深度發展", icon: "🎯" },
+  { label: "六區操作", href: "/internal/flow-system/six-zones", desc: "從遠端到頭面治療路徑", icon: "🔄" },
+  { label: "臨床速查卡", href: "/internal/flow-system/speed-card", desc: "A4 可列印速查卡", icon: "🃏" },
+];
+
 /* ── layer color map ── */
 const layerColors: Record<string, { bg: string; border: string; text: string; tagBg: string }> = {
   amber:  { bg: "bg-amber-50/80",  border: "border-amber-200/60",  text: "text-amber-700",  tagBg: "bg-amber-100" },
@@ -556,6 +568,30 @@ export default function FlowSystemHome() {
                   </p>
                 </div>
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ═══ Advanced Subsystems ═══ */}
+      <section id="advanced" className="py-16 md:py-20">
+        <div className="mx-auto max-w-5xl px-4">
+          <p className="text-xs tracking-[0.2em] uppercase text-[#9A7B4F] text-center mb-3">Advanced Subsystems</p>
+          <h2 className="font-serif text-2xl md:text-3xl text-center mb-4">進階子系統</h2>
+          <p className="text-center text-sm text-[#4a5548]/40 mb-10 max-w-xl mx-auto">
+            形氣精神四層一體治療系統的完整資料庫——從理論到臨床操作
+          </p>
+          <div className="grid gap-4 grid-cols-2 lg:grid-cols-4">
+            {ADVANCED_NAV.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="bg-white/80 backdrop-blur-sm rounded-2xl border border-stone-200/50 p-5 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all group"
+              >
+                <span className="text-2xl mb-3 block">{item.icon}</span>
+                <p className="font-serif text-sm font-bold text-[#4a5548] group-hover:text-[#9A7B4F] transition-colors">{item.label}</p>
+                <p className="text-xs text-[#4a5548]/40 mt-1 leading-relaxed">{item.desc}</p>
+              </Link>
             ))}
           </div>
         </div>
