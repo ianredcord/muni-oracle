@@ -370,28 +370,42 @@ export default function HuangYuanyuPage() {
         內部測試版
       </div>
 
-      <div className="mx-auto max-w-5xl px-4 py-12 md:py-16">
-        {/* Back link */}
-        <Link
-          href="/internal/flow-system"
-          className="inline-flex items-center gap-1.5 text-sm text-[#4a5548]/50 hover:text-[#4a5548] transition-colors mb-8"
-        >
-          <svg
-            className="h-4 w-4"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            strokeWidth={2}
+      {/* Sticky nav */}
+      <nav className="sticky top-0 z-40 bg-[#F9F7F2]/90 backdrop-blur-md border-b border-stone-200/50">
+        <div className="mx-auto max-w-5xl px-4 py-3 flex items-center gap-4 overflow-x-auto">
+          <Link
+            href="/internal/flow-system"
+            className="flex-shrink-0 inline-flex items-center gap-1.5 text-sm text-[#4a5548]/50 hover:text-[#4a5548] transition-colors"
           >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M15 19l-7-7 7-7"
-            />
-          </svg>
-          返回系統首頁
-        </Link>
+            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+            </svg>
+            系統首頁
+          </Link>
+          <span className="text-stone-300">|</span>
+          <a href="#overview" className="flex-shrink-0 text-xs text-[#4a5548]/50 hover:text-[#9A7B4F] transition-colors">總論</a>
+          <span className="text-stone-300">|</span>
+          {zones.map((z) => (
+            <a
+              key={z.id}
+              href={`#zone-${z.id}`}
+              className="flex-shrink-0 inline-flex items-center gap-1 text-xs text-[#4a5548]/50 hover:text-[#9A7B4F] transition-colors"
+            >
+              <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-[#9A7B4F]/10 text-[#9A7B4F] text-[10px] font-bold">
+                {z.id}
+              </span>
+              <span className="hidden lg:inline">{z.zone}</span>
+            </a>
+          ))}
+          <span className="text-stone-300">|</span>
+          <a href="#master-table" className="flex-shrink-0 text-xs text-[#9A7B4F] font-medium hover:text-[#9A7B4F]/80 transition-colors">總表</a>
+          <a href="#three-needles" className="flex-shrink-0 text-xs text-[#9A7B4F] font-medium hover:text-[#9A7B4F]/80 transition-colors">萬用三穴</a>
+          <a href="#treatment" className="flex-shrink-0 text-xs text-[#9A7B4F] font-medium hover:text-[#9A7B4F]/80 transition-colors">治法</a>
+          <a href="#core-discovery" className="flex-shrink-0 text-xs text-[#9A7B4F] font-medium hover:text-[#9A7B4F]/80 transition-colors">核心發現</a>
+        </div>
+      </nav>
 
+      <div className="mx-auto max-w-5xl px-4 py-12 md:py-16">
         {/* Hero */}
         <div className="text-center mb-16">
           <h1 className="font-serif text-4xl md:text-5xl text-[#4a5548] tracking-tight leading-tight">
@@ -406,7 +420,7 @@ export default function HuangYuanyuPage() {
         </div>
 
         {/* Overview */}
-        <section className="mb-16">
+        <section id="overview" className="scroll-mt-24 mb-16">
           <SectionTitle title="總論：一氣周流 × 九區段的結構映射" />
           <div className="mt-8 rounded-2xl bg-white/80 backdrop-blur-sm border border-stone-200/50 shadow-sm p-6 md:p-8">
             <blockquote className="font-serif text-lg md:text-xl text-[#9A7B4F] leading-relaxed text-center italic">
@@ -445,7 +459,7 @@ export default function HuangYuanyuPage() {
         </section>
 
         {/* Nine Zone Chapters */}
-        <section className="mb-20">
+        <section className="scroll-mt-24 mb-20">
           <SectionTitle
             title="九區段詳解"
             subtitle="每一區段的古典文本、五行六氣對應、HA 分子關聯與用方"
@@ -454,7 +468,8 @@ export default function HuangYuanyuPage() {
             {zones.map((z) => (
               <div
                 key={z.id}
-                className={`rounded-2xl border border-stone-200/50 bg-white/80 backdrop-blur-sm shadow-sm p-6 md:p-8 border-l-4 ${z.borderColor}`}
+                id={`zone-${z.id}`}
+                className={`scroll-mt-24 rounded-2xl border border-stone-200/50 bg-white/80 backdrop-blur-sm shadow-sm p-6 md:p-8 border-l-4 ${z.borderColor}`}
               >
                 {/* Zone header */}
                 <div className="flex flex-wrap items-start gap-3 mb-5">
@@ -544,7 +559,7 @@ export default function HuangYuanyuPage() {
         </section>
 
         {/* Master Integration Table */}
-        <section className="mb-20">
+        <section id="master-table" className="scroll-mt-24 mb-20">
           <SectionTitle
             title="九區段整合總表"
             subtitle="一氣周流 × 六氣 × HA × 病機"
@@ -601,7 +616,7 @@ export default function HuangYuanyuPage() {
         </section>
 
         {/* Three Universal Needles */}
-        <section className="mb-20">
+        <section id="three-needles" className="scroll-mt-24 mb-20">
           <SectionTitle
             title="萬用三穴 × 一氣周流"
             subtitle="太衝 + 公孫 + 內關 = 一氣周流的三穴操作版"
@@ -635,7 +650,7 @@ export default function HuangYuanyuPage() {
         </section>
 
         {/* Treatment Sequence Table */}
-        <section className="mb-20">
+        <section id="treatment" className="scroll-mt-24 mb-20">
           <SectionTitle
             title="治法 × 六區操作序列"
             subtitle="黃元御治法與六區手法的對應"
@@ -684,7 +699,7 @@ export default function HuangYuanyuPage() {
         </section>
 
         {/* Core Discovery */}
-        <section className="mb-20">
+        <section id="core-discovery" className="scroll-mt-24 mb-20">
           <SectionTitle title="核心發現" />
           <div className="mt-8 rounded-2xl bg-white/80 backdrop-blur-sm border border-stone-200/50 shadow-sm p-6 md:p-8">
             <h3 className="font-serif text-xl text-[#4a5548] mb-4 text-center">

@@ -259,12 +259,12 @@ export default function SixZonesPage() {
           {/* Flow diagram */}
           <div className="mt-10 flex flex-col items-center gap-3">
             {[
-              { num: "⑥", label: "頭面部", desc: "經別「出」「合」的終點，諸陽之會", bg: "bg-sky-50 border-sky-200" },
-              { num: "⑤", label: "迷走神經", desc: "形→氣的橋接中樞，自律神經主幹道", bg: "bg-rose-50 border-rose-200" },
-              { num: "④", label: "軀幹三節斷", desc: "上中下三焦 = 膈帶+腹部+骨盆，臟腑所在", bg: "bg-amber-50 border-amber-200" },
-              { num: "③", label: "經別深淺進入", desc: "離入出合的「離」和「入」，深淺交換門戶", bg: "bg-violet-50 border-violet-200" },
-              { num: "②", label: "關節緻密位置", desc: "CF 融合中心，筋膜鏈交匯，力學節點", bg: "bg-blue-50 border-blue-200" },
               { num: "①", label: "遠端取穴", desc: "八脈交會穴+原穴+根穴，信號的發射端", bg: "bg-emerald-50 border-emerald-200" },
+              { num: "②", label: "關節緻密位置", desc: "CF 融合中心，筋膜鏈交匯，力學節點", bg: "bg-blue-50 border-blue-200" },
+              { num: "③", label: "經別深淺進入", desc: "離入出合的「離」和「入」，深淺交換門戶", bg: "bg-violet-50 border-violet-200" },
+              { num: "④", label: "軀幹三節斷", desc: "上中下三焦 = 膈帶+腹部+骨盆，臟腑所在", bg: "bg-amber-50 border-amber-200" },
+              { num: "⑤", label: "迷走神經", desc: "形→氣的橋接中樞，自律神經主幹道", bg: "bg-rose-50 border-rose-200" },
+              { num: "⑥", label: "頭面部", desc: "經別「出」「合」的終點，諸陽之會", bg: "bg-sky-50 border-sky-200" },
             ].map((item, i) => (
               <div key={item.num} className="w-full max-w-lg">
                 <div className={`rounded-xl border ${item.bg} p-4 text-center`}>

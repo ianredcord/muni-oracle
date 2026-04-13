@@ -29,7 +29,7 @@ const stats: { label: string; value: string }[] = [
   { label: "八脈交會穴", value: "8 (4對)" },
   { label: "花精軌道", value: "12 (38朵)" },
   { label: "皮膚反應區", value: "243" },
-  { label: "臨床步驟", value: "0-6 七區+五步" },
+  { label: "臨床步驟", value: "12" },
   { label: "辨證框架", value: "3" },
   { label: "文獻連結", value: "22+" },
 ];

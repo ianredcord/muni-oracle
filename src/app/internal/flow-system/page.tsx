@@ -33,6 +33,7 @@ const NAV = [
   { label: "臨床流程", href: "#clinical-flow" },
   { label: "課程三階", href: "#course" },
   { label: "四系統比較", href: "#comparison" },
+  { label: "進階系統", href: "#advanced" },
   { label: "Farrell 五層", href: "/internal/flow-system/farrell" },
   { label: "搜尋", href: "/internal/flow-system/search" },
 ];

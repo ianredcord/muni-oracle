@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { RelatedLinks } from "@/components/flow-system";
 import PrintButton from "./PrintButton";
 
 export const metadata: Metadata = {
@@ -115,7 +116,7 @@ export default function SpeedCardPage() {
             </div>
 
             {/* 3-Column Grid */}
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 print:gap-2 print:grid-cols-3 print:text-[9px]">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 print:gap-2 print:grid-cols-3 print:text-[9px]">
               {/* COLUMN 1: Assessment + Typing */}
               <div className="space-y-4 print:space-y-2">
                 {/* Decision Flow */}
@@ -672,6 +673,18 @@ export default function SpeedCardPage() {
               <span>munione.co</span>
             </div>
           </div>
+        </div>
+
+        {/* Related Links (screen only) */}
+        <div className="print:hidden mt-12 mb-8 max-w-5xl mx-auto px-4">
+          <RelatedLinks
+            links={[
+              { label: "最高效處方流程", href: "/internal/flow-system/protocols" },
+              { label: "六區臨床操作", href: "/internal/flow-system/six-zones" },
+              { label: "核心三穴深度發展", href: "/internal/flow-system/core-discovery" },
+              { label: "九區段穴位總圖", href: "/internal/flow-system/nine-zones" },
+            ]}
+          />
         </div>
 
         {/* Footer (screen only) */}
