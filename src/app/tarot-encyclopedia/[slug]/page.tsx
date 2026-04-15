@@ -68,7 +68,7 @@ export default async function TarotDetailPage({ params }: PageProps) {
 
       {/* Background */}
       <div className="fixed inset-0 z-0 pointer-events-none">
-        <Image src="/images/home-bg.jpg" alt="" fill className="object-cover opacity-10" priority />
+        <Image src="/images/home-bg.jpg" alt="" fill className="object-cover opacity-10" priority sizes="100vw" />
       </div>
 
       <main className="relative z-10 container mx-auto px-4 py-8 max-w-5xl pt-24">
@@ -85,7 +85,7 @@ export default async function TarotDetailPage({ params }: PageProps) {
           {/* Image column */}
           <div className="w-full md:w-[280px] flex-shrink-0">
             <div className="relative aspect-[1/1.79] rounded-2xl overflow-hidden shadow-2xl mx-auto max-w-[280px] border-4 border-white/80">
-              <Image src={card.image} alt={card.nameZh} fill className="object-cover" priority />
+              <Image src={card.image} alt={card.nameZh} fill className="object-cover" priority sizes="(max-width: 768px) 100vw, 280px" />
             </div>
             <div className="mt-4 max-w-[280px] mx-auto">
               <a

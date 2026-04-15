@@ -25,6 +25,7 @@ function HeroSection() {
           fill
           className="object-cover"
           priority
+          sizes="100vw"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-white/40 via-white/20 to-[#F9F7F2]" />
       </div>

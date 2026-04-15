@@ -91,6 +91,7 @@ export default function DrawClient() {
           fill
           className="object-cover opacity-20"
           priority
+          sizes="100vw"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-white/40 via-transparent to-[#F9F7F2]" />
       </div>
@@ -283,7 +284,10 @@ export default function DrawClient() {
                       className="relative"
                     >
                       <div
+                        role="button"
+                        tabIndex={0}
                         onClick={() => handleCardClick(index)}
+                        onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); handleCardClick(index); } }}
                         className={cn(
                           "aspect-[1/1.79] rounded-lg cursor-pointer transition-all duration-300 overflow-hidden border-2",
                           selectedIndex === index 

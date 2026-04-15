@@ -321,7 +321,7 @@ export default function WinePage() {
                 <h3 className="font-serif text-lg font-bold text-[#4a5548] mb-4">
                   酒莊一覽
                 </h3>
-                <div className="grid grid-cols-3 gap-4 text-center">
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 text-center">
                   <div>
                     <p className="text-2xl md:text-3xl font-bold text-[#9A7B4F]">135</p>
                     <p className="text-stone-500 text-xs mt-1">在地農戶家族</p>

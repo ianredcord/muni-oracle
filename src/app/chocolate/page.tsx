@@ -93,6 +93,7 @@ export default function ChocolatePage() {
                 alt="Cecilia Rabassi — 世界第一位女性 Maître Chocolatier"
                 fill
                 className="object-cover rounded-2xl shadow-2xl"
+                sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
           </div>
@@ -151,6 +152,7 @@ export default function ChocolatePage() {
                 alt="Cecilia Rabassi 在托斯卡尼"
                 fill
                 className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
             <div className="space-y-6">
@@ -298,6 +300,7 @@ export default function ChocolatePage() {
                     alt={product.name}
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
                   />
                 </div>
                 <div className="p-4">

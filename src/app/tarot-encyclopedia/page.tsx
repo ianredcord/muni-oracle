@@ -111,6 +111,7 @@ export default function TarotEncyclopediaPage() {
           fill
           className="object-cover opacity-15"
           priority
+          sizes="100vw"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-white/50 via-transparent to-[#F9F7F2]" />
       </div>

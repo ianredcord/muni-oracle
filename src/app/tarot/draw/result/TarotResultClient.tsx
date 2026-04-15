@@ -75,6 +75,7 @@ function TarotResultContent() {
           fill
           className="object-cover opacity-10"
           priority
+          sizes="100vw"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-white/60 via-[#F9F7F2]/80 to-[#F9F7F2]" />
       </div>
@@ -102,6 +103,7 @@ function TarotResultContent() {
                   fill
                   className="object-cover"
                   priority
+                  sizes="(max-width: 768px) 100vw, 280px"
                 />
               </div>
             </motion.div>

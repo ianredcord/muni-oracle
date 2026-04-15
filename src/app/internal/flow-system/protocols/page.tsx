@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import {
   SectionTitle,
-  BlueOrangeBadge,
   RelatedLinks,
 } from "@/components/flow-system";
 

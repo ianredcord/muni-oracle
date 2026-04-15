@@ -59,6 +59,7 @@ export default async function FlowerDetailPage({ params }: PageProps) {
           fill
           className="object-cover opacity-10"
           priority
+          sizes="100vw"
         />
       </div>
 
