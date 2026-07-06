@@ -7,6 +7,8 @@ import { TAROT_CARDS, SUIT_NAMES } from "@/data/tarot.generated";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { EnergySupport, SystemMapping } from "@/components/TarotContentSections";
+import { MingyurQuoteSection } from "@/components/MingyurQuote";
+import { getMingyurForTarot } from "@/data/mingyur";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -62,6 +64,7 @@ function TarotResultContent() {
   }
 
   const keywordList = card.keywords?.split("、") ?? [];
+  const mingyur = getMingyurForTarot(card.slug, card.bachFlowerEn);
 
   return (
     <div className="min-h-screen bg-[#F9F7F2] text-stone-800">
@@ -289,6 +292,22 @@ function TarotResultContent() {
               )}
             </div>
           </motion.section>
+        )}
+
+        {/* ═══ 安住片刻 · 仁波切的話 ═══ */}
+        {mingyur && (
+          <>
+            <Divider />
+            <motion.section
+              variants={fadeInUp}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-60px" }}
+              className="mb-4"
+            >
+              <MingyurQuoteSection card={mingyur} />
+            </motion.section>
+          </>
         )}
 
         <Divider />

@@ -13,6 +13,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { Footer } from "@/components/Footer";
 import Step3BodySupport from "@/components/Step3BodySupport";
+import { MingyurQuoteSection } from "@/components/MingyurQuote";
+import { getMingyurForFlower } from "@/data/mingyur";
 
 
 function ResultClient(props: { cardSlug: string }) {
@@ -26,6 +28,9 @@ function ResultClient(props: { cardSlug: string }) {
   
   // 找到對應的花精
   const flower = FLOWERS.find(f => f.slug === cardSlug) || FLOWERS[0];
+
+  // 配對的明就仁波切箴言
+  const mingyur = getMingyurForFlower(flower.slug);
   
   // 切割深度解析段落
   const deepSections = parseDeepBody(flower.deep.body);
@@ -437,6 +442,18 @@ function ResultClient(props: { cardSlug: string }) {
                   </div>
                 )}
               </motion.div>
+
+              {/* 安住片刻 · 仁波切的話 */}
+              {mingyur && (
+                <motion.div
+                  initial={{ opacity: 0, y: 16 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.3 }}
+                  className="mt-8"
+                >
+                  <MingyurQuoteSection card={mingyur} />
+                </motion.div>
+              )}
 
               {/* 操作按鈕 */}
               <div className="mt-8 flex flex-col sm:flex-row gap-4">
