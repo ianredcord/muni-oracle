@@ -169,8 +169,8 @@ function ResultClient(props: { cardSlug: string }) {
             transition={{ duration: 0.6 }}
             className="flex flex-col md:flex-row gap-8 items-start"
           >
-            {/* 牌卡圖片 */}
-            <div className="w-full md:w-1/3 flex-shrink-0">
+            {/* 牌卡圖片（桌機跟隨捲動） */}
+            <div className="w-full md:w-1/3 flex-shrink-0 md:sticky md:top-24">
               <div className="relative aspect-[3/5] rounded-2xl overflow-hidden shadow-2xl mx-auto max-w-[280px]">
                 <Image
                   src={flower.image}
@@ -310,6 +310,19 @@ function ResultClient(props: { cardSlug: string }) {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                   </svg>
                   MUNI 能量支持
+                </Link>
+              </div>
+
+              {/* 抽一張牟尼塔羅牌（桌機顯示；手機版由頁尾同款按鈕承接） */}
+              <div className="mt-3 hidden md:block">
+                <Link
+                  href="/tarot/draw"
+                  className="flex items-center justify-center gap-2 w-full border-2 border-[#9A7B4F]/50 bg-white/60 text-[#9A7B4F] hover:bg-[#9A7B4F] hover:text-white rounded-full px-6 py-3 text-base font-medium transition-all shadow-sm hover:shadow-md"
+                >
+                  <svg aria-hidden="true" className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+                  </svg>
+                  再往內走一步 · 抽塔羅牌
                 </Link>
               </div>
 
