@@ -212,6 +212,19 @@ export default async function FlowerDetailPage({ params }: PageProps) {
             {ZH.flowers.detailBack}
           </Link>
         </div>
+
+        {/* 抽一張牟尼塔羅牌 */}
+        <div className="mt-4 flex justify-center">
+          <Link
+            href="/tarot/draw"
+            className="inline-flex items-center justify-center gap-2 w-full sm:w-auto border-2 border-[#9A7B4F]/50 bg-white/60 text-[#9A7B4F] hover:bg-[#9A7B4F] hover:text-white rounded-full px-8 py-3 text-base font-medium transition-all shadow-sm hover:shadow-md"
+          >
+            <svg aria-hidden="true" className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+            </svg>
+            再往內走一步 · 抽一張牟尼塔羅牌
+          </Link>
+        </div>
       </main>
 
       <Footer />
