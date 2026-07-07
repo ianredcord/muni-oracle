@@ -17,7 +17,7 @@ function Divider() {
   return (
     <div className="flex items-center justify-center gap-3 my-10">
       <div className="h-px w-16 bg-gradient-to-r from-transparent to-[#9A7B4F]/30" />
-      <svg className="w-4 h-4 text-[#9A7B4F]/40" viewBox="0 0 24 24" fill="currentColor">
+      <svg aria-hidden="true" className="w-4 h-4 text-[#9A7B4F]/40" viewBox="0 0 24 24" fill="currentColor">
         <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
       </svg>
       <div className="h-px w-16 bg-gradient-to-l from-transparent to-[#9A7B4F]/30" />
