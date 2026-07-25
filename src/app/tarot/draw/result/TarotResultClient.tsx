@@ -453,6 +453,19 @@ export default function TarotResultClient({ cardSlug }: { cardSlug: string }) {
             查看 {card.nameZh} 完整百科
           </Link>
         </motion.div>
+
+        {/* 回望入口 */}
+        <div className="mt-6 text-center">
+          <Link
+            href="/journal"
+            className="inline-flex items-center gap-1.5 text-sm text-stone-400 hover:text-[#9A7B4F] transition-colors"
+          >
+            <svg aria-hidden="true" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            回望：看看你抽過哪些牌
+          </Link>
+        </div>
       </main>
       <Footer />
     </div>

@@ -10,6 +10,7 @@ import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { Footer } from "@/components/Footer";
 import { trackDraw } from "@/lib/analytics";
+import { recordDraw } from "@/lib/drawHistory";
 
 type DrawPhase = "initial" | "shuffling" | "selecting" | "revealing";
 
@@ -58,6 +59,7 @@ export default function DrawClient() {
     setTimeout(() => {
       const selectedCard = shuffledCards[selectedIndex];
       trackDraw("flower", selectedCard.slug);
+      recordDraw("flower", selectedCard.slug);
       router.push(`/draw/result?card=${selectedCard.slug}`);
     }, 800);
   };

@@ -9,6 +9,7 @@ import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { Footer } from "@/components/Footer";
 import { trackDraw } from "@/lib/analytics";
+import { recordDraw } from "@/lib/drawHistory";
 
 type DrawPhase = "initial" | "shuffling" | "selecting" | "revealing";
 
@@ -57,6 +58,7 @@ export default function TarotDrawClient() {
     setTimeout(() => {
       const selectedCard = shuffledCards[selectedIndex];
       trackDraw("tarot", selectedCard.slug);
+      recordDraw("tarot", selectedCard.slug);
       router.push(`/tarot/draw/result?card=${selectedCard.slug}`);
     }, 800);
   };

@@ -23,6 +23,9 @@ export function Footer() {
           <Link href="/tarot" className="text-stone-500 hover:text-[#4a5548] text-sm transition-colors">
             牟尼塔羅
           </Link>
+          <Link href="/journal" className="text-stone-500 hover:text-[#4a5548] text-sm transition-colors">
+            回望
+          </Link>
           <a href="https://ai.munione.co" target="_blank" rel="noopener noreferrer" className="text-[#9A7B4F] hover:text-[#8A6B3F] text-sm font-medium transition-colors">
             {ZH.nav.healingConsultant}
           </a>
