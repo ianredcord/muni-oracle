@@ -5,13 +5,54 @@ import Link from "next/link";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import FrequencyBadge from "@/components/FrequencyBadge";
+import {
+  EMOTION_GROUPS,
+  getGroupForFlower,
+  getThemeForFlower,
+} from "@/data/flowerEmotions";
+import FlowersBrowser, {
+  type BrowserFlower,
+  type BrowserGroup,
+} from "./FlowersBrowser";
 
 export const metadata: Metadata = {
-  title: "牟尼花精百科｜40 種巴哈花精完整介紹 | MUNI",
-  description: "探索 40 種巴哈花精的情緒特徵、身體覺察與使用建議，找到屬於你的心靈指引。",
+  title: "牟尼花精百科｜依情緒分類的 40 種巴哈花精 | MUNI",
+  description:
+    "依巴哈醫生的七大情緒分類瀏覽 40 種花精：恐懼、不確定、對當下缺乏興趣、孤獨、過度敏感、沮喪絕望、過度關心他人。從你現在的狀態，找到對應的花精。",
 };
 
-export default function FlowersPage() {
+export default async function FlowersPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ emotion?: string }>;
+}) {
+  const params = await searchParams;
+  // 由花精詳情頁的分類標籤連過來時，直接套用該分類
+  const initialGroup =
+    params?.emotion && EMOTION_GROUPS.some((g) => g.slug === params.emotion)
+      ? params.emotion
+      : undefined;
+
+  // 在伺服器端組好瀏覽用資料，client 只負責篩選互動
+  const browserFlowers: BrowserFlower[] = FLOWERS.map((f) => ({
+    slug: f.slug,
+    name: f.name,
+    image: f.image,
+    groupSlug: getGroupForFlower(f.slug)?.slug ?? null,
+    theme: getThemeForFlower(f.slug) ?? null,
+  }));
+
+  const browserGroups: BrowserGroup[] = EMOTION_GROUPS.map((g) => ({
+    slug: g.slug,
+    title: g.title,
+    nameEn: g.nameEn,
+    description: g.description,
+    examples: g.examples,
+    count: g.flowers.length,
+  }));
+
+  const rescueCount = browserFlowers.filter((f) => f.groupSlug === null).length;
+
   return (
     <div className="min-h-screen bg-[#F9F7F2] text-stone-800">
       {/* 背景 */}
@@ -37,40 +78,16 @@ export default function FlowersPage() {
             牟尼花精百科
           </h1>
           <p className="text-stone-500 max-w-2xl mx-auto">
-            探索 40 種花精的療癒智慧，找到屬於你的心靈指引
+            依巴哈醫生的七大情緒分類，從你現在的狀態找到對應的花精
           </p>
         </header>
 
-        {/* 花精列表 */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-6">
-          {FLOWERS.map((flower) => (
-            <Link
-              key={flower.id}
-              href={`/flowers/${flower.slug}`}
-              className="group"
-            >
-              <div className="bg-white/80 backdrop-blur-sm rounded-xl overflow-hidden shadow-sm border border-stone-100 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
-                {/* 圖片 */}
-                <div className="relative aspect-[3/4] overflow-hidden">
-                  <Image
-                    src={flower.image}
-                    alt={flower.name}
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
-                    sizes="(max-width: 640px) 45vw, (max-width: 768px) 30vw, (max-width: 1024px) 23vw, 18vw"
-                  />
-                </div>
-                
-                {/* 名稱 */}
-                <div className="p-3 text-center">
-                  <h3 className="text-sm font-medium text-[#4a5548] truncate">
-                    {flower.name}
-                  </h3>
-                </div>
-              </div>
-            </Link>
-          ))}
-        </div>
+        <FlowersBrowser
+          flowers={browserFlowers}
+          groups={browserGroups}
+          rescueCount={rescueCount}
+          initialGroup={initialGroup}
+        />
 
         {/* 底部操作 */}
         <div className="mt-12 text-center">

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { FLOWERS } from "@/data/flowers.generated";
+import { TAROT_CARDS } from "@/data/tarot.generated";
 import { ZH } from "@/content/zh";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
@@ -16,6 +17,8 @@ export const metadata: Metadata = {
 export default function Home() {
   // 取前 9 張牌卡作為預覽
   const previewFlowers = FLOWERS.slice(0, 9);
+  // 取九張大秘儀作為塔羅預覽（辨識度最高）
+  const previewTarot = TAROT_CARDS.filter((c) => c.suit === "major").slice(0, 9);
 
   return (
     <div className="min-h-screen bg-[#F9F7F2] text-stone-800">
@@ -197,6 +200,59 @@ export default function Home() {
               className="inline-block border border-[#4a5548] text-[#4a5548] hover:bg-[#4a5548] hover:text-white rounded-full px-8 py-3 transition-all duration-300"
             >
               {ZH.home.flowerCards.viewAll}
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* 4-2. 牟尼塔羅牌 */}
+      <section className="py-20 px-4 bg-[#F4F1EA]">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="font-serif text-3xl md:text-4xl font-bold text-[#4a5548] mb-4">
+              {ZH.home.tarotCards.title}
+            </h2>
+            <p className="text-stone-500 whitespace-pre-line leading-relaxed">
+              {ZH.home.tarotCards.subtitle}
+            </p>
+          </div>
+
+          {/* 牌卡預覽 - 3x3 */}
+          <div className="grid grid-cols-3 gap-3 md:gap-4 mb-8 max-w-md mx-auto">
+            {previewTarot.map((card) => (
+              <Link
+                key={card.id}
+                href={`/tarot-encyclopedia/${card.slug}`}
+                className="group"
+              >
+                <div className="relative aspect-[1/1.79] rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-2 border-white/70">
+                  <Image
+                    src={card.image}
+                    alt={card.nameZh}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 640px) 30vw, 120px"
+                  />
+                </div>
+              </Link>
+            ))}
+          </div>
+
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <Link
+              href="/tarot/draw"
+              className="inline-flex items-center gap-2 bg-gradient-to-r from-[#9A7B4F] to-[#C4A265] hover:from-[#8A6B3F] hover:to-[#B49255] text-white rounded-full px-8 py-3 shadow-md hover:shadow-lg transition-all"
+            >
+              <svg aria-hidden="true" className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+              </svg>
+              {ZH.home.tarotCards.cta}
+            </Link>
+            <Link
+              href="/tarot-encyclopedia"
+              className="inline-block border border-[#9A7B4F] text-[#9A7B4F] hover:bg-[#9A7B4F] hover:text-white rounded-full px-8 py-3 transition-all duration-300"
+            >
+              {ZH.home.tarotCards.viewAll}
             </Link>
           </div>
         </div>

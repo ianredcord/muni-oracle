@@ -11,6 +11,11 @@ import Step3BodySupport from "@/components/Step3BodySupport";
 import { MingyurQuoteSection } from "@/components/MingyurQuote";
 import { getMingyurForFlower } from "@/data/mingyur";
 import { ArticleJsonLd, BreadcrumbJsonLd } from "@/components/JsonLd";
+import {
+  getGroupForFlower,
+  getThemeForFlower,
+  getRelatedFlowers,
+} from "@/data/flowerEmotions";
 
 // 動態 Metadata
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
@@ -51,6 +56,14 @@ export default async function FlowerDetailPage({ params }: PageProps) {
 
   // 配對的明就仁波切箴言
   const mingyur = getMingyurForFlower(flower.slug);
+
+  // 情緒分類與同分類的其他花精
+  const emotionGroup = getGroupForFlower(flower.slug);
+  const emotionTheme = getThemeForFlower(flower.slug);
+  const related = getRelatedFlowers(flower.slug);
+  const relatedCards = related
+    .map((r) => FLOWERS.find((f) => f.slug === r.slug))
+    .filter((f): f is (typeof FLOWERS)[number] => Boolean(f));
 
   return (
     <div className="min-h-screen bg-[#F9F7F2] text-stone-800">
@@ -135,6 +148,23 @@ export default async function FlowerDetailPage({ params }: PageProps) {
             <h1 className="font-serif text-3xl md:text-4xl font-bold text-[#4a5548] mb-2">
               {flower.name}
             </h1>
+
+            {/* 情緒分類與主題 */}
+            {emotionGroup && (
+              <div className="flex flex-wrap items-center gap-2 mb-5">
+                <Link
+                  href={`/flowers?emotion=${emotionGroup.slug}`}
+                  className="text-xs text-[#9A7B4F] bg-[#9A7B4F]/10 hover:bg-[#9A7B4F]/20 px-3 py-1 rounded-full transition-colors"
+                >
+                  {emotionGroup.title}
+                </Link>
+                {emotionTheme && (
+                  <span className="text-xs text-stone-500 bg-stone-100 px-3 py-1 rounded-full">
+                    {emotionTheme}
+                  </span>
+                )}
+              </div>
+            )}
 
 
             {/* Step 1-3 快速指引 */}
@@ -225,6 +255,53 @@ export default async function FlowerDetailPage({ params }: PageProps) {
             </div>
           </div>
         </section>
+
+        {/* 同分類的其他花精 */}
+        {emotionGroup && relatedCards.length > 0 && (
+          <section className="mb-12">
+            <h2 className="font-serif text-2xl font-bold text-[#4a5548] mb-2">
+              同樣屬於「{emotionGroup.title}」的花精
+            </h2>
+            <p className="text-sm text-stone-500 mb-6 leading-relaxed">
+              {emotionGroup.description}
+              　若這張不完全貼合你的狀態，可以看看同一類的其他選擇。
+            </p>
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+              {relatedCards.map((rc) => {
+                const theme = getThemeForFlower(rc.slug);
+                return (
+                  <Link
+                    key={rc.slug}
+                    href={`/flowers/${rc.slug}`}
+                    className="group"
+                  >
+                    <div className="h-full bg-white/80 backdrop-blur-sm rounded-xl overflow-hidden shadow-sm border border-stone-100 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                      <div className="relative aspect-[3/4] overflow-hidden">
+                        <Image
+                          src={rc.image}
+                          alt={rc.name}
+                          fill
+                          className="object-cover group-hover:scale-105 transition-transform duration-500"
+                          sizes="(max-width: 640px) 45vw, (max-width: 768px) 30vw, 22vw"
+                        />
+                      </div>
+                      <div className="p-3 text-center">
+                        <h3 className="text-sm font-medium text-[#4a5548] truncate">
+                          {rc.name}
+                        </h3>
+                        {theme && (
+                          <p className="text-[11px] text-stone-400 mt-1 leading-snug line-clamp-2">
+                            {theme}
+                          </p>
+                        )}
+                      </div>
+                    </div>
+                  </Link>
+                );
+              })}
+            </div>
+          </section>
+        )}
 
         {/* 操作按鈕 */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
