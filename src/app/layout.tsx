@@ -1,16 +1,11 @@
 import type { Metadata } from "next";
-import { Noto_Serif_TC } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 
-// 只載 400/700 兩種字重：font-serif 標題實際僅搭配 font-bold，
-// 其餘 font-medium/semibold 都落在使用系統字體的內文上，載入 CJK 字重是浪費。
-const notoSerifTC = Noto_Serif_TC({
-  variable: "--font-noto-serif-tc",
-  subsets: ["latin"],
-  weight: ["400", "700"],
-  display: "swap",
-});
+// 襯線體改為自架子集化字體，@font-face 宣告於 globals.css。
+// 只含站內實際會用到的 2,383 個字元（原字型 20,939 字形），
+// 單檔載入後全站命中快取，換頁不再產生字體請求，也免除第三方連線。
+// 重新產生方式見 docs/fonts.md。
 
 export const metadata: Metadata = {
   title: "MUNI 牟尼花精 | 巴哈花精牌卡指引",
@@ -48,6 +43,15 @@ export default function RootLayout({
   return (
     <html lang="zh-TW">
       <head>
+        {/* 襯線體先載入，避免標題等到 CSS 解析完才開始下載 */}
+        <link
+          rel="preload"
+          href="/fonts/NotoSerifTC-regular.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+
         {/* Google Analytics 4 */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-9N4ZPC9CCG"
@@ -62,7 +66,7 @@ export default function RootLayout({
           `}
         </Script>
       </head>
-      <body className={`${notoSerifTC.variable} antialiased`}>
+      <body className="antialiased">
         {children}
       </body>
     </html>

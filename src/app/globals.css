@@ -1,5 +1,21 @@
 @import "tailwindcss";
 
+/* 自架子集化襯線體（僅站內用到的字元，見 docs/fonts.md） */
+@font-face {
+  font-family: "Noto Serif TC";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/NotoSerifTC-regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Noto Serif TC";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/NotoSerifTC-bold.woff2") format("woff2");
+}
+
 :root {
   --background: #F9F7F2;
   --foreground: #4a5548;
