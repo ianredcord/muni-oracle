@@ -1,14 +1,19 @@
 "use client";
 
-import { useSearchParams } from "next/navigation";
-import { Suspense } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { TAROT_CARDS, SUIT_NAMES } from "@/data/tarot.generated";
+import {
+  getTarotShareText,
+  generateShareUrl,
+  openShareWindow,
+} from "@/data/shareTexts";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { EnergySupport, SystemMapping } from "@/components/TarotContentSections";
 import { MingyurQuoteSection } from "@/components/MingyurQuote";
 import { getMingyurForTarot } from "@/data/mingyur";
+import { trackShare, trackCta } from "@/lib/analytics";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -41,11 +46,40 @@ const fadeInUp = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0, 0, 0.2, 1] as const } },
 };
 
-function TarotResultContent() {
-  const searchParams = useSearchParams();
-  const cardSlug = searchParams.get("card");
+export default function TarotResultClient({ cardSlug }: { cardSlug: string }) {
+  const [showCopyToast, setShowCopyToast] = useState(false);
 
   const card = TAROT_CARDS.find(c => c.slug === cardSlug);
+
+  const shareText = card
+    ? getTarotShareText(card.nameZh, card.nameEn, card.uprightMessage)
+    : null;
+
+  const handleShare = (platform: "facebook" | "line") => {
+    if (!shareText || !card) return;
+    trackShare("tarot", platform, card.slug);
+    openShareWindow(
+      generateShareUrl(platform, window.location.href, shareText)
+    );
+  };
+
+  const handleCopyShareText = async () => {
+    if (!shareText || !card) return;
+    trackShare("tarot", "copy", card.slug);
+    const textToCopy = `${shareText.fb}\n\n${window.location.href}`;
+    try {
+      await navigator.clipboard.writeText(textToCopy);
+    } catch {
+      const textArea = document.createElement("textarea");
+      textArea.value = textToCopy;
+      document.body.appendChild(textArea);
+      textArea.select();
+      document.execCommand("copy");
+      document.body.removeChild(textArea);
+    }
+    setShowCopyToast(true);
+    setTimeout(() => setShowCopyToast(false), 2000);
+  };
 
   if (!card) {
     return (
@@ -110,11 +144,59 @@ function TarotResultContent() {
                 />
               </div>
             </motion.div>
+            {/* 分享按鈕區 */}
+            <div className="mt-4 flex flex-wrap justify-center gap-2">
+              <button
+                onClick={() => handleShare("facebook")}
+                className="flex items-center gap-2 bg-[#1877F2] hover:bg-[#166FE5] text-white rounded-full px-4 py-2 text-sm transition-colors"
+                title="分享到 Facebook"
+                aria-label="分享到 Facebook"
+              >
+                <svg aria-hidden="true" className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                </svg>
+                <span className="hidden sm:inline">Facebook</span>
+              </button>
+
+              <button
+                onClick={() => handleShare("line")}
+                className="flex items-center gap-2 bg-[#00B900] hover:bg-[#00A000] text-white rounded-full px-4 py-2 text-sm transition-colors"
+                title="分享到 LINE"
+                aria-label="分享到 LINE"
+              >
+                <svg aria-hidden="true" className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63h2.386c.349 0 .63.285.63.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .631.285.631.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.349 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314" />
+                </svg>
+                <span className="hidden sm:inline">LINE</span>
+              </button>
+
+              <button
+                onClick={handleCopyShareText}
+                className="flex items-center gap-2 bg-stone-500 hover:bg-stone-600 text-white rounded-full px-4 py-2 text-sm transition-colors"
+                title="複製分享文字"
+                aria-label="複製分享文字"
+              >
+                <svg aria-hidden="true" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                </svg>
+                <span className="hidden sm:inline">複製文字</span>
+              </button>
+            </div>
+
+            {showCopyToast && (
+              <div className="mt-3 text-center">
+                <span className="inline-block bg-stone-800 text-white text-sm px-4 py-2 rounded-full">
+                  已複製分享文字！
+                </span>
+              </div>
+            )}
+
             {/* CTA + 百科連結 */}
             <div className="mt-4 max-w-[280px] mx-auto space-y-2">
               <a
                 href="https://www.stark.works/categories/muni能量療癒系列"
                 target="_blank" rel="noopener noreferrer"
+                onClick={() => trackCta("energy_support", "tarot_result", card.slug)}
                 className="flex items-center justify-center gap-2 w-full bg-gradient-to-r from-[#4a5548] to-[#6b7a5f] hover:from-[#3d4a3c] hover:to-[#5a6950] text-white rounded-full px-4 py-2.5 text-sm font-medium transition-all shadow-md hover:shadow-lg"
               >
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
@@ -374,17 +456,5 @@ function TarotResultContent() {
       </main>
       <Footer />
     </div>
-  );
-}
-
-export default function TarotResultClient() {
-  return (
-    <Suspense fallback={
-      <div className="min-h-screen bg-[#F9F7F2] flex items-center justify-center">
-        <div className="animate-pulse text-stone-400">載入中...</div>
-      </div>
-    }>
-      <TarotResultContent />
-    </Suspense>
   );
 }

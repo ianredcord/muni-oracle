@@ -8,6 +8,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Step3BodySupport from "@/components/Step3BodySupport";
+import { MingyurQuoteSection } from "@/components/MingyurQuote";
+import { getMingyurForFlower } from "@/data/mingyur";
+import { ArticleJsonLd, BreadcrumbJsonLd } from "@/components/JsonLd";
 
 // 動態 Metadata
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
@@ -46,8 +49,27 @@ export default async function FlowerDetailPage({ params }: PageProps) {
   // 切割深度解析段落
   const deepSections = parseDeepBody(flower.deep.body);
 
+  // 配對的明就仁波切箴言
+  const mingyur = getMingyurForFlower(flower.slug);
+
   return (
     <div className="min-h-screen bg-[#F9F7F2] text-stone-800">
+      <ArticleJsonLd
+        headline={`${flower.name} | 牟尼花精百科`}
+        description={flower.deep.body.slice(0, 300).replace(/\n/g, " ")}
+        path={`/flowers/${flower.slug}`}
+        image={flower.image}
+        section="花精百科"
+        keywords={["巴哈花精", flower.name, "情緒療癒", "MUNI 牟尼"]}
+      />
+      <BreadcrumbJsonLd
+        items={[
+          { name: "首頁", path: "/" },
+          { name: "牟尼花精百科", path: "/flowers" },
+          { name: flower.name, path: `/flowers/${flower.slug}` },
+        ]}
+      />
+
       {/* 固定 Header */}
       <Header />
 
@@ -172,6 +194,13 @@ export default async function FlowerDetailPage({ params }: PageProps) {
             })}
           </div>
         </section>
+
+        {/* 安住片刻 · 仁波切的話 */}
+        {mingyur && (
+          <section className="mb-12">
+            <MingyurQuoteSection card={mingyur} />
+          </section>
+        )}
 
         {/* 覺察方式說明 */}
         <section className="mb-12">

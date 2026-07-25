@@ -58,6 +58,27 @@ ${cardLine}
   return defaultShareText;
 }
 
+// 塔羅牌分享文案
+export function getTarotShareText(
+  nameZh: string,
+  nameEn: string,
+  uprightMessage?: string
+): ShareText {
+  const shareUrl = "munione.co";
+  const line1 = uprightMessage?.split("。")[0];
+  const cardLine = line1 ? `${line1}。` : "";
+
+  return {
+    fb: `今天在 MUNI 牟尼塔羅抽到〈${nameZh}〉，把它記下來，提醒自己此刻的處境。
+
+${cardLine}
+
+如果你也想看看今天的指引，可以到這裡抽一張屬於你的牌：${shareUrl}`,
+    line: `我在牟尼塔羅抽到『${nameZh}』，一起來抽一張牌看看今天的訊息。`,
+    ig: `${nameZh} ${nameEn}\n今日塔羅指引`,
+  };
+}
+
 // 產生分享 URL
 export function generateShareUrl(
   platform: "facebook" | "line",

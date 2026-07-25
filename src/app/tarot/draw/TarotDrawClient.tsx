@@ -8,6 +8,7 @@ import { Header } from "@/components/Header";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { Footer } from "@/components/Footer";
+import { trackDraw } from "@/lib/analytics";
 
 type DrawPhase = "initial" | "shuffling" | "selecting" | "revealing";
 
@@ -55,6 +56,7 @@ export default function TarotDrawClient() {
     // 短暫延遲後跳轉到結果頁
     setTimeout(() => {
       const selectedCard = shuffledCards[selectedIndex];
+      trackDraw("tarot", selectedCard.slug);
       router.push(`/tarot/draw/result?card=${selectedCard.slug}`);
     }, 800);
   };

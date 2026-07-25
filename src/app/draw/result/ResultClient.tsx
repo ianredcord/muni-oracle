@@ -15,6 +15,7 @@ import { Footer } from "@/components/Footer";
 import Step3BodySupport from "@/components/Step3BodySupport";
 import { MingyurQuoteSection } from "@/components/MingyurQuote";
 import { getMingyurForFlower } from "@/data/mingyur";
+import { trackShare, trackCrossDeck, trackCta } from "@/lib/analytics";
 
 
 function ResultClient(props: { cardSlug: string }) {
@@ -68,27 +69,31 @@ function ResultClient(props: { cardSlug: string }) {
     }
     // 關閉彈窗並開啟 Facebook 分享
     setShowShareModal(false);
+    trackShare("flower", "facebook", flower.slug);
     const shareUrl = generateShareUrl("facebook", pageUrl, shareText);
     openShareWindow(shareUrl);
-  }, [getPageUrl, shareText]);
+  }, [getPageUrl, shareText, flower.slug]);
 
   // 分享到 Facebook（直接分享，不複製文字）
   const handleShareFacebook = useCallback(() => {
     const pageUrl = getPageUrl();
+    trackShare("flower", "facebook", flower.slug);
     const shareUrl = generateShareUrl("facebook", pageUrl, shareText);
     openShareWindow(shareUrl);
-  }, [getPageUrl, shareText]);
+  }, [getPageUrl, shareText, flower.slug]);
 
   // 分享到 LINE
   const handleShareLine = useCallback(() => {
     const pageUrl = getPageUrl();
+    trackShare("flower", "line", flower.slug);
     const shareUrl = generateShareUrl("line", pageUrl, shareText);
     openShareWindow(shareUrl);
-  }, [getPageUrl, shareText]);
+  }, [getPageUrl, shareText, flower.slug]);
 
   // 下載 IG 圖片
   const handleDownloadIGImage = useCallback(async () => {
     setIsGeneratingImage(true);
+    trackShare("flower", "instagram", flower.slug);
     try {
       await generateShareImage({
         cardId: flower.slug,
@@ -107,6 +112,7 @@ function ResultClient(props: { cardSlug: string }) {
   // 複製分享文字
   const handleCopyShareText = useCallback(async () => {
     const pageUrl = getPageUrl();
+    trackShare("flower", "copy", flower.slug);
     const textToCopy = `${shareText.fb}\n\n${pageUrl}`;
     try {
       await navigator.clipboard.writeText(textToCopy);
@@ -124,7 +130,7 @@ function ResultClient(props: { cardSlug: string }) {
       setShowCopyToast(true);
       setTimeout(() => setShowCopyToast(false), 2000);
     }
-  }, [getPageUrl, shareText]);
+  }, [getPageUrl, shareText, flower.slug]);
 
   return (
     <div className="min-h-screen bg-[#F9F7F2] text-stone-800">
@@ -304,6 +310,7 @@ function ResultClient(props: { cardSlug: string }) {
               <div className="mt-6">
                 <Link
                   href="/energy-support"
+                  onClick={() => trackCta("energy_support", "flower_result_sidebar", flower.slug)}
                   className="flex items-center justify-center gap-2 w-full bg-gradient-to-r from-[#4a5548] to-[#6b7a5f] hover:from-[#3d4a3c] hover:to-[#5a6950] text-white rounded-full px-6 py-3 text-base font-medium transition-all shadow-md hover:shadow-lg"
                 >
                   <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -317,6 +324,7 @@ function ResultClient(props: { cardSlug: string }) {
               <div className="mt-3 hidden md:block">
                 <Link
                   href="/tarot/draw"
+                  onClick={() => trackCrossDeck("flower_result", flower.slug)}
                   className="flex items-center justify-center gap-2 w-full border-2 border-[#9A7B4F]/50 bg-white/60 text-[#9A7B4F] hover:bg-[#9A7B4F] hover:text-white rounded-full px-6 py-3 text-base font-medium transition-all shadow-sm hover:shadow-md"
                 >
                   <svg aria-hidden="true" className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
@@ -332,6 +340,7 @@ function ResultClient(props: { cardSlug: string }) {
                   href={`https://ai.munione.co/chat?flower=${flower.slug}`}
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() => trackCta("healing_advisor", "flower_result", flower.slug)}
                   className="flex items-center justify-center gap-2 w-full bg-gradient-to-r from-[#9A7B4F] to-[#C4A265] hover:from-[#8A6B3F] hover:to-[#B49255] text-white rounded-full px-6 py-3 text-base font-medium transition-all shadow-md hover:shadow-lg"
                 >
                   <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -493,6 +502,7 @@ function ResultClient(props: { cardSlug: string }) {
               <div className="mt-4">
                 <Link
                   href="/tarot/draw"
+                  onClick={() => trackCrossDeck("flower_result", flower.slug)}
                   className="flex items-center justify-center gap-2 w-full border-2 border-[#9A7B4F]/50 bg-white/60 text-[#9A7B4F] hover:bg-[#9A7B4F] hover:text-white rounded-full px-6 py-3 text-base font-medium transition-all shadow-sm hover:shadow-md"
                 >
                   <svg aria-hidden="true" className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
@@ -508,6 +518,7 @@ function ResultClient(props: { cardSlug: string }) {
                   href={`https://ai.munione.co/chat?flower=${flower.slug}`}
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() => trackCta("healing_advisor", "flower_result", flower.slug)}
                   className="flex items-center justify-center gap-2 w-full bg-gradient-to-r from-[#9A7B4F] to-[#C4A265] hover:from-[#8A6B3F] hover:to-[#B49255] text-white rounded-full px-6 py-3 text-base font-medium transition-all shadow-md hover:shadow-lg"
                 >
                   <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">

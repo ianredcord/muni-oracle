@@ -5,6 +5,7 @@ import { FLOWERS } from "@/data/flowers.generated";
 import { ZH } from "@/content/zh";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { OrganizationJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title: "MUNI 牟尼花精｜自然療癒・花精牌卡・身心靈指引",
@@ -18,6 +19,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-[#F9F7F2] text-stone-800">
+      <OrganizationJsonLd />
       {/* 固定 Header */}
       <Header />
 

@@ -9,6 +9,7 @@ import { Header } from "@/components/Header";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { Footer } from "@/components/Footer";
+import { trackDraw } from "@/lib/analytics";
 
 type DrawPhase = "initial" | "shuffling" | "selecting" | "revealing";
 
@@ -56,6 +57,7 @@ export default function DrawClient() {
     // 短暫延遲後跳轉到結果頁
     setTimeout(() => {
       const selectedCard = shuffledCards[selectedIndex];
+      trackDraw("flower", selectedCard.slug);
       router.push(`/draw/result?card=${selectedCard.slug}`);
     }, 800);
   };

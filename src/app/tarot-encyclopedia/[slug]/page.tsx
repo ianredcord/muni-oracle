@@ -3,6 +3,9 @@ import { TAROT_CARDS } from "@/data/tarot.generated";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { EnergySupport, SystemMapping } from "@/components/TarotContentSections";
+import { MingyurQuoteSection } from "@/components/MingyurQuote";
+import { getMingyurForTarot } from "@/data/mingyur";
+import { ArticleJsonLd, BreadcrumbJsonLd } from "@/components/JsonLd";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -61,9 +64,30 @@ export default async function TarotDetailPage({ params }: PageProps) {
   const nextCard = currentIndex < suitCards.length - 1 ? suitCards[currentIndex + 1] : null;
 
   const keywordList = card.keywords?.split("、") ?? [];
+  const mingyur = getMingyurForTarot(card.slug, card.bachFlowerEn);
 
   return (
     <div className="min-h-screen bg-[#F9F7F2] text-stone-800">
+      <ArticleJsonLd
+        headline={`${card.nameZh} ${card.nameEn} | 牟尼塔羅牌百科`}
+        description={
+          card.uprightMessage ||
+          card.symbolReading ||
+          `${card.nameZh}的塔羅牌義、榮格原型與花精對應。`
+        }
+        path={`/tarot-encyclopedia/${card.slug}`}
+        image={card.image}
+        section="塔羅百科"
+        keywords={["塔羅牌", card.nameZh, card.nameEn, ...keywordList]}
+      />
+      <BreadcrumbJsonLd
+        items={[
+          { name: "首頁", path: "/" },
+          { name: "牟尼塔羅牌百科", path: "/tarot-encyclopedia" },
+          { name: card.nameZh, path: `/tarot-encyclopedia/${card.slug}` },
+        ]}
+      />
+
       <Header />
 
       {/* Background */}
@@ -246,6 +270,16 @@ export default async function TarotDetailPage({ params }: PageProps) {
               )}
             </div>
           </section>
+        )}
+
+        {/* ═══ 安住片刻 · 仁波切的話 ═══ */}
+        {mingyur && (
+          <>
+            <Divider />
+            <section className="mb-4">
+              <MingyurQuoteSection card={mingyur} />
+            </section>
+          </>
         )}
 
         <Divider />
