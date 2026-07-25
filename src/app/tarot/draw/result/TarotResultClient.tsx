@@ -454,16 +454,16 @@ export default function TarotResultClient({ cardSlug }: { cardSlug: string }) {
           </Link>
         </motion.div>
 
-        {/* 回望入口 */}
-        <div className="mt-6 text-center">
+        {/* 回望 · 抽牌紀錄 */}
+        <div className="mt-4 flex justify-center">
           <Link
             href="/journal"
-            className="inline-flex items-center gap-1.5 text-sm text-stone-400 hover:text-[#9A7B4F] transition-colors"
+            className="inline-flex items-center justify-center gap-2 w-full sm:w-auto border border-[#4a5548]/30 bg-white/60 text-[#4a5548] hover:bg-[#4a5548]/5 hover:border-[#4a5548]/60 rounded-full px-8 py-3 text-base transition-all"
           >
             <svg aria-hidden="true" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
-            回望：看看你抽過哪些牌
+            回望 · 看看你抽過哪些牌
           </Link>
         </div>
       </main>

@@ -482,19 +482,6 @@ function ResultClient(props: { cardSlug: string }) {
                 </motion.div>
               )}
 
-              {/* 回望入口 */}
-              <div className="mt-6 text-center">
-                <Link
-                  href="/journal"
-                  className="inline-flex items-center gap-1.5 text-sm text-stone-400 hover:text-[#9A7B4F] transition-colors"
-                >
-                  <svg aria-hidden="true" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                  回望：看看你抽過哪些牌
-                </Link>
-              </div>
-
               {/* 操作按鈕 */}
               <div className="mt-8 flex flex-col sm:flex-row gap-4">
                 <button
@@ -508,6 +495,19 @@ function ResultClient(props: { cardSlug: string }) {
                   className="flex-1 border border-[#4a5548] text-[#4a5548] hover:bg-[#4a5548]/5 rounded-full px-6 py-3 text-center transition-colors"
                 >
                   {ZH.draw.result.viewDetail}
+                </Link>
+              </div>
+
+              {/* 回望 · 抽牌紀錄 */}
+              <div className="mt-4">
+                <Link
+                  href="/journal"
+                  className="flex items-center justify-center gap-2 w-full border border-[#4a5548]/30 bg-white/60 text-[#4a5548] hover:bg-[#4a5548]/5 hover:border-[#4a5548]/60 rounded-full px-6 py-3 text-base transition-all"
+                >
+                  <svg aria-hidden="true" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  回望 · 看看你抽過哪些牌
                 </Link>
               </div>
 
