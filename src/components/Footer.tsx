@@ -23,6 +23,9 @@ export function Footer() {
           <Link href="/tarot" className="text-stone-500 hover:text-[#4a5548] text-sm transition-colors">
             牟尼塔羅
           </Link>
+          <Link href="/guide" className="text-stone-500 hover:text-[#4a5548] text-sm transition-colors">
+            情境指引
+          </Link>
           <Link href="/journal" className="text-stone-500 hover:text-[#4a5548] text-sm transition-colors">
             回望
           </Link>

@@ -16,6 +16,7 @@ import {
   getThemeForFlower,
   getRelatedFlowers,
 } from "@/data/flowerEmotions";
+import { getGuidesForFlower } from "@/data/guides";
 
 // 動態 Metadata
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
@@ -64,6 +65,9 @@ export default async function FlowerDetailPage({ params }: PageProps) {
   const relatedCards = related
     .map((r) => FLOWERS.find((f) => f.slug === r.slug))
     .filter((f): f is (typeof FLOWERS)[number] => Boolean(f));
+
+  // 提到這張花精的情境文章
+  const guides = getGuidesForFlower(flower.slug);
 
   return (
     <div className="min-h-screen bg-[#F9F7F2] text-stone-800">
@@ -255,6 +259,35 @@ export default async function FlowerDetailPage({ params }: PageProps) {
             </div>
           </div>
         </section>
+
+        {/* 提到這張花精的情境 */}
+        {guides.length > 0 && (
+          <section className="mb-12">
+            <h2 className="font-serif text-2xl font-bold text-[#4a5548] mb-2">
+              什麼時候可能會需要它
+            </h2>
+            <p className="text-sm text-stone-500 mb-6">
+              以下情境的文章裡提到了這張花精。
+            </p>
+            <ul className="space-y-3">
+              {guides.map((g) => (
+                <li key={g.slug}>
+                  <Link
+                    href={`/guide/${g.slug}`}
+                    className="block bg-white/80 backdrop-blur-sm rounded-2xl px-6 py-4 border border-stone-100 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all"
+                  >
+                    <h3 className="font-serif text-lg font-bold text-[#4a5548] mb-1 leading-snug">
+                      {g.title}
+                    </h3>
+                    <p className="text-sm text-stone-500 leading-relaxed">
+                      {g.description}
+                    </p>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
 
         {/* 同分類的其他花精 */}
         {emotionGroup && relatedCards.length > 0 && (

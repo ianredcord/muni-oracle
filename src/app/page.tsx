@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FLOWERS } from "@/data/flowers.generated";
 import { TAROT_CARDS } from "@/data/tarot.generated";
+import { GUIDES } from "@/data/guides";
 import { ZH } from "@/content/zh";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
@@ -19,6 +20,8 @@ export default function Home() {
   const previewFlowers = FLOWERS.slice(0, 9);
   // 取九張大秘儀作為塔羅預覽（辨識度最高）
   const previewTarot = TAROT_CARDS.filter((c) => c.suit === "major").slice(0, 9);
+  // 首頁露出六個處境，涵蓋不同情緒分類
+  const previewGuides = GUIDES.slice(0, 6);
 
   return (
     <div className="min-h-screen bg-[#F9F7F2] text-stone-800">
@@ -202,6 +205,37 @@ export default function Home() {
               {ZH.home.flowerCards.viewAll}
             </Link>
           </div>
+        </div>
+      </section>
+
+      {/* 4-1. 情境指引 */}
+      <section className="py-20 px-4 bg-white">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="font-serif text-3xl md:text-4xl font-bold text-[#4a5548] mb-4">
+            從你現在的狀態開始
+          </h2>
+          <p className="text-stone-500 leading-relaxed mb-8">
+            不知道從哪張牌看起，也沒關係。
+            <br />
+            先找到最接近你此刻的那個處境。
+          </p>
+          <div className="flex flex-wrap justify-center gap-2 mb-8">
+            {previewGuides.map((g) => (
+              <Link
+                key={g.slug}
+                href={`/guide/${g.slug}`}
+                className="text-sm text-[#4a5548] bg-[#F4F1EA] hover:bg-[#9A7B4F] hover:text-white border border-stone-200 hover:border-[#9A7B4F] rounded-full px-5 py-2.5 transition-all"
+              >
+                {g.title}
+              </Link>
+            ))}
+          </div>
+          <Link
+            href="/guide"
+            className="inline-block border border-[#4a5548] text-[#4a5548] hover:bg-[#4a5548] hover:text-white rounded-full px-8 py-3 transition-all duration-300"
+          >
+            查看全部情境指引
+          </Link>
         </div>
       </section>
 

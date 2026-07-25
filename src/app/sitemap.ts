@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { FLOWERS } from "@/data/flowers.generated";
 import { TAROT_CARDS } from "@/data/tarot.generated";
+import { GUIDES } from "@/data/guides";
 
 const BASE_URL = "https://munione.co";
 
@@ -12,6 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: BASE_URL, lastModified: now, changeFrequency: "weekly", priority: 1.0 },
     { url: `${BASE_URL}/draw`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE_URL}/flowers`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${BASE_URL}/guide`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
     { url: `${BASE_URL}/tarot`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE_URL}/tarot/draw`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE_URL}/tarot-encyclopedia`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
@@ -30,6 +32,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/systems`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
   ];
 
+  // 情境指引文章
+  const guidePages: MetadataRoute.Sitemap = GUIDES.map((g) => ({
+    url: `${BASE_URL}/guide/${g.slug}`,
+    lastModified: now,
+    changeFrequency: "monthly" as const,
+    priority: 0.8,
+  }));
+
   // 花精動態頁面 (40 張)
   const flowerPages: MetadataRoute.Sitemap = FLOWERS.map((flower) => ({
     url: `${BASE_URL}/flowers/${flower.slug}`,
@@ -46,5 +56,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  return [...staticPages, ...flowerPages, ...tarotPages];
+  return [...staticPages, ...guidePages, ...flowerPages, ...tarotPages];
 }
