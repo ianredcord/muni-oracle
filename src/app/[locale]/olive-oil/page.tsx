@@ -2,170 +2,95 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
+import { notFound } from "next/navigation";
+
 import FrequencyBadge from "@/components/FrequencyBadge";
 import { Footer } from "@/components/Footer";
+import { OLIVE_OIL_COPY } from "@/content/pages/olive-oil";
+import { isLocale, localeHref } from "@/i18n/config";
+import { buildPageMetadata } from "@/i18n/metadata";
 
-export const metadata: Metadata = {
-  title: "MUNI × Fonte di Foiano | 義大利早摘初榨橄欖油 × 頻率共振",
-  description:
-    "MUNI 攜手義大利 Fonte di Foiano 莊園，以 Bolgheri 產區百年橄欖樹的早摘初榨橄欖油，結合 Frequency Resonance™ 技術，將地中海大地的生命能量帶入你的日常療癒儀式。Flos Olei 99/100 全球最高評分。",
-};
-
-const PRODUCTS = [
-  {
-    id: "grand-cru",
-    name: "Grand Cru",
-    nameZh: "特級珍藏",
-    tagline: "莊園的靈魂之作",
-    description:
-      "Grand Cru 是 Fonte di Foiano 的旗艦之作，以莊園中最古老的橄欖樹果實精心釀製。多品種混釀——Leccino、Frantoio、Moraiolo 與 Maurino——在十月初的清晨手工採摘，於 4 小時內完成冷萃取。深邃的翠綠色澤中蘊含著朝鮮薊、番茄與新鮮杏仁的層次香氣，苦味與辛辣鮮明而優雅。",
-    aroma: "朝鮮薊、新鮮番茄、杏仁、芳香草本",
-    taste: "結構飽滿，苦味與辛辣鮮明優雅，帶有黑胡椒與綠色杏仁的餘韻",
-    pairing: "牛排塔塔、松露燉飯、硬質熟成起司、烤蔬菜",
-    image:
-      "/images/products/lETvbLHthrnfMBOS.jpg",
+const PRODUCT_STYLES: Record<
+  string,
+  { image: string; color: string; accent: string; badge: string; highlight: boolean }
+> = {
+  "grand-cru": {
+    image: "/images/products/lETvbLHthrnfMBOS.jpg",
     color: "from-green-50 to-emerald-50",
-    border: "border-stone-200",
     accent: "text-green-700",
     badge: "bg-green-100 text-green-700",
     highlight: true,
   },
-  {
-    id: "1979",
-    name: "1979",
-    nameZh: "創始年份",
-    tagline: "以創始年命名，向土地致敬",
-    description:
-      "以莊園創立年份命名的單一品種橄欖油，100% Leccio del Corno 品種。這款油承載著家族三代對這片土地的情感——豐富圓潤的口感中，帶有朝鮮薊、菊苣和萵苣的植物暗示，薄荷與迷迭香的香脂氣息在鼻腔中緩緩展開。",
-    aroma: "朝鮮薊、菊苣、萵苣，薄荷與迷迭香的香脂氣息",
-    taste: "優雅複雜，帶有朝鮮薊、青草和番茄葉的綠色調，苦味與辛辣鮮明持久",
-    pairing: "章魚前菜、牛肝菌肉薄片、焗烤番茄、烤紅肉",
-    image:
-      "/images/products/PxYNKHKkJjXQpdZb.jpg",
+  "1979": {
+    image: "/images/products/PxYNKHKkJjXQpdZb.jpg",
     color: "from-amber-50 to-yellow-50",
-    border: "border-stone-200",
     accent: "text-amber-700",
     badge: "bg-amber-100 text-amber-700",
     highlight: false,
   },
-  {
-    id: "riflessi",
-    name: "Riflessi",
-    nameZh: "光影",
-    tagline: "光影之間，溫柔的橄欖之語",
-    description:
-      "Riflessi 是一款輕果香特級初榨橄欖油，100% Maurino 品種，十月採收。過濾後呈現迷人的金黃色帶淡綠色調。優雅圓潤的開場，帶有番茄與芳香草本的氣息，薄荷、羅勒和迷迭香的香脂調在口中溫柔綻放。苦味與辛辣鮮明平衡，以甜美收尾。",
-    aroma: "番茄、芳香草本、薄荷、羅勒、迷迭香",
-    taste: "圓潤飽滿，萵苣、黑胡椒與杏仁的暗示，甜美收尾",
-    pairing: "豆子前菜、朝鮮薊燉飯、烤兔肉、山羊起司",
-    image:
-      "/images/products/qtxchiSClEHHDneY.jpg",
+  riflessi: {
+    image: "/images/products/qtxchiSClEHHDneY.jpg",
     color: "from-lime-50 to-emerald-50",
-    border: "border-stone-200",
     accent: "text-lime-700",
     badge: "bg-lime-100 text-lime-700",
     highlight: false,
   },
-  {
-    id: "toscano-igp",
-    name: "Toscano PGI Bolgheri",
-    nameZh: "托斯卡尼 PGI 博格利",
-    tagline: "Bolgheri 產區的風土印記",
-    description:
-      "擁有 PGI（地理標誌保護）認證的托斯卡尼橄欖油，代表著 Bolgheri 產區最純正的風土表達。這款油融合了莊園多個品種的精華，在嚴格的產區規範下釀製，每一滴都是 Bolgheri 丘陵、海風與陽光的結晶。",
-    aroma: "青草、番茄葉、地中海草本",
-    taste: "均衡和諧，帶有溫暖的胡椒感與清新的草本餘韻",
-    pairing: "義大利麵、烤魚、新鮮沙拉、麵包佐食",
-    image:
-      "/images/products/PxYNKHKkJjXQpdZb.jpg",
+  "toscano-igp": {
+    image: "/images/products/PxYNKHKkJjXQpdZb.jpg",
     color: "from-teal-50 to-green-50",
-    border: "border-stone-200",
     accent: "text-teal-700",
     badge: "bg-teal-100 text-teal-700",
     highlight: false,
   },
-];
+};
 
-const AWARDS = [
-  { name: "Flos Olei 2025", score: "99/100", desc: "全球橄欖油評鑑最高分之一" },
-  {
-    name: "Bibenda 2024",
-    score: "5 Gocce",
-    desc: "Grand Cru、Riflessi、Toscano IGP 三款同獲最高評價",
-  },
-  {
-    name: "Gambero Rosso",
-    score: "3 Foglie + Stella",
-    desc: "義大利美食界最高榮譽——三葉獎與星級認證",
-  },
-  {
-    name: "Leone d'Oro",
-    score: "1° Classificato",
-    desc: "Toscano IGP Bolgheri 榮獲 DOP/IGP 類別第一名",
-  },
-  {
-    name: "Slow Food",
-    score: "Grande Olio",
-    desc: "慢食運動認證的偉大橄欖油",
-  },
-  {
-    name: "AIPO d'Argento",
-    score: "Goccia d'Oro",
-    desc: "金滴獎——義大利橄欖油品質的最高肯定",
-  },
-];
+const MATRIX_ACCENTS = ["text-green-700", "text-amber-700", "text-lime-700", "text-teal-700"];
 
-const ESTATE_FEATURES = [
-  {
-    icon: "🫒",
-    title: "早摘初榨",
-    desc: "橄欖在最佳時機提前採收（Early Harvest），此時多酚含量最高，營養最為豐富。從採摘到壓榨不超過 4 小時，鎖住每一滴生命力。",
-  },
-  {
-    icon: "❄️",
-    title: "冷萃取 × 惰性氣體",
-    desc: "全程低溫冷萃取，搭配惰性氣體保護裝瓶，最大化保留橄欖油中的活性多酚、維生素 E 與抗氧化物質。",
-  },
-  {
-    icon: "🌳",
-    title: "百年橄欖樹",
-    desc: "莊園中的橄欖樹歷經數十年甚至百年生長，深層根系連結大地能量，果實蘊含更豐富的礦物質與風土特性。",
-  },
-  {
-    icon: "🏔️",
-    title: "Bolgheri 頂級產區",
-    desc: "位於托斯卡尼 Bolgheri 產區的丘陵地帶，地中海海風與托斯卡尼陽光交織，賦予橄欖獨特的風味層次。",
-  },
-  {
-    icon: "👨‍👩‍👧",
-    title: "家族三代傳承",
-    desc: "自 1979 年創立以來，Fonte di Foiano 家族三代人以對土地的愛與感恩，守護著 30 公頃橄欖園中的 10,000 棵橄欖樹。",
-  },
-  {
-    icon: "✨",
-    title: "MUNI 頻率共振",
-    desc: "每一瓶橄欖油都經過 MUNI Frequency Resonance™ 技術調頻，讓橄欖油中的活性分子以最和諧的頻率與你的身體共振。",
-  },
-];
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  if (!isLocale(locale)) return {};
+  const copy = OLIVE_OIL_COPY[locale];
 
-export default function OliveOilPage() {
+  return buildPageMetadata({
+    locale,
+    path: "/olive-oil",
+    title: copy.metaTitle,
+    description: copy.metaDescription,
+  });
+}
+
+export default async function OliveOilPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  if (!isLocale(locale)) notFound();
+
+  const copy = OLIVE_OIL_COPY[locale];
+  const products = copy.products.map((p) => ({ ...p, ...PRODUCT_STYLES[p.id] }));
+
   return (
     <main className="min-h-screen bg-[#F9F7F2] text-stone-700">
       {/* Light Theme Header */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-stone-100">
         <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
           <Link
-            href="/"
+            href={localeHref(locale, "/")}
             className="font-serif text-xl font-bold text-[#4a5548]"
           >
             MUNI
           </Link>
           <nav className="flex items-center gap-4">
             <Link
-              href="/systems"
+              href={localeHref(locale, "/systems")}
               className="text-sm text-stone-500 hover:text-[#4a5548] transition-colors"
             >
-              療癒系統
+              {copy.navSystems}
             </Link>
             <Link
               href="https://ai.munione.co"
@@ -174,7 +99,7 @@ export default function OliveOilPage() {
               <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
                 <path fillRule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clipRule="evenodd" />
               </svg>
-              MUNI 療癒顧問
+              {copy.navConsultant}
             </Link>
           </nav>
         </div>
@@ -193,17 +118,13 @@ export default function OliveOilPage() {
 
         <div className="relative max-w-4xl mx-auto px-4 text-center">
           <p className="text-[#4a5548]/80 text-sm tracking-[0.3em] uppercase mb-6">
-            MUNI × Fonte di Foiano
+            {copy.eyebrow}
           </p>
           <h1 className="text-4xl md:text-6xl font-serif font-light text-[#4a5548] mb-6 leading-tight">
-            義大利早摘初榨橄欖油
+            {copy.title}
           </h1>
-          <p className="text-lg md:text-xl text-stone-500 font-light max-w-2xl mx-auto leading-relaxed">
-            來自托斯卡尼 Bolgheri 的百年莊園，
-            <br className="hidden md:block" />
-            以早摘初榨鎖住大地最鮮活的生命能量。
-            <br className="hidden md:block" />
-            每一滴，都是陽光、海風與土地的頻率共振。
+          <p className="text-lg md:text-xl text-stone-500 font-light max-w-2xl mx-auto leading-relaxed whitespace-pre-line">
+            {copy.heroBody}
           </p>
 
           {/* Decorative line */}
@@ -224,38 +145,29 @@ export default function OliveOilPage() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <p className="text-[#4a5548]/70 text-xs tracking-[0.2em] uppercase mb-4">
-                The Estate
+                {copy.estateEyebrow}
               </p>
               <h2 className="text-2xl md:text-3xl font-serif text-[#4a5548] mb-6 leading-relaxed">
-                Fonte di Foiano
+                {copy.estateTitle}
                 <br />
                 <span className="text-stone-500 text-xl">
-                  自 1979 年，守護每一棵橄欖樹
+                  {copy.estateSubtitle}
                 </span>
               </h2>
-              <p className="text-stone-500 leading-relaxed mb-6">
-                Fonte di Foiano
-                坐落於托斯卡尼最負盛名的橄欖油產區——Bolgheri，距離第勒尼安海僅
-                10
-                分鐘車程。地中海的溫暖海風與托斯卡尼丘陵的礦物土壤，孕育出世界上最優質的橄欖。
-              </p>
-              <p className="text-stone-500 leading-relaxed mb-6">
-                莊園佔地 30
-                公頃，種植超過一萬棵橄欖樹，涵蓋
-                Leccino、Frantoio、Moraiolo、Maurino 與 Leccio del Corno
-                等經典品種。家族三代人以對土地的深厚情感，堅持從採摘到裝瓶全程在莊園內完成，確保每一滴橄欖油都保留了最完整的風土表達。
-              </p>
-              <p className="text-stone-500 leading-relaxed">
-                如今，Fonte di Foiano 的橄欖油出口至全球超過 30
-                個國家，並連續多年獲得 Flos Olei 99/100
-                的頂級評分——這是全球橄欖油評鑑中的最高殊榮之一。
-              </p>
+              {copy.estateParagraphs.map((t, i) => (
+                <p
+                  key={t}
+                  className={`text-stone-500 leading-relaxed ${i < copy.estateParagraphs.length - 1 ? "mb-6" : ""}`}
+                >
+                  {t}
+                </p>
+              ))}
             </div>
             <div className="relative">
               <div className="rounded-2xl overflow-hidden border border-stone-200">
                 <Image
                   src="/images/products/HYCNrqTGpYkndwZX.jpg"
-                  alt="Fonte di Foiano 莊園橄欖園"
+                  alt={copy.estateImage1Alt}
                   className="w-full h-80 object-cover"
                   width={800}
                   height={320}
@@ -264,7 +176,7 @@ export default function OliveOilPage() {
               <div className="mt-4 rounded-2xl overflow-hidden border border-stone-200">
                 <Image
                   src="/images/products/avGHGdLXmsXBeOEf.jpg"
-                  alt="Bolgheri 橄欖樹與夕陽"
+                  alt={copy.estateImage2Alt}
                   className="w-full h-48 object-cover"
                   width={800}
                   height={192}
@@ -282,51 +194,24 @@ export default function OliveOilPage() {
         <div className="max-w-5xl mx-auto px-4">
           <div className="text-center mb-16">
             <p className="text-[#4a5548]/70 text-xs tracking-[0.2em] uppercase mb-4">
-              Early Harvest
+              {copy.harvestEyebrow}
             </p>
             <h2 className="text-3xl md:text-4xl font-serif text-[#4a5548] mb-4">
-              為何選擇「早摘」？
+              {copy.harvestTitle}
             </h2>
-            <p className="text-stone-500 max-w-2xl mx-auto leading-relaxed">
-              「早摘」（Early Harvest）是指在橄欖果實由綠轉紫、尚未完全成熟時進行採收。
-              <br className="hidden md:block" />
-              這個短暫的黃金窗口期，果實的橄欖多酚、角鯊烯、維生素 E
-              等活性物質含量達到頂峰，但出油率卻最低。
-              <br className="hidden md:block" />
-              儘管犧牲了產量，Fonte di Foiano
-              堅持早摘，只為萃取最濃郁的生命能量與最鮮明的風味層次。
+            <p className="text-stone-500 max-w-2xl mx-auto leading-relaxed whitespace-pre-line">
+              {copy.harvestLead}
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 text-center">
-            <div className="border border-stone-200 rounded-2xl p-8 bg-white shadow-sm">
-              <div className="text-4xl mb-4">🌿</div>
-              <h3 className="text-lg font-medium text-[#4a5548] mb-2">
-                高達 10 倍的多酚含量
-              </h3>
-              <p className="text-stone-500 text-sm leading-relaxed">
-                早摘橄欖油的多酚含量是晚摘油的 5-10
-                倍，帶來更強的抗氧化能力與更鮮明的辛辣感。
-              </p>
-            </div>
-            <div className="border border-stone-200 rounded-2xl p-8 bg-white shadow-sm">
-              <div className="text-4xl mb-4">💧</div>
-              <h3 className="text-lg font-medium text-[#4a5548] mb-2">
-                極低的酸度 (0.1-0.2%)
-              </h3>
-              <p className="text-stone-500 text-sm leading-relaxed">
-                遠低於歐盟特級初榨標準（0.8%），極低的酸度代表果實從採摘到壓榨過程中的完美狀態。
-              </p>
-            </div>
-            <div className="border border-stone-200 rounded-2xl p-8 bg-white shadow-sm">
-              <div className="text-4xl mb-4">🎨</div>
-              <h3 className="text-lg font-medium text-[#4a5548] mb-2">
-                無與倫比的風味層次
-              </h3>
-              <p className="text-stone-500 text-sm leading-relaxed">
-                朝鮮薊、青番茄、杏仁、芳香草本……早摘油獨有的青草氣息與複雜風味，是風土最真實的表達。
-              </p>
-            </div>
+            {copy.harvestCards.map((card) => (
+              <div key={card.title} className="border border-stone-200 rounded-2xl p-8 bg-white shadow-sm">
+                <div className="text-4xl mb-4">{card.icon}</div>
+                <h3 className="text-lg font-medium text-[#4a5548] mb-2">{card.title}</h3>
+                <p className="text-stone-500 text-sm leading-relaxed">{card.desc}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -339,19 +224,18 @@ export default function OliveOilPage() {
         <div className="relative max-w-6xl mx-auto px-4">
           <div className="text-center mb-16">
             <p className="text-[#4a5548]/70 text-xs tracking-[0.2em] uppercase mb-4">
-              The Collection
+              {copy.collectionEyebrow}
             </p>
             <h2 className="text-3xl md:text-4xl font-serif text-[#4a5548] mb-4">
-              Fonte di Foiano 全系列
+              {copy.collectionTitle}
             </h2>
             <p className="text-stone-500 max-w-xl mx-auto">
-              從單一品種到經典混釀，每一款油都是 Bolgheri
-              風土的獨特詮釋，為你的療癒儀式帶來不同的頻率。
+              {copy.collectionLead}
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {PRODUCTS.map((product) => (
+            {products.map((product) => (
               <div
                 key={product.id}
                 className={`bg-white border border-stone-200 rounded-2xl shadow-sm hover:shadow-md transition-all flex flex-col ${product.highlight ? "lg:col-span-2" : ""}`}
@@ -374,9 +258,9 @@ export default function OliveOilPage() {
                     {product.description}
                   </p>
                   <div className="text-xs text-stone-400 space-y-2">
-                    <p><span className="font-medium text-stone-500">香氣：</span>{product.aroma}</p>
-                    <p><span className="font-medium text-stone-500">口感：</span>{product.taste}</p>
-                    <p><span className="font-medium text-stone-500">搭配：</span>{product.pairing}</p>
+                    <p><span className="font-medium text-stone-500">{copy.labelAroma}</span>{product.aroma}</p>
+                    <p><span className="font-medium text-stone-500">{copy.labelTaste}</span>{product.taste}</p>
+                    <p><span className="font-medium text-stone-500">{copy.labelPairing}</span>{product.pairing}</p>
                   </div>
                 </div>
                 <div className={`bg-gradient-to-tr ${product.color} rounded-b-2xl p-4 mt-auto`}>
@@ -401,14 +285,14 @@ export default function OliveOilPage() {
         <div className="max-w-4xl mx-auto px-4">
           <div className="text-center mb-12">
             <p className="text-[#4a5548]/70 text-xs tracking-[0.2em] uppercase mb-4">
-              Accolades
+              {copy.awardsEyebrow}
             </p>
             <h2 className="text-3xl md:text-4xl font-serif text-[#4a5548] mb-4">
-              全球頂級評鑑的肯定
+              {copy.awardsTitle}
             </h2>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-center">
-            {AWARDS.map((award) => (
+            {copy.awards.map((award) => (
               <div key={award.name} className="bg-white border border-stone-200 rounded-xl p-4 shadow-sm">
                 <p className="text-lg font-bold text-[#9A7B4F]">{award.score}</p>
                 <p className="text-sm font-semibold text-[#4a5548] mt-1">{award.name}</p>
@@ -425,7 +309,7 @@ export default function OliveOilPage() {
       <section className="py-20 bg-[#F5F2EB] border-y border-stone-200">
         <div className="max-w-5xl mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-8">
-            {ESTATE_FEATURES.map((feature, idx) => (
+            {copy.features.map((feature, idx) => (
               <div
                 key={idx}
                 className="p-6 rounded-xl transition-colors group"
@@ -450,14 +334,13 @@ export default function OliveOilPage() {
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-12">
             <p className="text-[#4a5548]/70 text-xs tracking-[0.2em] uppercase mb-4">
-              Harvest
+              {copy.galleryEyebrow}
             </p>
             <h2 className="text-3xl md:text-4xl font-serif text-[#4a5548] mb-4">
-              採收的季節
+              {copy.galleryTitle}
             </h2>
             <p className="text-stone-500 max-w-xl mx-auto">
-              每年十月，Bolgheri 的橄欖園迎來最重要的時刻——
-              手工採摘，在清晨露水未乾時開始，只為捕捉橄欖最鮮活的生命力。
+              {copy.galleryLead}
             </p>
           </div>
 
@@ -465,7 +348,7 @@ export default function OliveOilPage() {
             <div className="rounded-2xl overflow-hidden border border-stone-200 md:row-span-2">
               <Image
                 src="/images/products/CoEbffWSmbdlxZKC.jpeg"
-                alt="橄欖採收"
+                alt={copy.galleryAlts[0]}
                 className="w-full h-full object-cover"
                 width={400}
                 height={600}
@@ -474,7 +357,7 @@ export default function OliveOilPage() {
             <div className="rounded-2xl overflow-hidden border border-stone-200">
               <Image
                 src="/images/products/LmQTTPntJAuWGGPk.jpg"
-                alt="Bolgheri 橄欖園風景"
+                alt={copy.galleryAlts[1]}
                 className="w-full h-48 object-cover"
                 width={400}
                 height={192}
@@ -483,7 +366,7 @@ export default function OliveOilPage() {
             <div className="rounded-2xl overflow-hidden border border-stone-200">
               <Image
                 src="/images/products/dVIjuYTGZTUkeDOu.jpg"
-                alt="Fonte di Foiano 全系列橄欖油"
+                alt={copy.galleryAlts[2]}
                 className="w-full h-48 object-cover"
                 width={400}
                 height={192}
@@ -492,7 +375,7 @@ export default function OliveOilPage() {
             <div className="rounded-2xl overflow-hidden border border-stone-200 md:col-span-2">
               <Image
                 src="/images/products/OmkZmcVIDtFWQkkI.jpeg"
-                alt="橄欖採摘過程"
+                alt={copy.galleryAlts[3]}
                 className="w-full h-64 object-cover"
                 width={800}
                 height={256}
@@ -510,14 +393,13 @@ export default function OliveOilPage() {
         <div className="relative max-w-4xl mx-auto px-4">
           <div className="text-center mb-12">
             <p className="text-[#4a5548]/70 text-xs tracking-[0.2em] uppercase mb-4">
-              Resonance Matrix
+              {copy.matrixEyebrow}
             </p>
             <h2 className="text-3xl md:text-4xl font-serif text-[#4a5548] mb-4">
-              橙欖油 × 牟尼香 共振搭配
+              {copy.matrixTitle}
             </h2>
             <p className="text-stone-500 max-w-xl mx-auto">
-              每一款橙欖油都可搭配 MUNI 牟尼香，
-              讓飲食與嗅覺的頻率同時共振，開啟完整的療癒儀式。
+              {copy.matrixLead}
             </p>
           </div>
 
@@ -525,75 +407,33 @@ export default function OliveOilPage() {
             <table className="w-full border-collapse">
               <thead>
                 <tr className="border-b border-stone-200">
-                  <th className="text-left py-3 px-4 text-stone-400 text-xs tracking-wider uppercase font-normal">
-                    橄欖油
-                  </th>
-                  <th className="text-left py-3 px-4 text-stone-400 text-xs tracking-wider uppercase font-normal">
-                    牟尼香
-                  </th>
-                  <th className="text-left py-3 px-4 text-stone-400 text-xs tracking-wider uppercase font-normal">
-                    共振維度
-                  </th>
-                  <th className="text-left py-3 px-4 text-stone-400 text-xs tracking-wider uppercase font-normal">
-                    建議時機
-                  </th>
+                  {[
+                    copy.matrixHeaders.oil,
+                    copy.matrixHeaders.scent,
+                    copy.matrixHeaders.dimension,
+                    copy.matrixHeaders.timing,
+                  ].map((h) => (
+                    <th
+                      key={h}
+                      className="text-left py-3 px-4 text-stone-400 text-xs tracking-wider uppercase font-normal"
+                    >
+                      {h}
+                    </th>
+                  ))}
                 </tr>
               </thead>
               <tbody>
-                <tr className="border-b border-stone-100">
-                  <td className="py-4 px-4 text-stone-700 text-sm font-medium">
-                    Grand Cru
-                  </td>
-                  <td className="py-4 px-4 text-green-700 text-sm">
-                    牟尼香
-                  </td>
-                  <td className="py-4 px-4 text-stone-500 text-sm">
-                    深層滋養・守護能量
-                  </td>
-                  <td className="py-4 px-4 text-stone-400 text-sm">
-                    需要深層滋養與保護的重要時刻
-                  </td>
-                </tr>
-                <tr className="border-b border-stone-100">
-                  <td className="py-4 px-4 text-stone-700 text-sm font-medium">1979</td>
-                  <td className="py-4 px-4 text-amber-700 text-sm">
-                    牟尼香
-                  </td>
-                  <td className="py-4 px-4 text-stone-500 text-sm">
-                    穩定扎根・回到中心
-                  </td>
-                  <td className="py-4 px-4 text-stone-400 text-sm">
-                    需要穩定、扎根的力量
-                  </td>
-                </tr>
-                <tr className="border-b border-stone-100">
-                  <td className="py-4 px-4 text-stone-700 text-sm font-medium">
-                    Riflessi
-                  </td>
-                  <td className="py-4 px-4 text-lime-700 text-sm">
-                    牟尼香
-                  </td>
-                  <td className="py-4 px-4 text-stone-500 text-sm">
-                    輕盈喜悅・綻放光彩
-                  </td>
-                  <td className="py-4 px-4 text-stone-400 text-sm">
-                    想要由內而外感受喜悅
-                  </td>
-                </tr>
-                <tr>
-                  <td className="py-4 px-4 text-stone-700 text-sm font-medium">
-                    Toscano PGI
-                  </td>
-                  <td className="py-4 px-4 text-teal-700 text-sm">
-                    牟尼香
-                  </td>
-                  <td className="py-4 px-4 text-stone-500 text-sm">
-                    安定平和・日常滋養
-                  </td>
-                  <td className="py-4 px-4 text-stone-400 text-sm">
-                    日常飲食中的安定儀式
-                  </td>
-                </tr>
+                {copy.matrixRows.map((row, idx) => (
+                  <tr
+                    key={row.oil}
+                    className={idx < copy.matrixRows.length - 1 ? "border-b border-stone-100" : ""}
+                  >
+                    <td className="py-4 px-4 text-stone-700 text-sm font-medium">{row.oil}</td>
+                    <td className={`py-4 px-4 text-sm ${MATRIX_ACCENTS[idx]}`}>{row.scent}</td>
+                    <td className="py-4 px-4 text-stone-500 text-sm">{row.dimension}</td>
+                    <td className="py-4 px-4 text-stone-400 text-sm">{row.timing}</td>
+                  </tr>
+                ))}
               </tbody>
             </table>
           </div>
@@ -607,12 +447,10 @@ export default function OliveOilPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-green-50/30 to-[#F9F7F2]" />
         <div className="relative max-w-3xl mx-auto px-4 text-center">
           <h2 className="text-2xl md:text-3xl font-serif text-[#4a5548] mb-6">
-            想知道哪款橄欖油最適合你此刻的狀態？
+            {copy.ctaTitle}
           </h2>
-          <p className="text-stone-500 mb-10 leading-relaxed">
-            告訴 MUNI 療癒顧問你現在的身體感受與飲食需求，
-            <br className="hidden md:block" />
-            AI 會為你推薦最適合的橙欖油方案。
+          <p className="text-stone-500 mb-10 leading-relaxed whitespace-pre-line">
+            {copy.ctaBody}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
@@ -622,13 +460,13 @@ export default function OliveOilPage() {
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                 <path fillRule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clipRule="evenodd" />
               </svg>
-              問問 MUNI 療癒顧問
+              {copy.ctaConsultant}
             </Link>
             <Link
-              href="/systems"
+              href={localeHref(locale, "/systems")}
               className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full border border-[#4a5548] text-[#4a5548] hover:bg-[#4a5548] hover:text-white transition-all"
             >
-              探索更多 MUNI 療癒系統 →
+              {copy.ctaSystems}
             </Link>
           </div>
         </div>
