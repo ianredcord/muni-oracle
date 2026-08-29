@@ -3,6 +3,8 @@
 // 文字轉錄自實體牌卡，逐字引用，出處為書名與頁碼。
 // 單一責任：52 句箴言資料 + 花精配對表。
 
+import type { Locale } from "@/i18n/config";
+
 export type MingyurCard = {
   id: number;
   /** 出處書名（不含書名號）；新年祝福等非書籍出處直接寫全稱 */
@@ -504,24 +506,47 @@ export const TAROT_TO_MINGYUR: Record<string, number> = {
   "the-world": 15, // 世界 → 富有與否，存乎一心
 };
 
-export function getMingyurCard(id: number): MingyurCard | undefined {
-  return MINGYUR_CARDS.find((c) => c.id === id);
+/**
+ * 各語言的箴言內容。
+ *
+ * 這 52 句是詠給明就仁波切著作的逐字引用，中文版轉錄自繁中譯本。
+ * 英文版必須採用原書的官方英文措辭（The Joy of Living / Joyful Wisdom 等），
+ * 由中譯本回譯會變成未經授權的改寫，且等同誤引作者原話，因此在取得原文前，
+ * 英文站不顯示此區塊（回傳 undefined，頁面會自動略過整個段落）。
+ */
+const CARDS_BY_LOCALE: Record<Locale, MingyurCard[]> = {
+  zh: MINGYUR_CARDS,
+  en: [],
+};
+
+export function getMingyurCard(
+  locale: Locale,
+  id: number,
+): MingyurCard | undefined {
+  return CARDS_BY_LOCALE[locale].find((c) => c.id === id);
 }
 
-export function getMingyurForFlower(slug: string): MingyurCard | undefined {
+export function getMingyurForFlower(
+  locale: Locale,
+  slug: string,
+): MingyurCard | undefined {
   const id = FLOWER_TO_MINGYUR[slug];
-  return id ? getMingyurCard(id) : undefined;
+  return id ? getMingyurCard(locale, id) : undefined;
 }
 
 /** 塔羅牌取箴言：先查手動指定，其次由巴哈花精對應繼承 */
 export function getMingyurForTarot(
+  locale: Locale,
   slug: string,
-  bachFlowerEn?: string
+  bachFlowerEn?: string,
 ): MingyurCard | undefined {
   const override = TAROT_TO_MINGYUR[slug];
-  if (override) return getMingyurCard(override);
+  if (override) return getMingyurCard(locale, override);
   if (!bachFlowerEn) return undefined;
   // Rescue Remedy 沒有單一花精 slug，對應急性狀態的呼吸卡
-  if (bachFlowerEn === "Rescue Remedy") return getMingyurCard(34);
-  return getMingyurForFlower(bachFlowerEn.toLowerCase().replace(/\s+/g, "-"));
+  if (bachFlowerEn === "Rescue Remedy") return getMingyurCard(locale, 34);
+  return getMingyurForFlower(
+    locale,
+    bachFlowerEn.toLowerCase().replace(/\s+/g, "-"),
+  );
 }

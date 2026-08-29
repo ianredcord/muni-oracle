@@ -6,6 +6,9 @@
 // 2. 全篇是覺察與陪伴的框架，不承諾任何效果、不做療效宣稱
 // 3. 涉及睡眠、情緒低落、焦慮的主題，一律標記 professionalNote
 
+import type { Locale } from "@/i18n/config";
+import { GUIDES_EN } from "./guides.en";
+
 export type GuideFlower = {
   /** 對應 flowers.generated.ts 的 slug */
   slug: string;
@@ -524,16 +527,29 @@ export const GUIDES: Guide[] = [
   },
 ];
 
-export function getGuide(slug: string): Guide | undefined {
-  return GUIDES.find((g) => g.slug === slug);
+const BY_LOCALE: Record<Locale, Guide[]> = {
+  zh: GUIDES,
+  en: GUIDES_EN,
+};
+
+/** 指定語言的全部情境指引；缺英文內容時退回中文 */
+export function getGuides(locale: Locale): Guide[] {
+  const guides = BY_LOCALE[locale];
+  return guides && guides.length > 0 ? guides : GUIDES;
+}
+
+export function getGuide(locale: Locale, slug: string): Guide | undefined {
+  return getGuides(locale).find((g) => g.slug === slug);
 }
 
 /** 某張花精被哪些文章提到（用於花精頁的反向連結） */
-export function getGuidesForFlower(flowerSlug: string): Guide[] {
-  return GUIDES.filter((g) => g.flowers.some((f) => f.slug === flowerSlug));
+export function getGuidesForFlower(locale: Locale, flowerSlug: string): Guide[] {
+  return getGuides(locale).filter((g) =>
+    g.flowers.some((f) => f.slug === flowerSlug),
+  );
 }
 
 /** 某個情緒分類底下的文章 */
-export function getGuidesForEmotion(groupSlug: string): Guide[] {
-  return GUIDES.filter((g) => g.emotionGroup === groupSlug);
+export function getGuidesForEmotion(locale: Locale, groupSlug: string): Guide[] {
+  return getGuides(locale).filter((g) => g.emotionGroup === groupSlug);
 }

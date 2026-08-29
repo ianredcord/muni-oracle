@@ -6,6 +6,9 @@
  * whenToUse: 什麼時候適合用（2-3 個情境句）
  */
 
+import type { Locale } from "@/i18n/config";
+import { BODY_SUPPORT_CONTEXT_EN } from "./body-support-context.en";
+
 export interface BodySupportContext {
   whyThisPoint: string;
   whenToUse: string[];
@@ -369,3 +372,17 @@ export const bodySupportContextMap: Record<string, BodySupportContext> = {
     ],
   },
 };
+
+const CONTEXT_BY_LOCALE: Record<Locale, Record<string, BodySupportContext>> = {
+  zh: bodySupportContextMap,
+  en: BODY_SUPPORT_CONTEXT_EN,
+};
+
+export function getBodySupportContext(
+  locale: Locale,
+  flowerSlug: string,
+): BodySupportContext | undefined {
+  return (
+    CONTEXT_BY_LOCALE[locale]?.[flowerSlug] ?? bodySupportContextMap[flowerSlug]
+  );
+}

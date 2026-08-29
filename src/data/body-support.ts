@@ -1,3 +1,6 @@
+import type { Locale } from "@/i18n/config";
+import { BODY_SUPPORT_TEXT_EN } from "./body-support.en";
+
 export type BodySupportType = "support" | "release";
 
 export interface BodySupportPoint {
@@ -162,9 +165,37 @@ export const bodySupportPoints: BodySupportPoint[] = [
   },
 ];
 
-export const bodySupportPointMap = Object.fromEntries(
-  bodySupportPoints.map((point) => [point.slug, point])
-) as Record<string, BodySupportPoint>;
+/** 套上該語言的文案；缺英文內容時退回中文 */
+function localizePoints(locale: Locale): BodySupportPoint[] {
+  if (locale === "zh") return bodySupportPoints;
+
+  return bodySupportPoints.map((point) => {
+    const text = BODY_SUPPORT_TEXT_EN[point.slug];
+    return text ? { ...point, ...text } : point;
+  });
+}
+
+const POINTS_BY_LOCALE: Record<Locale, BodySupportPoint[]> = {
+  zh: bodySupportPoints,
+  en: localizePoints("en"),
+};
+
+const POINT_MAP_BY_LOCALE: Record<Locale, Record<string, BodySupportPoint>> = {
+  zh: Object.fromEntries(POINTS_BY_LOCALE.zh.map((p) => [p.slug, p])),
+  en: Object.fromEntries(POINTS_BY_LOCALE.en.map((p) => [p.slug, p])),
+};
+
+export function getBodySupportPoints(locale: Locale): BodySupportPoint[] {
+  return POINTS_BY_LOCALE[locale] ?? bodySupportPoints;
+}
+
+export function getBodySupportPointMap(
+  locale: Locale,
+): Record<string, BodySupportPoint> {
+  return POINT_MAP_BY_LOCALE[locale] ?? POINT_MAP_BY_LOCALE.zh;
+}
+
+export const bodySupportPointMap = POINT_MAP_BY_LOCALE.zh;
 
 /* ── 花精 → 穴位反向 mapping ── */
 

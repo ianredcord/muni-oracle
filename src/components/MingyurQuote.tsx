@@ -3,10 +3,20 @@
 // 呈現與該牌情境配對的明就仁波切箴言（逐字引用 + 出處）
 
 import type { MingyurCard } from "@/data/mingyur";
+import type { Locale } from "@/i18n/config";
+import { getDictionary } from "@/i18n/dictionaries";
 
-export function MingyurQuoteSection({ card }: { card: MingyurCard }) {
+export function MingyurQuoteSection({
+  locale,
+  card,
+}: {
+  locale: Locale;
+  card: MingyurCard;
+}) {
+  const dict = getDictionary(locale);
   const hasPage = card.page.length > 0;
-  const sourceLabel = hasPage ? `《${card.book}》${card.page}` : card.book;
+  const bookLabel = locale === "zh" ? `《${card.book}》` : card.book;
+  const sourceLabel = hasPage ? `${bookLabel}${locale === "zh" ? "" : ", p. "}${card.page}` : bookLabel;
   const paragraphs = card.quote.split("\n");
 
   return (
@@ -15,7 +25,7 @@ export function MingyurQuoteSection({ card }: { card: MingyurCard }) {
       <div className="flex items-center gap-3 mb-5">
         <div className="w-1 h-6 rounded-full bg-gradient-to-b from-[#9A7B4F] to-[#9A7B4F]/30" />
         <h2 className="font-serif text-xl font-bold text-[#4a5548]">
-          安住片刻 · 仁波切的話
+          {dict.mingyur.sectionTitle}
         </h2>
       </div>
 
@@ -38,11 +48,13 @@ export function MingyurQuoteSection({ card }: { card: MingyurCard }) {
 
       {/* 循線閱讀提示 */}
       <p className="mt-5 text-xs text-stone-400 leading-relaxed">
-        文字擷取自詠給明就仁波切的教導。
+        {dict.mingyur.attribution}
         {hasPage && (
           <>
-            若這段話特別觸動你，可以翻開《{card.book}》第 {card.page} 頁，
-            閱讀更完整的段落，那裡有更多關於此刻狀態的陪伴。
+            {" "}
+            {dict.mingyur.readMore
+              .replace("{book}", bookLabel)
+              .replace("{page}", card.page)}
           </>
         )}
       </p>
