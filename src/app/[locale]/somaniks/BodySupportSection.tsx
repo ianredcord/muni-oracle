@@ -5,63 +5,28 @@ import { useSearchParams } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import {
-  bodySupportPoints,
-  bodySupportPointMap,
+  getBodySupportPoints,
+  getBodySupportPointMap,
   type BodySupportPoint,
 } from "@/data/body-support";
-import { FLOWERS } from "@/data/flowers.generated";
+import { getFlowers } from "@/data/flowers";
+import { getThemeForFlower } from "@/data/flowerEmotions";
+import { localeHref, type Locale } from "@/i18n/config";
+import { getDictionary } from "@/i18n/dictionaries";
 
-/* ── 花精中文對照 ── */
-const FLOWER_ZH_MAP: Record<string, string> = {
-  mimulus: "已知恐懼",
-  aspen: "不明原因不安",
-  "cherry-plum": "失控恐懼",
-  "red-chestnut": "過度為他人擔憂",
-  cerato: "不相信自己",
-  scleranthus: "猶豫搖擺",
-  gentian: "容易氣餒",
-  gorse: "深層絕望",
-  hornbeam: "心理疲倦",
-  "wild-oat": "人生方向迷惘",
-  clematis: "活在幻想",
-  "wild-rose": "缺乏活力",
-  olive: "極度疲憊",
-  "sweet-chestnut": "靈魂暗夜",
-  "white-chestnut": "思緒轉不停",
-  heather: "過度圍繞自己",
-  impatiens: "急躁",
-  "water-violet": "疏離孤立",
-  vervain: "過度用力",
-  vine: "控制慾",
-  beech: "批判",
-  mustard: "莫名憂鬱",
-  larch: "缺乏自信",
-  pine: "自責",
-  elm: "責任壓垮",
-  "star-of-bethlehem": "創傷震驚",
-  willow: "怨恨",
-  "crab-apple": "自我嫌惡",
-  agrimony: "隱藏痛苦",
-  centaury: "無法說不",
-  holly: "嫉妒猜疑",
-  walnut: "容易受影響",
-  oak: "過度硬撐",
-  chicory: "過度佔有",
-  "rock-water": "過度自我壓抑",
-  honeysuckle: "沉溺過去",
-  "chestnut-bud": "重複犯錯",
-  "rock-rose": "極度驚恐",
-};
-
-/* ── 快速選擇 ── */
-const quickOptions = [
-  { label: "我很緊 / 停不下來", slug: "pc6" },
-  { label: "我很虛 / 撐不住", slug: "ki6" },
-  { label: "我覺得卡住", slug: "gb41" },
-] as const;
-
-export default function BodySupportSection() {
+export default function BodySupportSection({ locale }: { locale: Locale }) {
   const searchParams = useSearchParams();
+  const dict = getDictionary(locale);
+  const bodySupportPoints = getBodySupportPoints(locale);
+  const bodySupportPointMap = getBodySupportPointMap(locale);
+  const localeFlowers = getFlowers(locale);
+
+  /* ── 快速選擇 ── */
+  const quickOptions = [
+    { label: dict.bodySupport.quickTense, slug: "pc6" },
+    { label: dict.bodySupport.quickWeak, slug: "ki6" },
+    { label: dict.bodySupport.quickStuck, slug: "gb41" },
+  ] as const;
 
   /* ?point=xxx → 初始化對應 modal 為已開啟 */
   const [selected, setSelected] = useState<BodySupportPoint | null>(() => {
@@ -86,7 +51,7 @@ export default function BodySupportSection() {
 
   const pairedFlowersFor = (point: BodySupportPoint) =>
     (point.pairings || [])
-      .map((slug) => FLOWERS.find((f) => f.slug === slug))
+      .map((slug) => localeFlowers.find((f) => f.slug === slug))
       .filter(Boolean);
 
   /* 顏色系統：support → 橘色系, release → 藍色系 */
@@ -130,20 +95,20 @@ export default function BodySupportSection() {
             BODY SUPPORT POINTS
           </p>
           <h2 className="font-serif text-2xl md:text-3xl font-bold text-[#4a5548] mb-4">
-            8 個身體支持點
+            {dict.bodySupport.pointsTitle}
           </h2>
           <p className="text-stone-400 text-sm max-w-xl mx-auto leading-relaxed">
-            每個位置對應不同的身體狀態，選一個最接近你的，點進去看貼法。
+            {dict.bodySupport.pointsLead}
           </p>
         </div>
 
         {/* ═══ 1. 不知道怎麼選？ ═══ */}
         <div className="mb-14 bg-white/80 backdrop-blur-sm rounded-2xl p-8 md:p-10 border border-stone-200 text-center">
           <h3 className="font-serif text-lg md:text-xl font-bold text-[#4a5548] mb-2">
-            不知道要選哪一個？
+            {dict.bodySupport.quickTitle}
           </h3>
           <p className="text-stone-400 text-sm mb-6">
-            選一個最接近你現在的感覺
+            {dict.bodySupport.quickLead}
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
             {quickOptions.map((opt) => (
@@ -163,13 +128,13 @@ export default function BodySupportSection() {
           <div className="flex items-center gap-2 px-4 py-2 bg-orange-50 rounded-full border border-orange-200">
             <span className="w-2.5 h-2.5 rounded-full bg-orange-400" />
             <span className="text-orange-700 text-sm font-medium">
-              支持・穩定
+              {dict.bodySupport.legendSupport}
             </span>
           </div>
           <div className="flex items-center gap-2 px-4 py-2 bg-sky-50 rounded-full border border-sky-200">
             <span className="w-2.5 h-2.5 rounded-full bg-sky-400" />
             <span className="text-sky-700 text-sm font-medium">
-              釋放・鬆開
+              {dict.bodySupport.legendRelease}
             </span>
           </div>
         </div>
@@ -213,7 +178,7 @@ export default function BodySupportSection() {
                   <span
                     className={`inline-flex items-center gap-1 text-xs font-medium ${c.textLight}`}
                   >
-                    查看貼法
+                    {dict.bodySupport.viewHowTo}
                     <svg
                       className="w-3.5 h-3.5"
                       fill="none"
@@ -253,7 +218,7 @@ export default function BodySupportSection() {
               {/* 關閉按鈕 */}
               <button
                 onClick={() => setSelected(null)}
-                aria-label="關閉"
+                aria-label={dict.bodySupport.close}
                 className="absolute top-4 right-4 z-10 w-8 h-8 flex items-center justify-center rounded-full bg-white/80 hover:bg-stone-100 transition-colors shadow-sm"
               >
                 <svg
@@ -320,7 +285,7 @@ export default function BodySupportSection() {
 
                 {/* 使用方式 */}
                 <div className="bg-stone-50 rounded-xl p-4 mb-5">
-                  <p className="text-xs text-stone-400 mb-1.5">使用方式</p>
+                  <p className="text-xs text-stone-400 mb-1.5">{dict.bodySupport.usage}</p>
                   <p className="text-stone-600 text-sm leading-relaxed">
                     {selected.usageText}
                   </p>
@@ -328,7 +293,7 @@ export default function BodySupportSection() {
 
                 {/* 搭配建議 */}
                 <div className="bg-stone-50 rounded-xl p-4 mb-5">
-                  <p className="text-xs text-stone-400 mb-1.5">搭配建議</p>
+                  <p className="text-xs text-stone-400 mb-1.5">{dict.bodySupport.pairingTitle}</p>
                   <p className="text-stone-600 text-sm leading-relaxed">
                     {selected.pairingText}
                   </p>
@@ -337,23 +302,24 @@ export default function BodySupportSection() {
                 {/* 花精配對 — 英文名 + 中文狀態 */}
                 {flowers.length > 0 && (
                   <div className="mb-6">
-                    <p className="text-xs text-stone-400 mb-2">搭配花精</p>
+                    <p className="text-xs text-stone-400 mb-2">{dict.bodySupport.pairedFlowers}</p>
                     <div className="flex flex-wrap gap-2">
                       {flowers.map((flower) => {
-                        const zhLabel =
-                          FLOWER_ZH_MAP[flower!.slug] || "";
+                        const themeLabel = getThemeForFlower(locale, flower!.slug) || "";
                         /* 取英文名部分（去掉括號裡的中文別名） */
                         const engName =
                           flower!.name.replace(/（.*）/, "").trim();
                         return (
                           <Link
                             key={flower!.slug}
-                            href={`/flowers/${flower!.slug}`}
+                            href={localeHref(locale, `/flowers/${flower!.slug}`)}
                             className={`inline-flex items-center gap-1 px-3 py-1.5 rounded-full text-xs font-medium transition-colors ${c.chipBg} ${c.text} ${c.chipHover} ${c.chipBorder}`}
                           >
                             {engName}
-                            {zhLabel && (
-                              <span className="opacity-60">（{zhLabel}）</span>
+                            {themeLabel && (
+                              <span className="opacity-60">
+                                {locale === "zh" ? `（${themeLabel}）` : ` · ${themeLabel}`}
+                              </span>
                             )}
                           </Link>
                         );
@@ -364,23 +330,23 @@ export default function BodySupportSection() {
 
                 {/* ═══ 2. 立即行動區 ═══ */}
                 <div className="border-t border-stone-100 pt-6">
-                  <p className="text-xs text-stone-400 mb-2">下一步</p>
+                  <p className="text-xs text-stone-400 mb-2">{dict.bodySupport.nextStep}</p>
                   <p className="text-stone-600 text-sm leading-relaxed mb-5">
-                    你可以先聞一下牟尼香，再貼上 Somaniks，讓身體慢慢回到比較能被承接的狀態。
+                    {dict.bodySupport.nextStepBody}
                   </p>
                   <div className="flex flex-col sm:flex-row gap-3">
                     <button
                       onClick={() => setSelected(null)}
                       className="flex-1 px-5 py-3 rounded-xl bg-[#4a5548] text-white text-sm font-medium hover:bg-[#3a4538] transition-colors shadow-sm"
                     >
-                      我現在試試看這個位置
+                      {dict.bodySupport.tryThis}
                     </button>
                     <Link
-                      href="/muni-scent"
+                      href={localeHref(locale, "/muni-scent")}
                       onClick={() => setSelected(null)}
                       className="flex-1 px-5 py-3 rounded-xl border border-stone-200 text-[#4a5548] text-sm font-medium text-center hover:bg-stone-50 transition-colors"
                     >
-                      搭配牟尼香使用
+                      {dict.bodySupport.withScent}
                     </Link>
                   </div>
                 </div>

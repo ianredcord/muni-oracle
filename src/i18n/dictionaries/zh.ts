@@ -309,6 +309,28 @@ export const zh = {
     secondaryIntro: "若你想更進一步，也可以搭配第二個位置：",
   },
 
+  bodySupport: {
+    pointsTitle: "8 個身體支持點",
+    pointsLead: "每個位置對應不同的身體狀態，選一個最接近你的，點進去看貼法。",
+    quickTitle: "不知道要選哪一個？",
+    quickLead: "選一個最接近你現在的感覺",
+    quickTense: "我很緊 / 停不下來",
+    quickWeak: "我很虛 / 撐不住",
+    quickStuck: "我覺得卡住",
+    legendSupport: "支持・穩定",
+    legendRelease: "釋放・鬆開",
+    viewHowTo: "查看貼法",
+    close: "關閉",
+    usage: "使用方式",
+    pairingTitle: "搭配建議",
+    pairedFlowers: "搭配花精",
+    nextStep: "下一步",
+    nextStepBody:
+      "你可以先聞一下牟尼香，再貼上 Somaniks，讓身體慢慢回到比較能被承接的狀態。",
+    tryThis: "我現在試試看這個位置",
+    withScent: "搭配牟尼香使用",
+  },
+
   acupoints: {
     searchPlaceholder: "搜尋穴位名稱、主治症狀、歸經...",
     totalCount: "共收錄 {n} 個穴位，分佈於十大部位",

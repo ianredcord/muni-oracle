@@ -338,6 +338,29 @@ export const en: Dictionary = {
     secondaryIntro: "To go a step further, you can pair it with a second point:",
   },
 
+  bodySupport: {
+    pointsTitle: "Eight points of body support",
+    pointsLead:
+      "Each point answers a different state. Choose the one closest to you and open it to see how to place the patch.",
+    quickTitle: "Not sure which to choose?",
+    quickLead: "Pick the one closest to how you feel now",
+    quickTense: "I'm tight / can't stop",
+    quickWeak: "I'm depleted / can't hold on",
+    quickStuck: "Something feels stuck",
+    legendSupport: "Support · steady",
+    legendRelease: "Release · loosen",
+    viewHowTo: "How to place it",
+    close: "Close",
+    usage: "How to use it",
+    pairingTitle: "Pairing",
+    pairedFlowers: "Essences that pair with it",
+    nextStep: "Next",
+    nextStepBody:
+      "Breathe in MUNI Scent first, then place the Somaniks, and let the body come slowly back to a state it can be held in.",
+    tryThis: "I'll try this point now",
+    withScent: "Use it with MUNI Scent",
+  },
+
   acupoints: {
     searchPlaceholder: "Search by point name, indication or channel…",
     totalCount: "{n} points across ten regions",
