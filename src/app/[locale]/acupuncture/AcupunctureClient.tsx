@@ -4,33 +4,18 @@ import { useState, useMemo, useEffect, useRef } from "react";
 import { useSearchParams } from "next/navigation";
 import Image from "next/image";
 import { Footer } from "@/components/Footer";
-import acupointsData from "@/data/acupoints.json";
+import {
+  getAcupointSections,
+  type Acupoint,
+  type AcupointSection,
+} from "@/data/acupoints";
+import type { Locale } from "@/i18n/config";
+import { getDictionary } from "@/i18n/dictionaries";
 
-interface Acupoint {
-  name: string;
-  code: string;
-  anatomy: string;
-  location: string;
-  meridian: string;
-  properties: string;
-  indications: string;
-  technique: string;
-  needleFeeling: string;
-  application: string;
-  notes: string;
-  configNotes: string | string[];
-  imageUrls: string[];
-}
-
-interface Section {
-  id: string;
-  bodyPart: string;
-  acupoints: Acupoint[];
-}
-
-const sections = acupointsData as Section[];
-
-function findMatchFromUrl(urlSearch: string | null): { query: string; sectionId: string | null; acupoint: Acupoint | null } {
+function findMatchFromUrl(
+  sections: AcupointSection[],
+  urlSearch: string | null,
+): { query: string; sectionId: string | null; acupoint: Acupoint | null } {
   if (!urlSearch) return { query: "", sectionId: null, acupoint: null };
   const q = urlSearch.trim();
   const qLower = q.toLowerCase();
@@ -45,10 +30,15 @@ function findMatchFromUrl(urlSearch: string | null): { query: string; sectionId:
   return { query: q, sectionId: null, acupoint: null };
 }
 
-export default function AcupunctureClient() {
+export default function AcupunctureClient({ locale }: { locale: Locale }) {
   const searchParams = useSearchParams();
+  const dict = getDictionary(locale);
+  const sections = useMemo(() => getAcupointSections(locale), [locale]);
   const urlSearch = searchParams.get("search");
-  const initialMatch = useMemo(() => findMatchFromUrl(urlSearch), [urlSearch]);
+  const initialMatch = useMemo(
+    () => findMatchFromUrl(sections, urlSearch),
+    [sections, urlSearch],
+  );
 
   const [expandedSection, setExpandedSection] = useState<string | null>(initialMatch.sectionId);
   const [selectedAcupoint, setSelectedAcupoint] = useState<Acupoint | null>(null);
@@ -90,7 +80,7 @@ export default function AcupunctureClient() {
         ),
       }))
       .filter((section) => section.acupoints.length > 0);
-  }, [searchQuery]);
+  }, [searchQuery, sections]);
 
   const totalCount = sections.reduce((sum, s) => sum + s.acupoints.length, 0);
 
@@ -114,14 +104,14 @@ export default function AcupunctureClient() {
           </svg>
           <input
             type="text"
-            placeholder="搜尋穴位名稱、主治症狀、歸經..."
+            placeholder={dict.acupoints.searchPlaceholder}
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             className="w-full pl-12 pr-4 py-3.5 bg-white border border-stone-200 rounded-xl text-stone-800 placeholder:text-stone-400 focus:outline-none focus:ring-2 focus:ring-[#4a5548]/30 focus:border-[#4a5548] transition-all"
           />
         </div>
         <p className="text-center text-stone-400 text-sm mt-3">
-          共收錄 {totalCount} 個穴位，分佈於十大部位
+          {dict.acupoints.totalCount.replace("{n}", String(totalCount))}
         </p>
       </div>
 
@@ -143,14 +133,16 @@ export default function AcupunctureClient() {
             >
               <div className="flex items-center gap-4">
                 <span className="w-10 h-10 bg-gradient-to-br from-[#4a5548] to-[#6b8f6b] text-white rounded-full flex items-center justify-center text-sm font-bold">
-                  {section.id.slice(0, 2)}
+                  {section.badge}
                 </span>
                 <div className="text-left">
                   <h3 className="font-serif text-lg font-bold text-[#4a5548]">
-                    {section.id}
+                    {section.title}
                   </h3>
                   <p className="text-sm text-stone-500">
-                    【{section.bodyPart}】· {section.acupoints.length} 個穴位
+                    {dict.acupoints.pointsInPart
+                      .replace("{part}", section.bodyPart)
+                      .replace("{n}", String(section.acupoints.length))}
                   </p>
                 </div>
               </div>
@@ -227,7 +219,7 @@ export default function AcupunctureClient() {
               </h3>
               <button
                 onClick={() => setSelectedAcupoint(null)}
-                aria-label="關閉穴位詳情"
+                aria-label={dict.acupoints.closeDetail}
                 className="w-8 h-8 flex items-center justify-center rounded-full hover:bg-stone-100 transition-colors"
               >
                 <svg
@@ -257,7 +249,9 @@ export default function AcupunctureClient() {
                     >
                       <Image
                         src={url}
-                        alt={`${selectedAcupoint.name} 圖${idx + 1}`}
+                        alt={dict.acupoints.imageAlt
+                          .replace("{name}", selectedAcupoint.name)
+                          .replace("{n}", String(idx + 1))}
                         fill
                         className="object-contain"
                         sizes="(max-width: 768px) 100vw, 50vw"
@@ -277,16 +271,16 @@ export default function AcupunctureClient() {
 
               {/* 詳細資訊 */}
               {[
-                { label: "解剖", value: selectedAcupoint.anatomy },
-                { label: "取穴", value: selectedAcupoint.location },
-                { label: "歸經", value: selectedAcupoint.meridian },
-                { label: "穴性", value: selectedAcupoint.properties },
-                { label: "主治", value: selectedAcupoint.indications },
-                { label: "針法與劑量", value: selectedAcupoint.technique },
-                { label: "針感", value: selectedAcupoint.needleFeeling },
-                { label: "應用", value: selectedAcupoint.application },
-                { label: "說明", value: selectedAcupoint.notes },
-                { label: "配穴", value: Array.isArray(selectedAcupoint.configNotes) ? selectedAcupoint.configNotes.join('\n') : selectedAcupoint.configNotes },
+                { label: dict.acupoints.labelAnatomy, value: selectedAcupoint.anatomy },
+                { label: dict.acupoints.labelLocation, value: selectedAcupoint.location },
+                { label: dict.acupoints.labelMeridian, value: selectedAcupoint.meridian },
+                { label: dict.acupoints.labelProperties, value: selectedAcupoint.properties },
+                { label: dict.acupoints.labelIndications, value: selectedAcupoint.indications },
+                { label: dict.acupoints.labelTechnique, value: selectedAcupoint.technique },
+                { label: dict.acupoints.labelNeedleFeeling, value: selectedAcupoint.needleFeeling },
+                { label: dict.acupoints.labelApplication, value: selectedAcupoint.application },
+                { label: dict.acupoints.labelNotes, value: selectedAcupoint.notes },
+                { label: dict.acupoints.labelConfigNotes, value: Array.isArray(selectedAcupoint.configNotes) ? selectedAcupoint.configNotes.join('\n') : selectedAcupoint.configNotes },
               ]
                 .filter((item) => item.value)
                 .map((item) => (
@@ -304,12 +298,10 @@ export default function AcupunctureClient() {
               {/* MUNI 搭配建議 */}
               <div className="bg-gradient-to-br from-amber-50 to-yellow-50 rounded-xl p-5 border border-amber-200">
                 <h4 className="font-serif font-bold text-[#9A7B4F] mb-2">
-                  MUNI 搭配建議
+                  {dict.acupoints.muniTitle}
                 </h4>
                 <p className="text-stone-600 text-sm leading-relaxed">
-                  在{selectedAcupoint.name}
-                  貼上 Somaniks 日本針灸貼，搭配 MUNI
-                  牟尼香在穴位周圍輕柔按摩，可增強穴位刺激效果，促進氣血循環。
+                  {dict.acupoints.muniBody.replace("{name}", selectedAcupoint.name)}
                 </p>
                 <a
                   href="https://ai.munione.co"
@@ -330,7 +322,7 @@ export default function AcupunctureClient() {
                       d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
                     />
                   </svg>
-                  詢問療癒顧問最適合的搭配方案
+                  {dict.acupoints.muniCta}
                 </a>
               </div>
             </div>

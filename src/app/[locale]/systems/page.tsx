@@ -1,14 +1,11 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import { notFound } from "next/navigation";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import FrequencyBadge from "@/components/FrequencyBadge";
-
-export const metadata: Metadata = {
-  title: "MUNI 療癒生態系統 | 完整知識架構",
-  description:
-    "探索 MUNI 的完整療癒生態——花精、精油、董氏心氣神針、日本針灸貼、人蔘、橄欖油、日本綠茶、巧克力、葡萄酒，九大系統守護你的身心靈平衡。",
-};
+import { isLocale, localeHref, type Locale } from "@/i18n/config";
+import { buildPageMetadata } from "@/i18n/metadata";
 
 const SYSTEMS = [
   {
@@ -142,7 +139,167 @@ const LAYERS = [
   },
 ];
 
-export default function SystemsPage() {
+const SYSTEMS_EN: Record<string, { title: string; subtitle: string; description: string }> = {
+  "flower-essence": {
+    title: "Bach flower essences",
+    subtitle: "A natural prescription for emotion",
+    description:
+      "The 38 essences developed by Dr Bach in England work through the resonance of plant frequencies to settle emotional states gently. Each essence answers one emotional pattern, helping you return from fear, anxiety or anger to an inner quiet.",
+  },
+  "essential-oil": {
+    title: "MUNI Scent",
+    subtitle: "The doorway of smell",
+    description:
+      "India's thousand-year attar distillation meets MUNI Frequency Resonance™, concentrating six natural plant essences — agarwood, rose, sandalwood, vetiver, cottonseed and cumin — into a single bottle. Smell reaches the limbic system directly and wakes the body's own repair.",
+  },
+  acupuncture: {
+    title: "Tung's heart-qi-spirit needling",
+    subtitle: "Precise work along the channels",
+    description:
+      "The heart-qi-spirit method inherited from Master Tung's extraordinary points regulates qi and blood through a distinctive point system. Paired with MUNI oil and Japanese acupuncture patches, you can care for the points at home.",
+  },
+  somaniks: {
+    title: "MUNI × SOMANIKS patches",
+    subtitle: "Neuroscience × non-penetrating microcones × painless repair",
+    description:
+      "Japanese non-penetrating microcone technology triggers the body's own repair through the axon reflex. SOMACEPT's firmer cones suit acute pain; SOMARESON's softer cones suit chronic pain. With MUNI oil, the neural pathways of smell and touch resonate together. Certified as a Japanese medical device, with CE and FDA approval.",
+  },
+  ginseng: {
+    title: "MUNI × premium Korean ginseng",
+    subtitle: "Millennia of herbal wisdom × resonant frequency",
+    description:
+      "Six-year Korean red ginseng, selected and combined with agarwood, deer antler and other rare materials. Six layers of MUNI Frequency Resonance™ calibration bring the energetic frequency of the ginsenosides into deep resonance with the body's cells. Three preparations, from warming vitality to skin and beauty.",
+  },
+  "olive-oil": {
+    title: "MUNI × Fonte di Foiano olive oil",
+    subtitle: "Italian early-harvest extra virgin oil × frequency resonance",
+    description:
+      "In partnership with the Fonte di Foiano estate in Italy's Bolgheri region, early harvesting and cold pressing lock in the olives' liveliest polyphenols. Flos Olei 99/100 — the highest score in the world — from a century-old grove held by three generations of one family. Four oils, from the flagship Grand Cru to everyday Toscano PGI.",
+  },
+  "green-tea": {
+    title: "MUNI × Japanese organic green tea",
+    subtitle: "A century-old organic tea garden × frequency resonance",
+    description:
+      "With a Japanese organic tea garden of more than a century: Uji matcha, Kagoshima gyokuro, sencha and hojicha. Tea has grown here since 1858 — over 165 years — harvested once a year on the 88th day after the start of spring, picked by hand and steamed within six hours. Fully certified organic in Japan, the United States and the EU.",
+  },
+  chocolate: {
+    title: "MUNI × CECILIA chocolate",
+    subtitle: "World-class artisan chocolate × frequency healing",
+    description:
+      "MUNI works with Cecilia Rabassi, the world's first female Maître Chocolatier, combining Tuscan alabaster craft with frequency resonance to make the finest artisan chocolate there is.",
+  },
+  wine: {
+    title: "MUNI × Kellerei Eisacktal wine",
+    subtitle: "Alpine mountain wine × a ritual of care",
+    description:
+      "With the Kellerei Eisacktal winery in South Tyrol, mountain wines raised on granite and dolomite connect you to the mineral energy of the earth through the ritual of tasting. Nine selected wines, from limited flagships to classic everyday bottles.",
+  },
+};
+
+const LAYERS_EN = [
+  {
+    name: "The body",
+    description:
+      "Oils, points, acupuncture patches and food work with the qi, blood and energy of the body",
+    systems: ["Oils", "Tung's points", "Patches", "Ginseng", "Olive oil"],
+  },
+  {
+    name: "Emotion",
+    description:
+      "Flower essence frequencies and aromatics settle emotional and psychological states",
+    systems: ["Essences", "Oils", "Chocolate", "Wine"],
+  },
+  {
+    name: "Ritual",
+    description:
+      "Healing folded into daily life, building a steady rhythm of settledness",
+    systems: ["The tea ritual", "Meditation", "Breath awareness"],
+  },
+];
+
+const PAGE_COPY: Record<Locale, {
+  metaTitle: string;
+  metaDescription: string;
+  eyebrow: string;
+  title: string;
+  intro: string;
+  layersTitle: string;
+  systemsTitle: string;
+  learnMore: string;
+  comingSoon: string;
+  ctaTitle: string;
+  ctaBody: string;
+  ctaButton: string;
+}> = {
+  zh: {
+    metaTitle: "MUNI 療癒生態系統 | 完整知識架構",
+    metaDescription:
+      "探索 MUNI 的完整療癒生態——花精、精油、董氏心氣神針、日本針灸貼、人蔘、橄欖油、日本綠茶、巧克力、葡萄酒，九大系統守護你的身心靈平衡。",
+    eyebrow: "MUNI HEALING ECOSYSTEM",
+    title: "MUNI 療癒生態系統",
+    intro:
+      "MUNI 不只是花精品牌，而是一套完整的「身心靈整體生活儀式系統」。\n九大系統從身體、情緒到日常儀式，層層守護你的內在平衡。",
+    layersTitle: "三層療癒架構",
+    systemsTitle: "九大療癒系統",
+    learnMore: "深入了解",
+    comingSoon: "即將推出",
+    ctaTitle: "不確定哪個系統適合你？",
+    ctaBody:
+      "每個人的身心狀態都不同，讓 MUNI 療癒顧問根據你此刻的感受，\n從九大系統中為你挑選最適合的療癒組合。",
+    ctaButton: "問問 MUNI 療癒顧問",
+  },
+  en: {
+    metaTitle: "The MUNI healing ecosystem | The whole picture",
+    metaDescription:
+      "Explore MUNI's full healing ecosystem — flower essences, essential oils, Tung's heart-qi-spirit needling, Japanese acupuncture patches, ginseng, olive oil, Japanese green tea, chocolate and wine. Nine systems holding your balance.",
+    eyebrow: "MUNI HEALING ECOSYSTEM",
+    title: "The MUNI healing ecosystem",
+    intro:
+      "MUNI isn't only a flower essence brand; it's a complete system of daily ritual for body, feeling and spirit.\nNine systems hold your inner balance, from the body through emotion to everyday ritual.",
+    layersTitle: "Three layers of healing",
+    systemsTitle: "The nine systems",
+    learnMore: "Read more",
+    comingSoon: "Coming soon",
+    ctaTitle: "Not sure which system fits you?",
+    ctaBody:
+      "Every person's state is different. Let the MUNI Healing Consultant read how you are right now\nand choose the combination from these nine systems that suits you best.",
+    ctaButton: "Ask the MUNI Healing Consultant",
+  },
+};
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  if (!isLocale(locale)) return {};
+  const copy = PAGE_COPY[locale];
+
+  return buildPageMetadata({
+    locale,
+    path: "/systems",
+    title: copy.metaTitle,
+    description: copy.metaDescription,
+  });
+}
+
+export default async function SystemsPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  if (!isLocale(locale)) notFound();
+
+  const copy = PAGE_COPY[locale];
+  const systems = SYSTEMS.map((s) =>
+    locale === "en" && SYSTEMS_EN[s.id] ? { ...s, ...SYSTEMS_EN[s.id] } : s,
+  );
+  const layers = LAYERS.map((l, i) =>
+    locale === "en" ? { ...l, ...LAYERS_EN[i] } : l,
+  );
+
   return (
     <div className="min-h-screen bg-[#F9F7F2] text-stone-800">
       <Header />
@@ -151,15 +308,13 @@ export default function SystemsPage() {
       <section className="pt-28 pb-16 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-sm tracking-[0.3em] text-[#9A7B4F] mb-4">
-            MUNI HEALING ECOSYSTEM
+            {copy.eyebrow}
           </p>
           <h1 className="font-serif text-3xl md:text-5xl font-bold text-[#4a5548] mb-6 leading-tight">
-            MUNI 療癒生態系統
+            {copy.title}
           </h1>
-          <p className="text-stone-500 text-lg leading-relaxed max-w-2xl mx-auto">
-            MUNI 不只是花精品牌，而是一套完整的「身心靈整體生活儀式系統」。
-            <br />
-            九大系統從身體、情緒到日常儀式，層層守護你的內在平衡。
+          <p className="text-stone-500 text-lg leading-relaxed max-w-2xl mx-auto whitespace-pre-line">
+            {copy.intro}
           </p>
         </div>
       </section>
@@ -168,10 +323,10 @@ export default function SystemsPage() {
       <section className="pb-16 px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="font-serif text-2xl font-bold text-[#4a5548] text-center mb-10">
-            三層療癒架構
+            {copy.layersTitle}
           </h2>
           <div className="space-y-4">
-            {LAYERS.map((layer) => (
+            {layers.map((layer) => (
               <div
                 key={layer.name}
                 className="bg-white rounded-2xl p-6 shadow-sm border border-stone-100"
@@ -206,10 +361,10 @@ export default function SystemsPage() {
       <section className="pb-20 px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="font-serif text-2xl font-bold text-[#4a5548] text-center mb-10">
-            九大療癒系統
+            {copy.systemsTitle}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {SYSTEMS.map((system) => (
+            {systems.map((system) => (
               <div
                 key={system.id}
                 className={`relative bg-gradient-to-br ${system.color} rounded-2xl p-6 border ${system.borderColor} transition-all duration-300 ${
@@ -220,7 +375,7 @@ export default function SystemsPage() {
               >
                 {system.status === "coming" && (
                   <span className="absolute top-4 right-4 px-2 py-0.5 bg-stone-200 text-stone-500 rounded-full text-xs">
-                    即將推出
+                    {copy.comingSoon}
                   </span>
                 )}
                 <div className="flex items-start gap-4">
@@ -237,10 +392,10 @@ export default function SystemsPage() {
                     </p>
                     {system.status === "available" ? (
                       <Link
-                        href={system.href}
+                        href={localeHref(locale, system.href)}
                         className="inline-flex items-center gap-1.5 text-[#4a5548] hover:text-[#3a4538] text-sm font-medium transition-colors"
                       >
-                        深入了解
+                        {copy.learnMore}
                         <svg
                           className="w-4 h-4"
                           fill="none"
@@ -268,12 +423,10 @@ export default function SystemsPage() {
       <section className="py-20 px-4 bg-[#E8E4DC]">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="font-serif text-2xl md:text-3xl font-bold text-[#4a5548] mb-6">
-            不確定哪個系統適合你？
+            {copy.ctaTitle}
           </h2>
-          <p className="text-stone-600 text-lg leading-relaxed mb-8">
-            每個人的身心狀態都不同，讓 MUNI 療癒顧問根據你此刻的感受，
-            <br className="hidden sm:inline" />
-            從九大系統中為你挑選最適合的療癒組合。
+          <p className="text-stone-600 text-lg leading-relaxed mb-8 whitespace-pre-line">
+            {copy.ctaBody}
           </p>
           <a
             href="https://ai.munione.co"
@@ -294,7 +447,7 @@ export default function SystemsPage() {
                 d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
               />
             </svg>
-            問問 MUNI 療癒顧問
+            {copy.ctaButton}
           </a>
         </div>
       </section>

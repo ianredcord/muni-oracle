@@ -338,6 +338,70 @@ export const en: Dictionary = {
     secondaryIntro: "To go a step further, you can pair it with a second point:",
   },
 
+  acupoints: {
+    searchPlaceholder: "Search by point name, indication or channel…",
+    totalCount: "{n} points across ten regions",
+    pointsInPart: "{part} · {n} points",
+    closeDetail: "Close the point detail",
+    imageAlt: "{name}, figure {n}",
+    labelAnatomy: "Anatomy",
+    labelLocation: "Locating the point",
+    labelMeridian: "Channel",
+    labelProperties: "Action",
+    labelIndications: "Indications",
+    labelTechnique: "Needling and dosage",
+    labelNeedleFeeling: "Needle sensation",
+    labelApplication: "Application",
+    labelNotes: "Notes",
+    labelConfigNotes: "Point combinations",
+    muniTitle: "Using it with MUNI",
+    muniBody:
+      "Place a Somaniks Japanese acupuncture patch on {name}, and massage gently around the point with MUNI Scent. This strengthens the stimulation at the point and supports the circulation of qi and blood.",
+    muniCta: "Ask the consultant which combination suits you",
+  },
+
+  energySupport: {
+    metaTitle: "MUNI energy support | An integrated approach to body and mind",
+    metaDescription:
+      "Natural materials supporting the steadiness and repair of your energy — flower essences, essential oils, chocolate and frequency resonance, built into one complete system of support.",
+    representativeItems: "Typical materials:",
+    suggestedSupport: "Suggested support:",
+    footerTagline:
+      "Natural materials supporting the steadiness and repair of body, feeling and spirit",
+    linkHome: "Home",
+    linkDraw: "Draw a card",
+    linkFlowers: "Flower essences",
+  },
+
+  journal: {
+    metaTitle: "Looking back | Your card history · MUNI",
+    metaDescription:
+      "Revisit the flower essence and tarot cards you've drawn and see the themes that keep returning. Records stay in your own browser — no account, nothing uploaded.",
+    title: "Looking back",
+    subtitle:
+      "Every card you've drawn is here.\nSometimes the one that keeps returning is the thing that hasn't been heard yet.",
+    deckFlower: "Essence",
+    deckTarot: "Tarot",
+    emptyBody:
+      "Nothing recorded yet.\nDraw a card and today will be here.",
+    emptyDrawFlower: "Draw a flower essence card",
+    emptyDrawTarot: "Draw a MUNI Tarot card",
+    totalPrefix: "You've drawn",
+    totalSuffix: "times",
+    since: "since {date}",
+    monthLabel: "{month} {year}",
+    repeatedTitle: "Cards that keep returning",
+    repeatedCount: "drawn {n} times",
+    repeatedNote:
+      "Repetition isn't a good or bad omen. It's closer to this: a theme is still circling through you.",
+    timelineTitle: "Your trail",
+    privacyNote:
+      "These records live only in your own browser. No account is needed and nothing is uploaded anywhere.\nThey disappear if you switch devices or clear your browsing data.",
+    confirmClear: "Yes, clear it",
+    cancel: "Cancel",
+    clearAll: "Clear all records",
+  },
+
   share: {
     facebook: "Share on Facebook",
     line: "Share on LINE",

@@ -7,6 +7,8 @@ import { motion } from "framer-motion";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { useDrawHistory } from "@/hooks/useDrawHistory";
+import { localeHref, type Locale } from "@/i18n/config";
+import { getDictionary } from "@/i18n/dictionaries";
 import {
   clearHistory,
   tallyByCard,
@@ -17,10 +19,10 @@ import {
 type CardMeta = { name: string; image: string; href: string };
 export type CardIndex = Record<DeckType, Record<string, CardMeta>>;
 
-const DECK_LABEL: Record<DeckType, string> = {
-  flower: "花精",
-  tarot: "塔羅",
-};
+const MONTH_NAMES_EN = [
+  "January", "February", "March", "April", "May", "June",
+  "July", "August", "September", "October", "November", "December",
+];
 
 function formatDate(at: number) {
   const d = new Date(at);
@@ -29,16 +31,20 @@ function formatDate(at: number) {
   ).padStart(2, "0")}`;
 }
 
-function monthKey(at: number) {
+function monthKey(at: number, locale: Locale, template: string) {
   const d = new Date(at);
-  return `${d.getFullYear()} 年 ${d.getMonth() + 1} 月`;
+  const month =
+    locale === "zh" ? String(d.getMonth() + 1) : MONTH_NAMES_EN[d.getMonth()];
+  return template
+    .replace("{year}", String(d.getFullYear()))
+    .replace("{month}", month);
 }
 
 /** 依月份分組（紀錄已是新到舊） */
-function groupByMonth(records: DrawRecord[]) {
+function groupByMonth(records: DrawRecord[], locale: Locale, template: string) {
   const groups: { label: string; items: DrawRecord[] }[] = [];
   for (const r of records) {
-    const label = monthKey(r.at);
+    const label = monthKey(r.at, locale, template);
     const last = groups[groups.length - 1];
     if (last && last.label === label) last.items.push(r);
     else groups.push({ label, items: [r] });
@@ -46,12 +52,24 @@ function groupByMonth(records: DrawRecord[]) {
   return groups;
 }
 
-export default function JournalClient({ index }: { index: CardIndex }) {
+export default function JournalClient({
+  locale,
+  index,
+}: {
+  locale: Locale;
+  index: CardIndex;
+}) {
   const history = useDrawHistory();
   const [confirmClear, setConfirmClear] = useState(false);
+  const dict = getDictionary(locale);
+
+  const DECK_LABEL: Record<DeckType, string> = {
+    flower: dict.journal.deckFlower,
+    tarot: dict.journal.deckTarot,
+  };
 
   const repeated = tallyByCard(history).filter((t) => t.count >= 2);
-  const groups = groupByMonth(history);
+  const groups = groupByMonth(history, locale, dict.journal.monthLabel);
   const oldest = history.length ? history[history.length - 1].at : null;
 
   const meta = (deck: DeckType, slug: string): CardMeta =>
@@ -82,35 +100,31 @@ export default function JournalClient({ index }: { index: CardIndex }) {
           className="text-center mb-10"
         >
           <h1 className="font-serif text-3xl md:text-4xl font-bold text-[#4a5548] mb-3">
-            回望
+            {dict.journal.title}
           </h1>
-          <p className="text-stone-500 leading-relaxed">
-            你抽過的牌，都在這裡。
-            <br className="sm:hidden" />
-            有時候，重複出現的那張，就是還沒被聽見的話。
+          <p className="text-stone-500 leading-relaxed whitespace-pre-line">
+            {dict.journal.subtitle}
           </p>
         </motion.div>
 
         {history.length === 0 ? (
           /* 空狀態 */
           <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-10 text-center shadow-sm border border-stone-100">
-            <p className="text-stone-500 leading-loose mb-6">
-              還沒有紀錄。
-              <br />
-              抽一張牌，這裡就會留下今天的樣子。
+            <p className="text-stone-500 leading-loose mb-6 whitespace-pre-line">
+              {dict.journal.emptyBody}
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <Link
-                href="/draw"
+                href={localeHref(locale, "/draw")}
                 className="bg-[#4a5548] hover:bg-[#3a4538] text-white rounded-full px-8 py-3 transition-colors"
               >
-                抽一張花精牌
+                {dict.journal.emptyDrawFlower}
               </Link>
               <Link
-                href="/tarot/draw"
+                href={localeHref(locale, "/tarot/draw")}
                 className="border-2 border-[#9A7B4F]/50 bg-white/60 text-[#9A7B4F] hover:bg-[#9A7B4F] hover:text-white rounded-full px-8 py-3 transition-all"
               >
-                抽一張牟尼塔羅牌
+                {dict.journal.emptyDrawTarot}
               </Link>
             </div>
           </div>
@@ -119,14 +133,14 @@ export default function JournalClient({ index }: { index: CardIndex }) {
             {/* 概況 */}
             <div className="bg-white/80 backdrop-blur-sm rounded-2xl px-6 py-5 shadow-sm border border-stone-100 mb-8 text-center">
               <p className="text-stone-600 leading-relaxed">
-                你一共抽了{" "}
+                {dict.journal.totalPrefix}{" "}
                 <span className="font-serif text-2xl font-bold text-[#9A7B4F] align-middle mx-1">
                   {history.length}
                 </span>{" "}
-                次
+                {dict.journal.totalSuffix}
                 {oldest && (
                   <span className="text-stone-400 text-sm block mt-1">
-                    從 {formatDate(oldest)} 開始
+                    {dict.journal.since.replace("{date}", formatDate(oldest))}
                   </span>
                 )}
               </p>
@@ -138,7 +152,7 @@ export default function JournalClient({ index }: { index: CardIndex }) {
                 <div className="flex items-center gap-3 mb-5">
                   <div className="w-1 h-6 rounded-full bg-gradient-to-b from-[#9A7B4F] to-[#9A7B4F]/30" />
                   <h2 className="font-serif text-xl font-bold text-[#4a5548]">
-                    反覆出現的牌
+                    {dict.journal.repeatedTitle}
                   </h2>
                 </div>
                 <div className="grid gap-3 sm:grid-cols-2">
@@ -169,7 +183,7 @@ export default function JournalClient({ index }: { index: CardIndex }) {
                             {m.name}
                           </p>
                           <p className="text-sm text-stone-500 mt-0.5">
-                            抽到 {t.count} 次
+                            {dict.journal.repeatedCount.replace("{n}", String(t.count))}
                           </p>
                         </div>
                       </Link>
@@ -177,7 +191,7 @@ export default function JournalClient({ index }: { index: CardIndex }) {
                   })}
                 </div>
                 <p className="text-xs text-stone-400 mt-4 leading-relaxed">
-                  重複不代表什麼吉凶。它比較像是：有一個主題，還在你身上輪迴。
+                  {dict.journal.repeatedNote}
                 </p>
               </section>
             )}
@@ -187,7 +201,7 @@ export default function JournalClient({ index }: { index: CardIndex }) {
               <div className="flex items-center gap-3 mb-5">
                 <div className="w-1 h-6 rounded-full bg-gradient-to-b from-[#4a5548] to-[#4a5548]/30" />
                 <h2 className="font-serif text-xl font-bold text-[#4a5548]">
-                  足跡
+                  {dict.journal.timelineTitle}
                 </h2>
               </div>
 
@@ -225,10 +239,8 @@ export default function JournalClient({ index }: { index: CardIndex }) {
 
             {/* 隱私說明與清除 */}
             <div className="border-t border-stone-200 pt-6 text-center">
-              <p className="text-xs text-stone-400 leading-relaxed mb-4">
-                這些紀錄只存在你自己的瀏覽器裡，不需要帳號，也不會上傳到任何地方。
-                <br />
-                換裝置或清除瀏覽資料後就會消失。
+              <p className="text-xs text-stone-400 leading-relaxed mb-4 whitespace-pre-line">
+                {dict.journal.privacyNote}
               </p>
               {confirmClear ? (
                 <div className="flex items-center justify-center gap-3">
@@ -239,13 +251,13 @@ export default function JournalClient({ index }: { index: CardIndex }) {
                     }}
                     className="text-sm bg-stone-700 hover:bg-stone-800 text-white rounded-full px-5 py-2 transition-colors"
                   >
-                    確定清除
+                    {dict.journal.confirmClear}
                   </button>
                   <button
                     onClick={() => setConfirmClear(false)}
                     className="text-sm text-stone-500 hover:text-stone-700 px-3 py-2 transition-colors"
                   >
-                    取消
+                    {dict.journal.cancel}
                   </button>
                 </div>
               ) : (
@@ -253,7 +265,7 @@ export default function JournalClient({ index }: { index: CardIndex }) {
                   onClick={() => setConfirmClear(true)}
                   className="text-sm text-stone-400 hover:text-stone-600 underline underline-offset-4 transition-colors"
                 >
-                  清除所有紀錄
+                  {dict.journal.clearAll}
                 </button>
               )}
             </div>

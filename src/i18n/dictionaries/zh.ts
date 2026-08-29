@@ -309,6 +309,66 @@ export const zh = {
     secondaryIntro: "若你想更進一步，也可以搭配第二個位置：",
   },
 
+  acupoints: {
+    searchPlaceholder: "搜尋穴位名稱、主治症狀、歸經...",
+    totalCount: "共收錄 {n} 個穴位，分佈於十大部位",
+    pointsInPart: "【{part}】· {n} 個穴位",
+    closeDetail: "關閉穴位詳情",
+    imageAlt: "{name} 圖{n}",
+    labelAnatomy: "解剖",
+    labelLocation: "取穴",
+    labelMeridian: "歸經",
+    labelProperties: "穴性",
+    labelIndications: "主治",
+    labelTechnique: "針法與劑量",
+    labelNeedleFeeling: "針感",
+    labelApplication: "應用",
+    labelNotes: "說明",
+    labelConfigNotes: "配穴",
+    muniTitle: "MUNI 搭配建議",
+    muniBody:
+      "在{name}貼上 Somaniks 日本針灸貼，搭配 MUNI 牟尼香在穴位周圍輕柔按摩，可增強穴位刺激效果，促進氣血循環。",
+    muniCta: "詢問療癒顧問最適合的搭配方案",
+  },
+
+  energySupport: {
+    metaTitle: "MUNI 能量支持系統 | 身心靈整合方案",
+    metaDescription:
+      "以自然素材支持身心靈的能量穩定與修復，透過花精、精油、巧克力與頻率共振技術，建構完整的能量支持系統。",
+    representativeItems: "代表素材：",
+    suggestedSupport: "建議支持：",
+    footerTagline: "以自然素材，支持身心靈的能量穩定與修復",
+    linkHome: "首頁",
+    linkDraw: "抽牌",
+    linkFlowers: "牟尼花精百科",
+  },
+
+  journal: {
+    metaTitle: "回望 | 你的牌卡足跡 · MUNI",
+    metaDescription:
+      "回顧你抽過的花精與塔羅牌卡，看見反覆出現的主題。紀錄只留在你自己的瀏覽器，不需帳號、不會上傳。",
+    title: "回望",
+    subtitle: "你抽過的牌，都在這裡。\n有時候，重複出現的那張，就是還沒被聽見的話。",
+    deckFlower: "花精",
+    deckTarot: "塔羅",
+    emptyBody: "還沒有紀錄。\n抽一張牌，這裡就會留下今天的樣子。",
+    emptyDrawFlower: "抽一張花精牌",
+    emptyDrawTarot: "抽一張牟尼塔羅牌",
+    totalPrefix: "你一共抽了",
+    totalSuffix: "次",
+    since: "從 {date} 開始",
+    monthLabel: "{year} 年 {month} 月",
+    repeatedTitle: "反覆出現的牌",
+    repeatedCount: "抽到 {n} 次",
+    repeatedNote: "重複不代表什麼吉凶。它比較像是：有一個主題，還在你身上輪迴。",
+    timelineTitle: "足跡",
+    privacyNote:
+      "這些紀錄只存在你自己的瀏覽器裡，不需要帳號，也不會上傳到任何地方。\n換裝置或清除瀏覽資料後就會消失。",
+    confirmClear: "確定清除",
+    cancel: "取消",
+    clearAll: "清除所有紀錄",
+  },
+
   share: {
     facebook: "分享到 Facebook",
     line: "分享到 LINE",

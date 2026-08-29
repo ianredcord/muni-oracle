@@ -1,19 +1,43 @@
 import { Suspense } from "react";
 import { Metadata } from "next";
 import Link from "next/link";
+import { notFound } from "next/navigation";
+import { ACUPUNCTURE_COPY } from "@/content/pages/acupuncture";
+import { isLocale, localeHref } from "@/i18n/config";
+import { buildPageMetadata } from "@/i18n/metadata";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import FrequencyBadge from "@/components/FrequencyBadge";
 import AcupunctureClient from "./AcupunctureClient";
 import AboutTungsClient from "./AboutTungsClient";
 
-export const metadata: Metadata = {
-  title: "董氏心氣神針 | MUNI 療癒生態系統",
-  description:
-    "董氏奇穴心氣神針法完整介紹，涵蓋董景昌先生簡介、傳承脈絡、全息心法原理，以及一一到十十部位共 176 個穴位圖解。搭配 MUNI 牟尼香與日本針灸貼，在家即可進行穴位保健。",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  if (!isLocale(locale)) return {};
+  const copy = ACUPUNCTURE_COPY[locale];
 
-export default function AcupuncturePage() {
+  return buildPageMetadata({
+    locale,
+    path: "/acupuncture",
+    title: copy.metaTitle,
+    description: copy.metaDescription,
+  });
+}
+
+export default async function AcupuncturePage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  if (!isLocale(locale)) notFound();
+
+  const copy = ACUPUNCTURE_COPY[locale];
+
   return (
     <div className="min-h-screen bg-[#F9F7F2] text-stone-800">
       <Header />
@@ -28,66 +52,61 @@ export default function AcupuncturePage() {
 
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <Link
-            href="/systems"
+            href={localeHref(locale, "/systems")}
             className="inline-flex items-center gap-1.5 text-sm text-stone-500 hover:text-[#4a5548] transition-colors mb-6"
           >
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
             </svg>
-            返回療癒系統總覽
+            {copy.backToSystems}
           </Link>
           <p className="text-sm tracking-[0.3em] text-[#9A7B4F] mb-4">
-            TUNG&apos;S ACUPUNCTURE · 心氣神針
+            {copy.eyebrow}
           </p>
           <h1 className="font-serif text-3xl md:text-5xl font-bold text-[#4a5548] mb-6 leading-tight">
-            董氏心氣神針
+            {copy.title}
           </h1>
-          <p className="text-stone-500 text-lg leading-relaxed max-w-2xl mx-auto mb-4">
-            傳承自董景昌先生的董氏奇穴針法，歷經三代真傳，
-            <br className="hidden sm:inline" />
-            以全息心法為核心，開創跨次元的療癒體系。
+          <p className="text-stone-500 text-lg leading-relaxed max-w-2xl mx-auto mb-4 whitespace-pre-line">
+            {copy.heroLead}
           </p>
           <p className="text-stone-400 text-sm max-w-xl mx-auto">
-            搭配 MUNI 牟尼香塗抹穴位，再貼上 Somaniks 日本針灸貼，
-            讓穴位保健融入你的日常生活。
+            {copy.heroSub}
           </p>
 
           {/* 頁面導航 */}
           <div className="flex flex-wrap justify-center gap-3 mt-10">
             <a href="#about" className="px-5 py-2 rounded-full bg-white border border-stone-200 text-sm text-stone-600 hover:border-[#4a5548] hover:text-[#4a5548] transition-all shadow-sm">
-              關於董氏奇穴
+              {copy.navAbout}
             </a>
             <a href="#lineage" className="px-5 py-2 rounded-full bg-white border border-stone-200 text-sm text-stone-600 hover:border-[#4a5548] hover:text-[#4a5548] transition-all shadow-sm">
-              傳承脈絡
+              {copy.navLineage}
             </a>
             <a href="#holographic" className="px-5 py-2 rounded-full bg-white border border-stone-200 text-sm text-stone-600 hover:border-[#4a5548] hover:text-[#4a5548] transition-all shadow-sm">
-              全息心法
+              {copy.navHolographic}
             </a>
             <a href="#acupoints" className="px-5 py-2 rounded-full bg-white border border-stone-200 text-sm text-stone-600 hover:border-[#4a5548] hover:text-[#4a5548] transition-all shadow-sm">
-              穴位詳解
+              {copy.navAcupoints}
             </a>
           </div>
         </div>
       </section>
 
       {/* 關於董氏奇穴 - Client Component for tabs */}
-      <AboutTungsClient />
+      <AboutTungsClient locale={locale} />
 
       {/* 穴位詳解 */}
       <section id="acupoints" className="py-20 px-4 scroll-mt-20">
         <div className="max-w-4xl mx-auto text-center mb-12">
-          <p className="text-sm tracking-[0.3em] text-[#9A7B4F] mb-3">ACUPOINT ATLAS</p>
+          <p className="text-sm tracking-[0.3em] text-[#9A7B4F] mb-3">{copy.atlasEyebrow}</p>
           <h2 className="font-serif text-2xl md:text-4xl font-bold text-[#4a5548] mb-4">
-            穴位詳解
+            {copy.atlasTitle}
           </h2>
-          <p className="text-stone-500 leading-relaxed max-w-xl mx-auto">
-            十大部位，176 個穴位，完整圖解與詳細說明。
-            <br />
-            點擊穴位卡片查看詳細資訊與 MUNI 搭配建議。
+          <p className="text-stone-500 leading-relaxed max-w-xl mx-auto whitespace-pre-line">
+            {copy.atlasLead}
           </p>
         </div>
-        <Suspense fallback={<div className="text-center py-8 text-stone-400">載入穴位資料中...</div>}>
-          <AcupunctureClient />
+        <Suspense fallback={<div className="text-center py-8 text-stone-400">{copy.atlasLoading}</div>}>
+          <AcupunctureClient locale={locale} />
         </Suspense>
       </section>
 
@@ -95,12 +114,10 @@ export default function AcupuncturePage() {
       <section className="py-20 px-4 bg-[#E8E4DC]">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="font-serif text-2xl md:text-3xl font-bold text-[#4a5548] mb-6">
-            想知道哪個穴位適合你？
+            {copy.ctaTitle}
           </h2>
-          <p className="text-stone-600 text-lg leading-relaxed mb-8">
-            告訴 MUNI 療癒顧問你的身體狀況，
-            <br className="hidden sm:inline" />
-            AI 會為你推薦最適合的穴位搭配精油與針灸貼方案。
+          <p className="text-stone-600 text-lg leading-relaxed mb-8 whitespace-pre-line">
+            {copy.ctaBody}
           </p>
           <a
             href="https://ai.munione.co"
@@ -111,7 +128,7 @@ export default function AcupuncturePage() {
             <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
             </svg>
-            問問 MUNI 療癒顧問
+            {copy.ctaButton}
           </a>
         </div>
       </section>

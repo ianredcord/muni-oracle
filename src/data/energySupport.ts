@@ -171,3 +171,176 @@ export const ENERGY_SUPPORT_CONTENT = {
     cta2: "從我的狀態開始"
   }
 };
+
+/* ── 英文版內容 ── */
+
+export const ENERGY_LAYERS_EN: EnergyLayer[] = [
+  {
+    id: "body",
+    title: "Body",
+    subtitle: "Cellular energy and the capacity to repair",
+    description:
+      "The body carries the energy. Steady nourishment and circulation give the cells enough fuel for ordinary functioning and for repair. This isn't about peak output — it's about building a durable, steady floor of energy.",
+    icon: "🌿",
+  },
+  {
+    id: "nervous",
+    title: "Nervous system",
+    subtitle: "Safety and the rhythm of recovery",
+    description:
+      "The nervous system decides how we meet pressure. Smell is the fastest route to changing a nervous state — plant aromatics, breath and daily rhythm help the autonomic system find safety and a rhythm for recovery.",
+    icon: "🧘",
+  },
+  {
+    id: "mind",
+    title: "Mind and awareness",
+    subtitle: "Emotion, presence, and the direction you choose",
+    description:
+      "Once body and nerves are supported, there's room to see your own state. Essences, cards and writing aren't there to change you — they let you see where you are, and then choose the next step gently.",
+    icon: "✨",
+  },
+];
+
+export const ENERGY_MODULES_EN: EnergyModule[] = [
+  {
+    id: "diet",
+    title: "Energy through food",
+    subtitle: "Not eating more, but eating what fits",
+    description:
+      "Focused on cellular energy, metabolism, and steady output over long stretches. Natural materials the body can read, building a dependable daily floor.",
+    items: [
+      "Olive oil (steadiness, antioxidants, the daily energy floor)",
+      "Ginseng (deep support, capacity to recover)",
+      "Green tea and matcha (clarity, metabolism and focus)",
+    ],
+    ctaLabel: "See energy through food",
+    ctaLink: "#diet",
+  },
+  {
+    id: "scent",
+    title: "Plants and smell",
+    subtitle: "Smell is the fastest route to changing a nervous state",
+    description:
+      "Plant aromatics help the nervous system find safety and centre. No complicated steps — one deep breath is enough to begin.",
+    items: [
+      "MUNI Scent (steadiness, a sense of centre)",
+      "Single oils and attars",
+    ],
+    ctaLabel: "Step into MUNI Scent",
+    ctaLink: "/draw",
+  },
+  {
+    id: "rhythm",
+    title: "Daily rhythm and small rituals",
+    subtitle: "Energy isn't topped up once — it's being treated gently each day",
+    description:
+      "Three points of rhythm — morning, afternoon and before sleep — with simple actions. Nothing about overhauling your life; just small points of support inside the ordinary day.",
+    items: [
+      "Morning: warm water with a little olive oil, and a short stretch",
+      "Afternoon: a cup of green tea or matcha, a few minutes of breathing",
+      "Evening: MUNI Scent or an oil, and less screen light",
+    ],
+    ctaLabel: "Build my daily energy",
+    ctaLink: "#rhythm",
+  },
+  {
+    id: "muni-method",
+    title: "The MUNI method: support through awareness",
+    subtitle: "Not asking you to change your life — just to listen to the body a little more",
+    description:
+      "MUNI cards, writing and small rituals joined into one loop: draw a card → see where you are → choose one or two forms of support → practise them daily. Not treatment — company.",
+    items: [
+      "Draw: see the state you're in",
+      "Notice: don't rush to change it; acknowledge the feeling first",
+      "Choose: find one small step you can take today",
+      "Practise: let the support become part of the ordinary day",
+    ],
+    ctaLabel: "How does this work with MUNI?",
+    ctaLink: "/draw",
+  },
+];
+
+export const STATE_SUGGESTIONS_EN: StateSuggestion[] = [
+  {
+    id: "tired",
+    stateLabel: "Tired easily, spent quickly",
+    description: "There's never quite enough energy, and nothing raises any drive",
+    recommendation: "Olive oil × ginseng",
+    link: "#diet",
+  },
+  {
+    id: "tense",
+    stateLabel: "Tense and sleeping badly",
+    description: "You lie down and the mind keeps running; the body won't release",
+    recommendation: "MUNI Scent + an evening ritual",
+    link: "#scent",
+  },
+  {
+    id: "unfocused",
+    stateLabel: "Scattered, hard to focus",
+    description: "Plenty of thoughts, no grip on the important one, easily distracted",
+    recommendation: "Green tea or matcha × breath practice",
+    link: "#rhythm",
+  },
+  {
+    id: "overwhelmed",
+    stateLabel: "The sense of constantly holding on",
+    description: "Not especially tired, and always close to not being able to hold it",
+    recommendation: "Plant support × daily ritual (olive oil + MUNI Scent)",
+    link: "#muni-method",
+  },
+];
+
+export const ENERGY_SUPPORT_CONTENT_EN: typeof ENERGY_SUPPORT_CONTENT = {
+  hero: {
+    title:
+      "Energy isn't mysticism.\nIt's whether the body can still carry your life.",
+    description: `What MUNI means by energy isn't stimulation, and isn't over-supplementing.
+
+It means this: the body can still regulate, the nervous system can settle,
+and feeling has room to be carried.
+
+We choose natural materials the body can read —
+not to replace you, but to support your return to your own rhythm.`,
+    cta: "See what supports my energy",
+  },
+  systemSection: {
+    title: "How is the energy system supported?",
+    subtitle: "Body, nerves, mind — support integrated across three layers",
+  },
+  modulesSection: {
+    title: "Four MUNI energy modules",
+    subtitle: "Find the kind of support that fits you",
+  },
+  statesSection: {
+    title: "Choose by how you are",
+    subtitle: "Not sure where to start? Let your state lead",
+    unknownCta: "I don't know how to choose",
+  },
+  footer: {
+    message:
+      "MUNI isn't after faster or stronger. What we care about is whether you can go a long way, steadily.",
+    cta1: "Explore the energy support range",
+    cta2: "Start from how I am",
+  },
+};
+
+/* ── 依語言取用 ── */
+
+import type { Locale } from "@/i18n/config";
+
+export function getEnergySupport(locale: Locale) {
+  return locale === "en"
+    ? {
+        layers: ENERGY_LAYERS_EN,
+        modules: ENERGY_MODULES_EN,
+        states: STATE_SUGGESTIONS_EN,
+        content: ENERGY_SUPPORT_CONTENT_EN,
+      }
+    : {
+        layers: ENERGY_LAYERS,
+        modules: ENERGY_MODULES,
+        states: STATE_SUGGESTIONS,
+        content: ENERGY_SUPPORT_CONTENT,
+      };
+}

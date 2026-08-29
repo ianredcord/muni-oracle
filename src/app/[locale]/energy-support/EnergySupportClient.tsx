@@ -4,16 +4,13 @@ import Image from "next/image";
 import Link from "next/link";
 import FrequencyBadge from "@/components/FrequencyBadge";
 import { Header } from "@/components/Header";
-import {
-  ENERGY_LAYERS,
-  ENERGY_MODULES,
-  STATE_SUGGESTIONS,
-  ENERGY_SUPPORT_CONTENT,
-} from "@/data/energySupport";
+import { getEnergySupport } from "@/data/energySupport";
+import { localeHref, type Locale } from "@/i18n/config";
+import { getDictionary } from "@/i18n/dictionaries";
 
 // 區塊 1：Hero
-function HeroSection() {
-  const { hero } = ENERGY_SUPPORT_CONTENT;
+function HeroSection({ locale }: { locale: Locale }) {
+  const { hero } = getEnergySupport(locale).content;
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
@@ -21,7 +18,7 @@ function HeroSection() {
       <div className="absolute inset-0 z-0">
         <Image
           src="/images/home-bg.jpg"
-          alt="MUNI Background"
+          alt=""
           fill
           className="object-cover"
           priority
@@ -67,8 +64,8 @@ function HeroSection() {
 }
 
 // 區塊 2：能量系統三層結構
-function SystemSection() {
-  const { systemSection } = ENERGY_SUPPORT_CONTENT;
+function SystemSection({ locale }: { locale: Locale }) {
+  const { content: { systemSection }, layers } = getEnergySupport(locale);
 
   return (
     <section id="system" className="py-20 bg-[#F9F7F2]">
@@ -81,7 +78,7 @@ function SystemSection() {
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
-          {ENERGY_LAYERS.map((layer) => (
+          {layers.map((layer) => (
             <div
               key={layer.id}
               className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow"
@@ -103,8 +100,8 @@ function SystemSection() {
 }
 
 // 區塊 3：四大能量支持模組
-function ModulesSection() {
-  const { modulesSection } = ENERGY_SUPPORT_CONTENT;
+function ModulesSection({ locale }: { locale: Locale }) {
+  const { content: { modulesSection }, modules } = getEnergySupport(locale);
 
   const moduleColors = [
     "bg-amber-50 border-amber-200",
@@ -124,7 +121,7 @@ function ModulesSection() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
-          {ENERGY_MODULES.map((module, index) => (
+          {modules.map((module, index) => (
             <div
               key={module.id}
               id={module.id}
@@ -141,7 +138,7 @@ function ModulesSection() {
               {/* 代表素材 */}
               <div className="mb-6">
                 <p className="text-sm font-medium text-stone-500 mb-3">
-                  代表素材：
+                  {getDictionary(locale).energySupport.representativeItems}
                 </p>
                 <ul className="space-y-2">
                   {module.items.map((item, i) => (
@@ -158,7 +155,7 @@ function ModulesSection() {
 
               {/* CTA 按鈕 */}
               <Link
-                href={module.ctaLink || "#"}
+                href={module.ctaLink?.startsWith("/") ? localeHref(locale, module.ctaLink) : (module.ctaLink || "#")}
                 className="inline-block bg-[#4a5548] hover:bg-[#3a4538] text-white rounded-full px-6 py-3 text-sm shadow-md hover:shadow-lg transition-all duration-300"
               >
                 {module.ctaLabel}
@@ -172,8 +169,8 @@ function ModulesSection() {
 }
 
 // 區塊 4：依狀態快速選擇
-function StatesSection() {
-  const { statesSection } = ENERGY_SUPPORT_CONTENT;
+function StatesSection({ locale }: { locale: Locale }) {
+  const { content: { statesSection }, states } = getEnergySupport(locale);
 
   const stateColors = [
     "bg-rose-50 border-rose-200 hover:border-rose-300",
@@ -193,10 +190,10 @@ function StatesSection() {
         </div>
 
         <div className="grid sm:grid-cols-2 gap-6 mb-12">
-          {STATE_SUGGESTIONS.map((state, index) => (
+          {states.map((state, index) => (
             <a
               key={state.id}
-              href={state.link || "#"}
+              href={state.link?.startsWith("/") ? localeHref(locale, state.link) : (state.link || "#")}
               className={`block rounded-2xl p-6 border-2 ${stateColors[index]} transition-all duration-300 hover:shadow-md`}
             >
               <h3 className="font-serif text-xl font-bold text-[#4a5548] mb-2">
@@ -204,7 +201,9 @@ function StatesSection() {
               </h3>
               <p className="text-stone-600 text-sm mb-4">{state.description}</p>
               <div className="flex items-center gap-2">
-                <span className="text-sm text-stone-500">建議支持：</span>
+                <span className="text-sm text-stone-500">
+                  {getDictionary(locale).energySupport.suggestedSupport}
+                </span>
                 <span className="font-medium text-[#6b7c5e]">
                   {state.recommendation}
                 </span>
@@ -215,7 +214,7 @@ function StatesSection() {
 
         <div className="text-center">
           <Link
-            href="/draw"
+            href={localeHref(locale, "/draw")}
             className="inline-block border-2 border-[#4a5548] text-[#4a5548] hover:bg-[#4a5548] hover:text-white rounded-full px-8 py-3 text-lg transition-all duration-300"
           >
             {statesSection.unknownCta}
@@ -227,8 +226,8 @@ function StatesSection() {
 }
 
 // 區塊 5：結尾 CTA
-function FooterCTA() {
-  const { footer } = ENERGY_SUPPORT_CONTENT;
+function FooterCTA({ locale }: { locale: Locale }) {
+  const { footer } = getEnergySupport(locale).content;
 
   return (
     <section className="py-20 bg-white">
@@ -256,23 +255,24 @@ function FooterCTA() {
 }
 
 // Footer
-function Footer() {
+function Footer({ locale }: { locale: Locale }) {
+  const dict = getDictionary(locale);
   return (
     <footer className="bg-[#F5F2EB] border-t border-stone-200 py-12">
       <div className="max-w-6xl mx-auto px-4 text-center">
         <p className="font-serif text-xl text-[#4a5548] mb-4">MUNI</p>
         <p className="text-stone-500 text-sm">
-          以自然素材，支持身心靈的能量穩定與修復
+          {dict.energySupport.footerTagline}
         </p>
         <div className="mt-6 flex justify-center gap-6">
-          <Link href="/" className="text-stone-500 hover:text-[#4a5548] transition-colors">
-            首頁
+          <Link href={localeHref(locale, "/")} className="text-stone-500 hover:text-[#4a5548] transition-colors">
+            {dict.energySupport.linkHome}
           </Link>
-          <Link href="/draw" className="text-stone-500 hover:text-[#4a5548] transition-colors">
-            抽牌
+          <Link href={localeHref(locale, "/draw")} className="text-stone-500 hover:text-[#4a5548] transition-colors">
+            {dict.energySupport.linkDraw}
           </Link>
-          <Link href="/flowers" className="text-stone-500 hover:text-[#4a5548] transition-colors">
-            牟尼花精百科
+          <Link href={localeHref(locale, "/flowers")} className="text-stone-500 hover:text-[#4a5548] transition-colors">
+            {dict.energySupport.linkFlowers}
           </Link>
         </div>
       </div>
@@ -281,17 +281,17 @@ function Footer() {
 }
 
 // 主頁面
-export default function EnergySupportClient() {
+export default function EnergySupportClient({ locale }: { locale: Locale }) {
   return (
     <main className="min-h-screen bg-[#F9F7F2]">
       <Header />
-      <HeroSection />
-      <SystemSection />
-      <ModulesSection />
-      <StatesSection />
-      <FooterCTA />
+      <HeroSection locale={locale} />
+      <SystemSection locale={locale} />
+      <ModulesSection locale={locale} />
+      <StatesSection locale={locale} />
+      <FooterCTA locale={locale} />
       <FrequencyBadge variant="light" full />
-      <Footer />
+      <Footer locale={locale} />
     </main>
   );
 }
