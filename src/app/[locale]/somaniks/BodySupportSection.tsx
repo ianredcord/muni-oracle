@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { useSearchParams } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
@@ -17,9 +17,9 @@ import { getDictionary } from "@/i18n/dictionaries";
 export default function BodySupportSection({ locale }: { locale: Locale }) {
   const searchParams = useSearchParams();
   const dict = getDictionary(locale);
-  const bodySupportPoints = getBodySupportPoints(locale);
-  const bodySupportPointMap = getBodySupportPointMap(locale);
-  const localeFlowers = getFlowers(locale);
+  const bodySupportPoints = useMemo(() => getBodySupportPoints(locale), [locale]);
+  const bodySupportPointMap = useMemo(() => getBodySupportPointMap(locale), [locale]);
+  const localeFlowers = useMemo(() => getFlowers(locale), [locale]);
 
   /* ── 快速選擇 ── */
   const quickOptions = [
@@ -47,7 +47,7 @@ export default function BodySupportSection({ locale }: { locale: Locale }) {
           ?.scrollIntoView({ behavior: "smooth", block: "start" });
       }, 100);
     }
-  }, [searchParams]);
+  }, [searchParams, bodySupportPointMap]);
 
   const pairedFlowersFor = (point: BodySupportPoint) =>
     (point.pairings || [])
