@@ -485,6 +485,15 @@ export const en: Dictionary = {
     detailBack: "Back to all flower essences",
   },
 
+  frequencyBadge: {
+    tagline: "Frequency × blessing",
+    poweredBy: "Powered by",
+    title: "MUNI Frequency Resonance™",
+    description:
+      "Every MUNI product is tuned with our own frequency resonance technology — the frequency carried into each molecule along with a single wish, that all things return to harmony. Frequency is the method, blessing is the intention; only together do they make MUNI whole.",
+    cta: "About the technology",
+  },
+
   common: {
     close: "Close",
     open: "Expand",

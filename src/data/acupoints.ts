@@ -63,12 +63,11 @@ const enSections: AcupointSection[] = zhSections.map((zh) => {
     title: en.title,
     badge: en.badge,
     bodyPart: en.bodyPart,
-    acupoints: zh.acupoints.map((point) => {
-      const match = en.acupoints.find((p) => p.code === point.code && p.imageUrls?.[0] === point.imageUrls?.[0]);
-      const byIndex = en.acupoints[zh.acupoints.indexOf(point)];
-      const translated = match ?? byIndex;
-      return translated ? { ...point, ...translated } : point;
-    }),
+    // 英文資料由中文逐筆產生，順序一一對應；長度不符時整區退回中文，避免錯位
+    acupoints:
+      en.acupoints.length === zh.acupoints.length
+        ? zh.acupoints.map((point, i) => ({ ...point, ...en.acupoints[i] }))
+        : zh.acupoints,
   };
 });
 

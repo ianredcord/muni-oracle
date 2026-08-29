@@ -1,6 +1,8 @@
 "use client";
 
 import Link from "next/link";
+import { localeHref } from "@/i18n/config";
+import { useLocalePath } from "@/i18n/useLocale";
 
 interface FrequencyBadgeProps {
   /** 使用深色版本（適用於深色背景頁面） */
@@ -17,13 +19,16 @@ export default function FrequencyBadge({
   variant = "light",
   full = false,
 }: FrequencyBadgeProps) {
+  const { locale, dict } = useLocalePath();
+  const t = dict.frequencyBadge;
+  const frequencyHref = localeHref(locale, "/frequency");
   const isDark = variant === "dark";
 
   if (!full) {
     // ─── 小型標章：一行式，適合放在頁面頂部或產品卡片中 ───
     return (
       <Link
-        href="/frequency"
+        href={frequencyHref}
         className={`
           group inline-flex items-center gap-2.5 px-4 py-2 rounded-full
           border transition-all duration-300 hover:scale-[1.02]
@@ -52,14 +57,14 @@ export default function FrequencyBadge({
             isDark ? "text-amber-300/80" : "text-amber-700/80"
           }`}
         >
-          MUNI Frequency Resonance™
+          {t.title}
         </span>
         <span
           className={`text-xs ${
             isDark ? "text-stone-500" : "text-stone-400"
           }`}
         >
-          頻率 × 祝福
+          {t.tagline}
         </span>
         <svg
           className={`w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5 ${
@@ -113,27 +118,26 @@ export default function FrequencyBadge({
             isDark ? "text-amber-400/60" : "text-amber-600/60"
           }`}
         >
-          Powered by
+          {t.poweredBy}
         </p>
         <h3
           className={`font-serif text-2xl md:text-3xl mb-4 ${
             isDark ? "text-white" : "text-stone-800"
           }`}
         >
-          MUNI Frequency Resonance™
+          {t.title}
         </h3>
         <p
           className={`text-sm md:text-base leading-relaxed max-w-2xl mx-auto mb-8 ${
             isDark ? "text-stone-400" : "text-stone-500"
           }`}
         >
-          所有 MUNI 產品皆透過獨家頻率共振技術進行調頻——帶著「讓萬物回到和諧」的祝福意願，
-          將頻率注入每一個分子。頻率是方法，祝福是心意，兩者合一，才是 MUNI 的完整表達。
+          {t.description}
         </p>
 
         {/* CTA 按鈕 */}
         <Link
-          href="/frequency"
+          href={frequencyHref}
           className={`
             group inline-flex items-center gap-3 px-8 py-3.5 rounded-full
             font-medium text-sm tracking-wide transition-all duration-300
@@ -145,7 +149,7 @@ export default function FrequencyBadge({
             }
           `}
         >
-          了解獨家技術
+          {t.cta}
           <svg
             className="w-4 h-4 transition-transform group-hover:translate-x-1"
             fill="none"
