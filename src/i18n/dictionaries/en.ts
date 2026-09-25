@@ -56,6 +56,7 @@ export const en: Dictionary = {
     muniScent: "MUNI Scent",
     somaniks: "Somaniks",
     meridianObservatory: "Meridian Observatory",
+    meridianObservatoryPro: "Meridian Observatory PRO",
   },
 
   home: {

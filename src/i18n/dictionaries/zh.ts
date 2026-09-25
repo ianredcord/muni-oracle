@@ -45,6 +45,7 @@ export const zh = {
     muniScent: "牟尼香",
     somaniks: "牟尼微針",
     meridianObservatory: "經絡觀察室",
+    meridianObservatoryPro: "經絡觀察室PRO",
   },
 
   home: {
