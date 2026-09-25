@@ -72,6 +72,16 @@ export function Footer() {
           </Link>
         </div>
 
+        <div className="flex justify-center -mt-4 mb-6">
+          <Link
+            href={href("/meridian-observatory")}
+            prefetch={false}
+            className="text-stone-400 hover:text-[#9A7B4F] text-xs font-medium tracking-wide transition-colors"
+          >
+            {dict.footer.meridianObservatory}
+          </Link>
+        </div>
+
         <p className="text-stone-400 text-xs">{dict.footer.note}</p>
       </div>
     </footer>

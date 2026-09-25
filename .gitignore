@@ -42,3 +42,6 @@ next-env.d.ts
 
 # Claude Code worktrees
 /.claude/worktrees/
+
+# 經絡觀察室靜態 viewer（由 scripts/sync-meridian-viewer.sh 產生，素材過大不入庫）
+/public/meridian-viewer/
