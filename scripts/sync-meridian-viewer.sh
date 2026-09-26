@@ -1,7 +1,7 @@
 #!/bin/sh
-# 將已完成的「經絡觀察室」靜態 viewer（PRO 完整版 + 簡易版）複製到 public/meridian-viewer/。
-# 只複製可運行網頁與必要授權；排除 source/、開發說明、啟動腳本與系統檔。
-# 素材約 285 MB，不納入 git（見 .gitignore），部署前執行本腳本即可。
+# 將已完成的「經絡觀察室」靜態 viewer（PRO 完整版、核對頁 + 簡易版）複製到 public/meridian-viewer/。
+# 只複製可運行網頁與必要授權；排除 source/、開發說明與工作紀錄（*.md、*.py）、啟動腳本與系統檔。
+# 素材約 340 MB，不納入 git（見 .gitignore），部署前執行本腳本即可。
 # 來源資料夾不會被修改；簡易版的站內連結只在部署副本中改寫。
 #
 # 用法：sh scripts/sync-meridian-viewer.sh [來源資料夾]
@@ -10,7 +10,10 @@ set -eu
 SRC="${1:-/Users/apple/Documents/Codex/2026-09-25/new-chat/outputs/meridian-preview}"
 DEST="$(cd "$(dirname "$0")/.." && pwd)/public/meridian-viewer"
 
-for f in index.html pro.html app.js style.css extended.css lite.html lite.js lite.css assets licenses; do
+# PRO 引用的筋膜核對頁
+REVIEW_PAGES="fascia-reference-review.html fascia-review.html fascia-review.js arm-fascia-review.html arm-fascia-review.js trunk-fascia-review.html trunk-fascia-review.js sbl-layer-review.html sbl-layer-review.js"
+
+for f in index.html pro.html app.js style.css extended.css lite.html lite.js lite.css $REVIEW_PAGES assets licenses; do
   [ -e "$SRC/$f" ] || { echo "找不到 $SRC/$f" >&2; exit 1; }
 done
 
@@ -19,8 +22,11 @@ rsync -a --delete \
   --exclude ".DS_Store" \
   --exclude "*.apk" \
   --exclude "node_modules" \
+  --exclude "*.py" \
+  --exclude "/assets/fascia/**.md" \
   "$SRC/index.html" "$SRC/pro.html" "$SRC/app.js" "$SRC/style.css" "$SRC/extended.css" \
   "$SRC/lite.html" "$SRC/lite.js" "$SRC/lite.css" \
+  $(for f in $REVIEW_PAGES; do printf '%s/%s ' "$SRC" "$f"; done) \
   "$SRC/assets" "$SRC/licenses" \
   "$DEST/"
 
@@ -50,6 +56,19 @@ if anchor not in s:
     sys.exit("lite.html 找不到 lite.js 載入點")
 s = s.replace(anchor, script + anchor, 1)
 open(path, "w", encoding="utf-8").write(s)
+PY
+
+# 核對頁連到的 *.md 是本機工作紀錄，不公開；部署副本中改為純文字，避免失效連結。
+python3 - "$DEST" $REVIEW_PAGES <<'PY'
+import re, sys, os
+dest = sys.argv[1]
+for name in sys.argv[2:]:
+    if not name.endswith(".html"):
+        continue
+    path = os.path.join(dest, name)
+    s = open(path, encoding="utf-8").read()
+    s = re.sub(r'<a\s+href="(?!https?:)[^"]*\.md(?:#[^"]*)?"[^>]*>(.*?)</a>', r"<span>\1</span>", s, flags=re.S)
+    open(path, "w", encoding="utf-8").write(s)
 PY
 
 echo "已同步至 $DEST"
