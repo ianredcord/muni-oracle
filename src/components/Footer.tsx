@@ -18,7 +18,7 @@ export function Footer() {
 
   const secondaryLinks = [
     { href: "/muni-scent", label: dict.footer.muniScent },
-    { href: "/somaniks", label: dict.footer.somaniks },
+    { href: "/fascia-point", label: "Fascia Point" },
     { href: "/energy-support", label: dict.nav.energySupport },
     { href: "/frequency", label: dict.nav.frequency },
     { href: "/systems", label: dict.nav.systems },
@@ -38,7 +38,7 @@ export function Footer() {
           {mainLinks.map((link) => (
             <Link
               key={link.href}
-              href={href(link.href)}
+              href={link.href === "/fascia-point" ? link.href : href(link.href)}
               className="text-stone-500 hover:text-[#4a5548] text-sm transition-colors"
             >
               {link.label}
@@ -58,7 +58,7 @@ export function Footer() {
           {secondaryLinks.map((link) => (
             <Link
               key={link.href}
-              href={href(link.href)}
+              href={link.href === "/fascia-point" ? link.href : href(link.href)}
               className="text-stone-400 hover:text-[#4a5548] text-xs transition-colors"
             >
               {link.label}

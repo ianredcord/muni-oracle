@@ -56,6 +56,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     ...staticPages.flatMap((p) => entry(p.path, p.freq, p.priority, now)),
+    // Fascia Point 目前只有繁中版（/en/fascia-point 會導回繁中），只列無前綴網址
+    { url: `${SITE_URL}/fascia-point`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     // 情境指引文章
     ...GUIDES.flatMap((g) => entry(`/guide/${g.slug}`, "monthly", 0.8, now)),
     // 花精動態頁面 (40 張)

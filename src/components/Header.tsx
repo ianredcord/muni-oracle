@@ -58,7 +58,8 @@ export function Header() {
               </span>
             </Link>
 
-            <nav className="hidden items-center gap-1 lg:flex">
+            <Link href="/fascia-point" className="hidden sm:inline-flex min-h-11 items-center whitespace-nowrap text-sm text-[#4a5548] hover:text-[#9b295a]">Fascia Point</Link>
+            <nav className="hidden items-center gap-1 xl:flex">
               {primaryNavItems.map((item) => {
                 const isActive = isActivePath(path, item.href);
 
@@ -79,7 +80,7 @@ export function Header() {
             </nav>
           </div>
 
-          <div className="hidden items-center gap-2 lg:flex">
+          <div className="hidden items-center gap-2 xl:flex">
             {secondaryNavItems.map((item) => {
               const isActive = isActivePath(path, item.href);
 
@@ -123,7 +124,7 @@ export function Header() {
             </a>
           </div>
 
-          <div className="flex items-center gap-2 lg:hidden">
+          <div className="flex items-center gap-2 xl:hidden">
             <LocaleSwitcher />
             <a
               href="https://ai.munione.co"
@@ -168,14 +169,14 @@ export function Header() {
       </header>
 
       <div
-        className={`fixed inset-0 z-40 bg-black/28 transition-opacity duration-300 lg:hidden ${
+        className={`fixed inset-0 z-40 bg-black/28 transition-opacity duration-300 xl:hidden ${
           isMenuOpen ? "pointer-events-auto opacity-100" : "pointer-events-none opacity-0"
         }`}
         onClick={() => setIsMenuOpen(false)}
       />
 
       <aside
-        className={`fixed inset-y-0 right-0 z-50 w-[min(88vw,24rem)] overflow-y-auto border-l border-stone-200 bg-[#f9f7f2] px-5 pb-6 pt-20 shadow-2xl transition-transform duration-300 lg:hidden ${
+        className={`fixed inset-y-0 right-0 z-50 w-[min(88vw,24rem)] overflow-y-auto border-l border-stone-200 bg-[#f9f7f2] px-5 pb-6 pt-20 shadow-2xl transition-transform duration-300 xl:hidden ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -194,7 +195,7 @@ export function Header() {
               {dict.nav.explore}
             </p>
             <nav className="space-y-2">
-              {[...primaryNavItems, ...secondaryNavItems].map((item) => {
+              {[...primaryNavItems, ...secondaryNavItems.filter(item => item.href !== "/frequency")].map((item) => {
                 const isActive = isActivePath(path, item.href);
 
                 return (
@@ -215,6 +216,15 @@ export function Header() {
               })}
             </nav>
           </div>
+
+          <nav aria-label={locale === "zh" ? "身體覺察" : "Body awareness"}>
+            <p className="mb-3 text-xs tracking-[0.18em] text-stone-400">{locale === "zh" ? "身體覺察" : "BODY AWARENESS"}</p>
+            {[
+              { href: "/fascia-point", label: "Fascia Point" },
+              { href: localeHref(locale, "/meridian-observatory-lite"), label: locale === "zh" ? "經絡觀察室" : "Meridian Observatory" },
+              { href: localeHref(locale, "/frequency"), label: locale === "zh" ? "牟尼共振技術" : "MUNI Resonance Technology" },
+            ].map(item => <Link key={item.href} href={item.href} onClick={() => setIsMenuOpen(false)} className="flex items-center justify-between border-b border-stone-200 px-4 py-4 text-stone-700 hover:text-[#9b295a]"><span>{item.label}</span><span aria-hidden="true">↗</span></Link>)}
+          </nav>
 
           <div className="rounded-3xl border border-[#9A7B4F]/20 bg-gradient-to-br from-[#f3ecdf] to-[#ece4d3] p-5">
             <p className="mb-2 text-xs uppercase tracking-[0.28em] text-[#9A7B4F]">
