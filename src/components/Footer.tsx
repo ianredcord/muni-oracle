@@ -81,7 +81,7 @@ export function Footer() {
             {dict.footer.meridianObservatory}
           </Link>
           <Link
-            href={href("/meridian-observatory")}
+            href={href("/meridian-observatory/pro")}
             prefetch={false}
             className="text-stone-400 hover:text-[#9A7B4F] text-xs font-medium tracking-wide transition-colors"
           >

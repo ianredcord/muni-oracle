@@ -245,7 +245,7 @@ export default async function MuniScentPage({
             <Link href="/fascia-point" className="inline-flex min-h-11 items-center border-b border-[#9b295a] text-[#9b295a] hover:text-[#4a5548] transition-colors">
               {copy.togetherFascia} →
             </Link>
-            <Link href={localeHref(locale, "/meridian-observatory-lite")} className="inline-flex min-h-11 items-center border-b border-[#9A7B4F] text-[#9A7B4F] hover:text-[#4a5548] transition-colors">
+            <Link href={localeHref(locale, "/meridian-observatory")} className="inline-flex min-h-11 items-center border-b border-[#9A7B4F] text-[#9A7B4F] hover:text-[#4a5548] transition-colors">
               {copy.togetherObservatory} →
             </Link>
           </div>

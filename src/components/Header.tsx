@@ -222,7 +222,7 @@ export function Header() {
             {[
               { href: localeHref(locale, "/muni-scent"), label: locale === "zh" ? "牟尼香" : "MUNI Scent" },
               { href: "/fascia-point", label: locale === "zh" ? "Fascia Point 筋膜貼" : "Fascia Point" },
-              { href: localeHref(locale, "/meridian-observatory-lite"), label: locale === "zh" ? "經絡觀察室" : "Meridian Observatory" },
+              { href: localeHref(locale, "/meridian-observatory"), label: locale === "zh" ? "經絡觀察室" : "Meridian Observatory" },
               { href: localeHref(locale, "/frequency"), label: locale === "zh" ? "牟尼共振技術" : "MUNI Resonance Technology" },
             ].map(item => <Link key={item.href} href={item.href} onClick={() => setIsMenuOpen(false)} className="flex items-center justify-between border-b border-stone-200 px-4 py-4 text-stone-700 hover:text-[#9b295a]"><span>{item.label}</span><span aria-hidden="true">↗</span></Link>)}
           </nav>

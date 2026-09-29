@@ -18,12 +18,13 @@ for f in index.html pro.html app.js style.css extended.css lite.html lite.js lit
 done
 
 mkdir -p "$DEST"
-rsync -a --delete \
+# --delete-excluded：已存在於公開副本中、但屬於排除規則的檔案（例如工作紀錄 .md）也一併移除。
+rsync -a --delete --delete-excluded \
   --exclude ".DS_Store" \
   --exclude "*.apk" \
   --exclude "node_modules" \
   --exclude "*.py" \
-  --exclude "/assets/fascia/**.md" \
+  --exclude "/assets/**.md" \
   "$SRC/index.html" "$SRC/pro.html" "$SRC/app.js" "$SRC/style.css" "$SRC/extended.css" \
   "$SRC/lite.html" "$SRC/lite.js" "$SRC/lite.css" \
   $(for f in $REVIEW_PAGES; do printf '%s/%s ' "$SRC" "$f"; done) \
@@ -38,7 +39,7 @@ path = sys.argv[1]
 s = open(path, encoding="utf-8").read()
 subs = [
     ('<a href="https://www.munione.co/" target="_top">', '<a href="/" target="_top" data-muni-home>'),
-    ('<a href="pro.html" id="pro-link">', '<a href="/meridian-observatory" id="pro-link" target="_top">'),
+    ('<a href="pro.html" id="pro-link">', '<a href="/meridian-observatory/pro" id="pro-link" target="_top">'),
 ]
 for old, new in subs:
     if old not in s:
@@ -46,7 +47,7 @@ for old, new in subs:
     s = s.replace(old, new, 1)
 script = """<script>(function(){
 function prefix(){try{if(new URLSearchParams(location.search).get("lang")==="en")return"/en";if(window.top!==window&&/^\\/en(\\/|$)/.test(window.top.location.pathname))return"/en"}catch(e){}return""}
-var p=prefix(),home=p||"/",pro=p+"/meridian-observatory";
+var p=prefix(),home=p||"/",pro=p+"/meridian-observatory/pro";
 function fix(){document.querySelectorAll("a[data-muni-home]").forEach(function(a){a.href=home});document.querySelectorAll('a[href="pro.html"],#pro-link').forEach(function(a){a.href=pro;a.target="_top"})}
 document.addEventListener("click",function(ev){var a=ev.target.closest&&ev.target.closest("a");if(!a)return;var h=a.getAttribute("href");if(h==="pro.html"||a.id==="pro-link"){ev.preventDefault();window.top.location.href=pro}else if(a.hasAttribute("data-muni-home")){ev.preventDefault();window.top.location.href=home}},true);
 document.addEventListener("DOMContentLoaded",fix);window.addEventListener("load",fix);

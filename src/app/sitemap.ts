@@ -50,6 +50,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/acupuncture", freq: "monthly", priority: 0.7 },
     { path: "/frequency", freq: "monthly", priority: 0.6 },
     { path: "/systems", freq: "monthly", priority: 0.6 },
+    { path: "/meridian-observatory", freq: "monthly", priority: 0.8 },
+    { path: "/meridian-observatory/pro", freq: "monthly", priority: 0.6 },
+    { path: "/meridian-observatory-lite", freq: "monthly", priority: 0.6 },
   ];
 
   return [

@@ -74,7 +74,7 @@ export default async function MeridianObservatoryLitePage({
       locale={locale}
       copy={PAGE_COPY[locale]}
       viewerSrc={VIEWER_SRC[locale]}
-      switchPath="/meridian-observatory"
+      switchPath="/meridian-observatory/pro"
     />
   );
 }
