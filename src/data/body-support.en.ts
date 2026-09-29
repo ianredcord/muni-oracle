@@ -15,7 +15,7 @@ export type BodySupportPointText = Pick<
 >;
 
 const PAIRING_TEXT =
-  "Draw a flower essence card first, take in the MUNI Scent, then place the Somaniks.";
+  "Draw a flower essence card first, take in the MUNI Scent, then put on the Fascia Point patch.";
 
 export const BODY_SUPPORT_TEXT_EN: Record<string, BodySupportPointText> = {
   ki6: {

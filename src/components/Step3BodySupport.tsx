@@ -8,7 +8,7 @@ import {
   flowerToPointsMap,
 } from "@/data/body-support";
 import { getBodySupportContext } from "@/data/body-support-context";
-import { localeHref, type Locale } from "@/i18n/config";
+import { type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 
 interface Props {
@@ -92,7 +92,7 @@ export default function Step3BodySupport({
           {/* 按鈕：看貼法 + 深度解說 */}
           <div className="flex gap-3">
             <Link
-              href={localeHref(locale, `/somaniks?point=${point.slug}`)}
+              href="/fascia-point"
               className="px-4 py-2.5 rounded-xl bg-[#4a5548] text-white text-xs font-medium hover:bg-[#3a4538] transition-colors shadow-sm"
             >
               {dict.step3.seeHowTo}
@@ -177,7 +177,7 @@ export default function Step3BodySupport({
                   <p className="text-stone-500 text-xs leading-relaxed">
                     {dict.step3.secondaryIntro}{" "}
                     <Link
-                      href={localeHref(locale, `/somaniks?point=${secondaryPoint.slug}`)}
+                      href="/fascia-point"
                       className="text-[#4a5548] font-medium underline underline-offset-2 hover:text-[#3a4538]"
                     >
                       {secondaryPoint.acupointName} ({secondaryPoint.locationText})

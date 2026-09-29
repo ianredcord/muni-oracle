@@ -302,7 +302,7 @@ export const zh = {
   step3: {
     heading: "Step 3｜回到身體",
     intro: "如果你想讓這個狀態更容易被身體承接，可以先從這個位置開始。",
-    seeHowTo: "看貼法",
+    seeHowTo: "認識筋膜貼",
     deepExplain: "深度解說",
     whyThisPoint: "為什麼是這個位置",
     whatItHelps: "這個位置幫助什麼",
@@ -327,7 +327,7 @@ export const zh = {
     pairedFlowers: "搭配花精",
     nextStep: "下一步",
     nextStepBody:
-      "你可以先聞一下牟尼香，再貼上 Somaniks，讓身體慢慢回到比較能被承接的狀態。",
+      "你可以先聞一下牟尼香，再貼上筋膜貼，讓身體慢慢回到比較能被承接的狀態。",
     tryThis: "我現在試試看這個位置",
     withScent: "搭配牟尼香使用",
   },
@@ -350,7 +350,7 @@ export const zh = {
     labelConfigNotes: "配穴",
     muniTitle: "MUNI 搭配建議",
     muniBody:
-      "在{name}貼上 Somaniks 日本針灸貼，搭配 MUNI 牟尼香在穴位周圍輕柔按摩，可增強穴位刺激效果，促進氣血循環。",
+      "在{name}附近貼上 Fascia Point 筋膜貼，搭配牟尼香在穴位周圍輕柔按摩，一邊留意身體的感覺。",
     muniCta: "詢問療癒顧問最適合的搭配方案",
   },
 

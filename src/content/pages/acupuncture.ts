@@ -90,7 +90,7 @@ const zh: AcupunctureCopy = {
   heroLead:
     "傳承自董景昌先生的董氏奇穴針法，歷經三代真傳，\n以全息心法為核心，開創跨次元的療癒體系。",
   heroSub:
-    "搭配 MUNI 牟尼香塗抹穴位，再貼上 Somaniks 日本針灸貼，讓穴位保健融入你的日常生活。",
+    "搭配 MUNI 牟尼香與 Fascia Point 筋膜貼，讓穴位保健融入你的日常生活。",
   navAbout: "關於董氏奇穴",
   navLineage: "傳承脈絡",
   navHolographic: "全息心法",
@@ -234,7 +234,7 @@ const en: AcupunctureCopy = {
   heroLead:
     "Master Tung's extraordinary points, handed down from Tung Ching-chang through three generations of direct transmission,\nwith the holographic principle at its centre — a system of healing that works across dimensions.",
   heroSub:
-    "Apply MUNI Scent to the point, place a Somaniks Japanese acupuncture patch over it, and point care becomes part of your ordinary day.",
+    "Pair it with MUNI Scent and the Fascia Point patch, and point care becomes part of your ordinary day.",
   navAbout: "About Tung's points",
   navLineage: "The lineage",
   navHolographic: "The holographic principle",

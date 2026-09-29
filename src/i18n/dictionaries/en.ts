@@ -331,7 +331,7 @@ export const en: Dictionary = {
     heading: "Step 3 · Back to the body",
     intro:
       "If you'd like the body to hold this state more easily, this is a good place to start.",
-    seeHowTo: "How to place it",
+    seeHowTo: "About the Fascia Point patch",
     deepExplain: "In depth",
     whyThisPoint: "Why this point",
     whatItHelps: "What this point helps with",
@@ -357,7 +357,7 @@ export const en: Dictionary = {
     pairedFlowers: "Essences that pair with it",
     nextStep: "Next",
     nextStepBody:
-      "Breathe in MUNI Scent first, then place the Somaniks, and let the body come slowly back to a state it can be held in.",
+      "Breathe in MUNI Scent first, then put on the Fascia Point patch, and let the body come slowly back to a state it can be held in.",
     tryThis: "I'll try this point now",
     withScent: "Use it with MUNI Scent",
   },
@@ -380,7 +380,7 @@ export const en: Dictionary = {
     labelConfigNotes: "Point combinations",
     muniTitle: "Using it with MUNI",
     muniBody:
-      "Place a Somaniks Japanese acupuncture patch on {name}, and massage gently around the point with MUNI Scent. This strengthens the stimulation at the point and supports the circulation of qi and blood.",
+      "Put a Fascia Point patch near {name}, massage gently around the point with MUNI Scent, and notice how the body feels.",
     muniCta: "Ask the consultant which combination suits you",
   },
 

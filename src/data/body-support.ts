@@ -34,7 +34,7 @@ export const bodySupportPoints: BodySupportPoint[] = [
       "幫助你比較不需要一直撐著",
     ],
     usageText: "貼上後，讓呼吸慢一點就好，不需要特別做什麼，讓身體自己慢慢調整。",
-    pairingText: "可以先抽花精牌卡，聞一下牟尼香，再貼上 Somaniks。",
+    pairingText: "可以先抽花精牌卡，聞一下牟尼香，再貼上筋膜貼。",
     pairings: ["mimulus", "aspen", "cherry-plum", "red-chestnut"],
   },
   {
@@ -52,7 +52,7 @@ export const bodySupportPoints: BodySupportPoint[] = [
       "幫助你比較容易找回方向感",
     ],
     usageText: "貼上後，先感覺腳底與地面的接觸，讓注意力慢慢回到自己。",
-    pairingText: "可以先抽花精牌卡，聞一下牟尼香，再貼上 Somaniks。",
+    pairingText: "可以先抽花精牌卡，聞一下牟尼香，再貼上筋膜貼。",
     pairings: ["scleranthus", "cerato", "gentian", "hornbeam", "wild-oat"],
   },
   {
@@ -70,7 +70,7 @@ export const bodySupportPoints: BodySupportPoint[] = [
       "幫助你比較有『在這裡』的感覺",
     ],
     usageText: "貼上後，可以把注意力放在手的接觸感，停留幾次自然呼吸就好。",
-    pairingText: "可以先抽花精牌卡，聞一下牟尼香，再貼上 Somaniks。",
+    pairingText: "可以先抽花精牌卡，聞一下牟尼香，再貼上筋膜貼。",
     pairings: ["clematis", "wild-rose", "olive", "sweet-chestnut"],
   },
   {
@@ -88,7 +88,7 @@ export const bodySupportPoints: BodySupportPoint[] = [
       "幫助身體找回一點底氣與安定",
     ],
     usageText: "貼上後，先把注意力放到腳底，感覺自己被地面承接。",
-    pairingText: "可以先抽花精牌卡，聞一下牟尼香，再貼上 Somaniks。",
+    pairingText: "可以先抽花精牌卡，聞一下牟尼香，再貼上筋膜貼。",
     pairings: ["aspen", "rock-rose", "mimulus", "honeysuckle"],
   },
   {
@@ -106,7 +106,7 @@ export const bodySupportPoints: BodySupportPoint[] = [
       "幫助思緒和呼吸慢慢放鬆下來",
     ],
     usageText: "貼上後，不需要用力調整自己，只要讓呼吸慢一點，讓身體自己往下走。",
-    pairingText: "可以先抽花精牌卡，聞一下牟尼香，再貼上 Somaniks。",
+    pairingText: "可以先抽花精牌卡，聞一下牟尼香，再貼上筋膜貼。",
     pairings: ["white-chestnut", "impatiens", "water-violet", "heather", "agrimony"],
   },
   {
@@ -124,7 +124,7 @@ export const bodySupportPoints: BodySupportPoint[] = [
       "幫助你回到比較自然的節奏",
     ],
     usageText: "貼上後，讓肩膀和手臂自然放鬆，不需要刻意做什麼。",
-    pairingText: "可以先抽花精牌卡，聞一下牟尼香，再貼上 Somaniks。",
+    pairingText: "可以先抽花精牌卡，聞一下牟尼香，再貼上筋膜貼。",
     pairings: ["vervain", "vine", "beech", "impatiens"],
   },
   {
@@ -142,7 +142,7 @@ export const bodySupportPoints: BodySupportPoint[] = [
       "幫助那些說不出來的東西慢慢鬆開",
     ],
     usageText: "貼上後，可以先站穩或坐好，感覺腳與地面的接觸，讓卡住的感覺有地方可以流動。",
-    pairingText: "可以先抽花精牌卡，聞一下牟尼香，再貼上 Somaniks。",
+    pairingText: "可以先抽花精牌卡，聞一下牟尼香，再貼上筋膜貼。",
     pairings: ["star-of-bethlehem", "pine", "willow", "crab-apple", "mustard", "larch"],
   },
   {
@@ -160,7 +160,7 @@ export const bodySupportPoints: BodySupportPoint[] = [
       "幫助身體比較容易放下過度敏感",
     ],
     usageText: "貼上後，先不要急著回應外界，讓自己有一小段安靜的時間。",
-    pairingText: "可以先抽花精牌卡，聞一下牟尼香，再貼上 Somaniks。",
+    pairingText: "可以先抽花精牌卡，聞一下牟尼香，再貼上筋膜貼。",
     pairings: ["walnut", "centaury", "holly", "agrimony", "rock-water"],
   },
 ];

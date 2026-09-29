@@ -77,10 +77,10 @@ export default function FlowerBodySupport({ flowerSlug }: Props) {
                   {point.supportText[0]}
                 </p>
                 <Link
-                  href={`/somaniks?point=${point.slug}`}
+                  href="/fascia-point"
                   className={`inline-flex items-center gap-1 text-xs font-medium transition-colors ${btnColor(point.type)}`}
                 >
-                  看貼法
+                  認識筋膜貼
                   <svg
                     className="w-3.5 h-3.5"
                     fill="none"
