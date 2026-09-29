@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound, redirect } from "next/navigation";
 import { isLocale } from "@/i18n/config";
 import FasciaPointClient from "./FasciaPointClient";
+import { Footer } from "@/components/Footer";
 import "./fascia-point.css";
 
 export const metadata: Metadata = {
@@ -23,5 +24,11 @@ export default async function FasciaPointPage({ params }: { params: Promise<{ lo
   if (!isLocale(locale)) notFound();
   // The first reviewed edition is Traditional Chinese.
   if (locale !== "zh") redirect("/fascia-point");
-  return <FasciaPointClient />;
+  // 產品頁保留自己的頁首；頁尾接回全站 Footer，讓訪客能回到其他 MUNI 入口與語言切換
+  return (
+    <>
+      <FasciaPointClient />
+      <Footer />
+    </>
+  );
 }

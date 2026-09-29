@@ -188,7 +188,7 @@ export default async function Home({
         <div className="mx-auto grid max-w-6xl items-center gap-10 md:grid-cols-2 md:gap-16">
           <figure className="relative aspect-[3/2] overflow-hidden">
             <Image src="/images/fascia-point/packaging-mockup.webp" alt={locale === "zh" ? "Fascia Point MUNI Edition 包裝與貼片合成示意" : "Fascia Point MUNI Edition packaging and patch mockup"} fill sizes="(max-width: 768px) 100vw, 50vw" className="object-contain" />
-            <figcaption className="absolute bottom-2 left-3 text-[10px] text-stone-500">{locale === "zh" ? "產品與包裝合成示意" : "Product and packaging illustration"}</figcaption>
+            <figcaption className="absolute bottom-2 left-3 text-xs text-stone-500">{locale === "zh" ? "產品與包裝合成示意" : "Product and packaging illustration"}</figcaption>
           </figure>
           <div>
             <p className="mb-5 text-xs tracking-[0.2em] text-[#9b295a]">FASCIA POINT · MUNI EDITION</p>

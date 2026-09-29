@@ -7,6 +7,14 @@ const nextConfig: NextConfig = {
   },
   // 確保 URL 參數在 SSR 時正確傳遞
   trailingSlash: false,
+  // 舊「牟尼微針 / Somaniks」品牌頁已由 Fascia Point 取代，永久轉址並保留舊網址
+  async redirects() {
+    return ["/somaniks", "/somaniks/products", "/en/somaniks", "/en/somaniks/products"].map((source) => ({
+      source,
+      destination: "/fascia-point",
+      permanent: true,
+    }));
+  },
   // 環境變數
   env: {
     NEXT_PUBLIC_BASE_URL: "https://www.munione.co",

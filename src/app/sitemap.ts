@@ -46,8 +46,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/green-tea", freq: "monthly", priority: 0.7 },
     { path: "/ginseng", freq: "monthly", priority: 0.7 },
     { path: "/olive-oil", freq: "monthly", priority: 0.7 },
-    { path: "/somaniks", freq: "monthly", priority: 0.7 },
-    { path: "/somaniks/products", freq: "monthly", priority: 0.6 },
     { path: "/muni-scent", freq: "monthly", priority: 0.7 },
     { path: "/acupuncture", freq: "monthly", priority: 0.7 },
     { path: "/frequency", freq: "monthly", priority: 0.6 },
