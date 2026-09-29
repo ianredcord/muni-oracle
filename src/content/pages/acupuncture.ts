@@ -83,7 +83,7 @@ export type AcupunctureCopy = {
 const zh: AcupunctureCopy = {
   metaTitle: "董氏心氣神針 | MUNI 療癒生態系統",
   metaDescription:
-    "董氏奇穴心氣神針法完整介紹，涵蓋董景昌先生簡介、傳承脈絡、全息心法原理，以及一一到十十部位共 176 個穴位圖解。搭配 MUNI 牟尼香與日本針灸貼，在家即可進行穴位保健。",
+    "董氏奇穴心氣神針法完整介紹，涵蓋董景昌先生簡介、傳承脈絡、全息心法原理，以及一一到十十部位共 176 個穴位圖解。搭配 MUNI 牟尼香與 Fascia Point 筋膜貼，在家即可進行穴位保健。",
   backToSystems: "返回療癒系統總覽",
   eyebrow: "TUNG'S ACUPUNCTURE · 心氣神針",
   title: "董氏心氣神針",
@@ -102,7 +102,7 @@ const zh: AcupunctureCopy = {
   atlasLoading: "載入穴位資料中...",
   ctaTitle: "想知道哪個穴位適合你？",
   ctaBody:
-    "告訴 MUNI 療癒顧問你的身體狀況，\nAI 會為你推薦最適合的穴位搭配精油與針灸貼方案。",
+    "告訴 MUNI 療癒顧問你的身體狀況，\nAI 會為你推薦最適合的穴位搭配精油與筋膜貼方案。",
   ctaButton: "問問 MUNI 療癒顧問",
 
   aboutEyebrow: "ABOUT TUNG'S ACUPUNCTURE",
@@ -227,7 +227,7 @@ const zh: AcupunctureCopy = {
 const en: AcupunctureCopy = {
   metaTitle: "Tung's heart-qi-spirit needling | The MUNI healing ecosystem",
   metaDescription:
-    "A complete introduction to Master Tung's heart-qi-spirit needling: the life of Tung Ching-chang, the lineage that carried it forward, the holographic principle behind it, and illustrated notes on all 176 points across the ten regions. With MUNI Scent and Japanese acupuncture patches, point care becomes something you can do at home.",
+    "A complete introduction to Master Tung's heart-qi-spirit needling: the life of Tung Ching-chang, the lineage that carried it forward, the holographic principle behind it, and illustrated notes on all 176 points across the ten regions. With MUNI Scent and the Fascia Point patch, point care becomes something you can do at home.",
   backToSystems: "Back to the healing systems",
   eyebrow: "TUNG'S ACUPUNCTURE · HEART, QI AND SPIRIT",
   title: "Tung's heart-qi-spirit needling",

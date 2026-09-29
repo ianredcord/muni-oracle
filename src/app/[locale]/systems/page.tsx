@@ -37,7 +37,7 @@ const SYSTEMS = [
     title: "董氏心氣神針",
     subtitle: "經絡的精準調理",
     description:
-      "傳承自董氏奇穴的心氣神針法，以獨特的穴位系統精準調理氣血。搭配 MUNI 精油與日本針灸貼，在家即可進行穴位保健。",
+      "傳承自董氏奇穴的心氣神針法，以獨特的穴位系統精準調理氣血。搭配 MUNI 精油與 Fascia Point 筋膜貼，在家即可進行穴位保健。",
     href: "/acupuncture",
     icon: "📍",
     color: "from-emerald-50 to-green-50",
@@ -121,8 +121,8 @@ const SYSTEMS = [
 const LAYERS = [
   {
     name: "身體層",
-    description: "透過精油、穴位、針灸貼與飲食，調理身體的氣血與能量",
-    systems: ["精油", "董氏穴位", "針灸貼", "人蔘", "橄欖油"],
+    description: "透過精油、穴位、筋膜貼與飲食，調理身體的氣血與能量",
+    systems: ["精油", "董氏穴位", "筋膜貼", "人蔘", "橄欖油"],
     color: "bg-emerald-100 text-emerald-800",
   },
   {
@@ -156,7 +156,7 @@ const SYSTEMS_EN: Record<string, { title: string; subtitle: string; description:
     title: "Tung's heart-qi-spirit needling",
     subtitle: "Precise work along the channels",
     description:
-      "The heart-qi-spirit method inherited from Master Tung's extraordinary points regulates qi and blood through a distinctive point system. Paired with MUNI oil and Japanese acupuncture patches, you can care for the points at home.",
+      "The heart-qi-spirit method inherited from Master Tung's extraordinary points regulates qi and blood through a distinctive point system. Paired with MUNI oil and the Fascia Point patch, you can care for the points at home.",
   },
   "fascia-point": {
     title: "Fascia Point patch · MUNI Edition",
@@ -200,7 +200,7 @@ const LAYERS_EN = [
   {
     name: "The body",
     description:
-      "Oils, points, acupuncture patches and food work with the qi, blood and energy of the body",
+      "Oils, points, the Fascia Point patch and food work with the qi, blood and energy of the body",
     systems: ["Oils", "Tung's points", "Patches", "Ginseng", "Olive oil"],
   },
   {
@@ -234,7 +234,7 @@ const PAGE_COPY: Record<Locale, {
   zh: {
     metaTitle: "MUNI 療癒生態系統 | 完整知識架構",
     metaDescription:
-      "探索 MUNI 的完整療癒生態——花精、精油、董氏心氣神針、日本針灸貼、人蔘、橄欖油、日本綠茶、巧克力、葡萄酒，九大系統守護你的身心靈平衡。",
+      "探索 MUNI 的完整療癒生態——花精、精油、董氏心氣神針、Fascia Point 筋膜貼、人蔘、橄欖油、日本綠茶、巧克力、葡萄酒，九大系統守護你的身心靈平衡。",
     eyebrow: "MUNI HEALING ECOSYSTEM",
     title: "MUNI 療癒生態系統",
     intro:
@@ -251,7 +251,7 @@ const PAGE_COPY: Record<Locale, {
   en: {
     metaTitle: "The MUNI healing ecosystem | The whole picture",
     metaDescription:
-      "Explore MUNI's full healing ecosystem — flower essences, essential oils, Tung's heart-qi-spirit needling, Japanese acupuncture patches, ginseng, olive oil, Japanese green tea, chocolate and wine. Nine systems holding your balance.",
+      "Explore MUNI's full healing ecosystem — flower essences, essential oils, Tung's heart-qi-spirit needling, the Fascia Point patch, ginseng, olive oil, Japanese green tea, chocolate and wine. Nine systems holding your balance.",
     eyebrow: "MUNI HEALING ECOSYSTEM",
     title: "The MUNI healing ecosystem",
     intro:
