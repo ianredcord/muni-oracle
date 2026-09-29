@@ -53,6 +53,19 @@ export function MeridianObservatoryFrame({
         </div>
 
         <div className="flex items-center gap-2 shrink-0">
+          {/* 身體覺察的另外兩個入口，讓觀察室不是單向終點 */}
+          <Link
+            href="/fascia-point"
+            className="text-xs text-[#9b295a] hover:text-[#4a5548] px-2 py-1.5 transition-colors whitespace-nowrap"
+          >
+            {locale === "zh" ? "筋膜貼" : "Fascia Point"}
+          </Link>
+          <Link
+            href={localeHref(locale, "/muni-scent")}
+            className="hidden sm:inline-block text-xs text-[#9A7B4F] hover:text-[#8A6B3F] px-2 py-1.5 transition-colors whitespace-nowrap"
+          >
+            {locale === "zh" ? "牟尼香" : "MUNI Scent"}
+          </Link>
           <Link
             href={localeHref(locale, switchPath)}
             className="hidden sm:inline-block text-xs text-[#9A7B4F] hover:text-[#8A6B3F] font-medium px-2 py-1.5 transition-colors"

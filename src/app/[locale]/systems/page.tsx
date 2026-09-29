@@ -45,12 +45,12 @@ const SYSTEMS = [
     status: "available",
   },
   {
-    id: "somaniks",
-    title: "MUNI × SOMANIKS 針灸貼",
-    subtitle: "神經科學 × 不刺入微錐 × 無痛修復",
+    id: "fascia-point",
+    title: "Fascia Point 筋膜貼 · MUNI Edition",
+    subtitle: "皮膚接觸 × 本體感覺 × 身體覺察",
     description:
-      "來自日本的不刺入微錐技術，以軸索反射原理啟動人體自我修復。SOMACEPT 硬針對應急性痛，SOMARESON 軟針對應慢性痛。搭配 MUNI 精油，嗅覺與觸覺雙重神經通路同步共振。日本醫療器材、CE、FDA 三重認證。",
-    href: "/somaniks",
+      "貼在皮膚上的筋膜貼，以微錐系統喚起皮膚與筋膜的本體感覺，作為身體覺察的入口；技術結構在 Dr. Robert Schleip 的筋膜研究與科學指導下建立。MUNI Edition 加入牟尼共振技術，搭配牟尼香與經絡觀察室，聞、貼、看、動一起使用。",
+    href: "/fascia-point",
     icon: "🩹",
     color: "from-sky-50 to-blue-50",
     borderColor: "border-sky-200",
@@ -158,11 +158,11 @@ const SYSTEMS_EN: Record<string, { title: string; subtitle: string; description:
     description:
       "The heart-qi-spirit method inherited from Master Tung's extraordinary points regulates qi and blood through a distinctive point system. Paired with MUNI oil and Japanese acupuncture patches, you can care for the points at home.",
   },
-  somaniks: {
-    title: "MUNI × SOMANIKS patches",
-    subtitle: "Neuroscience × non-penetrating microcones × painless repair",
+  "fascia-point": {
+    title: "Fascia Point patch · MUNI Edition",
+    subtitle: "Skin contact × proprioception × body awareness",
     description:
-      "Japanese non-penetrating microcone technology triggers the body's own repair through the axon reflex. SOMACEPT's firmer cones suit acute pain; SOMARESON's softer cones suit chronic pain. With MUNI oil, the neural pathways of smell and touch resonate together. Certified as a Japanese medical device, with CE and FDA approval.",
+      "A patch worn on the skin. Its microcone system wakes the proprioceptive sense of skin and fascia as a doorway into body awareness; the technical structure was built under the fascia research and scientific direction of Dr. Robert Schleip. The MUNI Edition adds MUNI resonance technology and pairs with MUNI Scent and the Meridian Observatory: smell, touch, see, move.",
   },
   ginseng: {
     title: "MUNI × premium Korean ginseng",

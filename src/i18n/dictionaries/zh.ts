@@ -43,7 +43,6 @@ export const zh = {
     guide: "情境指引",
     journal: "回望",
     muniScent: "牟尼香",
-    somaniks: "牟尼微針",
     meridianObservatory: "經絡觀察室",
     meridianObservatoryPro: "經絡觀察室PRO",
   },

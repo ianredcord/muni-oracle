@@ -21,7 +21,12 @@ type Copy = {
   channelsBody: string;
   ctaTitle: string;
   ctaDraw: string;
-  ctaSomaniks: string;
+  ctaFascia: string;
+  togetherTitle: string;
+  togetherIntro: string;
+  togetherSteps: { step: string; title: string; desc: string }[];
+  togetherFascia: string;
+  togetherObservatory: string;
 };
 
 const COPY: Record<Locale, Copy> = {
@@ -46,8 +51,8 @@ const COPY: Record<Locale, Copy> = {
         desc: "聞一下牟尼香，讓牌卡帶來的覺察更容易被身體接收。",
       },
       {
-        title: "當你貼上 Somaniks",
-        desc: "在貼上微針之前先聞牟尼香，同時打開嗅覺與觸覺通道。",
+        title: "當你貼上筋膜貼",
+        desc: "先聞牟尼香，讓身體慢下來，再貼上 Fascia Point 筋膜貼，同時打開嗅覺與觸覺兩個通道。",
       },
       {
         title: "當你只是需要安靜一下",
@@ -56,10 +61,20 @@ const COPY: Record<Locale, Copy> = {
     ],
     channelsTitle: "情緒・嗅覺・觸覺",
     channelsBody:
-      "MUNI 相信，真正的療癒不是從外力介入，而是同時打開三個通道——花精平衡情緒，牟尼香啟動嗅覺，Somaniks 讓身體開始回應。牟尼香是這三者之間的橋樑。",
+      "MUNI 相信，真正的療癒不是從外力介入，而是同時打開三個通道——花精平衡情緒，牟尼香啟動嗅覺，筋膜貼讓身體被感覺到。牟尼香是這三者之間的橋樑。",
     ctaTitle: "開始使用牟尼香",
     ctaDraw: "先抽一張牌卡",
-    ctaSomaniks: "搭配微針使用",
+    ctaFascia: "搭配筋膜貼使用",
+    togetherTitle: "聞、貼、看、動",
+    togetherIntro: "牟尼香、Fascia Point 筋膜貼與經絡觀察室，是 MUNI 身體覺察的三個入口。可以這樣一起使用：",
+    togetherSteps: [
+      { step: "01", title: "聞", desc: "聞一下牟尼香，讓身體先慢下來。" },
+      { step: "02", title: "貼", desc: "貼上筋膜貼，留意身體在哪裡被感覺到。" },
+      { step: "03", title: "看", desc: "打開經絡觀察室，看看那個位置周圍的結構與循行。" },
+      { step: "04", title: "動", desc: "做一個熟悉的動作，記下前後的差別。" },
+    ],
+    togetherFascia: "認識 Fascia Point 筋膜貼",
+    togetherObservatory: "進入經絡觀察室",
   },
   en: {
     metaTitle: "MUNI Scent | Six essential oils × 40 essence frequencies | MUNI",
@@ -82,8 +97,8 @@ const COPY: Record<Locale, Copy> = {
         desc: "Breathe in the scent so the awareness the card brought is easier for the body to receive.",
       },
       {
-        title: "Before you place a Somaniks",
-        desc: "Breathe it in before applying the microneedle, opening the channels of smell and touch together.",
+        title: "Before you put on the Fascia Point patch",
+        desc: "Breathe in the scent first so the body slows down, then put on the Fascia Point patch — opening the channels of smell and touch together.",
       },
       {
         title: "When you simply need a quiet moment",
@@ -92,10 +107,20 @@ const COPY: Record<Locale, Copy> = {
     ],
     channelsTitle: "Emotion · smell · touch",
     channelsBody:
-      "MUNI holds that real healing isn't imposed from outside but opens three channels at once — flower essences settle emotion, MUNI Scent engages smell, and Somaniks lets the body begin to respond. MUNI Scent is the bridge between the three.",
+      "MUNI holds that real healing isn't imposed from outside but opens three channels at once — flower essences settle emotion, MUNI Scent engages smell, and the Fascia Point patch lets the body be felt. MUNI Scent is the bridge between the three.",
     ctaTitle: "Begin with MUNI Scent",
     ctaDraw: "Draw a card first",
-    ctaSomaniks: "Use it with Somaniks",
+    ctaFascia: "Use it with Fascia Point",
+    togetherTitle: "Smell, touch, see, move",
+    togetherIntro: "MUNI Scent, the Fascia Point patch and the Meridian Observatory are three doorways into body awareness. Use them together like this:",
+    togetherSteps: [
+      { step: "01", title: "Smell", desc: "Breathe in MUNI Scent and let the body slow down first." },
+      { step: "02", title: "Touch", desc: "Put on the Fascia Point patch and notice where the body is being felt." },
+      { step: "03", title: "See", desc: "Open the Meridian Observatory and look at the structures and channels around that place." },
+      { step: "04", title: "Move", desc: "Do a familiar movement and note what changed." },
+    ],
+    togetherFascia: "Discover Fascia Point (Chinese)",
+    togetherObservatory: "Enter the Meridian Observatory",
   },
 };
 
@@ -198,6 +223,35 @@ export default async function MuniScentPage({
         </div>
       </section>
 
+      {/* ── 4b. 聞、貼、看、動：與筋膜貼、經絡觀察室一起使用 ── */}
+      <section className="py-20 px-4 bg-[#f6eef1]">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-serif font-light text-[#4a5548] text-center mb-4">
+            {copy.togetherTitle}
+          </h2>
+          <p className="text-stone-600 text-center leading-relaxed max-w-2xl mx-auto mb-12">
+            {copy.togetherIntro}
+          </p>
+          <ol className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+            {copy.togetherSteps.map((item) => (
+              <li key={item.step} className="bg-white/80 rounded-2xl p-6 border border-stone-100">
+                <p className="text-xs tracking-[0.2em] text-[#9b295a] mb-2">{item.step}</p>
+                <h3 className="font-serif text-xl text-[#4a5548] mb-2">{item.title}</h3>
+                <p className="text-stone-500 text-sm leading-relaxed">{item.desc}</p>
+              </li>
+            ))}
+          </ol>
+          <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-6 text-sm">
+            <Link href="/fascia-point" className="inline-flex min-h-11 items-center border-b border-[#9b295a] text-[#9b295a] hover:text-[#4a5548] transition-colors">
+              {copy.togetherFascia} →
+            </Link>
+            <Link href={localeHref(locale, "/meridian-observatory-lite")} className="inline-flex min-h-11 items-center border-b border-[#9A7B4F] text-[#9A7B4F] hover:text-[#4a5548] transition-colors">
+              {copy.togetherObservatory} →
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* ── 5. CTA ── */}
       <section className="py-20 px-4 bg-white/40">
         <div className="max-w-2xl mx-auto text-center">
@@ -212,10 +266,10 @@ export default async function MuniScentPage({
               {copy.ctaDraw}
             </Link>
             <Link
-              href={localeHref(locale, "/somaniks")}
+              href="/fascia-point"
               className="inline-block px-8 py-3 rounded-full border border-[#9A7B4F] text-[#9A7B4F] text-sm font-medium hover:bg-[#9A7B4F] hover:text-white transition-colors"
             >
-              {copy.ctaSomaniks}
+              {copy.ctaFascia}
             </Link>
           </div>
         </div>

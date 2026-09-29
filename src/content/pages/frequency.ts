@@ -122,7 +122,7 @@ const zh: FrequencyCopy = {
     },
     {
       title: "經絡與物理介入系統",
-      body: "日本針灸貼片在物理層面啟動經絡的振動傳導，與頻率系統形成「由外而內」的雙向共振。",
+      body: "Fascia Point 筋膜貼在皮膚表面的接觸，是觸覺這一條通道，與嗅覺（牟尼香）並行，和頻率系統形成「由外而內」的雙向共振。",
     },
     {
       title: "意識覺察系統",
@@ -266,7 +266,7 @@ const zh: FrequencyCopy = {
       matrix: [
         { path: "嗅覺 → 杏仁核 → 情緒中樞", products: "Attar、牟尼香精油、玫瑰精露", dimension: "分子微觀 + 神經頻率" },
         { path: "消化 → 迷走神經 → 內臟調節", products: "紅蔘、橄欖油、綠茶、巧克力", dimension: "分子微觀 + 腸腦軸共振" },
-        { path: "經絡 → 筋膜 → 全身張力場", products: "Somaniks 針灸貼片", dimension: "結構中觀 + 能量通道" },
+        { path: "經絡 → 筋膜 → 全身張力場", products: "Fascia Point 筋膜貼", dimension: "結構中觀 + 能量通道" },
         { path: "意識 → 注意力 → 腦波狀態", products: "花精頻率、牌卡、牟尼圖", dimension: "精神維度 + 意識場" },
       ],
       quote:
@@ -363,7 +363,7 @@ const en: FrequencyCopy = {
     },
     {
       title: "Channels and physical intervention",
-      body: "Japanese acupuncture patches activate vibrational transmission along the channels at the physical level, forming a two-way resonance with the frequency system from the outside in.",
+      body: "The Fascia Point patch's contact with the skin is the channel of touch; alongside smell (MUNI Scent) it forms a two-way resonance with the frequency system from the outside in.",
     },
     {
       title: "Awareness",
@@ -508,7 +508,7 @@ const en: FrequencyCopy = {
       matrix: [
         { path: "Smell → amygdala → emotional centres", products: "Attars, MUNI Scent, rose hydrosol", dimension: "Molecular micro + neural frequency" },
         { path: "Digestion → vagus nerve → organ regulation", products: "Red ginseng, olive oil, green tea, chocolate", dimension: "Molecular micro + gut-brain resonance" },
-        { path: "Channels → fascia → whole-body tension field", products: "Somaniks acupuncture patches", dimension: "Structural middle + energy pathways" },
+        { path: "Channels → fascia → whole-body tension field", products: "Fascia Point patch", dimension: "Structural middle + energy pathways" },
         { path: "Awareness → attention → brainwave state", products: "Flower essence frequencies, cards, MUNI diagrams", dimension: "The dimension of spirit + the field of awareness" },
       ],
       quote:
