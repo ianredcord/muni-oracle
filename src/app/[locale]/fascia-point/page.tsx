@@ -6,14 +6,14 @@ import { Footer } from "@/components/Footer";
 import "./fascia-point.css";
 
 export const metadata: Metadata = {
-  title: "Fascia Point — MUNI Edition | MUNI ONE",
-  description: "Fascia Point MUNI Edition：微錐貼片結合牟尼共振技術，串連皮膚與筋膜的感覺學習、動作體驗與經絡觀察室。",
+  title: "Fascia Point 筋膜貼 — MUNI Edition | MUNI ONE",
+  description: "貼上 Fascia Point 筋膜貼，陪你在一天之中找回身體的舒適與自在。MUNI Edition 加入牟尼共振技術，並連結經絡觀察室的身體學習。",
   // 正式發布：允許索引；目前只有繁中版，canonical 固定為無語言前綴的網址
   robots: { index: true, follow: true },
   alternates: { canonical: "https://www.munione.co/fascia-point" },
   openGraph: {
-    title: "Fascia Point — MUNI Edition",
-    description: "微錐貼片結合牟尼共振技術，串連皮膚與筋膜的感覺學習、動作體驗與經絡觀察室。",
+    title: "Fascia Point 筋膜貼 — MUNI Edition",
+    description: "貼上筋膜貼，陪你在一天之中找回身體的舒適與自在。MUNI Edition 加入牟尼共振技術。",
     url: "https://www.munione.co/fascia-point",
     images: [{ url: "https://www.munione.co/images/fascia-point/packaging-mockup.webp" }],
   },

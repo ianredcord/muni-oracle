@@ -15,8 +15,8 @@ export function initializeFasciaPoint(root){
     const scroll=()=>{if(!frame)frame=requestAnimationFrame(update)};
     window.addEventListener('scroll',scroll,{passive:true});window.addEventListener('resize',scroll);update();
     const steps=[
-      ['OBSERVE','先記住此刻的感覺。','從皮膚與筋膜的感覺學習出發，選一個熟悉、舒適的動作，留意接觸感、動作與呼吸，記錄體驗前的狀態。'],
-      ['EXPERIENCE','在指導下體驗貼片。','依正式產品指南與課程指導體驗貼片。以皮膚與筋膜為觀察脈絡，配合自然呼吸與舒適動作，留意自己的感受。'],
+      ['OBSERVE','先記住此刻的感覺。','選一個熟悉、舒適的動作，留意接觸感、動作與呼吸，記下體驗前的狀態。'],
+      ['EXPERIENCE','在指導下貼上筋膜貼。','依產品說明與課程指導貼上筋膜貼。配合自然呼吸與舒適的動作，留意皮膚與身體的感受。'],
       ['REFLECT','回到同一個動作。','再做一次剛才的動作，留意輕重、流暢度與呼吸的感覺。有沒有不同，都值得記錄。']
     ];
     const tabs=Array.from(root.querySelectorAll('[role=tab]'));

@@ -187,14 +187,14 @@ export default async function Home({
       <section id="fascia-point" aria-labelledby="home-fascia-title" className="scroll-mt-20 bg-[#f6eef1] px-6 py-20 md:py-28">
         <div className="mx-auto grid max-w-6xl items-center gap-10 md:grid-cols-2 md:gap-16">
           <figure className="relative aspect-[3/2] overflow-hidden">
-            <Image src="/images/fascia-point/packaging-mockup.webp" alt={locale === "zh" ? "Fascia Point MUNI Edition 包裝與貼片合成示意" : "Fascia Point MUNI Edition packaging and patch mockup"} fill sizes="(max-width: 768px) 100vw, 50vw" className="object-contain" />
+            <Image src="/images/fascia-point/packaging-mockup.webp" alt={locale === "zh" ? "Fascia Point 筋膜貼 MUNI Edition 包裝合成示意" : "Fascia Point MUNI Edition packaging and patch mockup"} fill sizes="(max-width: 768px) 100vw, 50vw" className="object-contain" />
             <figcaption className="absolute bottom-2 left-3 text-xs text-stone-500">{locale === "zh" ? "產品與包裝合成示意" : "Product and packaging illustration"}</figcaption>
           </figure>
           <div>
             <p className="mb-5 text-xs tracking-[0.2em] text-[#9b295a]">FASCIA POINT · MUNI EDITION</p>
             <h2 id="home-fascia-title" className="mb-6 font-serif text-3xl leading-relaxed text-[#4a5548] md:text-4xl">{locale === "zh" ? <>從內在覺察，<br />延伸到身體感知。</> : <>From inner awareness<br />to sensing the body.</>}</h2>
-            <p className="max-w-lg leading-loose text-stone-600">{locale === "zh" ? "認識 Fascia Point MUNI Edition，從微錐接觸出發，探索皮膚與筋膜、感覺與動作的連結。" : "Discover Fascia Point MUNI Edition. Start with microcone contact and explore the connections between skin, fascia, sensation and movement."}</p>
-            <Link href="/fascia-point" className="mt-8 inline-flex min-h-11 items-center gap-8 border-b border-[#9b295a] py-3 text-sm font-medium text-[#9b295a] transition-colors hover:text-[#4a5548]">{locale === "zh" ? "認識 Fascia Point" : "Explore Fascia Point (Chinese)"}<span aria-hidden="true">→</span></Link>
+            <p className="max-w-lg leading-loose text-stone-600">{locale === "zh" ? "貼上筋膜貼，陪你在一天之中，找回身體的舒適與自在。認識 Fascia Point 筋膜貼 MUNI Edition。" : "A microcone patch worn on the skin, helping you return to ease and comfort in your body through the day. Discover Fascia Point MUNI Edition."}</p>
+            <Link href="/fascia-point" className="mt-8 inline-flex min-h-11 items-center gap-8 border-b border-[#9b295a] py-3 text-sm font-medium text-[#9b295a] transition-colors hover:text-[#4a5548]">{locale === "zh" ? "認識 Fascia Point 筋膜貼" : "Explore Fascia Point (Chinese)"}<span aria-hidden="true">→</span></Link>
           </div>
         </div>
       </section>
