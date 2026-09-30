@@ -54,8 +54,8 @@ export const en: Dictionary = {
     guide: "Guides",
     journal: "Looking back",
     muniScent: "MUNI Scent",
-    meridianObservatory: "Meridian Observatory",
-    meridianObservatoryPro: "Meridian Observatory PRO",
+    meridianObservatory: "Fascia Observatory",
+    meridianObservatoryPro: "Fascia Observatory PRO",
   },
 
   home: {

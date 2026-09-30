@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { localeHref, type Locale } from "@/i18n/config";
 
-// 經絡觀察室外框：MUNI 標題列 + 同源 iframe。
+// 筋膜觀察室外框：MUNI 標題列 + 同源 iframe。
 // viewer 是 public/meridian-viewer/ 下的獨立靜態頁（由 scripts/sync-meridian-viewer.sh 同步），
 // 引擎與模型在進入本頁後才開始下載。PRO 的 B 對照視窗會以 viewer 自身網址加 ?compare=1 再嵌一層，
 // 因此 iframe 必須指向 viewer 本身而非外框頁。

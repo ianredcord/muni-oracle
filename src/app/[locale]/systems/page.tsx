@@ -49,7 +49,7 @@ const SYSTEMS = [
     title: "Fascia Point 筋膜貼 · MUNI Edition",
     subtitle: "皮膚接觸 × 本體感覺 × 身體覺察",
     description:
-      "貼在皮膚上的筋膜貼，以微錐系統喚起皮膚與筋膜的本體感覺，作為身體覺察的入口；技術結構在 Dr. Robert Schleip 的筋膜研究與科學指導下建立。MUNI Edition 加入牟尼共振技術，搭配牟尼香與經絡觀察室，聞、貼、看、動一起使用。",
+      "貼在皮膚上的筋膜貼，以微錐系統喚起皮膚與筋膜的本體感覺，作為身體覺察的入口；技術結構在 Dr. Robert Schleip 的筋膜研究與科學指導下建立。MUNI Edition 加入牟尼共振技術，搭配牟尼香與筋膜觀察室，聞、貼、看、動一起使用。",
     href: "/fascia-point",
     icon: "🩹",
     color: "from-sky-50 to-blue-50",
@@ -162,7 +162,7 @@ const SYSTEMS_EN: Record<string, { title: string; subtitle: string; description:
     title: "Fascia Point patch · MUNI Edition",
     subtitle: "Skin contact × proprioception × body awareness",
     description:
-      "A patch worn on the skin. Its microcone system wakes the proprioceptive sense of skin and fascia as a doorway into body awareness; the technical structure was built under the fascia research and scientific direction of Dr. Robert Schleip. The MUNI Edition adds MUNI resonance technology and pairs with MUNI Scent and the Meridian Observatory: smell, touch, see, move.",
+      "A patch worn on the skin. Its microcone system wakes the proprioceptive sense of skin and fascia as a doorway into body awareness; the technical structure was built under the fascia research and scientific direction of Dr. Robert Schleip. The MUNI Edition adds MUNI resonance technology and pairs with MUNI Scent and the Fascia Observatory: smell, touch, see, move.",
   },
   ginseng: {
     title: "MUNI × premium Korean ginseng",

@@ -66,15 +66,15 @@ const COPY: Record<Locale, Copy> = {
     ctaDraw: "先抽一張牌卡",
     ctaFascia: "搭配筋膜貼使用",
     togetherTitle: "聞、貼、看、動",
-    togetherIntro: "牟尼香、Fascia Point 筋膜貼與經絡觀察室，是 MUNI 身體覺察的三個入口。可以這樣一起使用：",
+    togetherIntro: "牟尼香、Fascia Point 筋膜貼與筋膜觀察室，是 MUNI 身體覺察的三個入口。可以這樣一起使用：",
     togetherSteps: [
       { step: "01", title: "聞", desc: "聞一下牟尼香，讓身體先慢下來。" },
       { step: "02", title: "貼", desc: "貼上筋膜貼，留意身體在哪裡被感覺到。" },
-      { step: "03", title: "看", desc: "打開經絡觀察室，看看那個位置周圍的結構與循行。" },
+      { step: "03", title: "看", desc: "打開筋膜觀察室，看看那個位置周圍的結構與循行。" },
       { step: "04", title: "動", desc: "做一個熟悉的動作，記下前後的差別。" },
     ],
     togetherFascia: "認識 Fascia Point 筋膜貼",
-    togetherObservatory: "進入經絡觀察室",
+    togetherObservatory: "進入筋膜觀察室",
   },
   en: {
     metaTitle: "MUNI Scent | Six essential oils × 40 essence frequencies | MUNI",
@@ -112,15 +112,15 @@ const COPY: Record<Locale, Copy> = {
     ctaDraw: "Draw a card first",
     ctaFascia: "Use it with Fascia Point",
     togetherTitle: "Smell, touch, see, move",
-    togetherIntro: "MUNI Scent, the Fascia Point patch and the Meridian Observatory are three doorways into body awareness. Use them together like this:",
+    togetherIntro: "MUNI Scent, the Fascia Point patch and the Fascia Observatory are three doorways into body awareness. Use them together like this:",
     togetherSteps: [
       { step: "01", title: "Smell", desc: "Breathe in MUNI Scent and let the body slow down first." },
       { step: "02", title: "Touch", desc: "Put on the Fascia Point patch and notice where the body is being felt." },
-      { step: "03", title: "See", desc: "Open the Meridian Observatory and look at the structures and channels around that place." },
+      { step: "03", title: "See", desc: "Open the Fascia Observatory and look at the structures and channels around that place." },
       { step: "04", title: "Move", desc: "Do a familiar movement and note what changed." },
     ],
     togetherFascia: "Discover Fascia Point (Chinese)",
-    togetherObservatory: "Enter the Meridian Observatory",
+    togetherObservatory: "Enter the Fascia Observatory",
   },
 };
 
@@ -223,7 +223,7 @@ export default async function MuniScentPage({
         </div>
       </section>
 
-      {/* ── 4b. 聞、貼、看、動：與筋膜貼、經絡觀察室一起使用 ── */}
+      {/* ── 4b. 聞、貼、看、動：與筋膜貼、筋膜觀察室一起使用 ── */}
       <section className="py-20 px-4 bg-[#f6eef1]">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-serif font-light text-[#4a5548] text-center mb-4">
