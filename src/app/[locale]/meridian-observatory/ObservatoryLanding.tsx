@@ -16,7 +16,7 @@ export default function ObservatoryLanding({ locale, copy }: { locale: Locale; c
   const reduced = useReducedMotion();
   const zh = locale === "zh";
   const to = (path: string) => localeHref(locale, path);
-  const labels = zh ? ["經絡穴位", "解剖分層", "董氏奇穴", "解剖列車", "激痛點", "教學展示"] : ["Meridians", "Anatomy", "Tung points", "Fascial lines", "Trigger points", "Teaching"];
+  const labels = zh ? ["經絡穴位", "解剖分層", "董氏奇穴", "解剖列車", "激痛點", "FM"] : ["Meridians", "Anatomy", "Tung points", "Fascial lines", "Trigger points", "FM"];
   // 進場動畫只在客戶端掛載後啟用：伺服器輸出與動畫失效時內容都保持可見（手機首屏曾因此整段隱形）。
   const mounted = useSyncExternalStore(() => () => {}, () => true, () => false);
   const animated = mounted && !reduced;
@@ -48,7 +48,7 @@ export default function ObservatoryLanding({ locale, copy }: { locale: Locale; c
       <motion.div {...reveal} className={s.sectionHead}><p className={s.eyebrow}>01 — EXPLORE THE BODY</p><div><h2>{zh ? <>一具人體，<br/>不同的觀察視角。</> : <>One body.<br/>Different perspectives.</>}</h2><p>{zh ? "把平面的知識放回立體的身體。選擇一種視角，看看觀察室能呈現什麼。" : "Bring knowledge into three dimensions. Choose a perspective to see what you can explore."}</p></div></motion.div>
       <div role="tablist" aria-label={zh ? "觀察方式" : "Observation views"} className={s.tabs}>{labels.map((label, i) => <button key={label} id={`view-tab-${i}`} role="tab" aria-selected={active === i} aria-controls="view-panel" tabIndex={active === i ? 0 : -1} onKeyDown={e => { if (["ArrowRight", "ArrowLeft", "Home", "End"].includes(e.key)) { e.preventDefault(); const n = e.key === "Home" ? 0 : e.key === "End" ? 5 : (active + (e.key === "ArrowRight" ? 1 : 5)) % 6; setActive(n); document.getElementById(`view-tab-${n}`)?.focus(); } }} onClick={() => setActive(i)}><span>0{i + 1}</span>{label}</button>)}</div>
       <div className={s.stage} id="view-panel" role="tabpanel" aria-labelledby={`view-tab-${active}`}>
-        <motion.div key={active} initial={{ opacity: reduced ? 1 : .3 }} animate={{ opacity: 1 }} transition={{ duration: .4 }} className={s.stageImage}><Image src={copy.scenes[active].image} alt={copy.scenes[active].title + (zh ? "實際操作畫面" : " product screenshot")} width={1440} height={900} sizes="(max-width: 760px) 100vw, 85vw" /></motion.div>
+        <motion.div key={active} initial={{ opacity: reduced ? 1 : .3 }} animate={{ opacity: 1 }} transition={{ duration: .4 }} className={s.stageImage}>{copy.scenes[active].video ? <video src={copy.scenes[active].video} poster={copy.scenes[active].image} autoPlay={!reduced} muted loop playsInline controls preload="metadata" aria-label={copy.scenes[active].title} /> : <Image src={copy.scenes[active].image} alt={copy.scenes[active].title + (zh ? "實際操作畫面" : " product screenshot")} width={1440} height={900} sizes="(max-width: 760px) 100vw, 85vw" />}<div className={s.sceneKeys}>{(active === 2 ? (zh ? ["一一 · 手指", "二二 · 手掌", "三三 · 下臂"] : ["11 · Fingers", "22 · Palm", "33 · Forearm"]) : active === 1 ? (zh ? ["左 · 骨骼與器官", "右 · 肌肉與肌腱"] : ["Left · Bones & organs", "Right · Muscles & tendons"]) : active === 5 ? ["FM · 10 CATEGORIES"] : []).map(key => <span key={key}>{key}</span>)}</div></motion.div>
         <div className={s.stageCaption}><span>0{active + 1} / 06</span><h3>{copy.scenes[active].title}</h3><p>{copy.scenes[active].body}{copy.scenes[active].note && <small>{copy.scenes[active].note}</small>}</p></div>
       </div>
     </section>

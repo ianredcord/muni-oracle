@@ -19,3 +19,5 @@
 @media(min-width:1500px){.heroVisual{left:43%;right:2%}}
 @media(max-width:1000px) and (min-width:641px){.heroVisual{left:45%;right:-4%}.heroCopy{width:55%}.hero h1{font-size:68px}}
 @media(max-width:640px){.heroVisual{left:auto;right:auto;top:auto;bottom:auto;height:265px;margin:12px 0 0}.heroVisual img{object-position:center}.heroVisual:after{background:linear-gradient(0deg,#f3f2ee,transparent 16%,transparent 86%,#f3f2ee);box-shadow:none}.heroCopy{padding-top:22px}.heroCaption{display:none}}
+
+.stageImage{position:relative;background:#242829}.stageImage video{display:block;width:100%;max-height:660px;object-fit:contain}.sceneKeys{position:absolute;left:28px;top:28px;display:flex;flex-direction:column;gap:12px;color:#eeeae0;font-size:14px;letter-spacing:.08em;pointer-events:none}.sceneKeys span{padding:10px 0;border-bottom:1px solid #eeeae033}@media(max-width:760px){.sceneKeys{left:14px;top:14px;font-size:11px;gap:5px}.sceneKeys span{padding:5px 0}.stageImage img,.stageImage video{min-height:300px;max-height:540px}}
