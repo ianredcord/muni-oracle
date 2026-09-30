@@ -11,6 +11,7 @@
 @media(max-width:640px){.together{padding:55px 6%}.together h2{font-size:25px}.together>div>p:not(.eyebrow){font-size:14px}}
 
 /* 品牌首屏：完整概念圖，與下方真實功能截圖分開呈現。 */
+.heroLegend{list-style:none;padding:0;margin:22px 0 0;display:grid;grid-template-columns:1fr 1.3fr;gap:14px 18px;max-width:360px}.heroLegend li{display:flex;align-items:center;gap:10px;font-size:12px;color:#626c5d}.heroLegend i{width:16px;height:4px;display:block;flex-shrink:0;border-radius:4px}.fasciaKey{background:#e2d9c6;border:1px solid #b8aa90;height:10px!important}.meridianKey{background:#b18b46}.triggerKey{background:#d76b57}.trainKey{background:#6688a6}
 .heroVisual{left:44%;right:0;top:0;bottom:55px}
 .heroVisual img{object-fit:contain;object-position:center;transform:none}
 .heroVisual:after{background:linear-gradient(90deg,#f3f2ee 0%,transparent 22%,transparent 88%,#f3f2ee 100%);box-shadow:inset 0 -20px 30px #f3f2ee;pointer-events:none}

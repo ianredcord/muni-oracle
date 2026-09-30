@@ -26,15 +26,21 @@ export default function ObservatoryLanding({ locale, copy }: { locale: Locale; c
     <Header />
 
     <section className={s.hero}>
-      <div className={s.heroVisual} aria-hidden="true"><Image src="/images/meridian-observatory/hero-fascia-sculpture.webp" alt="" fill priority sizes="(max-width: 640px) 100vw, 56vw" /></div>
+      <div className={s.heroVisual}><Image src="/images/meridian-observatory/hero-integrated-anatomy.webp" alt={zh ? "同一具 3D 解剖模型上的白色筋膜網、金色經脈、珊瑚色激痛點與藍色筋膜路線概念示意" : "Conceptual 3D anatomy with fascia, meridian pathways, trigger points and fascial chains"} fill priority sizes="(max-width: 640px) 100vw, 56vw" /></div>
       <motion.div className={s.heroCopy} {...heroReveal}>
         <p className={s.eyebrow}>MUNI · FASCIA OBSERVATORY</p>
         <h1>{zh ? <>筋膜<br/>觀察室<span className={s.titleDot}>。</span></> : <>Fascia<br/>Observatory.</>}</h1>
         <p className={s.heroSubtitle}>{zh ? "換一個維度，理解身體。" : "A new dimension of understanding."}</p>
-        <p className={s.heroDescription}>{zh ? "從筋膜出發，連結經絡、肌肉與骨骼。\n在同一具 3D 人體上，觀察身體的關係。" : "Start with fascia, then connect meridians, muscles and bone on one 3D body."}</p>
+        <p className={s.heroDescription}>{zh ? "筋膜、經脈、激痛點與解剖列車，\n在同一具 3D 人體上，分層觀察、疊加比較。" : "Fascia, meridians, trigger points and Anatomy Trains. Explore layers and compare them on one 3D body."}</p>
+        <ul className={s.heroLegend} aria-label={zh ? "主視覺圖例" : "Visual legend"}>
+          <li><i className={s.fasciaKey}/>{zh ? "筋膜網絡" : "Fascia network"}</li>
+          <li><i className={s.meridianKey}/>{zh ? "經脈循行" : "Meridians"}</li>
+          <li><i className={s.triggerKey}/>{zh ? "激痛點與牽涉痛" : "Trigger points"}</li>
+          <li><i className={s.trainKey}/>{zh ? "解剖列車" : "Anatomy Trains"}</li>
+        </ul>
         <div className={s.actions}><Link className={s.primary} href={to("/meridian-observatory/pro")}>{zh ? "開始 3D 探索" : "Explore in 3D"}<ArrowUpRight size={19}/></Link><Link className={s.textLink} href={to("/meridian-observatory-lite")}>{copy.ctaLite}<span>↗</span></Link></div>
       </motion.div>
-      <div className={s.heroCaption}><span>FASCIA · CONNECTION · AWARENESS</span><p>{zh ? "AI 生成概念視覺 · 功能實景請見下方" : "AI-generated concept artwork · Product views below"}</p></div>
+      <div className={s.heroCaption}><span>ONE BODY · CONNECTED LAYERS</span><p>{zh ? "AI 整合概念示意 · 實際路線與點位請見工作台" : "AI concept illustration · Explore actual maps in the workbench"}</p></div>
       <div className={s.heroFoot}><span>{zh ? "研究預覽 · 供學習與觀察" : "RESEARCH PREVIEW · FOR LEARNING"}</span><a href="#explore">{zh ? "向下探索" : "Discover"}<ArrowDown size={15}/></a></div>
     </section>
 
