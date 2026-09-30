@@ -26,7 +26,7 @@ export default function ObservatoryLanding({ locale, copy }: { locale: Locale; c
     <Header />
 
     <section className={s.hero}>
-      <div className={s.heroVisual} aria-hidden="true"><Image src={copy.scenes[5].image} alt="" fill priority sizes="100vw" /></div>
+      <div className={s.heroVisual} aria-hidden="true"><Image src="/images/meridian-observatory/hero-fascia-sculpture.webp" alt="" fill priority sizes="(max-width: 640px) 100vw, 56vw" /></div>
       <motion.div className={s.heroCopy} {...heroReveal}>
         <p className={s.eyebrow}>MUNI · FASCIA OBSERVATORY</p>
         <h1>{zh ? <>筋膜<br/>觀察室<span className={s.titleDot}>。</span></> : <>Fascia<br/>Observatory.</>}</h1>
@@ -34,7 +34,7 @@ export default function ObservatoryLanding({ locale, copy }: { locale: Locale; c
         <p className={s.heroDescription}>{zh ? "從筋膜出發，連結經絡、肌肉與骨骼。\n在同一具 3D 人體上，觀察身體的關係。" : "Start with fascia, then connect meridians, muscles and bone on one 3D body."}</p>
         <div className={s.actions}><Link className={s.primary} href={to("/meridian-observatory/pro")}>{zh ? "開始 3D 探索" : "Explore in 3D"}<ArrowUpRight size={19}/></Link><Link className={s.textLink} href={to("/meridian-observatory-lite")}>{copy.ctaLite}<span>↗</span></Link></div>
       </motion.div>
-      <div className={s.heroCaption}><span>01 / FASCIA & BODY SYSTEM</span><p>{zh ? "筋膜、經絡與解剖 · 實際操作畫面" : "Fascia, meridians & anatomy · Actual product view"}</p></div>
+      <div className={s.heroCaption}><span>FASCIA · CONNECTION · AWARENESS</span><p>{zh ? "AI 生成概念視覺 · 功能實景請見下方" : "AI-generated concept artwork · Product views below"}</p></div>
       <div className={s.heroFoot}><span>{zh ? "研究預覽 · 供學習與觀察" : "RESEARCH PREVIEW · FOR LEARNING"}</span><a href="#explore">{zh ? "向下探索" : "Discover"}<ArrowDown size={15}/></a></div>
     </section>
 

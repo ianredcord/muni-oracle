@@ -9,3 +9,12 @@
 /* 與 MUNI 一起用（聞、貼、看、動）、版本要點清單、頁尾聲明 */
 .together{background:#f6eef1;padding:90px 12%}.together h2{font-size:34px;margin-bottom:22px}.together>div>p:not(.eyebrow){max-width:640px;font-size:15px;line-height:1.95;color:#5f665b;margin:0 0 28px}.togetherLinks{display:flex;gap:36px;flex-wrap:wrap}.togetherLinks a{color:#9b295a;border-bottom-color:#9b295a66;min-height:44px}.versions ul{list-style:none;padding:0;margin:0 0 26px;max-width:380px}.versions li{position:relative;padding-left:18px;font-size:14px;line-height:1.85;color:#5f665b}.versions li:before{content:"";position:absolute;left:0;top:.8em;width:6px;height:6px;border-radius:50%;background:#9a7b4f}.notice{list-style:none;padding:0;margin:18px 0 0;max-width:560px;display:grid;gap:8px}.notice li{font-size:12px;line-height:1.8;color:#666f61}
 @media(max-width:640px){.together{padding:55px 6%}.together h2{font-size:25px}.together>div>p:not(.eyebrow){font-size:14px}}
+
+/* 品牌首屏：完整概念圖，與下方真實功能截圖分開呈現。 */
+.heroVisual{left:44%;right:0;top:0;bottom:55px}
+.heroVisual img{object-fit:contain;object-position:center;transform:none}
+.heroVisual:after{background:linear-gradient(90deg,#f3f2ee 0%,transparent 22%,transparent 88%,#f3f2ee 100%);box-shadow:inset 0 -20px 30px #f3f2ee;pointer-events:none}
+.heroCaption{right:5%;bottom:74px;background:#f3f2eecc;padding:10px 16px}
+@media(min-width:1500px){.heroVisual{left:43%;right:2%}}
+@media(max-width:1000px) and (min-width:641px){.heroVisual{left:45%;right:-4%}.heroCopy{width:55%}.hero h1{font-size:68px}}
+@media(max-width:640px){.heroVisual{left:auto;right:auto;top:auto;bottom:auto;height:265px;margin:12px 0 0}.heroVisual img{object-position:center}.heroVisual:after{background:linear-gradient(0deg,#f3f2ee,transparent 16%,transparent 86%,#f3f2ee);box-shadow:none}.heroCopy{padding-top:22px}.heroCaption{display:none}}
