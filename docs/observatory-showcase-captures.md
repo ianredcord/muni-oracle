@@ -13,3 +13,9 @@ Bilingual copy retains limitations. Video has controls, muted inline playback, p
 - Superficial Back Line: rear oblique camera [6,-0.2,29], target [0,-0.2,0]. Original muscle/tendon layers, bone opacity 0.7; labels off.
 - Infraspinatus: camera [-8,4.3,17], target [0,3.7,0]. Existing candidate points and referred-pain atlas; meridians/rulers hidden. Markers use x-ray visibility.
 - Both captures: 1600 x 913, same canvas proportions as the anatomy showcase. Preliminary registration limitations retained.
+
+## Review fixes
+- Unused source PNGs, prompt files and rejected sculpture WebP moved to docs/design-assets/observatory (not publicly served).
+- Hero retains the chosen concept image, prominently labelled above it at 15px desktop / 14px mobile.
+- Both video encodings begin with 0.3 seconds of the populated poster render; no initial seek in page code. MP4: H.264/yuv420p, faststart, 1600x914 at 20fps. WebM: VP9, same first frame. MP4 source is listed first.
+- Production build, TypeScript and targeted ESLint passed. Chromium chose MP4 and rendered time 0. Desktop/mobile checked for overflow. Real iPhone Safari remains untested.

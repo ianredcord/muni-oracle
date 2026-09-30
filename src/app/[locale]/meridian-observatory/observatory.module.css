@@ -23,3 +23,5 @@
 .stageImage{position:relative;background:#242829}.stageImage video{display:block;width:100%;max-height:660px;object-fit:contain}.sceneKeys{position:absolute;left:28px;top:28px;display:flex;flex-direction:column;gap:12px;color:#eeeae0;font-size:14px;letter-spacing:.08em;pointer-events:none}.sceneKeys span{padding:10px 0;border-bottom:1px solid #eeeae033}@media(max-width:760px){.sceneKeys{left:14px;top:14px;font-size:11px;gap:5px}.sceneKeys span{padding:5px 0}.stageImage img,.stageImage video{min-height:300px;max-height:540px}}
 
 @media(max-width:760px){.stageImage[data-scene="3"] img,.stageImage[data-scene="4"] img{height:400px;min-height:400px;object-fit:cover;object-position:center}}
+
+.conceptLabel{position:absolute;z-index:2;top:22px;left:8%;right:8%;margin:0;color:#4a5548;text-align:center;font-size:15px;line-height:1.5;letter-spacing:.06em}.conceptLabel span{display:block;font-size:13px;letter-spacing:0;margin-top:5px}.heroVisual img{padding-top:66px}@media(max-width:640px){.conceptLabel{top:0;left:4%;right:4%;font-size:14px}.conceptLabel span{font-size:12px}.heroVisual img{padding-top:60px}}

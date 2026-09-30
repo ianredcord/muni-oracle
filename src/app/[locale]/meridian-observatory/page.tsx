@@ -10,7 +10,7 @@ import { buildPageMetadata } from "@/i18n/metadata";
 
 // 筋膜觀察室介紹頁：先說明工具是什麼、能看什麼，再進入 3D 工作台（/pro）或簡易版（-lite）。
 
-type Scene = { video?: string; image: string; title: string; body: string; note?: string };
+type Scene = { video?: string; videoMp4?: string; image: string; title: string; body: string; note?: string };
 export type Copy = {
   metaTitle: string;
   metaDescription: string;
@@ -71,12 +71,12 @@ const COPY: Record<Locale, Copy> = {
     ],
     scenesTitle: "六種觀察方式",
     scenes: [
-      { image: `${IMG}/01-meridians-all.webp`, video: `${IMG}/01-meridians-flow.webm`, title: "全身經脈，一起循行", body: "十二正經、奇經八脈與現有穴位一起顯示，以正面微側的視角觀察全身路線與流光。可暫停影片，仔細比較位置。", note: "流光為沿現有模型路線播放的示意；方向與銜接未校核。男性模型仍缺少 4 個胃經路段。" },
-      { image: `${IMG}/02-anatomy-split.webp`, title: "一半骨骼器官，一半肌肉", body: "同一具人體、同一個鏡頭：左半呈現骨骼與內臟器官，右半呈現肌肉與肌腱，對照表層與深層的空間關係。", note: "此圖由工作台兩個分層畫面合成，並非工作台目前的半身切割功能。" },
+      { image: `${IMG}/01-meridians-all.webp`, video: `${IMG}/01-meridians-flow.webm`, videoMp4: `${IMG}/01-meridians-flow.mp4`, title: "全身經脈，一起循行", body: "十二正經、奇經八脈與現有穴位一起顯示，以正面微側的視角觀察全身路線與流光。可暫停影片，仔細比較位置。", note: "流光為沿現有模型路線播放的示意；方向與銜接未校核。男性模型仍缺少 4 個胃經路段。" },
+      { image: `${IMG}/02-anatomy-split.webp`, title: "表層與深層：肌肉 × 骨骼器官", body: "同一具人體、同一個鏡頭：左半呈現骨骼與內臟器官，右半呈現肌肉與肌腱，對照表層與深層的空間關係。", note: "此圖由工作台兩個分層畫面合成，並非工作台目前的半身切割功能。" },
       { image: `${IMG}/03-tung-hand-close.webp`, title: "董氏奇穴 · 手與前臂近看", body: "放大一一手指、二二手掌、三三下臂三個部位，直接看穴位標記與繁體穴名。進入工作台後可旋轉到手背，查看另一側點位。", note: "取自現有模型；單一角度無法呈現手背與前臂背側的全部點位。" },
       { image: `${IMG}/04-trains-fullscreen.webp`, title: "解剖列車 · 淺背線全身觀察", body: "背面微側視角，從頭後、脊柱、腿後看到足跟，對照藍色肌肉、白色肌腱與骨骼的連續關係。工作台可切換全部 12 條路線，逐段近看並對照來源原圖。", note: "缺件處為教學補建並有標示。" },
       { image: `${IMG}/05-trigger-fullscreen.webp`, title: "激痛點 · 肩背近看", body: "以岡下肌為例，背面微側近看粉紅 × 候選點與紅色牽涉痛分布。工作台可從疼痛位置或症狀找到相關肌肉，再對照來源原圖。", note: "紅色為分布示意，不是已證實的傳導路徑；相關肌肉不等於病因。" },
-      { image: `${IMG}/06-fm-points.webp`, title: "FM · 點位與連線", body: "以分類顏色觀察全身 FM 點位與連線，也可依部位、代碼與分類篩選，與其他內容層一起比較。", note: "422 個現有定位標記為待校對初稿；連線為點位關係示意，尚未經路徑或解剖驗證。" },
+      { image: `${IMG}/06-fm-points.webp`, title: "FM · 點位與連線", body: "以分類顏色觀察全身 FM 點位與連線，也可依部位、代碼與分類篩選，與其他內容層一起比較。", note: "218 筆點位資料，對應 422 個現有定位標記，皆為待校對初稿；連線為點位關係示意，尚未經路徑或解剖驗證。" },
     ],
     contentTitle: "目前可觀察的內容",
     content: [
@@ -131,12 +131,12 @@ const COPY: Record<Locale, Copy> = {
     ],
     scenesTitle: "Six ways to observe",
     scenes: [
-      { image: `${IMG}/01-meridians-all.webp`, video: `${IMG}/01-meridians-flow.webm`, title: "All meridians in motion", body: "Regular meridians, extraordinary vessels and existing points are displayed together in a front three-quarter view. Pause the video to compare positions.", note: "Flow is an illustration along existing routes; direction and continuity are unverified. Four male stomach-meridian segments are missing." },
-      { image: `${IMG}/02-anatomy-split.webp`, title: "Bones & organs meet muscle", body: "The same body and camera: bones and organs on the left, muscle and tendon on the right.", note: "Composited from two workbench layers; this is not a live half-body clipping feature." },
+      { image: `${IMG}/01-meridians-all.webp`, video: `${IMG}/01-meridians-flow.webm`, videoMp4: `${IMG}/01-meridians-flow.mp4`, title: "All meridians in motion", body: "Regular meridians, extraordinary vessels and existing points are displayed together in a front three-quarter view. Pause the video to compare positions.", note: "Flow is an illustration along existing routes; direction and continuity are unverified. Four male stomach-meridian segments are missing." },
+      { image: `${IMG}/02-anatomy-split.webp`, title: "Surface & depth: muscle × bones & organs", body: "The same body and camera: bones and organs on the left, muscle and tendon on the right.", note: "Composited from two workbench layers; this is not a live half-body clipping feature." },
       { image: `${IMG}/03-tung-hand-close.webp`, title: "Tung points · Hand & forearm", body: "A close-up of regions 11, 22 and 33: fingers, palm and forearm, with the existing point markers and Traditional Chinese labels.", note: "Rotate in the workbench to inspect dorsal points hidden from this view." },
       { image: `${IMG}/04-trains-fullscreen.webp`, title: "Anatomy Trains · Superficial Back Line", body: "Twelve Anatomy Trains lines: whole line, segment close-ups, side selection, compared with muscles, bony stations, tendons and the source plates. Blue muscle and white tendon is its visual language.", note: "Missing parts are teaching reconstructions and are labelled." },
       { image: `${IMG}/05-trigger-fullscreen.webp`, title: "Trigger points · Shoulder close-up", body: "Find related muscles from a pain location or symptom, show trigger-point markers and red referred-pain sketches, then check the source figure.", note: "Red areas are distribution sketches, not proven pathways; a related muscle is not a cause." },
-      { image: `${IMG}/06-fm-points.webp`, title: "FM points & connections", body: "Explore FM points and connections by category colour, body region and code.", note: "Existing placements and connections are preliminary illustrations awaiting review." },
+      { image: `${IMG}/06-fm-points.webp`, title: "FM points & connections", body: "Explore FM points and connections by category colour, body region and code.", note: "218 point records correspond to 422 existing placement markers. Placements and connections are preliminary illustrations awaiting review." },
     ],
     contentTitle: "What you can observe today",
     content: [
