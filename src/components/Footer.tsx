@@ -74,7 +74,7 @@ export function Footer() {
 
         <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 -mt-4 mb-6">
           <Link
-            href={href("/meridian-observatory-lite")}
+            href={href("/meridian-observatory")}
             prefetch={false}
             className="text-stone-400 hover:text-[#9A7B4F] text-xs font-medium tracking-wide transition-colors"
           >

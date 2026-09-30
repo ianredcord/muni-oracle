@@ -1,18 +1,17 @@
 import type { Metadata } from "next";
-import Image from "next/image";
-import Link from "next/link";
+import ObservatoryLanding from "./ObservatoryLanding";
+
 import { notFound } from "next/navigation";
 
-import { Header } from "@/components/Header";
-import { Footer } from "@/components/Footer";
-import { isLocale, localeHref, type Locale } from "@/i18n/config";
+
+
+import { isLocale, type Locale } from "@/i18n/config";
 import { buildPageMetadata } from "@/i18n/metadata";
 
-// 經絡觀察室介紹頁：先說明工具是什麼、能看什麼，再進入 3D 工作台（/pro）或簡易版（-lite）。
-// 文案依《經絡觀察室：產品與設計說明》：人體是主要入口、逐層縮小範圍、誠實呈現完成程度；截圖皆為正式站實際畫面。
+// 筋膜觀察室介紹頁：先說明工具是什麼、能看什麼，再進入 3D 工作台（/pro）或簡易版（-lite）。
 
 type Scene = { image: string; title: string; body: string; note?: string };
-type Copy = {
+export type Copy = {
   metaTitle: string;
   metaDescription: string;
   eyebrow: string;
@@ -47,11 +46,11 @@ const IMG = "/images/meridian-observatory";
 
 const COPY: Record<Locale, Copy> = {
   zh: {
-    metaTitle: "經絡觀察室｜3D 人體上的經絡、穴位與解剖 | MUNI 牟尼",
+    metaTitle: "筋膜觀察室｜3D 人體上的經絡、筋膜與解剖 | MUNI 牟尼",
     metaDescription:
-      "以 3D 人體探索經絡、穴位與解剖層次，從身體位置出發，對照肌肉、牽涉痛與筋膜路線。東方經絡與董氏奇穴、西方解剖列車與激痛點，在同一具人體上一起觀察。研究預覽，內容未經專業校核。",
-    eyebrow: "MERIDIAN OBSERVATORY · 3D 人體",
-    title: "經絡觀察室",
+      "以 3D 人體探索筋膜、經絡、穴位與解剖層次，從身體位置出發，對照肌肉、牽涉痛與筋膜路線。不同知識系統在同一具人體上一起觀察。研究預覽，內容未經專業校核。",
+    eyebrow: "FASCIA OBSERVATORY · 3D 人體",
+    title: "筋膜觀察室",
     tagline: "以 3D 人體探索經絡、穴位與解剖層次，從身體位置出發，對照肌肉、牽涉痛與筋膜路線。",
     lead: "你不必先知道肌肉或穴位的名字。點一個身體部位，逐層縮小範圍，相關的經絡、肌肉、筋膜路線與牽涉痛示意就會出現在同一具人體上。",
     preview: "研究預覽 · 點位與內容未經專業校核，僅供學習與觀察",
@@ -107,11 +106,11 @@ const COPY: Record<Locale, Copy> = {
     ],
   },
   en: {
-    metaTitle: "Meridian Observatory | Meridians, points and anatomy on one 3D body | MUNI",
+    metaTitle: "Fascia Observatory | Fascia, meridians and anatomy on one 3D body | MUNI",
     metaDescription:
-      "Explore meridians, acupoints and anatomical layers on a 3D body. Start from a place on the body and compare muscles, referred pain and fascial lines. Eastern meridians and Tung points alongside Western Anatomy Trains and trigger points. Research preview; content is not professionally verified.",
-    eyebrow: "MERIDIAN OBSERVATORY · 3D BODY",
-    title: "Meridian Observatory",
+      "Explore fascia, meridians, acupoints and anatomical layers on a 3D body. Compare muscles, referred pain and fascial lines across different knowledge systems. Research preview; content is not professionally verified.",
+    eyebrow: "FASCIA OBSERVATORY · 3D BODY",
+    title: "Fascia Observatory",
     tagline: "Explore meridians, acupoints and anatomical layers on a 3D body — start from a place on the body and compare muscles, referred pain and fascial lines.",
     lead: "You don't need to know the name of a muscle or a point first. Tap a region, narrow it down step by step, and the related meridians, muscles, fascial lines and referred-pain sketches appear on the same body.",
     preview: "Research preview · points and content are not professionally verified · viewer interface is in Chinese",
@@ -194,164 +193,5 @@ export default async function MeridianObservatoryPage({
   const { locale } = await params;
   if (!isLocale(locale)) notFound();
   const copy = COPY[locale];
-  const to = (path: string, external?: boolean) => (external ? path : localeHref(locale, path));
-
-  return (
-    <main className="min-h-screen bg-[#F9F7F2] text-stone-700">
-      <Header />
-
-      {/* 1. 首屏 */}
-      <section className="pt-28 pb-16 px-6 md:pb-24">
-        <div className="mx-auto grid max-w-6xl items-center gap-10 md:grid-cols-2 md:gap-16">
-          <div>
-            <p className="mb-5 text-xs tracking-[0.3em] text-[#9A7B4F]">{copy.eyebrow}</p>
-            <h1 className="mb-6 font-serif text-4xl font-light leading-tight text-[#4a5548] md:text-5xl">{copy.title}</h1>
-            <p className="mb-5 text-lg leading-relaxed text-[#4a5548] md:text-xl">{copy.tagline}</p>
-            <p className="mb-8 max-w-xl leading-loose text-stone-600">{copy.lead}</p>
-            <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
-              <Link href={to("/meridian-observatory/pro")} className="inline-flex min-h-12 items-center justify-center rounded-full bg-[#4a5548] px-8 text-sm font-medium text-white transition-colors hover:bg-[#3a4538]">
-                {copy.ctaPro}
-              </Link>
-              <Link href={to("/meridian-observatory-lite")} className="inline-flex min-h-12 items-center justify-center rounded-full border border-[#9A7B4F] px-8 text-sm font-medium text-[#9A7B4F] transition-colors hover:bg-[#9A7B4F] hover:text-white">
-                {copy.ctaLite}
-              </Link>
-            </div>
-            <p className="mt-4 text-xs leading-relaxed text-stone-500">{copy.proNote}</p>
-            <p className="mt-6 inline-block rounded-full border border-[#9A7B4F]/40 px-3 py-1 text-xs text-[#9A7B4F]">{copy.preview}</p>
-          </div>
-          <figure className="relative aspect-[16/10] overflow-hidden rounded-2xl border border-stone-200 bg-[#16181c] shadow-lg">
-            <Image src={`${IMG}/01-hero-meridian.jpg`} alt={copy.scenes[0].title} fill priority sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
-          </figure>
-        </div>
-      </section>
-
-      {/* 2. 東西方整合 */}
-      <section className="bg-white/60 px-6 py-20">
-        <div className="mx-auto max-w-5xl">
-          <h2 className="mb-6 text-center font-serif text-3xl font-light leading-snug text-[#4a5548] md:text-4xl">{copy.eastWestTitle}</h2>
-          <p className="mx-auto mb-12 max-w-3xl text-center leading-loose text-stone-600">{copy.eastWestBody}</p>
-          <div className="grid gap-6 md:grid-cols-2">
-            {[copy.east, copy.west].map((side) => (
-              <div key={side.label} className="rounded-2xl border border-stone-100 bg-white/80 p-8 backdrop-blur-sm">
-                <p className="mb-4 text-xs tracking-[0.25em] text-[#9A7B4F]">{side.label}</p>
-                <ul className="space-y-3 text-stone-600">
-                  {side.items.map((item) => (
-                    <li key={item} className="flex gap-3 leading-relaxed">
-                      <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#9A7B4F]" />
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-          <p className="mx-auto mt-8 max-w-3xl text-center text-sm leading-relaxed text-stone-500">{copy.eastWestNote}</p>
-        </div>
-      </section>
-
-      {/* 3. 從身體位置出發 */}
-      <section className="px-6 py-20">
-        <div className="mx-auto max-w-5xl">
-          <h2 className="mb-12 text-center font-serif text-3xl font-light text-[#4a5548] md:text-4xl">{copy.entryTitle}</h2>
-          <ol className="grid gap-6 md:grid-cols-3">
-            {copy.entrySteps.map((s) => (
-              <li key={s.step} className="rounded-2xl border border-stone-100 bg-white/80 p-7 backdrop-blur-sm transition-transform hover:-translate-y-1 hover:shadow-lg">
-                <p className="mb-3 text-xs tracking-[0.25em] text-[#9A7B4F]">{s.step}</p>
-                <h3 className="mb-3 font-serif text-xl text-[#4a5548]">{s.title}</h3>
-                <p className="leading-relaxed text-stone-600">{s.body}</p>
-              </li>
-            ))}
-          </ol>
-        </div>
-      </section>
-
-      {/* 4. 六種觀察方式（真實截圖） */}
-      <section className="bg-[#1b1d22] px-6 py-20 text-stone-200">
-        <div className="mx-auto max-w-6xl">
-          <h2 className="mb-12 text-center font-serif text-3xl font-light text-[#f2eee6] md:text-4xl">{copy.scenesTitle}</h2>
-          <div className="grid gap-10 md:grid-cols-2">
-            {copy.scenes.map((scene) => (
-              <article key={scene.title}>
-                <figure className="relative mb-5 aspect-[16/10] overflow-hidden rounded-2xl border border-white/10 bg-[#16181c]">
-                  <Image src={scene.image} alt={scene.title} fill loading="lazy" sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
-                </figure>
-                <h3 className="mb-2 font-serif text-2xl text-[#f2eee6]">{scene.title}</h3>
-                <p className="leading-relaxed text-stone-300">{scene.body}</p>
-                {scene.note && <p className="mt-2 text-sm leading-relaxed text-[#d2af6c]">{scene.note}</p>}
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* 5. 內容一覽 */}
-      <section className="px-6 py-20">
-        <div className="mx-auto max-w-5xl">
-          <h2 className="mb-12 text-center font-serif text-3xl font-light text-[#4a5548] md:text-4xl">{copy.contentTitle}</h2>
-          <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
-            {copy.content.map((c) => (
-              <div key={c.title} className="rounded-2xl border border-stone-100 bg-white/80 p-6 backdrop-blur-sm">
-                <h3 className="mb-2 font-serif text-lg text-[#4a5548]">{c.title}</h3>
-                <p className="text-sm leading-relaxed text-stone-600">{c.body}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* 6. 兩個版本 */}
-      <section className="bg-white/60 px-6 py-20">
-        <div className="mx-auto max-w-5xl">
-          <h2 className="mb-12 text-center font-serif text-3xl font-light text-[#4a5548] md:text-4xl">{copy.versionsTitle}</h2>
-          <div className="grid gap-6 md:grid-cols-2">
-            {copy.versions.map((v) => (
-              <div key={v.name} className="flex flex-col rounded-2xl border border-stone-100 bg-white/80 p-8 backdrop-blur-sm">
-                <h3 className="mb-5 font-serif text-2xl text-[#4a5548]">{v.name}</h3>
-                <ul className="mb-8 flex-1 space-y-3 text-stone-600">
-                  {v.points.map((p) => (
-                    <li key={p} className="flex gap-3 leading-relaxed">
-                      <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#9A7B4F]" />
-                      <span>{p}</span>
-                    </li>
-                  ))}
-                </ul>
-                <Link href={to(v.href)} className="inline-flex min-h-11 items-center justify-center self-start rounded-full bg-[#4a5548] px-7 text-sm font-medium text-white transition-colors hover:bg-[#3a4538]">
-                  {v.cta}
-                </Link>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* 7. 和 MUNI 一起用 */}
-      <section className="bg-[#f6eef1] px-6 py-20">
-        <div className="mx-auto max-w-3xl text-center">
-          <h2 className="mb-6 font-serif text-3xl font-light text-[#4a5548] md:text-4xl">{copy.togetherTitle}</h2>
-          <p className="mb-8 leading-loose text-stone-600">{copy.togetherBody}</p>
-          <div className="flex flex-col items-center justify-center gap-6 text-sm sm:flex-row">
-            {copy.togetherLinks.map((l) => (
-              <Link key={l.href} href={to(l.href, l.external)} className="inline-flex min-h-11 items-center border-b border-[#9b295a] text-[#9b295a] transition-colors hover:text-[#4a5548]">
-                {l.label} →
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* 8. 聲明 */}
-      <section className="px-6 py-16">
-        <div className="mx-auto max-w-3xl rounded-2xl border border-stone-200 bg-white/70 p-8">
-          <h2 className="mb-4 font-serif text-xl text-[#4a5548]">{copy.noticeTitle}</h2>
-          <ul className="space-y-3 text-sm leading-relaxed text-stone-600">
-            {copy.notice.map((n) => (
-              <li key={n}>{n}</li>
-            ))}
-          </ul>
-        </div>
-      </section>
-
-      <Footer />
-    </main>
-  );
+  return <ObservatoryLanding locale={locale} copy={copy} />;
 }
