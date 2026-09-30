@@ -1,0 +1,15 @@
+Built-in image_gen. Generated concept infographic using actual site card front/back, essential-oil bottle and patch packaging as references.
+
+Use case: infographic-diagram. Create a premium MUNI brand journey infographic, landscape 16:9, five equal left-to-right moments on one continuous warm ivory editorial canvas, NOT boxes or cards. Delicate realistic botanical illustration and beautiful soft photographic-like rendering, olive green typography, champagne gold connecting thread, blush pink details. Elegant and calm, ample whitespace, highly legible Traditional Chinese.
+References: Image 1 actual MUNI card back, preserve navy/gold MUNI ONE emblem. Image 2 actual botanical card front, preserve its white botanical design. Image 3 authoritative homepage essential-oil bottle reference: reproduce ONLY the central black MUNI ONE bottle accurately, tall wide black cap, black glass, MUNI white and gold wavy circular emblem inside square, gold ONE text. No burning incense, no sticks, no flames or smoke. Image 4 Fascia Point packaging/patch reference, faithfully show beige rounded square textured patch with circular fiber pattern, a small pink/white branded box nearby if space allows. Image 5 previous infographic is style reference only.
+Top headline exact Traditional Chinese: "回到自己，從一張牌開始。"
+Below headline small text exactly: "抽牌・聞香・貼敷・觀察・回到自己"
+Five equally prominent illustration moments connected left-to-right by one fine gold curved line with tiny gold direction arrows:
+01 hand selecting a botanical MUNI flower card from a gently fanned navy/gold deck, faithful to reference.
+02 EXACT black MUNI ONE essential oil bottle surrounded by rose and lavender accents, no smoke. Soft aroma suggested by abstract gold line only.
+03 natural shoulder/upper arm wearing the actual beige textured Fascia Point patch, small product box optional.
+04 refined detailed anatomical torso with ivory connective fibers, subdued blue muscles, a few gold meridian points; a conceptual observation image, not an abstract statue.
+05 relaxed clothed person with hand gently over heart, eyes softly closed, a small open journal in foreground, embodies returning to self and recording feelings, no miraculous transformation or medical cure claims.
+Beneath each scene, exact clear large labels: "抽牟尼牌卡" "聞牟尼香" "貼 Fascia Point" "看筋膜觀察室" "回到自己".
+Beneath those small exact subtitles: "覺察當下" "片刻停留" "感受身體" "理解結構" "把覺察帶回日常".
+Numbers 01 02 03 04 05 above subjects. Use all available width with balanced equal hierarchy; avoid tiny subjects. Maintain faithful product identities from references; do not invent bottle/dropper/logo. Crisp typography, anatomically plausible people, warm generous refined design. No other text or watermark.

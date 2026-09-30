@@ -1,0 +1,18 @@
+Built-in image_gen edit. Input: muni-five-step-journey.png. English text localization.
+
+Use case: text-localization. Edit this MUNI infographic into an ENGLISH version. Preserve all artwork, exact MUNI ONE essential oil bottle and label, navy/gold cards, Fascia Point patch/box, anatomy torso, person/journal, botanical details, arrows, warm ivory olive gold palette and five-stage composition. Change only the Chinese typography to English, with elegant legible serif typesetting and sufficient spacing. No Chinese characters anywhere in finished image. Preserve Latin product branding. Keep 01 02 03 04 05.
+Top headline exact: "Return to yourself. Begin with a card."
+Top subtitle exact: "Draw · Scent · Patch · Observe · Return"
+Five stage main labels left to right, split over two short lines if needed:
+"Draw a MUNI card"
+"Experience MUNI Scent"
+"Apply Fascia Point"
+"Explore Fascia Observatory"
+"Return to yourself"
+Five small stage subtitles exactly:
+"Notice how you feel"
+"Take a moment to pause"
+"Feel your body"
+"Understand its structure"
+"Bring awareness into daily life"
+Keep all English text within its column without overlap or clipping. Match original landscape dimensions. Do not alter products or invent new logos.

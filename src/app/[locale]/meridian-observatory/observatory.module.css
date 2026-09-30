@@ -25,3 +25,6 @@
 @media(max-width:760px){.stageImage[data-scene="3"] img,.stageImage[data-scene="4"] img{height:400px;min-height:400px;object-fit:cover;object-position:center}}
 
 .conceptLabel{position:absolute;z-index:2;top:22px;left:8%;right:8%;margin:0;color:#4a5548;text-align:center;font-size:15px;line-height:1.5;letter-spacing:.06em}.conceptLabel span{display:block;font-size:13px;letter-spacing:0;margin-top:5px}.heroVisual img{padding-top:66px}@media(max-width:640px){.conceptLabel{top:0;left:4%;right:4%;font-size:14px}.conceptLabel span{font-size:12px}.heroVisual img{padding-top:60px}}
+
+.ritualGraphic{margin:36px 0 24px}.ritualGraphic img{display:block;width:100%;height:auto}.ritualGraphic figcaption{margin-top:12px;font-size:12px;line-height:1.7;color:#747a6d}.together{background:#f9f7f2}.togetherLinks a{color:#4a5548;border-bottom-color:#a4865366}
+@media(max-width:640px){.ritualGraphic{margin:26px -3% 22px}.ritualGraphic figcaption{padding:0 3%}.togetherLinks{gap:14px 24px}}
