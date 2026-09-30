@@ -6,6 +6,7 @@ import Link from "next/link";
 import { motion, useReducedMotion } from "framer-motion";
 import { ArrowUpRight, ArrowDown, Plus } from "lucide-react";
 import { localeHref, type Locale } from "@/i18n/config";
+import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import type { Copy } from "./page";
 import s from "./observatory.module.css";
@@ -22,15 +23,7 @@ export default function ObservatoryLanding({ locale, copy }: { locale: Locale; c
   const reveal = animated ? { initial: { opacity: 0, y: 24 }, whileInView: { opacity: 1, y: 0 }, viewport: { once: true, amount: .1 }, transition: { duration: .7 } } : { initial: false as const };
   const heroReveal = animated ? { initial: { opacity: 0, y: 16 }, animate: { opacity: 1, y: 0 }, transition: { duration: .7 } } : { initial: false as const };
   return <main className={s.page} lang={zh ? "zh-TW" : "en"}>
-    <header className={s.header}>
-      <Link href={to("/")} className={s.brand} aria-label={zh ? "MUNI 首頁" : "MUNI home"}>MUNI<span>牟尼</span></Link>
-      <nav aria-label={zh ? "頁面導覽" : "Page navigation"}>
-        <a href="#explore">{zh ? "探索內容" : "Explore"}</a>
-        <a href="#approach">{zh ? "如何觀察" : "Approach"}</a>
-        <Link href={localeHref(zh ? "en" : "zh", "/meridian-observatory")} lang={zh ? "en" : "zh-TW"}>{zh ? "EN" : "中文"}</Link>
-      </nav>
-      <Link className={s.headerCta} href={to("/meridian-observatory/pro")}>{zh ? "開啟觀察室" : "Open the Observatory"}<ArrowUpRight size={16}/></Link>
-    </header>
+    <Header />
 
     <section className={s.hero}>
       <div className={s.heroVisual} aria-hidden="true"><Image src={copy.scenes[5].image} alt="" fill priority sizes="100vw" /></div>
@@ -64,7 +57,7 @@ export default function ObservatoryLanding({ locale, copy }: { locale: Locale; c
     <section className={s.together}><motion.div {...reveal}><p className={s.eyebrow}>04 — WITH MUNI</p><h2>{copy.togetherTitle}</h2><p>{copy.togetherBody}</p><div className={s.togetherLinks}>{copy.togetherLinks.map(l => <Link key={l.href} className={s.textLink} href={l.external ? l.href : to(l.href)}>{l.label}<ArrowUpRight size={16}/></Link>)}</div></motion.div></section>
 
     <section id="start" className={s.start}><p className={s.eyebrow}>YOUR OBSERVATION STARTS HERE</p><h2>{zh ? "現在，從身體開始。" : "Begin with the body."}</h2><div className={s.versions}>{copy.versions.map((v,i) => <article key={v.name}><span>{i === 0 ? "LITE / FIRST EXPLORATION" : "PRO / DEEPER OBSERVATION"}</span><h3>{v.name}</h3><ul>{v.points.map(p => <li key={p}>{p}</li>)}</ul><Link className={i === 1 ? s.primary : s.outline} href={to(v.href)}>{v.cta}<ArrowUpRight size={18}/></Link></article>)}</div><p className={s.deviceNote}>{copy.proNote}</p></section>
-    <footer className={s.footer}><div><Link className={s.brand} href={to("/")}>MUNI<span>牟尼</span></Link><p>{copy.preview}</p><ul className={s.notice} aria-label={copy.noticeTitle}>{copy.notice.map(n => <li key={n}>{n}</li>)}</ul></div><div><Link href={to("/")}>{zh ? "返回 MUNI" : "Back to MUNI"} ↗</Link><Link href={to("/fascia-point")}>Fascia Point ↗</Link><span>© {new Date().getFullYear()} MUNI</span></div></footer>
+    <section className={s.researchNote} aria-labelledby="research-note-title"><div><p className={s.eyebrow}>RESEARCH PREVIEW</p><h2 id="research-note-title">{copy.noticeTitle}</h2><p>{copy.preview}</p><ul className={s.notice}>{copy.notice.map(n => <li key={n}>{n}</li>)}</ul></div><div className={s.researchLinks}><Link href={to("/")}>{zh ? "返回 MUNI" : "Back to MUNI"}<ArrowUpRight size={16}/></Link><Link href={to("/fascia-point")}>Fascia Point<ArrowUpRight size={16}/></Link></div></section>
     <Footer />
   </main>;
 }

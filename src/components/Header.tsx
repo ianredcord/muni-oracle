@@ -130,7 +130,7 @@ export function Header() {
               href="https://ai.munione.co"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center rounded-full bg-[#4a5548] px-3 py-2 text-xs font-medium text-white transition-colors hover:bg-[#3a4538]"
+              className="hidden items-center rounded-full bg-[#4a5548] px-3 py-2 text-xs font-medium text-white transition-colors hover:bg-[#3a4538] sm:inline-flex"
             >
               {dict.nav.healingConsultantShort}
             </a>
