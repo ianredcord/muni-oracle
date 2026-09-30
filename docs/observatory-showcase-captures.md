@@ -8,3 +8,8 @@ Real existing male-model renders; interface excluded.
 - FM: 218 records, 422 existing male placement markers and 10 category connections. Camera [5,-0.2,-29]. Draft placements/connections unverified.
 
 Bilingual copy retains limitations. Video has controls, muted inline playback, poster and no autoplay under reduced motion.
+
+## Full-frame trains and trigger captures
+- Superficial Back Line: rear oblique camera [6,-0.2,29], target [0,-0.2,0]. Original muscle/tendon layers, bone opacity 0.7; labels off.
+- Infraspinatus: camera [-8,4.3,17], target [0,3.7,0]. Existing candidate points and referred-pain atlas; meridians/rulers hidden. Markers use x-ray visibility.
+- Both captures: 1600 x 913, same canvas proportions as the anatomy showcase. Preliminary registration limitations retained.
