@@ -1,0 +1,51 @@
+{
+ "N": 456456,
+ "pair": {
+  "same": 219792,
+  "neutral": 231040,
+  "hostile": 231040,
+  "friendly": 231040
+ },
+ "side": {
+  "('same', 'neutral')": 28158,
+  "('same', 'hostile')": 28158,
+  "('same', 'friendly')": 28158,
+  "('same', 'same')": 25422,
+  "('neutral', 'neutral')": 28158,
+  "('neutral', 'friendly')": 29602,
+  "('neutral', 'hostile')": 29602,
+  "('neutral', 'same')": 28158,
+  "('hostile', 'hostile')": 28158,
+  "('hostile', 'friendly')": 29602,
+  "('hostile', 'neutral')": 29602,
+  "('hostile', 'same')": 28158,
+  "('friendly', 'friendly')": 28158,
+  "('friendly', 'hostile')": 29602,
+  "('friendly', 'neutral')": 29602,
+  "('friendly', 'same')": 28158
+ },
+ "arc": {
+  "advance": 69520,
+  "rupture": 32584,
+  "resolve": 59802,
+  "parallel": 247126,
+  "repeat": 47424
+ },
+ "majors": {
+  "3": 9240,
+  "2": 77616,
+  "1": 203280,
+  "0": 166320
+ },
+ "courts": {
+  "0": 226920,
+  "1": 181536,
+  "2": 44640,
+  "3": 3360
+ },
+ "reson": {
+  "0": 439128,
+  "1": 17328
+ },
+ "states": 520
+}

@@ -1,0 +1,2228 @@
+[
+ {
+  "template_id": "ARC_RUPTURE_01",
+  "slot": "arc",
+  "trigger": {
+   "arc": "rupture"
+  },
+  "exclude": {},
+  "text": {
+   "zh": "來處與去向的能量正好相反——這不是矛盾，是此刻這張大牌正站在轉折點上。如果你允許自己先停在中間、不急著選邊，拉扯本身就會變成方向。"
+  },
+  "register": [
+   "收"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "permissive",
+   "turning"
+  ],
+  "length_chars": {
+   "zh": 65
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": ""
+ },
+ {
+  "template_id": "ARC_RESOLVE_01",
+  "slot": "arc",
+  "trigger": {
+   "arc": "resolve"
+  },
+  "exclude": {},
+  "text": {
+   "zh": "這條線正在收攏。它不是結局，是一種允許：如果你讓前兩張牌的張力被看見，去向這張牌的安穩就有地方落下。"
+  },
+  "register": [
+   "開"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "permissive",
+   "settling"
+  ],
+  "length_chars": {
+   "zh": 50
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": ""
+ },
+ {
+  "template_id": "ARC_RESOLVE_02",
+  "slot": "arc",
+  "trigger": {
+   "arc": "resolve"
+  },
+  "exclude": {},
+  "text": {
+   "zh": "三張牌從鬆動走到了整合——不是說事情已經解決，而是說，如果你願意，現在有一個可以放下的位置。"
+  },
+  "register": [
+   "開"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "permissive",
+   "settling"
+  ],
+  "length_chars": {
+   "zh": 46
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": ""
+ },
+ {
+  "template_id": "ARC_REPEAT_01",
+  "slot": "arc",
+  "trigger": {
+   "arc": "repeat"
+  },
+  "exclude": {},
+  "text": {
+   "zh": "來處和去向出現了同一個模式。這不是預言，是提醒：此刻正是改寫的位置。如果這次你允許自己用不同的方式回應，模式就有機會鬆開。"
+  },
+  "register": [
+   "持"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "permissive",
+   "reframe"
+  ],
+  "length_chars": {
+   "zh": 61
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": ""
+ },
+ {
+  "template_id": "ARC_REPEAT_02",
+  "slot": "arc",
+  "trigger": {
+   "arc": "repeat"
+  },
+  "exclude": {},
+  "text": {
+   "zh": "同一種能量在起點與方向上各出現一次——不是命運在重播，而是這個主題還想被你好好看一次。如果這次用不同的方式回應，去向就會不一樣。"
+  },
+  "register": [
+   "持"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "permissive",
+   "reframe"
+  ],
+  "length_chars": {
+   "zh": 64
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": ""
+ },
+ {
+  "template_id": "ARC_ADVANCE_01",
+  "slot": "arc",
+  "trigger": {
+   "arc": "advance"
+  },
+  "exclude": {},
+  "text": {
+   "zh": "能量在往前走。這不代表一定變好，而是說，如果你順著此刻這張牌的允許往前，路是通的。"
+  },
+  "register": [
+   "開"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "permissive",
+   "forward"
+  ],
+  "length_chars": {
+   "zh": 41
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": ""
+ },
+ {
+  "template_id": "ARC_ADVANCE_02",
+  "slot": "arc",
+  "trigger": {
+   "arc": "advance"
+  },
+  "exclude": {},
+  "text": {
+   "zh": "從來處到去向，位階在往上走——不是你被推著前進，而是你已經走在一條有坡度的路上。如果慢一點，也不會失去這個方向。"
+  },
+  "register": [
+   "開"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "permissive",
+   "forward"
+  ],
+  "length_chars": {
+   "zh": 56
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": ""
+ },
+ {
+  "template_id": "ARC_ADVANCE_03",
+  "slot": "arc",
+  "trigger": {
+   "arc": "advance"
+  },
+  "exclude": {},
+  "text": {
+   "zh": "三張牌排成一條向前的線。它不是保證，是傾向：如果你允許此刻的鬆動發生，去向這張牌的能量就有空間長出來。"
+  },
+  "register": [
+   "開"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "permissive",
+   "forward"
+  ],
+  "length_chars": {
+   "zh": 51
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": ""
+ },
+ {
+  "template_id": "ARC_SETTLE_01",
+  "slot": "arc",
+  "trigger": {
+   "arc": "settle"
+  },
+  "exclude": {},
+  "text": {
+   "zh": "這不是退步——是回到更根本的地方，把地基重新踩實。如果你允許自己放慢，去向這張牌會告訴你什麼才是你真正需要的。"
+  },
+  "register": [
+   "收"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "permissive",
+   "grounding"
+  ],
+  "length_chars": {
+   "zh": 55
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": ""
+ },
+ {
+  "template_id": "ARC_SETTLE_02",
+  "slot": "arc",
+  "trigger": {
+   "arc": "settle"
+  },
+  "exclude": {},
+  "text": {
+   "zh": "從來處到去向，能量在往內收。不是失去什麼，而是把向外的力氣收回來，交給更基本的事。如果你願意，這是一段可以休息的路。"
+  },
+  "register": [
+   "收"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "permissive",
+   "grounding"
+  ],
+  "length_chars": {
+   "zh": 58
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": ""
+ },
+ {
+  "template_id": "ARC_SETTLE_03",
+  "slot": "arc",
+  "trigger": {
+   "arc": "settle"
+  },
+  "exclude": {},
+  "text": {
+   "zh": "三張牌的位階在往下走，但塔羅裡的「下」常常是「深」。如果你允許自己不再往上撐，去向這張牌說的是一種更踏實的輕。"
+  },
+  "register": [
+   "收"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "permissive",
+   "grounding"
+  ],
+  "length_chars": {
+   "zh": 55
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": ""
+ },
+ {
+  "template_id": "ARC_HOLD_01",
+  "slot": "arc",
+  "trigger": {
+   "arc": "hold"
+  },
+  "exclude": {},
+  "text": {
+   "zh": "來處與去向站在同一個高度——重點不在往前或往後，而在此刻這張牌怎麼轉身。如果你允許自己在原地換個方向，風景就會不一樣。"
+  },
+  "register": [
+   "持"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "permissive",
+   "centering"
+  ],
+  "length_chars": {
+   "zh": 59
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": ""
+ },
+ {
+  "template_id": "ARC_HOLD_02",
+  "slot": "arc",
+  "trigger": {
+   "arc": "hold"
+  },
+  "exclude": {},
+  "text": {
+   "zh": "三張牌沒有明顯的坡度。這不是停滯，而是一個平台：如果你允許自己在這裡站穩，方向會從此刻這張牌慢慢顯出來。"
+  },
+  "register": [
+   "持"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "permissive",
+   "centering"
+  ],
+  "length_chars": {
+   "zh": 52
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": ""
+ },
+ {
+  "template_id": "ARC_HOLD_03",
+  "slot": "arc",
+  "trigger": {
+   "arc": "hold"
+  },
+  "exclude": {},
+  "text": {
+   "zh": "起點與方向的分量相當，所以今天的訊息很集中：如果只做一件事，就看此刻這張牌想讓你允許什麼。"
+  },
+  "register": [
+   "持"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "permissive",
+   "centering"
+  ],
+  "length_chars": {
+   "zh": 45
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": ""
+ },
+ {
+  "template_id": "REL12_SAME_01",
+  "slot": "rel_12",
+  "trigger": {
+   "rel_12": "same"
+  },
+  "exclude": {
+   "flags": [
+    "both_sides_hostile"
+   ]
+  },
+  "text": {
+   "zh": "——來處與此刻是同一種元素，過去的模式把此刻的課題放大了：不是變重，是變清楚。"
+  },
+  "register": [
+   "收",
+   "持",
+   "開"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "connective",
+   "origin_to_now"
+  ],
+  "length_chars": {
+   "zh": 39
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": ""
+ },
+ {
+  "template_id": "REL12_SAME_02",
+  "slot": "rel_12",
+  "trigger": {
+   "rel_12": "same"
+  },
+  "exclude": {
+   "flags": [
+    "both_sides_hostile"
+   ]
+  },
+  "text": {
+   "zh": "而這兩張牌同屬一個元素：你一路帶來的，正是此刻正在面對的，同一股能量，只是換了一個樣子。"
+  },
+  "register": [
+   "收",
+   "持",
+   "開"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "connective",
+   "origin_to_now"
+  ],
+  "length_chars": {
+   "zh": 44
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": ""
+ },
+ {
+  "template_id": "REL12_SAME_03",
+  "slot": "rel_12",
+  "trigger": {
+   "rel_12": "same"
+  },
+  "exclude": {
+   "flags": [
+    "both_sides_hostile"
+   ]
+  },
+  "text": {
+   "zh": "——同元素相鄰，來處像一面放大鏡，讓此刻這張牌的訊息比平常更明顯。"
+  },
+  "register": [
+   "收",
+   "持",
+   "開"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "connective",
+   "origin_to_now"
+  ],
+  "length_chars": {
+   "zh": 33
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": ""
+ },
+ {
+  "template_id": "REL12_FRIENDLY_01",
+  "slot": "rel_12",
+  "trigger": {
+   "rel_12": "friendly"
+  },
+  "exclude": {
+   "flags": [
+    "both_sides_hostile"
+   ]
+  },
+  "text": {
+   "zh": "——來處的{elem_1}與此刻的{elem_2}是友好的，過去累積的東西，正在支撐你此刻的鬆動。"
+  },
+  "register": [
+   "收",
+   "持",
+   "開"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "connective",
+   "origin_to_now"
+  ],
+  "length_chars": {
+   "zh": 49
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": ""
+ },
+ {
+  "template_id": "REL12_FRIENDLY_02",
+  "slot": "rel_12",
+  "trigger": {
+   "rel_12": "friendly"
+  },
+  "exclude": {
+   "flags": [
+    "both_sides_hostile"
+   ]
+  },
+  "text": {
+   "zh": "而這兩股能量彼此相助：你走過的路沒有白走，它正好墊在此刻這張牌底下。"
+  },
+  "register": [
+   "收",
+   "持",
+   "開"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "connective",
+   "origin_to_now"
+  ],
+  "length_chars": {
+   "zh": 34
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": ""
+ },
+ {
+  "template_id": "REL12_FRIENDLY_03",
+  "slot": "rel_12",
+  "trigger": {
+   "rel_12": "friendly"
+  },
+  "exclude": {
+   "flags": [
+    "both_sides_hostile"
+   ]
+  },
+  "text": {
+   "zh": "——來處與此刻互相支持，所以此刻的允許不是從零開始，而是有東西可以靠。"
+  },
+  "register": [
+   "收",
+   "持",
+   "開"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "connective",
+   "origin_to_now"
+  ],
+  "length_chars": {
+   "zh": 35
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": ""
+ },
+ {
+  "template_id": "REL12_HOSTILE_01",
+  "slot": "rel_12",
+  "trigger": {
+   "rel_12": "hostile"
+  },
+  "exclude": {
+   "flags": [
+    "both_sides_hostile"
+   ]
+  },
+  "text": {
+   "zh": "——來處的{elem_1}與此刻的{elem_2}並不相容，過去的方式在此刻會有些使不上力。這不是錯，是提示要換一種姿勢。"
+  },
+  "register": [
+   "收",
+   "持",
+   "開"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "connective",
+   "origin_to_now"
+  ],
+  "length_chars": {
+   "zh": 61
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": ""
+ },
+ {
+  "template_id": "REL12_HOSTILE_02",
+  "slot": "rel_12",
+  "trigger": {
+   "rel_12": "hostile"
+  },
+  "exclude": {
+   "flags": [
+    "both_sides_hostile"
+   ]
+  },
+  "text": {
+   "zh": "而這兩張牌之間有一股拉扯：一路帶來的習慣，和此刻需要的，方向不太一樣。看見這個差異，本身就是鬆動的開始。"
+  },
+  "register": [
+   "收",
+   "持",
+   "開"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "connective",
+   "origin_to_now"
+  ],
+  "length_chars": {
+   "zh": 52
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": ""
+ },
+ {
+  "template_id": "REL12_HOSTILE_03",
+  "slot": "rel_12",
+  "trigger": {
+   "rel_12": "hostile"
+  },
+  "exclude": {
+   "flags": [
+    "both_sides_hostile"
+   ]
+  },
+  "text": {
+   "zh": "——來處與此刻的元素相斥，所以此刻這張牌的允許句讀起來可能有點不習慣，那是正常的。"
+  },
+  "register": [
+   "收",
+   "持",
+   "開"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "connective",
+   "origin_to_now"
+  ],
+  "length_chars": {
+   "zh": 41
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": ""
+ },
+ {
+  "template_id": "REL12_NEUTRAL_01",
+  "slot": "rel_12",
+  "trigger": {
+   "rel_12": "neutral"
+  },
+  "exclude": {
+   "flags": [
+    "both_sides_hostile"
+   ]
+  },
+  "text": {
+   "zh": "——來處與此刻的元素互不干涉：過去是過去，此刻是此刻，可以分開來看，不用急著連成因果。"
+  },
+  "register": [
+   "收",
+   "持",
+   "開"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "connective",
+   "origin_to_now"
+  ],
+  "length_chars": {
+   "zh": 43
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": ""
+ },
+ {
+  "template_id": "REL12_NEUTRAL_02",
+  "slot": "rel_12",
+  "trigger": {
+   "rel_12": "neutral"
+  },
+  "exclude": {
+   "flags": [
+    "both_sides_hostile"
+   ]
+  },
+  "text": {
+   "zh": "而這兩張牌各自成立：來處說的是背景，此刻說的是現場，兩者並存就好。"
+  },
+  "register": [
+   "收",
+   "持",
+   "開"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "connective",
+   "origin_to_now"
+  ],
+  "length_chars": {
+   "zh": 33
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": ""
+ },
+ {
+  "template_id": "REL12_NEUTRAL_03",
+  "slot": "rel_12",
+  "trigger": {
+   "rel_12": "neutral"
+  },
+  "exclude": {
+   "flags": [
+    "both_sides_hostile"
+   ]
+  },
+  "text": {
+   "zh": "——中性的相鄰，表示來處沒有在推、也沒有在拉，此刻這張牌可以用自己的聲音說話。"
+  },
+  "register": [
+   "收",
+   "持",
+   "開"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "connective",
+   "origin_to_now"
+  ],
+  "length_chars": {
+   "zh": 39
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": ""
+ },
+ {
+  "template_id": "REL23_SAME_01",
+  "slot": "rel_23",
+  "trigger": {
+   "rel_23": "same"
+  },
+  "exclude": {
+   "flags": [
+    "both_sides_hostile"
+   ]
+  },
+  "text": {
+   "zh": "——此刻與去向同屬一個元素：如果你允許此刻的鬆動，去向會是同一股能量更成熟的樣子。"
+  },
+  "register": [
+   "收",
+   "持",
+   "開"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "connective",
+   "now_to_direction"
+  ],
+  "length_chars": {
+   "zh": 41
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": ""
+ },
+ {
+  "template_id": "REL23_SAME_02",
+  "slot": "rel_23",
+  "trigger": {
+   "rel_23": "same"
+  },
+  "exclude": {
+   "flags": [
+    "both_sides_hostile"
+   ]
+  },
+  "text": {
+   "zh": "而這兩張牌是同一種元素：方向不在別處，就是此刻這件事繼續往深處走。"
+  },
+  "register": [
+   "收",
+   "持",
+   "開"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "connective",
+   "now_to_direction"
+  ],
+  "length_chars": {
+   "zh": 33
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": ""
+ },
+ {
+  "template_id": "REL23_SAME_03",
+  "slot": "rel_23",
+  "trigger": {
+   "rel_23": "same"
+  },
+  "exclude": {
+   "flags": [
+    "both_sides_hostile"
+   ]
+  },
+  "text": {
+   "zh": "——同元素相連，去向像是此刻的延長線，不需要轉彎，只需要繼續。"
+  },
+  "register": [
+   "收",
+   "持",
+   "開"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "connective",
+   "now_to_direction"
+  ],
+  "length_chars": {
+   "zh": 31
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": ""
+ },
+ {
+  "template_id": "REL23_FRIENDLY_01",
+  "slot": "rel_23",
+  "trigger": {
+   "rel_23": "friendly"
+  },
+  "exclude": {
+   "flags": [
+    "both_sides_hostile"
+   ]
+  },
+  "text": {
+   "zh": "——此刻的{elem_2}與去向的{elem_3}是友好的：如果你允許現在的鬆動，前面有東西會接住你。"
+  },
+  "register": [
+   "收",
+   "持",
+   "開"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "connective",
+   "now_to_direction"
+  ],
+  "length_chars": {
+   "zh": 51
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": ""
+ },
+ {
+  "template_id": "REL23_FRIENDLY_02",
+  "slot": "rel_23",
+  "trigger": {
+   "rel_23": "friendly"
+  },
+  "exclude": {
+   "flags": [
+    "both_sides_hostile"
+   ]
+  },
+  "text": {
+   "zh": "而這兩股能量順著走：此刻做的允許，會自然被去向這張牌延續下去。"
+  },
+  "register": [
+   "收",
+   "持",
+   "開"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "connective",
+   "now_to_direction"
+  ],
+  "length_chars": {
+   "zh": 31
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": ""
+ },
+ {
+  "template_id": "REL23_FRIENDLY_03",
+  "slot": "rel_23",
+  "trigger": {
+   "rel_23": "friendly"
+  },
+  "exclude": {
+   "flags": [
+    "both_sides_hostile"
+   ]
+  },
+  "text": {
+   "zh": "——此刻與去向互相支持，所以方向不需要用力，只需要不擋住它。"
+  },
+  "register": [
+   "收",
+   "持",
+   "開"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "connective",
+   "now_to_direction"
+  ],
+  "length_chars": {
+   "zh": 30
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": ""
+ },
+ {
+  "template_id": "REL23_HOSTILE_01",
+  "slot": "rel_23",
+  "trigger": {
+   "rel_23": "hostile"
+  },
+  "exclude": {
+   "flags": [
+    "both_sides_hostile"
+   ]
+  },
+  "text": {
+   "zh": "——此刻的{elem_2}與去向的{elem_3}並不相容，方向和現狀之間有一道門檻。如果你允許自己慢慢跨，它不會是牆。"
+  },
+  "register": [
+   "收",
+   "持",
+   "開"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "connective",
+   "now_to_direction"
+  ],
+  "length_chars": {
+   "zh": 60
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": ""
+ },
+ {
+  "template_id": "REL23_HOSTILE_02",
+  "slot": "rel_23",
+  "trigger": {
+   "rel_23": "hostile"
+  },
+  "exclude": {
+   "flags": [
+    "both_sides_hostile"
+   ]
+  },
+  "text": {
+   "zh": "而這兩張牌之間有一個轉折：去向需要的，和此刻習慣的不一樣，這正是「如果」這兩個字的位置。"
+  },
+  "register": [
+   "收",
+   "持",
+   "開"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "connective",
+   "now_to_direction"
+  ],
+  "length_chars": {
+   "zh": 44
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": ""
+ },
+ {
+  "template_id": "REL23_HOSTILE_03",
+  "slot": "rel_23",
+  "trigger": {
+   "rel_23": "hostile"
+  },
+  "exclude": {
+   "flags": [
+    "both_sides_hostile"
+   ]
+  },
+  "text": {
+   "zh": "——此刻與去向的元素相斥，所以去向這張牌說的是「如果你換個姿勢」會發生的事，而不是順其自然的結果。"
+  },
+  "register": [
+   "收",
+   "持",
+   "開"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "connective",
+   "now_to_direction"
+  ],
+  "length_chars": {
+   "zh": 49
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": ""
+ },
+ {
+  "template_id": "REL23_NEUTRAL_01",
+  "slot": "rel_23",
+  "trigger": {
+   "rel_23": "neutral"
+  },
+  "exclude": {
+   "flags": [
+    "both_sides_hostile"
+   ]
+  },
+  "text": {
+   "zh": "——此刻與去向互不干涉：方向還沒有被現狀決定，這是一個開放的位置。"
+  },
+  "register": [
+   "收",
+   "持",
+   "開"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "connective",
+   "now_to_direction"
+  ],
+  "length_chars": {
+   "zh": 33
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": ""
+ },
+ {
+  "template_id": "REL23_NEUTRAL_02",
+  "slot": "rel_23",
+  "trigger": {
+   "rel_23": "neutral"
+  },
+  "exclude": {
+   "flags": [
+    "both_sides_hostile"
+   ]
+  },
+  "text": {
+   "zh": "而這兩張牌各自獨立：此刻說的是現場，去向說的是可能，中間留著空間給你。"
+  },
+  "register": [
+   "收",
+   "持",
+   "開"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "connective",
+   "now_to_direction"
+  ],
+  "length_chars": {
+   "zh": 35
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": ""
+ },
+ {
+  "template_id": "REL23_NEUTRAL_03",
+  "slot": "rel_23",
+  "trigger": {
+   "rel_23": "neutral"
+  },
+  "exclude": {
+   "flags": [
+    "both_sides_hostile"
+   ]
+  },
+  "text": {
+   "zh": "——中性的相鄰，表示去向這張牌不是此刻的必然延伸；它是一個邀請，不是一個結論。"
+  },
+  "register": [
+   "收",
+   "持",
+   "開"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "connective",
+   "now_to_direction"
+  ],
+  "length_chars": {
+   "zh": 39
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": ""
+ },
+ {
+  "template_id": "REL_BOTH_HOSTILE_01",
+  "slot": "rel_both",
+  "trigger": {
+   "flags": [
+    "both_sides_hostile"
+   ]
+  },
+  "exclude": {},
+  "text": {
+   "zh": "——來處與去向都和此刻的元素相斥，兩側的力量互相抵消了。今天不用管前後，只需要專注在此刻這一張。"
+  },
+  "register": [
+   "收",
+   "持",
+   "開"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "connective",
+   "focus_now"
+  ],
+  "length_chars": {
+   "zh": 48
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": "命中時略過 rel_12 與 rel_23，置於 rel_12 槽位"
+ },
+ {
+  "template_id": "REL_BOTH_HOSTILE_02",
+  "slot": "rel_both",
+  "trigger": {
+   "flags": [
+    "both_sides_hostile"
+   ]
+  },
+  "exclude": {},
+  "text": {
+   "zh": "而此刻這張牌被前後兩股不相容的能量夾著——不是被困住，是被框出來了。今天只有一面鏡子需要看，就是此刻。"
+  },
+  "register": [
+   "收",
+   "持",
+   "開"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "connective",
+   "focus_now"
+  ],
+  "length_chars": {
+   "zh": 51
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": "命中時略過 rel_12 與 rel_23，置於 rel_12 槽位"
+ },
+ {
+  "template_id": "STRUCT_M0_01",
+  "slot": "structure",
+  "trigger": {
+   "major_count": 0
+  },
+  "exclude": {
+   "mode": [
+    "C"
+   ]
+  },
+  "text": {
+   "zh": "今天三張牌都來自日常層——課題很具體，也很可調整。不是小事，而是正好在你手搆得到的地方。"
+  },
+  "register": [
+   "收",
+   "持",
+   "開"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "framing",
+   "weight"
+  ],
+  "length_chars": {
+   "zh": 44
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": "模式 C 固定 1 張大秘儀，結構槽由 mirror_synthesis 取代"
+ },
+ {
+  "template_id": "STRUCT_M0_02",
+  "slot": "structure",
+  "trigger": {
+   "major_count": 0
+  },
+  "exclude": {
+   "mode": [
+    "C"
+   ]
+  },
+  "text": {
+   "zh": "沒有大秘儀出現。這表示今天的訊息不在人生命題，而在生活現場：一個習慣、一段對話、一個下午。"
+  },
+  "register": [
+   "收",
+   "持",
+   "開"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "framing",
+   "weight"
+  ],
+  "length_chars": {
+   "zh": 45
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": "模式 C 固定 1 張大秘儀，結構槽由 mirror_synthesis 取代"
+ },
+ {
+  "template_id": "STRUCT_M0_03",
+  "slot": "structure",
+  "trigger": {
+   "major_count": 0
+  },
+  "exclude": {
+   "mode": [
+    "C"
+   ]
+  },
+  "text": {
+   "zh": "三張都是小秘儀——像是今天只需要處理眼前的事，不用急著給它更大的意義。"
+  },
+  "register": [
+   "收",
+   "持",
+   "開"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "framing",
+   "weight"
+  ],
+  "length_chars": {
+   "zh": 35
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": "模式 C 固定 1 張大秘儀，結構槽由 mirror_synthesis 取代"
+ },
+ {
+  "template_id": "STRUCT_M1_01",
+  "slot": "structure",
+  "trigger": {
+   "major_count": 1
+  },
+  "exclude": {
+   "mode": [
+    "C"
+   ]
+  },
+  "text": {
+   "zh": "三張牌裡有一張大秘儀：底下有一條深層的河流，表面的事件只是它的浪花。"
+  },
+  "register": [
+   "收",
+   "持",
+   "開"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "framing",
+   "weight"
+  ],
+  "length_chars": {
+   "zh": 34
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": "模式 C 固定 1 張大秘儀，結構槽由 mirror_synthesis 取代"
+ },
+ {
+  "template_id": "STRUCT_M1_02",
+  "slot": "structure",
+  "trigger": {
+   "major_count": 1
+  },
+  "exclude": {
+   "mode": [
+    "C"
+   ]
+  },
+  "text": {
+   "zh": "一張原型牌、兩張日常牌——今天的具體事件背後，有一個比較大的主題在安靜地推動。"
+  },
+  "register": [
+   "收",
+   "持",
+   "開"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "framing",
+   "weight"
+  ],
+  "length_chars": {
+   "zh": 39
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": "模式 C 固定 1 張大秘儀，結構槽由 mirror_synthesis 取代"
+ },
+ {
+  "template_id": "STRUCT_M1_03",
+  "slot": "structure",
+  "trigger": {
+   "major_count": 1
+  },
+  "exclude": {
+   "mode": [
+    "C"
+   ]
+  },
+  "text": {
+   "zh": "有一張大秘儀出現，像在日常的對話裡，忽然有人說了一句比較深的話。先聽聽它說什麼。"
+  },
+  "register": [
+   "收",
+   "持",
+   "開"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "framing",
+   "weight"
+  ],
+  "length_chars": {
+   "zh": 40
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": "模式 C 固定 1 張大秘儀，結構槽由 mirror_synthesis 取代"
+ },
+ {
+  "template_id": "STRUCT_M2_01",
+  "slot": "structure",
+  "trigger": {
+   "major_count": 2
+  },
+  "exclude": {
+   "mode": [
+    "C"
+   ]
+  },
+  "text": {
+   "zh": "兩張大秘儀——這段時期有分量。花精可以多陪自己幾天，不必在今天就把一切想清楚。"
+  },
+  "register": [
+   "收",
+   "持",
+   "開"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "framing",
+   "weight"
+  ],
+  "length_chars": {
+   "zh": 39
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": "模式 C 固定 1 張大秘儀，結構槽由 mirror_synthesis 取代"
+ },
+ {
+  "template_id": "STRUCT_M2_02",
+  "slot": "structure",
+  "trigger": {
+   "major_count": 2
+  },
+  "exclude": {
+   "mode": [
+    "C"
+   ]
+  },
+  "text": {
+   "zh": "三張牌裡有兩張是原型層：這不只是一件事，是一段正在成形的篇幅。慢一點讀。"
+  },
+  "register": [
+   "收",
+   "持",
+   "開"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "framing",
+   "weight"
+  ],
+  "length_chars": {
+   "zh": 36
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": "模式 C 固定 1 張大秘儀，結構槽由 mirror_synthesis 取代"
+ },
+ {
+  "template_id": "STRUCT_M3_01",
+  "slot": "structure",
+  "trigger": {
+   "major_count": 3
+  },
+  "exclude": {
+   "mode": [
+    "C"
+   ]
+  },
+  "text": {
+   "zh": "三張都是大秘儀，這很少見——今天看的不是一週的事，而是一個人生章節的輪廓。它不是判決，是地圖。"
+  },
+  "register": [
+   "收",
+   "持",
+   "開"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "framing",
+   "weight"
+  ],
+  "length_chars": {
+   "zh": 47
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": "模式 C 固定 1 張大秘儀，結構槽由 mirror_synthesis 取代"
+ },
+ {
+  "template_id": "REL12_SAMESUIT_01",
+  "slot": "rel_12",
+  "trigger": {
+   "rel_12": "same",
+   "same_suit_12": true
+  },
+  "exclude": {
+   "flags": [
+    "both_sides_hostile"
+   ]
+  },
+  "text": {
+   "zh": "——來處與此刻是同一個花色：同一個生活領域在重複出現，不是卡住，是這個領域還有話要說。"
+  },
+  "register": [
+   "收",
+   "持",
+   "開"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "connective",
+   "origin_to_now",
+   "specific"
+  ],
+  "length_chars": {
+   "zh": 43
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": "特異性高於元素類模板，命中時優先"
+ },
+ {
+  "template_id": "REL23_SAMESUIT_01",
+  "slot": "rel_23",
+  "trigger": {
+   "rel_23": "same",
+   "same_suit_23": true
+  },
+  "exclude": {
+   "flags": [
+    "both_sides_hostile"
+   ]
+  },
+  "text": {
+   "zh": "——此刻與去向是同一個花色：方向就在同一個生活領域裡，如果你允許此刻的鬆動，不需要換場地就能走過去。"
+  },
+  "register": [
+   "收",
+   "持",
+   "開"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "connective",
+   "now_to_direction",
+   "specific"
+  ],
+  "length_chars": {
+   "zh": 50
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": "特異性高於元素類模板，命中時優先"
+ },
+ {
+  "template_id": "REL12_MAJOR_PIP_01",
+  "slot": "rel_12",
+  "trigger": {
+   "kinds_12": "major-pip"
+  },
+  "exclude": {
+   "flags": [
+    "both_sides_hostile"
+   ]
+  },
+  "text": {
+   "zh": "——來處是一張大牌，此刻是一張日常牌：深層的主題已經在那裡很久了，今天它以一件具體的事來到你面前。"
+  },
+  "register": [
+   "收",
+   "持",
+   "開"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "connective",
+   "origin_to_now",
+   "specific"
+  ],
+  "length_chars": {
+   "zh": 49
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": "覆蓋元素類模板；優先序低於 same_suit"
+ },
+ {
+  "template_id": "REL12_PIP_MAJOR_01",
+  "slot": "rel_12",
+  "trigger": {
+   "kinds_12": "pip-major"
+  },
+  "exclude": {
+   "flags": [
+    "both_sides_hostile"
+   ]
+  },
+  "text": {
+   "zh": "——來處是日常的事，此刻卻翻出一張大牌：表面的事件把一個更深的主題帶到了現場。這是此刻這張牌值得多停一下的原因。"
+  },
+  "register": [
+   "收",
+   "持",
+   "開"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "connective",
+   "origin_to_now",
+   "specific"
+  ],
+  "length_chars": {
+   "zh": 56
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": "覆蓋元素類模板；優先序低於 same_suit"
+ },
+ {
+  "template_id": "REL23_MAJOR_PIP_01",
+  "slot": "rel_23",
+  "trigger": {
+   "kinds_23": "major-pip"
+  },
+  "exclude": {
+   "flags": [
+    "both_sides_hostile"
+   ]
+  },
+  "text": {
+   "zh": "——此刻是一張大牌，去向是一張日常牌：如果你允許深層的鬆動發生，它會以一件很具體、很小的事長出來。"
+  },
+  "register": [
+   "收",
+   "持",
+   "開"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "connective",
+   "now_to_direction",
+   "specific"
+  ],
+  "length_chars": {
+   "zh": 49
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": "覆蓋元素類模板；優先序低於 same_suit"
+ },
+ {
+  "template_id": "REL23_PIP_MAJOR_01",
+  "slot": "rel_23",
+  "trigger": {
+   "kinds_23": "pip-major"
+  },
+  "exclude": {
+   "flags": [
+    "both_sides_hostile"
+   ]
+  },
+  "text": {
+   "zh": "——此刻是日常的事，去向卻是一張大牌：如果順著現在這件小事往下走，前面連著的是一個比較大的主題。"
+  },
+  "register": [
+   "收",
+   "持",
+   "開"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "connective",
+   "now_to_direction",
+   "specific"
+  ],
+  "length_chars": {
+   "zh": 48
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": "覆蓋元素類模板；優先序低於 same_suit"
+ },
+ {
+  "template_id": "RES_PAIR_01",
+  "slot": "resonance",
+  "trigger": {
+   "resonance": "pair"
+  },
+  "exclude": {},
+  "text": {
+   "zh": "{essence_zh}（{essence_en}）在原型層與情境層同時出現——這是今天最核心的一支花精。複方因此收成兩支，焦點更清楚。"
+  },
+  "register": [
+   "收",
+   "持",
+   "開"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "emphasis",
+   "essence"
+  ],
+  "length_chars": {
+   "zh": 68
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": "命中時複方縮為 2 支，此花精升為主花精"
+ },
+ {
+  "template_id": "RES_PAIR_02",
+  "slot": "resonance",
+  "trigger": {
+   "resonance": "pair"
+  },
+  "exclude": {},
+  "text": {
+   "zh": "同一支花精在兩層各出現一次：{essence_zh}。它不是巧合的重複，而是同一個訊息用兩種語言說了兩次。今天就以它為主。"
+  },
+  "register": [
+   "收",
+   "持",
+   "開"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "emphasis",
+   "essence"
+  ],
+  "length_chars": {
+   "zh": 61
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": "命中時複方縮為 2 支，此花精升為主花精"
+ },
+ {
+  "template_id": "RES_PAIR_03",
+  "slot": "resonance",
+  "trigger": {
+   "resonance": "pair"
+  },
+  "exclude": {},
+  "text": {
+   "zh": "三張牌裡有兩張指向同一支花精——{essence_zh}。這種雙層共振二十幾次抽牌才會遇到一次，值得把它放在今天的中心。"
+  },
+  "register": [
+   "收",
+   "持",
+   "開"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "emphasis",
+   "essence"
+  ],
+  "length_chars": {
+   "zh": 60
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": "命中時複方縮為 2 支，此花精升為主花精"
+ },
+ {
+  "template_id": "COURT_SAME_TEMPERAMENT_01",
+  "slot": "court",
+  "trigger": {
+   "court_present": true,
+   "user_mbti": true,
+   "mbti_relation": "same_temperament"
+  },
+  "exclude": {},
+  "text": {
+   "zh": "{court_name}（{court_type}）和你的本命 {user_type} 是同一種氣質——今天抽到的是自己熟悉的那一面。它想問的是：這個方式，此刻還合身嗎？"
+  },
+  "register": [
+   "收",
+   "持",
+   "開"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "mirror",
+   "mbti"
+  ],
+  "length_chars": {
+   "zh": 85
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": "多張宮廷牌時取此刻位，其次來處，再其次去向"
+ },
+ {
+  "template_id": "COURT_SAME_TEMPERAMENT_02",
+  "slot": "court",
+  "trigger": {
+   "court_present": true,
+   "user_mbti": true,
+   "mbti_relation": "same_temperament"
+  },
+  "exclude": {},
+  "text": {
+   "zh": "這張宮廷牌與你的本命氣質相近。不是在告訴你「你就是這樣」，而是提醒你，今天用的正是你最順手的那套工具。"
+  },
+  "register": [
+   "收",
+   "持",
+   "開"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "mirror",
+   "mbti"
+  ],
+  "length_chars": {
+   "zh": 51
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": "多張宮廷牌時取此刻位，其次來處，再其次去向"
+ },
+ {
+  "template_id": "COURT_SAME_TEMPERAMENT_03",
+  "slot": "court",
+  "trigger": {
+   "court_present": true,
+   "user_mbti": true,
+   "mbti_relation": "same_temperament"
+  },
+  "exclude": {},
+  "text": {
+   "zh": "宮廷牌 {court_name} 與你的 {user_type} 同屬一個氣質群——像照鏡子，看見的是自己平常的樣子。看看鏡子裡有沒有一點你平常不注意的表情。"
+  },
+  "register": [
+   "收",
+   "持",
+   "開"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "mirror",
+   "mbti"
+  ],
+  "length_chars": {
+   "zh": 79
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": "多張宮廷牌時取此刻位，其次來處，再其次去向"
+ },
+ {
+  "template_id": "COURT_ADJACENT_01",
+  "slot": "court",
+  "trigger": {
+   "court_present": true,
+   "user_mbti": true,
+   "mbti_relation": "adjacent"
+  },
+  "exclude": {},
+  "text": {
+   "zh": "{court_name}（{court_type}）與你的本命 {user_type} 有一部分重疊——它是你有、但不常拿出來用的那一面。今天可以試著讓它多說一點話。"
+  },
+  "register": [
+   "收",
+   "持",
+   "開"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "mirror",
+   "mbti"
+  ],
+  "length_chars": {
+   "zh": 83
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": "多張宮廷牌時取此刻位，其次來處，再其次去向"
+ },
+ {
+  "template_id": "COURT_ADJACENT_02",
+  "slot": "court",
+  "trigger": {
+   "court_present": true,
+   "user_mbti": true,
+   "mbti_relation": "adjacent"
+  },
+  "exclude": {},
+  "text": {
+   "zh": "這張宮廷牌和你的本命氣質相鄰：既不陌生，也不是你的預設。它像一位熟識但不常聯絡的朋友，今天來訪有它的原因。"
+  },
+  "register": [
+   "收",
+   "持",
+   "開"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "mirror",
+   "mbti"
+  ],
+  "length_chars": {
+   "zh": 53
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": "多張宮廷牌時取此刻位，其次來處，再其次去向"
+ },
+ {
+  "template_id": "COURT_ADJACENT_03",
+  "slot": "court",
+  "trigger": {
+   "court_present": true,
+   "user_mbti": true,
+   "mbti_relation": "adjacent"
+  },
+  "exclude": {},
+  "text": {
+   "zh": "宮廷牌與你的本命有一半相似、一半不同——同一個人，換了一個站的位置。試著從這個位置看看此刻的課題。"
+  },
+  "register": [
+   "收",
+   "持",
+   "開"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "mirror",
+   "mbti"
+  ],
+  "length_chars": {
+   "zh": 49
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": "多張宮廷牌時取此刻位，其次來處，再其次去向"
+ },
+ {
+  "template_id": "COURT_OPPOSITE_01",
+  "slot": "court",
+  "trigger": {
+   "court_present": true,
+   "user_mbti": true,
+   "mbti_relation": "opposite"
+  },
+  "exclude": {},
+  "text": {
+   "zh": "{court_name}（{court_type}）幾乎是你本命 {user_type} 的反面——不是衝突，是補位。今天來的是你最少用的那一面，帶著你平常沒有的角度。"
+  },
+  "register": [
+   "收",
+   "持",
+   "開"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "mirror",
+   "mbti"
+  ],
+  "length_chars": {
+   "zh": 84
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": "多張宮廷牌時取此刻位，其次來處，再其次去向"
+ },
+ {
+  "template_id": "COURT_OPPOSITE_02",
+  "slot": "court",
+  "trigger": {
+   "court_present": true,
+   "user_mbti": true,
+   "mbti_relation": "opposite"
+  },
+  "exclude": {},
+  "text": {
+   "zh": "這張宮廷牌與你的本命氣質相對。這種張力不需要解決，只需要被看見：你平常怎麼做，它就提醒你有另一種做法存在。"
+  },
+  "register": [
+   "收",
+   "持",
+   "開"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "mirror",
+   "mbti"
+  ],
+  "length_chars": {
+   "zh": 53
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": "多張宮廷牌時取此刻位，其次來處，再其次去向"
+ },
+ {
+  "template_id": "COURT_OPPOSITE_03",
+  "slot": "court",
+  "trigger": {
+   "court_present": true,
+   "user_mbti": true,
+   "mbti_relation": "opposite"
+  },
+  "exclude": {},
+  "text": {
+   "zh": "宮廷牌站在你本命的對面。塔羅裡的對立不是敵意，是互補——如果你允許自己借用一點它的方式，此刻的課題會多出一條路。"
+  },
+  "register": [
+   "收",
+   "持",
+   "開"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "mirror",
+   "mbti"
+  ],
+  "length_chars": {
+   "zh": 56
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": "多張宮廷牌時取此刻位，其次來處，再其次去向"
+ },
+ {
+  "template_id": "COURT_EXACT_01",
+  "slot": "court",
+  "trigger": {
+   "court_present": true,
+   "user_mbti": true,
+   "mbti_relation": "exact"
+  },
+  "exclude": {},
+  "text": {
+   "zh": "你抽到了自己的本命牌 {court_name}。這不是在定義你，而是今天的課題直接關於你怎麼當自己——不用扮演，也不用修正。"
+  },
+  "register": [
+   "收",
+   "持",
+   "開"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "mirror",
+   "mbti",
+   "specific"
+  ],
+  "length_chars": {
+   "zh": 62
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": "exact 優先於三類；判定：宮廷牌 MBTI 與使用者四個字母全同"
+ },
+ {
+  "template_id": "OPEN_A_01",
+  "slot": "opening",
+  "trigger": {
+   "mode": "A"
+  },
+  "exclude": {},
+  "text": {
+   "zh": "三張牌由左至右：來處、此刻、去向。先逐張看，再把它們連成一條線。"
+  },
+  "register": [
+   "收",
+   "持",
+   "開"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "framing"
+  ],
+  "length_chars": {
+   "zh": 32
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": ""
+ },
+ {
+  "template_id": "OPEN_B_01",
+  "slot": "opening",
+  "trigger": {
+   "mode": "B"
+  },
+  "exclude": {},
+  "text": {
+   "zh": "三張牌由左至右：處境、卡點、下一步。最後一張是行動，不是結論。"
+  },
+  "register": [
+   "收",
+   "持",
+   "開"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "framing"
+  ],
+  "length_chars": {
+   "zh": 31
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": ""
+ },
+ {
+  "template_id": "CTA_DEEP_01",
+  "slot": "cta_full",
+  "trigger": {},
+  "exclude": {},
+  "text": {
+   "zh": "想多停一下？展開深度解析，看每一張牌完整的三步。"
+  },
+  "register": [
+   "收",
+   "持",
+   "開"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "guide"
+  ],
+  "length_chars": {
+   "zh": 24
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": "v1.2：slot 由 deep_cta 改為 cta_full（完整版導向深度解析）"
+ },
+ {
+  "template_id": "CTA_DEEP_02",
+  "slot": "cta_full",
+  "trigger": {},
+  "exclude": {},
+  "text": {
+   "zh": "一分鐘的讀法到這裡。如果還想往下，深度解析在下面。"
+  },
+  "register": [
+   "收",
+   "持",
+   "開"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "guide"
+  ],
+  "length_chars": {
+   "zh": 25
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": "v1.2：slot 由 deep_cta 改為 cta_full（完整版導向深度解析）"
+ },
+ {
+  "template_id": "CTA_DEEP_03",
+  "slot": "cta_full",
+  "trigger": {},
+  "exclude": {},
+  "text": {
+   "zh": "這是三秒鐘的版本。想知道每支花精為什麼在這裡，往下展開。"
+  },
+  "register": [
+   "收",
+   "持",
+   "開"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "guide"
+  ],
+  "length_chars": {
+   "zh": 28
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": "v1.2：slot 由 deep_cta 改為 cta_full（完整版導向深度解析）"
+ },
+ {
+  "template_id": "CLOSE_01",
+  "slot": "closing",
+  "trigger": {},
+  "exclude": {},
+  "text": {
+   "zh": "三張牌是三面鏡子，不是三個判決。"
+  },
+  "register": [
+   "收",
+   "持",
+   "開"
+  ],
+  "weight": 99,
+  "tone_tags": [
+   "anchor"
+  ],
+  "length_chars": {
+   "zh": 16
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": "固定結語，權重 99 代表不輪替"
+ },
+ {
+  "template_id": "MIRROR_C_01",
+  "slot": "mirror_synthesis",
+  "trigger": {
+   "mode": "C"
+  },
+  "exclude": {},
+  "text": {
+   "zh": "原型層給了{archetype}（我是誰），人格層給了{persona}（我怎麼表現），情境層給了{situation}（我在哪裡）。三面鏡子各照一個角度——同一個你，今天從三個方向被看見。"
+  },
+  "register": [
+   "收",
+   "持",
+   "開"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "synthesis",
+   "mode_c"
+  ],
+  "length_chars": {
+   "zh": 95
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": "模式 C 取代 structure、rel_12、rel_23 三槽；arc 仍適用"
+ },
+ {
+  "template_id": "MIRROR_C_02",
+  "slot": "mirror_synthesis",
+  "trigger": {
+   "mode": "C"
+  },
+  "exclude": {},
+  "text": {
+   "zh": "今天的三面鏡：{archetype}是底色，{persona}是你拿出來的樣子，{situation}是你站的地方。它們不必一致；不一致的地方，就是最值得看的地方。"
+  },
+  "register": [
+   "收",
+   "持",
+   "開"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "synthesis",
+   "mode_c"
+  ],
+  "length_chars": {
+   "zh": 82
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": "模式 C 取代 structure、rel_12、rel_23 三槽；arc 仍適用"
+ },
+ {
+  "template_id": "MIRROR_C_03",
+  "slot": "mirror_synthesis",
+  "trigger": {
+   "mode": "C"
+  },
+  "exclude": {},
+  "text": {
+   "zh": "{archetype}在深處，{persona}在表面，{situation}在周圍。如果三者剛好和諧，今天是整合的一天；如果彼此拉扯，也不是錯——那只是你同時是好幾種樣子。"
+  },
+  "register": [
+   "收",
+   "持",
+   "開"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "synthesis",
+   "mode_c"
+  ],
+  "length_chars": {
+   "zh": 87
+  },
+  "status": "approved",
+  "version": "2026-10",
+  "note": "模式 C 取代 structure、rel_12、rel_23 三槽；arc 仍適用"
+ }
+]

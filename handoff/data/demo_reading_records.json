@@ -1,0 +1,394 @@
+[
+ {
+  "reading_id": "demo-01",
+  "user_id": "demo",
+  "created_at": "2026-10-25",
+  "mode": "A",
+  "initial_variant": "full",
+  "locale": "zh",
+  "cards": [
+   41,
+   1,
+   18
+  ],
+  "state": {
+   "mode": "A",
+   "rel_12": "neutral",
+   "rel_23": "same",
+   "arc": "resolve",
+   "major_count": 2,
+   "flags": [],
+   "register": "開",
+   "same_suit_12": false,
+   "same_suit_23": false,
+   "kinds_12": "pip-major",
+   "kinds_23": "major-major",
+   "resonance": "none",
+   "court_present": false,
+   "user_mbti": false,
+   "court_rank": null,
+   "mbti_relation": null,
+   "rescue_count": 0,
+   "rescue_at": []
+  },
+  "selections": {
+   "opening": "OPEN_A_01",
+   "structure": "STRUCT_M2_02",
+   "rel_12": "REL12_PIP_MAJOR_01",
+   "rel_23": "REL23_SAME_01",
+   "arc": "ARC_RESOLVE_02",
+   "cta_full": "CTA_DEEP_02",
+   "closing": "CLOSE_01"
+  },
+  "content_version": "2026-10",
+  "engine_version": "v2",
+  "chars": {
+   "brief": 202,
+   "full": 508
+  },
+  "events": []
+ },
+ {
+  "reading_id": "demo-02",
+  "user_id": "demo",
+  "created_at": "2026-10-25",
+  "mode": "A",
+  "initial_variant": "full",
+  "locale": "zh",
+  "cards": [
+   18,
+   1,
+   41
+  ],
+  "state": {
+   "mode": "A",
+   "rel_12": "same",
+   "rel_23": "neutral",
+   "arc": "settle",
+   "major_count": 2,
+   "flags": [],
+   "register": "收",
+   "same_suit_12": false,
+   "same_suit_23": false,
+   "kinds_12": "major-major",
+   "kinds_23": "major-pip",
+   "resonance": "none",
+   "court_present": false,
+   "user_mbti": false,
+   "court_rank": null,
+   "mbti_relation": null,
+   "rescue_count": 0,
+   "rescue_at": []
+  },
+  "selections": {
+   "opening": "OPEN_A_01",
+   "structure": "STRUCT_M2_01",
+   "rel_12": "REL12_SAME_02",
+   "rel_23": "REL23_NEUTRAL_02",
+   "arc": "ARC_SETTLE_03",
+   "cta_full": "CTA_DEEP_02",
+   "closing": "CLOSE_01"
+  },
+  "content_version": "2026-10",
+  "engine_version": "v2",
+  "chars": {
+   "brief": 211,
+   "full": 507
+  },
+  "events": []
+ },
+ {
+  "reading_id": "demo-03",
+  "user_id": "demo",
+  "created_at": "2026-10-25",
+  "mode": "A",
+  "initial_variant": "full",
+  "locale": "zh",
+  "cards": [
+   23,
+   1,
+   18
+  ],
+  "state": {
+   "mode": "A",
+   "rel_12": "friendly",
+   "rel_23": "same",
+   "arc": "resolve",
+   "major_count": 2,
+   "flags": [],
+   "register": "開",
+   "same_suit_12": false,
+   "same_suit_23": false,
+   "kinds_12": "pip-major",
+   "kinds_23": "major-major",
+   "resonance": "pair",
+   "court_present": false,
+   "user_mbti": false,
+   "court_rank": null,
+   "mbti_relation": null,
+   "rescue_count": 0,
+   "rescue_at": []
+  },
+  "selections": {
+   "opening": "OPEN_A_01",
+   "structure": "STRUCT_M2_01",
+   "rel_12": "REL12_FRIENDLY_03",
+   "rel_23": "REL23_SAME_02",
+   "arc": "ARC_RESOLVE_01",
+   "resonance": "RES_PAIR_03",
+   "cta_full": "CTA_DEEP_01",
+   "closing": "CLOSE_01"
+  },
+  "content_version": "2026-10",
+  "engine_version": "v2",
+  "chars": {
+   "brief": 213,
+   "full": 538
+  },
+  "events": []
+ },
+ {
+  "reading_id": "demo-04",
+  "user_id": "demo",
+  "created_at": "2026-10-25",
+  "mode": "A",
+  "initial_variant": "full",
+  "locale": "zh",
+  "cards": [
+   20,
+   32,
+   48
+  ],
+  "state": {
+   "mode": "A",
+   "rel_12": "same",
+   "rel_23": "hostile",
+   "arc": "hold",
+   "major_count": 1,
+   "flags": [],
+   "register": "持",
+   "same_suit_12": false,
+   "same_suit_23": false,
+   "kinds_12": "major-pip",
+   "kinds_23": "pip-court",
+   "resonance": "none",
+   "court_present": true,
+   "user_mbti": false,
+   "court_rank": "騎士",
+   "mbti_relation": null,
+   "rescue_count": 0,
+   "rescue_at": []
+  },
+  "selections": {
+   "opening": "OPEN_A_01",
+   "structure": "STRUCT_M1_01",
+   "rel_12": "REL12_MAJOR_PIP_01",
+   "rel_23": "REL23_HOSTILE_02",
+   "arc": "ARC_HOLD_01",
+   "cta_full": "CTA_DEEP_03",
+   "closing": "CLOSE_01"
+  },
+  "content_version": "2026-10",
+  "engine_version": "v2",
+  "chars": {
+   "brief": 211,
+   "full": 518
+  },
+  "events": []
+ },
+ {
+  "reading_id": "demo-05",
+  "user_id": "demo",
+  "created_at": "2026-10-25",
+  "mode": "A",
+  "initial_variant": "full",
+  "locale": "zh",
+  "cards": [
+   59,
+   64,
+   45
+  ],
+  "state": {
+   "mode": "A",
+   "rel_12": "same",
+   "rel_23": "neutral",
+   "arc": "hold",
+   "major_count": 0,
+   "flags": [],
+   "register": "持",
+   "same_suit_12": true,
+   "same_suit_23": false,
+   "kinds_12": "pip-court",
+   "kinds_23": "court-pip",
+   "resonance": "pair",
+   "court_present": true,
+   "user_mbti": false,
+   "court_rank": "國王",
+   "mbti_relation": null,
+   "rescue_count": 0,
+   "rescue_at": []
+  },
+  "selections": {
+   "opening": "OPEN_A_01",
+   "structure": "STRUCT_M0_03",
+   "rel_12": "REL12_SAMESUIT_01",
+   "rel_23": "REL23_NEUTRAL_02",
+   "arc": "ARC_HOLD_03",
+   "resonance": "RES_PAIR_02",
+   "cta_full": "CTA_DEEP_03",
+   "closing": "CLOSE_01"
+  },
+  "content_version": "2026-10",
+  "engine_version": "v2",
+  "chars": {
+   "brief": 202,
+   "full": 536
+  },
+  "events": []
+ },
+ {
+  "reading_id": "demo-06",
+  "user_id": "demo",
+  "created_at": "2026-10-25",
+  "mode": "A",
+  "initial_variant": "brief",
+  "locale": "zh",
+  "cards": [
+   41,
+   1,
+   18
+  ],
+  "state": {
+   "mode": "A",
+   "rel_12": "neutral",
+   "rel_23": "same",
+   "arc": "resolve",
+   "major_count": 2,
+   "flags": [],
+   "register": "開",
+   "same_suit_12": false,
+   "same_suit_23": false,
+   "kinds_12": "pip-major",
+   "kinds_23": "major-major",
+   "resonance": "none",
+   "court_present": false,
+   "user_mbti": false,
+   "court_rank": null,
+   "mbti_relation": null,
+   "rescue_count": 0,
+   "rescue_at": []
+  },
+  "selections": {
+   "opening": "OPEN_A_01",
+   "structure": "STRUCT_M2_02",
+   "rel_12": "REL12_PIP_MAJOR_01",
+   "rel_23": "REL23_SAME_01",
+   "arc": "ARC_RESOLVE_02",
+   "cta_full": "CTA_DEEP_02",
+   "closing": "CLOSE_01"
+  },
+  "content_version": "2026-10",
+  "engine_version": "v2",
+  "chars": {
+   "brief": 202,
+   "full": 508
+  },
+  "events": []
+ },
+ {
+  "reading_id": "demo-07",
+  "user_id": "demo",
+  "created_at": "2026-10-25",
+  "mode": "C",
+  "initial_variant": "full",
+  "locale": "zh",
+  "cards": [
+   1,
+   48,
+   23
+  ],
+  "state": {
+   "mode": "C",
+   "rel_12": "neutral",
+   "rel_23": "hostile",
+   "arc": "hold",
+   "major_count": 1,
+   "flags": [],
+   "register": "持",
+   "same_suit_12": false,
+   "same_suit_23": false,
+   "kinds_12": "major-court",
+   "kinds_23": "court-pip",
+   "resonance": "pair",
+   "court_present": true,
+   "user_mbti": false,
+   "court_rank": "騎士",
+   "mbti_relation": null,
+   "rescue_count": 0,
+   "rescue_at": []
+  },
+  "selections": {
+   "mirror_synthesis": "MIRROR_C_03",
+   "arc": "ARC_HOLD_02",
+   "resonance": "RES_PAIR_02",
+   "cta_full": "CTA_DEEP_01",
+   "closing": "CLOSE_01"
+  },
+  "content_version": "2026-10",
+  "engine_version": "v2",
+  "chars": {
+   "brief": 280,
+   "full": 460
+  },
+  "events": []
+ },
+ {
+  "reading_id": "demo-08",
+  "user_id": "demo",
+  "created_at": "2026-10-25",
+  "mode": "A",
+  "initial_variant": "full",
+  "locale": "zh",
+  "cards": [
+   41,
+   1,
+   18
+  ],
+  "state": {
+   "mode": "A",
+   "rel_12": "neutral",
+   "rel_23": "same",
+   "arc": "resolve",
+   "major_count": 2,
+   "flags": [],
+   "register": "開",
+   "same_suit_12": false,
+   "same_suit_23": false,
+   "kinds_12": "pip-major",
+   "kinds_23": "major-major",
+   "resonance": "none",
+   "court_present": false,
+   "user_mbti": false,
+   "court_rank": null,
+   "mbti_relation": null,
+   "rescue_count": 0,
+   "rescue_at": []
+  },
+  "selections": {
+   "opening": "OPEN_A_01",
+   "structure": "STRUCT_M2_02",
+   "rel_12": "REL12_PIP_MAJOR_01",
+   "rel_23": "REL23_SAME_01",
+   "arc": "ARC_RESOLVE_01",
+   "cta_full": "CTA_DEEP_02",
+   "closing": "CLOSE_01"
+  },
+  "content_version": "2026-10",
+  "engine_version": "v2",
+  "chars": {
+   "brief": 206,
+   "full": 512
+  },
+  "events": []
+ }
+]

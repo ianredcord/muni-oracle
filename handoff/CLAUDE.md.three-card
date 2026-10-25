@@ -1,0 +1,23 @@
+# MUNI 三牌陣（three-card）工作規範
+
+本段規範適用於 `src/lib/threeCard/`、`src/data/threeCard/`、`handoff/` 相關的所有工作。單一事實來源：`handoff/02_SPEC_三牌引擎與內容規格.md`（Spec v1.2）。
+
+## 絕對限制
+- 不改動 22 張大秘儀的花精對應；不改動 `handoff/data/position_text.v2.json` 既有 234 段文字。
+- 位置名固定「來處・此刻・去向」；模式 B「處境・卡點・下一步」；模式 C「原型・人格・情境」。禁止「過去・現在・未來」。
+- 所有描述未來的句子用條件式「如果…就會…」；禁止「你將會」。
+- 禁用詞：你將會、注定、註定、命中注定、警告、必須、一定會、災、凶、厄運、小心、應該。「預言」「判決」「定義你」只能出現在「不是」之後 3 字內。
+- 內容為陪伴式文字，不得出現醫療或心理治療效果的斷言。
+- 不做視覺逆位；`reversedReminder` 不參與三牌合成。
+
+## 資料與引擎
+- schema v2：`text: {zh, en?}`、`register: ("收"|"持"|"開")[]`、`status: draft|approved|retired`。引擎只讀 approved。
+- 新寫的所有文字一律 `status: "draft"`，由使用者核准後才改 approved。
+- 抽牌時 `selectAll()` 一次選完所有槽並寫入 reading 紀錄；精簡版／完整版只是渲染子集；重看一律重播，不重算。
+- 選取順序：status → trigger/exclude → register → specificity → 近期排除（同特異層內）→ 權重 → md5 種子。
+- TypeScript 引擎的 state 與 selections 必須與 `handoff/data/demo_reading_records.json` 八組基準逐欄一致（mbti_relation 除外）。
+
+## 工作方式
+- 每個 Phase 結束停下來報告並等確認；資料與規格不一致時停下來問，不要猜。
+- 新文字以表格呈現（template_id／trigger／register／text／字數）。
+- Commit 以 Phase 分開，訊息用中文；不要 push。
