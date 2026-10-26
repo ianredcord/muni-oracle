@@ -2321,7 +2321,8 @@ export const SLOT_TEMPLATES: SlotTemplate[] = [
     },
     "register": [
       "收",
-      "持"
+      "持",
+      "開"
     ],
     "weight": 3,
     "tone_tags": [
