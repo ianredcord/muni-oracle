@@ -15,3 +15,4 @@ export * from "./select";
 export * from "./assemble";
 export * from "./replay";
 export * from "./reading";
+export * from "./events";
