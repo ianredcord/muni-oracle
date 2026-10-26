@@ -64,6 +64,8 @@ export type PageText = {
   };
   dayPlan: { title: string; intro: string; morning: string; daytime: string; anytime: string; evening: string; from: (name: string) => string };
   deepArc: string;
+  deepRel: string;
+  deepBlend: string;
 };
 
 const zh: PageText = {
@@ -142,6 +144,8 @@ const zh: PageText = {
     from: (name) => `來自 ${name}`,
   },
   deepArc: "這個走向怎麼用",
+  deepRel: "兩張牌為什麼這樣接",
+  deepBlend: "三支花精怎麼搭",
 };
 
 const en: PageText = {
@@ -220,6 +224,8 @@ const en: PageText = {
     from: (name) => `from ${name}`,
   },
   deepArc: "How to work with this line",
+  deepRel: "Why these two cards meet this way",
+  deepBlend: "How the three essences fit together",
 };
 
 export const PAGE_TEXT: Record<Locale, PageText> = { zh, en };

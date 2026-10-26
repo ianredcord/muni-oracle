@@ -145,7 +145,7 @@ export const DEEP_TEXT: DeepText[] = [
     "text": {
       "zh": "同一種元素相鄰，表示兩張牌說的是同一股能量的兩個階段：不是兩件事，而是一件事的前後。它常被讀成「沒有變化」，其實是放大——第一張把第二張的主題照得更清楚。如果你允許自己把它們當成同一句話的上下句來讀，意思會比分開看時完整。"
     },
-    "status": "draft"
+    "status": "approved"
   },
   {
     "deepId": "DEEP_REL_SAME_02",
@@ -156,7 +156,7 @@ export const DEEP_TEXT: DeepText[] = [
     "text": {
       "zh": "元素相同的兩張牌彼此放大。好處是訊息集中，少了雜音；要留意的是同一種能量連續出現時，容易以為「只能這樣」，其實只是同一條路看得更遠。如果你允許第二張牌是第一張的下一步而不是重複，相同的元素就會從放大鏡變成一條可以走的路。"
     },
-    "status": "draft"
+    "status": "approved"
   },
   {
     "deepId": "DEEP_REL_FRIENDLY_01",
@@ -167,7 +167,7 @@ export const DEEP_TEXT: DeepText[] = [
     "text": {
       "zh": "友好的元素相鄰——火與風、水與地——表示兩張牌互相支撐：前一張累積的東西，正好墊在後一張底下。它不是在說「一切順利」，而是說你不必從零開始。如果你允許自己借用前一張牌已經有的力氣，後一張牌的允許句會比較容易做到。"
     },
-    "status": "draft"
+    "status": "approved"
   },
   {
     "deepId": "DEEP_REL_FRIENDLY_02",
@@ -178,7 +178,7 @@ export const DEEP_TEXT: DeepText[] = [
     "text": {
       "zh": "兩張牌的元素互相滋養，像風讓火更旺、水讓地更鬆。這種相鄰最常被忽略，因為它不製造張力；但正因為順，才是今天最省力的地方，也是最容易被你用力過頭弄亂的地方。如果你允許事情在這裡順著走而不去加工，支撐會自己發生。"
     },
-    "status": "draft"
+    "status": "approved"
   },
   {
     "deepId": "DEEP_REL_HOSTILE_01",
@@ -189,7 +189,7 @@ export const DEEP_TEXT: DeepText[] = [
     "text": {
       "zh": "相斥的元素相鄰——火與水、風與地——表示兩張牌需要的方式不同：前一張習慣的，後一張用不上。它常被讀成衝突或壞兆頭，其實只是一道門檻：換一種姿勢就過得去。如果你允許自己在這裡慢一點、不用舊的方法硬推，相斥會變成提醒而不是牆。"
     },
-    "status": "draft"
+    "status": "approved"
   },
   {
     "deepId": "DEEP_REL_HOSTILE_02",
@@ -200,7 +200,7 @@ export const DEEP_TEXT: DeepText[] = [
     "text": {
       "zh": "兩張牌的元素彼此不相容，中間有一個明顯的轉折點。塔羅裡的相斥不是敵意，而是互補：少了一邊，另一邊的意思不完整，像冷熱交會才有風。如果你允許兩種方式同時存在，先看哪一種此刻比較合身，這道落差就會變成今天最有訊息的地方。"
     },
-    "status": "draft"
+    "status": "approved"
   },
   {
     "deepId": "DEEP_REL_NEUTRAL_01",
@@ -211,7 +211,7 @@ export const DEEP_TEXT: DeepText[] = [
     "text": {
       "zh": "中性的元素相鄰——火與地、水與風——表示兩張牌互不干涉：前一張沒有在推，也沒有在拉。它容易被讀成「沒關係」，但正因為沒有牽制，後一張牌可以用自己的聲音說話。如果你允許兩張牌各自成立、不急著連成因果，空出來的位置就是你的。"
     },
-    "status": "draft"
+    "status": "approved"
   },
   {
     "deepId": "DEEP_REL_NEUTRAL_02",
@@ -222,7 +222,7 @@ export const DEEP_TEXT: DeepText[] = [
     "text": {
       "zh": "兩張牌的元素互不影響，各說各的。這種相鄰最需要的是不要硬找關聯：前一張是背景，後一張是現場，並存就好，不必替它們編一個因果。如果你允許自己只把注意力放在後面那張牌想讓你允許的事，中性的相鄰就會變成最乾淨的一局。"
     },
-    "status": "draft"
+    "status": "approved"
   },
   {
     "deepId": "DEEP_REL_MAJOR_PIP_01",
@@ -233,7 +233,7 @@ export const DEEP_TEXT: DeepText[] = [
     "text": {
       "zh": "大秘儀在前、日常牌在後，表示一個深層的主題已經在那裡很久了，今天以一件很具體、很小的事來到你面前。常見的誤讀是把小事當小事；其實它是那個主題的入口。如果你允許自己認真對待這件具體的事，深層的主題會透過它慢慢被看見。"
     },
-    "status": "draft"
+    "status": "approved"
   },
   {
     "deepId": "DEEP_REL_PIP_MAJOR_01",
@@ -244,7 +244,7 @@ export const DEEP_TEXT: DeepText[] = [
     "text": {
       "zh": "日常牌在前、大秘儀在後，表示表面的事件把一個更大的主題帶到了現場：前一張是浪花，後一張是底下的河流。常見的誤讀是只處理浪花。如果你允許自己在這裡多停一下、問問這件事底下是什麼，大牌說的主題就會接得上你正在經歷的事。"
     },
-    "status": "draft"
+    "status": "approved"
   },
   {
     "deepId": "DEEP_REL_SAME_SUIT_01",
@@ -255,7 +255,7 @@ export const DEEP_TEXT: DeepText[] = [
     "text": {
       "zh": "兩張牌同一個花色，表示同一個生活領域連續出現：權杖是行動、聖杯是情感、寶劍是思考、錢幣是現實。它不是卡住，而是這個領域還有話要說。如果你允許自己今天只待在這一個領域裡把事情看完，不急著換場地，它會說得很清楚。"
     },
-    "status": "draft"
+    "status": "approved"
   },
   {
     "deepId": "DEEP_BLEND_MAIN_01",
@@ -266,7 +266,7 @@ export const DEEP_TEXT: DeepText[] = [
     "text": {
       "zh": "主花精由此刻這張牌決定，因為此刻是今天的中心：它的允許句就是今天要練的那一件事，花精是陪著練的那一支。如果你允許今天只用這一支，其他兩支都是為它服務的。"
     },
-    "status": "draft"
+    "status": "approved"
   },
   {
     "deepId": "DEEP_BLEND_RELEASE_01",
@@ -277,7 +277,7 @@ export const DEEP_TEXT: DeepText[] = [
     "text": {
       "zh": "釋放花精來自來處這張牌。來處帶來的狀態不是要被消滅，而是要被放下：這支花精陪你把一直背著的放到地上，讓此刻有空間。如果你允許放下不等於否定，它會比較容易鬆手。"
     },
-    "status": "draft"
+    "status": "approved"
   },
   {
     "deepId": "DEEP_BLEND_SUPPORT_01",
@@ -288,6 +288,6 @@ export const DEEP_TEXT: DeepText[] = [
     "text": {
       "zh": "支持花精來自去向這張牌。去向不是目的地，是如果你允許就可以走的方向：這支花精不推你，只在你往那裡走的時候扶一把，讓第一步不那麼重，也讓你隨時可以停下來。"
     },
-    "status": "draft"
+    "status": "approved"
   }
 ];

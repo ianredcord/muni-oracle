@@ -21,7 +21,13 @@ export type CardView = {
   };
 };
 
-export type DeepBundle = { arc?: { deepId: string; text: string } | null };
+export type DeepPickView = { deepId: string; text: string } | null;
+export type DeepBundle = {
+  arc?: DeepPickView;
+  rel12?: DeepPickView;
+  rel23?: DeepPickView;
+  blend?: { main: DeepPickView; release: DeepPickView; support: DeepPickView };
+};
 export type RenderBundle = { brief: Segment[]; full: Segment[]; cards: CardView[]; deep?: DeepBundle };
 
 const RENDER_KEY = "muni.threeCard.render.v1";

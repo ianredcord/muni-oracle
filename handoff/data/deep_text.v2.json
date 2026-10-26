@@ -203,7 +203,7 @@
   "length_chars": {
    "zh": 111
   },
-  "status": "draft",
+  "status": "approved",
   "version": "2026-10c",
   "note": "深度層 §2.3 元素關係解說；rel 由 server 以 rel_12／rel_23 代入"
  },
@@ -219,7 +219,7 @@
   "length_chars": {
    "zh": 110
   },
-  "status": "draft",
+  "status": "approved",
   "version": "2026-10c",
   "note": "深度層 §2.3 元素關係解說；rel 由 server 以 rel_12／rel_23 代入"
  },
@@ -235,7 +235,7 @@
   "length_chars": {
    "zh": 106
   },
-  "status": "draft",
+  "status": "approved",
   "version": "2026-10c",
   "note": "深度層 §2.3 元素關係解說；rel 由 server 以 rel_12／rel_23 代入"
  },
@@ -251,7 +251,7 @@
   "length_chars": {
    "zh": 104
   },
-  "status": "draft",
+  "status": "approved",
   "version": "2026-10c",
   "note": "深度層 §2.3 元素關係解說；rel 由 server 以 rel_12／rel_23 代入"
  },
@@ -267,7 +267,7 @@
   "length_chars": {
    "zh": 111
   },
-  "status": "draft",
+  "status": "approved",
   "version": "2026-10c",
   "note": "深度層 §2.3 元素關係解說；rel 由 server 以 rel_12／rel_23 代入"
  },
@@ -283,7 +283,7 @@
   "length_chars": {
    "zh": 108
   },
-  "status": "draft",
+  "status": "approved",
   "version": "2026-10c",
   "note": "深度層 §2.3 元素關係解說；rel 由 server 以 rel_12／rel_23 代入"
  },
@@ -299,7 +299,7 @@
   "length_chars": {
    "zh": 110
   },
-  "status": "draft",
+  "status": "approved",
   "version": "2026-10c",
   "note": "深度層 §2.3 元素關係解說；rel 由 server 以 rel_12／rel_23 代入"
  },
@@ -315,7 +315,7 @@
   "length_chars": {
    "zh": 105
   },
-  "status": "draft",
+  "status": "approved",
   "version": "2026-10c",
   "note": "深度層 §2.3 元素關係解說；rel 由 server 以 rel_12／rel_23 代入"
  },
@@ -331,7 +331,7 @@
   "length_chars": {
    "zh": 107
   },
-  "status": "draft",
+  "status": "approved",
   "version": "2026-10c",
   "note": "深度層 §2.3 大牌／小牌相鄰；kinds 由 server 以 kinds_12／kinds_23 代入，優先於 rel"
  },
@@ -347,7 +347,7 @@
   "length_chars": {
    "zh": 107
   },
-  "status": "draft",
+  "status": "approved",
   "version": "2026-10c",
   "note": "深度層 §2.3 大牌／小牌相鄰；kinds 由 server 以 kinds_12／kinds_23 代入，優先於 rel"
  },
@@ -363,7 +363,7 @@
   "length_chars": {
    "zh": 104
   },
-  "status": "draft",
+  "status": "approved",
   "version": "2026-10c",
   "note": "深度層 §2.3 同花色；same_suit 由 server 以 same_suit_12／23 代入，優先於 rel 與 kinds"
  },
@@ -379,7 +379,7 @@
   "length_chars": {
    "zh": 76
   },
-  "status": "draft",
+  "status": "approved",
   "version": "2026-10c",
   "note": "深度層 §2.4 複方角色；role 由 server 代入"
  },
@@ -395,7 +395,7 @@
   "length_chars": {
    "zh": 79
   },
-  "status": "draft",
+  "status": "approved",
   "version": "2026-10c",
   "note": "深度層 §2.4 複方角色；role 由 server 代入"
  },
@@ -411,7 +411,7 @@
   "length_chars": {
    "zh": 76
   },
-  "status": "draft",
+  "status": "approved",
   "version": "2026-10c",
   "note": "深度層 §2.4 複方角色；role 由 server 代入"
  }

@@ -78,7 +78,25 @@ function PositionSection({ block, card, mode, t, debug, big, showAllow = true }:
   );
 }
 
-function RelationBlock({ label, text, debug }: { label: string; text: string; debug: boolean }) {
+function DeepToggle({ open, onToggle, label, closeLabel, children, debugId, debug }: { open: boolean; onToggle: () => void; label: string; closeLabel: string; children: React.ReactNode; debugId?: string; debug: boolean }) {
+  return (
+    <div className="mt-3">
+      <button onClick={onToggle} className="text-xs text-[#9A7B4F] underline underline-offset-4">{open ? closeLabel : `${label} ▾`}</button>
+      <AnimatePresence initial={false}>
+        {open && (
+          <motion.div key="deep" initial={{ height: 0, opacity: 0 }} animate={{ height: "auto", opacity: 1 }} exit={{ height: 0, opacity: 0 }} className="overflow-hidden">
+            <div className="mt-3 rounded-2xl bg-white/60 border border-white/60 px-5 py-4">
+              {children}
+              <Debug id={debugId} show={debug} />
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+}
+
+function RelationBlock({ label, text, debug, deep, deepLabel, closeLabel, open, onToggle }: { label: string; text: string; debug: boolean; deep?: { deepId: string; text: string } | null; deepLabel: string; closeLabel: string; open: boolean; onToggle: () => void }) {
   return (
     <div className="flex gap-4 items-start pl-1">
       <div className="mt-1 flex flex-col items-center gap-1 shrink-0">
@@ -86,10 +104,15 @@ function RelationBlock({ label, text, debug }: { label: string; text: string; de
         <span className="w-2 h-2 rounded-full border border-[#9A7B4F]/60" />
         <span className="w-px h-4 bg-[#9A7B4F]/40" />
       </div>
-      <div>
+      <div className="flex-1">
         <Label tone="muted">{label}</Label>
         <p className="text-stone-600 leading-loose">{text.replace(/^——/, "")}</p>
         <Debug id={label} show={debug} />
+        {deep && (
+          <DeepToggle open={open} onToggle={onToggle} label={deepLabel} closeLabel={closeLabel} debugId={deep.deepId} debug={debug}>
+            <p className="text-stone-700 leading-loose text-[15px]">{deep.text}</p>
+          </DeepToggle>
+        )}
       </div>
     </div>
   );
@@ -187,7 +210,7 @@ export default function ReadingClient({ locale, id }: { locale: Locale; id: stri
     });
   };
   const setAllDeep = (open: boolean) => {
-    setDeepOpen({ origin: open, now: open, direction: open, arc: open });
+    setDeepOpen({ origin: open, now: open, direction: open, arc: open, rel12: open, rel23: open, blend: open });
     if (open) void tracker.current?.openedDeep({ section: "all" });
   };
 
@@ -348,11 +371,11 @@ export default function ReadingClient({ locale, id }: { locale: Locale; id: stri
 
               <PositionSection block={L.positions[0]} card={bundle.cards[0]} mode={mode} t={t} debug={debug} />
               {stage === "full" && <DeepPanel card={bundle.cards[0]} position="origin" mode={mode} t={t} open={!!deepOpen.origin} onToggle={() => toggleDeep("origin")} />}
-              {L.relBoth && <RelationBlock label={t.labels.relBoth} text={L.relBoth} debug={debug} />}
-              {L.rel12 && <RelationBlock label={t.labels.rel12} text={L.rel12} debug={debug} />}
+              {L.relBoth && <RelationBlock label={t.labels.relBoth} text={L.relBoth} debug={debug} deep={stage === "full" ? bundle.deep?.rel12 : null} deepLabel={t.deepRel} closeLabel={t.deepClose} open={!!deepOpen.rel12} onToggle={() => toggleDeep("rel12")} />}
+              {L.rel12 && <RelationBlock label={t.labels.rel12} text={L.rel12} debug={debug} deep={stage === "full" ? bundle.deep?.rel12 : null} deepLabel={t.deepRel} closeLabel={t.deepClose} open={!!deepOpen.rel12} onToggle={() => toggleDeep("rel12")} />}
               <PositionSection block={L.positions[1]} card={bundle.cards[1]} mode={mode} t={t} debug={debug} showAllow={false} />
               {stage === "full" && <DeepPanel card={bundle.cards[1]} position="now" mode={mode} t={t} open={!!deepOpen.now} onToggle={() => toggleDeep("now")} />}
-              {L.rel23 && <RelationBlock label={t.labels.rel23} text={L.rel23} debug={debug} />}
+              {L.rel23 && <RelationBlock label={t.labels.rel23} text={L.rel23} debug={debug} deep={stage === "full" ? bundle.deep?.rel23 : null} deepLabel={t.deepRel} closeLabel={t.deepClose} open={!!deepOpen.rel23} onToggle={() => toggleDeep("rel23")} />}
               <PositionSection block={L.positions[2]} card={bundle.cards[2]} mode={mode} t={t} debug={debug} />
               {stage === "full" && <DeepPanel card={bundle.cards[2]} position="direction" mode={mode} t={t} open={!!deepOpen.direction} onToggle={() => toggleDeep("direction")} />}
 
@@ -420,6 +443,25 @@ export default function ReadingClient({ locale, id }: { locale: Locale; id: stri
                         );
                       })}
                     </ul>
+                    {bundle.deep?.blend && (
+                      <DeepToggle open={!!deepOpen.blend} onToggle={() => toggleDeep("blend")} label={t.deepBlend} closeLabel={t.deepClose} debug={debug}>
+                        <div className="space-y-4">
+                          {blendRows([bundle.cards[0].flowerEn, bundle.cards[1].flowerEn, bundle.cards[2].flowerEn]).map((r) => {
+                            const pick = bundle.deep!.blend![r.role];
+                            const c = bundle.cards[r.cardIndex];
+                            if (!pick) return null;
+                            return (
+                              <div key={r.role}>
+                                <div className="text-xs text-[#9A7B4F] mb-1">{t.blendRoles[r.role]}　<span className="text-stone-400">{c.flowerZh}（{c.flowerEn}）</span></div>
+                                <p className="text-stone-700 leading-loose text-[15px]">{pick.text}</p>
+                                {!r.merged && c.deep.flowerSpectrum && <p className="mt-1 text-stone-500 leading-loose text-sm">{c.deep.flowerSpectrum}</p>}
+                                <Debug id={pick.deepId} show={debug} />
+                              </div>
+                            );
+                          })}
+                        </div>
+                      </DeepToggle>
+                    )}
                   </Card>
                   {L.body && (
                     <Card tone="white">

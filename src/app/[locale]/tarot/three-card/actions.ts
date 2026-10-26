@@ -2,7 +2,7 @@
 
 // 三牌陣 server actions：選取與重播都在 server 端，模板與短文不進前端。
 import { getTarotCards } from "@/data/tarot";
-import { compose, defaultDeepText, defaultLibrary, kind, pickDeep, replay, type Mode, type ReadingRecord, type Recent, type Segment, type State } from "@/lib/threeCard/index";
+import { compose, defaultDeepText, defaultLibrary, kind, pickBlendDeep, pickDeep, pickRelationDeep, replay, type Mode, type ReadingRecord, type Recent, type Segment, type State } from "@/lib/threeCard/index";
 import type { Locale } from "@/i18n/config";
 import type { CardView, DeepBundle } from "@/lib/threeCard/storage";
 
@@ -55,7 +55,17 @@ function validIds(mode: Mode, ids: unknown): ids is [number, number, number] {
 }
 
 function deepFor(state: State, readingId: string, locale: Locale): DeepBundle {
-  return { arc: pickDeep(defaultDeepText(), "arc", state, readingId, locale) };
+  const rows = defaultDeepText();
+  return {
+    arc: pickDeep(rows, "arc", state, readingId, locale),
+    rel12: state.mode === "C" ? null : pickRelationDeep(rows, "12", state, readingId, locale),
+    rel23: state.mode === "C" ? null : pickRelationDeep(rows, "23", state, readingId, locale),
+    blend: {
+      main: pickBlendDeep(rows, "main", readingId, locale),
+      release: pickBlendDeep(rows, "release", readingId, locale),
+      support: pickBlendDeep(rows, "support", readingId, locale),
+    },
+  };
 }
 
 export type DrawResult =
