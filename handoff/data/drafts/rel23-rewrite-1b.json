@@ -1,0 +1,188 @@
+[
+ {
+  "template_id": "REL23_SAME_02",
+  "slot": "rel_23",
+  "trigger": {
+   "rel_23": "same"
+  },
+  "exclude": {
+   "flags": [
+    "both_sides_hostile"
+   ]
+  },
+  "text": {
+   "zh": "而這兩張牌是同一種元素：方向不在別處，如果你允許此刻這件事繼續往深處走，去向就在那裡。"
+  },
+  "register": [
+   "收",
+   "持",
+   "開"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "connective",
+   "now_to_direction"
+  ],
+  "length_chars": {
+   "zh": 43
+  },
+  "status": "draft",
+  "version": "2026-10",
+  "note": ""
+ },
+ {
+  "template_id": "REL23_SAME_03",
+  "slot": "rel_23",
+  "trigger": {
+   "rel_23": "same"
+  },
+  "exclude": {
+   "flags": [
+    "both_sides_hostile"
+   ]
+  },
+  "text": {
+   "zh": "——同元素相連，去向像是此刻的延長線：如果你允許自己不轉彎、只是繼續，它就會接上。"
+  },
+  "register": [
+   "收",
+   "持",
+   "開"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "connective",
+   "now_to_direction"
+  ],
+  "length_chars": {
+   "zh": 41
+  },
+  "status": "draft",
+  "version": "2026-10",
+  "note": ""
+ },
+ {
+  "template_id": "REL23_FRIENDLY_03",
+  "slot": "rel_23",
+  "trigger": {
+   "rel_23": "friendly"
+  },
+  "exclude": {
+   "flags": [
+    "both_sides_hostile"
+   ]
+  },
+  "text": {
+   "zh": "——此刻與去向互相支持，所以方向不需要用力；如果你允許自己不擋住它，它會自己走。"
+  },
+  "register": [
+   "收",
+   "持",
+   "開"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "connective",
+   "now_to_direction"
+  ],
+  "length_chars": {
+   "zh": 40
+  },
+  "status": "draft",
+  "version": "2026-10",
+  "note": ""
+ },
+ {
+  "template_id": "REL23_NEUTRAL_01",
+  "slot": "rel_23",
+  "trigger": {
+   "rel_23": "neutral"
+  },
+  "exclude": {
+   "flags": [
+    "both_sides_hostile"
+   ]
+  },
+  "text": {
+   "zh": "——此刻與去向互不干涉：方向還沒有被現狀決定。如果你允許這個位置先保持開放，選擇會多一點。"
+  },
+  "register": [
+   "收",
+   "持",
+   "開"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "connective",
+   "now_to_direction"
+  ],
+  "length_chars": {
+   "zh": 45
+  },
+  "status": "draft",
+  "version": "2026-10",
+  "note": ""
+ },
+ {
+  "template_id": "REL23_NEUTRAL_02",
+  "slot": "rel_23",
+  "trigger": {
+   "rel_23": "neutral"
+  },
+  "exclude": {
+   "flags": [
+    "both_sides_hostile"
+   ]
+  },
+  "text": {
+   "zh": "而這兩張牌各自獨立：此刻說的是現場，去向說的是可能。如果你允許中間留著空間，那空間是給你的。"
+  },
+  "register": [
+   "收",
+   "持",
+   "開"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "connective",
+   "now_to_direction"
+  ],
+  "length_chars": {
+   "zh": 46
+  },
+  "status": "draft",
+  "version": "2026-10",
+  "note": ""
+ },
+ {
+  "template_id": "REL23_NEUTRAL_03",
+  "slot": "rel_23",
+  "trigger": {
+   "rel_23": "neutral"
+  },
+  "exclude": {
+   "flags": [
+    "both_sides_hostile"
+   ]
+  },
+  "text": {
+   "zh": "——中性的相鄰，表示去向不是此刻的必然延伸；它是一個邀請，如果你允許，才會成為下一步。"
+  },
+  "register": [
+   "收",
+   "持",
+   "開"
+  ],
+  "weight": 3,
+  "tone_tags": [
+   "connective",
+   "now_to_direction"
+  ],
+  "length_chars": {
+   "zh": 43
+  },
+  "status": "draft",
+  "version": "2026-10",
+  "note": ""
+ }
+]

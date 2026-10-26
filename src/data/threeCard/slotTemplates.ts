@@ -769,7 +769,7 @@ export const SLOT_TEMPLATES: SlotTemplate[] = [
       ]
     },
     "text": {
-      "zh": "而這兩張牌是同一種元素：方向不在別處，就是此刻這件事繼續往深處走。"
+      "zh": "而這兩張牌是同一種元素：方向不在別處，如果你允許此刻這件事繼續往深處走，去向就在那裡。"
     },
     "register": [
       "收",
@@ -782,11 +782,11 @@ export const SLOT_TEMPLATES: SlotTemplate[] = [
       "now_to_direction"
     ],
     "length_chars": {
-      "zh": 33
+      "zh": 43
     },
     "status": "approved",
-    "version": "2026-10",
-    "note": ""
+    "version": "2026-10b",
+    "note": "2026-10-26 裁決 1b：補條件式，status 維持 approved"
   },
   {
     "template_id": "REL23_SAME_03",
@@ -800,7 +800,7 @@ export const SLOT_TEMPLATES: SlotTemplate[] = [
       ]
     },
     "text": {
-      "zh": "——同元素相連，去向像是此刻的延長線，不需要轉彎，只需要繼續。"
+      "zh": "——同元素相連，去向像是此刻的延長線：如果你允許自己不轉彎、只是繼續，它就會接上。"
     },
     "register": [
       "收",
@@ -813,11 +813,11 @@ export const SLOT_TEMPLATES: SlotTemplate[] = [
       "now_to_direction"
     ],
     "length_chars": {
-      "zh": 31
+      "zh": 41
     },
     "status": "approved",
-    "version": "2026-10",
-    "note": ""
+    "version": "2026-10b",
+    "note": "2026-10-26 裁決 1b：補條件式，status 維持 approved"
   },
   {
     "template_id": "REL23_FRIENDLY_01",
@@ -893,7 +893,7 @@ export const SLOT_TEMPLATES: SlotTemplate[] = [
       ]
     },
     "text": {
-      "zh": "——此刻與去向互相支持，所以方向不需要用力，只需要不擋住它。"
+      "zh": "——此刻與去向互相支持，所以方向不需要用力；如果你允許自己不擋住它，它會自己走。"
     },
     "register": [
       "收",
@@ -906,11 +906,11 @@ export const SLOT_TEMPLATES: SlotTemplate[] = [
       "now_to_direction"
     ],
     "length_chars": {
-      "zh": 30
+      "zh": 40
     },
     "status": "approved",
-    "version": "2026-10",
-    "note": ""
+    "version": "2026-10b",
+    "note": "2026-10-26 裁決 1b：補條件式，status 維持 approved"
   },
   {
     "template_id": "REL23_HOSTILE_01",
@@ -1017,7 +1017,7 @@ export const SLOT_TEMPLATES: SlotTemplate[] = [
       ]
     },
     "text": {
-      "zh": "——此刻與去向互不干涉：方向還沒有被現狀決定，這是一個開放的位置。"
+      "zh": "——此刻與去向互不干涉：方向還沒有被現狀決定。如果你允許這個位置先保持開放，選擇會多一點。"
     },
     "register": [
       "收",
@@ -1030,11 +1030,11 @@ export const SLOT_TEMPLATES: SlotTemplate[] = [
       "now_to_direction"
     ],
     "length_chars": {
-      "zh": 33
+      "zh": 45
     },
     "status": "approved",
-    "version": "2026-10",
-    "note": ""
+    "version": "2026-10b",
+    "note": "2026-10-26 裁決 1b：補條件式，status 維持 approved"
   },
   {
     "template_id": "REL23_NEUTRAL_02",
@@ -1048,7 +1048,7 @@ export const SLOT_TEMPLATES: SlotTemplate[] = [
       ]
     },
     "text": {
-      "zh": "而這兩張牌各自獨立：此刻說的是現場，去向說的是可能，中間留著空間給你。"
+      "zh": "而這兩張牌各自獨立：此刻說的是現場，去向說的是可能。如果你允許中間留著空間，那空間是給你的。"
     },
     "register": [
       "收",
@@ -1061,11 +1061,11 @@ export const SLOT_TEMPLATES: SlotTemplate[] = [
       "now_to_direction"
     ],
     "length_chars": {
-      "zh": 35
+      "zh": 46
     },
     "status": "approved",
-    "version": "2026-10",
-    "note": ""
+    "version": "2026-10b",
+    "note": "2026-10-26 裁決 1b：補條件式，status 維持 approved"
   },
   {
     "template_id": "REL23_NEUTRAL_03",
@@ -1079,7 +1079,7 @@ export const SLOT_TEMPLATES: SlotTemplate[] = [
       ]
     },
     "text": {
-      "zh": "——中性的相鄰，表示去向這張牌不是此刻的必然延伸；它是一個邀請，不是一個結論。"
+      "zh": "——中性的相鄰，表示去向不是此刻的必然延伸；它是一個邀請，如果你允許，才會成為下一步。"
     },
     "register": [
       "收",
@@ -1092,11 +1092,11 @@ export const SLOT_TEMPLATES: SlotTemplate[] = [
       "now_to_direction"
     ],
     "length_chars": {
-      "zh": 39
+      "zh": 43
     },
     "status": "approved",
-    "version": "2026-10",
-    "note": ""
+    "version": "2026-10b",
+    "note": "2026-10-26 裁決 1b：補條件式，status 維持 approved"
   },
   {
     "template_id": "REL_BOTH_HOSTILE_01",

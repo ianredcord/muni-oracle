@@ -9,9 +9,7 @@ import { exhaustiveOnce, KNOWN_GAP_SLOTS, lib } from "./helpers";
  * 規格與既有資料的衝突，待使用者裁決（Phase 1 報告）。
  * 在裁決前這些 id 不列入失敗；「已知衝突應為空」另以 todo 標記。
  */
-const KNOWN_CONFLICTS = new Set<string>([
-  "REL23_SAME_02", "REL23_SAME_03", "REL23_FRIENDLY_03", "REL23_NEUTRAL_01", "REL23_NEUTRAL_02", "REL23_NEUTRAL_03", // rel_23 缺「如果／允許」
-]);
+const KNOWN_CONFLICTS = new Set<string>([]); // 2026-10-26 四項裁決後已清空
 
 describe("§8.1 資料完整", () => {
   const cards = lib.cards;
@@ -68,7 +66,7 @@ describe("§8.3 模板", () => {
     const errors = lib.templates.flatMap(lintTemplate).filter((i) => i.level === "error" && !KNOWN_CONFLICTS.has(i.id));
     assert.deepEqual(errors, []);
   });
-  it("已知規格衝突清單應為空", { todo: "待使用者裁決 rel_23 六筆與寶劍國王「判決」" }, () => {
+  it("已知規格衝突清單應為空", () => {
     assert.equal(KNOWN_CONFLICTS.size, 0);
   });
   it("每個必要槽在每個可達狀態都有 ≥ 1 筆可選模板（模式 A）", () => {

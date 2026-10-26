@@ -26,17 +26,17 @@ REL12_NEUTRAL_01,rel_12,"{""rel_12"": ""neutral""}","{""flags"": [""both_sides_h
 REL12_NEUTRAL_02,rel_12,"{""rel_12"": ""neutral""}","{""flags"": [""both_sides_hostile""]}",而這兩張牌各自成立：來處說的是背景，此刻說的是現場，兩者並存就好。,3,"connective,origin_to_now",33,2026-10,
 REL12_NEUTRAL_03,rel_12,"{""rel_12"": ""neutral""}","{""flags"": [""both_sides_hostile""]}",——中性的相鄰，表示來處沒有在推、也沒有在拉，此刻這張牌可以用自己的聲音說話。,3,"connective,origin_to_now",39,2026-10,
 REL23_SAME_01,rel_23,"{""rel_23"": ""same""}","{""flags"": [""both_sides_hostile""]}",——此刻與去向同屬一個元素：如果你允許此刻的鬆動，去向會是同一股能量更成熟的樣子。,3,"connective,now_to_direction",41,2026-10,
-REL23_SAME_02,rel_23,"{""rel_23"": ""same""}","{""flags"": [""both_sides_hostile""]}",而這兩張牌是同一種元素：方向不在別處，就是此刻這件事繼續往深處走。,3,"connective,now_to_direction",33,2026-10,
-REL23_SAME_03,rel_23,"{""rel_23"": ""same""}","{""flags"": [""both_sides_hostile""]}",——同元素相連，去向像是此刻的延長線，不需要轉彎，只需要繼續。,3,"connective,now_to_direction",31,2026-10,
+REL23_SAME_02,rel_23,"{""rel_23"": ""same""}","{""flags"": [""both_sides_hostile""]}",而這兩張牌是同一種元素：方向不在別處，如果你允許此刻這件事繼續往深處走，去向就在那裡。,3,"connective,now_to_direction",43,2026-10,
+REL23_SAME_03,rel_23,"{""rel_23"": ""same""}","{""flags"": [""both_sides_hostile""]}",——同元素相連，去向像是此刻的延長線：如果你允許自己不轉彎、只是繼續，它就會接上。,3,"connective,now_to_direction",41,2026-10,
 REL23_FRIENDLY_01,rel_23,"{""rel_23"": ""friendly""}","{""flags"": [""both_sides_hostile""]}",——此刻的{elem_2}與去向的{elem_3}是友好的：如果你允許現在的鬆動，前面有東西會接住你。,3,"connective,now_to_direction",51,2026-10,
 REL23_FRIENDLY_02,rel_23,"{""rel_23"": ""friendly""}","{""flags"": [""both_sides_hostile""]}",而這兩股能量順著走：此刻做的允許，會自然被去向這張牌延續下去。,3,"connective,now_to_direction",31,2026-10,
-REL23_FRIENDLY_03,rel_23,"{""rel_23"": ""friendly""}","{""flags"": [""both_sides_hostile""]}",——此刻與去向互相支持，所以方向不需要用力，只需要不擋住它。,3,"connective,now_to_direction",30,2026-10,
+REL23_FRIENDLY_03,rel_23,"{""rel_23"": ""friendly""}","{""flags"": [""both_sides_hostile""]}",——此刻與去向互相支持，所以方向不需要用力；如果你允許自己不擋住它，它會自己走。,3,"connective,now_to_direction",40,2026-10,
 REL23_HOSTILE_01,rel_23,"{""rel_23"": ""hostile""}","{""flags"": [""both_sides_hostile""]}",——此刻的{elem_2}與去向的{elem_3}並不相容，方向和現狀之間有一道門檻。如果你允許自己慢慢跨，它不會是牆。,3,"connective,now_to_direction",60,2026-10,
 REL23_HOSTILE_02,rel_23,"{""rel_23"": ""hostile""}","{""flags"": [""both_sides_hostile""]}",而這兩張牌之間有一個轉折：去向需要的，和此刻習慣的不一樣，這正是「如果」這兩個字的位置。,3,"connective,now_to_direction",44,2026-10,
 REL23_HOSTILE_03,rel_23,"{""rel_23"": ""hostile""}","{""flags"": [""both_sides_hostile""]}",——此刻與去向的元素相斥，所以去向這張牌說的是「如果你換個姿勢」會發生的事，而不是順其自然的結果。,3,"connective,now_to_direction",49,2026-10,
-REL23_NEUTRAL_01,rel_23,"{""rel_23"": ""neutral""}","{""flags"": [""both_sides_hostile""]}",——此刻與去向互不干涉：方向還沒有被現狀決定，這是一個開放的位置。,3,"connective,now_to_direction",33,2026-10,
-REL23_NEUTRAL_02,rel_23,"{""rel_23"": ""neutral""}","{""flags"": [""both_sides_hostile""]}",而這兩張牌各自獨立：此刻說的是現場，去向說的是可能，中間留著空間給你。,3,"connective,now_to_direction",35,2026-10,
-REL23_NEUTRAL_03,rel_23,"{""rel_23"": ""neutral""}","{""flags"": [""both_sides_hostile""]}",——中性的相鄰，表示去向這張牌不是此刻的必然延伸；它是一個邀請，不是一個結論。,3,"connective,now_to_direction",39,2026-10,
+REL23_NEUTRAL_01,rel_23,"{""rel_23"": ""neutral""}","{""flags"": [""both_sides_hostile""]}",——此刻與去向互不干涉：方向還沒有被現狀決定。如果你允許這個位置先保持開放，選擇會多一點。,3,"connective,now_to_direction",45,2026-10,
+REL23_NEUTRAL_02,rel_23,"{""rel_23"": ""neutral""}","{""flags"": [""both_sides_hostile""]}",而這兩張牌各自獨立：此刻說的是現場，去向說的是可能。如果你允許中間留著空間，那空間是給你的。,3,"connective,now_to_direction",46,2026-10,
+REL23_NEUTRAL_03,rel_23,"{""rel_23"": ""neutral""}","{""flags"": [""both_sides_hostile""]}",——中性的相鄰，表示去向不是此刻的必然延伸；它是一個邀請，如果你允許，才會成為下一步。,3,"connective,now_to_direction",43,2026-10,
 REL_BOTH_HOSTILE_01,rel_both,"{""flags"": [""both_sides_hostile""]}",{},——來處與去向都和此刻的元素相斥，兩側的力量互相抵消了。今天不用管前後，只需要專注在此刻這一張。,3,"connective,focus_now",48,2026-10,命中時略過 rel_12 與 rel_23，置於 rel_12 槽位
 REL_BOTH_HOSTILE_02,rel_both,"{""flags"": [""both_sides_hostile""]}",{},而此刻這張牌被前後兩股不相容的能量夾著——不是被困住，是被框出來了。今天只有一面鏡子需要看，就是此刻。,3,"connective,focus_now",51,2026-10,命中時略過 rel_12 與 rel_23，置於 rel_12 槽位
 STRUCT_M0_01,structure,"{""major_count"": 0}","{""mode"": [""C""]}",今天三張牌都來自日常層——課題很具體，也很可調整。不是小事，而是正好在你手搆得到的地方。,3,"framing,weight",44,2026-10,模式 C 固定 1 張大秘儀，結構槽由 mirror_synthesis 取代
