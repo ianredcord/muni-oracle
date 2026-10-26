@@ -63,6 +63,7 @@ export type PageText = {
     archetypeWorks: string; fieldState: string;
   };
   dayPlan: { title: string; intro: string; morning: string; daytime: string; anytime: string; evening: string; from: (name: string) => string };
+  deepArc: string;
 };
 
 const zh: PageText = {
@@ -140,6 +141,7 @@ const zh: PageText = {
     morning: "早上｜當下調節", daytime: "白天｜日常練習", anytime: "想到就做｜香氣", evening: "晚上｜覺察方式",
     from: (name) => `來自 ${name}`,
   },
+  deepArc: "這個走向怎麼用",
 };
 
 const en: PageText = {
@@ -217,6 +219,7 @@ const en: PageText = {
     morning: "Morning — regulate", daytime: "Daytime — daily practice", anytime: "Whenever — aroma", evening: "Evening — awareness",
     from: (name) => `from ${name}`,
   },
+  deepArc: "How to work with this line",
 };
 
 export const PAGE_TEXT: Record<Locale, PageText> = { zh, en };

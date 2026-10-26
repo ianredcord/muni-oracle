@@ -187,7 +187,7 @@ export default function ReadingClient({ locale, id }: { locale: Locale; id: stri
     });
   };
   const setAllDeep = (open: boolean) => {
-    setDeepOpen({ origin: open, now: open, direction: open });
+    setDeepOpen({ origin: open, now: open, direction: open, arc: open });
     if (open) void tracker.current?.openedDeep({ section: "all" });
   };
 
@@ -209,7 +209,7 @@ export default function ReadingClient({ locale, id }: { locale: Locale; id: stri
       if (r.events.some((e) => e.type === "saved")) setSaved(true);
       replayReading(r, locale).then((res) => {
         if (!alive || !res.ok) return;
-        const b = { brief: res.brief, full: res.full, cards: res.cards };
+        const b = { brief: res.brief, full: res.full, cards: res.cards, deep: res.deep };
         setBundle(b);
         cacheRender(id, b);
       });
@@ -334,8 +334,8 @@ export default function ReadingClient({ locale, id }: { locale: Locale; id: stri
 
             {stage === "full" && (
               <p className="text-center -mt-2 mb-4">
-                <button onClick={() => setAllDeep(!(deepOpen.origin && deepOpen.now && deepOpen.direction))} className="text-xs text-[#9A7B4F] underline underline-offset-4">
-                  {deepOpen.origin && deepOpen.now && deepOpen.direction ? t.collapseAll : t.expandAll}
+                <button onClick={() => setAllDeep(!(deepOpen.origin && deepOpen.now && deepOpen.direction && deepOpen.arc))} className="text-xs text-[#9A7B4F] underline underline-offset-4">
+                  {deepOpen.origin && deepOpen.now && deepOpen.direction && deepOpen.arc ? t.collapseAll : t.expandAll}
                 </button>
               </p>
             )}
@@ -367,6 +367,21 @@ export default function ReadingClient({ locale, id }: { locale: Locale; id: stri
                   </div>
                   <p className="text-stone-700 leading-loose">{L.arc}</p>
                   <Debug id="arc" show={debug} />
+                  {stage === "full" && bundle.deep?.arc && (
+                    <div className="mt-3">
+                      <button onClick={() => toggleDeep("arc")} className="text-xs text-[#9A7B4F] underline underline-offset-4">{deepOpen.arc ? t.deepClose : `${t.deepArc} ▾`}</button>
+                      <AnimatePresence initial={false}>
+                        {deepOpen.arc && (
+                          <motion.div key="deep-arc" initial={{ height: 0, opacity: 0 }} animate={{ height: "auto", opacity: 1 }} exit={{ height: 0, opacity: 0 }} className="overflow-hidden">
+                            <div className="mt-3 rounded-2xl bg-white/60 border border-white/60 px-5 py-4">
+                              <p className="text-stone-700 leading-loose text-[15px]">{bundle.deep.arc.text}</p>
+                              <Debug id={bundle.deep.arc.deepId} show={debug} />
+                            </div>
+                          </motion.div>
+                        )}
+                      </AnimatePresence>
+                    </div>
+                  )}
                 </Card>
               )}
 

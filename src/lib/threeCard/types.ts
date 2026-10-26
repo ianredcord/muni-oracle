@@ -78,6 +78,15 @@ export type MirrorText = {
   status: Status;
 };
 
+/** 深度層文字（deep-layer-design §2.2–2.4）：依 state 直接查，不進 selections */
+export type DeepText = {
+  deepId: string;
+  kind: "arc" | "relation" | "blend";
+  trigger: Record<string, TriggerValue>;
+  text: LocalizedText;
+  status: Status;
+};
+
 /** §2 狀態向量（variant 不是狀態） */
 export type State = {
   mode: Mode;

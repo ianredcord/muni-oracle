@@ -21,7 +21,8 @@ export type CardView = {
   };
 };
 
-export type RenderBundle = { brief: Segment[]; full: Segment[]; cards: CardView[] };
+export type DeepBundle = { arc?: { deepId: string; text: string } | null };
+export type RenderBundle = { brief: Segment[]; full: Segment[]; cards: CardView[]; deep?: DeepBundle };
 
 const RENDER_KEY = "muni.threeCard.render.v1";
 

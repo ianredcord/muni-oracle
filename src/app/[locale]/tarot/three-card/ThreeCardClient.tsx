@@ -94,7 +94,7 @@ export default function ThreeCardClient({ locale, cards }: { locale: Locale; car
     const recent = await recentForUser(userId);
     const res = await drawReading({ mode, ids: picked as number[], locale, userId, recent });
     if (!res.ok) { setError(res.error); setPhase("draw"); return; }
-    await saveReading(res.record, { brief: res.brief, full: res.full, cards: res.cards });
+    await saveReading(res.record, { brief: res.brief, full: res.full, cards: res.cards, deep: res.deep });
     router.push(localeHref(locale, `/tarot/three-card/reading/${res.record.reading_id}`));
   };
 

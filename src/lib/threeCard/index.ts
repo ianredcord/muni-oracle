@@ -1,5 +1,6 @@
 // 三牌陣引擎入口。預設內容庫由 src/data/threeCard 的產生檔組成。
 import { THREE_CARD_CARDS } from "../../data/threeCard/cards";
+import { DEEP_TEXT } from "../../data/threeCard/deepText";
 import { MIRROR_TEXT } from "../../data/threeCard/mirrorText";
 import { POSITION_TEXT } from "../../data/threeCard/positionText";
 import { SLOT_TEMPLATES } from "../../data/threeCard/slotTemplates";
@@ -16,3 +17,7 @@ export * from "./assemble";
 export * from "./replay";
 export * from "./reading";
 export * from "./events";
+export * from "./deep";
+export function defaultDeepText() {
+  return DEEP_TEXT;
+}

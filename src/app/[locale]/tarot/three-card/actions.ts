@@ -2,9 +2,9 @@
 
 // 三牌陣 server actions：選取與重播都在 server 端，模板與短文不進前端。
 import { getTarotCards } from "@/data/tarot";
-import { compose, defaultLibrary, kind, replay, type Mode, type ReadingRecord, type Recent, type Segment } from "@/lib/threeCard/index";
+import { compose, defaultDeepText, defaultLibrary, kind, pickDeep, replay, type Mode, type ReadingRecord, type Recent, type Segment, type State } from "@/lib/threeCard/index";
 import type { Locale } from "@/i18n/config";
-import type { CardView } from "@/lib/threeCard/storage";
+import type { CardView, DeepBundle } from "@/lib/threeCard/storage";
 
 const MODES: Mode[] = ["A", "B", "C"];
 
@@ -54,8 +54,12 @@ function validIds(mode: Mode, ids: unknown): ids is [number, number, number] {
   return true;
 }
 
+function deepFor(state: State, readingId: string, locale: Locale): DeepBundle {
+  return { arc: pickDeep(defaultDeepText(), "arc", state, readingId, locale) };
+}
+
 export type DrawResult =
-  | { ok: true; record: ReadingRecord; brief: Segment[]; full: Segment[]; cards: CardView[] }
+  | { ok: true; record: ReadingRecord; brief: Segment[]; full: Segment[]; cards: CardView[]; deep: DeepBundle }
   | { ok: false; error: string };
 
 export async function drawReading(input: { mode: Mode; ids: number[]; locale: Locale; userId: string; recent?: Recent }): Promise<DrawResult> {
@@ -66,10 +70,10 @@ export async function drawReading(input: { mode: Mode; ids: number[]; locale: Lo
   const c = compose(lib, input.ids, { mode, locale, userId, variant: "brief", recent: input.recent, createdAt: new Date().toISOString() });
   const full = replay(lib, c.record, "full");
   const all = await listCardViews(locale);
-  return { ok: true, record: c.record, brief: c.rendered.segments, full: full.segments, cards: viewsFor(locale, input.ids, all) };
+  return { ok: true, record: c.record, brief: c.rendered.segments, full: full.segments, cards: viewsFor(locale, input.ids, all), deep: deepFor(c.record.state, c.record.reading_id, locale) };
 }
 
-export type ReplayResult = { ok: true; brief: Segment[]; full: Segment[]; cards: CardView[] } | { ok: false; error: string };
+export type ReplayResult = { ok: true; brief: Segment[]; full: Segment[]; cards: CardView[]; deep: DeepBundle } | { ok: false; error: string };
 
 export async function replayReading(record: ReadingRecord, locale: Locale): Promise<ReplayResult> {
   try {
@@ -78,7 +82,7 @@ export async function replayReading(record: ReadingRecord, locale: Locale): Prom
     const brief = replay(lib, record, "brief", locale);
     const full = replay(lib, record, "full", locale);
     const all = await listCardViews(locale);
-    return { ok: true, brief: brief.segments, full: full.segments, cards: viewsFor(locale, record.cards, all) };
+    return { ok: true, brief: brief.segments, full: full.segments, cards: viewsFor(locale, record.cards, all), deep: deepFor(record.state, record.reading_id, locale) };
   } catch (e) {
     return { ok: false, error: (e as Error).message };
   }
