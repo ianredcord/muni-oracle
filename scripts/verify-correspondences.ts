@@ -63,7 +63,7 @@ for (const c of cards) {
 check(echoProblems.length === 0, "systemL2Echo 76 張雙向一致", echoProblems.join("；") || `${cards.length - rescue.length} 張`);
 
 // tarot.generated.ts 與 JSON 一致（忽略兩行標頭）
-const strip = (s: string) => s.split("\n").slice(2).join("\n");
+const strip = (s: string) => s.split("\n").slice(2).filter((l) => l !== 'import "server-only";').join("\n").replace(/\n{3,}/g, "\n\n"); // 忽略標頭與工作樹暫存的 server-only 行
 const rendered = renderTs(cards, "", "");
 check(strip(fs.readFileSync(TS_PATH, "utf8")) === strip(rendered), `${TS_PATH} 由 ${JSON_PATH} 產出一致`);
 
