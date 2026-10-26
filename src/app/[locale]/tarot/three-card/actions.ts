@@ -24,6 +24,11 @@ export async function listCardViews(locale: Locale): Promise<CardView[]> {
       flowerEn: e.bachFlowerEn,
       archetype: c.jungianArchetype ?? "",
       step2Allow: e.step2Allow,
+      deep: {
+        uprightMessage: c.uprightMessage ?? "", symbolReading: c.symbolReading ?? "", jungianAnalysis: c.jungianAnalysis ?? "",
+        flowerSpectrum: c.flowerSpectrum ?? "", step1Status: c.step1Status ?? "", breathing: c.breathing ?? "",
+        aromaGuide: c.aromaGuide ?? "", dailyPractice: c.dailyPractice ?? "", awarenessNote: c.awarenessNote ?? "",
+      },
     };
   });
 }

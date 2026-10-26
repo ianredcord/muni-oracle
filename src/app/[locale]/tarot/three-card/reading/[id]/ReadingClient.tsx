@@ -95,6 +95,75 @@ function RelationBlock({ label, text, debug }: { label: string; text: string; de
   );
 }
 
+/* ───────── 深度層 v3 ───────── */
+
+type DeepItem = { q: string; paras: string[] };
+
+/** 依位置／鏡面選既有深度欄位（deep-layer-design §2.1） */
+function deepItemsFor(card: CardView, position: (typeof POSITIONS)[number], mode: Mode, t: PageText): { lead: string; items: DeepItem[] } {
+  const d = card.deep;
+  const q = t.deepQ;
+  if (mode === "C") {
+    if (position === "origin") return { lead: t.deepLead.archetype, items: [{ q: q.archetypeWorks, paras: [d.jungianAnalysis] }, { q: q.symbol, paras: [d.symbolReading] }] };
+    if (position === "now") return { lead: t.deepLead.persona, items: [{ q: q.core, paras: [d.uprightMessage] }, { q: q.whyFlower, paras: [d.flowerSpectrum] }] };
+    return { lead: t.deepLead.situation, items: [{ q: q.fieldState, paras: [d.step1Status] }, { q: q.practice, paras: [d.dailyPractice] }] };
+  }
+  if (position === "origin") return { lead: t.deepLead.origin, items: [{ q: q.carries, paras: [d.step1Status, d.flowerSpectrum] }, { q: q.symbol, paras: [d.symbolReading] }] };
+  if (position === "now") return { lead: t.deepLead.now, items: [{ q: q.core, paras: [d.uprightMessage] }, { q: q.whyFlower, paras: [d.flowerSpectrum, d.jungianAnalysis] }, { q: q.doNow, paras: [d.breathing, d.aromaGuide] }] };
+  return { lead: t.deepLead.direction, items: [{ q: q.symbol, paras: [d.symbolReading] }, { q: q.practice, paras: [d.dailyPractice, d.awarenessNote] }] };
+}
+
+function DeepPanel({ card, position, mode, t, open, onToggle }: { card: CardView; position: (typeof POSITIONS)[number]; mode: Mode; t: PageText; open: boolean; onToggle: () => void }) {
+  const { lead, items } = deepItemsFor(card, position, mode, t);
+  return (
+    <div className="mt-3">
+      <button onClick={onToggle} className="text-xs text-[#9A7B4F] underline underline-offset-4">{open ? t.deepClose : `${t.deepIn} ▾`}</button>
+      <AnimatePresence initial={false}>
+        {open && (
+          <motion.div key="deep" initial={{ height: 0, opacity: 0 }} animate={{ height: "auto", opacity: 1 }} exit={{ height: 0, opacity: 0 }} className="overflow-hidden">
+            <div className="mt-3 rounded-2xl bg-white/60 border border-white/60 px-5 py-4 space-y-5">
+              <p className="text-xs text-stone-400 leading-relaxed">{lead}</p>
+              {items.map((it) => (
+                <div key={it.q}>
+                  <div className="font-serif text-[#4a5548] mb-1">{it.q}</div>
+                  {it.paras.filter(Boolean).map((para, i) => <p key={i} className="text-stone-700 leading-loose text-[15px] mb-2 last:mb-0">{para}</p>)}
+                </div>
+              ))}
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+}
+
+/** 今天怎麼用這一局（§2.5）：三張牌的實作欄位排成一天 */
+function DayPlan({ cards, t }: { cards: CardView[]; t: PageText }) {
+  const rows: { slot: string; card: CardView; text: string }[] = [
+    { slot: t.dayPlan.morning, card: cards[1], text: cards[1].deep.breathing },
+    { slot: t.dayPlan.daytime, card: cards[2], text: cards[2].deep.dailyPractice },
+    { slot: t.dayPlan.anytime, card: cards[1], text: cards[1].deep.aromaGuide },
+    { slot: t.dayPlan.evening, card: cards[0], text: cards[0].deep.awarenessNote },
+  ].filter((r) => r.text);
+  return (
+    <Card tone="white">
+      <Label>{t.dayPlan.title}</Label>
+      <p className="text-xs text-stone-400 mb-3">{t.dayPlan.intro}</p>
+      <ol className="divide-y divide-stone-200/70">
+        {rows.map((r) => (
+          <li key={r.slot} className="py-3 flex gap-3">
+            <CardFace c={r.card} size={36} />
+            <div>
+              <div className="text-xs text-[#9A7B4F]">{r.slot}<span className="text-stone-400">　{t.dayPlan.from(r.card.displayName)}</span></div>
+              <p className="text-stone-700 leading-loose text-[15px]">{r.text}</p>
+            </div>
+          </li>
+        ))}
+      </ol>
+    </Card>
+  );
+}
+
 /* ───────── 主元件 ───────── */
 
 export default function ReadingClient({ locale, id }: { locale: Locale; id: string }) {
@@ -107,7 +176,20 @@ export default function ReadingClient({ locale, id }: { locale: Locale; id: stri
   const [saved, setSaved] = useState(false);
   const [shared, setShared] = useState(false);
   const [copied, setCopied] = useState(false);
+  const [deepOpen, setDeepOpen] = useState<Record<string, boolean>>({});
   const tracker = useRef<ReadingTracker | null>(null);
+
+  const toggleDeep = (key: string) => {
+    setDeepOpen((prev) => {
+      const next = !prev[key];
+      if (next) void tracker.current?.openedDeep({ section: key });
+      return { ...prev, [key]: next };
+    });
+  };
+  const setAllDeep = (open: boolean) => {
+    setDeepOpen({ origin: open, now: open, direction: open });
+    if (open) void tracker.current?.openedDeep({ section: "all" });
+  };
 
   useEffect(() => {
     let alive = true;
@@ -250,6 +332,14 @@ export default function ReadingClient({ locale, id }: { locale: Locale; id: stri
               ))}
             </div>
 
+            {stage === "full" && (
+              <p className="text-center -mt-2 mb-4">
+                <button onClick={() => setAllDeep(!(deepOpen.origin && deepOpen.now && deepOpen.direction))} className="text-xs text-[#9A7B4F] underline underline-offset-4">
+                  {deepOpen.origin && deepOpen.now && deepOpen.direction ? t.collapseAll : t.expandAll}
+                </button>
+              </p>
+            )}
+
             <article className="space-y-7">
               {L.opening && <p className="text-center text-sm text-stone-400">{L.opening}<Debug id="opening" show={debug} /></p>}
               {L.exception && <Card tone="gold"><Label>{t.labels.exception}</Label><p className="text-stone-700 leading-loose">{L.exception}</p></Card>}
@@ -257,11 +347,14 @@ export default function ReadingClient({ locale, id }: { locale: Locale; id: stri
               {L.structure && <p className="text-sm text-stone-500 text-center"><span className="text-[#9A7B4F]">{t.labels.structure}</span>　{L.structure}</p>}
 
               <PositionSection block={L.positions[0]} card={bundle.cards[0]} mode={mode} t={t} debug={debug} />
+              {stage === "full" && <DeepPanel card={bundle.cards[0]} position="origin" mode={mode} t={t} open={!!deepOpen.origin} onToggle={() => toggleDeep("origin")} />}
               {L.relBoth && <RelationBlock label={t.labels.relBoth} text={L.relBoth} debug={debug} />}
               {L.rel12 && <RelationBlock label={t.labels.rel12} text={L.rel12} debug={debug} />}
               <PositionSection block={L.positions[1]} card={bundle.cards[1]} mode={mode} t={t} debug={debug} showAllow={false} />
+              {stage === "full" && <DeepPanel card={bundle.cards[1]} position="now" mode={mode} t={t} open={!!deepOpen.now} onToggle={() => toggleDeep("now")} />}
               {L.rel23 && <RelationBlock label={t.labels.rel23} text={L.rel23} debug={debug} />}
               <PositionSection block={L.positions[2]} card={bundle.cards[2]} mode={mode} t={t} debug={debug} />
+              {stage === "full" && <DeepPanel card={bundle.cards[2]} position="direction" mode={mode} t={t} open={!!deepOpen.direction} onToggle={() => toggleDeep("direction")} />}
 
               {L.arc && arc && (
                 <Card tone="white">
@@ -319,6 +412,7 @@ export default function ReadingClient({ locale, id }: { locale: Locale; id: stri
                       <p className="text-stone-700 leading-loose">{L.body}</p>
                     </Card>
                   )}
+                  <DayPlan cards={bundle.cards} t={t} />
                   <div className="pt-4 border-t border-stone-200/70 text-center">
                     <Label>{t.labels.deep}</Label>
                     <p className="text-sm text-stone-400 mb-1">{deepTr}</p>

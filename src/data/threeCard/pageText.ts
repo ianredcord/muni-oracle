@@ -51,6 +51,18 @@ export type PageText = {
   archetypeLabel: string;
   copyTakeaway: string;
   copied: string;
+  /** 深度層 v3 */
+  deepIn: string;
+  deepClose: string;
+  expandAll: string;
+  collapseAll: string;
+  /** 位置導語：A/B 用 origin/now/direction；C 用 archetype/persona/situation */
+  deepLead: Record<"origin" | "now" | "direction" | "archetype" | "persona" | "situation", string>;
+  deepQ: {
+    carries: string; symbol: string; core: string; whyFlower: string; doNow: string; practice: string;
+    archetypeWorks: string; fieldState: string;
+  };
+  dayPlan: { title: string; intro: string; morning: string; daytime: string; anytime: string; evening: string; from: (name: string) => string };
 };
 
 const zh: PageText = {
@@ -106,6 +118,28 @@ const zh: PageText = {
   archetypeLabel: "原型",
   copyTakeaway: "複製這句",
   copied: "已複製",
+  deepIn: "深入這張牌",
+  deepClose: "收起",
+  expandAll: "全部展開",
+  collapseAll: "全部收起",
+  deepLead: {
+    origin: "這些是它一直帶在身上的東西，不是今天才出現的。",
+    now: "這張牌是今天的中心；下面是它的來歷，與現在就能做的事。",
+    direction: "去向不是預告，是如果你允許，可以往哪裡練。",
+    archetype: "原型是底色，不是標籤；下面是它在你身上運作的方式。",
+    persona: "人格是你拿出來用的樣子；下面是它的核心訊息與花精。",
+    situation: "情境是你現在站的場；下面是它的狀態，與可以練的事。",
+  },
+  deepQ: {
+    carries: "這張牌帶著什麼來？", symbol: "它的象徵在說什麼？", core: "這張牌的核心訊息", whyFlower: "為什麼是這支花精？",
+    doNow: "現在就能做的", practice: "如果往這裡走，可以練什麼？", archetypeWorks: "這個原型在你身上怎麼運作？", fieldState: "這個場現在的狀態",
+  },
+  dayPlan: {
+    title: "今天怎麼用這一局",
+    intro: "三張牌各自帶來一個做法，排成一天的順序。不用全做，挑一個開始。",
+    morning: "早上｜當下調節", daytime: "白天｜日常練習", anytime: "想到就做｜香氣", evening: "晚上｜覺察方式",
+    from: (name) => `來自 ${name}`,
+  },
 };
 
 const en: PageText = {
@@ -161,6 +195,28 @@ const en: PageText = {
   archetypeLabel: "Archetype",
   copyTakeaway: "Copy this line",
   copied: "Copied",
+  deepIn: "Go deeper into this card",
+  deepClose: "Close",
+  expandAll: "Expand all",
+  collapseAll: "Collapse all",
+  deepLead: {
+    origin: "These are things it has carried for a while, not something that appeared today.",
+    now: "This card is today's centre; below is where it comes from, and what you can do right now.",
+    direction: "Direction is not a forecast; it is where you could practise, if you allow it.",
+    archetype: "The archetype is the undertone, not a label; below is how it works in you.",
+    persona: "The persona is what you bring out to use; below is its core message and essence.",
+    situation: "The situation is the field you stand in; below is its state, and what you could practise.",
+  },
+  deepQ: {
+    carries: "What does this card bring with it?", symbol: "What does its imagery say?", core: "The core message of this card", whyFlower: "Why this essence?",
+    doNow: "Something you can do right now", practice: "If you go this way, what could you practise?", archetypeWorks: "How does this archetype work in you?", fieldState: "The state of this field",
+  },
+  dayPlan: {
+    title: "How to use this spread today",
+    intro: "Each card brings one practice, laid out in the order of a day. You need not do them all; pick one to begin.",
+    morning: "Morning — regulate", daytime: "Daytime — daily practice", anytime: "Whenever — aroma", evening: "Evening — awareness",
+    from: (name) => `from ${name}`,
+  },
 };
 
 export const PAGE_TEXT: Record<Locale, PageText> = { zh, en };

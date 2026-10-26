@@ -73,6 +73,9 @@ describe("體驗流程 v2 的新 UI 文字通過 §6", () => {
         ...Object.entries(t.labels).map(([k, v]) => [`label.${k}`, v] as [string, string]),
         ...Object.entries(t.blendRoles).map(([k, v]) => [`blend.${k}`, v] as [string, string]),
         ["deepNote", t.deepNote], ["intro", t.intro],
+        ...Object.entries(t.deepLead).map(([k, v]) => [`deepLead.${k}`, v] as [string, string]),
+        ...Object.entries(t.deepQ).map(([k, v]) => [`deepQ.${k}`, v] as [string, string]),
+        ["dayPlan.title", t.dayPlan.title], ["dayPlan.intro", t.dayPlan.intro], ["dayPlan.morning", t.dayPlan.morning], ["dayPlan.daytime", t.dayPlan.daytime], ["dayPlan.anytime", t.dayPlan.anytime], ["dayPlan.evening", t.dayPlan.evening],
       ];
       for (const [k, v] of texts) issues.push(...lintFreeText(`${loc}/${k}`, v));
     }

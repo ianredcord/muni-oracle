@@ -14,6 +14,11 @@ export type CardView = {
   flowerEn: string;
   archetype: string;
   step2Allow: string;
+  /** 深度層（既有已核准欄位） */
+  deep: {
+    uprightMessage: string; symbolReading: string; jungianAnalysis: string; flowerSpectrum: string;
+    step1Status: string; breathing: string; aromaGuide: string; dailyPractice: string; awarenessNote: string;
+  };
 };
 
 export type RenderBundle = { brief: Segment[]; full: Segment[]; cards: CardView[] };
