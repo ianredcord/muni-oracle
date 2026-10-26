@@ -53,7 +53,7 @@ export function MingyurQuoteSection({
           <>
             {" "}
             {dict.mingyur.readMore
-              .replace("{book}", bookLabel)
+              .replace("{book}", card.book) /* 字典模板已含書名號，這裡只放書名 */
               .replace("{page}", card.page)}
           </>
         )}

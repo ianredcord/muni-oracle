@@ -1,4 +1,5 @@
 // 瀏覽器端：reading 紀錄（LocalStorageReadingStore）＋渲染快取。只在 client 使用。
+import type { MingyurCard } from "@/data/mingyur";
 import type { Segment } from "./assemble";
 import { LocalStorageReadingStore, recentFrom, RECENT_N } from "./reading";
 import type { ReadingRecord, Recent } from "./types";
@@ -14,6 +15,8 @@ export type CardView = {
   flowerEn: string;
   archetype: string;
   step2Allow: string;
+  /** 這張牌既有配對的仁波切箴言（與百科頁相同；英文站為 null） */
+  rinpoche?: MingyurCard | null;
   /** 深度層（既有已核准欄位） */
   deep: {
     uprightMessage: string; symbolReading: string; jungianAnalysis: string; flowerSpectrum: string;
@@ -27,6 +30,8 @@ export type DeepBundle = {
   rel12?: DeepPickView;
   rel23?: DeepPickView;
   blend?: { main: DeepPickView; release: DeepPickView; support: DeepPickView };
+  /** 整局一句（依走向與例外配對；英文站為 null） */
+  rinpoche?: MingyurCard | null;
 };
 export type RenderBundle = { brief: Segment[]; full: Segment[]; cards: CardView[]; deep?: DeepBundle };
 

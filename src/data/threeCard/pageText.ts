@@ -66,6 +66,7 @@ export type PageText = {
   deepArc: string;
   deepRel: string;
   deepBlend: string;
+  rinpocheLabel: string;
 };
 
 const zh: PageText = {
@@ -146,6 +147,7 @@ const zh: PageText = {
   deepArc: "這個走向怎麼用",
   deepRel: "兩張牌為什麼這樣接",
   deepBlend: "三支花精怎麼搭",
+  rinpocheLabel: "仁波切的話",
 };
 
 const en: PageText = {
@@ -226,6 +228,7 @@ const en: PageText = {
   deepArc: "How to work with this line",
   deepRel: "Why these two cards meet this way",
   deepBlend: "How the three essences fit together",
+  rinpocheLabel: "Rinpoche's words",
 };
 
 export const PAGE_TEXT: Record<Locale, PageText> = { zh, en };

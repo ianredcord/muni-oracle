@@ -6,6 +6,7 @@ import Image from "next/image";
 import { useSearchParams } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { Header } from "@/components/Header";
+import { MingyurQuoteSection } from "@/components/MingyurQuote";
 import { Footer } from "@/components/Footer";
 import { MODE_TEXT } from "@/data/threeCard/modes";
 import { PAGE_TEXT, type PageText } from "@/data/threeCard/pageText";
@@ -152,6 +153,15 @@ function DeepPanel({ card, position, mode, t, open, onToggle }: { card: CardView
                   {it.paras.filter(Boolean).map((para, i) => <p key={i} className="text-stone-700 leading-loose text-[15px] mb-2 last:mb-0">{para}</p>)}
                 </div>
               ))}
+              {card.rinpoche && (
+                <div className="pt-3 border-t border-stone-200/70">
+                  <div className="text-xs tracking-widest text-[#9A7B4F] mb-2">{t.rinpocheLabel}</div>
+                  <blockquote className="pl-4 border-l-2 border-[#9A7B4F]/30">
+                    {card.rinpoche.quote.split("\n").map((q, i) => <p key={i} className="font-serif text-[#4a5548] leading-loose text-[15px]">{q}</p>)}
+                    <footer className="mt-2 text-xs text-[#9A7B4F]">— 《{card.rinpoche.book}》{card.rinpoche.page}</footer>
+                  </blockquote>
+                </div>
+              )}
             </div>
           </motion.div>
         )}
@@ -422,6 +432,8 @@ export default function ReadingClient({ locale, id }: { locale: Locale; id: stri
                 <p className="font-serif text-2xl text-[#4a5548] leading-relaxed">{bundle.cards[1].step2Allow}</p>
                 <button onClick={() => copyTakeaway(bundle.cards[1].step2Allow)} className="mt-3 text-xs text-[#9A7B4F] underline underline-offset-4">{copied ? t.copied : t.copyTakeaway}</button>
               </Card>
+
+              {bundle.deep?.rinpoche && <MingyurQuoteSection locale={locale} card={bundle.deep.rinpoche} />}
 
               {stage === "full" && (
                 <>

@@ -1,7 +1,9 @@
 "use server";
 
 // 三牌陣 server actions：選取與重播都在 server 端，模板與短文不進前端。
+import { getMingyurCard, getMingyurForTarot } from "@/data/mingyur";
 import { getTarotCards } from "@/data/tarot";
+import { pickRinpocheId } from "@/data/threeCard/rinpoche";
 import { compose, defaultDeepText, defaultLibrary, kind, pickBlendDeep, pickDeep, pickRelationDeep, replay, type Mode, type ReadingRecord, type Recent, type Segment, type State } from "@/lib/threeCard/index";
 import type { Locale } from "@/i18n/config";
 import type { CardView, DeepBundle } from "@/lib/threeCard/storage";
@@ -24,6 +26,7 @@ export async function listCardViews(locale: Locale): Promise<CardView[]> {
       flowerEn: e.bachFlowerEn,
       archetype: c.jungianArchetype ?? "",
       step2Allow: e.step2Allow,
+      rinpoche: getMingyurForTarot(locale, c.slug, c.bachFlowerEn) ?? null,
       deep: {
         uprightMessage: c.uprightMessage ?? "", symbolReading: c.symbolReading ?? "", jungianAnalysis: c.jungianAnalysis ?? "",
         flowerSpectrum: c.flowerSpectrum ?? "", step1Status: c.step1Status ?? "", breathing: c.breathing ?? "",
@@ -65,6 +68,7 @@ function deepFor(state: State, readingId: string, locale: Locale): DeepBundle {
       release: pickBlendDeep(rows, "release", readingId, locale),
       support: pickBlendDeep(rows, "support", readingId, locale),
     },
+    rinpoche: getMingyurCard(locale, pickRinpocheId(state, readingId)) ?? null,
   };
 }
 
