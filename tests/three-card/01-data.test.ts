@@ -11,7 +11,6 @@ import { exhaustiveOnce, KNOWN_GAP_SLOTS, lib } from "./helpers";
  */
 const KNOWN_CONFLICTS = new Set<string>([
   "REL23_SAME_02", "REL23_SAME_03", "REL23_FRIENDLY_03", "REL23_NEUTRAL_01", "REL23_NEUTRAL_02", "REL23_NEUTRAL_03", // rel_23 缺「如果／允許」
-  "寶劍國王/now", "寶劍國王/persona", // 「判決」不在「不是」之後（v4.1 新稿的允許句，人格鏡像短文照規格引用同一句）
 ]);
 
 describe("§8.1 資料完整", () => {

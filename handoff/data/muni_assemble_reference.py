@@ -18,7 +18,8 @@ E={"火":"Fire","水":"Water","風":"Air","地":"Earth"}
 def elem(c): return E[c["element"][0]]
 def kind(c): return "major" if c["suit"]=="major" else ("pip" if c.get("number") else "court")
 def layer(c): return "L2" if kind(c)=="pip" else "L1"
-INTEG={"節制","星星","世界"}|{s+"十" for s in "權杖聖杯寶劍錢幣"}|{s+"國王" for s in "權杖聖杯寶劍錢幣"}
+SUITS_ZH=("權杖","聖杯","寶劍","錢幣")
+INTEG={"節制","星星","世界"}|{s+"十" for s in SUITS_ZH}|{s+"國王" for s in SUITS_ZH}   # 11 張（原版對字串迭代，只剩 3 張；2026-10-26 修正）
 RANKW={"Ace":1,"2":2,"3":3,"4":4,"5":5,"6":6,"7":7,"8":8,"9":9,"10":10}
 ROMAN={"0":0,"I":1,"II":2,"III":3,"IV":4,"V":5,"VI":6,"VII":7,"VIII":8,"IX":9,"X":10,"XI":11,"XII":12,"XIII":13,"XIV":14,"XV":15,"XVI":16,"XVII":17,"XVIII":18,"XIX":19,"XX":20,"XXI":21}
 COURT_RANK={"侍者":11,"騎士":12,"皇后":13,"國王":14}

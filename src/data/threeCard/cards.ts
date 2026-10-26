@@ -895,7 +895,7 @@ export const THREE_CARD_CARDS: Card[] = [
     "element": "風中之風",
     "bachFlowerEn": "Pine",
     "bachFlowerZh": "松樹",
-    "step2Allow": "我允許自己卸下不屬於我的責任，判決可以結案了。",
+    "step2Allow": "我允許自己卸下不屬於我的責任，案子可以結了。",
     "step3Body": "留意你的上背與兩側肩胛之間——自責時那裡常常是繃緊往內收的。把雙手背到身後輕輕互握，肩胛往中間靠，停三秒再放開，像是替自己解開一副無形的枷鎖。",
     "systemL2Echo": "聖杯九 9 of Cups",
     "mbti": "ESTJ"

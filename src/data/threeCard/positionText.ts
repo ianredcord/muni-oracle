@@ -1528,7 +1528,7 @@ export const POSITION_TEXT: PositionText[] = [
     "cardId": 64,
     "position": "now",
     "text": {
-      "zh": "此刻判決可以結案——松樹（Pine）陪你把法官的位置暫時讓出來。允許句：我允許自己卸下不屬於我的責任，判決可以結案了。"
+      "zh": "此刻案子可以結了——松樹（Pine）陪你把法官的位置暫時讓出來。允許句：我允許自己卸下不屬於我的責任，案子可以結了。"
     },
     "status": "approved"
   },
