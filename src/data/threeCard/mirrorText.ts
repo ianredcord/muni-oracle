@@ -181,6 +181,86 @@ export const MIRROR_TEXT: MirrorText[] = [
     "status": "draft"
   },
   {
+    "cardId": 23,
+    "mirror": "situation",
+    "text": {
+      "zh": "你所在的場，有一股剛被點燃的推力，還沒有形狀。如果你允許它從最小的動作開始，起點會自己長出方向。"
+    },
+    "status": "draft"
+  },
+  {
+    "cardId": 24,
+    "mirror": "situation",
+    "text": {
+      "zh": "你所在的場，是一個看得見兩條路的高處。如果你允許自己先站著看一會兒，不急著踩下去，羅盤會比地圖更早說話。"
+    },
+    "status": "draft"
+  },
+  {
+    "cardId": 25,
+    "mirror": "situation",
+    "text": {
+      "zh": "你所在的場，是船已經出去、人還在岸上等的那段時間。如果你允許等待也算是一種參與，遠方的消息會比催促更快到。"
+    },
+    "status": "draft"
+  },
+  {
+    "cardId": 26,
+    "mirror": "situation",
+    "text": {
+      "zh": "你所在的場，有一種可以放心慶祝的穩。如果你允許自己真的停下來享受這一刻，歸屬感不需要別人頒發。"
+    },
+    "status": "draft"
+  },
+  {
+    "cardId": 27,
+    "mirror": "situation",
+    "text": {
+      "zh": "你所在的場，有好幾種聲音同時在搶麥克風。如果你允許摩擦只是不同，不是敵意，激盪會變成一起做出來的東西。"
+    },
+    "status": "draft"
+  },
+  {
+    "cardId": 28,
+    "mirror": "situation",
+    "text": {
+      "zh": "你所在的場，剛好有掌聲落下。如果你允許自己接住這份認可而不急著謙虛，底下那道光會比掌聲留得更久。"
+    },
+    "status": "draft"
+  },
+  {
+    "cardId": 29,
+    "mirror": "situation",
+    "text": {
+      "zh": "你所在的場，是一個需要站穩立場的位置。如果你允許自己說不而不解釋太多，界限會比防守來得輕。"
+    },
+    "status": "draft"
+  },
+  {
+    "cardId": 30,
+    "mirror": "situation",
+    "text": {
+      "zh": "你所在的場，一切都在快速移動，訊息來來去去。如果你允許速度流過而不急著追每一條，該到的會自己到。"
+    },
+    "status": "draft"
+  },
+  {
+    "cardId": 31,
+    "mirror": "situation",
+    "text": {
+      "zh": "你所在的場，是撐了很久之後的最後一段。如果你允許自己先坐下來，堅持不會因為休息就不算數。"
+    },
+    "status": "draft"
+  },
+  {
+    "cardId": 32,
+    "mirror": "situation",
+    "text": {
+      "zh": "你所在的場，手上的東西已經比能抱的多。如果你允許其中幾樣先放到地上，走得動的距離會比想像中長。"
+    },
+    "status": "draft"
+  },
+  {
     "cardId": 33,
     "mirror": "persona",
     "text": {
@@ -209,6 +289,86 @@ export const MIRROR_TEXT: MirrorText[] = [
     "mirror": "persona",
     "text": {
       "zh": "你表現出來的，是看得遠、也定得快——別人感受到的是方向，有時也是標準太高。山毛櫸（Beech）陪你讓標準鬆一格。允許句：我允許這個世界不完美，也允許自己放下標準。"
+    },
+    "status": "draft"
+  },
+  {
+    "cardId": 37,
+    "mirror": "situation",
+    "text": {
+      "zh": "你所在的場，有一股情感剛剛開始流。如果你允許它先不被命名，心的開口會自己找到該往哪裡去。"
+    },
+    "status": "draft"
+  },
+  {
+    "cardId": 38,
+    "mirror": "situation",
+    "text": {
+      "zh": "你所在的場，是兩個人正把杯子遞給對方的那一刻。如果你允許交換不計較誰給得多，連結會比承諾更穩。"
+    },
+    "status": "draft"
+  },
+  {
+    "cardId": 39,
+    "mirror": "situation",
+    "text": {
+      "zh": "你所在的場，有一群人一起舉杯。如果你允許自己只是參與而不負責讓大家開心，分享本身就夠熱。"
+    },
+    "status": "draft"
+  },
+  {
+    "cardId": 40,
+    "mirror": "situation",
+    "text": {
+      "zh": "你所在的場，有一杯已經遞到面前、你卻沒看的機會。如果你允許自己再感受一次，麻木底下的興趣會慢慢回來。"
+    },
+    "status": "draft"
+  },
+  {
+    "cardId": 41,
+    "mirror": "situation",
+    "text": {
+      "zh": "你所在的場，有一種還在數著失去的安靜。如果你允許目光從倒下的移到還站著的，這個場就會慢慢換氣。"
+    },
+    "status": "draft"
+  },
+  {
+    "cardId": 42,
+    "mirror": "situation",
+    "text": {
+      "zh": "你所在的場，有一種很熟的舊味道，像回到小時候。如果你允許自己看見那個模式而不住進去，純真可以留下。"
+    },
+    "status": "draft"
+  },
+  {
+    "cardId": 43,
+    "mirror": "situation",
+    "text": {
+      "zh": "你所在的場，有太多看起來都很好的選項漂在半空。如果你允許自己只用內在的那個聲音挑一個，幻象會自己退場。"
+    },
+    "status": "draft"
+  },
+  {
+    "cardId": 44,
+    "mirror": "situation",
+    "text": {
+      "zh": "你所在的場，是轉身離開一個地方的那一步。如果你允許離開不需要理由夠充分，新的路會在腳下接上。"
+    },
+    "status": "draft"
+  },
+  {
+    "cardId": 45,
+    "mirror": "situation",
+    "text": {
+      "zh": "你所在的場，願望已經實現了一部分。如果你允許自己享受而不先付一份內疚，滿足會比想像中安靜。"
+    },
+    "status": "draft"
+  },
+  {
+    "cardId": 46,
+    "mirror": "situation",
+    "text": {
+      "zh": "你所在的場，碎片正在回到原位，像雨後的彩虹。如果你允許圓滿不必完美，整合會從已經在的地方開始。"
     },
     "status": "draft"
   },
@@ -245,6 +405,86 @@ export const MIRROR_TEXT: MirrorText[] = [
     "status": "draft"
   },
   {
+    "cardId": 51,
+    "mirror": "situation",
+    "text": {
+      "zh": "你所在的場，有一把剛磨亮的刀，可以切開很多東西。如果你允許真相先清楚再溫柔，這把劍會指向問題而不是人。"
+    },
+    "status": "draft"
+  },
+  {
+    "cardId": 52,
+    "mirror": "situation",
+    "text": {
+      "zh": "你所在的場，是蒙著眼坐在兩把劍之間的僵局。如果你允許自己把布拿下來看一眼，未知會比想像中小。"
+    },
+    "status": "draft"
+  },
+  {
+    "cardId": 53,
+    "mirror": "situation",
+    "text": {
+      "zh": "你所在的場，有一道剛劃開的痛。如果你允許眼淚誠實地流完，怨恨會比較沒有地方住。"
+    },
+    "status": "draft"
+  },
+  {
+    "cardId": 54,
+    "mirror": "situation",
+    "text": {
+      "zh": "你所在的場，是一個可以躺下來的安靜角落。如果你允許暫停不等於放棄，恢復會在你不注意的時候完成。"
+    },
+    "status": "draft"
+  },
+  {
+    "cardId": 55,
+    "mirror": "situation",
+    "text": {
+      "zh": "你所在的場，是一場贏了卻空空的爭執。如果你允許自己放下非要站在上面的那隻手，真正的力量會回來。"
+    },
+    "status": "draft"
+  },
+  {
+    "cardId": 56,
+    "mirror": "situation",
+    "text": {
+      "zh": "你所在的場，是一艘正離開風暴的小船，水面漸平。如果你允許過渡期不急著靠岸，尊嚴會在船上陪著你。"
+    },
+    "status": "draft"
+  },
+  {
+    "cardId": 57,
+    "mirror": "situation",
+    "text": {
+      "zh": "你所在的場，有一些事正在暗處進行，可能包括你自己的。如果你允許自己換成正面的方式，策略不需要躲。"
+    },
+    "status": "draft"
+  },
+  {
+    "cardId": 58,
+    "mirror": "situation",
+    "text": {
+      "zh": "你所在的場，看起來被綁住了，但繩子其實是鬆的。如果你允許自己先動一下手，受限的信念會比繩子先鬆開。"
+    },
+    "status": "draft"
+  },
+  {
+    "cardId": 59,
+    "mirror": "situation",
+    "text": {
+      "zh": "你所在的場，是凌晨三點還醒著的那間房。如果你允許念頭只是念頭，不每個都接起來，風暴會自己轉小。"
+    },
+    "status": "draft"
+  },
+  {
+    "cardId": 60,
+    "mirror": "situation",
+    "text": {
+      "zh": "你所在的場，是一個已經到底的地方——不能再往下，反而是消息。如果你允許這一輪就此結束，地面會比想像中近。"
+    },
+    "status": "draft"
+  },
+  {
     "cardId": 61,
     "mirror": "persona",
     "text": {
@@ -273,6 +513,86 @@ export const MIRROR_TEXT: MirrorText[] = [
     "mirror": "persona",
     "text": {
       "zh": "你拿出來的樣子，是把事情切得乾淨——別人感受到的是公正，很少知道你對自己判得更重。松樹（Pine）陪你把法官的位置讓出來一會兒。允許句：我允許自己卸下不屬於我的責任，判決可以結案了。"
+    },
+    "status": "draft"
+  },
+  {
+    "cardId": 65,
+    "mirror": "situation",
+    "text": {
+      "zh": "你所在的場，有一顆剛落到手上的種子，還很小。如果你允許它先不被期待長多大，物質世界會替你接著。"
+    },
+    "status": "draft"
+  },
+  {
+    "cardId": 66,
+    "mirror": "situation",
+    "text": {
+      "zh": "你所在的場，兩顆球同時在空中，你正在接。如果你允許節奏有一點晃，平衡會比僵住更穩。"
+    },
+    "status": "draft"
+  },
+  {
+    "cardId": 67,
+    "mirror": "situation",
+    "text": {
+      "zh": "你所在的場，是好幾雙手一起在蓋同一面牆。如果你允許別人用不同的方式放磚，合作會比單獨做更牢。"
+    },
+    "status": "draft"
+  },
+  {
+    "cardId": 68,
+    "mirror": "situation",
+    "text": {
+      "zh": "你所在的場，手裡緊握著不想失去的東西。如果你允許手指鬆開一根，安全感會發現自己並不只靠握著。"
+    },
+    "status": "draft"
+  },
+  {
+    "cardId": 69,
+    "mirror": "situation",
+    "text": {
+      "zh": "你所在的場，是窗外的雪與窗內的光同時存在。如果你允許自己抬頭看那扇窗，匱乏會少一點擋住視線。"
+    },
+    "status": "draft"
+  },
+  {
+    "cardId": 70,
+    "mirror": "situation",
+    "text": {
+      "zh": "你所在的場，資源正在流動，有人給、有人接。如果你允許自己站在接的那一邊也不矮，慷慨會往兩個方向走。"
+    },
+    "status": "draft"
+  },
+  {
+    "cardId": 71,
+    "mirror": "situation",
+    "text": {
+      "zh": "你所在的場，是看著田裡的東西還沒長出來的等待。如果你允許評估不等於放棄，耐心會讓收穫來得剛好。"
+    },
+    "status": "draft"
+  },
+  {
+    "cardId": 72,
+    "mirror": "situation",
+    "text": {
+      "zh": "你所在的場，是同一件事反覆練習的工作檯。如果你允許重複不等於停滯，天職會從手上慢慢顯出來。"
+    },
+    "status": "draft"
+  },
+  {
+    "cardId": 73,
+    "mirror": "situation",
+    "text": {
+      "zh": "你所在的場，豐盛已經在了，偶爾卻有一片莫名的烏雲。如果你允許憂鬱來了又走，陽光不需要你去追。"
+    },
+    "status": "draft"
+  },
+  {
+    "cardId": 74,
+    "mirror": "situation",
+    "text": {
+      "zh": "你所在的場，背後站著好幾代人的根基。如果你允許自己繼承一部分、也放下一部分，遺產會變成資源而不是重量。"
     },
     "status": "draft"
   },
