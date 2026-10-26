@@ -2229,5 +2229,1003 @@ export const SLOT_TEMPLATES: SlotTemplate[] = [
     "status": "approved",
     "version": "2026-10",
     "note": "模式 C 取代 structure、rel_12、rel_23 三槽；arc 仍適用"
+  },
+  {
+    "template_id": "ARC_RUPTURE_02",
+    "slot": "arc",
+    "trigger": {
+      "arc": "rupture"
+    },
+    "exclude": {},
+    "text": {
+      "zh": "來處與去向彼此不相容，而中間站著一張大牌。這不是斷掉，是一次換軌：如果你允許此刻的主題先被看見，兩端的落差就會變成它要說的話。"
+    },
+    "register": [
+      "收"
+    ],
+    "weight": 3,
+    "tone_tags": [
+      "permissive",
+      "turning"
+    ],
+    "length_chars": {
+      "zh": 63
+    },
+    "status": "draft",
+    "version": "2026-10b",
+    "note": ""
+  },
+  {
+    "template_id": "ARC_RESOLVE_03",
+    "slot": "arc",
+    "trigger": {
+      "arc": "resolve"
+    },
+    "exclude": {},
+    "text": {
+      "zh": "去向這張牌本身就帶著整合的形狀。它不是終點的宣告，是一個可以安放的位置：如果你允許前兩張牌的事慢慢沉下來，收攏會自己發生。"
+    },
+    "register": [
+      "開"
+    ],
+    "weight": 3,
+    "tone_tags": [
+      "permissive",
+      "settling"
+    ],
+    "length_chars": {
+      "zh": 61
+    },
+    "status": "draft",
+    "version": "2026-10b",
+    "note": ""
+  },
+  {
+    "template_id": "ARC_REPEAT_03",
+    "slot": "arc",
+    "trigger": {
+      "arc": "repeat"
+    },
+    "exclude": {},
+    "text": {
+      "zh": "來處與去向屬於同一個場域，像一條河繞了一圈回到相近的岸邊。這不是原地踏步——如果你允許自己看見第二次經過時多出來的那一點，重複就會變成熟悉。"
+    },
+    "register": [
+      "持"
+    ],
+    "weight": 3,
+    "tone_tags": [
+      "permissive",
+      "familiar"
+    ],
+    "length_chars": {
+      "zh": 70
+    },
+    "status": "draft",
+    "version": "2026-10b",
+    "note": ""
+  },
+  {
+    "template_id": "STRUCT_M3_02",
+    "slot": "structure",
+    "trigger": {
+      "major_count": 3
+    },
+    "exclude": {
+      "mode": [
+        "C"
+      ]
+    },
+    "text": {
+      "zh": "三張都是原型層。今天的三句話說的不是某件事，而是一個時期的形狀；讀慢一點，讓每一張先各自說完。"
+    },
+    "register": [
+      "收",
+      "持"
+    ],
+    "weight": 3,
+    "tone_tags": [
+      "slow",
+      "depth"
+    ],
+    "length_chars": {
+      "zh": 47
+    },
+    "status": "draft",
+    "version": "2026-10b",
+    "note": ""
+  },
+  {
+    "template_id": "COURT_EXACT_02",
+    "slot": "court",
+    "trigger": {
+      "court_present": true,
+      "user_mbti": true,
+      "mbti_relation": "exact"
+    },
+    "exclude": {},
+    "text": {
+      "zh": "{court_name} 正好是你的本命型別。這不是在說你就是這樣，而是今天的課題直接關於你怎麼當自己——先不修正，先看。"
+    },
+    "register": [
+      "收",
+      "持",
+      "開"
+    ],
+    "weight": 3,
+    "tone_tags": [
+      "mirror",
+      "gentle"
+    ],
+    "length_chars": {
+      "zh": 61
+    },
+    "status": "draft",
+    "version": "2026-10b",
+    "note": ""
+  },
+  {
+    "template_id": "OPEN_A_02",
+    "slot": "opening",
+    "trigger": {
+      "mode": "A"
+    },
+    "exclude": {},
+    "text": {
+      "zh": "三張牌是一條線：來處、此刻、去向。先看每一張自己說了什麼，再看它們之間留下的空隙。"
+    },
+    "register": [
+      "收",
+      "持",
+      "開"
+    ],
+    "weight": 3,
+    "tone_tags": [
+      "orient"
+    ],
+    "length_chars": {
+      "zh": 41
+    },
+    "status": "draft",
+    "version": "2026-10b",
+    "note": ""
+  },
+  {
+    "template_id": "OPEN_C_01",
+    "slot": "opening",
+    "trigger": {
+      "mode": "C"
+    },
+    "exclude": {},
+    "text": {
+      "zh": "三面鏡子由左至右：原型、人格、情境。它們說的不是時間，而是同一個你的三個層次。"
+    },
+    "register": [
+      "收",
+      "持",
+      "開"
+    ],
+    "weight": 3,
+    "tone_tags": [
+      "orient"
+    ],
+    "length_chars": {
+      "zh": 39
+    },
+    "status": "draft",
+    "version": "2026-10b",
+    "note": "§7 未列 OPEN_C；待使用者確認是否需要"
+  },
+  {
+    "template_id": "MIRROR_C_04",
+    "slot": "mirror_synthesis",
+    "trigger": {
+      "mode": "C"
+    },
+    "exclude": {},
+    "text": {
+      "zh": "{archetype}是你底下的那一層（我是誰），{persona}是你拿出來用的方式（我怎麼表現），{situation}是你此刻站的地方（我在哪裡）。三層不必一致，看見它們各自在做什麼就好。"
+    },
+    "register": [
+      "收",
+      "持",
+      "開"
+    ],
+    "weight": 3,
+    "tone_tags": [
+      "mirror"
+    ],
+    "length_chars": {
+      "zh": 97
+    },
+    "status": "draft",
+    "version": "2026-10b",
+    "note": ""
+  },
+  {
+    "template_id": "MIRROR_C_05",
+    "slot": "mirror_synthesis",
+    "trigger": {
+      "mode": "C"
+    },
+    "exclude": {},
+    "text": {
+      "zh": "先把三面鏡子分開看：{archetype}說的是來源，{persona}說的是表現，{situation}說的是場。如果三者今天有落差，那不是錯位，是你同時活在三個層次裡。"
+    },
+    "register": [
+      "收",
+      "持",
+      "開"
+    ],
+    "weight": 3,
+    "tone_tags": [
+      "mirror",
+      "permissive"
+    ],
+    "length_chars": {
+      "zh": 86
+    },
+    "status": "draft",
+    "version": "2026-10b",
+    "note": ""
+  },
+  {
+    "template_id": "EXC_ALL_COURT_01",
+    "slot": "exception",
+    "trigger": {
+      "kinds_12": "court-court",
+      "kinds_23": "court-court"
+    },
+    "exclude": {},
+    "text": {
+      "zh": "三張都是宮廷牌：今天出現的不是三件事，而是三種你會用的樣子，在同一個場合裡輪流上場。如果你允許自己不急著選定哪一種才是真的，它們之間的差別本身就是訊息。"
+    },
+    "register": [
+      "收",
+      "持",
+      "開"
+    ],
+    "weight": 3,
+    "tone_tags": [
+      "persona",
+      "permissive"
+    ],
+    "length_chars": {
+      "zh": 76
+    },
+    "status": "draft",
+    "version": "2026-10b",
+    "note": ""
+  },
+  {
+    "template_id": "EXC_ALL_TENS_01",
+    "slot": "exception",
+    "trigger": {
+      "flags": [
+        "all_tens"
+      ]
+    },
+    "exclude": {},
+    "text": {
+      "zh": "三張都是十——三種循環同時走到了滿。這不是結束的通知，是容器已經滿了的提醒：如果你允許有些東西先被放下，下一輪才有地方開始。"
+    },
+    "register": [
+      "收",
+      "持",
+      "開"
+    ],
+    "weight": 3,
+    "tone_tags": [
+      "cycle",
+      "permissive"
+    ],
+    "length_chars": {
+      "zh": 62
+    },
+    "status": "draft",
+    "version": "2026-10b",
+    "note": ""
+  },
+  {
+    "template_id": "EXC_RES_RESOLVE_01",
+    "slot": "exception",
+    "trigger": {
+      "resonance": "pair",
+      "arc": "resolve"
+    },
+    "exclude": {},
+    "text": {
+      "zh": "同一支花精在兩層出現，而三張牌正走向整合——訊息很集中：今天只有一件事值得放在中心。如果你允許其他的先退到旁邊，收攏不需要用力。"
+    },
+    "register": [
+      "收",
+      "持",
+      "開"
+    ],
+    "weight": 3,
+    "tone_tags": [
+      "focus",
+      "permissive"
+    ],
+    "length_chars": {
+      "zh": 64
+    },
+    "status": "draft",
+    "version": "2026-10b",
+    "note": ""
+  },
+  {
+    "template_id": "COURT_GENERIC_PAGE_01",
+    "slot": "court_generic",
+    "trigger": {
+      "court_present": true,
+      "user_mbti": false,
+      "court_rank": "侍者"
+    },
+    "exclude": {
+      "mode": [
+        "C"
+      ]
+    },
+    "text": {
+      "zh": "{court_name}是一個人格面向，不是一件事：它是你裡面那個還在學、還在問的部分。今天它想多看一點，先不急著下結論。"
+    },
+    "register": [
+      "收",
+      "持",
+      "開"
+    ],
+    "weight": 3,
+    "tone_tags": [
+      "persona"
+    ],
+    "length_chars": {
+      "zh": 61
+    },
+    "status": "draft",
+    "version": "2026-10b",
+    "note": ""
+  },
+  {
+    "template_id": "COURT_GENERIC_KNIGHT_01",
+    "slot": "court_generic",
+    "trigger": {
+      "court_present": true,
+      "user_mbti": false,
+      "court_rank": "騎士"
+    },
+    "exclude": {
+      "mode": [
+        "C"
+      ]
+    },
+    "text": {
+      "zh": "{court_name}是一個人格面向，不是一件事：它是你裡面那個先動再想的部分。今天它想往前，看看是什麼在叫它。"
+    },
+    "register": [
+      "收",
+      "持",
+      "開"
+    ],
+    "weight": 3,
+    "tone_tags": [
+      "persona"
+    ],
+    "length_chars": {
+      "zh": 57
+    },
+    "status": "draft",
+    "version": "2026-10b",
+    "note": ""
+  },
+  {
+    "template_id": "COURT_GENERIC_QUEEN_01",
+    "slot": "court_generic",
+    "trigger": {
+      "court_present": true,
+      "user_mbti": false,
+      "court_rank": "皇后"
+    },
+    "exclude": {
+      "mode": [
+        "C"
+      ]
+    },
+    "text": {
+      "zh": "{court_name}是一個人格面向，不是一件事：它是你裡面那個先把人和事接住的部分。今天它在場，表示有東西需要被容納，而不是被解決。"
+    },
+    "register": [
+      "收",
+      "持",
+      "開"
+    ],
+    "weight": 3,
+    "tone_tags": [
+      "persona"
+    ],
+    "length_chars": {
+      "zh": 68
+    },
+    "status": "draft",
+    "version": "2026-10b",
+    "note": ""
+  },
+  {
+    "template_id": "CTA_BRIEF_01",
+    "slot": "cta_brief",
+    "trigger": {},
+    "exclude": {},
+    "text": {
+      "zh": "這是一分鐘的讀法。如果想知道三張牌之間怎麼連、花精怎麼配，往下展開完整解讀。"
+    },
+    "register": [
+      "收",
+      "持",
+      "開"
+    ],
+    "weight": 3,
+    "tone_tags": [
+      "cta"
+    ],
+    "length_chars": {
+      "zh": 38
+    },
+    "status": "draft",
+    "version": "2026-10b",
+    "note": ""
+  },
+  {
+    "template_id": "CTA_BRIEF_02",
+    "slot": "cta_brief",
+    "trigger": {},
+    "exclude": {},
+    "text": {
+      "zh": "先讀到這裡也可以。想看三張牌之間的關係與今天的花精複方，展開完整解讀。"
+    },
+    "register": [
+      "收",
+      "持",
+      "開"
+    ],
+    "weight": 3,
+    "tone_tags": [
+      "cta"
+    ],
+    "length_chars": {
+      "zh": 35
+    },
+    "status": "draft",
+    "version": "2026-10b",
+    "note": ""
+  },
+  {
+    "template_id": "ARC_RUPTURE_03",
+    "slot": "arc",
+    "trigger": {
+      "arc": "rupture"
+    },
+    "exclude": {},
+    "text": {
+      "zh": "此刻這張大牌把兩端不相容的能量接在一起，像一道門同時朝兩邊開。如果你允許不確定多留一會兒，哪一邊是出口會自己浮出來。"
+    },
+    "register": [
+      "收"
+    ],
+    "weight": 3,
+    "tone_tags": [
+      "permissive",
+      "turning"
+    ],
+    "length_chars": {
+      "zh": 58
+    },
+    "status": "draft",
+    "version": "2026-10b",
+    "note": ""
+  },
+  {
+    "template_id": "STRUCT_M3_03",
+    "slot": "structure",
+    "trigger": {
+      "major_count": 3
+    },
+    "exclude": {
+      "mode": [
+        "C"
+      ]
+    },
+    "text": {
+      "zh": "三張大秘儀並排，很少見。這不是三件事，而是三個原型同時在場；如果其中有一張特別安靜，先聽那一張。"
+    },
+    "register": [
+      "收",
+      "持",
+      "開"
+    ],
+    "weight": 3,
+    "tone_tags": [
+      "depth"
+    ],
+    "length_chars": {
+      "zh": 48
+    },
+    "status": "draft",
+    "version": "2026-10b",
+    "note": "三值相容，補 STRUCT_M3 在「開」的覆蓋"
+  },
+  {
+    "template_id": "COURT_EXACT_03",
+    "slot": "court",
+    "trigger": {
+      "court_present": true,
+      "user_mbti": true,
+      "mbti_relation": "exact"
+    },
+    "exclude": {},
+    "text": {
+      "zh": "{court_name}與你的本命一樣。鏡子裡站的是你平常的樣子——今天不是要換一個方式，而是看看這個方式此刻還順不順手。"
+    },
+    "register": [
+      "收",
+      "持",
+      "開"
+    ],
+    "weight": 3,
+    "tone_tags": [
+      "mirror"
+    ],
+    "length_chars": {
+      "zh": 61
+    },
+    "status": "draft",
+    "version": "2026-10b",
+    "note": ""
+  },
+  {
+    "template_id": "OPEN_A_03",
+    "slot": "opening",
+    "trigger": {
+      "mode": "A"
+    },
+    "exclude": {},
+    "text": {
+      "zh": "來處、此刻、去向——三張牌不是三段時間，是同一件事的三個角度。先慢慢看，再連起來。"
+    },
+    "register": [
+      "收",
+      "持",
+      "開"
+    ],
+    "weight": 3,
+    "tone_tags": [
+      "orient"
+    ],
+    "length_chars": {
+      "zh": 41
+    },
+    "status": "draft",
+    "version": "2026-10b",
+    "note": ""
+  },
+  {
+    "template_id": "OPEN_B_02",
+    "slot": "opening",
+    "trigger": {
+      "mode": "B"
+    },
+    "exclude": {},
+    "text": {
+      "zh": "三張牌由左至右：處境、卡點、下一步。先看清處境，再看是什麼卡住，最後一張只說一步。"
+    },
+    "register": [
+      "收",
+      "持",
+      "開"
+    ],
+    "weight": 3,
+    "tone_tags": [
+      "orient"
+    ],
+    "length_chars": {
+      "zh": 41
+    },
+    "status": "draft",
+    "version": "2026-10b",
+    "note": ""
+  },
+  {
+    "template_id": "OPEN_B_03",
+    "slot": "opening",
+    "trigger": {
+      "mode": "B"
+    },
+    "exclude": {},
+    "text": {
+      "zh": "處境、卡點、下一步。中間那張是今天的重點；它不是問題本身，是問題卡住的位置。"
+    },
+    "register": [
+      "收",
+      "持",
+      "開"
+    ],
+    "weight": 3,
+    "tone_tags": [
+      "orient"
+    ],
+    "length_chars": {
+      "zh": 38
+    },
+    "status": "draft",
+    "version": "2026-10b",
+    "note": ""
+  },
+  {
+    "template_id": "OPEN_C_02",
+    "slot": "opening",
+    "trigger": {
+      "mode": "C"
+    },
+    "exclude": {},
+    "text": {
+      "zh": "原型、人格、情境：三面鏡子各照一層。你是誰、你怎麼表現、你在哪裡——今天從三個方向看同一個你。"
+    },
+    "register": [
+      "收",
+      "持",
+      "開"
+    ],
+    "weight": 3,
+    "tone_tags": [
+      "orient"
+    ],
+    "length_chars": {
+      "zh": 47
+    },
+    "status": "draft",
+    "version": "2026-10b",
+    "note": "§7 未列 OPEN_C；待使用者確認"
+  },
+  {
+    "template_id": "OPEN_C_03",
+    "slot": "opening",
+    "trigger": {
+      "mode": "C"
+    },
+    "exclude": {},
+    "text": {
+      "zh": "三面鏡子由左至右：原型（我是誰）、人格（我怎麼表現）、情境（我在哪裡）。它們不需要一致。"
+    },
+    "register": [
+      "收",
+      "持",
+      "開"
+    ],
+    "weight": 3,
+    "tone_tags": [
+      "orient"
+    ],
+    "length_chars": {
+      "zh": 44
+    },
+    "status": "draft",
+    "version": "2026-10b",
+    "note": "§7 未列 OPEN_C；待使用者確認"
+  },
+  {
+    "template_id": "EXC_ALL_COURT_02",
+    "slot": "exception",
+    "trigger": {
+      "kinds_12": "court-court",
+      "kinds_23": "court-court"
+    },
+    "exclude": {},
+    "text": {
+      "zh": "三張宮廷牌同時出現，像三個你在同一張桌子邊坐下。今天不用決定誰說了算：如果你允許每一個都說完，桌上會自己出現一個安排。"
+    },
+    "register": [
+      "收",
+      "持",
+      "開"
+    ],
+    "weight": 3,
+    "tone_tags": [
+      "persona",
+      "permissive"
+    ],
+    "length_chars": {
+      "zh": 59
+    },
+    "status": "draft",
+    "version": "2026-10b",
+    "note": ""
+  },
+  {
+    "template_id": "EXC_ALL_MAJOR_SAME_01",
+    "slot": "exception",
+    "trigger": {
+      "kinds_12": "major-major",
+      "kinds_23": "major-major",
+      "rel_12": "same",
+      "rel_23": "same"
+    },
+    "exclude": {},
+    "text": {
+      "zh": "三張大秘儀，同一種元素——同一個主題用三個原型說了三次。這不是加重，是強調：如果你允許自己今天只看這一個主題，其他的事可以先放著。"
+    },
+    "register": [
+      "收",
+      "持",
+      "開"
+    ],
+    "weight": 3,
+    "tone_tags": [
+      "depth",
+      "permissive"
+    ],
+    "length_chars": {
+      "zh": 65
+    },
+    "status": "draft",
+    "version": "2026-10b",
+    "note": ""
+  },
+  {
+    "template_id": "EXC_ALL_MAJOR_SAME_02",
+    "slot": "exception",
+    "trigger": {
+      "kinds_12": "major-major",
+      "kinds_23": "major-major",
+      "rel_12": "same",
+      "rel_23": "same"
+    },
+    "exclude": {},
+    "text": {
+      "zh": "三張原型牌共用一個元素，像同一條河的三個河段。如果你允許自己順著這股能量往下看，三張牌會連成一句完整的話。"
+    },
+    "register": [
+      "收",
+      "持",
+      "開"
+    ],
+    "weight": 3,
+    "tone_tags": [
+      "depth",
+      "permissive"
+    ],
+    "length_chars": {
+      "zh": 53
+    },
+    "status": "draft",
+    "version": "2026-10b",
+    "note": ""
+  },
+  {
+    "template_id": "EXC_ALL_SUIT_01",
+    "slot": "exception",
+    "trigger": {
+      "same_suit_12": true,
+      "same_suit_23": true
+    },
+    "exclude": {},
+    "text": {
+      "zh": "三張牌同一個花色：同一個生活領域從來處排到去向。這不是卡住，是這個領域今天要把話說完——如果你允許自己只待在這裡，它會說得很清楚。"
+    },
+    "register": [
+      "收",
+      "持",
+      "開"
+    ],
+    "weight": 3,
+    "tone_tags": [
+      "focus",
+      "permissive"
+    ],
+    "length_chars": {
+      "zh": 65
+    },
+    "status": "draft",
+    "version": "2026-10b",
+    "note": ""
+  },
+  {
+    "template_id": "EXC_ALL_SUIT_02",
+    "slot": "exception",
+    "trigger": {
+      "same_suit_12": true,
+      "same_suit_23": true
+    },
+    "exclude": {},
+    "text": {
+      "zh": "來處、此刻、去向都在同一個花色裡，像一天只走一條街。如果你允許今天不換場地，這條街的每一扇門會比平常更容易看見。"
+    },
+    "register": [
+      "收",
+      "持",
+      "開"
+    ],
+    "weight": 3,
+    "tone_tags": [
+      "focus",
+      "permissive"
+    ],
+    "length_chars": {
+      "zh": 56
+    },
+    "status": "draft",
+    "version": "2026-10b",
+    "note": ""
+  },
+  {
+    "template_id": "EXC_RES_RESOLVE_02",
+    "slot": "exception",
+    "trigger": {
+      "resonance": "pair",
+      "arc": "resolve"
+    },
+    "exclude": {},
+    "text": {
+      "zh": "一支花精在兩層同時出現，而去向這張牌本身是整合的形狀。今天的訊息只有一個方向：如果你允許自己把它放在中心，收攏會比想像中輕。"
+    },
+    "register": [
+      "收",
+      "持",
+      "開"
+    ],
+    "weight": 3,
+    "tone_tags": [
+      "focus",
+      "permissive"
+    ],
+    "length_chars": {
+      "zh": 62
+    },
+    "status": "draft",
+    "version": "2026-10b",
+    "note": ""
+  },
+  {
+    "template_id": "EXC_RES_RUPTURE_01",
+    "slot": "exception",
+    "trigger": {
+      "resonance": "pair",
+      "arc": "rupture"
+    },
+    "exclude": {},
+    "text": {
+      "zh": "同一支花精在兩層出現，而來處與去向彼此相斥：訊息很集中，路卻在轉彎。這不是矛盾——如果你允許先停在此刻這張大牌上，那支花精說的就是怎麼轉。"
+    },
+    "register": [
+      "收",
+      "持",
+      "開"
+    ],
+    "weight": 3,
+    "tone_tags": [
+      "turning",
+      "permissive"
+    ],
+    "length_chars": {
+      "zh": 69
+    },
+    "status": "draft",
+    "version": "2026-10b",
+    "note": ""
+  },
+  {
+    "template_id": "EXC_RESCUE_NOW_01",
+    "slot": "exception",
+    "trigger": {
+      "rescue_at": [
+        "now"
+      ]
+    },
+    "exclude": {},
+    "text": {
+      "zh": "此刻這張牌是急救牌：今天不談方向，先談穩住。來處與去向都可以等——如果你允許自己只做「被接住」這一件事，其他的會在之後回來。"
+    },
+    "register": [
+      "收",
+      "持",
+      "開"
+    ],
+    "weight": 3,
+    "tone_tags": [
+      "steady",
+      "permissive"
+    ],
+    "length_chars": {
+      "zh": 62
+    },
+    "status": "draft",
+    "version": "2026-10b",
+    "note": ""
+  },
+  {
+    "template_id": "EXC_RESCUE_NOW_02",
+    "slot": "exception",
+    "trigger": {
+      "rescue_at": [
+        "now"
+      ]
+    },
+    "exclude": {},
+    "text": {
+      "zh": "急救牌落在此刻位。這不是在說情況有多重，是一個順序：先穩，再看。如果你允許今天的允許句只有一句，就是此刻這一句。"
+    },
+    "register": [
+      "收",
+      "持",
+      "開"
+    ],
+    "weight": 3,
+    "tone_tags": [
+      "steady",
+      "permissive"
+    ],
+    "length_chars": {
+      "zh": 56
+    },
+    "status": "draft",
+    "version": "2026-10b",
+    "note": ""
+  },
+  {
+    "template_id": "EXC_RESCUE_TWO_01",
+    "slot": "exception",
+    "trigger": {
+      "rescue_count": 2
+    },
+    "exclude": {},
+    "text": {
+      "zh": "兩張急救牌同時出現，像身體同時從兩邊喊停。它們不是在嚇你，是在替你排順序：如果你允許今天把所有事都往後排、只留穩住自己，這就夠了。"
+    },
+    "register": [
+      "收",
+      "持",
+      "開"
+    ],
+    "weight": 3,
+    "tone_tags": [
+      "steady",
+      "permissive"
+    ],
+    "length_chars": {
+      "zh": 65
+    },
+    "status": "draft",
+    "version": "2026-10b",
+    "note": ""
+  },
+  {
+    "template_id": "COURT_GENERIC_KING_01",
+    "slot": "court_generic",
+    "trigger": {
+      "court_present": true,
+      "user_mbti": false,
+      "court_rank": "國王"
+    },
+    "exclude": {
+      "mode": [
+        "C"
+      ]
+    },
+    "text": {
+      "zh": "{court_name}是一個人格面向，不是一件事：它是你裡面那個已經走過一輪、知道怎麼負責的部分。今天它在場，表示有事可以交給它定案。"
+    },
+    "register": [
+      "收",
+      "持",
+      "開"
+    ],
+    "weight": 3,
+    "tone_tags": [
+      "persona"
+    ],
+    "length_chars": {
+      "zh": 68
+    },
+    "status": "draft",
+    "version": "2026-10b",
+    "note": ""
   }
 ];

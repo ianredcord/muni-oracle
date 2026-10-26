@@ -1,0 +1,288 @@
+[
+ {
+  "card_id": 1,
+  "card_name": "愚者",
+  "mirror": "archetype",
+  "essence_en": "Clematis",
+  "essence_zh": "鐵線蓮",
+  "length_chars": 50,
+  "version": "2026-10b",
+  "text": {
+   "zh": "愚者在你身上，是每次重新開始時那一點不設防的輕。它不是定義你，而是你還願意把第一步交給未知的那一面。"
+  },
+  "status": "draft"
+ },
+ {
+  "card_id": 2,
+  "card_name": "魔術師",
+  "mirror": "archetype",
+  "essence_en": "Cerato",
+  "essence_zh": "水蕗草",
+  "length_chars": 53,
+  "version": "2026-10b",
+  "text": {
+   "zh": "魔術師在你身上，是把手邊的東西變成可用之物的那一面。不是天賦的標籤，而是你已經擁有、只是還沒排上桌的工具。"
+  },
+  "status": "draft"
+ },
+ {
+  "card_id": 3,
+  "card_name": "女祭司",
+  "mirror": "archetype",
+  "essence_en": "Wild Oat",
+  "essence_zh": "野燕麥",
+  "length_chars": 50,
+  "version": "2026-10b",
+  "text": {
+   "zh": "女祭司在你身上，是那個知道了卻不急著說出來的部分。它不是神祕，是你內在一層安靜的、先聽再回應的能力。"
+  },
+  "status": "draft"
+ },
+ {
+  "card_id": 4,
+  "card_name": "皇后",
+  "mirror": "archetype",
+  "essence_en": "Red Chestnut",
+  "essence_zh": "紅栗花",
+  "length_chars": 52,
+  "version": "2026-10b",
+  "text": {
+   "zh": "皇后在你身上，是讓東西長出來的那一面——不是替它長，而是給它土、水和時間。它不是定義你，是你會養的能力。"
+  },
+  "status": "draft"
+ },
+ {
+  "card_id": 5,
+  "card_name": "皇帝",
+  "mirror": "archetype",
+  "essence_en": "Vine",
+  "essence_zh": "葡萄藤",
+  "length_chars": 52,
+  "version": "2026-10b",
+  "text": {
+   "zh": "皇帝在你身上，是替混亂畫出邊界的那一面。它不是權威的標籤，而是你知道什麼時候需要一個結構，讓事情站得住。"
+  },
+  "status": "draft"
+ },
+ {
+  "card_id": 6,
+  "card_name": "教皇",
+  "mirror": "archetype",
+  "essence_en": "Rock Water",
+  "essence_zh": "岩水",
+  "length_chars": 51,
+  "version": "2026-10b",
+  "text": {
+   "zh": "教皇在你身上，是那個有自己一套規矩、也願意把它傳下去的部分。它不是守舊，是你內在那條用來對齊自己的線。"
+  },
+  "status": "draft"
+ },
+ {
+  "card_id": 7,
+  "card_name": "戀人",
+  "mirror": "archetype",
+  "essence_en": "Scleranthus",
+  "essence_zh": "線球草",
+  "length_chars": 53,
+  "version": "2026-10b",
+  "text": {
+   "zh": "戀人在你身上，是站在兩個選項之間還能感覺到兩邊都真的那一面。它不是搖擺，是你用價值而不是用答案來選的能力。"
+  },
+  "status": "draft"
+ },
+ {
+  "card_id": 8,
+  "card_name": "戰車",
+  "mirror": "archetype",
+  "essence_en": "Oak",
+  "essence_zh": "橡樹",
+  "length_chars": 50,
+  "version": "2026-10b",
+  "text": {
+   "zh": "戰車在你身上，是把方向握緊、往前走的那一面。它不是衝動，而是你已經決定了之後，身體願意跟上的那股力。"
+  },
+  "status": "draft"
+ },
+ {
+  "card_id": 9,
+  "card_name": "力量",
+  "mirror": "archetype",
+  "essence_en": "Rock Rose",
+  "essence_zh": "岩薔薇",
+  "length_chars": 49,
+  "version": "2026-10b",
+  "text": {
+   "zh": "力量在你身上，是用溫柔而不是用蠻力馴服什麼的那一面。它不是壓抑，是你和自己的本能坐在同一邊的能力。"
+  },
+  "status": "draft"
+ },
+ {
+  "card_id": 10,
+  "card_name": "隱者",
+  "mirror": "archetype",
+  "essence_en": "Water Violet",
+  "essence_zh": "水堇",
+  "length_chars": 47,
+  "version": "2026-10b",
+  "text": {
+   "zh": "隱者在你身上，是願意一個人往內走一段的那一面。它不是孤僻，是你知道有些答案只在安靜裡才聽得見。"
+  },
+  "status": "draft"
+ },
+ {
+  "card_id": 11,
+  "card_name": "命運之輪",
+  "mirror": "archetype",
+  "essence_en": "Wild Rose",
+  "essence_zh": "野玫瑰",
+  "length_chars": 53,
+  "version": "2026-10b",
+  "text": {
+   "zh": "命運之輪在你身上，是感覺得到節奏在轉的那一面。它不是定義你，是你知道有些時候該出力、有些時候該放手讓它轉。"
+  },
+  "status": "draft"
+ },
+ {
+  "card_id": 12,
+  "card_name": "正義",
+  "mirror": "archetype",
+  "essence_en": "Walnut",
+  "essence_zh": "胡桃",
+  "length_chars": 48,
+  "version": "2026-10b",
+  "text": {
+   "zh": "正義在你身上，是把事情秤一秤再決定的那一面。它不是冷，是你內在那把願意對自己和別人一樣公平的尺。"
+  },
+  "status": "draft"
+ },
+ {
+  "card_id": 13,
+  "card_name": "吊人",
+  "mirror": "archetype",
+  "essence_en": "Mustard",
+  "essence_zh": "芥末花",
+  "length_chars": 48,
+  "version": "2026-10b",
+  "text": {
+   "zh": "吊人在你身上，是能夠倒過來看事情的那一面。它不是停擺，是你願意暫時不動，讓另一個角度自己浮出來。"
+  },
+  "status": "draft"
+ },
+ {
+  "card_id": 14,
+  "card_name": "死神",
+  "mirror": "archetype",
+  "essence_en": "Agrimony",
+  "essence_zh": "龍芽草",
+  "length_chars": 51,
+  "version": "2026-10b",
+  "text": {
+   "zh": "死神在你身上，是知道什麼時候該讓一件事結束的那一面。它不是失去，是你內在那個替新的東西騰出位置的動作。"
+  },
+  "status": "draft"
+ },
+ {
+  "card_id": 15,
+  "card_name": "節制",
+  "mirror": "archetype",
+  "essence_en": "Crab Apple",
+  "essence_zh": "野生酸蘋果",
+  "length_chars": 48,
+  "version": "2026-10b",
+  "text": {
+   "zh": "節制在你身上，是把兩種不同的東西慢慢調在一起的那一面。它不是中庸，是你知道比例，也願意等它融合。"
+  },
+  "status": "draft"
+ },
+ {
+  "card_id": 16,
+  "card_name": "惡魔",
+  "mirror": "archetype",
+  "essence_en": "Cherry Plum",
+  "essence_zh": "櫻桃李",
+  "length_chars": 48,
+  "version": "2026-10b",
+  "text": {
+   "zh": "惡魔在你身上，是那個被綁住、也多少喜歡被綁住的部分。它不是壞，是你看得見自己執著在哪裡的那一面。"
+  },
+  "status": "draft"
+ },
+ {
+  "card_id": 17,
+  "card_name": "塔",
+  "mirror": "archetype",
+  "essence_en": "Star of Bethlehem",
+  "essence_zh": "聖星百合",
+  "length_chars": 52,
+  "version": "2026-10b",
+  "text": {
+   "zh": "塔在你身上，是那個願意讓不對的結構倒下的部分。它不是破壞，是你內在知道有些東西撐不住、也不必再撐的誠實。"
+  },
+  "status": "draft"
+ },
+ {
+  "card_id": 18,
+  "card_name": "星星",
+  "mirror": "archetype",
+  "essence_en": "Gorse",
+  "essence_zh": "荊豆",
+  "length_chars": 50,
+  "version": "2026-10b",
+  "text": {
+   "zh": "星星在你身上，是在最暗的時候還留著一點光的那一面。它不是樂觀的標籤，是你知道怎麼在空掉之後重新注入。"
+  },
+  "status": "draft"
+ },
+ {
+  "card_id": 19,
+  "card_name": "月亮",
+  "mirror": "archetype",
+  "essence_en": "Aspen",
+  "essence_zh": "白楊",
+  "length_chars": 45,
+  "version": "2026-10b",
+  "text": {
+   "zh": "月亮在你身上，是感覺得到看不見的東西的那一面。它不是多疑，是你對潛意識和夢保持敞開的能力。"
+  },
+  "status": "draft"
+ },
+ {
+  "card_id": 20,
+  "card_name": "太陽",
+  "mirror": "archetype",
+  "essence_en": "Honeysuckle",
+  "essence_zh": "忍冬",
+  "length_chars": 47,
+  "version": "2026-10b",
+  "text": {
+   "zh": "太陽在你身上，是不需要理由就能高興的那一面。它不是幼稚，是你還保有的那個在當下就能發亮的孩子。"
+  },
+  "status": "draft"
+ },
+ {
+  "card_id": 21,
+  "card_name": "審判",
+  "mirror": "archetype",
+  "essence_en": "Sweet Chestnut",
+  "essence_zh": "甜栗花",
+  "length_chars": 47,
+  "version": "2026-10b",
+  "text": {
+   "zh": "審判在你身上，是聽得見內在召喚的那一面。它不是審判你，是你願意回應那個聲音、重新站起來的能力。"
+  },
+  "status": "draft"
+ },
+ {
+  "card_id": 22,
+  "card_name": "世界",
+  "mirror": "archetype",
+  "essence_en": "Larch",
+  "essence_zh": "落葉松",
+  "length_chars": 44,
+  "version": "2026-10b",
+  "text": {
+   "zh": "世界在你身上，是能把一件事做完、再開始下一輪的那一面。它不是終點，是你內在那個完整的圓。"
+  },
+  "status": "draft"
+ }
+]

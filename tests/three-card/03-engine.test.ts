@@ -3,7 +3,7 @@ import assert from "node:assert/strict";
 import fs from "node:fs";
 import { describe, it } from "node:test";
 import { candidates, compose, computeState, expandFull, recentFrom, replay, toAnnotatedText, type Library, type MirrorText, type ReadingRecord, type SlotName, type SlotTemplate, type TriggerValue } from "../../src/lib/threeCard/index";
-import { composeDemo, DATE, lib, USER } from "./helpers";
+import { composeDemo, DATE, INCLUDE_DRAFTS, lib, USER } from "./helpers";
 
 const demoRecords = JSON.parse(fs.readFileSync("handoff/data/demo_reading_records.json", "utf8")) as ReadingRecord[];
 const demoTexts = JSON.parse(fs.readFileSync("tests/three-card/fixtures/python-demo-texts.json", "utf8")) as { reading_id: string; brief: string; full: string }[];
@@ -39,7 +39,7 @@ describe("§8.5 決定性", () => {
   });
 });
 
-describe("§8.6 示範組與 Python 基準逐欄相同", () => {
+describe("§8.6 示範組與 Python 基準逐欄相同", { skip: INCLUDE_DRAFTS && "基準以 approved 模板庫為準，含草稿時選取必然不同" }, () => {
   demoRecords.forEach((r, i) => {
     it(`${r.reading_id} ${r.cards.join("→")} ${r.mode}/${r.initial_variant}`, () => {
       const recent = i === 7 ? { arc: [demoRecords[0].selections.arc!] } : undefined;
@@ -135,5 +135,22 @@ describe("§8.11 鏡像退回", () => {
     const b = compose(libD, ids, { userId: USER, createdAt: DATE, mode: "C" });
     assert.deepEqual(b.rendered.segments.filter((x) => x.kind === "position").map((x) => (x as { source: string }).source), ["position", "position", "position"]);
     assert.deepEqual(a.record.selections, b.record.selections, "鏡像有無不影響選取");
+  });
+});
+
+describe("trigger 對陣列欄位（flags、rescue_at）為「全部包含」", { skip: INCLUDE_DRAFTS && "測試用假 exception 與草稿 exception 同特異層，含草稿時不適用" }, () => {
+  it("rescue_at 含 now 的 exception 觸發；兩張急救時 rescue_count 2 也觸發", () => {
+    const exc = (id: string, trigger: Record<string, TriggerValue>): SlotTemplate => ({
+      template_id: id, slot: "exception", trigger, exclude: {}, text: { zh: "急救牌在此刻——如果你允許今天只做穩住這一件事，其他都可以等。" },
+      register: ["收", "持", "開"], weight: 3, tone_tags: [], length_chars: { zh: 30 }, status: "approved", version: "test", note: "",
+    });
+    const libE: Library = { ...lib, templates: [...lib.templates, exc("EXC_RESCUE_NOW_T", { rescue_at: ["now"] }), exc("EXC_RESCUE_TWO_T", { rescue_count: 2 })] };
+    const now = compose(libE, [1, 60, 23], { userId: USER, createdAt: DATE }); // 寶劍十在此刻
+    assert.equal(now.record.selections.exception, "EXC_RESCUE_NOW_T");
+    assert.equal(now.record.selections.arc, undefined, "exception 取代 arc");
+    const two = compose(libE, [46, 1, 60], { userId: USER, createdAt: DATE }); // 兩張急救，皆不在此刻
+    assert.equal(two.record.selections.exception, "EXC_RESCUE_TWO_T");
+    const none = compose(libE, [60, 1, 23], { userId: USER, createdAt: DATE }); // 急救在來處
+    assert.equal(none.record.selections.exception, undefined);
   });
 });

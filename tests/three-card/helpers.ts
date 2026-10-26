@@ -1,7 +1,12 @@
 // 測試共用：內容庫、窮舉、可達狀態收集。
 import { compose, computeState, defaultLibrary, kind, render, selectAll, seedOf, type Card, type Library, type Mode, type SlotName, type State } from "../../src/lib/threeCard/index";
 
-export const lib: Library = defaultLibrary();
+/** THREE_CARD_INCLUDE_DRAFTS=1 時把 draft 視為 approved（只用於覆蓋率預估，不代表核准） */
+export const INCLUDE_DRAFTS = process.env.THREE_CARD_INCLUDE_DRAFTS === "1";
+const base = defaultLibrary();
+export const lib: Library = INCLUDE_DRAFTS
+  ? { ...base, templates: base.templates.map((t) => (t.status === "draft" ? { ...t, status: "approved" } : t)), mirrorText: base.mirrorText.map((m) => (m.status === "draft" ? { ...m, status: "approved" } : m)) }
+  : base;
 export const USER = "demo";
 export const DATE = "2026-10-25";
 
@@ -10,13 +15,15 @@ export function stateKey(s: State): string {
   return [s.rel_12, s.rel_23, s.arc, s.major_count, s.court_present, s.resonance].join("|");
 }
 
-/** 必要槽：為空代表模板庫缺口（§3.3）。cta_brief 在 Phase 2 補齊前另行列為已知缺口。 */
-export function requiredSlots(s: State, mode: Mode): SlotName[] {
+/** 必要槽：為空代表模板庫缺口（§3.3）。exception 命中時 structure／mirror_synthesis 與 arc 由它取代，不再必要。 */
+export function requiredSlots(s: State, mode: Mode, hasException = false): SlotName[] {
   const both = s.flags.includes("both_sides_hostile");
-  const slots: SlotName[] = ["opening", mode === "C" ? "mirror_synthesis" : "structure"];
+  const slots: SlotName[] = ["opening"];
+  if (!hasException) slots.push(mode === "C" ? "mirror_synthesis" : "structure");
   if (mode !== "C") slots.push(both ? "rel_both" : "rel_12");
   if (mode !== "C" && !both) slots.push("rel_23");
-  slots.push("arc", "cta_full", "closing");
+  if (!hasException) slots.push("arc");
+  slots.push("cta_full", "closing");
   return slots;
 }
 /** 已知缺口：cta_brief（Phase 2 補）；opening 在模式 C 無 OPEN_C 模板（§7 未列） */
@@ -41,6 +48,7 @@ export type ExhaustiveStats = {
   arcs: Map<string, number>;
   states: Map<string, State>;
   warnings: number;
+  exceptions: number;
 };
 
 const BUDGET = { brief: { A: 330, B: 330, C: 400 }, full: 800 } as const;
@@ -48,7 +56,7 @@ const BUDGET = { brief: { A: 330, B: 330, C: 400 }, full: 800 } as const;
 /** 對全部排列跑狀態、選取、兩種渲染；回傳統計（測試 3、4、7、8 共用） */
 export function exhaustive(mode: Mode): ExhaustiveStats {
   const [p1, p2, p3] = pools(mode);
-  const st: ExhaustiveStats = { mode, n: 0, errors: [], missingRequired: new Map(), unreplaced: [], chars: { brief: [], full: [] }, overBudget: [], arcs: new Map(), states: new Map(), warnings: 0 };
+  const st: ExhaustiveStats = { mode, n: 0, errors: [], missingRequired: new Map(), unreplaced: [], chars: { brief: [], full: [] }, overBudget: [], arcs: new Map(), states: new Map(), warnings: 0, exceptions: 0 };
   const placeholder = /\{[a-z_0-9]+\}/;
   for (const c1 of p1) for (const c2 of p2) {
     if (c2.id === c1.id) continue;
@@ -63,7 +71,8 @@ export function exhaustive(mode: Mode): ExhaustiveStats {
         const ids: [number, number, number] = [c1.id, c2.id, c3.id];
         const { selections, warnings } = selectAll(lib, s, seedOf(USER, DATE, ids), undefined, mode);
         st.warnings += warnings.length;
-        for (const slot of requiredSlots(s, mode)) if (!selections[slot]) st.missingRequired.set(slot, (st.missingRequired.get(slot) ?? 0) + 1);
+        if (selections.exception) st.exceptions++;
+        for (const slot of requiredSlots(s, mode, !!selections.exception)) if (!selections[slot]) st.missingRequired.set(slot, (st.missingRequired.get(slot) ?? 0) + 1);
         for (const slot of KNOWN_GAP_SLOTS) if (!selections[slot]) st.missingRequired.set(slot, (st.missingRequired.get(slot) ?? 0) + 1);
         const brief = render(lib, [c1, c2, c3], s, selections, mode, "brief");
         const full = render(lib, [c1, c2, c3], s, selections, mode, "full");

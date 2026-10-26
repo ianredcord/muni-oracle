@@ -12,14 +12,17 @@ function stateValue(s: State, key: string): unknown {
 /** trigger 全部命中且 exclude 皆未命中 */
 export function matches(t: SlotTemplate, s: State): boolean {
   for (const [k, v] of Object.entries(t.trigger)) {
-    if (k === "flags") {
-      if (!(v as string[]).every((f) => s.flags.includes(f as never))) return false;
-    } else if (stateValue(s, k) !== v) return false;
+    const sv = stateValue(s, k);
+    if (Array.isArray(sv)) {
+      // 陣列欄位（flags、rescue_at）：trigger 的每個值都需出現（例「rescue_at 含 now」）
+      if (!(v as string[]).every((f) => (sv as string[]).includes(f))) return false;
+    } else if (sv !== v) return false;
   }
   for (const [k, v] of Object.entries(t.exclude)) {
-    if (k === "flags") {
-      if ((v as string[]).some((f) => s.flags.includes(f as never))) return false;
-    } else if ((v as TriggerValue[]).includes(stateValue(s, k) as TriggerValue)) return false;
+    const sv = stateValue(s, k);
+    if (Array.isArray(sv)) {
+      if ((v as string[]).some((f) => (sv as string[]).includes(f))) return false;
+    } else if ((v as TriggerValue[]).includes(sv as TriggerValue)) return false;
   }
   return true;
 }

@@ -8,6 +8,7 @@ describe("§8.4 窮舉 456,456（A）＋ 14,080（C）", () => {
   it("模式 A：無例外、必要槽不空、無未替換佔位符", () => {
     const st = exhaustiveOnce("A");
     assert.equal(st.n, 456456);
+    console.log(`  A exception 命中 ${st.exceptions}（${((st.exceptions / st.n) * 100).toFixed(1)}%）`);
     assert.deepEqual(st.errors, []);
     assert.deepEqual(st.unreplaced, []);
     assert.deepEqual([...st.missingRequired].filter(([s]) => s !== "cta_brief"), []);

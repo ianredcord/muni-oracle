@@ -3,4 +3,181 @@
 
 import type { MirrorText } from "../../lib/threeCard/types";
 
-export const MIRROR_TEXT: MirrorText[] = [];
+export const MIRROR_TEXT: MirrorText[] = [
+  {
+    "cardId": 1,
+    "mirror": "archetype",
+    "text": {
+      "zh": "愚者在你身上，是每次重新開始時那一點不設防的輕。它不是定義你，而是你還願意把第一步交給未知的那一面。"
+    },
+    "status": "draft"
+  },
+  {
+    "cardId": 2,
+    "mirror": "archetype",
+    "text": {
+      "zh": "魔術師在你身上，是把手邊的東西變成可用之物的那一面。不是天賦的標籤，而是你已經擁有、只是還沒排上桌的工具。"
+    },
+    "status": "draft"
+  },
+  {
+    "cardId": 3,
+    "mirror": "archetype",
+    "text": {
+      "zh": "女祭司在你身上，是那個知道了卻不急著說出來的部分。它不是神祕，是你內在一層安靜的、先聽再回應的能力。"
+    },
+    "status": "draft"
+  },
+  {
+    "cardId": 4,
+    "mirror": "archetype",
+    "text": {
+      "zh": "皇后在你身上，是讓東西長出來的那一面——不是替它長，而是給它土、水和時間。它不是定義你，是你會養的能力。"
+    },
+    "status": "draft"
+  },
+  {
+    "cardId": 5,
+    "mirror": "archetype",
+    "text": {
+      "zh": "皇帝在你身上，是替混亂畫出邊界的那一面。它不是權威的標籤，而是你知道什麼時候需要一個結構，讓事情站得住。"
+    },
+    "status": "draft"
+  },
+  {
+    "cardId": 6,
+    "mirror": "archetype",
+    "text": {
+      "zh": "教皇在你身上，是那個有自己一套規矩、也願意把它傳下去的部分。它不是守舊，是你內在那條用來對齊自己的線。"
+    },
+    "status": "draft"
+  },
+  {
+    "cardId": 7,
+    "mirror": "archetype",
+    "text": {
+      "zh": "戀人在你身上，是站在兩個選項之間還能感覺到兩邊都真的那一面。它不是搖擺，是你用價值而不是用答案來選的能力。"
+    },
+    "status": "draft"
+  },
+  {
+    "cardId": 8,
+    "mirror": "archetype",
+    "text": {
+      "zh": "戰車在你身上，是把方向握緊、往前走的那一面。它不是衝動，而是你已經決定了之後，身體願意跟上的那股力。"
+    },
+    "status": "draft"
+  },
+  {
+    "cardId": 9,
+    "mirror": "archetype",
+    "text": {
+      "zh": "力量在你身上，是用溫柔而不是用蠻力馴服什麼的那一面。它不是壓抑，是你和自己的本能坐在同一邊的能力。"
+    },
+    "status": "draft"
+  },
+  {
+    "cardId": 10,
+    "mirror": "archetype",
+    "text": {
+      "zh": "隱者在你身上，是願意一個人往內走一段的那一面。它不是孤僻，是你知道有些答案只在安靜裡才聽得見。"
+    },
+    "status": "draft"
+  },
+  {
+    "cardId": 11,
+    "mirror": "archetype",
+    "text": {
+      "zh": "命運之輪在你身上，是感覺得到節奏在轉的那一面。它不是定義你，是你知道有些時候該出力、有些時候該放手讓它轉。"
+    },
+    "status": "draft"
+  },
+  {
+    "cardId": 12,
+    "mirror": "archetype",
+    "text": {
+      "zh": "正義在你身上，是把事情秤一秤再決定的那一面。它不是冷，是你內在那把願意對自己和別人一樣公平的尺。"
+    },
+    "status": "draft"
+  },
+  {
+    "cardId": 13,
+    "mirror": "archetype",
+    "text": {
+      "zh": "吊人在你身上，是能夠倒過來看事情的那一面。它不是停擺，是你願意暫時不動，讓另一個角度自己浮出來。"
+    },
+    "status": "draft"
+  },
+  {
+    "cardId": 14,
+    "mirror": "archetype",
+    "text": {
+      "zh": "死神在你身上，是知道什麼時候該讓一件事結束的那一面。它不是失去，是你內在那個替新的東西騰出位置的動作。"
+    },
+    "status": "draft"
+  },
+  {
+    "cardId": 15,
+    "mirror": "archetype",
+    "text": {
+      "zh": "節制在你身上，是把兩種不同的東西慢慢調在一起的那一面。它不是中庸，是你知道比例，也願意等它融合。"
+    },
+    "status": "draft"
+  },
+  {
+    "cardId": 16,
+    "mirror": "archetype",
+    "text": {
+      "zh": "惡魔在你身上，是那個被綁住、也多少喜歡被綁住的部分。它不是壞，是你看得見自己執著在哪裡的那一面。"
+    },
+    "status": "draft"
+  },
+  {
+    "cardId": 17,
+    "mirror": "archetype",
+    "text": {
+      "zh": "塔在你身上，是那個願意讓不對的結構倒下的部分。它不是破壞，是你內在知道有些東西撐不住、也不必再撐的誠實。"
+    },
+    "status": "draft"
+  },
+  {
+    "cardId": 18,
+    "mirror": "archetype",
+    "text": {
+      "zh": "星星在你身上，是在最暗的時候還留著一點光的那一面。它不是樂觀的標籤，是你知道怎麼在空掉之後重新注入。"
+    },
+    "status": "draft"
+  },
+  {
+    "cardId": 19,
+    "mirror": "archetype",
+    "text": {
+      "zh": "月亮在你身上，是感覺得到看不見的東西的那一面。它不是多疑，是你對潛意識和夢保持敞開的能力。"
+    },
+    "status": "draft"
+  },
+  {
+    "cardId": 20,
+    "mirror": "archetype",
+    "text": {
+      "zh": "太陽在你身上，是不需要理由就能高興的那一面。它不是幼稚，是你還保有的那個在當下就能發亮的孩子。"
+    },
+    "status": "draft"
+  },
+  {
+    "cardId": 21,
+    "mirror": "archetype",
+    "text": {
+      "zh": "審判在你身上，是聽得見內在召喚的那一面。它不是審判你，是你願意回應那個聲音、重新站起來的能力。"
+    },
+    "status": "draft"
+  },
+  {
+    "cardId": 22,
+    "mirror": "archetype",
+    "text": {
+      "zh": "世界在你身上，是能把一件事做完、再開始下一輪的那一面。它不是終點，是你內在那個完整的圓。"
+    },
+    "status": "draft"
+  }
+];
