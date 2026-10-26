@@ -2,8 +2,6 @@
 // English version of tarot.generated.ts (78 MUNI Tarot cards).
 // nameZh / bachFlowerZh 保留中文，作為英文頁面的副標名稱使用。
 
-import "server-only";
-
 import type { TarotCard, TarotSuit } from "./tarot.generated";
 
 export const SUIT_NAMES_EN: Record<TarotSuit, string> = {

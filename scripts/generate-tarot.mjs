@@ -19,6 +19,9 @@ const META_PATH = opt("--meta", "src/data/tarot.meta.json");
 const OUT_PATH = opt("--out", "src/data/tarot.generated.ts");
 const CHECK = argv.includes("--check");
 const DATE = opt("--date", new Date().toISOString().slice(0, 10));
+// --server-only：在檔頭加入 import "server-only"。該行屬於 i18n 工作樹尚未 commit 的改動，
+// 已 commit 的 client 元件仍直接引用本檔，所以預設不加；i18n 改動 commit 後再改預設。
+const SERVER_ONLY = argv.includes("--server-only");
 
 const SUITS = ["wands", "cups", "swords", "pentacles"];
 const SUIT_ZH = { wands: "權杖", cups: "聖杯", swords: "寶劍", pentacles: "錢幣" };
@@ -97,9 +100,7 @@ export function toCard(r, index, meta) {
 
 const HEADER = (jsonName, date) => `// AUTO-GENERATED from ${jsonName}
 // Last updated: ${date}
-
-import "server-only";
-
+${SERVER_ONLY ? '\nimport "server-only";\n' : ""}
 export type TarotSuit = "major" | "wands" | "cups" | "swords" | "pentacles";
 
 export type TarotCard = {

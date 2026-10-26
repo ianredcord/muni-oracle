@@ -1,8 +1,6 @@
 // AUTO-GENERATED from MUNI_78Cards_Content_v4.1.json
 // Last updated: 2026-10-26
 
-import "server-only";
-
 export type TarotSuit = "major" | "wands" | "cups" | "swords" | "pentacles";
 
 export type TarotCard = {
