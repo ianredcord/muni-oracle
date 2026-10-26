@@ -2251,7 +2251,7 @@ export const SLOT_TEMPLATES: SlotTemplate[] = [
     "length_chars": {
       "zh": 63
     },
-    "status": "draft",
+    "status": "approved",
     "version": "2026-10b",
     "note": ""
   },
@@ -2276,7 +2276,7 @@ export const SLOT_TEMPLATES: SlotTemplate[] = [
     "length_chars": {
       "zh": 61
     },
-    "status": "draft",
+    "status": "approved",
     "version": "2026-10b",
     "note": ""
   },
@@ -2301,7 +2301,7 @@ export const SLOT_TEMPLATES: SlotTemplate[] = [
     "length_chars": {
       "zh": 70
     },
-    "status": "draft",
+    "status": "approved",
     "version": "2026-10b",
     "note": ""
   },
@@ -2331,7 +2331,7 @@ export const SLOT_TEMPLATES: SlotTemplate[] = [
     "length_chars": {
       "zh": 47
     },
-    "status": "draft",
+    "status": "approved",
     "version": "2026-10b",
     "note": ""
   },
@@ -2360,7 +2360,7 @@ export const SLOT_TEMPLATES: SlotTemplate[] = [
     "length_chars": {
       "zh": 61
     },
-    "status": "draft",
+    "status": "approved",
     "version": "2026-10b",
     "note": ""
   },
@@ -2386,7 +2386,7 @@ export const SLOT_TEMPLATES: SlotTemplate[] = [
     "length_chars": {
       "zh": 41
     },
-    "status": "draft",
+    "status": "approved",
     "version": "2026-10b",
     "note": ""
   },
@@ -2412,7 +2412,7 @@ export const SLOT_TEMPLATES: SlotTemplate[] = [
     "length_chars": {
       "zh": 39
     },
-    "status": "draft",
+    "status": "approved",
     "version": "2026-10b",
     "note": "§7 未列 OPEN_C；待使用者確認是否需要"
   },
@@ -2438,7 +2438,7 @@ export const SLOT_TEMPLATES: SlotTemplate[] = [
     "length_chars": {
       "zh": 97
     },
-    "status": "draft",
+    "status": "approved",
     "version": "2026-10b",
     "note": ""
   },
@@ -2465,7 +2465,7 @@ export const SLOT_TEMPLATES: SlotTemplate[] = [
     "length_chars": {
       "zh": 86
     },
-    "status": "draft",
+    "status": "approved",
     "version": "2026-10b",
     "note": ""
   },
@@ -2493,7 +2493,7 @@ export const SLOT_TEMPLATES: SlotTemplate[] = [
     "length_chars": {
       "zh": 76
     },
-    "status": "draft",
+    "status": "approved",
     "version": "2026-10b",
     "note": ""
   },
@@ -2522,7 +2522,7 @@ export const SLOT_TEMPLATES: SlotTemplate[] = [
     "length_chars": {
       "zh": 62
     },
-    "status": "draft",
+    "status": "approved",
     "version": "2026-10b",
     "note": ""
   },
@@ -2550,7 +2550,7 @@ export const SLOT_TEMPLATES: SlotTemplate[] = [
     "length_chars": {
       "zh": 64
     },
-    "status": "draft",
+    "status": "approved",
     "version": "2026-10b",
     "note": ""
   },
@@ -2582,7 +2582,7 @@ export const SLOT_TEMPLATES: SlotTemplate[] = [
     "length_chars": {
       "zh": 61
     },
-    "status": "draft",
+    "status": "approved",
     "version": "2026-10b",
     "note": ""
   },
@@ -2614,7 +2614,7 @@ export const SLOT_TEMPLATES: SlotTemplate[] = [
     "length_chars": {
       "zh": 57
     },
-    "status": "draft",
+    "status": "approved",
     "version": "2026-10b",
     "note": ""
   },
@@ -2646,7 +2646,7 @@ export const SLOT_TEMPLATES: SlotTemplate[] = [
     "length_chars": {
       "zh": 68
     },
-    "status": "draft",
+    "status": "approved",
     "version": "2026-10b",
     "note": ""
   },
@@ -2670,7 +2670,7 @@ export const SLOT_TEMPLATES: SlotTemplate[] = [
     "length_chars": {
       "zh": 38
     },
-    "status": "draft",
+    "status": "approved",
     "version": "2026-10b",
     "note": ""
   },
@@ -2694,7 +2694,7 @@ export const SLOT_TEMPLATES: SlotTemplate[] = [
     "length_chars": {
       "zh": 35
     },
-    "status": "draft",
+    "status": "approved",
     "version": "2026-10b",
     "note": ""
   },
@@ -2719,7 +2719,7 @@ export const SLOT_TEMPLATES: SlotTemplate[] = [
     "length_chars": {
       "zh": 58
     },
-    "status": "draft",
+    "status": "approved",
     "version": "2026-10b",
     "note": ""
   },
@@ -2749,7 +2749,7 @@ export const SLOT_TEMPLATES: SlotTemplate[] = [
     "length_chars": {
       "zh": 48
     },
-    "status": "draft",
+    "status": "approved",
     "version": "2026-10b",
     "note": "三值相容，補 STRUCT_M3 在「開」的覆蓋"
   },
@@ -2777,7 +2777,7 @@ export const SLOT_TEMPLATES: SlotTemplate[] = [
     "length_chars": {
       "zh": 61
     },
-    "status": "draft",
+    "status": "approved",
     "version": "2026-10b",
     "note": ""
   },
@@ -2803,7 +2803,7 @@ export const SLOT_TEMPLATES: SlotTemplate[] = [
     "length_chars": {
       "zh": 41
     },
-    "status": "draft",
+    "status": "approved",
     "version": "2026-10b",
     "note": ""
   },
@@ -2829,7 +2829,7 @@ export const SLOT_TEMPLATES: SlotTemplate[] = [
     "length_chars": {
       "zh": 41
     },
-    "status": "draft",
+    "status": "approved",
     "version": "2026-10b",
     "note": ""
   },
@@ -2855,7 +2855,7 @@ export const SLOT_TEMPLATES: SlotTemplate[] = [
     "length_chars": {
       "zh": 38
     },
-    "status": "draft",
+    "status": "approved",
     "version": "2026-10b",
     "note": ""
   },
@@ -2881,7 +2881,7 @@ export const SLOT_TEMPLATES: SlotTemplate[] = [
     "length_chars": {
       "zh": 47
     },
-    "status": "draft",
+    "status": "approved",
     "version": "2026-10b",
     "note": "§7 未列 OPEN_C；待使用者確認"
   },
@@ -2907,7 +2907,7 @@ export const SLOT_TEMPLATES: SlotTemplate[] = [
     "length_chars": {
       "zh": 44
     },
-    "status": "draft",
+    "status": "approved",
     "version": "2026-10b",
     "note": "§7 未列 OPEN_C；待使用者確認"
   },
@@ -2935,7 +2935,7 @@ export const SLOT_TEMPLATES: SlotTemplate[] = [
     "length_chars": {
       "zh": 59
     },
-    "status": "draft",
+    "status": "approved",
     "version": "2026-10b",
     "note": ""
   },
@@ -2965,7 +2965,7 @@ export const SLOT_TEMPLATES: SlotTemplate[] = [
     "length_chars": {
       "zh": 65
     },
-    "status": "draft",
+    "status": "approved",
     "version": "2026-10b",
     "note": ""
   },
@@ -2995,7 +2995,7 @@ export const SLOT_TEMPLATES: SlotTemplate[] = [
     "length_chars": {
       "zh": 53
     },
-    "status": "draft",
+    "status": "approved",
     "version": "2026-10b",
     "note": ""
   },
@@ -3023,7 +3023,7 @@ export const SLOT_TEMPLATES: SlotTemplate[] = [
     "length_chars": {
       "zh": 65
     },
-    "status": "draft",
+    "status": "approved",
     "version": "2026-10b",
     "note": ""
   },
@@ -3051,7 +3051,7 @@ export const SLOT_TEMPLATES: SlotTemplate[] = [
     "length_chars": {
       "zh": 56
     },
-    "status": "draft",
+    "status": "approved",
     "version": "2026-10b",
     "note": ""
   },
@@ -3079,7 +3079,7 @@ export const SLOT_TEMPLATES: SlotTemplate[] = [
     "length_chars": {
       "zh": 62
     },
-    "status": "draft",
+    "status": "approved",
     "version": "2026-10b",
     "note": ""
   },
@@ -3107,7 +3107,7 @@ export const SLOT_TEMPLATES: SlotTemplate[] = [
     "length_chars": {
       "zh": 69
     },
-    "status": "draft",
+    "status": "approved",
     "version": "2026-10b",
     "note": ""
   },
@@ -3136,7 +3136,7 @@ export const SLOT_TEMPLATES: SlotTemplate[] = [
     "length_chars": {
       "zh": 62
     },
-    "status": "draft",
+    "status": "approved",
     "version": "2026-10b",
     "note": ""
   },
@@ -3165,7 +3165,7 @@ export const SLOT_TEMPLATES: SlotTemplate[] = [
     "length_chars": {
       "zh": 56
     },
-    "status": "draft",
+    "status": "approved",
     "version": "2026-10b",
     "note": ""
   },
@@ -3192,7 +3192,7 @@ export const SLOT_TEMPLATES: SlotTemplate[] = [
     "length_chars": {
       "zh": 65
     },
-    "status": "draft",
+    "status": "approved",
     "version": "2026-10b",
     "note": ""
   },
@@ -3224,7 +3224,7 @@ export const SLOT_TEMPLATES: SlotTemplate[] = [
     "length_chars": {
       "zh": 68
     },
-    "status": "draft",
+    "status": "approved",
     "version": "2026-10b",
     "note": ""
   }

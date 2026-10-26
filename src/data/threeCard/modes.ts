@@ -1,5 +1,5 @@
 // 三種模式的 UI 文字（Phase 3）。位置名固定，不得改成「過去・現在・未來」。
-// 全部 status=draft，由使用者核准後改 approved；引擎不讀本檔，UI 才用。
+// 2026-10-26 使用者全部核准（approved）；引擎不讀本檔，UI 才用。
 import type { Mode, Position, Status } from "../../lib/threeCard/types";
 
 export type ModeText = {
@@ -26,7 +26,7 @@ export const MODE_TEXT: Record<Mode, ModeText> = {
       now: "此刻，你站在什麼位置？",
       direction: "如果你允許，接下來會往哪裡去？",
     },
-    status: "draft",
+    status: "approved",
   },
   B: {
     mode: "B",
@@ -38,7 +38,7 @@ export const MODE_TEXT: Record<Mode, ModeText> = {
       now: "是什麼卡住了？",
       direction: "如果你允許，下一步可以是什麼？",
     },
-    status: "draft",
+    status: "approved",
   },
   C: {
     mode: "C",
@@ -50,7 +50,7 @@ export const MODE_TEXT: Record<Mode, ModeText> = {
       now: "我怎麼表現？別人看見的是什麼？",
       direction: "我在哪裡？此刻站在什麼場裡？",
     },
-    status: "draft",
+    status: "approved",
   },
 };
 

@@ -32,19 +32,20 @@
    "rescue_at": []
   },
   "selections": {
-   "opening": "OPEN_A_01",
+   "opening": "OPEN_A_03",
    "structure": "STRUCT_M2_02",
    "rel_12": "REL12_PIP_MAJOR_01",
    "rel_23": "REL23_SAME_01",
-   "arc": "ARC_RESOLVE_02",
+   "arc": "ARC_RESOLVE_01",
+   "cta_brief": "CTA_BRIEF_02",
    "cta_full": "CTA_DEEP_02",
    "closing": "CLOSE_01"
   },
   "content_version": "2026-10",
   "engine_version": "v2",
   "chars": {
-   "brief": 202,
-   "full": 508
+   "brief": 241,
+   "full": 521
   },
   "events": []
  },
@@ -86,13 +87,14 @@
    "rel_12": "REL12_SAME_02",
    "rel_23": "REL23_NEUTRAL_02",
    "arc": "ARC_SETTLE_03",
+   "cta_brief": "CTA_BRIEF_02",
    "cta_full": "CTA_DEEP_02",
    "closing": "CLOSE_01"
   },
   "content_version": "2026-10",
   "engine_version": "v2",
   "chars": {
-   "brief": 211,
+   "brief": 246,
    "full": 518
   },
   "events": []
@@ -131,19 +133,19 @@
   },
   "selections": {
    "opening": "OPEN_A_01",
-   "structure": "STRUCT_M2_01",
+   "exception": "EXC_RES_RESOLVE_01",
    "rel_12": "REL12_FRIENDLY_03",
    "rel_23": "REL23_SAME_02",
-   "arc": "ARC_RESOLVE_01",
    "resonance": "RES_PAIR_03",
+   "cta_brief": "CTA_BRIEF_02",
    "cta_full": "CTA_DEEP_01",
    "closing": "CLOSE_01"
   },
   "content_version": "2026-10",
   "engine_version": "v2",
   "chars": {
-   "brief": 213,
-   "full": 548
+   "brief": 262,
+   "full": 523
   },
   "events": []
  },
@@ -180,19 +182,21 @@
    "rescue_at": []
   },
   "selections": {
-   "opening": "OPEN_A_01",
+   "opening": "OPEN_A_02",
    "structure": "STRUCT_M1_01",
    "rel_12": "REL12_MAJOR_PIP_01",
    "rel_23": "REL23_HOSTILE_02",
    "arc": "ARC_HOLD_01",
+   "court_generic": "COURT_GENERIC_KNIGHT_01",
+   "cta_brief": "CTA_BRIEF_02",
    "cta_full": "CTA_DEEP_03",
    "closing": "CLOSE_01"
   },
   "content_version": "2026-10",
   "engine_version": "v2",
   "chars": {
-   "brief": 211,
-   "full": 518
+   "brief": 246,
+   "full": 576
   },
   "events": []
  },
@@ -229,20 +233,22 @@
    "rescue_at": []
   },
   "selections": {
-   "opening": "OPEN_A_01",
+   "opening": "OPEN_A_02",
    "structure": "STRUCT_M0_03",
    "rel_12": "REL12_SAMESUIT_01",
    "rel_23": "REL23_NEUTRAL_02",
    "arc": "ARC_HOLD_03",
    "resonance": "RES_PAIR_02",
+   "court_generic": "COURT_GENERIC_KING_01",
+   "cta_brief": "CTA_BRIEF_02",
    "cta_full": "CTA_DEEP_03",
    "closing": "CLOSE_01"
   },
   "content_version": "2026-10",
   "engine_version": "v2",
   "chars": {
-   "brief": 201,
-   "full": 546
+   "brief": 236,
+   "full": 615
   },
   "events": []
  },
@@ -279,19 +285,20 @@
    "rescue_at": []
   },
   "selections": {
-   "opening": "OPEN_A_01",
+   "opening": "OPEN_A_03",
    "structure": "STRUCT_M2_02",
    "rel_12": "REL12_PIP_MAJOR_01",
    "rel_23": "REL23_SAME_01",
-   "arc": "ARC_RESOLVE_02",
+   "arc": "ARC_RESOLVE_01",
+   "cta_brief": "CTA_BRIEF_02",
    "cta_full": "CTA_DEEP_02",
    "closing": "CLOSE_01"
   },
   "content_version": "2026-10",
   "engine_version": "v2",
   "chars": {
-   "brief": 202,
-   "full": 508
+   "brief": 241,
+   "full": 521
   },
   "events": []
  },
@@ -328,17 +335,19 @@
    "rescue_at": []
   },
   "selections": {
-   "mirror_synthesis": "MIRROR_C_03",
+   "opening": "OPEN_C_02",
+   "mirror_synthesis": "MIRROR_C_04",
    "arc": "ARC_HOLD_02",
    "resonance": "RES_PAIR_02",
+   "cta_brief": "CTA_BRIEF_01",
    "cta_full": "CTA_DEEP_01",
    "closing": "CLOSE_01"
   },
   "content_version": "2026-10",
   "engine_version": "v2",
   "chars": {
-   "brief": 280,
-   "full": 460
+   "brief": 362,
+   "full": 551
   },
   "events": []
  },
@@ -375,19 +384,20 @@
    "rescue_at": []
   },
   "selections": {
-   "opening": "OPEN_A_01",
+   "opening": "OPEN_A_03",
    "structure": "STRUCT_M2_02",
    "rel_12": "REL12_PIP_MAJOR_01",
    "rel_23": "REL23_SAME_01",
-   "arc": "ARC_RESOLVE_01",
+   "arc": "ARC_RESOLVE_03",
+   "cta_brief": "CTA_BRIEF_02",
    "cta_full": "CTA_DEEP_02",
    "closing": "CLOSE_01"
   },
   "content_version": "2026-10",
   "engine_version": "v2",
   "chars": {
-   "brief": 206,
-   "full": 512
+   "brief": 252,
+   "full": 532
   },
   "events": []
  }

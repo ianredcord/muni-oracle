@@ -1,10 +1,10 @@
 // 三牌陣 UI 文字（Phase 3）：模式選擇引導句、精簡版／完整版按鈕與過場。
-// 每組有多個變體，由 UI 以 reading_id 或日期輪替；全部 status=draft。
+// 每組有多個變體，由 UI 以 reading_id 或日期輪替；2026-10-26 全部核准。
 import type { Status } from "../../lib/threeCard/types";
 
 export type UiVariant = { id: string; text: string; status: Status };
 
-const v = (id: string, text: string): UiVariant => ({ id, text, status: "draft" });
+const v = (id: string, text: string): UiVariant => ({ id, text, status: "approved" });
 
 /** 模式選擇頁的引導句（第一筆為基礎句） */
 export const MODE_PROMPT: UiVariant[] = [

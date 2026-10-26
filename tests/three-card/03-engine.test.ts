@@ -138,13 +138,14 @@ describe("§8.11 鏡像退回", () => {
   });
 });
 
-describe("trigger 對陣列欄位（flags、rescue_at）為「全部包含」", { skip: INCLUDE_DRAFTS && "測試用假 exception 與草稿 exception 同特異層，含草稿時不適用" }, () => {
+describe("trigger 對陣列欄位（flags、rescue_at）為「全部包含」", () => {
   it("rescue_at 含 now 的 exception 觸發；兩張急救時 rescue_count 2 也觸發", () => {
     const exc = (id: string, trigger: Record<string, TriggerValue>): SlotTemplate => ({
       template_id: id, slot: "exception", trigger, exclude: {}, text: { zh: "急救牌在此刻——如果你允許今天只做穩住這一件事，其他都可以等。" },
       register: ["收", "持", "開"], weight: 3, tone_tags: [], length_chars: { zh: 30 }, status: "approved", version: "test", note: "",
     });
-    const libE: Library = { ...lib, templates: [...lib.templates, exc("EXC_RESCUE_NOW_T", { rescue_at: ["now"] }), exc("EXC_RESCUE_TWO_T", { rescue_count: 2 })] };
+    // 先移除正式的 exception 模板，避免與假模板同特異層競爭
+    const libE: Library = { ...lib, templates: [...lib.templates.filter((t) => t.slot !== "exception"), exc("EXC_RESCUE_NOW_T", { rescue_at: ["now"] }), exc("EXC_RESCUE_TWO_T", { rescue_count: 2 })] };
     const now = compose(libE, [1, 60, 23], { userId: USER, createdAt: DATE }); // 寶劍十在此刻
     assert.equal(now.record.selections.exception, "EXC_RESCUE_NOW_T");
     assert.equal(now.record.selections.arc, undefined, "exception 取代 arc");

@@ -79,8 +79,10 @@ def pick(slot,s,seed,recent=None):
 def fill(text,c1,c2,c3):
     zh={"Fire":"火","Water":"水","Air":"風","Earth":"地"}
     dup=[c1,c2,c3]; ess=next((c for c in dup if [x["bachFlowerEn"] for x in dup].count(c["bachFlowerEn"])>1),c2)
+    court=next((c for c in (c2,c1,c3) if kind(c)=="court"),None)
     return text.format(elem_1=zh[elem(c1)],elem_2=zh[elem(c2)],elem_3=zh[elem(c3)],essence_zh=ess["bachFlowerZh"],essence_en=ess["bachFlowerEn"],
-        court_name="",court_type="",user_type="",archetype=c1["nameZh"],persona=c2["nameZh"],situation=c3["nameZh"])
+        court_name=(court["nameZh"] if court else ""),court_type=(court.get("planetSign","") if court else ""),user_type="",   # 2026-10-26：court_name／court_type 依規格 §3.4 填入（被選中的宮廷牌：此刻優先）
+        archetype=c1["nameZh"],persona=c2["nameZh"],situation=c3["nameZh"])
 BRIEF_TEMPLATE_SLOTS={"exception","mirror_synthesis","arc","cta_brief","closing"}   # 精簡版渲染的模板槽（mirror_synthesis 只在模式 C 出現）
 def select_all(s,seed,recent=None,mode="A"):
     """抽牌當下一次選完所有槽；回傳 {slot: template}（只含實際會出場的槽）"""

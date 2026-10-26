@@ -72,9 +72,10 @@ describe("§8.3 模板", () => {
   it("每個必要槽在每個可達狀態都有 ≥ 1 筆可選模板（模式 A）", () => {
     const st = exhaustiveOnce("A");
     const missing = [...st.missingRequired].filter(([slot]) => !KNOWN_GAP_SLOTS.includes(slot));
+    void KNOWN_GAP_SLOTS;
     assert.deepEqual(missing, []);
   });
-  it("cta_brief 每個狀態都有模板", { skip: "Phase 2 補 cta_brief 2 筆後啟用" }, () => {
+  it("cta_brief 每個狀態都有模板", () => {
     assert.equal(exhaustiveOnce("A").missingRequired.get("cta_brief") ?? 0, 0);
   });
 });
