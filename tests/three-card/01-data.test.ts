@@ -2,7 +2,7 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 import { isRescue, kind, layer, type Card } from "../../src/lib/threeCard/index";
-import { lintPositionText, lintTemplate } from "../../src/lib/threeCard/lint";
+import { lintMirrorText, lintPositionText, lintTemplate } from "../../src/lib/threeCard/lint";
 import { exhaustiveOnce, KNOWN_GAP_SLOTS, lib } from "./helpers";
 
 /**
@@ -11,7 +11,7 @@ import { exhaustiveOnce, KNOWN_GAP_SLOTS, lib } from "./helpers";
  */
 const KNOWN_CONFLICTS = new Set<string>([
   "REL23_SAME_02", "REL23_SAME_03", "REL23_FRIENDLY_03", "REL23_NEUTRAL_01", "REL23_NEUTRAL_02", "REL23_NEUTRAL_03", // rel_23 缺「如果／允許」
-  "寶劍國王/now", // 「判決」不在「不是」之後（v4.1 新稿）
+  "寶劍國王/now", "寶劍國王/persona", // 「判決」不在「不是」之後（v4.1 新稿的允許句，人格鏡像短文照規格引用同一句）
 ]);
 
 describe("§8.1 資料完整", () => {
@@ -55,6 +55,12 @@ describe("§8.2 位置短文", () => {
     const errors = lib.positionText.flatMap((p) => lintPositionText(p, byId.get(p.cardId)!)).filter((i) => i.level === "error" && !KNOWN_CONFLICTS.has(i.id));
     assert.deepEqual(errors, []);
     assert.ok(lib.positionText.every((p) => p.status === "approved"));
+  });
+  it("鏡像短文（含 draft）通過 §6（已知衝突除外）", () => {
+    const byId = new Map(lib.cards.map((c) => [c.id, c]));
+    const errors = lib.mirrorText.flatMap((m) => lintMirrorText(m, byId.get(m.cardId)!)).filter((i) => i.level === "error" && !KNOWN_CONFLICTS.has(i.id));
+    assert.deepEqual(errors, []);
+    assert.equal(new Set(lib.mirrorText.map((m) => m.cardId)).size, lib.mirrorText.length, "每張牌最多一段");
   });
 });
 

@@ -284,5 +284,213 @@
    "zh": "世界在你身上，是能把一件事做完、再開始下一輪的那一面。它不是終點，是你內在那個完整的圓。"
   },
   "status": "draft"
+ },
+ {
+  "card_id": 33,
+  "card_name": "權杖侍者",
+  "mirror": "persona",
+  "essence_en": "Vervain",
+  "essence_zh": "馬鞭草",
+  "length_chars": 83,
+  "version": "2026-10b",
+  "text": {
+   "zh": "你拿出來的樣子，是對什麼都先點一把火——別人感受到的是熱，有時也是急。馬鞭草（Vervain）陪你把一些火留給自己。允許句：我允許自己只是好奇地看看，不急著成為什麼。"
+  },
+  "status": "draft"
+ },
+ {
+  "card_id": 34,
+  "card_name": "權杖騎士",
+  "mirror": "persona",
+  "essence_en": "Impatiens",
+  "essence_zh": "鳳仙花",
+  "length_chars": 81,
+  "version": "2026-10b",
+  "text": {
+   "zh": "你拿出來的樣子，是先衝出去再說——別人感受到的是速度，有時也是等不及。鳳仙花（Impatiens）陪你把節奏留一點給別人。允許句：我允許自己在快與慢之間自由切換。"
+  },
+  "status": "draft"
+ },
+ {
+  "card_id": 35,
+  "card_name": "權杖皇后",
+  "mirror": "persona",
+  "essence_en": "Holly",
+  "essence_zh": "冬青",
+  "length_chars": 85,
+  "version": "2026-10b",
+  "text": {
+   "zh": "你拿出來的樣子，是把場子點亮——別人感受到的是魅力，偶爾也有一點比較。冬青（Holly）陪你把渴望直接說出口。允許句：我允許自己坦然承認渴望，而不把它藏在嫉妒的面具後面。"
+  },
+  "status": "draft"
+ },
+ {
+  "card_id": 36,
+  "card_name": "權杖國王",
+  "mirror": "persona",
+  "essence_en": "Beech",
+  "essence_zh": "山毛櫸",
+  "length_chars": 81,
+  "version": "2026-10b",
+  "text": {
+   "zh": "你表現出來的，是看得遠、也定得快——別人感受到的是方向，有時也是標準太高。山毛櫸（Beech）陪你讓標準鬆一格。允許句：我允許這個世界不完美，也允許自己放下標準。"
+  },
+  "status": "draft"
+ },
+ {
+  "card_id": 47,
+  "card_name": "聖杯侍者",
+  "mirror": "persona",
+  "essence_en": "Chestnut Bud",
+  "essence_zh": "栗樹芽苞",
+  "length_chars": 92,
+  "version": "2026-10b",
+  "text": {
+   "zh": "你拿出來的樣子，是什麼都先用感覺接——別人感受到的是天真，也看到同一件事學了好幾次。栗樹芽苞（Chestnut Bud）陪你把每一次都記住。允許句：我允許自己慢慢學，每一次重來都算數。"
+  },
+  "status": "draft"
+ },
+ {
+  "card_id": 48,
+  "card_name": "聖杯騎士",
+  "mirror": "persona",
+  "essence_en": "Hornbeam",
+  "essence_zh": "角樹",
+  "length_chars": 83,
+  "version": "2026-10b",
+  "text": {
+   "zh": "你表現出來的，是心已經出發、人還在原地——別人看到的是嚮往，也看到遲疑。角樹（Hornbeam）陪你讓身體先動。允許句：我允許自己在還沒準備好的感覺裡，先踏出一小步。"
+  },
+  "status": "draft"
+ },
+ {
+  "card_id": 49,
+  "card_name": "聖杯皇后",
+  "mirror": "persona",
+  "essence_en": "Chicory",
+  "essence_zh": "菊苣",
+  "length_chars": 79,
+  "version": "2026-10b",
+  "text": {
+   "zh": "你表現出來的，是先把人接住——別人感受到的是被懂，偶爾也感受到一點被牽著。菊苣（Chicory）陪你讓愛不帶條件。允許句：我允許自己的愛自由流動，不需要收據。"
+  },
+  "status": "draft"
+ },
+ {
+  "card_id": 50,
+  "card_name": "聖杯國王",
+  "mirror": "persona",
+  "essence_en": "Heather",
+  "essence_zh": "石楠",
+  "length_chars": 81,
+  "version": "2026-10b",
+  "text": {
+   "zh": "你拿出來的樣子，是穩穩的、什麼都接得住——別人感受到的是平靜，很少看見底下的波。石楠（Heather）陪你讓安靜也被聽見。允許句：我允許沉默存在，它不代表被遺忘。"
+  },
+  "status": "draft"
+ },
+ {
+  "card_id": 61,
+  "card_name": "寶劍侍者",
+  "mirror": "persona",
+  "essence_en": "Gentian",
+  "essence_zh": "龍膽草",
+  "length_chars": 84,
+  "version": "2026-10b",
+  "text": {
+   "zh": "你表現出來的，是先看清楚再說——別人感受到的是機敏，也感受到一點防備。龍膽草（Gentian）陪你在懷疑之後還願意再試。允許句：我允許自己失望，也允許失望之後再試一次。"
+  },
+  "status": "draft"
+ },
+ {
+  "card_id": 62,
+  "card_name": "寶劍騎士",
+  "mirror": "persona",
+  "essence_en": "White Chestnut",
+  "essence_zh": "白栗花",
+  "length_chars": 93,
+  "version": "2026-10b",
+  "text": {
+   "zh": "你拿出來的樣子，是念頭一來就往前衝——別人感受到的是犀利，也感受到停不下來。白栗花（White Chestnut）陪你讓腦袋有空檔。允許句：我允許腦袋暫時放空，不是每個念頭都需要被處理。"
+  },
+  "status": "draft"
+ },
+ {
+  "card_id": 63,
+  "card_name": "寶劍皇后",
+  "mirror": "persona",
+  "essence_en": "Willow",
+  "essence_zh": "楊柳",
+  "length_chars": 89,
+  "version": "2026-10b",
+  "text": {
+   "zh": "你表現出來的，是清醒、有界限——別人感受到的是不好親近，卻少看見那是經歷過什麼才有的。楊柳（Willow）陪你把扛著的放下。允許句：我允許生命中有不公平，也允許自己不再扛著它走。"
+  },
+  "status": "draft"
+ },
+ {
+  "card_id": 64,
+  "card_name": "寶劍國王",
+  "mirror": "persona",
+  "essence_en": "Pine",
+  "essence_zh": "松樹",
+  "length_chars": 91,
+  "version": "2026-10b",
+  "text": {
+   "zh": "你拿出來的樣子，是把事情切得乾淨——別人感受到的是公正，很少知道你對自己判得更重。松樹（Pine）陪你把法官的位置讓出來一會兒。允許句：我允許自己卸下不屬於我的責任，判決可以結案了。"
+  },
+  "status": "draft"
+ },
+ {
+  "card_id": 75,
+  "card_name": "錢幣侍者",
+  "mirror": "persona",
+  "essence_en": "Mimulus",
+  "essence_zh": "溝酸漿",
+  "length_chars": 84,
+  "version": "2026-10b",
+  "text": {
+   "zh": "你表現出來的，是認真、一步一步來——別人感受到的是踏實，不太看得見你出發前的怕。溝酸漿（Mimulus）陪你帶著怕也能走。允許句：我允許自己帶著害怕出發，勇敢不是不怕。"
+  },
+  "status": "draft"
+ },
+ {
+  "card_id": 76,
+  "card_name": "錢幣騎士",
+  "mirror": "persona",
+  "essence_en": "Olive",
+  "essence_zh": "橄欖",
+  "length_chars": 82,
+  "version": "2026-10b",
+  "text": {
+   "zh": "你拿出來的樣子，是不停地把事情做完——別人感受到的是可靠，卻少看見你多累。橄欖（Olive）陪你在中途坐一下。允許句：我允許自己在中途坐下來，不是每一刻都需要前進。"
+  },
+  "status": "draft"
+ },
+ {
+  "card_id": 77,
+  "card_name": "錢幣皇后",
+  "mirror": "persona",
+  "essence_en": "Centaury",
+  "essence_zh": "矢車菊",
+  "length_chars": 84,
+  "version": "2026-10b",
+  "text": {
+   "zh": "你表現出來的，是先把別人照顧好——別人感受到的是可靠，卻少看見你的累。矢車菊（Centaury）陪你把自己也算進來。允許句：我允許自己說不，善良不需要以犧牲自己為代價。"
+  },
+  "status": "draft"
+ },
+ {
+  "card_id": 78,
+  "card_name": "錢幣國王",
+  "mirror": "persona",
+  "essence_en": "Elm",
+  "essence_zh": "榆樹",
+  "length_chars": 78,
+  "version": "2026-10b",
+  "text": {
+   "zh": "你表現出來的，是把所有人都撐住——別人感受到的是安穩，不太知道你撐得多滿。榆樹（Elm）陪你承認極限不是失守。允許句：我允許自己承認極限，求助是另一種堅強。"
+  },
+  "status": "draft"
  }
 ]
