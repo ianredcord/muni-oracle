@@ -10,6 +10,10 @@ export type CardView = {
   altName: string;
   image: string;
   kind: "major" | "court" | "pip";
+  flowerZh: string;
+  flowerEn: string;
+  archetype: string;
+  step2Allow: string;
 };
 
 export type RenderBundle = { brief: Segment[]; full: Segment[]; cards: CardView[] };

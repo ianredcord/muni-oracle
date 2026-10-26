@@ -2,6 +2,7 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 import { MODE_DESCRIPTION_MAX_CHARS, MODE_TEXT } from "../../src/data/threeCard/modes";
+import { PAGE_TEXT } from "../../src/data/threeCard/pageText";
 import { ALL_UI_TEXT, pickVariant } from "../../src/data/threeCard/uiText";
 import { countChars, createTracker, MemoryReadingStore } from "../../src/lib/threeCard/index";
 import { lintFreeText } from "../../src/lib/threeCard/lint";
@@ -58,5 +59,23 @@ describe("§11 事件寫入", () => {
     assert.deepEqual(r!.selections, c.record.selections, "事件不改動 selections");
     assert.equal(await tracker.stopDwell(), null, "未 start 時不寫入");
     assert.equal(await createTracker(store, "nope").saved(), null, "不存在的紀錄回傳 null");
+  });
+});
+
+describe("體驗流程 v2 的新 UI 文字通過 §6", () => {
+  it("標籤、導讀、複方角色、深度說明", () => {
+    const issues = [];
+    for (const [loc, t] of Object.entries(PAGE_TEXT)) {
+      const texts: [string, string][] = [
+        ["guideTitle", t.guideTitle], ...t.guide.map((g, i) => [`guide${i}`, g] as [string, string]),
+        ...Object.entries(t.modeFit).map(([k, v]) => [`fit${k}`, v] as [string, string]),
+        ["nowPicking", t.nowPicking("此刻", "此刻，你站在什麼位置？")], ["connect", t.connect],
+        ...Object.entries(t.labels).map(([k, v]) => [`label.${k}`, v] as [string, string]),
+        ...Object.entries(t.blendRoles).map(([k, v]) => [`blend.${k}`, v] as [string, string]),
+        ["deepNote", t.deepNote], ["intro", t.intro],
+      ];
+      for (const [k, v] of texts) issues.push(...lintFreeText(`${loc}/${k}`, v));
+    }
+    assert.deepEqual(issues.filter((i) => i.level === "error"), []);
   });
 });

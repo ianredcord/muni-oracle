@@ -11,14 +11,21 @@ const MODES: Mode[] = ["A", "B", "C"];
 export async function listCardViews(locale: Locale): Promise<CardView[]> {
   const lib = defaultLibrary();
   const byId = new Map(lib.cards.map((c) => [c.id, c]));
-  return getTarotCards(locale).map((c) => ({
-    id: c.id,
-    slug: c.slug,
-    displayName: c.displayName,
-    altName: c.altName,
-    image: c.image,
-    kind: kind(byId.get(c.id)!),
-  }));
+  return getTarotCards(locale).map((c) => {
+    const e = byId.get(c.id)!;
+    return {
+      id: c.id,
+      slug: c.slug,
+      displayName: c.displayName,
+      altName: c.altName,
+      image: c.image,
+      kind: kind(e),
+      flowerZh: e.bachFlowerZh,
+      flowerEn: e.bachFlowerEn,
+      archetype: c.jungianArchetype ?? "",
+      step2Allow: e.step2Allow,
+    };
+  });
 }
 
 function viewsFor(locale: Locale, ids: [number, number, number], all: CardView[]): CardView[] {
