@@ -26,6 +26,7 @@ export function Header() {
   const primaryNavItems: NavItem[] = [
     { href: "/draw", label: dict.nav.startDraw },
     { href: "/tarot", label: dict.nav.tarot },
+    { href: "/tarot/three-card", label: locale === "en" ? "Three-Card" : "三牌陣" },
     { href: "/systems", label: dict.nav.systems },
   ];
 

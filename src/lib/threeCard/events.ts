@@ -28,7 +28,7 @@ export class ReadingTracker {
   /** 按「展開完整解讀」時（渲染用 expandFull，不重選） */
   expandedFull() { return this.append("expanded_full"); }
   /** 按完整版底部按鈕進入深度解析時 */
-  openedDeep() { return this.append("opened_deep"); }
+  openedDeep(meta?: Record<string, unknown>) { return this.append("opened_deep", meta); }
   shared(meta?: Record<string, unknown>) { return this.append("shared", meta); }
   saved() { return this.append("saved"); }
   /** 停留計時：進入頁面 start，離開頁面 stop 並寫入 dwell_ms（meta.ms） */

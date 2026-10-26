@@ -96,6 +96,12 @@ export default function TarotClient({ locale }: { locale: Locale }) {
                 </svg>
                 {dict.tarotLanding.startDraw}
               </Link>
+              <Link
+                href={localeHref(locale, "/tarot/three-card")}
+                className="ml-3 inline-flex items-center gap-2 rounded-full border border-[#9A7B4F] px-8 py-4 text-lg text-[#9A7B4F] transition-all duration-300 hover:bg-[#9A7B4F] hover:text-white font-medium"
+              >
+                {locale === "en" ? "Three-Card Spread" : "三牌陣：來處・此刻・去向"}
+              </Link>
             </motion.div>
           </div>
         </section>
