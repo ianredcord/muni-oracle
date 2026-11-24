@@ -60,22 +60,39 @@ body {
   transform: rotateY(180deg);
 }
 
-/* 滾動條樣式 */
-::-webkit-scrollbar {
-  width: 8px;
+/* 滾動條樣式：標準 scrollbar-color／scrollbar-width（會繼承到站內所有捲動區）
+   滑塊 #8b8579 對米色底 3.4:1（WCAG 1.4.11 要 ≥3:1；舊 #c1c1c1 只有 1.7:1） */
+:root {
+  --scrollbar-thumb: #8b8579;
+  --scrollbar-thumb-hover: #6b7c6b;
+  --scrollbar-track: var(--background);
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+  scrollbar-width: thin;
 }
 
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
+/* 舊版 Safari（< 26.2）沒有 scrollbar-color：退回 WebKit 偽元素 */
+@supports not (scrollbar-color: auto) {
+  :root {
+    scrollbar-width: auto;
+  }
 
-::-webkit-scrollbar-thumb {
-  background: #c1c1c1;
-  border-radius: 4px;
-}
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
 
-::-webkit-scrollbar-thumb:hover {
-  background: #a1a1a1;
+  ::-webkit-scrollbar-track {
+    background: var(--scrollbar-track);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb);
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--scrollbar-thumb-hover);
+  }
 }
 
 /* 動畫 */
