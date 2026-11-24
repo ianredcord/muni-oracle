@@ -56,14 +56,16 @@ export function initializeFasciaPoint(root){
       if(e.target.closest('.fp-dialog-close'))dialog.close();
     };
     // Fallback (Safari): close only when the click lands on the backdrop, not on the dialog's own padding.
+    let downOnBackdrop=false;
+    const outsideDialog=e=>{const r=dialog.getBoundingClientRect();return e.target===dialog&&!(r.top<=e.clientY&&e.clientY<=r.bottom&&r.left<=e.clientX&&e.clientX<=r.right)};
+    const backdropDown=e=>{downOnBackdrop=outsideDialog(e)};
     const backdropClick=e=>{
-      if(e.target!==dialog)return;
-      const r=dialog.getBoundingClientRect();
-      if(r.top<=e.clientY&&e.clientY<=r.bottom&&r.left<=e.clientX&&e.clientX<=r.right)return;
+      // Like native closedby: both press and release must be on the backdrop (dragging a selection out doesn't close).
+      if(!downOnBackdrop||!outsideDialog(e))return;
       dialog.close();
     };
     root.addEventListener('click',galleryClick);
-    if(!nativeLightDismiss)dialog.addEventListener('click',backdropClick);
+    if(!nativeLightDismiss){dialog.addEventListener('pointerdown',backdropDown);dialog.addEventListener('click',backdropClick)}
     const menu=root.querySelector('.fp-menu-toggle');
     const nav=root.querySelector('.fp-nav');
     const toggleMenu=open=>{menu.setAttribute('aria-expanded',String(open));nav.classList.toggle('fp-open',open)};
@@ -99,5 +101,5 @@ export function initializeFasciaPoint(root){
     const hashFrame=requestAnimationFrame(hashchange);
     document.addEventListener('keydown',escape);document.addEventListener('click',outside);window.addEventListener('hashchange',hashchange);
     root.addEventListener('click',click);root.addEventListener('keydown',key);
-    return ()=>{root.removeEventListener('click',explore);root.removeEventListener('click',galleryClick);dialog.removeEventListener('click',backdropClick);if(dialog.open)dialog.close();observer?.disconnect();window.removeEventListener('scroll',scroll);window.removeEventListener('resize',scroll);window.removeEventListener('resize',orientation);root.removeEventListener('click',click);root.removeEventListener('keydown',key);document.removeEventListener('keydown',escape);document.removeEventListener('click',outside);window.removeEventListener('hashchange',hashchange);cancelAnimationFrame(hashFrame);cancelAnimationFrame(frame);root.classList.remove('fp-enhanced');delete root.dataset.initialized};
+    return ()=>{root.removeEventListener('click',explore);root.removeEventListener('click',galleryClick);dialog.removeEventListener('pointerdown',backdropDown);dialog.removeEventListener('click',backdropClick);if(dialog.open)dialog.close();observer?.disconnect();window.removeEventListener('scroll',scroll);window.removeEventListener('resize',scroll);window.removeEventListener('resize',orientation);root.removeEventListener('click',click);root.removeEventListener('keydown',key);document.removeEventListener('keydown',escape);document.removeEventListener('click',outside);window.removeEventListener('hashchange',hashchange);cancelAnimationFrame(hashFrame);cancelAnimationFrame(frame);root.classList.remove('fp-enhanced');delete root.dataset.initialized};
   }
